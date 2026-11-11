@@ -1,10 +1,24 @@
 
-name: RayBookDown Daily Update
+name: RayBookDown Daily Sync
 
 on:
   schedule:
     - cron: '30 22 * * *'  
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/team.json'
+      - 'scripts/check-snapshot.mjs'
+      - 'scripts/check-snapshot.test.mjs'
+      - '.github/workflows/daily-update.yml'
+      - 'tools/windows/**'
+  pull_request:
+    paths:
+      - 'data/team.json'
+      - 'scripts/check-snapshot.mjs'
+      - 'scripts/check-snapshot.test.mjs'
+      - '.github/workflows/daily-update.yml'
+      - 'tools/windows/**'
 
 permissions:
   contents: read
@@ -13,8 +27,45 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Show Taiwan time
-        run: |
-          TZ=Asia/Taipei date
-          echo "RayBookDown scheduler is working"
-          echo "Yahoo data source is not connected yet"
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - name: Validate public snapshot
+        run: node scripts/check-snapshot.mjs data/team.json
+      - name: Test snapshot validation
+        run: node --test scripts/check-snapshot.test.mjs
+  cloud-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test refresh-state sequencing with synthetic credentials
+        shell: powershell
+        run: '& .\tools\windows\Test-Flaim-Cloud.ps1'
+  sync:
+    needs: [check, cloud-tests]
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: windows-latest
+    timeout-minutes: 15
+    environment: flaim
+    concurrency:
+      group: raybookdown-flaim-refresh
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Refresh, persist rotating credentials, and publish sanitized roster
+        shell: powershell
+        env:
+          FLAIM_REFRESH_TOKEN: ${{ secrets.FLAIM_REFRESH_TOKEN }}
+          FLAIM_SECRET_WRITER: ${{ secrets.FLAIM_SECRET_WRITER }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: '& .\tools\windows\Flaim-Scheduled-Sync.ps1 -RepositoryRoot $PWD.Path'
+
