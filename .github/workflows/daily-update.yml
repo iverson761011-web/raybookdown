@@ -1,10 +1,22 @@
 
-name: RayBookDown Daily Update
+name: RayBookDown Snapshot Check
 
 on:
   schedule:
     - cron: '30 22 * * *'  
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/team.json'
+      - 'scripts/check-snapshot.mjs'
+      - 'scripts/check-snapshot.test.mjs'
+      - '.github/workflows/daily-update.yml'
+  pull_request:
+    paths:
+      - 'data/team.json'
+      - 'scripts/check-snapshot.mjs'
+      - 'scripts/check-snapshot.test.mjs'
+      - '.github/workflows/daily-update.yml'
 
 permissions:
   contents: read
@@ -13,8 +25,18 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Show Taiwan time
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - name: Validate public snapshot
+        run: node scripts/check-snapshot.mjs data/team.json
+      - name: Test snapshot validation
+        run: node --test scripts/check-snapshot.test.mjs
+      - name: Report schedule status
         run: |
           TZ=Asia/Taipei date
-          echo "RayBookDown scheduler is working"
-          echo "Yahoo data source is not connected yet"
+          echo "Snapshot check completed. This workflow does not synchronize Flaim or Yahoo data."
+
