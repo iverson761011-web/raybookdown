@@ -33,6 +33,7 @@ function Invoke-FlaimGh {
     )
     $process = $null
     $start = $null
+    $stdinWriter = $null
     $tokenText = $null
     $inputValue = $null
     $output = $null
@@ -66,26 +67,34 @@ function Invoke-FlaimGh {
         $start.EnvironmentVariables.Remove('GITHUB_TOKEN')
         $process = [Diagnostics.Process]::new()
         $process.StartInfo = $start
-        [void]$process.Start()
+        # Framework 4.x can emit the inherited input encoding's BOM at Start().
+        # Select BOM-free UTF8 just for pipe creation, then restore immediately.
+        $originalInputEncoding = [Console]::InputEncoding
+        try {
+            [Console]::InputEncoding = [Text.UTF8Encoding]::new($false)
+            [void]$process.Start()
+        }
+        finally { [Console]::InputEncoding = $originalInputEncoding }
+        $stdinWriter = [IO.StreamWriter]::new($process.StandardInput.BaseStream,[Text.UTF8Encoding]::new($false))
         $outTask = $process.StandardOutput.ReadToEndAsync()
         $errorTask = $process.StandardError.ReadToEndAsync()
         if ($null -ne $InputSecret) {
             $inputBstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($InputSecret)
             $inputValue = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($inputBstr)
-            $writeTask = $process.StandardInput.WriteAsync($inputValue)
+            $writeTask = $stdinWriter.WriteAsync($inputValue)
         }
-        elseif ($hasInputText) { $writeTask = $process.StandardInput.WriteAsync($InputText) }
+        elseif ($hasInputText) { $writeTask = $stdinWriter.WriteAsync($InputText) }
         else { $writeTask = $null }
         if ($null -ne $writeTask -and -not $writeTask.Wait([int][Math]::Max(1,45000-$clock.ElapsedMilliseconds))) {
             try { $process.Kill() } catch { }
             Stop-FlaimCloudFailure 'GitHubCommandTimeout'
         }
-        $flushTask = $process.StandardInput.FlushAsync()
+        $flushTask = $stdinWriter.FlushAsync()
         if (-not $flushTask.Wait([int][Math]::Max(1,45000-$clock.ElapsedMilliseconds))) {
             try { $process.Kill() } catch { }
             Stop-FlaimCloudFailure 'GitHubCommandTimeout'
         }
-        $process.StandardInput.Close()
+        $stdinWriter.Close()
         if (-not $process.WaitForExit([int][Math]::Max(1,45000-$clock.ElapsedMilliseconds))) {
             try { $process.Kill() } catch { }
             Stop-FlaimCloudFailure 'GitHubCommandTimeout'
@@ -102,6 +111,7 @@ function Invoke-FlaimGh {
         if ($tokenBstr -ne [IntPtr]::Zero) { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($tokenBstr) }
         if ($inputBstr -ne [IntPtr]::Zero) { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($inputBstr) }
         if ($null -ne $start) { $start.EnvironmentVariables.Remove('GH_TOKEN') }
+        if ($null -ne $stdinWriter) { try { $stdinWriter.Dispose() } catch { } }
         if ($null -ne $process) { $process.Dispose() }
         $tokenText = $null
         $inputValue = $null

@@ -51,6 +51,15 @@ Test-Case 'CLI returns only explicitly requested successful output' {
     $captured=Invoke-FlaimGh -GhArguments @('read') -Token $writer -ReturnOutput
     Assert-Cloud ($captured -ceq 'ok')
 }
+Test-Case 'UTF8 console encoding never prefixes a secret with a BOM' {
+    $originalEncoding=[Console]::InputEncoding
+    try {
+        [Console]::InputEncoding=[Text.Encoding]::UTF8
+        $captured=@(Invoke-FlaimGh -GhArguments @('probe') -Token $writer -InputSecret $inputSecret 2>&1 6>&1)
+        Assert-Cloud ($captured.Count -eq 0)
+    }
+    finally { [Console]::InputEncoding=$originalEncoding }
+}
 Test-Case 'CLI rejects unsafe arguments before launching' {
     $rejected=$false
     try { Invoke-FlaimGh -GhArguments @('bad argument') -Token $writer } catch { $rejected=$_.Exception.Data['CloudKind'] -ceq 'InvalidCloudRequest' }
