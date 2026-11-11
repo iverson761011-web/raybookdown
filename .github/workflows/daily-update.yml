@@ -1,5 +1,5 @@
 
-name: RayBookDown Snapshot Check
+name: RayBookDown Daily Sync
 
 on:
   schedule:
@@ -11,12 +11,14 @@ on:
       - 'scripts/check-snapshot.mjs'
       - 'scripts/check-snapshot.test.mjs'
       - '.github/workflows/daily-update.yml'
+      - 'tools/windows/**'
   pull_request:
     paths:
       - 'data/team.json'
       - 'scripts/check-snapshot.mjs'
       - 'scripts/check-snapshot.test.mjs'
       - '.github/workflows/daily-update.yml'
+      - 'tools/windows/**'
 
 permissions:
   contents: read
@@ -35,8 +37,35 @@ jobs:
         run: node scripts/check-snapshot.mjs data/team.json
       - name: Test snapshot validation
         run: node --test scripts/check-snapshot.test.mjs
-      - name: Report schedule status
-        run: |
-          TZ=Asia/Taipei date
-          echo "Snapshot check completed. This workflow does not synchronize Flaim or Yahoo data."
+  cloud-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test refresh-state sequencing with synthetic credentials
+        shell: powershell
+        run: '& .\tools\windows\Test-Flaim-Cloud.ps1'
+  sync:
+    needs: [check, cloud-tests]
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: windows-latest
+    timeout-minutes: 15
+    environment: flaim
+    concurrency:
+      group: raybookdown-flaim-refresh
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Refresh, persist rotating credentials, and publish sanitized roster
+        shell: powershell
+        env:
+          FLAIM_REFRESH_TOKEN: ${{ secrets.FLAIM_REFRESH_TOKEN }}
+          FLAIM_SECRET_WRITER: ${{ secrets.FLAIM_SECRET_WRITER }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: '& .\tools\windows\Flaim-Scheduled-Sync.ps1 -RepositoryRoot $PWD.Path'
 

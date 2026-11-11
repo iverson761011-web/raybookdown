@@ -41,9 +41,9 @@ $FlaimSession = & '.\tools\windows\Flaim-OAuth-PKCE.ps1'
 
 ## 排程狀態
 
-現有 `.github/workflows/daily-update.yml` 的 `30 22 * * *` 對應每日台灣時間 06:30。它目前只檢查儲存庫中的快照，**沒有從 Flaim 同步新資料**。GitHub 的排程也可能延遲執行。
+`.github/workflows/daily-update.yml` 的 `30 22 * * *` 對應每日台灣時間 06:30。PR 只執行不使用真實憑證的資料／雲端流程測試。`main` 上的排程或手動觸發，會在完成 [雲端安全設定](CLOUD_SETUP.md) 後更新 Flaim 授權、保存輪替憑證並同步名單；未設定時只顯示 `CloudSetupRequired`，不呼叫 Flaim。
 
-要建立長期無人值守更新，仍需在後端接上安全憑證儲存。已確認 Flaim 會輪替 refresh token，因此每次更新都必須保存新值；不能將固定的舊 refresh token 填入一次後，就視為永久可用。安全設定完成前，不會把資料檢查宣稱為自動同步。
+更新後的公開名單寫入 `data/team.json`。GitHub Pages 網頁會讀取主分支的公開 JSON，因此資料提交不需要再觸發網頁重建。比分、市場、交易和賽程仍保持各自的舊快照標示。排程可能延遲，不能保證精確在 06:30 執行。
 
 ## 本機檢查
 
