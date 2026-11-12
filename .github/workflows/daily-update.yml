@@ -4,12 +4,15 @@ name: RayBookDown Daily Sync
 on:
   schedule:
     - cron: '30 22 * * *'  
+    # Taipei 12:00-18:00: evaluate only after the target NBA date is verified final.
+    - cron: '0 4-10 * * *'
   workflow_dispatch:
   push:
     paths:
       - 'tests/**'
       - 'index.html'
       - 'dashboard*.mjs'
+      - 'features-model.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -22,6 +25,7 @@ on:
       - 'tests/**'
       - 'index.html'
       - 'dashboard*.mjs'
+      - 'features-model.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -53,6 +57,12 @@ jobs:
         run: node --test scripts/check-dashboard.test.mjs scripts/update-nba-schedule.test.mjs
       - name: Test all dashboard views and refresh behavior
         run: node scripts/check-dashboard-view.mjs
+      - name: Test recommendation evidence, weekly counts and history views
+        run: node --test scripts/collect-recommendation-evidence.test.mjs scripts/build-weekly-schedule.test.mjs scripts/build-recommendations.test.mjs scripts/features-model.test.mjs
+      - name: Test official injury parsing
+        run: |
+          python3 -m pip install -r scripts/requirements-injuries.txt
+          python3 -m unittest discover -s scripts -p test_parse_nba_injuries.py
       - name: Probe public NBA source without credentials
         run: node scripts/update-nba-schedule.mjs data/dashboard.json --diagnose
       - name: Validate public-source probe output
@@ -72,11 +82,15 @@ jobs:
           & .\tools\windows\Test-Flaim-Cloud.ps1
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           & .\tools\windows\Test-Flaim-Dashboard.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & .\tools\windows\Test-Flaim-History.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & .\tools\windows\Test-Flaim-Features.ps1
   sync:
     needs: [check, cloud-tests]
     if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.actor != 'github-actions[bot]'))
     runs-on: windows-2022
-    timeout-minutes: 15
+    timeout-minutes: 25
     environment: flaim
     concurrency:
       group: raybookdown-flaim-refresh
@@ -90,6 +104,13 @@ jobs:
       - uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
+      - name: Collect public NBA results, performance history and injuries
+        shell: powershell
+        run: |
+          python -m pip install -r scripts/requirements-injuries.txt
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          node scripts/collect-recommendation-evidence.mjs --dashboard=data/dashboard.json --history-days=30
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Verify public Node runtime before loading credentials
         shell: powershell
         run: |

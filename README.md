@@ -18,13 +18,24 @@ Yahoo 籃球聯盟 **Funny League 2026-27**、球隊 **RayBookDown** 的公開�
 
 每日台灣時間 **06:30** 及 main 程式更新後：GitHub Actions 取得新資料並發布 JSON，排程可能延遲。網站開啟時及每 **5分鐘**：重新讀取公開 JSON，不直接登入 Flaim 或 Yahoo。自動資料提交使用 GITHUB_TOKEN，不會再觸發新一輪同步；github-actions[bot] 的 push 亦被排除。
 
+另外在台灣時間 **12:00～18:00 每小時**檢查前一個 NBA 日期是否全場終場。官方比分尚未確認、延賽或來源失敗時，不將當日推薦標成已完成；舊報告保留原時間。GitHub 排程可能延後，不保證整點顯示。
+
+## 每日補強、歷週結果與球隊週場次
+
+- 「歷週結果」逐週讀取 Flaim／Yahoo 的當季對戰，列出對手、類別比分、來源提供的最終勝者與每週讀取時間；當週領先不當成已獲勝。未提供週日期時保留未知。
+- 「NBA 賽程」列出 30 隊的整週總場次、現在起的剩餘排定場次與台灣日期；我的陣容及自由市場也顯示相同期間的剩餘場次。Yahoo 週界未核實時，明示使用**台灣日曆週（週一至週日）**，不能當作 Yahoo 對戰週。任何未確認日期都不填假零；球隊排賽不保證球員出賽。
+- 「每日補強」以積極爭取近端比項為方向，只比較本次 Flaim 回傳的市場，使用 NBA 官方終場 box score、已觀察的 7／14／30 日樣本、官方傷病報告及剩餘排賽。沒有足夠樣本、身分不明、資料過舊或傷病未知時只列觀察，不補造球員表現。
+- 建議會說明近比分類別的可能幫助和換人損失。Yahoo 不可丟棄標記會保留；不因單場差表現建議移除。這是需自行確認的建議，不會替你增刪 Yahoo 球員；上場欄位、剩餘 Add、讓渡與鎖定時間仍需在 Yahoo 確認。
+
+新增公開檔案：`data/matchup-history.json`、`data/team-week-schedule.json`、`data/recommendations.json`。NBA 證據為 `data/recommendation-evidence.json`，官方球員逐場快取為 `data/recommendation-history.json`；後者只供雲端建立滾動觀察，不在網頁載入。快取可達 8 MiB，其餘公開檔案上限 1 MiB；快取只保留公開 NBA 欄位，沒有 Flaim 原始回應、憑證或內部 Yahoo ID。
+
 GitHub Pages 預設讀取主分支的 raw 公開 JSON，不依賴每次資料提交觸發網頁重建。原 `data/team.json` 在新名單讀取成功時仍會更新，供舊版工具相容使用；正式網頁改讀 `data/dashboard.json`。舊資料來源設定不自動沿用，可在「資料更新」恢復預設來源。
 
 ## 已完成安全設定的使用者
 
 如果先前已看到 `Configured=True` 並完成首次同步，現有 `flaim` environment secrets 可以直接沿用。此升級不需重新 OAuth，也不需重新輸入或公開任何憑證。
 
-將版本合併到 main 後，在 **Actions → RayBookDown Daily Sync → Run workflow → main** 執行一次。結果應有 `Synced=True`、`CredentialStateSaved=True`。`DataQuality=partial` 或 `SectionWarnings` 表示某些來源未確認，請看網站各區塊時間與未知標示。之後每日排程會自動執行。
+程式合併到 main 後會自動執行同步；若需要額外更新，可在 **Actions → RayBookDown Daily Sync → Run workflow → main** 手動執行。結果應有 `Synced=True`、`CredentialStateSaved=True`。`DataQuality=partial` 或 `SectionWarnings` 表示某些來源未確認，請看網站各區塊時間與未知標示。之後依排程自動執行。
 
 初次使用才需依 [安全設定](CLOUD_SETUP.md) 完成一次性交接。排程會在消耗 Flaim 更新憑證前先測試保存權限，刷新後立即保存輪替的新值，再讀資料及發布。不要取消刷新與保存之間的工作。
 

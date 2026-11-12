@@ -4,6 +4,7 @@
 param(
     [object]$Session,
     [string]$OutputPath = (Join-Path $PSScriptRoot 'dashboard.json'),
+    [string]$HistoryOutputPath,
     [ValidateRange(5,120)][int]$RequestTimeoutSeconds = 30,
     [switch]$FunctionsOnly
 )
@@ -117,6 +118,92 @@ function Read-FDDSection {
     }
 }
 
+function Test-FDDHistoryTeam {
+    param([object]$Entry,[object]$Selected)
+    if ($Entry -isnot [Collections.IDictionary]) {return $false}
+    # History must be tied to the session identifier, not a similar team name.
+    if ($null -eq (Get-FDDField $Entry 'teamId') -and $null -eq (Get-FDDField $Entry 'teamKey')) {return $false}
+    return Test-FDDTeam $Entry $Selected
+}
+function ConvertFrom-FDDHistoryMatchup {
+    param([object]$Data,[object]$Selected,[int]$RequestedWeek)
+    $allPairs=Get-FDDArray (Get-FDDField $Data 'matchups')
+    $pairs=@($allPairs | Where-Object {
+        (Test-FDDHistoryTeam (Get-FDDField $_ 'home') $Selected) -or (Test-FDDHistoryTeam (Get-FDDField $_ 'away') $Selected)
+    })
+    if ($pairs.Count -ne 1) {Stop-FlaimDataFailure 'IdentityMismatch'}
+    $pair=$pairs[0];$homeEntry=Get-FDDField $pair 'home';$awayEntry=Get-FDDField $pair 'away'
+    $homeIsOwn=Test-FDDHistoryTeam $homeEntry $Selected;$awayIsOwn=Test-FDDHistoryTeam $awayEntry $Selected
+    if ($homeIsOwn -eq $awayIsOwn) {Stop-FlaimDataFailure 'IdentityMismatch'}
+    $week=ConvertTo-FDDNumber (Get-FDDField $pair 'week') -Minimum 1 -Maximum 100 -Integer
+    if ($null -eq $week) {$week=ConvertTo-FDDNumber (Get-FDDField $Data 'matchupWeek') -Minimum 1 -Maximum 100 -Integer}
+    if ($week -ne $RequestedWeek) {Stop-FlaimDataFailure 'InvalidDashboardData'}
+    $own=$homeEntry;$opp=$awayEntry;$ownSide='home'
+    if (-not $homeIsOwn) {$own=$awayEntry;$opp=$homeEntry;$ownSide='away'}
+    if ($opp -isnot [Collections.IDictionary]) {Stop-FlaimDataFailure 'InvalidDashboardData'}
+    $rows=[Collections.Generic.List[object]]::new()
+    $ownCategories=Get-FDDField $own 'categories';$oppCategories=Get-FDDField $opp 'categories'
+    if ($ownCategories -is [Array]) {
+        foreach ($category in (Get-FDDArray $ownCategories 200)) {
+            $other=$null
+            foreach ($candidate in (Get-FDDArray $oppCategories 200)) {
+                if ((Get-FDDField $candidate 'statId') -ceq (Get-FDDField $category 'statId')) {$other=$candidate;break}
+            }
+            $result=Get-FDDField $category 'result';if (@('win','loss','tie') -cnotcontains $result) {$result=$null}
+            $display=Get-FDDField $category 'isDisplayOnly';if ($display -isnot [bool]) {$display=$null}
+            $rows.Add([ordered]@{
+                Name=(ConvertTo-FDDText (Get-FDDField $category 'name'));Label=(ConvertTo-FDDText (Get-FDDField $category 'displayName') 40)
+                OwnValue=(ConvertTo-FDDStatValue (Get-FDDField $category 'value'));OpponentValue=(ConvertTo-FDDStatValue (Get-FDDField $other 'value'))
+                Result=$result;DisplayOnly=$display
+            })
+        }
+    }
+    $status=Get-FDDField $pair 'status';if (@('upcoming','in_progress','final') -cnotcontains $status) {$status=$null}
+    $winner=$null;$providerWinner=Get-FDDField $pair 'winner'
+    if ($status -ceq 'final') {
+        if ($providerWinner -ceq 'tie') {$winner='tie'}
+        elseif (@('home','away') -ccontains $providerWinner) {$winner=$(if ($providerWinner -ceq $ownSide) {'own'} else {'opponent'})}
+    }
+    return [ordered]@{
+        Week=$RequestedWeek;Status=$status;Opponent=(ConvertTo-FDDText (Get-FDDField $opp 'teamName'))
+        OwnScore=(ConvertTo-FDDScore (Get-FDDField $own 'categoryScore'));OpponentScore=(ConvertTo-FDDScore (Get-FDDField $opp 'categoryScore'))
+        Winner=$winner;WeekStartDate=$null;WeekEndDate=$null;Categories=$rows.ToArray()
+        RetrievedAtUtc=[DateTimeOffset]::UtcNow.ToString('o');SourceUpdatedAtUtc=$null
+    }
+}
+function Read-FDDHistory {
+    param([object]$Context,[Collections.IDictionary]$Tools,[Collections.IDictionary]$Base,[object]$Selected,[object]$Bounds,[string]$LeagueName,[string]$TeamName,[int]$SeasonYear)
+    $checked=[DateTimeOffset]::UtcNow.ToString('o');$weeks=[Collections.Generic.List[object]]::new();$unavailable=[Collections.Generic.List[int]]::new()
+    $start=Get-FDDField $Bounds 'Start';$end=Get-FDDField $Bounds 'End';$current=Get-FDDField $Bounds 'Current'
+    $valid=$null -ne $start -and $null -ne $end -and $null -ne $current -and $start -le $end -and $current -ge $start
+    if ($valid) {
+        $last=[Math]::Min($current,$end)
+        for ($week=[int]$start;$week -le $last;$week++) {
+            # A provider-supplied range is bounded; never query a future week.
+            if ($week-$start -ge 53) {$unavailable.Add($week);continue}
+            $arguments=[ordered]@{};foreach ($key in $Base.Keys) {$arguments[$key]=$Base[$key]};$arguments['week']=$week
+            try {
+                Assert-FlaimTeamArguments $Tools 'get_matchups' $arguments
+                $data=Read-FlaimTeamToolData $Context 'get_matchups' $arguments
+                $weeks.Add((ConvertFrom-FDDHistoryMatchup $data $Selected $week))
+            }
+            catch {$unavailable.Add($week)}
+        }
+    }
+    $status='unavailable';$historyError='HistoryWeekRangeUnknown';$readAt=$null
+    if ($valid) {
+        if ($unavailable.Count -eq 0) {$status='ok';$historyError=$null}
+        elseif ($weeks.Count -gt 0) {$status='partial';$historyError='HistoryPartial'}
+        else {$status='error';$historyError='HistoryUnavailable'}
+        if ($weeks.Count -gt 0) {$readAt=[DateTimeOffset]::UtcNow.ToString('o')}
+    }
+    return [ordered]@{
+        SchemaVersion=1;League=$LeagueName;Team=$TeamName;Platform='yahoo';Season=$SeasonYear
+        CheckedAtUtc=$checked;RetrievedAtUtc=$readAt;SourceUpdatedAtUtc=$null;Status=$status;ErrorType=$historyError;CurrentWeek=$current
+        Weeks=$weeks.ToArray();UnavailableWeeks=$unavailable.ToArray()
+    }
+}
+
 # Callback used by the imported, tested transport initializer.
 function Read-FlaimTeamContext {
     param([object]$Context,[Collections.IDictionary]$Tools,[Collections.IDictionary]$Data,[string]$LeagueName,[string]$TeamName,[int]$SeasonYear)
@@ -139,6 +226,13 @@ function Read-FlaimTeamContext {
     $sections['Rules']=Read-FDDSection $Context $Tools 'get_league_info' $base {
         param($d)
         if ((Get-FDDField $d 'name') -cne $LeagueName) { Stop-FlaimDataFailure 'IdentityMismatch' }
+        if ($script:FDDReadHistory) {
+            $script:FDDHistoryBounds=@{
+                Start=(ConvertTo-FDDNumber (Get-FDDField $d 'startWeek') -Minimum 1 -Maximum 100 -Integer)
+                End=(ConvertTo-FDDNumber (Get-FDDField $d 'endWeek') -Minimum 1 -Maximum 100 -Integer)
+                Current=(ConvertTo-FDDNumber (Get-FDDField $d 'currentWeek') -Minimum 1 -Maximum 100 -Integer)
+            }
+        }
         $positions=[Collections.Generic.List[object]]::new()
         $rawPositions=Get-FDDField $d 'rosterPositions'
         if ($null -ne $rawPositions) { foreach ($p in (Get-FDDArray $rawPositions 50)) { $positions.Add([ordered]@{Position=(ConvertTo-FDDText (Get-FDDField $p 'position') 20);Count=(ConvertTo-FDDNumber (Get-FDDField $p 'count') -Maximum 100 -Integer)}) } }
@@ -162,7 +256,8 @@ function Read-FlaimTeamContext {
         foreach ($p in (Get-FDDArray (Get-FDDField $d 'players'))) {
             $eligible=$null;$raw=Get-FDDField $p 'eligiblePositions'
             if ($raw -is [Array] -and $raw.Count -gt 0) { $list=[Collections.Generic.List[object]]::new();foreach ($pos in (Get-FDDArray $raw 32)) {$list.Add((ConvertTo-FDDText $pos 20))};$eligible=$list.ToArray() }
-            $players.Add([ordered]@{Player=(ConvertTo-FDDText (Get-FDDField $p 'name'));Position=(ConvertTo-FDDText (Get-FDDField $p 'selectedPosition') 20);Status=(ConvertTo-FDDText (Get-FDDField $p 'status') 40);EligiblePositions=$eligible;TeamCode=(ConvertTo-FDDText (Get-FDDField $p 'team') 20)})
+            $undroppable=Get-FDDField $p 'isUndroppable';if ($undroppable -isnot [bool]) {$undroppable=$null}
+            $players.Add([ordered]@{Player=(ConvertTo-FDDText (Get-FDDField $p 'name'));Position=(ConvertTo-FDDText (Get-FDDField $p 'selectedPosition') 20);Status=(ConvertTo-FDDText (Get-FDDField $p 'status') 40);EligiblePositions=$eligible;TeamCode=(ConvertTo-FDDText (Get-FDDField $p 'team') 20);IsUndroppable=$undroppable})
         }
         return [ordered]@{PlayerCount=$players.Count;Players=$players.ToArray()}
     }
@@ -224,6 +319,7 @@ function Read-FlaimTeamContext {
         return [ordered]@{Coverage='returned_list';RateScope='yahoo_platform_global';Players=$players.ToArray()}
     }
     $sections['Schedule']=New-FDDSection 'unavailable' $null 'ScheduleNotFetched' 'NBA official'
+    if ($script:FDDReadHistory) {$script:FDDHistory=Read-FDDHistory $Context $Tools $base $selected $script:FDDHistoryBounds $LeagueName $TeamName $SeasonYear}
     return [ordered]@{SchemaVersion=2;League=$LeagueName;Team=$TeamName;Platform='yahoo';Season=$SeasonYear;GeneratedAtUtc=[DateTimeOffset]::UtcNow.ToString('o');Sections=$sections}
 }
 
@@ -252,34 +348,52 @@ function Assert-FDDNoCredentials {
     }
 }
 function Invoke-FlaimDashboardExport {
-    param([object]$Session,[string]$Destination,[int]$Seconds=30)
+    param([object]$Session,[string]$Destination,[int]$Seconds=30,[string]$HistoryDestination)
     $ErrorActionPreference='Stop';$VerbosePreference='SilentlyContinue';$DebugPreference='SilentlyContinue';$ProgressPreference='SilentlyContinue'
-    $script:FDDLabels=[Collections.Generic.List[string]]::new();$temporary=$null;$snapshot=$null;$json=$null
+    $script:FDDLabels=[Collections.Generic.List[string]]::new();$temporary=$null;$snapshot=$null;$json=$null;$historyTemporary=$null;$historyFull=$null;$historyJson=$null
+    $script:FDDReadHistory=-not [string]::IsNullOrWhiteSpace($HistoryDestination);$script:FDDHistory=$null;$script:FDDHistoryBounds=$null
     try {
         if ($PSVersionTable.PSEdition -cne 'Desktop') {Stop-FlaimDataFailure 'UnsupportedRuntime'}
         $full=[IO.Path]::GetFullPath($Destination);$folder=[IO.Path]::GetDirectoryName($full)
         if ([IO.Path]::GetExtension($full) -ine '.json' -or -not [IO.Directory]::Exists($folder)) {Stop-FlaimDataFailure 'InvalidOutputPath'}
+        if ($script:FDDReadHistory) {
+            $historyFull=[IO.Path]::GetFullPath($HistoryDestination);$historyFolder=[IO.Path]::GetDirectoryName($historyFull)
+            if ([IO.Path]::GetExtension($historyFull) -ine '.json' -or -not [IO.Directory]::Exists($historyFolder) -or $historyFull -ieq $full) {Stop-FlaimDataFailure 'InvalidOutputPath'}
+        }
         $snapshot=Invoke-FlaimDataTest -Session $Session -Seconds $Seconds -ReadTeam -LeagueName 'Funny League 2026-27' -TeamName 'RayBookDown' -SeasonYear 2026
         if ($snapshot -isnot [Collections.IDictionary] -or (Get-FDDField $snapshot 'SchemaVersion') -ne 2) {Stop-FlaimDataFailure 'DashboardReadFailed'}
         Assert-FDDNoCredentials $Session $snapshot
+        if ($script:FDDReadHistory) {
+            if ($script:FDDHistory -isnot [Collections.IDictionary]) {Stop-FlaimDataFailure 'DashboardReadFailed'}
+            Assert-FDDNoCredentials $Session $script:FDDHistory
+            $historyJson=ConvertTo-Json -InputObject $script:FDDHistory -Depth 16
+            if ([Text.Encoding]::UTF8.GetByteCount($historyJson) -gt 1048576) {Stop-FlaimDataFailure 'ResponseTooLarge'}
+        }
         $json=ConvertTo-Json -InputObject $snapshot -Depth 16
         if ([Text.Encoding]::UTF8.GetByteCount($json) -gt 1048576) {Stop-FlaimDataFailure 'ResponseTooLarge'}
         $temporary=Join-Path $folder ('.dashboard-'+[Guid]::NewGuid().ToString('N')+'.tmp')
         [IO.File]::WriteAllText($temporary,$json,[Text.UTF8Encoding]::new($false))
         if ([IO.File]::Exists($full)) {[IO.File]::Replace($temporary,$full,[Management.Automation.Language.NullString]::Value)} else {[IO.File]::Move($temporary,$full)}
         $temporary=$null;$errors=0;foreach ($section in $snapshot['Sections'].Values) {if ($section['Status'] -eq 'error') {$errors++}}
+        if ($script:FDDReadHistory) {
+            $historyTemporary=Join-Path $historyFolder ('.history-'+[Guid]::NewGuid().ToString('N')+'.tmp')
+            [IO.File]::WriteAllText($historyTemporary,$historyJson,[Text.UTF8Encoding]::new($false))
+            if ([IO.File]::Exists($historyFull)) {[IO.File]::Replace($historyTemporary,$historyFull,[Management.Automation.Language.NullString]::Value)} else {[IO.File]::Move($historyTemporary,$historyFull)}
+            $historyTemporary=$null
+        }
         $count=$null;if ($snapshot['Sections']['Roster']['Status'] -eq 'ok') {$count=$snapshot['Sections']['Roster']['Data']['PlayerCount']}
-        return [pscustomobject]@{Exported=$true;PlayerCount=$count;SectionErrors=$errors;ErrorType=$null}
+        return [pscustomobject]@{Exported=$true;PlayerCount=$count;SectionErrors=$errors;HistoryExported=$script:FDDReadHistory;ErrorType=$null}
     }
     catch {
         $kind='DashboardExportFailed';$allowed=@('UnsupportedRuntime','InvalidSession','InvalidOutputPath','CredentialDataDetected','ResponseTooLarge','DashboardReadFailed')
         if ($allowed -ccontains $_.Exception.Data['FlaimKind']) {$kind=[string]$_.Exception.Data['FlaimKind']}
-        return [pscustomobject]@{Exported=$false;PlayerCount=$null;SectionErrors=$null;ErrorType=$kind}
+        return [pscustomobject]@{Exported=$false;PlayerCount=$null;SectionErrors=$null;HistoryExported=$false;ErrorType=$kind}
     }
     finally {
         if ($null -ne $temporary -and [IO.File]::Exists($temporary)) {[IO.File]::Delete($temporary)}
-        $script:FDDLabels=$null;$snapshot=$null;$json=$null
+        if ($null -ne $historyTemporary -and [IO.File]::Exists($historyTemporary)) {[IO.File]::Delete($historyTemporary)}
+        $script:FDDLabels=$null;$snapshot=$null;$json=$null;$historyJson=$null;$script:FDDReadHistory=$false;$script:FDDHistory=$null;$script:FDDHistoryBounds=$null
     }
 }
 
-if (-not $FunctionsOnly) {Invoke-FlaimDashboardExport -Session $Session -Destination $OutputPath -Seconds $RequestTimeoutSeconds}
+if (-not $FunctionsOnly) {Invoke-FlaimDashboardExport -Session $Session -Destination $OutputPath -Seconds $RequestTimeoutSeconds -HistoryDestination $HistoryOutputPath}
