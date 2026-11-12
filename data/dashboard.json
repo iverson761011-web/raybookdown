@@ -1,0 +1,1077 @@
+{
+  "SchemaVersion": 2,
+  "League": "Funny League 2026-27",
+  "Team": "RayBookDown",
+  "Platform": "yahoo",
+  "Season": 2026,
+  "GeneratedAtUtc": "2026-11-12T15:00:50.833Z",
+  "Sections": {
+    "Rules": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:37:47.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:37:47.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "TeamCount": 14,
+        "ScoringFormat": "categories",
+        "ScoringType": "head",
+        "CurrentWeek": 4,
+        "MaxWeeklyAdds": 6,
+        "UsesFaab": true,
+        "WaiverTimeDays": 1,
+        "RosterPositions": [
+          {
+            "Position": "PG",
+            "Count": 1
+          },
+          {
+            "Position": "SG",
+            "Count": 1
+          },
+          {
+            "Position": "G",
+            "Count": 1
+          },
+          {
+            "Position": "SF",
+            "Count": 1
+          },
+          {
+            "Position": "PF",
+            "Count": 1
+          },
+          {
+            "Position": "F",
+            "Count": 1
+          },
+          {
+            "Position": "C",
+            "Count": 1
+          },
+          {
+            "Position": "FC",
+            "Count": 1
+          },
+          {
+            "Position": "Util",
+            "Count": 3
+          },
+          {
+            "Position": "IL",
+            "Count": 3
+          }
+        ],
+        "ConfiguredScoringCategories": null,
+        "StatModifiers": null,
+        "Bonuses": null,
+        "ProviderRuleCodes": {
+          "WaiverType": "FR",
+          "WaiverRule": "all",
+          "WeeklyDeadline": "intraday",
+          "PostDraftPlayers": "W",
+          "CantCutList": "yahoo"
+        },
+        "TradeEndDate": "2027-03-04"
+      }
+    },
+    "Roster": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:38:13.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:38:13.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "PlayerCount": 12,
+        "Players": [
+          {
+            "Player": "Donovan Mitchell",
+            "Position": "PG",
+            "Status": null,
+            "EligiblePositions": [
+              "PG",
+              "SG",
+              "G",
+              "Util"
+            ],
+            "TeamCode": "CLE"
+          },
+          {
+            "Player": "Jared McCain",
+            "Position": "SG",
+            "Status": null,
+            "EligiblePositions": [
+              "PG",
+              "SG",
+              "G",
+              "Util"
+            ],
+            "TeamCode": "OKC"
+          },
+          {
+            "Player": "Christian Braun",
+            "Position": "G",
+            "Status": null,
+            "EligiblePositions": [
+              "SG",
+              "G",
+              "SF",
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "DEN"
+          },
+          {
+            "Player": "Kyshawn George",
+            "Position": "SF",
+            "Status": null,
+            "EligiblePositions": [
+              "SG",
+              "G",
+              "SF",
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "WAS"
+          },
+          {
+            "Player": "Cameron Boozer",
+            "Position": "PF",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "MEM"
+          },
+          {
+            "Player": "Alperen Şengün",
+            "Position": "F",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "HOU"
+          },
+          {
+            "Player": "Aday Mara",
+            "Position": "C",
+            "Status": null,
+            "EligiblePositions": [
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "OKC"
+          },
+          {
+            "Player": "Ivica Zubac",
+            "Position": "FC",
+            "Status": null,
+            "EligiblePositions": [
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "IND"
+          },
+          {
+            "Player": "Zion Williamson",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "NOP"
+          },
+          {
+            "Player": "Zach LaVine",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "PG",
+              "SG",
+              "G",
+              "SF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "SAC"
+          },
+          {
+            "Player": "Darius Garland",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "PG",
+              "G",
+              "Util"
+            ],
+            "TeamCode": "LAC"
+          },
+          {
+            "Player": "Morez Johnson Jr.",
+            "Position": "IL",
+            "Status": "P",
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "DAL"
+          }
+        ]
+      }
+    },
+    "Matchup": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:38:14.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:38:14.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "Week": 4,
+        "WeekStartDate": null,
+        "WeekEndDate": null,
+        "Status": "in_progress",
+        "Opponent": "PPPPPPPPP Baskets",
+        "OwnScore": {
+          "Wins": 7,
+          "Losses": 6,
+          "Ties": 0
+        },
+        "OpponentScore": {
+          "Wins": 6,
+          "Losses": 7,
+          "Ties": 0
+        },
+        "OwnGamesRemaining": 21,
+        "OpponentGamesRemaining": 20,
+        "Categories": [
+          {
+            "Name": "Minutes Played",
+            "Label": "MIN",
+            "OwnValue": "635",
+            "OpponentValue": "553",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Field Goals Made / Field Goals Attempted",
+            "Label": "FGM/A",
+            "OwnValue": "122/251",
+            "OpponentValue": "97/216",
+            "Result": null,
+            "DisplayOnly": true
+          },
+          {
+            "Name": "Field Goal Percentage",
+            "Label": "FG%",
+            "OwnValue": ".486",
+            "OpponentValue": ".449",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Free Throws Made / Free Throws Attempted",
+            "Label": "FTM/A",
+            "OwnValue": "54/71",
+            "OpponentValue": "56/68",
+            "Result": null,
+            "DisplayOnly": true
+          },
+          {
+            "Name": "Free Throw Percentage",
+            "Label": "FT%",
+            "OwnValue": ".761",
+            "OpponentValue": ".824",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "3-point Shots Made",
+            "Label": "3PTM",
+            "OwnValue": "30",
+            "OpponentValue": "43",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Points Scored",
+            "Label": "PTS",
+            "OwnValue": "328",
+            "OpponentValue": "293",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Offensive Rebounds",
+            "Label": "OREB",
+            "OwnValue": "41",
+            "OpponentValue": "7",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Defensive Rebounds",
+            "Label": "DREB",
+            "OwnValue": "91",
+            "OpponentValue": "63",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Assists",
+            "Label": "AST",
+            "OwnValue": "73",
+            "OpponentValue": "60",
+            "Result": "win",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Steals",
+            "Label": "ST",
+            "OwnValue": "16",
+            "OpponentValue": "22",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Blocked Shots",
+            "Label": "BLK",
+            "OwnValue": "10",
+            "OpponentValue": "11",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Turnovers",
+            "Label": "TO",
+            "OwnValue": "47",
+            "OpponentValue": "30",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Assist/Turnover Ratio",
+            "Label": "A/T",
+            "OwnValue": "1.55",
+            "OpponentValue": "2.00",
+            "Result": "loss",
+            "DisplayOnly": false
+          },
+          {
+            "Name": "Double-Doubles",
+            "Label": "DD",
+            "OwnValue": "5",
+            "OpponentValue": "0",
+            "Result": "win",
+            "DisplayOnly": false
+          }
+        ]
+      }
+    },
+    "Transactions": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:38:43.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:38:43.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "WindowStartUtcDate": "2026-10-13",
+        "WindowEndUtcDate": "2026-11-12",
+        "CompletenessVerified": false,
+        "UnrecognizedRows": 5,
+        "Rows": [
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-11-11T08:00:28.000Z",
+            "Added": [],
+            "Dropped": [
+              "Isaiah Jackson"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-10T08:03:10.000Z",
+            "Added": [
+              "Jared McCain"
+            ],
+            "Dropped": [
+              "Hannes Steinbach"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-09T23:10:03.000Z",
+            "Added": [
+              "Hannes Steinbach"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-11-09T23:06:10.000Z",
+            "Added": [],
+            "Dropped": [
+              "Maxime Raynaud"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-08T09:37:36.000Z",
+            "Added": [
+              "Isaiah Jackson"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-08T08:00:00.000Z",
+            "Added": [
+              "Morez Johnson Jr."
+            ],
+            "Dropped": [
+              "Draymond Green"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-08T00:03:18.000Z",
+            "Added": [
+              "Draymond Green"
+            ],
+            "Dropped": [
+              "Luguentz Dort"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-07T11:26:41.000Z",
+            "Added": [
+              "Luguentz Dort"
+            ],
+            "Dropped": [
+              "Daniel Gafford"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-11-05T00:31:04.000Z",
+            "Added": [],
+            "Dropped": [
+              "Toumani Camara"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-11-01T07:59:54.000Z",
+            "Added": [],
+            "Dropped": [
+              "Mo Bamba"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-31T08:22:51.000Z",
+            "Added": [
+              "Aday Mara"
+            ],
+            "Dropped": [
+              "Sidy Cissoko"
+            ],
+            "FaabBid": 12
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-27T23:46:06.000Z",
+            "Added": [
+              "Mo Bamba"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-27T23:26:50.000Z",
+            "Added": [
+              "Sidy Cissoko"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-27T09:51:59.000Z",
+            "Added": [
+              "Daniel Gafford"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-10-27T09:51:19.000Z",
+            "Added": [],
+            "Dropped": [
+              "Mitchell Robinson"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-10-27T07:00:10.000Z",
+            "Added": [],
+            "Dropped": [
+              "Jaxson Hayes"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-26T23:05:30.000Z",
+            "Added": [
+              "Mitchell Robinson"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-26T08:21:02.000Z",
+            "Added": [
+              "Christian Braun"
+            ],
+            "Dropped": [
+              "Cason Wallace"
+            ],
+            "FaabBid": 8
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-25T07:00:01.000Z",
+            "Added": [
+              "Jaxson Hayes"
+            ],
+            "Dropped": [
+              "Daniel Gafford"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-10-22T00:51:43.000Z",
+            "Added": [],
+            "Dropped": [
+              "Kristaps Porziņģis"
+            ],
+            "FaabBid": null
+          },
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-10-15T16:32:38.000Z",
+            "Added": [
+              "Kristaps Porziņģis"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          }
+        ],
+        "AddsUsedThisWeek": null,
+        "AddsRemainingThisWeek": null
+      }
+    },
+    "Budget": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:40:16.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:40:16.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "FaabBalance": 80,
+        "WaiverPriority": 1,
+        "MaxWeeklyAdds": 6,
+        "AddsUsedThisWeek": null,
+        "AddsRemainingThisWeek": null
+      }
+    },
+    "Market": {
+      "Status": "ok",
+      "Source": "Flaim Fantasy / Yahoo",
+      "CheckedAtUtc": "2026-11-12T14:38:13.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:38:13.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "Coverage": "returned_list",
+        "RateScope": "yahoo_platform_global",
+        "Players": [
+          {
+            "Player": "Jalen Green",
+            "Position": "SG,SF",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 70,
+            "WaiverDate": "2026-11-13"
+          },
+          {
+            "Player": "Andrew Wiggins",
+            "Position": "SG,SF,PF",
+            "TeamCode": "MIA",
+            "Availability": "free_agent",
+            "PercentOwned": 62,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Grayson Allen",
+            "Position": "SG,SF",
+            "TeamCode": "CHA",
+            "Availability": "waivers",
+            "PercentOwned": 42,
+            "WaiverDate": "2026-11-13"
+          },
+          {
+            "Player": "Draymond Green",
+            "Position": "PF,C",
+            "TeamCode": "GSW",
+            "Availability": "waivers",
+            "PercentOwned": 36,
+            "WaiverDate": "2026-11-14"
+          },
+          {
+            "Player": "Sandro Mamukelashvili",
+            "Position": "PF,C",
+            "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 36,
+            "WaiverDate": null
+          },
+          {
+            "Player": "DeMar DeRozan",
+            "Position": "SF,PF",
+            "TeamCode": "DEN",
+            "Availability": "free_agent",
+            "PercentOwned": 35,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Tristan da Silva",
+            "Position": "SF,PF",
+            "TeamCode": "ORL",
+            "Availability": "waivers",
+            "PercentOwned": 25,
+            "WaiverDate": "2026-11-13"
+          },
+          {
+            "Player": "Egor Dëmin",
+            "Position": "PG,SG",
+            "TeamCode": "BKN",
+            "Availability": "waivers",
+            "PercentOwned": 23,
+            "WaiverDate": "2026-11-14"
+          },
+          {
+            "Player": "Naji Marshall",
+            "Position": "SG,SF,PF",
+            "TeamCode": "DAL",
+            "Availability": "free_agent",
+            "PercentOwned": 21,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Reed Sheppard",
+            "Position": "PG,SG",
+            "TeamCode": "HOU",
+            "Availability": "free_agent",
+            "PercentOwned": 21,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Jaylen Wells",
+            "Position": "SG,SF",
+            "TeamCode": "MEM",
+            "Availability": "free_agent",
+            "PercentOwned": 18,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Mitchell Robinson",
+            "Position": "C",
+            "TeamCode": "BOS",
+            "Availability": "waivers",
+            "PercentOwned": 18,
+            "WaiverDate": "2026-11-14"
+          },
+          {
+            "Player": "Quentin Grimes",
+            "Position": "SG,SF",
+            "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 18,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Mikel Brown Jr.",
+            "Position": "PG",
+            "TeamCode": "BKN",
+            "Availability": "free_agent",
+            "PercentOwned": 17,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Kingston Flemings",
+            "Position": "PG",
+            "TeamCode": "ATL",
+            "Availability": "free_agent",
+            "PercentOwned": 16,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Isaiah Collier",
+            "Position": "PG,SG",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 15,
+            "WaiverDate": "2026-11-14"
+          },
+          {
+            "Player": "Jerami Grant",
+            "Position": "SF,PF",
+            "TeamCode": "MEM",
+            "Availability": "free_agent",
+            "PercentOwned": 13,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Isaiah Jackson",
+            "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 12,
+            "WaiverDate": "2026-11-13"
+          },
+          {
+            "Player": "Collin Sexton",
+            "Position": "PG,SG",
+            "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Terrence Shannon Jr.",
+            "Position": "SG,SF",
+            "TeamCode": "MIN",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Gui Santos",
+            "Position": "SF,PF",
+            "TeamCode": "GSW",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Kevin Porter Jr.",
+            "Position": "PG,SG",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Dennis Schröder",
+            "Position": "PG,SG",
+            "TeamCode": "CHA",
+            "Availability": "free_agent",
+            "PercentOwned": 7,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Bennedict Mathurin",
+            "Position": "SG,SF",
+            "TeamCode": "NOP",
+            "Availability": "free_agent",
+            "PercentOwned": 6,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Jaylin Williams",
+            "Position": "PF,C",
+            "TeamCode": "OKC",
+            "Availability": "free_agent",
+            "PercentOwned": 3,
+            "WaiverDate": null
+          }
+        ]
+      }
+    },
+    "Schedule": {
+      "Status": "ok",
+      "Source": "NBA官方",
+      "CheckedAtUtc": "2026-11-12T14:39:23.000Z",
+      "RetrievedAtUtc": "2026-11-12T14:39:23.000Z",
+      "SourceUpdatedAtUtc": null,
+      "ErrorType": null,
+      "Data": {
+        "RangeStartDateTaipei": "2026-11-13",
+        "RangeEndDateTaipei": "2026-11-16",
+        "UnavailableDates": [],
+        "Games": [
+          {
+            "StartAtTaipei": "2026-11-13T08:00:00+08:00",
+            "Teams": [
+              "Toronto Raptors",
+              "Philadelphia 76ers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600227"
+          },
+          {
+            "StartAtTaipei": "2026-11-13T08:00:00+08:00",
+            "Teams": [
+              "Detroit Pistons",
+              "Washington Wizards"
+            ],
+            "SourceUrl": "https://www.nba.com/pistons/game/0022600228-pistons-vs-wizards-washington-dc-11-12-2026/event-details"
+          },
+          {
+            "StartAtTaipei": "2026-11-13T09:00:00+08:00",
+            "Teams": [
+              "Dallas Mavericks",
+              "Minnesota Timberwolves"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600229"
+          },
+          {
+            "StartAtTaipei": "2026-11-13T10:00:00+08:00",
+            "Teams": [
+              "Charlotte Hornets",
+              "Phoenix Suns"
+            ],
+            "SourceUrl": "https://www.nba.com/game/CHA-vs-PHX-0022600230"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T08:00:00+08:00",
+            "Teams": [
+              "New York Knicks",
+              "Indiana Pacers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600034"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T08:00:00+08:00",
+            "Teams": [
+              "Milwaukee Bucks",
+              "Orlando Magic"
+            ],
+            "SourceUrl": "https://www.nba.com/game/mil-vs-orl-0022600035"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T09:00:00+08:00",
+            "Teams": [
+              "Cleveland Cavaliers",
+              "Miami Heat"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600036"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T09:00:00+08:00",
+            "Teams": [
+              "Atlanta Hawks",
+              "Chicago Bulls"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600037"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T09:00:00+08:00",
+            "Teams": [
+              "Memphis Grizzlies",
+              "New Orleans Pelicans"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600038"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T09:30:00+08:00",
+            "Teams": [
+              "Utah Jazz",
+              "Houston Rockets"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600039"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T10:30:00+08:00",
+            "Teams": [
+              "Golden State Warriors",
+              "San Antonio Spurs"
+            ],
+            "SourceUrl": "https://www.nba.com/game/gsw-vs-sas-0022600040"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T11:00:00+08:00",
+            "Teams": [
+              "Portland Trail Blazers",
+              "Sacramento Kings"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600041"
+          },
+          {
+            "StartAtTaipei": "2026-11-14T11:30:00+08:00",
+            "Teams": [
+              "Oklahoma City Thunder",
+              "LA Clippers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/okc-vs-lac-0022600042"
+          },
+          {
+            "StartAtTaipei": "2026-11-15T08:00:00+08:00",
+            "Teams": [
+              "Denver Nuggets",
+              "New Orleans Pelicans"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600231"
+          },
+          {
+            "StartAtTaipei": "2026-11-15T08:30:00+08:00",
+            "Teams": [
+              "Dallas Mavericks",
+              "Cleveland Cavaliers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600232"
+          },
+          {
+            "StartAtTaipei": "2026-11-15T09:00:00+08:00",
+            "Teams": [
+              "Brooklyn Nets",
+              "Memphis Grizzlies"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600234"
+          },
+          {
+            "StartAtTaipei": "2026-11-15T09:00:00+08:00",
+            "Teams": [
+              "Detroit Pistons",
+              "Miami Heat"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600233"
+          },
+          {
+            "StartAtTaipei": "2026-11-15T09:00:00+08:00",
+            "Teams": [
+              "Chicago Bulls",
+              "Minnesota Timberwolves"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600235"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T02:00:00+08:00",
+            "Teams": [
+              "Indiana Pacers",
+              "Philadelphia 76ers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600236"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T05:00:00+08:00",
+            "Teams": [
+              "Los Angeles Lakers",
+              "Phoenix Suns"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600237"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T05:30:00+08:00",
+            "Teams": [
+              "Charlotte Hornets",
+              "LA Clippers"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600238"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T06:00:00+08:00",
+            "Teams": [
+              "San Antonio Spurs",
+              "Utah Jazz"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600239"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+            "Teams": [
+              "New York Knicks",
+              "Toronto Raptors"
+            ],
+            "SourceUrl": "https://www.nba.com/game/nyk-vs-tor-0022600241"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+            "Teams": [
+              "Dallas Mavericks",
+              "Boston Celtics"
+            ],
+            "SourceUrl": "https://www.nba.com/game/dal-vs-bos-0022600240"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T08:00:00+08:00",
+            "Teams": [
+              "Houston Rockets",
+              "Washington Wizards"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600242"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T09:00:00+08:00",
+            "Teams": [
+              "Atlanta Hawks",
+              "Milwaukee Bucks"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600243"
+          },
+          {
+            "StartAtTaipei": "2026-11-16T10:00:00+08:00",
+            "Teams": [
+              "Oklahoma City Thunder",
+              "Sacramento Kings"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600244"
+          }
+        ],
+        "SourceUpdatedAtUtc": null
+      }
+    }
+  }
+}
+

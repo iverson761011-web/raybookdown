@@ -2,6 +2,10 @@
 
 程式已備妥，但這些設定必須由你完成。請勿把 GitHub 或 Flaim token 貼到聊天、網頁、程式碼或 JSON。
 
+## 已完成設定時升級
+
+先前已完成 `Configured=True` 的使用者，可沿用現有 GitHub 環境與憑證，**不用重新 OAuth 或重新建立 token**。合併新版後，手動執行一次 main 分支的 RayBookDown Daily Sync，再確認 `data/dashboard.json` 各區塊的讀取時間。網頁改為讀取完整儀表板 JSON，各來源失敗會顯示未知。
+
 ## 一次性準備
 
 1. 將本 PR 合併到 `main` 後，下載／更新專案程式碼。`tools/windows/` 必須保留完整檔案。
@@ -35,13 +39,13 @@ Get-ChildItem -LiteralPath 'C:\Users\k1070704\Downloads\RayBookDown-Windows-Tool
 到專案 **Actions → RayBookDown Daily Sync → Run workflow**，選 **main** 執行。
 
 - 只有 `main` 上的排程／手動觸發會進入 `sync` 工作；PR 與其他分支只做不含真實憑證的測試。
-- `sync` 結果應顯示 `Synced=True`、`CredentialStateSaved=True`。
+- `sync` 結果應顯示 `Synced=True`、`CredentialStateSaved=True`。`DataQuality=partial` 與 `SectionWarnings` 會列出未完整確認的來源，不代表可以把缺值當0。
 - 若顯示 `CloudSetupRequired`，代表環境 secrets 尚未齊備，程式沒有向 Flaim 發送更新請求。
-- 檢查 `data/team.json` 出現新的 `RetrievedAtUtc`。網站每五分鐘檢查資料，GitHub Pages 版本會直接讀取主分支的公開 JSON；不靠自動提交再觸發網頁重建。
+- 檢查 `data/dashboard.json` 各區塊出現正確的 `RetrievedAtUtc`；來源未提供最後更新時間時保留未知。網站每五分鐘檢查資料，GitHub Pages 版本會直接讀取主分支的公開 JSON；不靠自動提交再觸發網頁重建。
 
-每次同步會依序：測試憑證寫入 → 更新 Flaim 授權 → 立即保存新 refresh token → 讀取 RayBookDown 名單 → 只提交挑選過的公開資料。更新憑證保存失敗時不會繼續發布資料，也不會自動重試。
+每次同步會依序：測試憑證寫入 → 更新 Flaim 授權 → 立即保存新 refresh token → 讀取規則、名單、比分、本隊交易、取得額度與市場 → 讀取 NBA 官方賽程 → 驗證並只提交挑選過的公開資料。更新憑證保存失敗時不會繼續發布資料，也不會自動重試。
 
-避免在同步步驟中途取消工作；若取消剛好發生於更新後、保存前，需要重新授權與設定。若網站先前儲存過自訂資料網址，可在「資料更新」清空網址再儲存，以恢復本版本的預設來源。
+避免在同步步驟中途取消工作；若取消剛好發生於更新後、保存前，需要重新授權與設定。若網站儲存過自訂資料網址，可在「資料更新」使用恢復預設來源，改讀完整的 `data/dashboard.json`。
 
 ## 為什麼使用 environment secrets
 
@@ -58,8 +62,8 @@ fine-grained token 的 **Environments write** 是 GitHub 更新環境 secret 所
 - `DataExportFailed` 或資料提交失敗，但 `CredentialStateSaved=True`：新更新憑證已保存，可確認來源／網路後重新手動執行。程式不會在同一次工作中重送更新請求。
 - fine-grained token 到期後需更新設定。重新 OAuth 並重新執行設定腳本即可；不要把過期 token 保留在聊天或程式碼中。
 
-此同步更新的是目前球隊名單與聯盟摘要；舊比分、自由市場、Add 追蹤和賽程仍清楚保留舊快照標示，沒有宣稱它們已自動更新。GitHub 排程可能延遲，並不保證精確在 06:30:00 執行。
+此版本會更新規則、名單、當週比分、本隊交易、FAAB／讓渡順位、可取得球員與 NBA 官方賽程。各區塊分別顯示來源時間；未知不推算。本週已用與剩餘 Add 沒有官方計數時維持未知。官方 NBA 來源不可用時，賽程標未知或保留帶原讀取時間的已驗證場次。GitHub 排程可能延遲，並不保證精確在 06:30:00 執行。
 
 ## 驗證範圍
 
-雲端流程使用合成憑證與假 CLI 的測試，確認保密輸入、寫入順序、輪替後先保存、各種失敗時停止發布與安全摘要。尚未使用你的真實 GitHub/Flaim 憑證測試排程；需完成上述本機設定，才能驗證首次正式同步。
+雲端流程使用合成憑證與假 CLI 的測試，確認保密輸入、寫入順序、輪替後先保存、各種失敗時停止發布與安全摘要。PR 不使用真實憑證。此完整資料升級需合併 main 後手動執行一次，驗證實際雲端同步；已完成前版安全交接者無須重新設定。

@@ -10,17 +10,75 @@ function Update-FlaimScheduledSession {
 }
 function Export-FlaimScheduledData {
     param([object]$Session, [string]$Destination)
-    return (& (Join-Path $PSScriptRoot 'Flaim-Export-Snapshot.ps1') -Session $Session -OutputPath $Destination)
+    $previousSchedule = $null
+    if ([IO.File]::Exists($Destination)) {
+        try {
+            $previous = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
+            if ($previous.SchemaVersion -eq 2 -and $previous.League -ceq 'Funny League 2026-27' -and
+                $previous.Team -ceq 'RayBookDown' -and @('ok','partial') -ccontains $previous.Sections.Schedule.Status) {
+                $previousSchedule = $previous.Sections.Schedule
+            }
+        } catch { $previousSchedule = $null }
+    }
+    $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination
+    if ($summary.Exported -ne $true) { return $summary }
+    # A Flaim-only export cannot replace the last verified NBA source snapshot.
+    # The public NBA updater decides whether it can refresh it or retain its old time.
+    if ($null -ne $previousSchedule) {
+        $fresh = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
+        $fresh.Sections.Schedule = $previousSchedule
+        $carryPath = $Destination + '.' + [Guid]::NewGuid().ToString('N') + '.tmp'
+        try {
+            [IO.File]::WriteAllText($carryPath,(ConvertTo-Json -InputObject $fresh -Depth 24),[Text.UTF8Encoding]::new($false))
+            [IO.File]::Replace($carryPath,$Destination,[Management.Automation.Language.NullString]::Value)
+        } finally { if ([IO.File]::Exists($carryPath)) { [IO.File]::Delete($carryPath) } }
+    }
+    $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
+    # These public-data subprocesses inherit no Flaim or GitHub credential variables.
+    $node = Get-Command node.exe -CommandType Application -ErrorAction Stop
+    $diagnostics = & $node.Source (Join-Path $root 'scripts\update-nba-schedule.mjs') $Destination 2>&1
+    if ($LASTEXITCODE -ne 0) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $diagnostics = & $node.Source (Join-Path $root 'scripts\check-dashboard.mjs') $Destination 2>&1
+    if ($LASTEXITCODE -ne 0) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $document = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
+    $sectionErrors = @($document.Sections.PSObject.Properties | Where-Object { $_.Value.Status -ne 'ok' } | ForEach-Object { $_.Name })
+    $diagnostics = $null
+    return [pscustomobject]@{ Exported=$true; PlayerCount=$summary.PlayerCount; SectionErrors=$sectionErrors }
+}
+function Publish-FlaimPublicFile {
+    param([string]$RelativePath, [byte[]]$Bytes, [Security.SecureString]$RepositoryToken)
+    if (@('data/dashboard.json','data/team.json') -cnotcontains $RelativePath) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $endpoint = 'repos/iverson761011-web/raybookdown/contents/' + $RelativePath
+    $sha = Invoke-FlaimGh -GhArguments @('api',$endpoint,'--jq','.sha') -Token $RepositoryToken -ReturnOutput
+    if ($sha -cnotmatch '^[0-9a-f]{40}$') { Stop-FlaimCloudFailure 'InvalidCloudResponse' }
+    if ($Bytes.Length -gt 1048576) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $body = @{ message = 'Update RayBookDown public dashboard data'; branch = 'main'; sha = $sha; content = [Convert]::ToBase64String($Bytes) }
+    $json = ConvertTo-Json -InputObject $body -Compress
+    $null = Invoke-FlaimGh -GhArguments @('api','--method','PUT',$endpoint,'--input','-') -Token $RepositoryToken -InputText $json
 }
 function Publish-FlaimScheduledData {
     param([string]$Path, [Security.SecureString]$RepositoryToken)
-    $sha = Invoke-FlaimGh -GhArguments @('api','repos/iverson761011-web/raybookdown/contents/data/team.json','--jq','.sha') -Token $RepositoryToken -ReturnOutput
-    if ($sha -cnotmatch '^[0-9a-f]{40}$') { Stop-FlaimCloudFailure 'InvalidCloudResponse' }
     $bytes = [IO.File]::ReadAllBytes($Path)
-    if ($bytes.Length -gt 1048576) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
-    $body = @{ message = 'Update RayBookDown team snapshot'; branch = 'main'; sha = $sha; content = [Convert]::ToBase64String($bytes) }
-    $json = ConvertTo-Json -InputObject $body -Compress
-    $null = Invoke-FlaimGh -GhArguments @('api','--method','PUT','repos/iverson761011-web/raybookdown/contents/data/team.json','--input','-') -Token $RepositoryToken -InputText $json
+    Publish-FlaimPublicFile 'data/dashboard.json' $bytes $RepositoryToken
+    # Keep the previous roster-only endpoint compatible when a fresh roster exists.
+    $dashboard = ConvertFrom-Json -InputObject ([Text.Encoding]::UTF8.GetString($bytes)) -ErrorAction Stop
+    if ($dashboard.Sections.Roster.Status -ceq 'ok') {
+        $rules = $dashboard.Sections.Rules.Data
+        $players = @($dashboard.Sections.Roster.Data.Players | ForEach-Object {
+            $eligible = $null
+            if ($null -ne $_.EligiblePositions) { $eligible = @($_.EligiblePositions) -join ', ' }
+            [pscustomobject]@{ Player=$_.Player; Position=$_.Position; Status=$_.Status; EligiblePositions=$eligible }
+        })
+        $legacy = [ordered]@{
+            SchemaVersion=1; Connected=$true; DataRead=$true; League=$dashboard.League; Team=$dashboard.Team
+            Platform=$dashboard.Platform; Season=$dashboard.Season; ScoringFormat=$null; ScoringType=$null; TeamCount=$null
+            PlayerCount=$players.Count; NamedPlayerCount=@($players | Where-Object { $null -ne $_.Player }).Count
+            Players=$players; RetrievedAtUtc=$dashboard.Sections.Roster.RetrievedAtUtc
+        }
+        if ($null -ne $rules) { $legacy.ScoringFormat=$rules.ScoringFormat; $legacy.ScoringType=$rules.ScoringType; $legacy.TeamCount=$rules.TeamCount }
+        $legacyBytes = [Text.UTF8Encoding]::new($false).GetBytes((ConvertTo-Json -InputObject $legacy -Depth 12))
+        Publish-FlaimPublicFile 'data/team.json' $legacyBytes $RepositoryToken
+    }
 }
 
 function Invoke-FlaimScheduledSync {
@@ -44,7 +102,7 @@ function Invoke-FlaimScheduledSync {
         if ($RefreshToken.Length -le 0 -or $WriterToken.Length -le 0 -or $RepositoryToken.Length -le 0) {
             Stop-FlaimCloudFailure 'InvalidCredential'
         }
-        $target = [IO.Path]::GetFullPath((Join-Path $Root 'data\team.json'))
+        $target = [IO.Path]::GetFullPath((Join-Path $Root 'data\dashboard.json'))
         if (-not [IO.File]::Exists($target)) { Stop-FlaimCloudFailure 'SnapshotFileMissing' }
         # Verify the writer can save state BEFORE consuming a rotating refresh token.
         Set-FlaimEnvironmentSecret 'FLAIM_REFRESH_TOKEN' $RefreshToken $WriterToken
@@ -66,6 +124,8 @@ function Invoke-FlaimScheduledSync {
         Publish-FlaimScheduledData $target $RepositoryToken
         return [pscustomobject]@{
             Synced = $true; CredentialStateSaved = $true; PlayerCount = $export.PlayerCount
+            DataQuality = $(if ($null -ne $export.PSObject.Properties['SectionErrors'] -and @($export.SectionErrors).Count -gt 0) { 'partial' } else { 'complete' })
+            SectionWarnings = $(if ($null -ne $export.PSObject.Properties['SectionErrors']) { @($export.SectionErrors) } else { @() })
             ErrorType = $null; NextAction = 'Complete'
         }
     }
@@ -106,6 +166,7 @@ try {
     $env:FLAIM_REFRESH_TOKEN = $null
     $env:FLAIM_SECRET_WRITER = $null
     $env:GITHUB_TOKEN = $null
+    $env:GH_TOKEN = $null
     $result = Invoke-FlaimScheduledSync $refresh $writer $repositoryToken $RepositoryRoot
     $result | Format-List
     if (-not $result.Synced) { exit 1 }
