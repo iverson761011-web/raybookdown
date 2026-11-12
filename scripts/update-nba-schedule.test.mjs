@@ -43,6 +43,22 @@ test('game-card feeds preserve good games while marking malformed rows as incomp
   assert.equal(result.verified, false);
   assert.equal(result.games.length, 1);
 });
+test('observed NBA GameCard schema reads gameTimeUtc only when it includes a timezone', () => {
+  // Field names match the successful public NBA page probe; values are test fixtures.
+  const cardData = {
+    gameId: '0022600227', leagueId: '00', seasonYear: '2026', seasonType: 'Regular Season', dailyGameRank: 1,
+    homeTeam: { teamCity: 'Philadelphia', teamName: '76ers' }, awayTeam: { teamCity: 'Toronto', teamName: 'Raptors' },
+    gameTimeEastern: '2026-11-12T19:00:00', gameTimeUtc: '2026-11-13T00:00:00Z',
+    gameDetailsHeader: {}, shareUrl: 'https://www.nba.com/game/0022600227',
+  };
+  const wrap = value => '<script id="__NEXT_DATA__">' + JSON.stringify({ query: { date: '2026-11-12' }, props: { pageProps: { gameCardFeed: { modules: [{ cards: [{ cardType: 'GameCard', cardData: value }] }] } } } }) + '</script>';
+  const parsed = parseDailyHtml(wrap(cardData), '2026-11-12');
+  assert.equal(parsed.verified, true);
+  assert.equal(parsed.games[0].StartAtTaipei, '2026-11-13T08:00:00+08:00');
+  assert.deepEqual(parsed.games[0].Teams, ['Toronto Raptors', 'Philadelphia 76ers']);
+  const unknownTime = parseDailyHtml(wrap({ ...cardData, gameTimeUtc: '2026-11-13T00:00:00' }), '2026-11-12');
+  assert.deepEqual(unknownTime, { verified: false, games: [] });
+});
 test('conflicting containers never turn a populated schedule into a verified empty day', () => {
   const html = '<script id="__NEXT_DATA__">' + JSON.stringify({ query: { date: '2026-11-12' }, props: { pageProps: { games: [], scoreboard: { games: [game()] } } } }) + '</script>';
   const result = parseDailyHtml(html, '2026-11-12');

@@ -54,7 +54,8 @@ function teamName(team) {
   return name.toLowerCase().startsWith(city.toLowerCase() + ' ') ? name : `${city} ${name}`;
 }
 function utcStart(game) {
-  for (const key of ['gameDateTimeUTC', 'startDate', 'gameTimeUTC', 'gameTime']) {
+  // NBA's public GameCard feed uses gameTimeUtc (not the CDN's UTC spelling).
+  for (const key of ['gameDateTimeUTC', 'startDate', 'gameTimeUtc', 'gameTimeUTC', 'gameTime']) {
     const value = game[key];
     if (typeof value === 'string' && ISO_OFFSET.test(value) && Number(value.slice(0, 4)) >= 2000) {
       const date = new Date(value);
