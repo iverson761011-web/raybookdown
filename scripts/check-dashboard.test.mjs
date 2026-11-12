@@ -33,6 +33,12 @@ test('zero budget and unknown budget remain different', () => {
   raw.Sections.Budget.Data.FaabBalance = null;
   assert.equal(normalizeDashboard(raw).Sections.Budget.Data.FaabBalance, null);
 });
+test('missing transaction player names remain unknown without rejecting other data', () => {
+  const raw = fixture(); raw.Sections.Transactions.Data.Rows[0].Dropped = [null];
+  assert.deepEqual(normalizeDashboard(raw).Sections.Transactions.Data.Rows[0].Dropped, [null]);
+  raw.Sections.Schedule.Data.Games[0].Teams[0] = null;
+  assert.throws(() => normalizeDashboard(raw));
+});
 test('failed section has unknown data and no false successful read time', () => {
   const raw = fixture();
   raw.Sections.Market.Status = 'error'; raw.Sections.Market.Data = null;

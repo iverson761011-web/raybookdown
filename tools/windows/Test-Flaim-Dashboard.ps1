@@ -145,6 +145,31 @@ Test-FDDCase 'Every successful section has its own read time and unknown source 
         Assert-FDDTest ($section.Status -ceq 'ok' -and $section.RetrievedAtUtc -match '^\d{4}-' -and $null -eq $section.SourceUpdatedAtUtc)
     }
 }
+Test-FDDCase 'Actual PowerShell JSON satisfies the browser Node dashboard contract' {
+    $repositoryRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
+    $validatorPath=Join-Path $repositoryRoot 'scripts\check-dashboard.mjs'
+    $nodeCommand=Get-Command node.exe -CommandType Application -ErrorAction Stop
+    $process=$null;$outTask=$null;$errorTask=$null
+    try {
+        $start=[Diagnostics.ProcessStartInfo]::new()
+        $start.FileName=$nodeCommand.Source
+        $start.Arguments='"'+$validatorPath+'" "'+$outputFile+'"'
+        $start.WorkingDirectory=$repositoryRoot
+        $start.UseShellExecute=$false;$start.CreateNoWindow=$true
+        $start.RedirectStandardOutput=$true;$start.RedirectStandardError=$true
+        $process=[Diagnostics.Process]::new();$process.StartInfo=$start
+        [void]$process.Start()
+        $outTask=$process.StandardOutput.ReadToEndAsync()
+        $errorTask=$process.StandardError.ReadToEndAsync()
+        $finished=$process.WaitForExit(30000)
+        if (-not $finished) {try {$process.Kill()} catch {}}
+        Assert-FDDTest $finished
+        # Consume diagnostics without forwarding source data or child output.
+        $null=$outTask.GetAwaiter().GetResult();$null=$errorTask.GetAwaiter().GetResult()
+        Assert-FDDTest ($process.ExitCode -eq 0)
+    }
+    finally {if ($null -ne $process) {$process.Dispose()};$outTask=$null;$errorTask=$null}
+}
 $access.Dispose();$refresh.Dispose()
 # Remove only individual test files and then the known empty test directory.
 Get-ChildItem -LiteralPath $testFolder -File | ForEach-Object {[IO.File]::Delete($_.FullName)}

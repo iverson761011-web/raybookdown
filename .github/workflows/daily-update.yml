@@ -7,6 +7,11 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - 'tests/**'
+      - 'index.html'
+      - 'dashboard*.mjs'
+      - 'data/dashboard.json'
+      - 'scripts/**'
       - 'data/team.json'
       - 'scripts/check-snapshot.mjs'
       - 'scripts/check-snapshot.test.mjs'
@@ -14,6 +19,11 @@ on:
       - 'tools/windows/**'
   pull_request:
     paths:
+      - 'tests/**'
+      - 'index.html'
+      - 'dashboard*.mjs'
+      - 'data/dashboard.json'
+      - 'scripts/**'
       - 'data/team.json'
       - 'scripts/check-snapshot.mjs'
       - 'scripts/check-snapshot.test.mjs'
@@ -37,15 +47,31 @@ jobs:
         run: node scripts/check-snapshot.mjs data/team.json
       - name: Test snapshot validation
         run: node --test scripts/check-snapshot.test.mjs
+      - name: Validate all dashboard sections
+        run: node scripts/check-dashboard.mjs data/dashboard.json
+      - name: Test dashboard and NBA source validation
+        run: node --test scripts/check-dashboard.test.mjs scripts/update-nba-schedule.test.mjs
+      - name: Test all dashboard views and refresh behavior
+        run: node scripts/check-dashboard-view.mjs
+      - name: Probe public NBA source without credentials
+        run: node scripts/update-nba-schedule.mjs data/dashboard.json
+      - name: Validate public-source probe output
+        run: node scripts/check-dashboard.mjs data/dashboard.json
   cloud-tests:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
       - name: Test refresh-state sequencing with synthetic credentials
         shell: powershell
-        run: '& .\tools\windows\Test-Flaim-Cloud.ps1'
+        run: |
+          & .\tools\windows\Test-Flaim-Cloud.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & .\tools\windows\Test-Flaim-Dashboard.ps1
   sync:
     needs: [check, cloud-tests]
     if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
@@ -61,6 +87,9 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
       - name: Refresh, persist rotating credentials, and publish sanitized roster
         shell: powershell
         env:
