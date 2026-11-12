@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { normalizeOfficialGame, parseLeagueSchedule, parseDailyHtml, officialUrl, fetchOfficialText, collectSchedule, buildScheduleSection, updateDashboard, taipeiDate } from './update-nba-schedule.mjs';
+import { normalizeOfficialGame, parseLeagueSchedule, parseDailyHtml, describeDailySchema, officialUrl, fetchOfficialText, collectSchedule, buildScheduleSection, updateDashboard, taipeiDate } from './update-nba-schedule.mjs';
 
 const game = (utc = '2026-11-13T00:00:00Z', id = '0022600001') => ({
   gameId: id, gameDateTimeUTC: utc,
@@ -67,6 +67,23 @@ test('fetch never follows a redirect to a non-official host', async () => {
 test('fetch bounds successful responses before accepting their content', async () => {
   await assert.rejects(fetchOfficialText('https://www.nba.com/games', { fetchImpl: async () => new Response('ignored', { headers: { 'content-length': String(13 * 1024 * 1024) } }) }));
   assert.equal(await fetchOfficialText('https://www.nba.com/games', { fetchImpl: async () => new Response('valid') }), 'valid');
+});
+test('safe diagnostics distinguish HTTP refusal from parser schema without printing body values', async () => {
+  const events = [];
+  await assert.rejects(fetchOfficialText('https://www.nba.com/games', { onDiagnostic: event => events.push(event), fetchImpl: async () => new Response('private body value', { status: 403 }) }));
+  assert.deepEqual(events, [{ Phase: 'http', HttpStatus: 403 }]);
+  const html = '<script id="__NEXT_DATA__">' + JSON.stringify({ query: { date: '2026-11-12' }, props: { pageProps: { unexpectedContainer: { body: 'do not print this value' } } } }) + '</script>';
+  const schema = describeDailySchema(html, '2026-11-12');
+  assert.deepEqual(schema.PagePropKeys, ['unexpectedContainer']);
+  assert.equal(schema.QueryDateMatches, true);
+  assert.equal(JSON.stringify(schema).includes('do not print'), false);
+});
+test('source exception diagnostics use fixed codes instead of raw error messages', async () => {
+  const events = [];
+  await collectSchedule({ startDate: '2026-11-13', days: 1, seasonYear: 2026, onDiagnostic: event => events.push(event), fetchText: async () => { throw new Error('private diagnostic value'); } });
+  assert.equal(events.length, 4);
+  assert(events.every(event => event.ErrorType === 'OfficialFetchFailed'));
+  assert.equal(JSON.stringify(events).includes('private diagnostic'), false);
 });
 test('a Taipei date requires coverage of both overlapping Eastern dates', async () => {
   const fetchText = async url => {

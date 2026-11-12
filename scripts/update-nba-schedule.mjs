@@ -157,13 +157,14 @@ export function parseDailyHtml(html, requestedDate) {
   }
   return { verified: false, games };
 }
-export async function fetchOfficialText(value, { fetchImpl = fetch, timeoutMs = 12000 } = {}) {
+export async function fetchOfficialText(value, { fetchImpl = fetch, timeoutMs = 12000, onDiagnostic = () => {} } = {}) {
   let url = officialUrl(value);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     for (let redirects = 0; redirects <= 3; redirects++) {
       const response = await fetchImpl(url, { redirect: 'manual', credentials: 'omit', referrerPolicy: 'no-referrer', signal: controller.signal, headers: { Accept: 'application/json,text/html;q=0.9', 'User-Agent': 'RayBookDown-Schedule/1.0' } });
+      onDiagnostic({ Phase: 'http', HttpStatus: response.status });
       if (response.status >= 300 && response.status < 400) {
         const location = response.headers.get('location');
         if (!location || redirects === 3) problem('OfficialRedirectRejected');
@@ -199,27 +200,42 @@ function deduplicate(games) {
   }
   return [...map.values()].sort((a, b) => a.StartAtTaipei.localeCompare(b.StartAtTaipei) || a.SourceUrl.localeCompare(b.SourceUrl));
 }
-export async function collectSchedule({ startDate, days = 7, seasonYear, fetchText = fetchOfficialText }) {
+export function describeDailySchema(html, requestedDate) {
+  const keys = value => value && typeof value === 'object' ? Object.keys(value).filter(x => /^[A-Za-z0-9_]{1,60}$/.test(x)).slice(0, 40) : [];
+  const roots = scriptsFromHtml(html, /\bid\s*=\s*["']__NEXT_DATA__["']/i);
+  const root = roots[0];
+  const props = root?.props?.pageProps;
+  const module = props?.gameCardFeed?.modules?.[0];
+  const card = module?.cards?.[0];
+  return { NextDataScripts: roots.length, QueryDateMatches: root?.query?.date === requestedDate, QueryKeys: keys(root?.query), PagePropKeys: keys(props), FeedKeys: keys(props?.gameCardFeed), ModuleKeys: keys(module), CardKeys: keys(card), CardDataKeys: keys(card?.cardData), JsonLdScripts: scriptsFromHtml(html, /\btype\s*=\s*["']application\/ld\+json["']/i).length };
+}
+export async function collectSchedule({ startDate, days = 7, seasonYear, fetchText = fetchOfficialText, onDiagnostic = () => {} }) {
   calendarDate(startDate);
   if (!Number.isInteger(days) || days < 1 || days > 14 || !Number.isInteger(seasonYear)) problem('InvalidScheduleRange');
   const requestedDates = Array.from({ length: days }, (_, i) => addDays(startDate, i));
   // Each Taipei day overlaps the previous and same calendar day in New York.
   const easternDates = Array.from({ length: days + 1 }, (_, i) => addDays(startDate, i - 1));
   let dates = new Map();
+  const read = url => fetchText(url, { onDiagnostic: event => onDiagnostic({ Url: url, ...event }) });
   for (const url of CDN_SOURCES) {
     try {
-      dates = parseLeagueSchedule(JSON.parse(await fetchText(url)), seasonYear);
+      const document = JSON.parse(await read(url));
+      dates = parseLeagueSchedule(document, seasonYear);
+      onDiagnostic({ Url: url, Phase: 'parse', ErrorType: null, VerifiedDates: easternDates.filter(date => dates.get(date)?.verified).length });
       if (easternDates.every(date => dates.get(date)?.verified)) break;
-    } catch { /* Official access failures never become an empty schedule. */ }
+    } catch (error) { onDiagnostic({ Url: url, Phase: 'parse', ErrorType: error.safeCode ?? (error instanceof SyntaxError ? 'OfficialJsonInvalid' : 'OfficialFetchFailed') }); }
   }
   const missing = easternDates.filter(date => !dates.get(date)?.verified);
   for (let i = 0; i < missing.length; i += 3) {
     await Promise.all(missing.slice(i, i + 3).map(async date => {
+      const url = 'https://www.nba.com/games?date=' + date;
       try {
-        const result = parseDailyHtml(await fetchText('https://www.nba.com/games?date=' + date), date);
+        const html = await read(url);
+        const result = parseDailyHtml(html, date);
+        onDiagnostic({ Url: url, Phase: 'parse', ErrorType: result.verified ? null : 'OfficialDateCoverageUnverified', Games: result.games.length, Schema: describeDailySchema(html, date) });
         const previous = dates.get(date);
         dates.set(date, { verified: result.verified, games: deduplicate([...(previous?.games ?? []), ...result.games]) });
-      } catch { if (!dates.has(date)) dates.set(date, { verified: false, games: [] }); }
+      } catch (error) { onDiagnostic({ Url: url, Phase: 'parse', ErrorType: error.safeCode ?? 'OfficialFetchFailed' }); if (!dates.has(date)) dates.set(date, { verified: false, games: [] }); }
     }));
   }
   const games = deduplicate(easternDates.flatMap(date => dates.get(date)?.games ?? [])).filter(game => requestedDates.includes(game.StartAtTaipei.slice(0, 10)));
@@ -264,12 +280,13 @@ export function buildScheduleSection(result, { now = new Date(), previous = null
     },
   };
 }
-export async function updateDashboard(file, { now = new Date(), probe = false, fetchText = fetchOfficialText } = {}) {
+export async function updateDashboard(file, { now = new Date(), probe = false, diagnose = false, fetchText = fetchOfficialText } = {}) {
   const raw = await fs.readFile(file, 'utf8');
   if (Buffer.byteLength(raw) > 1048576) problem('InvalidDashboard');
   const dashboard = JSON.parse(raw.replace(/^\uFEFF/, ''));
   if (dashboard.SchemaVersion !== 2 || dashboard.League !== 'Funny League 2026-27' || dashboard.Team !== 'RayBookDown' || dashboard.Platform !== 'yahoo' || !dashboard.Sections || !Number.isInteger(dashboard.Season)) problem('InvalidDashboard');
-  const result = await collectSchedule({ startDate: taipeiDate(now), seasonYear: dashboard.Season, fetchText });
+  const diagnostics = [];
+  const result = await collectSchedule({ startDate: taipeiDate(now), seasonYear: dashboard.Season, fetchText, onDiagnostic: event => { if (diagnose) diagnostics.push(event); } });
   const section = buildScheduleSection(result, { now, previous: dashboard.Sections.Schedule });
   if (!probe) {
     dashboard.Sections.Schedule = section;
@@ -277,16 +294,17 @@ export async function updateDashboard(file, { now = new Date(), probe = false, f
     try { await fs.writeFile(temporary, JSON.stringify(dashboard, null, 2) + '\n', { flag: 'wx' }); await fs.rename(temporary, file); }
     finally { await fs.rm(temporary, { force: true }); }
   }
-  return { ScheduleUpdated: !probe, Status: section.Status, Games: section.Data?.Games.length ?? 0, UnknownDates: result.unavailableDates.length, RetrievedAtUtc: section.RetrievedAtUtc, CheckedAtUtc: section.CheckedAtUtc, ErrorType: section.ErrorType };
+  return { ScheduleUpdated: !probe, Status: section.Status, Games: section.Data?.Games.length ?? 0, UnknownDates: result.unavailableDates.length, RetrievedAtUtc: section.RetrievedAtUtc, CheckedAtUtc: section.CheckedAtUtc, ErrorType: section.ErrorType, ...(diagnose ? { Diagnostics: diagnostics } : {}) };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const args = process.argv.slice(2);
     const probe = args.includes('--probe');
+    const diagnose = args.includes('--diagnose');
     const file = args.find(x => !x.startsWith('--')) ?? 'data/dashboard.json';
-    if (args.some(x => x.startsWith('--') && x !== '--probe')) problem('InvalidArguments');
-    console.log(JSON.stringify(await updateDashboard(path.resolve(file), { probe })));
+    if (args.some(x => x.startsWith('--') && !['--probe', '--diagnose'].includes(x))) problem('InvalidArguments');
+    console.log(JSON.stringify(await updateDashboard(path.resolve(file), { probe, diagnose })));
   } catch (error) {
     const safe = new Set(['InvalidDashboard', 'InvalidScheduleRange', 'InvalidDate', 'InvalidArguments']);
     console.error(JSON.stringify({ ScheduleUpdated: false, ErrorType: safe.has(error.safeCode) ? error.safeCode : 'ScheduleUpdateFailed' }));

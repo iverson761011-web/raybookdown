@@ -54,7 +54,7 @@ jobs:
       - name: Test all dashboard views and refresh behavior
         run: node scripts/check-dashboard-view.mjs
       - name: Probe public NBA source without credentials
-        run: node scripts/update-nba-schedule.mjs data/dashboard.json
+        run: node scripts/update-nba-schedule.mjs data/dashboard.json --diagnose
       - name: Validate public-source probe output
         run: node scripts/check-dashboard.mjs data/dashboard.json
   cloud-tests:

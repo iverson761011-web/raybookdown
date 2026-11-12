@@ -10,8 +10,29 @@ function Update-FlaimScheduledSession {
 }
 function Export-FlaimScheduledData {
     param([object]$Session, [string]$Destination)
+    $previousSchedule = $null
+    if ([IO.File]::Exists($Destination)) {
+        try {
+            $previous = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
+            if ($previous.SchemaVersion -eq 2 -and $previous.League -ceq 'Funny League 2026-27' -and
+                $previous.Team -ceq 'RayBookDown' -and @('ok','partial') -ccontains $previous.Sections.Schedule.Status) {
+                $previousSchedule = $previous.Sections.Schedule
+            }
+        } catch { $previousSchedule = $null }
+    }
     $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination
     if ($summary.Exported -ne $true) { return $summary }
+    # A Flaim-only export cannot replace the last verified NBA source snapshot.
+    # The public NBA updater decides whether it can refresh it or retain its old time.
+    if ($null -ne $previousSchedule) {
+        $fresh = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
+        $fresh.Sections.Schedule = $previousSchedule
+        $carryPath = $Destination + '.' + [Guid]::NewGuid().ToString('N') + '.tmp'
+        try {
+            [IO.File]::WriteAllText($carryPath,(ConvertTo-Json -InputObject $fresh -Depth 24),[Text.UTF8Encoding]::new($false))
+            [IO.File]::Replace($carryPath,$Destination,[Management.Automation.Language.NullString]::Value)
+        } finally { if ([IO.File]::Exists($carryPath)) { [IO.File]::Delete($carryPath) } }
+    }
     $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
     # These public-data subprocesses inherit no Flaim or GitHub credential variables.
     $node = Get-Command node.exe -CommandType Application -ErrorAction Stop
