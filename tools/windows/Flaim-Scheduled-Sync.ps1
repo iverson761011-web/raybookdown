@@ -17,13 +17,26 @@ function Invoke-FlaimPublicNode {
     $start.Arguments = '"' + $ScriptPath + '" "' + $DataPath + '"'
     $start.UseShellExecute = $false
     $start.CreateNoWindow = $true
+    $start.WorkingDirectory = [IO.Path]::GetDirectoryName($ScriptPath)
+    $start.RedirectStandardInput = $true
     $start.RedirectStandardOutput = $true
     $start.RedirectStandardError = $true
     foreach ($name in @('FLAIM_REFRESH_TOKEN','FLAIM_SECRET_WRITER','GITHUB_TOKEN','GH_TOKEN','NODE_OPTIONS')) { $start.EnvironmentVariables.Remove($name) }
     $process = [Diagnostics.Process]::new()
     try {
         $process.StartInfo = $start
-        [void]$process.Start()
+        try { [void]$process.Start() }
+        catch {
+            $launchFailure = [InvalidOperationException]::new('Public Node process could not start.')
+            $launchFailure.Data['CloudKind'] = 'NodeLaunchFailed'
+            $deep = $_.Exception
+            while ($null -ne $deep.InnerException) { $deep = $deep.InnerException }
+            if ($deep -is [ComponentModel.Win32Exception]) { $launchFailure.Data['NativeErrorCode'] = $deep.NativeErrorCode }
+            $launchFailure.Data['NodeExecutableExists'] = [IO.File]::Exists($start.FileName)
+            $launchFailure.Data['NodeCommandType'] = $node.CommandType.ToString()
+            throw $launchFailure
+        }
+        $process.StandardInput.Close()
         $output = $process.StandardOutput.ReadToEndAsync()
         $diagnostics = $process.StandardError.ReadToEndAsync()
         if (-not $process.WaitForExit(180000)) {
@@ -175,7 +188,7 @@ function Invoke-FlaimScheduledSync {
         $allowed = @('UnsupportedRuntime','CloudSetupRequired','InvalidCredential','SnapshotFileMissing','GitHubCliMissing',
             'InvalidCloudRequest','GitHubCommandTimeout','GitHubCommandFailed','InvalidCloudResponse','InvalidSnapshot',
             'RefreshFailed','RefreshPersistenceFailed','DataExportFailed')
-        $allowed += @('NodeCommandTimeout','ScheduleUpdateFailed','DashboardValidationFailed')
+        $allowed += @('NodeCommandTimeout','NodeLaunchFailed','ScheduleUpdateFailed','DashboardValidationFailed')
         if ($allowed -ccontains $_.Exception.Data['CloudKind']) { $kind = [string]$_.Exception.Data['CloudKind'] }
         $next = 'ReportSafeSummary'
         if ($kind -eq 'CloudSetupRequired') { $next = 'ConfigureCloudSecrets' }
@@ -185,6 +198,7 @@ function Invoke-FlaimScheduledSync {
             FailureStage = $stage; ExceptionType = $_.Exception.GetType().FullName
             FailureFile = [IO.Path]::GetFileName($_.InvocationInfo.ScriptName); FailureLine = $_.InvocationInfo.ScriptLineNumber
             InvalidSections = $_.Exception.Data['InvalidSections']
+            NativeErrorCode = $_.Exception.Data['NativeErrorCode']; NodeExecutableExists = $_.Exception.Data['NodeExecutableExists']; NodeCommandType = $_.Exception.Data['NodeCommandType']
             ErrorType = $kind; NextAction = $next
         }
     }

@@ -90,6 +90,17 @@ jobs:
       - uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
+      - name: Verify public Node runtime before loading credentials
+        shell: powershell
+        run: |
+          . .\tools\windows\Flaim-GitHub-Common.ps1
+          $parseTokens = $null; $parseErrors = $null
+          $runtimeAst = [Management.Automation.Language.Parser]::ParseFile((Join-Path $PWD.Path 'tools\windows\Flaim-Scheduled-Sync.ps1'),[ref]$parseTokens,[ref]$parseErrors)
+          if ($parseErrors.Count) { throw 'RuntimeSyntaxFailed' }
+          foreach ($statement in $runtimeAst.EndBlock.Statements) {
+            if ($statement -is [Management.Automation.Language.FunctionDefinitionAst] -and $statement.Name -eq 'Invoke-FlaimPublicNode') { . ([scriptblock]::Create($statement.Extent.Text)) }
+          }
+          Invoke-FlaimPublicNode (Join-Path $PWD.Path 'scripts\check-dashboard.mjs') (Join-Path $PWD.Path 'data\dashboard.json') 'DashboardValidationFailed'
       - name: Refresh, persist rotating credentials, and publish sanitized roster
         shell: powershell
         env:
