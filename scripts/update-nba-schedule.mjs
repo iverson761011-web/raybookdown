@@ -65,7 +65,7 @@ function utcStart(game) {
   problem('GameTimeUnknown');
 }
 export function normalizeOfficialGame(raw, expectedEasternDate, sourceUrl) {
-  if (!raw || typeof raw !== 'object' || /\bTBD\b/i.test(String(raw.gameStatusText ?? ''))) problem('GameTimeUnknown');
+  if (!raw || typeof raw !== 'object' || /\bTBD\b|postpon|cancel|suspend|\bPPD\b/i.test(String(raw.gameStatusText ?? ''))) problem('GameTimeUnknown');
   const start = utcStart(raw);
   if (easternDate(start) !== calendarDate(expectedEasternDate)) problem('OfficialDateMismatch');
   const teams = [teamName(raw.awayTeam), teamName(raw.homeTeam)];

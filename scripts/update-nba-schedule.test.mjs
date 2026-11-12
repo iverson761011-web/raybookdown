@@ -25,6 +25,14 @@ test('Eastern date is checked across daylight-saving transitions', () => {
   assert.equal(normalizeOfficialGame(game('2026-11-01T06:30:00Z'), '2026-11-01').StartAtTaipei, '2026-11-01T14:30:00+08:00');
   assert.throws(() => normalizeOfficialGame(game(), '2026-11-13'));
 });
+
+test('postponed canceled and suspended games never count as verified scheduled opportunities', () => {
+  for (const status of ['PPD', 'Postponed', 'Canceled', 'Suspended']) {
+    const raw = { ...game(), gameStatusText: status };
+    assert.throws(() => normalizeOfficialGame(raw, '2026-11-12'));
+    assert.deepEqual(parseDailyHtml(daily('2026-11-12', [raw]), '2026-11-12'), { verified: false, games: [] });
+  }
+});
 test('official season and date containers are validated, absent dates remain unknown', () => {
   const dates = parseLeagueSchedule({ leagueSchedule: { seasonYear: '2026-27', gameDates: [{ gameDate: '11/12/2026 00:00:00', games: [game()] }, { gameDate: '11/13/2026', games: [] }] } }, 2026);
   assert.equal(dates.get('2026-11-12').verified, true);

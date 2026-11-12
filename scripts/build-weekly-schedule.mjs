@@ -26,6 +26,8 @@ const normalized = v=>typeof v==='string'?v.trim().replace(/\s+/g,' ').toUpperCa
 const teamByName = new Map(TEAM_CATALOG.map(t=>[normalized(t.Team),t]));
 teamByName.set('LOS ANGELES CLIPPERS',teamByCode.get('LAC'));
 teamByName.set('LA LAKERS',teamByCode.get('LAL'));
+// NBA GameCard's current public feed can omit teamCity and send only these exact nicknames.
+for(const [code,nickname] of Object.entries({ATL:'Hawks',BOS:'Celtics',BKN:'Nets',CHA:'Hornets',CHI:'Bulls',CLE:'Cavaliers',DAL:'Mavericks',DEN:'Nuggets',DET:'Pistons',GSW:'Warriors',HOU:'Rockets',IND:'Pacers',LAC:'Clippers',LAL:'Lakers',MEM:'Grizzlies',MIA:'Heat',MIL:'Bucks',MIN:'Timberwolves',NOP:'Pelicans',NYK:'Knicks',OKC:'Thunder',ORL:'Magic',PHI:'76ers',PHX:'Suns',POR:'Trail Blazers',SAC:'Kings',SAS:'Spurs',TOR:'Raptors',UTA:'Jazz',WAS:'Wizards'}))teamByName.set(normalized(nickname),teamByCode.get(code));
 const DATE=/^\d{4}-\d{2}-\d{2}$/;
 const START=/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,7})?\+08:00$/;
 const DAY=86400000;

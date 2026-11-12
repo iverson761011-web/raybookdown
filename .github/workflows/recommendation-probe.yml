@@ -21,7 +21,7 @@ jobs:
       - run: node --test scripts/collect-recommendation-evidence.test.mjs
       - run: python3 -m pip install -r scripts/requirements-injuries.txt
       - run: python3 -m unittest discover -s scripts -p test_parse_nba_injuries.py
-      - run: node scripts/collect-recommendation-evidence.mjs --probe --date=2026-11-11
+      - run: node scripts/collect-recommendation-evidence.mjs --probe --date=2026-11-03
       - run: node scripts/collect-recommendation-evidence.mjs --dashboard=data/dashboard.json --history-days=30
       - run: node scripts/build-weekly-schedule.mjs data/dashboard.json
       - name: Save verified public evidence for feature review
