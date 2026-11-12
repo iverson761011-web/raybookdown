@@ -58,7 +58,7 @@ jobs:
       - name: Validate public-source probe output
         run: node scripts/check-dashboard.mjs data/dashboard.json
   cloud-tests:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v7.0.1
         with:
