@@ -6,6 +6,17 @@ import { invalidDashboardSections } from './check-dashboard.mjs';
 
 const base = JSON.parse(await readFile(new URL('../tests/fixtures/dashboard.json', import.meta.url), 'utf8'));
 const fixture = () => structuredClone(base);
+
+test('Yahoo undroppable flags are optional tri-state booleans', () => {
+  const raw = fixture();
+  assert.equal(normalizeDashboard(raw).Sections.Roster.Data.Players[0].IsUndroppable, null);
+  for (const value of [true, false, null]) {
+    raw.Sections.Roster.Data.Players[0].IsUndroppable = value;
+    assert.equal(normalizeDashboard(raw).Sections.Roster.Data.Players[0].IsUndroppable, value);
+  }
+  raw.Sections.Roster.Data.Players[0].IsUndroppable = 'false';
+  assert.throws(() => normalizeDashboard(raw));
+});
 test('validation diagnostics expose only fixed section names, never source values', () => {
   const raw = fixture();
   assert.deepEqual(invalidDashboardSections(raw), []);

@@ -77,7 +77,8 @@ function Export-FlaimScheduledData {
             }
         } catch { $previousSchedule = $null }
     }
-    $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination
+    $historyPath = Join-Path ([IO.Path]::GetDirectoryName($Destination)) 'matchup-history.json'
+    $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination -HistoryOutputPath $historyPath
     if ($summary.Exported -ne $true) { return $summary }
     # A Flaim-only export cannot replace the last verified NBA source snapshot.
     # The public NBA updater decides whether it can refresh it or retain its old time.
@@ -93,6 +94,8 @@ function Export-FlaimScheduledData {
     $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
     # These public-data subprocesses inherit no Flaim or GitHub credential variables.
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\update-nba-schedule.mjs') $Destination 'ScheduleUpdateFailed'
+    Invoke-FlaimPublicNode (Join-Path $root 'scripts\build-weekly-schedule.mjs') $Destination 'WeeklyScheduleBuildFailed'
+    Invoke-FlaimPublicNode (Join-Path $root 'scripts\build-recommendations.mjs') $Destination 'RecommendationBuildFailed'
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\check-dashboard.mjs') $Destination 'DashboardValidationFailed'
     $document = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
     $sectionErrors = @($document.Sections.PSObject.Properties | Where-Object { $_.Value.Status -ne 'ok' } | ForEach-Object { $_.Name })
@@ -100,11 +103,14 @@ function Export-FlaimScheduledData {
 }
 function Publish-FlaimPublicFile {
     param([string]$RelativePath, [byte[]]$Bytes, [Security.SecureString]$RepositoryToken)
-    if (@('data/dashboard.json','data/team.json') -cnotcontains $RelativePath) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $publicPaths = @('data/dashboard.json','data/team.json','data/matchup-history.json','data/team-week-schedule.json','data/recommendations.json','data/recommendation-evidence.json','data/recommendation-history.json')
+    if ($publicPaths -cnotcontains $RelativePath) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
     $endpoint = 'repos/iverson761011-web/raybookdown/contents/' + $RelativePath
-    $sha = Invoke-FlaimGh -GhArguments @('api',$endpoint,'--jq','.sha') -Token $RepositoryToken -ReturnOutput
+    $sha = Invoke-FlaimGh -GhArguments @('api',$endpoint,'-H','Accept:application/vnd.github.object+json','--jq','.sha') -Token $RepositoryToken -ReturnOutput
     if ($sha -cnotmatch '^[0-9a-f]{40}$') { Stop-FlaimCloudFailure 'InvalidCloudResponse' }
-    if ($Bytes.Length -gt 1048576) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    $limit = 1048576
+    if ($RelativePath -ceq 'data/recommendation-history.json') { $limit = 8388608 }
+    if ($Bytes.Length -gt $limit) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
     $body = @{ message = 'Update RayBookDown public dashboard data'; branch = 'main'; sha = $sha; content = [Convert]::ToBase64String($Bytes) }
     $json = ConvertTo-Json -InputObject $body -Compress
     $null = Invoke-FlaimGh -GhArguments @('api','--method','PUT',$endpoint,'--input','-') -Token $RepositoryToken -InputText $json
@@ -113,6 +119,11 @@ function Publish-FlaimScheduledData {
     param([string]$Path, [Security.SecureString]$RepositoryToken)
     $bytes = [IO.File]::ReadAllBytes($Path)
     Publish-FlaimPublicFile 'data/dashboard.json' $bytes $RepositoryToken
+    $folder = [IO.Path]::GetDirectoryName($Path)
+    foreach ($name in @('matchup-history.json','team-week-schedule.json','recommendations.json','recommendation-evidence.json','recommendation-history.json')) {
+        $extra = Join-Path $folder $name
+        if ([IO.File]::Exists($extra)) { Publish-FlaimPublicFile ('data/' + $name) ([IO.File]::ReadAllBytes($extra)) $RepositoryToken }
+    }
     # Keep the previous roster-only endpoint compatible when a fresh roster exists.
     $dashboard = ConvertFrom-Json -InputObject ([Text.Encoding]::UTF8.GetString($bytes)) -ErrorAction Stop
     if ($dashboard.Sections.Roster.Status -ceq 'ok') {
@@ -192,7 +203,7 @@ function Invoke-FlaimScheduledSync {
         $allowed = @('UnsupportedRuntime','CloudSetupRequired','InvalidCredential','SnapshotFileMissing','GitHubCliMissing',
             'InvalidCloudRequest','GitHubCommandTimeout','GitHubCommandFailed','InvalidCloudResponse','InvalidSnapshot',
             'RefreshFailed','RefreshPersistenceFailed','DataExportFailed')
-        $allowed += @('NodeCommandTimeout','NodeLaunchFailed','ScheduleUpdateFailed','DashboardValidationFailed')
+        $allowed += @('NodeCommandTimeout','NodeLaunchFailed','ScheduleUpdateFailed','DashboardValidationFailed','WeeklyScheduleBuildFailed','RecommendationBuildFailed')
         if ($allowed -ccontains $_.Exception.Data['CloudKind']) { $kind = [string]$_.Exception.Data['CloudKind'] }
         $next = 'ReportSafeSummary'
         if ($kind -eq 'CloudSetupRequired') { $next = 'ConfigureCloudSecrets' }

@@ -25,6 +25,14 @@ test('Eastern date is checked across daylight-saving transitions', () => {
   assert.equal(normalizeOfficialGame(game('2026-11-01T06:30:00Z'), '2026-11-01').StartAtTaipei, '2026-11-01T14:30:00+08:00');
   assert.throws(() => normalizeOfficialGame(game(), '2026-11-13'));
 });
+
+test('postponed canceled and suspended games never count as verified scheduled opportunities', () => {
+  for (const status of ['PPD', 'Postponed', 'Canceled', 'Suspended']) {
+    const raw = { ...game(), gameStatusText: status };
+    assert.throws(() => normalizeOfficialGame(raw, '2026-11-12'));
+    assert.deepEqual(parseDailyHtml(daily('2026-11-12', [raw]), '2026-11-12'), { verified: false, games: [] });
+  }
+});
 test('official season and date containers are validated, absent dates remain unknown', () => {
   const dates = parseLeagueSchedule({ leagueSchedule: { seasonYear: '2026-27', gameDates: [{ gameDate: '11/12/2026 00:00:00', games: [game()] }, { gameDate: '11/13/2026', games: [] }] } }, 2026);
   assert.equal(dates.get('2026-11-12').verified, true);
@@ -36,6 +44,15 @@ test('a matching daily page with an explicit empty games collection verifies zer
   assert.deepEqual(parseDailyHtml(daily('2026-11-12', []), '2026-11-12'), { verified: true, games: [] });
   assert.deepEqual(parseDailyHtml(daily('2025-11-12', []), '2026-11-12'), { verified: false, games: [] });
   assert.deepEqual(parseDailyHtml('<html>NBA Games</html>', '2026-11-12'), { verified: false, games: [] });
+});
+test('the observed NBA empty-day message is evidence only with the selected date and successful page state', () => {
+  const date = '2026-11-03';
+  const page = ({ selectedDate = date, hasError = false, notice = '<main>No Games Scheduled</main>', modules = [] } = {}) =>
+    '<script id="__NEXT_DATA__">' + JSON.stringify({ query: { date }, props: { pageProps: { selectedDate, hasError, gameCardFeed: { modules } } } }) + '</script>' + notice;
+  assert.deepEqual(parseDailyHtml(page(), date), { verified: true, games: [] });
+  for (const html of [page({ notice: '' }), page({ notice: '<script>"No Games Scheduled"</script>' }), page({ notice: '<style>/* No Games Scheduled */</style>' }), page({ selectedDate: '2026-11-04' }), page({ hasError: true }), page({ modules: [{ cards: [] }] })]) {
+    assert.deepEqual(parseDailyHtml(html, date), { verified: false, games: [] });
+  }
 });
 test('game-card feeds preserve good games while marking malformed rows as incomplete', () => {
   const html = '<script id="__NEXT_DATA__">' + JSON.stringify({ query: { date: '2026-11-12' }, props: { pageProps: { gameCardFeed: { modules: [{ cards: [{ cardType: 'GameCard', cardData: game() }, { cardType: 'GameCard', cardData: { gameId: '0022600002' } }] }] } } } }) + '</script>';

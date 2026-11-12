@@ -4,7 +4,9 @@
 
 ## 已完成設定時升級
 
-先前已完成 `Configured=True` 的使用者，可沿用現有 GitHub 環境與憑證，**不用重新 OAuth 或重新建立 token**。合併新版後，手動執行一次 main 分支的 RayBookDown Daily Sync，再確認 `data/dashboard.json` 各區塊的讀取時間。網頁改為讀取完整儀表板 JSON，各來源失敗會顯示未知。
+本次加入每日補強、歷週結果與 30 隊週場次，仍沿用同一組已完成的雲端設定。每日 06:30 更新之外，12:00～18:00 每小時檢查 NBA 完賽狀態；只在來源已確認後產生報告。合併程式會自動執行首次同步，無須重新登入。新增公開 NBA 證據讀取在載入登入憑證前執行，更新憑證仍依原來順序立即保存。
+
+先前已完成 `Configured=True` 的使用者，可沿用現有 GitHub 環境與憑證，**不用重新 OAuth 或重新建立 token**。合併新版後會自動執行 main 分支的 RayBookDown Daily Sync，再確認 `data/dashboard.json` 及新增資料檔各自的讀取時間。網頁改為讀取完整儀表板 JSON，各來源失敗會顯示未知。
 
 ## 一次性準備
 
