@@ -21,6 +21,7 @@ MAX_BYTES = 12 * 1024 * 1024
 MAX_PAGES = 50
 MAX_TEXT = 2 * 1024 * 1024
 MAX_ROWS = 2000
+DIAGNOSTICS = {}
 
 # Team names are structural delimiters, never a player-to-team lookup. The
 # returned spelling is always the one printed in the report.
@@ -104,7 +105,13 @@ def player_name(value: str) -> str | None:
 def parse_text(text: str, expected_date: str, expected_time: str) -> dict:
     if not isinstance(text, str) or len(text) > MAX_TEXT:
         safe_problem("InjuryReportTextTooLarge")
+    DIAGNOSTICS.update({"Phase": "header", "TextCharacters": len(text),
+                        "HeaderCount": len(list(HEADER.finditer(text))),
+                        "ColumnLinePresent": bool(COLUMNS.search(text)),
+                        "DateRowCount": len(re.findall(r"(?m)^\s*\d{2}/\d{2}/\d{4}\s+", text)),
+                        "PlayerStatusRowCount": len(re.findall(r"\b(?:Available|Probable|Questionable|Doubtful|Out)\b", text))})
     issued = report_timestamp(text, expected_date, expected_time)
+    DIAGNOSTICS.update({"HeaderDate": expected_date, "HeaderTime": expected_time, "Phase": "table"})
     # pypdf can join the last table row to the next page header. Remove only
     # known furniture, wherever it occurs; unknown text is not discarded.
     body = HEADER.sub("\n", text)
@@ -217,10 +224,13 @@ def parse_text(text: str, expected_date: str, expected_time: str) -> dict:
 
 
 def parse_pdf(data: bytes, expected_date: str, expected_time: str) -> dict:
+    DIAGNOSTICS.clear()
+    DIAGNOSTICS["Phase"] = "pdf_validation"
     if not data or len(data) > MAX_BYTES:
         safe_problem("InjuryPdfSizeInvalid")
     if not data.startswith(b"%PDF-"):
         safe_problem("InjuryPdfFormatInvalid")
+    DIAGNOSTICS["Phase"] = "dependency"
     try:
         from pypdf import PdfReader
     except ImportError:
@@ -229,11 +239,13 @@ def parse_pdf(data: bytes, expected_date: str, expected_time: str) -> dict:
         # Malformed PDFs may trigger library diagnostics containing document
         # fragments. The caller receives only our fixed error codes.
         logging.getLogger("pypdf").disabled = True
+        DIAGNOSTICS["Phase"] = "pdf_parse"
         reader = PdfReader(io.BytesIO(data), strict=True)
         if reader.is_encrypted:
             safe_problem("InjuryPdfEncrypted")
         if not 1 <= len(reader.pages) <= MAX_PAGES:
             safe_problem("InjuryPdfPageCountInvalid")
+        DIAGNOSTICS.update({"PdfPages": len(reader.pages), "Phase": "text_extraction", "ExtractionMode": "layout"})
         pieces = []
         length = 0
         for page in reader.pages:
@@ -275,7 +287,8 @@ def main():
     except Exception as exc:
         code = str(exc) if isinstance(exc, ParseProblem) else "InjuryReportParsingFailed"
         print(json.dumps({"Status": "unknown", "ReportIssuedAtUtc": None, "UnsubmittedTeams": [],
-                          "TeamReports": [], "Players": [], "Warnings": [code], "ErrorType": code}))
+                          "TeamReports": [], "Players": [], "Warnings": [code], "ErrorType": code,
+                          "Diagnostics": DIAGNOSTICS}))
         return 1
     return 0
 

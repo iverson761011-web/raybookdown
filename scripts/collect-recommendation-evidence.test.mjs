@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { collectEvidence, fetchOfficialEvidence, latestInjuryReportLink, normalizePlayerName, parseBoxScore, parseDailyScoreboard, parseMinutes, parsePlayerStatistics, sanitizeCachedDay, validateInjuryResult } from './collect-recommendation-evidence.mjs';
+import { collectEvidence, fetchOfficialEvidence, latestInjuryReportLink, normalizePlayerName, parseBoxScore, parseDailyScoreboard, parseMinutes, parsePlayerStatistics, sanitizeCachedDay, scopePlayerGames, validateInjuryResult } from './collect-recommendation-evidence.mjs';
+import { TARGET,SECTION_NAMES } from '../dashboard-model.mjs';
 
 const date='2026-11-11',start='2026-11-12T00:00:00Z';
 const wrap=(props,query={date})=>`<html><script id="__NEXT_DATA__" type="application/json">${JSON.stringify({query,props:{pageProps:props}})}</script></html>`;
@@ -14,6 +15,13 @@ const box=(players=[player()])=>wrap({game:{...game(),awayTeam:{...team('Away',1
 const fixedNow=()=>new Date('2026-11-12T17:00:00Z');
 const injuryIndex='<h1>NBA Injury Report 2026-27 Season</h1><a href="https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_11_30AM.pdf">PDF</a>';
 const rawInjuries={Status:'partial',ReportIssuedAtUtc:'2026-11-12T16:30:00Z',UnsubmittedTeams:['Home Team'],TeamReports:[{TeamName:'Home Team',GameDateET:'2026-11-12',Submitted:false}],Players:[{Player:'Morez Johnson Jr.',TeamName:'Dallas Mavericks',GameDateET:'2026-11-12',Status:'Probable',Reason:'Injury/Illness - Left Shin; Contusion'}]};
+const dashboardFixture=(rosterNames,marketNames=[])=>{
+ const blank={Status:'unavailable',Source:'Fixture',CheckedAtUtc:fixedNow().toISOString(),RetrievedAtUtc:null,SourceUpdatedAtUtc:null,ErrorType:null,Data:null};
+ const Sections=Object.fromEntries(SECTION_NAMES.map(name=>[name,{...blank}]));
+ Sections.Roster={...blank,Status:'ok',RetrievedAtUtc:fixedNow().toISOString(),Data:{PlayerCount:rosterNames.length,Players:rosterNames.map(Player=>({Player,Position:null,Status:null,EligiblePositions:null,TeamCode:null}))}};
+ Sections.Market={...blank,Status:'ok',RetrievedAtUtc:fixedNow().toISOString(),Data:{Coverage:'returned_list',RateScope:'yahoo_platform_global',Players:marketNames.map(Player=>({Player,Position:null,TeamCode:null,Availability:'free_agent',PercentOwned:null,WaiverDate:null}))}};
+ return {SchemaVersion:2,...TARGET,GeneratedAtUtc:fixedNow().toISOString(),Sections};
+};
 
 test('a whole day is final only when every listed game and its scores are verified',()=>{
  assert.equal(parseDailyScoreboard(daily([game()]),date).Status,'final');
@@ -87,6 +95,8 @@ test('retained history is real only, no fabricated stats and explicit source fai
  assert.ok(!requested.some(url=>url.includes('date=2026-11-11')||url.includes('/box-score')));
  assert.equal(again.evidence.Day.Status,'unknown');assert.equal(again.evidence.PlayerGames.length,2);
  assert.equal(again.evidence.PlayerGames[0].RetrievedAtUtc,fixedNow().toISOString());
+ assert.equal(again.evidence.LastCompletedDay.DateET,date);
+ assert.equal(again.evidence.LastCompletedDay.Day.RetrievedAtUtc,fixedNow().toISOString());
 });
 
 test('a failed injury parser cannot erase unknown status by treating names as healthy',async()=>{
@@ -110,4 +120,47 @@ test('incomplete player statistics are retained with nulls and retried on the ne
  const second=await collectEvidence({date,historyDays:1,fetchBytes,now:fixedNow,history:first.history});
  assert.equal(boxReads,2);assert.equal(second.evidence.PlayerGames[0].Stats.FGA,15);
  assert.deepEqual(second.evidence.History.MissingBoxScoreDates,[]);
+});
+
+test('the compact feed uses observed full names and rejects ambiguous official identities',()=>{
+ const dashboard=dashboardFixture(['Alperen Şengün','Missing Player'],['Other Player','Unknown Player','G. Player']);
+ const rows=[
+  {Player:'Alperen Sengun',OfficialPlayerId:'123'},
+  {Player:'Alperen Şengün',OfficialPlayerId:'456'},
+  {Player:'Other Player',OfficialPlayerId:'124'},
+  {Player:'Unknown Player',OfficialPlayerId:null},
+  {Player:'Gary Player',OfficialPlayerId:'789'},
+  {Player:'Unrelated NBA Player',OfficialPlayerId:'987'},
+ ];
+ const scoped=scopePlayerGames(dashboard,rows);
+ assert.deepEqual(scoped.PlayerGames,[rows[2]]);
+ assert.deepEqual(scoped.PlayerScope.AmbiguousPlayers,['Alperen Şengün']);
+ assert.deepEqual(scoped.PlayerScope.IdentityUnknownPlayers,['Unknown Player']);
+ assert.deepEqual(scoped.PlayerScope.MissingPlayers,['Missing Player','G. Player']);
+ const bad=structuredClone(dashboard);bad.access_token='synthetic-only';
+ assert.throws(()=>scopePlayerGames(bad,rows));
+});
+
+test('filtering evidence does not make a partial boxscore cache appear complete',async()=>{
+ const dashboard=dashboardFixture(['Alperen Şengün']);
+ const result=await collectEvidence({date,historyDays:1,dashboard,now:fixedNow,fetchBytes:async url=>{
+  if(url.includes('/games?'))return Buffer.from(daily([game()]));
+  if(url.includes('/box-score'))return Buffer.from(box());
+  throw new Error('injury source unavailable for this fixture');
+ }});
+ assert.equal(result.evidence.PlayerGames.length,1);
+ assert.equal(result.evidence.PlayerScope.PlayerCount,1);
+ assert.equal(result.history.Days[0].PlayerGames.length,2);
+ assert.equal(result.history.Days[0].BoxScoresComplete,true);
+ assert.equal(sanitizeCachedDay(result.history.Days[0],date).BoxScoresComplete,true);
+});
+
+test('actual NBA SSR first/family names and explicit DNP comments are handled without guessing',()=>{
+ const rows=parseBoxScore(box([
+  player({name:undefined,firstName:'Jared',familyName:'McCain',played:undefined,comment:'DNP - Injury/Illness',statistics:{...statistic,minutes:'PT0M0S',points:0}}),
+  player({personId:125,name:'Unknown Participation',played:undefined,comment:'',statistics:{...statistic,minutes:'PT0M0S',points:0}}),
+  player({personId:126,name:'Actually Played',played:undefined,comment:'Injury/Illness - Left Wrist',statistics:statistic}),
+ ]),expected());
+ assert.equal(rows[0].Player,'Jared McCain');assert.equal(rows[0].Played,false);assert.equal(rows[0].Stats,null);
+ assert.equal(rows[1].Played,null);assert.equal(rows[2].Played,true);assert.equal(rows[2].Stats.PTS,18);
 });
