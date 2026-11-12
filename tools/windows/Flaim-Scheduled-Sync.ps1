@@ -27,10 +27,13 @@ function Invoke-FlaimPublicNode {
         $process.StartInfo = $start
         try { [void]$process.Start() }
         catch {
-            $launchFailure = [InvalidOperationException]::new('Public Node process could not start.')
-            $launchFailure.Data['CloudKind'] = 'NodeLaunchFailed'
             $deep = $_.Exception
             while ($null -ne $deep.InnerException) { $deep = $deep.InnerException }
+            $nativeCode = 0
+            if ($deep -is [ComponentModel.Win32Exception]) { $nativeCode = $deep.NativeErrorCode }
+            $exists = [IO.File]::Exists($start.FileName)
+            $launchFailure = [InvalidOperationException]::new(('Public Node launch failed. NativeErrorCode={0}; ExecutableExists={1}.' -f $nativeCode,$exists))
+            $launchFailure.Data['CloudKind'] = 'NodeLaunchFailed'
             if ($deep -is [ComponentModel.Win32Exception]) { $launchFailure.Data['NativeErrorCode'] = $deep.NativeErrorCode }
             $launchFailure.Data['NodeExecutableExists'] = [IO.File]::Exists($start.FileName)
             $launchFailure.Data['NodeCommandType'] = $node.CommandType.ToString()
