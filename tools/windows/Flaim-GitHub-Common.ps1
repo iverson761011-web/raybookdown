@@ -17,7 +17,7 @@ function New-FlaimCloudSecret {
 }
 
 function Resolve-FlaimGitHubCli {
-    $gh = Get-Command gh.exe -CommandType Application -ErrorAction SilentlyContinue
+    $gh = Get-Command gh.exe -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
     if ($null -ne $gh) { return $gh.Source }
     # An existing console may not have the PATH installed by the new GitHub CLI.
     $standardPath = Join-Path ([Environment]::GetFolderPath('ProgramFiles')) 'GitHub CLI\gh.exe'

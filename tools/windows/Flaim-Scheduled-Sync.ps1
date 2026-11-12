@@ -11,7 +11,8 @@ function Update-FlaimScheduledSession {
 function Invoke-FlaimPublicNode {
     param([string]$ScriptPath, [string]$DataPath, [string]$FailureKind)
     if ($ScriptPath -match '["\r\n\x00]' -or $DataPath -match '["\r\n\x00]') { Stop-FlaimCloudFailure 'InvalidCloudRequest' }
-    $node = Get-Command node.exe -CommandType Application -ErrorAction Stop
+    # Windows PowerShell 5.1 can return every matching application on PATH.
+    $node = Get-Command node.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1
     $start = [Diagnostics.ProcessStartInfo]::new()
     $start.FileName = $node.Source
     $start.Arguments = '"' + $ScriptPath + '" "' + $DataPath + '"'

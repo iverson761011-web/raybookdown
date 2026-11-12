@@ -148,7 +148,7 @@ Test-FDDCase 'Every successful section has its own read time and unknown source 
 Test-FDDCase 'Actual PowerShell JSON satisfies the browser Node dashboard contract' {
     $repositoryRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
     $validatorPath=Join-Path $repositoryRoot 'scripts\check-dashboard.mjs'
-    $nodeCommand=Get-Command node.exe -CommandType Application -ErrorAction Stop
+    $nodeCommand=Get-Command node.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1
     $process=$null;$outTask=$null;$errorTask=$null
     try {
         $start=[Diagnostics.ProcessStartInfo]::new()
@@ -206,6 +206,32 @@ try {
         $captured=@(Invoke-FlaimPublicNode -ScriptPath $publicNodeFixture -DataPath 'success' -FailureKind 'DashboardValidationFailed' *>&1)
         Assert-FDDTest ($captured.Count -eq 0)
         foreach ($name in $publicNodeEnvNames) {Assert-FDDTest ([Environment]::GetEnvironmentVariable($name,'Process') -ceq 'synthetic-public-node-env')}
+    }
+    Test-FDDCase 'Public Node selects the first executable when application discovery returns multiple matches' {
+        $realNode=Microsoft.PowerShell.Core\Get-Command node.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1
+        $previousFunction=Get-Item -LiteralPath 'Function:\Get-Command' -ErrorAction SilentlyContinue
+        $previousFunctionBody=$null
+        if ($null -ne $previousFunction) {$previousFunctionBody=$previousFunction.ScriptBlock}
+        $script:publicNodeFirstExecutable=$realNode.Source
+        $script:publicNodeResolverCalls=0
+        try {
+            function Get-Command {
+                param([string]$Name,[object]$CommandType,[object]$ErrorAction)
+                if ($Name -cne 'node.exe') {throw 'UnexpectedPublicNodeCommandLookup'}
+                $script:publicNodeResolverCalls++
+                [pscustomobject]@{Source=$script:publicNodeFirstExecutable;CommandType=[Management.Automation.CommandTypes]::Application}
+                [pscustomobject]@{Source='Z:\synthetic-missing-node\node.exe';CommandType=[Management.Automation.CommandTypes]::Application}
+            }
+            $captured=@(Invoke-FlaimPublicNode -ScriptPath $publicNodeFixture -DataPath 'success' -FailureKind 'DashboardValidationFailed' *>&1)
+            Assert-FDDTest ($captured.Count -eq 0 -and $script:publicNodeResolverCalls -eq 1)
+        }
+        finally {
+            if ($null -eq $previousFunctionBody) {Remove-Item -LiteralPath 'Function:\Get-Command' -ErrorAction SilentlyContinue}
+            else {Set-Item -LiteralPath 'Function:\Get-Command' -Value $previousFunctionBody}
+            $script:publicNodeFirstExecutable=$null;$script:publicNodeResolverCalls=$null
+        }
+        $restoredNode=Get-Command node.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1
+        Assert-FDDTest ($restoredNode.Source -ceq $realNode.Source)
     }
     Test-FDDCase 'Public Node failure preserves only the fixed kind and recognized section names' {
         $script:publicNodeCaught=$null

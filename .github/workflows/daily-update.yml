@@ -97,7 +97,7 @@ jobs:
           $parseTokens = $null; $parseErrors = $null
           $runtimeAst = [Management.Automation.Language.Parser]::ParseFile((Join-Path $PWD.Path 'tools\windows\Flaim-Scheduled-Sync.ps1'),[ref]$parseTokens,[ref]$parseErrors)
           if ($parseErrors.Count) { throw 'RuntimeSyntaxFailed' }
-          $nodeRuntime = Get-Command node.exe -CommandType Application -ErrorAction Stop
+          $nodeRuntime = Get-Command node.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1
           [pscustomobject]@{ NodeSource=$nodeRuntime.Source; NodePath=$nodeRuntime.Path; NodeExists=(Test-Path -LiteralPath $nodeRuntime.Source -PathType Leaf); CurrentDirectory=$PWD.Path } | Format-List
           & $nodeRuntime.Path --version
           if ($LASTEXITCODE -ne 0) { throw 'NativeNodeVersionCheckFailed' }
