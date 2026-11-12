@@ -19,6 +19,7 @@ function Assert-Cloud { param([bool]$Value) if (-not $Value) { throw 'AssertionF
 $scratch = Join-Path $PSScriptRoot ('.test-work\'+[Guid]::NewGuid().ToString('N'))
 [void][IO.Directory]::CreateDirectory((Join-Path $scratch 'data'))
 [IO.File]::WriteAllText((Join-Path $scratch 'data\team.json'),'{}')
+[IO.File]::WriteAllText((Join-Path $scratch 'data\dashboard.json'),'{}')
 $writer = New-FlaimCloudSecret 'fake-writer'
 $inputSecret = New-FlaimCloudSecret 'fake-refresh'
 $repositoryToken = New-FlaimCloudSecret 'fake-repo-token'
