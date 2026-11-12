@@ -1,584 +1,586 @@
 {
-  "SchemaVersion": 1,
-  "League": "Funny League 2026-27",
-  "Team": "RayBookDown",
-  "Platform": "yahoo",
-  "Season": 2026,
-  "CheckedAtUtc": "2026-11-12T16:37:49Z",
-  "RetrievedAtUtc": "2026-11-12T16:37:50Z",
-  "SourceUpdatedAtUtc": null,
-  "Status": "ok",
-  "ErrorType": null,
-  "CurrentWeek": 4,
-  "Weeks": [
-    {
-      "Week": 1,
-      "Status": "final",
-      "Opponent": "SLAM DUNK",
-      "OwnScore": {
-        "Wins": 5,
-        "Losses": 8,
-        "Ties": 0
-      },
-      "OpponentScore": {
-        "Wins": 8,
-        "Losses": 5,
-        "Ties": 0
-      },
-      "Winner": "opponent",
-      "WeekStartDate": null,
-      "WeekEndDate": null,
-      "Categories": [
-        {
-          "Name": "Minutes Played",
-          "Label": "MIN",
-          "OwnValue": "919",
-          "OpponentValue": "969",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Field Goals Made / Field Goals Attempted",
-          "Label": "FGM/A",
-          "OwnValue": "198/403",
-          "OpponentValue": "195/395",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Field Goal Percentage",
-          "Label": "FG%",
-          "OwnValue": ".491",
-          "OpponentValue": ".494",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Free Throws Made / Free Throws Attempted",
-          "Label": "FTM/A",
-          "OwnValue": "108/135",
-          "OpponentValue": "119/154",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Free Throw Percentage",
-          "Label": "FT%",
-          "OwnValue": ".800",
-          "OpponentValue": ".773",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "3-point Shots Made",
-          "Label": "3PTM",
-          "OwnValue": "49",
-          "OpponentValue": "62",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Points Scored",
-          "Label": "PTS",
-          "OwnValue": "553",
-          "OpponentValue": "571",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Offensive Rebounds",
-          "Label": "OREB",
-          "OwnValue": "34",
-          "OpponentValue": "64",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Defensive Rebounds",
-          "Label": "DREB",
-          "OwnValue": "144",
-          "OpponentValue": "137",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assists",
-          "Label": "AST",
-          "OwnValue": "111",
-          "OpponentValue": "113",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Steals",
-          "Label": "ST",
-          "OwnValue": "37",
-          "OpponentValue": "35",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Blocked Shots",
-          "Label": "BLK",
-          "OwnValue": "22",
-          "OpponentValue": "21",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Turnovers",
-          "Label": "TO",
-          "OwnValue": "91",
-          "OpponentValue": "73",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assist/Turnover Ratio",
-          "Label": "A/T",
-          "OwnValue": "1.22",
-          "OpponentValue": "1.55",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Double-Doubles",
-          "Label": "DD",
-          "OwnValue": "7",
-          "OpponentValue": "3",
-          "Result": "win",
-          "DisplayOnly": false
-        }
-      ],
-      "RetrievedAtUtc": "2026-11-12T16:37:50Z",
-      "SourceUpdatedAtUtc": null
-    },
-    {
-      "Week": 2,
-      "Status": "final",
-      "Opponent": "閃電五連鞭 (JoeDub)",
-      "OwnScore": {
-        "Wins": 3,
-        "Losses": 9,
-        "Ties": 1
-      },
-      "OpponentScore": {
-        "Wins": 9,
-        "Losses": 3,
-        "Ties": 1
-      },
-      "Winner": "opponent",
-      "WeekStartDate": null,
-      "WeekEndDate": null,
-      "Categories": [
-        {
-          "Name": "Minutes Played",
-          "Label": "MIN",
-          "OwnValue": "974",
-          "OpponentValue": "1020",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Field Goals Made / Field Goals Attempted",
-          "Label": "FGM/A",
-          "OwnValue": "193/361",
-          "OpponentValue": "200/433",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Field Goal Percentage",
-          "Label": "FG%",
-          "OwnValue": ".535",
-          "OpponentValue": ".462",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Free Throws Made / Free Throws Attempted",
-          "Label": "FTM/A",
-          "OwnValue": "88/108",
-          "OpponentValue": "90/105",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Free Throw Percentage",
-          "Label": "FT%",
-          "OwnValue": ".815",
-          "OpponentValue": ".857",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "3-point Shots Made",
-          "Label": "3PTM",
-          "OwnValue": "61",
-          "OpponentValue": "63",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Points Scored",
-          "Label": "PTS",
-          "OwnValue": "535",
-          "OpponentValue": "553",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Offensive Rebounds",
-          "Label": "OREB",
-          "OwnValue": "47",
-          "OpponentValue": "34",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Defensive Rebounds",
-          "Label": "DREB",
-          "OwnValue": "106",
-          "OpponentValue": "129",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assists",
-          "Label": "AST",
-          "OwnValue": "121",
-          "OpponentValue": "167",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Steals",
-          "Label": "ST",
-          "OwnValue": "44",
-          "OpponentValue": "38",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Blocked Shots",
-          "Label": "BLK",
-          "OwnValue": "21",
-          "OpponentValue": "24",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Turnovers",
-          "Label": "TO",
-          "OwnValue": "79",
-          "OpponentValue": "79",
-          "Result": "tie",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assist/Turnover Ratio",
-          "Label": "A/T",
-          "OwnValue": "1.53",
-          "OpponentValue": "2.11",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Double-Doubles",
-          "Label": "DD",
-          "OwnValue": "1",
-          "OpponentValue": "5",
-          "Result": "loss",
-          "DisplayOnly": false
-        }
-      ],
-      "RetrievedAtUtc": "2026-11-12T16:37:49Z",
-      "SourceUpdatedAtUtc": null
-    },
-    {
-      "Week": 3,
-      "Status": "final",
-      "Opponent": "Gemini TEAM",
-      "OwnScore": {
-        "Wins": 9,
-        "Losses": 4,
-        "Ties": 0
-      },
-      "OpponentScore": {
-        "Wins": 4,
-        "Losses": 9,
-        "Ties": 0
-      },
-      "Winner": "own",
-      "WeekStartDate": null,
-      "WeekEndDate": null,
-      "Categories": [
-        {
-          "Name": "Minutes Played",
-          "Label": "MIN",
-          "OwnValue": "1228",
-          "OpponentValue": "1055",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Field Goals Made / Field Goals Attempted",
-          "Label": "FGM/A",
-          "OwnValue": "229/457",
-          "OpponentValue": "168/405",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Field Goal Percentage",
-          "Label": "FG%",
-          "OwnValue": ".501",
-          "OpponentValue": ".415",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Free Throws Made / Free Throws Attempted",
-          "Label": "FTM/A",
-          "OwnValue": "132/172",
-          "OpponentValue": "113/143",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Free Throw Percentage",
-          "Label": "FT%",
-          "OwnValue": ".767",
-          "OpponentValue": ".790",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "3-point Shots Made",
-          "Label": "3PTM",
-          "OwnValue": "59",
-          "OpponentValue": "51",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Points Scored",
-          "Label": "PTS",
-          "OwnValue": "649",
-          "OpponentValue": "500",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Offensive Rebounds",
-          "Label": "OREB",
-          "OwnValue": "50",
-          "OpponentValue": "52",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Defensive Rebounds",
-          "Label": "DREB",
-          "OwnValue": "175",
-          "OpponentValue": "152",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assists",
-          "Label": "AST",
-          "OwnValue": "173",
-          "OpponentValue": "107",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Steals",
-          "Label": "ST",
-          "OwnValue": "24",
-          "OpponentValue": "31",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Blocked Shots",
-          "Label": "BLK",
-          "OwnValue": "35",
-          "OpponentValue": "27",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Turnovers",
-          "Label": "TO",
-          "OwnValue": "92",
-          "OpponentValue": "68",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assist/Turnover Ratio",
-          "Label": "A/T",
-          "OwnValue": "1.88",
-          "OpponentValue": "1.57",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Double-Doubles",
-          "Label": "DD",
-          "OwnValue": "6",
-          "OpponentValue": "5",
-          "Result": "win",
-          "DisplayOnly": false
-        }
-      ],
-      "RetrievedAtUtc": "2026-11-12T16:37:50Z",
-      "SourceUpdatedAtUtc": null
-    },
-    {
-      "Week": 4,
-      "Status": "in_progress",
-      "Opponent": "PPPPPPPPP Baskets",
-      "OwnScore": {
-        "Wins": 7,
-        "Losses": 6,
-        "Ties": 0
-      },
-      "OpponentScore": {
-        "Wins": 6,
-        "Losses": 7,
-        "Ties": 0
-      },
-      "Winner": null,
-      "WeekStartDate": null,
-      "WeekEndDate": null,
-      "Categories": [
-        {
-          "Name": "Minutes Played",
-          "Label": "MIN",
-          "OwnValue": "635",
-          "OpponentValue": "553",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Field Goals Made / Field Goals Attempted",
-          "Label": "FGM/A",
-          "OwnValue": "122/251",
-          "OpponentValue": "97/216",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Field Goal Percentage",
-          "Label": "FG%",
-          "OwnValue": ".486",
-          "OpponentValue": ".449",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Free Throws Made / Free Throws Attempted",
-          "Label": "FTM/A",
-          "OwnValue": "54/71",
-          "OpponentValue": "56/68",
-          "Result": null,
-          "DisplayOnly": true
-        },
-        {
-          "Name": "Free Throw Percentage",
-          "Label": "FT%",
-          "OwnValue": ".761",
-          "OpponentValue": ".824",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "3-point Shots Made",
-          "Label": "3PTM",
-          "OwnValue": "30",
-          "OpponentValue": "43",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Points Scored",
-          "Label": "PTS",
-          "OwnValue": "328",
-          "OpponentValue": "293",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Offensive Rebounds",
-          "Label": "OREB",
-          "OwnValue": "41",
-          "OpponentValue": "7",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Defensive Rebounds",
-          "Label": "DREB",
-          "OwnValue": "91",
-          "OpponentValue": "63",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assists",
-          "Label": "AST",
-          "OwnValue": "73",
-          "OpponentValue": "60",
-          "Result": "win",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Steals",
-          "Label": "ST",
-          "OwnValue": "16",
-          "OpponentValue": "22",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Blocked Shots",
-          "Label": "BLK",
-          "OwnValue": "10",
-          "OpponentValue": "11",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Turnovers",
-          "Label": "TO",
-          "OwnValue": "47",
-          "OpponentValue": "30",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Assist/Turnover Ratio",
-          "Label": "A/T",
-          "OwnValue": "1.55",
-          "OpponentValue": "2.00",
-          "Result": "loss",
-          "DisplayOnly": false
-        },
-        {
-          "Name": "Double-Doubles",
-          "Label": "DD",
-          "OwnValue": "5",
-          "OpponentValue": "0",
-          "Result": "win",
-          "DisplayOnly": false
-        }
-      ],
-      "RetrievedAtUtc": "2026-11-12T16:37:49Z",
-      "SourceUpdatedAtUtc": null
-    }
-  ],
-  "UnavailableWeeks": []
+    "SchemaVersion":  1,
+    "League":  "Funny League 2026-27",
+    "Team":  "RayBookDown",
+    "Platform":  "yahoo",
+    "Season":  2026,
+    "CheckedAtUtc":  "2026-11-12T23:22:44.7038554+00:00",
+    "RetrievedAtUtc":  "2026-11-12T23:22:46.9599895+00:00",
+    "SourceUpdatedAtUtc":  null,
+    "Status":  "ok",
+    "ErrorType":  null,
+    "CurrentWeek":  4,
+    "Weeks":  [
+                  {
+                      "Week":  1,
+                      "Status":  "final",
+                      "Opponent":  "SLAM DUNK",
+                      "OwnScore":  {
+                                       "Wins":  5,
+                                       "Losses":  8,
+                                       "Ties":  0
+                                   },
+                      "OpponentScore":  {
+                                            "Wins":  8,
+                                            "Losses":  5,
+                                            "Ties":  0
+                                        },
+                      "Winner":  "opponent",
+                      "WeekStartDate":  null,
+                      "WeekEndDate":  null,
+                      "Categories":  [
+                                         {
+                                             "Name":  "Minutes Played",
+                                             "Label":  "MIN",
+                                             "OwnValue":  "919",
+                                             "OpponentValue":  "969",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Field Goals Made / Field Goals Attempted",
+                                             "Label":  "FGM/A",
+                                             "OwnValue":  "198/403",
+                                             "OpponentValue":  "195/395",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Field Goal Percentage",
+                                             "Label":  "FG%",
+                                             "OwnValue":  ".491",
+                                             "OpponentValue":  ".494",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Free Throws Made / Free Throws Attempted",
+                                             "Label":  "FTM/A",
+                                             "OwnValue":  "108/135",
+                                             "OpponentValue":  "119/154",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Free Throw Percentage",
+                                             "Label":  "FT%",
+                                             "OwnValue":  ".800",
+                                             "OpponentValue":  ".773",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "3-point Shots Made",
+                                             "Label":  "3PTM",
+                                             "OwnValue":  "49",
+                                             "OpponentValue":  "62",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Points Scored",
+                                             "Label":  "PTS",
+                                             "OwnValue":  "553",
+                                             "OpponentValue":  "571",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Offensive Rebounds",
+                                             "Label":  "OREB",
+                                             "OwnValue":  "34",
+                                             "OpponentValue":  "64",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Defensive Rebounds",
+                                             "Label":  "DREB",
+                                             "OwnValue":  "144",
+                                             "OpponentValue":  "137",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assists",
+                                             "Label":  "AST",
+                                             "OwnValue":  "111",
+                                             "OpponentValue":  "113",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Steals",
+                                             "Label":  "ST",
+                                             "OwnValue":  "37",
+                                             "OpponentValue":  "35",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Blocked Shots",
+                                             "Label":  "BLK",
+                                             "OwnValue":  "22",
+                                             "OpponentValue":  "21",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Turnovers",
+                                             "Label":  "TO",
+                                             "OwnValue":  "91",
+                                             "OpponentValue":  "73",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assist/Turnover Ratio",
+                                             "Label":  "A/T",
+                                             "OwnValue":  "1.22",
+                                             "OpponentValue":  "1.55",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Double-Doubles",
+                                             "Label":  "DD",
+                                             "OwnValue":  "7",
+                                             "OpponentValue":  "3",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         }
+                                     ],
+                      "RetrievedAtUtc":  "2026-11-12T23:22:45.2875411+00:00",
+                      "SourceUpdatedAtUtc":  null
+                  },
+                  {
+                      "Week":  2,
+                      "Status":  "final",
+                      "Opponent":  "閃電五連鞭 (JoeDub)",
+                      "OwnScore":  {
+                                       "Wins":  3,
+                                       "Losses":  9,
+                                       "Ties":  1
+                                   },
+                      "OpponentScore":  {
+                                            "Wins":  9,
+                                            "Losses":  3,
+                                            "Ties":  1
+                                        },
+                      "Winner":  "opponent",
+                      "WeekStartDate":  null,
+                      "WeekEndDate":  null,
+                      "Categories":  [
+                                         {
+                                             "Name":  "Minutes Played",
+                                             "Label":  "MIN",
+                                             "OwnValue":  "974",
+                                             "OpponentValue":  "1020",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Field Goals Made / Field Goals Attempted",
+                                             "Label":  "FGM/A",
+                                             "OwnValue":  "193/361",
+                                             "OpponentValue":  "200/433",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Field Goal Percentage",
+                                             "Label":  "FG%",
+                                             "OwnValue":  ".535",
+                                             "OpponentValue":  ".462",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Free Throws Made / Free Throws Attempted",
+                                             "Label":  "FTM/A",
+                                             "OwnValue":  "88/108",
+                                             "OpponentValue":  "90/105",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Free Throw Percentage",
+                                             "Label":  "FT%",
+                                             "OwnValue":  ".815",
+                                             "OpponentValue":  ".857",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "3-point Shots Made",
+                                             "Label":  "3PTM",
+                                             "OwnValue":  "61",
+                                             "OpponentValue":  "63",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Points Scored",
+                                             "Label":  "PTS",
+                                             "OwnValue":  "535",
+                                             "OpponentValue":  "553",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Offensive Rebounds",
+                                             "Label":  "OREB",
+                                             "OwnValue":  "47",
+                                             "OpponentValue":  "34",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Defensive Rebounds",
+                                             "Label":  "DREB",
+                                             "OwnValue":  "106",
+                                             "OpponentValue":  "129",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assists",
+                                             "Label":  "AST",
+                                             "OwnValue":  "121",
+                                             "OpponentValue":  "167",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Steals",
+                                             "Label":  "ST",
+                                             "OwnValue":  "44",
+                                             "OpponentValue":  "38",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Blocked Shots",
+                                             "Label":  "BLK",
+                                             "OwnValue":  "21",
+                                             "OpponentValue":  "24",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Turnovers",
+                                             "Label":  "TO",
+                                             "OwnValue":  "79",
+                                             "OpponentValue":  "79",
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assist/Turnover Ratio",
+                                             "Label":  "A/T",
+                                             "OwnValue":  "1.53",
+                                             "OpponentValue":  "2.11",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Double-Doubles",
+                                             "Label":  "DD",
+                                             "OwnValue":  "1",
+                                             "OpponentValue":  "5",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         }
+                                     ],
+                      "RetrievedAtUtc":  "2026-11-12T23:22:45.8033496+00:00",
+                      "SourceUpdatedAtUtc":  null
+                  },
+                  {
+                      "Week":  3,
+                      "Status":  "final",
+                      "Opponent":  "Gemini TEAM",
+                      "OwnScore":  {
+                                       "Wins":  9,
+                                       "Losses":  4,
+                                       "Ties":  0
+                                   },
+                      "OpponentScore":  {
+                                            "Wins":  4,
+                                            "Losses":  9,
+                                            "Ties":  0
+                                        },
+                      "Winner":  "own",
+                      "WeekStartDate":  null,
+                      "WeekEndDate":  null,
+                      "Categories":  [
+                                         {
+                                             "Name":  "Minutes Played",
+                                             "Label":  "MIN",
+                                             "OwnValue":  "1228",
+                                             "OpponentValue":  "1055",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Field Goals Made / Field Goals Attempted",
+                                             "Label":  "FGM/A",
+                                             "OwnValue":  "229/457",
+                                             "OpponentValue":  "168/405",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Field Goal Percentage",
+                                             "Label":  "FG%",
+                                             "OwnValue":  ".501",
+                                             "OpponentValue":  ".415",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Free Throws Made / Free Throws Attempted",
+                                             "Label":  "FTM/A",
+                                             "OwnValue":  "132/172",
+                                             "OpponentValue":  "113/143",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Free Throw Percentage",
+                                             "Label":  "FT%",
+                                             "OwnValue":  ".767",
+                                             "OpponentValue":  ".790",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "3-point Shots Made",
+                                             "Label":  "3PTM",
+                                             "OwnValue":  "59",
+                                             "OpponentValue":  "51",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Points Scored",
+                                             "Label":  "PTS",
+                                             "OwnValue":  "649",
+                                             "OpponentValue":  "500",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Offensive Rebounds",
+                                             "Label":  "OREB",
+                                             "OwnValue":  "50",
+                                             "OpponentValue":  "52",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Defensive Rebounds",
+                                             "Label":  "DREB",
+                                             "OwnValue":  "175",
+                                             "OpponentValue":  "152",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assists",
+                                             "Label":  "AST",
+                                             "OwnValue":  "173",
+                                             "OpponentValue":  "107",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Steals",
+                                             "Label":  "ST",
+                                             "OwnValue":  "24",
+                                             "OpponentValue":  "31",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Blocked Shots",
+                                             "Label":  "BLK",
+                                             "OwnValue":  "35",
+                                             "OpponentValue":  "27",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Turnovers",
+                                             "Label":  "TO",
+                                             "OwnValue":  "92",
+                                             "OpponentValue":  "68",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assist/Turnover Ratio",
+                                             "Label":  "A/T",
+                                             "OwnValue":  "1.88",
+                                             "OpponentValue":  "1.57",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Double-Doubles",
+                                             "Label":  "DD",
+                                             "OwnValue":  "6",
+                                             "OpponentValue":  "5",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         }
+                                     ],
+                      "RetrievedAtUtc":  "2026-11-12T23:22:46.2897019+00:00",
+                      "SourceUpdatedAtUtc":  null
+                  },
+                  {
+                      "Week":  4,
+                      "Status":  "in_progress",
+                      "Opponent":  "PPPPPPPPP Baskets",
+                      "OwnScore":  {
+                                       "Wins":  7,
+                                       "Losses":  6,
+                                       "Ties":  0
+                                   },
+                      "OpponentScore":  {
+                                            "Wins":  6,
+                                            "Losses":  7,
+                                            "Ties":  0
+                                        },
+                      "Winner":  null,
+                      "WeekStartDate":  null,
+                      "WeekEndDate":  null,
+                      "Categories":  [
+                                         {
+                                             "Name":  "Minutes Played",
+                                             "Label":  "MIN",
+                                             "OwnValue":  "635",
+                                             "OpponentValue":  "553",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Field Goals Made / Field Goals Attempted",
+                                             "Label":  "FGM/A",
+                                             "OwnValue":  "122/251",
+                                             "OpponentValue":  "97/216",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Field Goal Percentage",
+                                             "Label":  "FG%",
+                                             "OwnValue":  ".486",
+                                             "OpponentValue":  ".449",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Free Throws Made / Free Throws Attempted",
+                                             "Label":  "FTM/A",
+                                             "OwnValue":  "54/71",
+                                             "OpponentValue":  "56/68",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Free Throw Percentage",
+                                             "Label":  "FT%",
+                                             "OwnValue":  ".761",
+                                             "OpponentValue":  ".824",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "3-point Shots Made",
+                                             "Label":  "3PTM",
+                                             "OwnValue":  "30",
+                                             "OpponentValue":  "43",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Points Scored",
+                                             "Label":  "PTS",
+                                             "OwnValue":  "328",
+                                             "OpponentValue":  "293",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Offensive Rebounds",
+                                             "Label":  "OREB",
+                                             "OwnValue":  "41",
+                                             "OpponentValue":  "7",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Defensive Rebounds",
+                                             "Label":  "DREB",
+                                             "OwnValue":  "91",
+                                             "OpponentValue":  "63",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assists",
+                                             "Label":  "AST",
+                                             "OwnValue":  "73",
+                                             "OpponentValue":  "60",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Steals",
+                                             "Label":  "ST",
+                                             "OwnValue":  "16",
+                                             "OpponentValue":  "22",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Blocked Shots",
+                                             "Label":  "BLK",
+                                             "OwnValue":  "10",
+                                             "OpponentValue":  "11",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Turnovers",
+                                             "Label":  "TO",
+                                             "OwnValue":  "47",
+                                             "OpponentValue":  "30",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assist/Turnover Ratio",
+                                             "Label":  "A/T",
+                                             "OwnValue":  "1.55",
+                                             "OpponentValue":  "2.00",
+                                             "Result":  "loss",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Double-Doubles",
+                                             "Label":  "DD",
+                                             "OwnValue":  "5",
+                                             "OpponentValue":  "0",
+                                             "Result":  "win",
+                                             "DisplayOnly":  false
+                                         }
+                                     ],
+                      "RetrievedAtUtc":  "2026-11-12T23:22:46.9599895+00:00",
+                      "SourceUpdatedAtUtc":  null
+                  }
+              ],
+    "UnavailableWeeks":  [
+
+                         ]
 }
