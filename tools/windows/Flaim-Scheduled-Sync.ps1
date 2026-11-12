@@ -8,6 +8,46 @@ function Update-FlaimScheduledSession {
     param([object]$Session)
     return (& (Join-Path $PSScriptRoot 'Flaim-Refresh-Test.ps1') -Session $Session)
 }
+function Invoke-FlaimPublicNode {
+    param([string]$ScriptPath, [string]$DataPath, [string]$FailureKind)
+    if ($ScriptPath -match '["\r\n\x00]' -or $DataPath -match '["\r\n\x00]') { Stop-FlaimCloudFailure 'InvalidCloudRequest' }
+    $node = Get-Command node.exe -CommandType Application -ErrorAction Stop
+    $start = [Diagnostics.ProcessStartInfo]::new()
+    $start.FileName = $node.Source
+    $start.Arguments = '"' + $ScriptPath + '" "' + $DataPath + '"'
+    $start.UseShellExecute = $false
+    $start.CreateNoWindow = $true
+    $start.RedirectStandardOutput = $true
+    $start.RedirectStandardError = $true
+    foreach ($name in @('FLAIM_REFRESH_TOKEN','FLAIM_SECRET_WRITER','GITHUB_TOKEN','GH_TOKEN','NODE_OPTIONS')) { $start.EnvironmentVariables.Remove($name) }
+    $process = [Diagnostics.Process]::new()
+    try {
+        $process.StartInfo = $start
+        [void]$process.Start()
+        $output = $process.StandardOutput.ReadToEndAsync()
+        $diagnostics = $process.StandardError.ReadToEndAsync()
+        if (-not $process.WaitForExit(180000)) {
+            try { $process.Kill() } catch { }
+            Stop-FlaimCloudFailure 'NodeCommandTimeout'
+        }
+        if ($process.ExitCode -ne 0) {
+            $failure = [InvalidOperationException]::new('Public data subprocess failed.')
+            $failure.Data['CloudKind'] = $FailureKind
+            try {
+                $safeDiagnostic = ConvertFrom-Json -InputObject ($diagnostics.GetAwaiter().GetResult()) -ErrorAction Stop
+                $allowedSections = @('Root','Rules','Roster','Matchup','Transactions','Budget','Market','Schedule')
+                $invalid = @($safeDiagnostic.InvalidSections | Where-Object { $allowedSections -ccontains $_ })
+                $failure.Data['InvalidSections'] = $invalid -join ','
+            } catch { }
+            throw $failure
+        }
+        # Do not forward native stderr through PowerShell's error stream.
+        # Framework PowerShell can treat even redirected stderr as a terminating error.
+        $null = $output.GetAwaiter().GetResult()
+        $null = $diagnostics.GetAwaiter().GetResult()
+    }
+    finally { $process.Dispose() }
+}
 function Export-FlaimScheduledData {
     param([object]$Session, [string]$Destination)
     $previousSchedule = $null
@@ -35,14 +75,10 @@ function Export-FlaimScheduledData {
     }
     $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
     # These public-data subprocesses inherit no Flaim or GitHub credential variables.
-    $node = Get-Command node.exe -CommandType Application -ErrorAction Stop
-    $diagnostics = & $node.Source (Join-Path $root 'scripts\update-nba-schedule.mjs') $Destination 2>&1
-    if ($LASTEXITCODE -ne 0) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
-    $diagnostics = & $node.Source (Join-Path $root 'scripts\check-dashboard.mjs') $Destination 2>&1
-    if ($LASTEXITCODE -ne 0) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
+    Invoke-FlaimPublicNode (Join-Path $root 'scripts\update-nba-schedule.mjs') $Destination 'ScheduleUpdateFailed'
+    Invoke-FlaimPublicNode (Join-Path $root 'scripts\check-dashboard.mjs') $Destination 'DashboardValidationFailed'
     $document = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
     $sectionErrors = @($document.Sections.PSObject.Properties | Where-Object { $_.Value.Status -ne 'ok' } | ForEach-Object { $_.Name })
-    $diagnostics = $null
     return [pscustomobject]@{ Exported=$true; PlayerCount=$summary.PlayerCount; SectionErrors=$sectionErrors }
 }
 function Publish-FlaimPublicFile {
@@ -94,6 +130,7 @@ function Invoke-FlaimScheduledSync {
     $stateSaved = $false
     $refreshStarted = $false
     $kind = 'ScheduledSyncFailed'
+    $stage = 'Initialize'
     try {
         if ($PSVersionTable.PSEdition -ne 'Desktop') { Stop-FlaimCloudFailure 'UnsupportedRuntime' }
         if ($null -eq $RefreshToken -or $null -eq $WriterToken -or $null -eq $RepositoryToken) {
@@ -105,6 +142,7 @@ function Invoke-FlaimScheduledSync {
         $target = [IO.Path]::GetFullPath((Join-Path $Root 'data\dashboard.json'))
         if (-not [IO.File]::Exists($target)) { Stop-FlaimCloudFailure 'SnapshotFileMissing' }
         # Verify the writer can save state BEFORE consuming a rotating refresh token.
+        $stage = 'CredentialPreflight'
         Set-FlaimEnvironmentSecret 'FLAIM_REFRESH_TOKEN' $RefreshToken $WriterToken
         $sessionRefresh = $RefreshToken.Copy()
         $sessionRefresh.MakeReadOnly()
@@ -113,14 +151,18 @@ function Invoke-FlaimScheduledSync {
             RefreshToken = $sessionRefresh; TokenType = 'Bearer'; ExpiresAtUtc = $null; ObtainedAtUtc = $null
         }
         $refreshStarted = $true
+        $stage = 'RefreshAuthorization'
         $refreshResult = Update-FlaimScheduledSession $session
         if ($refreshResult.Refreshed -ne $true) { Stop-FlaimCloudFailure 'RefreshFailed' }
         # Save the replacement immediately, even if a later data query or commit fails.
+        $stage = 'PersistRefreshedCredential'
         try { Set-FlaimEnvironmentSecret 'FLAIM_REFRESH_TOKEN' $session.RefreshToken $WriterToken }
         catch { Stop-FlaimCloudFailure 'RefreshPersistenceFailed' }
         $stateSaved = $true
+        $stage = 'ExportPublicData'
         $export = Export-FlaimScheduledData $session $target
         if ($export.Exported -ne $true) { Stop-FlaimCloudFailure 'DataExportFailed' }
+        $stage = 'PublishPublicData'
         Publish-FlaimScheduledData $target $RepositoryToken
         return [pscustomobject]@{
             Synced = $true; CredentialStateSaved = $true; PlayerCount = $export.PlayerCount
@@ -133,12 +175,16 @@ function Invoke-FlaimScheduledSync {
         $allowed = @('UnsupportedRuntime','CloudSetupRequired','InvalidCredential','SnapshotFileMissing','GitHubCliMissing',
             'InvalidCloudRequest','GitHubCommandTimeout','GitHubCommandFailed','InvalidCloudResponse','InvalidSnapshot',
             'RefreshFailed','RefreshPersistenceFailed','DataExportFailed')
+        $allowed += @('NodeCommandTimeout','ScheduleUpdateFailed','DashboardValidationFailed')
         if ($allowed -ccontains $_.Exception.Data['CloudKind']) { $kind = [string]$_.Exception.Data['CloudKind'] }
         $next = 'ReportSafeSummary'
         if ($kind -eq 'CloudSetupRequired') { $next = 'ConfigureCloudSecrets' }
         if ($refreshStarted -and -not $stateSaved) { $next = 'ReauthorizeAndConfigureAgain' }
         return [pscustomobject]@{
             Synced = $false; CredentialStateSaved = $stateSaved; PlayerCount = $null
+            FailureStage = $stage; ExceptionType = $_.Exception.GetType().FullName
+            FailureFile = [IO.Path]::GetFileName($_.InvocationInfo.ScriptName); FailureLine = $_.InvocationInfo.ScriptLineNumber
+            InvalidSections = $_.Exception.Data['InvalidSections']
             ErrorType = $kind; NextAction = $next
         }
     }

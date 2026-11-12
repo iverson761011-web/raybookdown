@@ -38,7 +38,7 @@ Get-ChildItem -LiteralPath 'C:\Users\k1070704\Downloads\RayBookDown-Windows-Tool
 
 到專案 **Actions → RayBookDown Daily Sync → Run workflow**，選 **main** 執行。
 
-- 只有 `main` 上的排程／手動觸發會進入 `sync` 工作；PR 與其他分支只做不含真實憑證的測試。
+- 只有 `main` 上的排程／手動／非 github-actions[bot] 程式更新觸發會進入 `sync` 工作；PR 與其他分支只做不含真實憑證的測試。自動資料提交不會遞迴觸發同步。
 - `sync` 結果應顯示 `Synced=True`、`CredentialStateSaved=True`。`DataQuality=partial` 與 `SectionWarnings` 會列出未完整確認的來源，不代表可以把缺值當0。
 - 若顯示 `CloudSetupRequired`，代表環境 secrets 尚未齊備，程式沒有向 Flaim 發送更新請求。
 - 檢查 `data/dashboard.json` 各區塊出現正確的 `RetrievedAtUtc`；來源未提供最後更新時間時保留未知。網站每五分鐘檢查資料，GitHub Pages 版本會直接讀取主分支的公開 JSON；不靠自動提交再觸發網頁重建。

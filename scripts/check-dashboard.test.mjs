@@ -2,9 +2,18 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { normalizeDashboard, normalizeFeedUrl, sectionData } from '../dashboard-model.mjs';
+import { invalidDashboardSections } from './check-dashboard.mjs';
 
 const base = JSON.parse(await readFile(new URL('../tests/fixtures/dashboard.json', import.meta.url), 'utf8'));
 const fixture = () => structuredClone(base);
+test('validation diagnostics expose only fixed section names, never source values', () => {
+  const raw = fixture();
+  assert.deepEqual(invalidDashboardSections(raw), []);
+  raw.Sections.Market.Data.Players[0].PercentOwned = 101;
+  assert.deepEqual(invalidDashboardSections(raw), ['Market']);
+  raw.Season = 2025;
+  assert.deepEqual(invalidDashboardSections(raw), ['Root']);
+});
 
 test('verified public dashboard has independent source times', () => {
   const data = normalizeDashboard(fixture());

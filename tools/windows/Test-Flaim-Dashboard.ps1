@@ -170,6 +170,75 @@ Test-FDDCase 'Actual PowerShell JSON satisfies the browser Node dashboard contra
     }
     finally {if ($null -ne $process) {$process.Dispose()};$outTask=$null;$errorTask=$null}
 }
+# Import only the required declarations; never execute the scheduled entry point.
+foreach ($sourceSpec in @(
+    @{Path=(Join-Path $PSScriptRoot 'Flaim-GitHub-Common.ps1');Name='Stop-FlaimCloudFailure'},
+    @{Path=(Join-Path $PSScriptRoot 'Flaim-Scheduled-Sync.ps1');Name='Invoke-FlaimPublicNode'}
+)) {
+    $sourceTokens=$null;$sourceErrors=$null
+    $sourceAst=[Management.Automation.Language.Parser]::ParseFile($sourceSpec.Path,[ref]$sourceTokens,[ref]$sourceErrors)
+    if ($sourceErrors.Count) {throw 'PublicNodeTestSyntaxFailed'}
+    $definition=@($sourceAst.EndBlock.Statements | Where-Object {$_ -is [Management.Automation.Language.FunctionDefinitionAst] -and $_.Name -ceq $sourceSpec.Name})
+    if ($definition.Count -ne 1) {throw 'PublicNodeTestDefinitionMissing'}
+    . ([scriptblock]::Create($definition[0].Extent.Text))
+}
+$publicNodeFixture=Join-Path $testFolder 'public node fixture.mjs'
+[IO.File]::WriteAllText($publicNodeFixture,@'
+const forbidden=['FLAIM_REFRESH_TOKEN','FLAIM_SECRET_WRITER','GITHUB_TOKEN','GH_TOKEN','NODE_OPTIONS'];
+if(forbidden.some(key=>process.env[key]))process.exit(77);
+console.log('synthetic public-node stdout must remain private');
+if(process.argv[2]==='malformed'){
+  console.error('synthetic private diagnostic not JSON');
+  process.exitCode=1;
+}else{
+  console.error(JSON.stringify({InvalidSections:['Rules','synthetic-private-marker','Market','GITHUB_TOKEN',123,{private:'synthetic'}],Detail:'synthetic private diagnostic'}));
+  process.exitCode=process.argv[2]==='failure'?1:0;
+}
+'@,[Text.UTF8Encoding]::new($false))
+$publicNodeEnvNames=@('FLAIM_REFRESH_TOKEN','FLAIM_SECRET_WRITER','GITHUB_TOKEN','GH_TOKEN','NODE_OPTIONS')
+$publicNodePreviousEnv=@{}
+try {
+    foreach ($name in $publicNodeEnvNames) {
+        $publicNodePreviousEnv[$name]=[Environment]::GetEnvironmentVariable($name,'Process')
+        [Environment]::SetEnvironmentVariable($name,'synthetic-public-node-env','Process')
+    }
+    Test-FDDCase 'Public Node success suppresses both diagnostics streams and strips credential environment' {
+        $captured=@(Invoke-FlaimPublicNode -ScriptPath $publicNodeFixture -DataPath 'success' -FailureKind 'DashboardValidationFailed' *>&1)
+        Assert-FDDTest ($captured.Count -eq 0)
+        foreach ($name in $publicNodeEnvNames) {Assert-FDDTest ([Environment]::GetEnvironmentVariable($name,'Process') -ceq 'synthetic-public-node-env')}
+    }
+    Test-FDDCase 'Public Node failure preserves only the fixed kind and recognized section names' {
+        $script:publicNodeCaught=$null
+        $captured=@(& {
+            try {Invoke-FlaimPublicNode -ScriptPath $publicNodeFixture -DataPath 'failure' -FailureKind 'DashboardValidationFailed'}
+            catch {$script:publicNodeCaught=$_}
+        } *>&1)
+        Assert-FDDTest ($captured.Count -eq 0 -and $null -ne $script:publicNodeCaught)
+        Assert-FDDTest ($script:publicNodeCaught.Exception.Data['CloudKind'] -ceq 'DashboardValidationFailed')
+        Assert-FDDTest ($script:publicNodeCaught.Exception.Data['InvalidSections'] -ceq 'Rules,Market')
+        Assert-FDDTest ($script:publicNodeCaught.Exception.Message -ceq 'Public data subprocess failed.')
+        Assert-FDDTest (@($script:publicNodeCaught.Exception.Data.Keys).Count -eq 2)
+        $script:publicNodeCaught=$null
+    }
+    Test-FDDCase 'Malformed public Node diagnostics never escape the fixed failure summary' {
+        $script:publicNodeCaught=$null
+        $captured=@(& {
+            try {Invoke-FlaimPublicNode -ScriptPath $publicNodeFixture -DataPath 'malformed' -FailureKind 'DashboardValidationFailed'}
+            catch {$script:publicNodeCaught=$_}
+        } *>&1)
+        Assert-FDDTest ($captured.Count -eq 0 -and $null -ne $script:publicNodeCaught)
+        Assert-FDDTest ($script:publicNodeCaught.Exception.Data['CloudKind'] -ceq 'DashboardValidationFailed')
+        Assert-FDDTest ($null -eq $script:publicNodeCaught.Exception.Data['InvalidSections'])
+        Assert-FDDTest (@($script:publicNodeCaught.Exception.Data.Keys).Count -eq 1)
+        $script:publicNodeCaught=$null
+    }
+}
+finally {
+    foreach ($name in $publicNodeEnvNames) {
+        if ($publicNodePreviousEnv.ContainsKey($name)) {[Environment]::SetEnvironmentVariable($name,$publicNodePreviousEnv[$name],'Process')}
+    }
+    $publicNodePreviousEnv=$null;$script:publicNodeCaught=$null
+}
 $access.Dispose();$refresh.Dispose()
 # Remove only individual test files and then the known empty test directory.
 Get-ChildItem -LiteralPath $testFolder -File | ForEach-Object {[IO.File]::Delete($_.FullName)}

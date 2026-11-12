@@ -16,7 +16,7 @@ Yahoo 籃球聯盟 **Funny League 2026-27**、球隊 **RayBookDown** 的公開�
 
 ## 兩種更新時間
 
-每日台灣時間 **06:30**：GitHub Actions 取得新資料並發布 JSON，排程可能延遲。網站開啟時及每 **5分鐘**：重新讀取公開 JSON，不直接登入 Flaim 或 Yahoo。
+每日台灣時間 **06:30** 及 main 程式更新後：GitHub Actions 取得新資料並發布 JSON，排程可能延遲。網站開啟時及每 **5分鐘**：重新讀取公開 JSON，不直接登入 Flaim 或 Yahoo。自動資料提交使用 GITHUB_TOKEN，不會再觸發新一輪同步；github-actions[bot] 的 push 亦被排除。
 
 GitHub Pages 預設讀取主分支的 raw 公開 JSON，不依賴每次資料提交觸發網頁重建。原 `data/team.json` 在新名單讀取成功時仍會更新，供舊版工具相容使用；正式網頁改讀 `data/dashboard.json`。舊資料來源設定不自動沿用，可在「資料更新」恢復預設來源。
 
@@ -64,4 +64,4 @@ powershell.exe -NoProfile -NonInteractive -File tools/windows/Test-Flaim-Dashboa
 
 ```
 
-PR只執行合成Flaim資料測試與無憑證NBA公開來源檢查；真實憑證僅供main分支的排程／手動同步使用。
+PR只執行合成Flaim資料測試與無憑證NBA公開來源檢查；真實憑證僅供main分支的排程／手動／程式更新後同步使用。原生Node程序使用獨立且移除憑證環境變數的安全執行器；錯誤摘要僅含階段、型別、行號及已知section名稱，沒有原始診斷或資料值。

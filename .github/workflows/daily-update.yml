@@ -74,7 +74,7 @@ jobs:
           & .\tools\windows\Test-Flaim-Dashboard.ps1
   sync:
     needs: [check, cloud-tests]
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.actor != 'github-actions[bot]'))
     runs-on: windows-2022
     timeout-minutes: 15
     environment: flaim
