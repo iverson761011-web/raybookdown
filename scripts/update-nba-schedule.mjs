@@ -117,6 +117,22 @@ function scriptsFromHtml(html, attribute) {
   }
   return found;
 }
+export function visibleOfficialText(html) {
+  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, ' ')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;|&#160;|&#x0*a0;/gi, ' ').replace(/\s+/g, ' ');
+}
+// This exact empty-day shape was verified against NBA's 2026-11-03 page.
+// An absent collection or JavaScript's static "No Games" label is not evidence.
+export function officialNoGamesDay(html, root, requestedDate) {
+  const props = root?.props?.pageProps;
+  return root?.query?.date === requestedDate && props?.selectedDate === requestedDate && props?.hasError === false
+    && Array.isArray(props.gameCardFeed?.modules) && props.gameCardFeed.modules.length === 0
+    && !(Array.isArray(props.games) && props.games.length > 0)
+    && !(Array.isArray(props.scoreboard?.games) && props.scoreboard.games.length > 0)
+    && /\bNo Games Scheduled\b/i.test(visibleOfficialText(html));
+}
 export function parseDailyHtml(html, requestedDate) {
   calendarDate(requestedDate);
   const parsed = scriptsFromHtml(html, /\bid\s*=\s*["']__NEXT_DATA__["']/i);
@@ -132,7 +148,7 @@ export function parseDailyHtml(html, requestedDate) {
       const games = cards.filter(x => /gamecard/i.test(String(x?.cardType ?? '')) || x?.cardData?.gameId || x?.cardData?.game?.gameId)
         .map(x => x.cardData?.game ?? x.cardData);
       if (games.length) groups.push(games);
-      else if (props.gameCardFeed.totalGames === 0 || props.gameCount === 0) groups.push([]);
+      else if (officialNoGamesDay(html, root, requestedDate)) groups.push([]);
     }
     if (groups.length) {
       const results = groups.map(games => parseGameCollection(games, requestedDate));

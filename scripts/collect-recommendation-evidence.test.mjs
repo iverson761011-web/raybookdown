@@ -8,6 +8,7 @@ const wrap=(props,query={date})=>`<html><script id="__NEXT_DATA__" type="applica
 const team=(name,score)=>({teamName:name,teamCity:'City',teamTricode:name.slice(0,3).toUpperCase(),score});
 const game=(overrides={})=>({gameId:'0022600218',gameTimeUtc:start,gameStatus:3,gameStatusText:'Final',awayTeam:team('Away',102),homeTeam:team('Home',103),...overrides});
 const daily=(games)=>wrap({gameCardFeed:{modules:[{cards:games.map(cardData=>({cardData}))}]}});
+const emptyOfficial=(selected=date,{hasError=false,notice='<main>No Games Scheduled</main>'}={})=>wrap({hasError,selectedDate:selected,gameCardFeed:{modules:[]}})+notice;
 const expected=()=>parseDailyScoreboard(daily([game()]),date).Games[0];
 const statistic={minutes:'PT30M30S',fieldGoalsMade:7,fieldGoalsAttempted:15,freeThrowsMade:2,freeThrowsAttempted:2,threePointersMade:2,points:18,reboundsOffensive:1,reboundsDefensive:3,reboundsTotal:4,assists:10,steals:1,blocks:0,turnovers:2};
 const player=(overrides={})=>({personId:123,name:'Alperen Şengün',played:'1',statistics:statistic,...overrides});
@@ -30,7 +31,12 @@ test('a whole day is final only when every listed game and its scores are verifi
  assert.equal(parseDailyScoreboard(daily([game({awayTeam:team('Away',null)})]),date).Status,'waiting');
  assert.equal(parseDailyScoreboard(daily([game({awayTeam:team('Away',0)})]),date).Status,'final');
  assert.equal(parseDailyScoreboard(daily([]),date).Status,'unknown');
- assert.equal(parseDailyScoreboard(wrap({gameCount:0,gameCardFeed:{modules:[]}}),date).Status,'no_games');
+ assert.equal(parseDailyScoreboard(emptyOfficial(),date).Status,'no_games');
+ assert.equal(parseDailyScoreboard(emptyOfficial(date,{notice:''}),date).Status,'unknown');
+ assert.equal(parseDailyScoreboard(emptyOfficial(date,{notice:'<script>"No Games Scheduled"</script>'}),date).Status,'unknown');
+ assert.equal(parseDailyScoreboard(emptyOfficial('2026-11-10'),date).Status,'unknown');
+ assert.equal(parseDailyScoreboard(emptyOfficial(date,{hasError:true}),date).Status,'unknown');
+ assert.equal(parseDailyScoreboard(wrap({gameCount:0,gameCardFeed:{modules:[]}}),date).Status,'unknown');
  assert.throws(()=>parseDailyScoreboard(daily([game()]),'2026-11-10'),/OfficialDateMismatch/);
  assert.equal(parseDailyScoreboard(daily([game({gameTimeUtc:'2026-11-14T00:00:00Z'})]),date).CoverageVerified,false);
  assert.equal(parseDailyScoreboard(daily([game(),game()]),date).Status,'unknown');
@@ -108,7 +114,7 @@ test('a failed injury parser cannot erase unknown status by treating names as he
 test('incomplete player statistics are retained with nulls and retried on the next collection',async()=>{
  let complete=false,boxReads=0;
  const fetchBytes=async url=>{
-  if(url.includes('/games?date=2026-11-10'))return Buffer.from(wrap({gameCount:0,gameCardFeed:{modules:[]}},{date:'2026-11-10'}));
+  if(url.includes('/games?date=2026-11-10'))return Buffer.from(emptyOfficial('2026-11-10').replace('"date":"2026-11-11"','"date":"2026-11-10"'));
   if(url.includes('/games?'))return Buffer.from(daily([game()]));
   if(url.includes('/box-score')){boxReads++;return Buffer.from(box([player({statistics:complete?statistic:{points:18,minutes:'PT30M'}})]));}
   throw new Error('injury not available in this fixture');

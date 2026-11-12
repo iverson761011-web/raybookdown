@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import fs from 'node:fs/promises';
 import { spawn } from 'node:child_process';
-import { addDays, taipeiDate } from './update-nba-schedule.mjs';
+import { addDays, taipeiDate, officialNoGamesDay, visibleOfficialText } from './update-nba-schedule.mjs';
 import { normalizeDashboard } from '../dashboard-model.mjs';
 
 const HOSTS = new Set(['nba.com','www.nba.com','cdn.nba.com','official.nba.com','ak-static.cms.nba.com']);
@@ -42,7 +42,7 @@ function gameSourceUrl(raw) {
  const slug=typeof away==='string'&&/^[A-Z]{2,3}$/i.test(away)&&typeof home==='string'&&/^[A-Z]{2,3}$/i.test(home)?`${away.toLowerCase()}-vs-${home.toLowerCase()}-`:'';
  return `https://www.nba.com/game/${slug}${id}/box-score`;
 }
-export function parseDailyScoreboard(html,date){day(date);const root=nextData(html),props=root?.props?.pageProps;const cards=gameCards(root,date);if(cards.length>32)problem('OfficialStructureUnknown');if(!cards.length&&props?.gameCount!==0&&props?.gameCardFeed?.totalGames!==0)return{CoverageVerified:false,Status:'unknown',Games:[]};
+export function parseDailyScoreboard(html,date){day(date);const root=nextData(html);const cards=gameCards(root,date);if(cards.length>32)problem('OfficialStructureUnknown');if(!cards.length&&!officialNoGamesDay(html,root,date))return{CoverageVerified:false,Status:'unknown',Games:[]};
  let verified=true;const games=[];const ids=new Set();for(const raw of cards){const id=raw?.gameId,start=startAt(raw);if(typeof id!=='string'||!/^\d{10}$/.test(id)||ids.has(id)||!start||etDate(start)!==date){verified=false;continue;}ids.add(id);const teams=[club(raw.awayTeam),club(raw.homeTeam)];if(teams.some(t=>!t.Name)||teams[0].Name===teams[1].Name){verified=false;continue;}games.push({GameId:id,DateET:date,StartAtUtc:start,Status:normalizeFinalStatus(raw),Teams:teams,SourceUrl:gameSourceUrl(raw)});}
  const status=!verified?'unknown':games.length===0?'no_games':games.every(g=>g.Status==='final'&&g.Teams.every(t=>t.Score!==null))?'final':games.some(g=>g.Status==='unknown')?'unknown':'waiting';return{CoverageVerified:verified,Status:status,Games:games};
 }
@@ -58,7 +58,7 @@ const publicKeys=v=>v&&typeof v==='object'?Object.keys(v).filter(k=>/^[A-Za-z0-9
 export function describeDailySchema(html) {
  const root=nextData(html),props=root?.props?.pageProps,feed=props?.gameCardFeed;
  const summary=value=>({Keys:publicKeys(value),Scalars:Object.fromEntries(Object.entries(value??{}).filter(([key,v])=>/^[A-Za-z0-9_]{1,60}$/.test(key)&&(typeof v==='number'&&Number.isFinite(v)||typeof v==='boolean'||/(?:type|title|text|headline|subhead|message|body|count|description)/i.test(key)&&clean(v,200)!==null)).slice(0,16))});
- const visible=html.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi,' ').replace(/<!--[\s\S]*?-->/g,' ').replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;|&#x0*a0;/gi,' ').replace(/\s+/g,' ');
+ const visible=visibleOfficialText(html);
  const emptyMatches=[...visible.matchAll(/.{0,35}\bno\s+games?\s+(?:are\s+)?(?:scheduled|today|available)\b.{0,55}/gi)].map(m=>clean(m[0].trim(),120)).filter(Boolean);
  const fieldShape=v=>({Type:v===null?'null':Array.isArray(v)?'array':typeof v,...(Array.isArray(v)?{Count:v.length,FirstItemType:v[0]===null?'null':Array.isArray(v[0])?'array':typeof v[0],FirstItemKeys:publicKeys(v[0]),DateSamples:v.filter(x=>typeof x==='string'&&(DATE.test(x)||ISO.test(x))).slice(0,3)}:v&&typeof v==='object'?{Keys:publicKeys(v)}:{})});
  return {PagePropKeys:publicKeys(props),PageProps:summary(props),Selection:{QueryDate:typeof root?.query?.date==='string'&&DATE.test(root.query.date)?root.query.date:null,HasError:typeof props?.hasError==='boolean'?props.hasError:null,SelectedDate:typeof props?.selectedDate==='string'&&clean(props.selectedDate,60)?props.selectedDate:null,SelectedDateShape:fieldShape(props?.selectedDate),IsDateOverrideActive:typeof props?.isDateOverrideActive==='boolean'?props.isDateOverrideActive:null,AllGamesInCurrentYear:fieldShape(props?.allGamesInCurrentYear),Events:fieldShape(props?.events)},VisibleEmptyNotices:[...new Set(emptyMatches)].slice(0,3),Feed:summary(feed),Modules:Array.isArray(feed?.modules)?feed.modules.slice(0,4).map(m=>({...summary(m),CardsCount:Array.isArray(m?.cards)?m.cards.length:null,Cards:Array.isArray(m?.cards)?m.cards.slice(0,4).map(c=>({...summary(c),CardData:summary(c?.cardData)})):[]})):[]};
