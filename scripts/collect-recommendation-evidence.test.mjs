@@ -84,7 +84,7 @@ test('retained history is real only, no fabricated stats and explicit source fai
  };
  const result=await collectEvidence({date,historyDays:2,fetchBytes,parsePdf:async()=>rawInjuries,now:fixedNow});
  assert.equal(result.evidence.Day.Status,'final');assert.equal(result.evidence.PlayerGames.length,2);
- assert.deepEqual(result.evidence.History.VerifiedDates,[date]);assert.deepEqual(result.evidence.History.UnavailableDates,['2026-11-10']);
+ assert.deepEqual(result.evidence.History.VerifiedDates,[date]);assert.deepEqual(result.evidence.History.UnavailableDates,['2026-11-09','2026-11-10']);
  assert.equal(result.history.Days.length,1);assert.equal(result.evidence.Injuries.Status,'partial');
  assert.equal(result.evidence.Warnings[0].ErrorType,'OfficialSourceUnavailable');
  assert.ok(!JSON.stringify(result).includes('secret-like'));
@@ -108,6 +108,7 @@ test('a failed injury parser cannot erase unknown status by treating names as he
 test('incomplete player statistics are retained with nulls and retried on the next collection',async()=>{
  let complete=false,boxReads=0;
  const fetchBytes=async url=>{
+  if(url.includes('/games?date=2026-11-10'))return Buffer.from(wrap({gameCount:0,gameCardFeed:{modules:[]}},{date:'2026-11-10'}));
   if(url.includes('/games?'))return Buffer.from(daily([game()]));
   if(url.includes('/box-score')){boxReads++;return Buffer.from(box([player({statistics:complete?statistic:{points:18,minutes:'PT30M'}})]));}
   throw new Error('injury not available in this fixture');
@@ -115,7 +116,7 @@ test('incomplete player statistics are retained with nulls and retried on the ne
  const first=await collectEvidence({date,historyDays:1,fetchBytes,now:fixedNow});
  assert.equal(first.evidence.PlayerGames[0].Stats.FGA,null);
  assert.deepEqual(first.evidence.History.MissingBoxScoreDates,[date]);
- assert.equal(first.history.Days[0].BoxScoresComplete,false);
+ assert.equal(first.history.Days.find(day=>day.DateET===date).BoxScoresComplete,false);
  complete=true;
  const second=await collectEvidence({date,historyDays:1,fetchBytes,now:fixedNow,history:first.history});
  assert.equal(boxReads,2);assert.equal(second.evidence.PlayerGames[0].Stats.FGA,15);

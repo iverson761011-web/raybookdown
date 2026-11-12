@@ -83,7 +83,7 @@ export async function parseInjuryPdf(bytes, report, {python=process.env.PYTHON_E
   child.stdout.on('data',value=>{stdout+=value.toString('utf8');if(stdout.length>2*1024*1024){overflow=true;child.kill();}});
   child.stderr.resume();child.stdin.on('error',()=>{});
   child.on('error',()=>{clearTimeout(timer);reject(Object.assign(new Error('InjuryParserUnavailable'),{safeCode:'InjuryParserUnavailable'}));});
-  child.on('close',code=>{clearTimeout(timer);let raw;try{raw=JSON.parse(stdout);}catch{}if(code!==0||overflow){const safeCode=INJURY_CODES.has(raw?.ErrorType)?raw.ErrorType:'InjuryParserFailed';const diagnostics=raw?.Diagnostics&&typeof raw.Diagnostics==='object'?Object.fromEntries(Object.entries(raw.Diagnostics).filter(([key,value])=>['Phase','PdfPages','TextCharacters','HeaderCount','HeaderDate','HeaderTime','ColumnLinePresent','DateRowCount','PlayerStatusRowCount','ExtractionMode'].includes(key)&&(typeof value==='boolean'||typeof value==='number'&&Number.isFinite(value)||typeof value==='string'&&/^[A-Za-z0-9_:\-]{1,40}$/.test(value)))):undefined;reject(Object.assign(new Error(safeCode),{safeCode,diagnostics}));return;}if(raw)resolve(raw);else reject(Object.assign(new Error('InjuryParserFailed'),{safeCode:'InjuryParserFailed'}));});
+  child.on('close',code=>{clearTimeout(timer);let raw;try{raw=JSON.parse(stdout);}catch{}if(code!==0||overflow){const safeCode=INJURY_CODES.has(raw?.ErrorType)?raw.ErrorType:'InjuryParserFailed';const diagnostics=raw?.Diagnostics&&typeof raw.Diagnostics==='object'?Object.fromEntries(Object.entries(raw.Diagnostics).filter(([key,value])=>['Phase','PdfPages','TextCharacters','HeaderCount','HeaderDate','HeaderTime','ColumnLinePresent','DateRowCount','PlayerStatusRowCount','ExtractionMode','HeaderPreview'].includes(key)&&(typeof value==='boolean'||typeof value==='number'&&Number.isFinite(value)||typeof value==='string'&&(key==='HeaderPreview'?clean(value,100)!==null&&/^Injury\s*Report/i.test(value):/^[A-Za-z0-9_:\-]{1,40}$/.test(value))))):undefined;reject(Object.assign(new Error(safeCode),{safeCode,diagnostics}));return;}if(raw)resolve(raw);else reject(Object.assign(new Error('InjuryParserFailed'),{safeCode:'InjuryParserFailed'}));});
   child.stdin.end(bytes);
  });
 }
@@ -155,8 +155,10 @@ export function scopePlayerGames(rawDashboard, rows) {
 
 export async function collectEvidence({date=addDays(taipeiDate(),-1),seasonYear=2026,historyDays=30,history={Days:[]},dashboard=null,fetchBytes=fetchOfficialEvidence,parsePdf=parseInjuryPdf,now=()=>new Date(),concurrency=3}={}) {
  day(date);if(!Number.isInteger(historyDays)||historyDays<1||historyDays>30)problem('InvalidHistoryWindow');
- const generated=now().toISOString(),start=addDays(date,1-historyDays),warnings=[];
- const dates=Array.from({length:historyDays},(_,i)=>addDays(start,i));
+ // Retain the requested completed-day window plus the target day, which may
+ // still be in progress. A waiting target must not shorten the prior window.
+ const generated=now().toISOString(),start=addDays(date,-historyDays),warnings=[];
+ const dates=Array.from({length:historyDays+1},(_,i)=>addDays(start,i));
  const cached=new Map();for(const raw of Array.isArray(history?.Days)?history.Days:[]){if(typeof raw?.DateET!=='string'||raw.DateET<start||raw.DateET>date)continue;const valid=sanitizeCachedDay(raw,raw.DateET);if(valid)cached.set(raw.DateET,valid);}
  const days=await parallel(dates,concurrency,async target=>{
   const previous=cached.get(target);if(previous?.BoxScoresComplete&&target!==date)return previous;

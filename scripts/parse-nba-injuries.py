@@ -37,7 +37,9 @@ TEAM_NAMES = (
     "Washington Wizards",
 )
 TEAM = re.compile(r"^(" + "|".join(re.escape(v) for v in sorted(TEAM_NAMES, key=len, reverse=True)) + r")(?:\s+|$)")
-HEADER = re.compile(r"Injury Report:\s*(\d{2}/\d{2}/\d{2})\s+(\d{1,2}:\d{2})\s*(AM|PM)", re.I)
+# PDF layout extraction can insert several alignment spaces between words.
+# Both year widths are accepted only after an exact expected-date check.
+HEADER = re.compile(r"Injury\s*Report\s*:\s*(\d{1,2}/\d{1,2}/(?:\d{4}|\d{2}))\s*(\d{1,2}\s*:\s*\d{2})\s*(AM|PM)", re.I)
 STATUS = re.compile(r"^(.+?,\s*.+?)\s+(Available|Probable|Questionable|Doubtful|Out)(?:\s+(.*))?$", re.I)
 PREFIX_DATE = re.compile(r"^(\d{2}/\d{2}/\d{4})\s+")
 PREFIX_TIME = re.compile(r"^(\d{1,2}:\d{2})\s*\(ET\)\s+")
@@ -75,7 +77,9 @@ def report_timestamp(text: str, expected_date: str, expected_time: str) -> str:
     timestamps = set()
     for match in headers:
         try:
-            stamp = datetime.strptime(" ".join(match.groups()), "%m/%d/%y %I:%M %p")
+            report_date, report_time, meridiem = match.groups()
+            year_format = "%Y" if len(report_date.rsplit("/", 1)[1]) == 4 else "%y"
+            stamp = datetime.strptime(report_date + " " + re.sub(r"\s+", "", report_time) + " " + meridiem.upper(), "%m/%d/" + year_format + " %I:%M %p")
         except ValueError:
             safe_problem("InjuryReportHeaderInvalid")
         if stamp.strftime("%Y-%m-%d") != expected_date or stamp.strftime("%H:%M") != expected_time:
@@ -110,6 +114,14 @@ def parse_text(text: str, expected_date: str, expected_time: str) -> dict:
                         "ColumnLinePresent": bool(COLUMNS.search(text)),
                         "DateRowCount": len(re.findall(r"(?m)^\s*\d{2}/\d{2}/\d{4}\s+", text)),
                         "PlayerStatusRowCount": len(re.findall(r"\b(?:Available|Probable|Questionable|Doubtful|Out)\b", text))})
+    for line in text.splitlines():
+        # This public report heading is the only source fragment exposed on
+        # failure. Do not include player rows, reasons, or arbitrary PDF text.
+        if "injuryreport" in re.sub(r"\s+", "", line).lower():
+            preview = " ".join(line.split())[:100]
+            if SAFE_TEXT.fullmatch(preview):
+                DIAGNOSTICS["HeaderPreview"] = preview
+            break
     issued = report_timestamp(text, expected_date, expected_time)
     DIAGNOSTICS.update({"HeaderDate": expected_date, "HeaderTime": expected_time, "Phase": "table"})
     # pypdf can join the last table row to the next page header. Remove only

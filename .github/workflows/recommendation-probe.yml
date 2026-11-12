@@ -9,6 +9,8 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -20,3 +22,9 @@ jobs:
       - run: python3 -m pip install -r scripts/requirements-injuries.txt
       - run: python3 -m unittest discover -s scripts -p test_parse_nba_injuries.py
       - run: node scripts/collect-recommendation-evidence.mjs --probe --date=2026-11-11
+      - run: node scripts/collect-recommendation-evidence.mjs --dashboard=data/dashboard.json --history-days=30
+      - run: node scripts/build-weekly-schedule.mjs data/dashboard.json
+      - name: Save verified public evidence for feature review
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/save-probe-evidence.mjs

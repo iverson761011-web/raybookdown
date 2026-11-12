@@ -59,6 +59,16 @@ class InjuryParserTests(unittest.TestCase):
         with self.assertRaisesRegex(injuries.ParseProblem, "InjuryReportHeaderMissing"):
             self.parse("No report")
 
+    def test_layout_alignment_spaces_and_four_digit_year(self):
+        text = FIXTURE.replace("Injury Report: 11/12/26 11:30 AM", "Injury     Report :   11/12/2026    11 : 30  AM")
+        result = self.parse(text)
+        self.assertEqual(result["ReportIssuedAtUtc"], "2026-11-12T16:30:00Z")
+        self.assertEqual(len(result["Players"]), 5)
+        compact = FIXTURE.replace("Injury Report: 11/12/26 11:30 AM", "InjuryReport:11/12/2611:30AM")
+        self.assertEqual(self.parse(compact)["ReportIssuedAtUtc"], "2026-11-12T16:30:00Z")
+        with self.assertRaisesRegex(injuries.ParseProblem, "InjuryReportTimestampMismatch"):
+            self.parse(text.replace("11 : 30", "11 : 15"))
+
     def test_unknown_layout_is_partial_and_not_health(self):
         result = self.parse(HEADER + "11/12/2026 07:00 (ET) DAL@MIN Dallas Mavericks Martin, Caleb Available Injury/Illness - Thumb\nUnexpected schema row")
         # A continuation cannot create any additional player or healthy status.
