@@ -168,3 +168,31 @@ test('strict input validation rejects malformed protection and credential fields
   await assert.rejects(()=>buildRecommendations(file,{now}));assert.equal(await fs.readFile(output,'utf8'),previous);
  }finally{const resolved=path.resolve(folder);if(path.dirname(resolved)!==path.resolve(os.tmpdir())||!path.basename(resolved).startsWith('raybookdown-recommend-'))throw new Error('UnsafeTestCleanup');await fs.rm(resolved,{recursive:true,force:true});}
 });
+test('a fresh explicit zero Add allowance in either source suspends new-add priority and retains only observations',()=>{
+ for(const name of ['Budget','Transactions']){
+  const f=fixture();f.dashboard.Sections[name]={Status:'ok',RetrievedAtUtc:stamp,SourceUpdatedAtUtc:null,Data:{AddsRemainingThisWeek:0,MaxWeeklyAdds:6}};
+  const r=run(f);assert.equal(r.Status,'insufficient_data');assert.match(r.Candidates[0].Recommendation,/剩餘Add為0/);assert.equal(r.Candidates[0].DropOptions.length,0);assert(r.Reasons.some(reason=>reason.includes('已核實本週剩餘Add為0')));
+ }
+});
+test('unknown Add allowance stays unknown and is never inferred from limits or observed transactions',()=>{
+ const f=fixture();f.dashboard.Sections.Budget={Status:'ok',RetrievedAtUtc:stamp,Data:{AddsRemainingThisWeek:null,MaxWeeklyAdds:6}};
+ f.dashboard.Sections.Transactions={Status:'ok',RetrievedAtUtc:stamp,Data:{AddsRemainingThisWeek:null,Rows:Array(14).fill({Type:'add'})}};
+ const r=run(f);assert.equal(r.Status,'ready');assert.match(r.Candidates[0].Recommendation,/可評估加入/);assert(r.Notes.some(note=>note.includes('剩餘Add未知')));assert(!r.Reasons.some(reason=>reason.includes('剩餘Add為0')));
+});
+test('stale, future or failed-source zero allowances do not masquerade as a current official zero',()=>{
+ for(const source of [{Status:'ok',RetrievedAtUtc:new Date(+now-37*3600000).toISOString()},{Status:'ok',RetrievedAtUtc:new Date(+now+3600000).toISOString()},{Status:'error',RetrievedAtUtc:stamp}]){
+  const f=fixture();f.dashboard.Sections.Budget={...source,Data:{AddsRemainingThisWeek:0}};
+  const r=run(f);assert.equal(r.Status,'ready');assert(r.Notes.some(note=>note.includes('剩餘Add未知')));assert(!r.Reasons.some(reason=>reason.includes('剩餘Add為0')));
+ }
+});
+test('contradictory fresh allowance sources hold conservatively and explicitly disclose the conflict',()=>{
+ for(const [budget,transactions]of [[0,2],[2,3]]){
+  const f=fixture();for(const [name,value]of [['Budget',budget],['Transactions',transactions]])f.dashboard.Sections[name]={Status:'ok',RetrievedAtUtc:stamp,Data:{AddsRemainingThisWeek:value}};
+  const r=run(f);assert.equal(r.Status,'insufficient_data');assert.equal(r.Candidates[0].DropOptions.length,0);assert(r.Reasons.some(reason=>reason.includes('數值不一致')));
+  if(budget!==0)assert(!r.Reasons.some(reason=>reason.includes('剩餘Add為0')));
+ }
+});
+test('a new verified zero also places a preserved waiting report on hold without changing its original generation time',()=>{
+ const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';f.dashboard.Sections.Budget={Status:'ok',RetrievedAtUtc:stamp,Data:{AddsRemainingThisWeek:0}};
+ const r=run({...f,previous});assert.equal(r.Status,'waiting');assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.match(r.Candidates[0].Recommendation,/觀察舊報告.*剩餘Add為0/);assert.equal(r.Candidates[0].DropOptions.length,0);assert(r.Sources.some(s=>s.Name.includes('Add額度檢查 Budget')&&s.RetrievedAtUtc===stamp));
+});

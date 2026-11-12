@@ -21,6 +21,11 @@ const fresh=(value,now,hours)=>time(value)!==null&&Date.parse(value)<=+now&&+now
 const bool=v=>typeof v==='boolean'?v:null;
 function sourceUrl(value){if(value===null)return null;let u;try{u=new URL(value);}catch{return null;}if(u.protocol!=='https:'||!(u.hostname==='nba.com'||u.hostname.endsWith('.nba.com'))||u.username||u.password||u.hash)return null;if(u.search&&!(u.pathname==='/games'&&Array.from(u.searchParams.keys()).length===1&&date(u.searchParams.get('date'))))return null;return u.href;}
 function section(dashboard,name){const s=dashboard?.Sections?.[name];return s&&s.Status==='ok'&&s.Data&&typeof s.Data==='object'?s:null;}
+function addAllowance(dashboard,now){
+  const values=['Budget','Transactions'].flatMap(name=>{const s=section(dashboard,name),value=s?.Data?.AddsRemainingThisWeek;return s&&fresh(s.RetrievedAtUtc,now,36)&&Number.isInteger(value)&&value>=0&&value<=1000?[value]:[];});
+  const zero=values.includes(0),inconsistent=new Set(values).size>1;
+  return {hold:zero||inconsistent,zero,inconsistent,unknown:values.length===0,reason:zero?'已核實本週剩餘Add為0，暫停新加入優先排序；保留觀察而不承諾可加入。':inconsistent?'新鮮的Add額度來源互相不一致，採保守暫停新加入優先排序。':null};
+}
 function dayFinal(day){return day?.CoverageVerified===true&&Array.isArray(day.Games)&&((day.Status==='no_games'&&day.Games.length===0)||(day.Status==='final'&&day.Games.length>0&&day.Games.every(g=>g?.Status==='final'&&Array.isArray(g.Teams)&&g.Teams.length===2&&g.Teams.every(t=>number(t.Score)!==null))));}
 function playerCode(value,week){const mapped=typeof value==='string'?week?.TeamCodeAliases?.[value.trim().toUpperCase()]:null;return resolveTeam(mapped??value)?.TeamCode??null;}
 function weekInfo(week){return {Basis:['yahoo_verified','taipei_calendar'].includes(week?.PeriodBasis)?week.PeriodBasis:null,StartDateTaipei:date(week?.RangeStartDateTaipei),EndDateTaipei:date(week?.RangeEndDateTaipei),VerifiedYahooWeek:week?.YahooWeekBoundsKnown===true};}
@@ -115,7 +120,7 @@ function trend(inspect,categories,evidence,reportDate){
 }
 function formatDelta(row){const signed=(row.delta>=0?'+':'')+(Math.abs(row.delta)<1?row.delta.toFixed(3):row.delta.toFixed(1));return row.stat==='TO'?`TO估計差${signed}（失誤較少較好）`:`${row.stat}估計差${signed}`;}
 function sourcesFor(report,dashboard,evidence,week,reportDate){
-  const sources=[];for(const key of ['Roster','Market','Matchup']){const s=dashboard?.Sections?.[key];sources.push({Name:'Flaim / Yahoo '+key,RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:null});}
+  const sources=[];for(const key of ['Roster','Market','Matchup','Budget','Transactions']){const s=dashboard?.Sections?.[key];if(s)sources.push({Name:'Flaim / Yahoo '+key,RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:null});}
   const reportedDay=evidence?.LastCompletedDay?.DateET===reportDate?evidence.LastCompletedDay.Day:evidence?.Day;
   sources.push({Name:'NBA官方完整比賽日',RetrievedAtUtc:time(reportedDay?.RetrievedAtUtc),SourceUpdatedAtUtc:null,Url:sourceUrl('https://www.nba.com/games?date='+reportDate)});
   sources.push({Name:'NBA官方傷勢報告',RetrievedAtUtc:time(evidence?.Injuries?.RetrievedAtUtc),SourceUpdatedAtUtc:time(evidence?.Injuries?.ReportIssuedAtUtc),Url:sourceUrl(evidence?.Injuries?.SourceUrl)});
@@ -126,9 +131,20 @@ function sourcesFor(report,dashboard,evidence,week,reportDate){
 export function generateRecommendations({dashboard,evidence,week,previous=null,now=new Date()}={}){
   const report=baseReport(evidence,week,now),target=date(evidence?.TargetNbaDateET);
   if(dashboard?.League!=='Funny League 2026-27'||dashboard?.Team!=='RayBookDown'||dashboard?.Platform!=='yahoo'||!target||target>etDate(now)){report.Status='unavailable';report.Reasons=['聯盟來源或官方目標日期無法核實；未使用未來資料。'];return report;}
+  const allowance=addAllowance(dashboard,now);
   let reportDate=target,backfilled=false;
   if(evidence?.Day?.Status==='waiting'){
-    const old=safePrevious(previous,now,target);if(old){old.Notes=uniq([...old.Notes,`目前目標美東${target}尚未全部完賽；保留美東${old.ReportDateET}舊報告與原產生時間，未當作新完賽建議。`]);return old;}
+    const old=safePrevious(previous,now,target);
+    if(old){
+      old.Notes=uniq([...old.Notes,`目前目標美東${target}尚未全部完賽；保留美東${old.ReportDateET}舊報告與原產生時間，未當作新完賽建議。`]);
+      if(allowance.hold){
+        old.Reasons=uniq([...old.Reasons,allowance.reason,...(allowance.inconsistent?['目前Add額度來源數值不一致，暫停舊報告的新加入優先排序。']:[])]);
+        for(const candidate of old.Candidates){candidate.Recommendation=allowance.zero?'觀察舊報告：目前本週剩餘Add為0，暫停新加入優先排序':'觀察舊報告：目前Add額度來源不一致，暫停新加入優先排序';candidate.Reasons=uniq([...candidate.Reasons,allowance.reason]);}
+        const quotaSources=['Budget','Transactions'].flatMap(name=>{const s=section(dashboard,name);return s&&fresh(s.RetrievedAtUtc,now,36)&&Number.isInteger(s.Data.AddsRemainingThisWeek)?[{Name:'本次Flaim / Yahoo Add額度檢查 '+name,RetrievedAtUtc:time(s.RetrievedAtUtc),SourceUpdatedAtUtc:time(s.SourceUpdatedAtUtc),Url:null}]:[];});
+        old.Sources=[...quotaSources,...old.Sources].slice(0,100);
+      }
+      return old;
+    }
     const last=evidence?.LastCompletedDay;
     if(date(last?.DateET)&&last.DateET<target&&dayFinal(last.Day)){reportDate=last.DateET;backfilled=true;report.Notes.push(`目前目標美東${target}尚未全部完賽；此為最近已核實完賽日${reportDate}的補充報告，非今日新完賽結果。`);}
     else{report.Status='waiting';report.Reasons=['官方目標日尚未全部完賽，等待完整比分與統計。'];return report;}
@@ -139,6 +155,9 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
   const roster=section(dashboard,'Roster'),market=section(dashboard,'Market'),match=section(dashboard,'Matchup');
   if(![roster,market,match].every(s=>s&&fresh(s.RetrievedAtUtc,now,36))){report.Status='unavailable';report.Reasons=['陣容、自由市場或本週比分缺失、超過36小時或時間在未來；不產生新的加入排序。'];return report;}
   const rosterPlayers=(roster.Data.Players??[]).filter(p=>clean(p?.Player,200)),marketPlayers=(market.Data.Players??[]).filter(p=>clean(p?.Player,200)),counts=new Map();for(const p of [...rosterPlayers,...marketPlayers]){const key=normalizePlayerName(p.Player);counts.set(key,(counts.get(key)??0)+1);}
+  if(allowance.hold)report.Reasons.push(allowance.reason);
+  if(allowance.inconsistent)report.Reasons.push('Budget與Transactions的最新剩餘Add數值不一致，沒有擅自挑選較寬鬆的值。');
+  if(allowance.unknown)report.Notes.push('本週剩餘Add未知或來源已過期；沒有從每週上限或觀察交易筆數推算可用額度。');
   const cats=scoredCategories(match.Data),own=rosterPlayers.map(p=>inspectPlayer(p,evidence,week,reportDate,now,counts));
   if(!cats.length)report.Reasons.push('沒有可核實且本聯盟實際比較的類別項目，未產生類別淨增益排序。');
   if(!report.Week.VerifiedYahooWeek)report.Notes.push('Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。');
@@ -152,9 +171,10 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
   for(const player of marketPlayers){
     const item=inspectPlayer(player,evidence,week,reportDate,now,counts),injury=injuryCheck(item,evidence,week,now),availability=['free_agent','waivers'].includes(player.Availability)?player.Availability:null;
     const candidate={Player:player.Player,TeamCode:playerCode(player.TeamCode,week),Availability:availability,RemainingGames:item.remaining,SampleGames7:item.identityKnown?item.w7.length:null,SampleGames14:item.identityKnown?item.w14.length:null,InjuryStatus:injury.label,Recommendation:'觀察名單：證據不足，未列加入優先順序',Reasons:uniq([...item.reasons,injury.reason]),Tradeoffs:[],DropOptions:[]};
+    if(allowance.hold){candidate.Recommendation=allowance.zero?'觀察名單：本週剩餘Add為0，暫停新加入優先排序':'觀察名單：Add額度來源不一致，暫停新加入優先排序';candidate.Reasons.push(allowance.reason);}
     if(!availability)candidate.Reasons.push('Yahoo目前取得方式未知，不能承諾可立即加入。');
     if(availability==='waivers')candidate.Reasons.push('讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。');
-    const eligible=item.enough&&item.consistent&&item.remaining!==null&&item.remaining>0&&injury.safe&&availability==='free_agent'&&cats.length>0;
+    const eligible=!allowance.hold&&item.enough&&item.consistent&&item.remaining!==null&&item.remaining>0&&injury.safe&&availability==='free_agent'&&cats.length>0;
     const comparisons=eligible?own.filter(o=>o.enough&&o.consistent&&o.remaining!==null&&o.Protected!==true&&o.injury.safe).map(o=>({own:o,...compareProjection(item,o,cats,match.Data)})).filter(c=>c.complete&&c.score!==null).sort((a,b)=>b.score-a.score):[];
     const best=comparisons[0];
     if(best&&best.score>0){
