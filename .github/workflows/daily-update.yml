@@ -75,7 +75,7 @@ jobs:
   sync:
     needs: [check, cloud-tests]
     if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
-    runs-on: windows-latest
+    runs-on: windows-2022
     timeout-minutes: 15
     environment: flaim
     concurrency:
