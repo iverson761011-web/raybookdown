@@ -1,3 +1,4 @@
+import{initSourceRefresh}from'./source-refresh.mjs';
 import{normalizeDashboard,normalizeFeedUrl,normalizeSearch,sectionData,sectionState,formatTaipei,ageLabel,display,SECTION_NAMES}from'./dashboard-model.mjs';
 import{normalizeHistory,normalizeRecommendations,normalizeWeeklySchedule,normalizeLeagueAnalysis,weeklyTeam,weekBasis}from'./features-model.mjs';
 const DEFAULT_FEED=location.hostname==='iverson761011-web.github.io'?'https://raw.githubusercontent.com/iverson761011-web/raybookdown/main/data/dashboard.json':'data/dashboard.json';
@@ -40,7 +41,31 @@ const reasonLabels={InsufficientSample:'近期已確認的出賽樣本不足',Of
 const reason=v=>reasonLabels[v]??v;
 function addParagraph(parent,text,cls=''){const p=document.createElement('p');p.textContent=text;if(cls)p.className=cls;parent.append(p);return p;}
 function addReasons(parent,title,items){if(!items.length)return;addParagraph(parent,title);const ul=document.createElement('ul');for(const item of items){const li=document.createElement('li');li.textContent=reason(item);ul.append(li);}parent.append(ul);}
-function drawRecommendations(){const r=features.recommendations,meta=$('recommendationMeta');meta.className='section-meta'+(r?.Status==='ready'&&!featureErrors.recommendations?'':' warn');meta.textContent=r?'報告產生：'+formatTaipei(r.GeneratedAtUtc)+'（台灣）｜分析 NBA 日期（美東）：'+display(r.ReportDateET)+(featureErrors.recommendations?'｜本次讀取未完成，保留上次報告。':''):'尚未取得推薦報告；分析日期與來源時間未知。';const state={ready:'已完成資料檢查，以下為補強候選。',insufficient_data:'資料不足，暫不提供有把握的換人排名。',waiting:'當日 NBA 比賽尚未確認全部結束，等待完整賽果。',unavailable:'目前無法取得足夠資料產生推薦。'}[r?.Status]??'尚未取得可驗證的推薦。';txt('recommendationState',state+(r?.Reasons.length?' '+r.Reasons.map(reason).join('；'):''));const w=r?.Week;txt('recommendationPeriod',w?'分析範圍：'+(w.VerifiedYahooWeek===true?'Yahoo 已確認的當週':'已標示的日曆範圍，Yahoo 當週起迄未知')+' '+display(w.StartDateTaipei)+' ～ '+display(w.EndDateTaipei)+'。球隊剩餘場次不是保證球員可出賽場次。':'分析範圍未知。');const cards=$('recommendationCards');cards.replaceChildren();for(const c of r?.Candidates??[]){const card=document.createElement('article');card.className='recommendation-card';const title=document.createElement('h3');title.textContent=c.Player+' · '+display(c.TeamCode);card.append(title);addParagraph(card,availability(c.Availability)+'｜球隊剩餘 '+display(c.RemainingGames)+' 場｜近 7／14 天樣本 '+display(c.SampleGames7)+'／'+display(c.SampleGames14)+' 場');addParagraph(card,'傷病：'+display(c.InjuryStatus)+'｜'+display(c.Recommendation),'section-note');addReasons(card,'補強理由',c.Reasons);addReasons(card,'需要留意',c.Tradeoffs);for(const d of c.DropOptions){addParagraph(card,'可比較的換出人選：'+display(d.Player)+'。'+(d.Recommendation??''));addReasons(card,'換人依據',d.Reasons);addReasons(card,'換出後可能失去',d.Tradeoffs);}cards.append(card);}if(!(r?.Candidates.length))addParagraph(cards,'目前沒有資料足夠的推薦人選；不以缺失值當作 0 分。','section-note');fill('dropReviewRows',(r?.DropReviews??[]).map(d=>[cell(d.Player),cell(d.Recommendation),cell(display(d.SampleGames7)+'／'+display(d.SampleGames14)),cell([...d.Reasons,...d.Tradeoffs].map(reason).join('；')||'未知')]),4,'尚無足夠資料評估換出人選');const sources=$('recommendationSources');sources.replaceChildren();for(const s of r?.Sources??[]){const p=addParagraph(sources,display(s.Name)+'｜讀取：'+formatTaipei(s.RetrievedAtUtc)+'（台灣）｜來源最後更新：'+formatTaipei(s.SourceUpdatedAtUtc),'source-line');if(s.Url){const a=document.createElement('a');a.href=s.Url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=' 官方來源 ↗';p.append(a);}}if(!(r?.Sources.length))addParagraph(sources,'來源與時間未知。');txt('recommendationNotes',r?.Notes.length?r.Notes.map(reason).join('；'):'推薦不會自動更動 Yahoo 陣容。');}
+function drawPickupCards(id,items,watch=false){
+ const parent=$(id);parent.replaceChildren();
+ for(const c of items??[]){
+  const card=document.createElement('article');card.className='recommendation-card'+(watch?' watch-card':'');
+  const title=document.createElement('h3');title.textContent=c.Player+' · '+display(c.TeamCode);card.append(title);
+  addParagraph(card,availability(c.Availability)+'｜球隊剩餘 '+display(c.RemainingGames)+' 場｜近 7／14 天樣本 '+display(c.SampleGames7)+'／'+display(c.SampleGames14)+' 場');
+  addParagraph(card,'傷病：'+display(c.InjuryStatus)+'｜'+display(c.Recommendation),'section-note');
+  addReasons(card,watch?'與本隊需求的已知對應':'補強理由',c.Reasons);addReasons(card,'需要留意',c.Tradeoffs);
+  if(!watch)for(const d of c.DropOptions){addParagraph(card,'可比較的換出人選：'+display(d.Player)+'。'+(d.Recommendation??''));addReasons(card,'換人依據',d.Reasons);addReasons(card,'換出後可能失去',d.Tradeoffs);}
+  parent.append(card);
+ }
+ if(!items?.length)addParagraph(parent,watch?'目前沒有足夠依據整理本隊的觀察人選；不以共用市場名單補上。':'目前沒有通過全部條件的加入建議。','section-note');
+}
+function drawRecommendations(){
+ const r=features.recommendations,meta=$('recommendationMeta');meta.className='section-meta'+(r?.Status==='ready'&&!featureErrors.recommendations?'':' warn');
+ meta.textContent=r?'報告產生：'+formatTaipei(r.GeneratedAtUtc)+'（台灣）｜分析 NBA 日期（美東）：'+display(r.ReportDateET)+(featureErrors.recommendations?'｜本次讀取未完成，保留上次報告。':''):'尚未取得推薦報告；分析日期與來源時間未知。';
+ const state={ready:'已完成加入條件檢查，請查看各人選的補強理由與限制。',insufficient_data:'資料不足，目前沒有通過全部條件的加入建議。',waiting:'當日 NBA 比賽尚未確認全部結束，等待完整賽果。',unavailable:'目前無法取得足夠資料產生推薦。'}[r?.Status]??'尚未取得可驗證的推薦。';
+ txt('recommendationState',state+(r?.Reasons.length?' '+r.Reasons.map(reason).join('；'):''));
+ const w=r?.Week;txt('recommendationPeriod',w?'分析範圍：'+(w.VerifiedYahooWeek===true?'Yahoo 已確認的當週':'已標示的日曆範圍，Yahoo 當週起迄未知')+' '+display(w.StartDateTaipei)+' ～ '+display(w.EndDateTaipei)+'。球隊剩餘場次不是保證球員可出賽場次。':'分析範圍未知。');
+ txt('recommendationCounts','加入建議 '+(r?.Candidates.length??0)+' 人｜依本隊需求暫列觀察 '+(r?.WatchCandidates.length??0)+' 人');
+ drawPickupCards('recommendationCards',r?.Candidates);drawPickupCards('recommendationWatchCards',r?.WatchCandidates,true);
+ fill('dropReviewRows',(r?.DropReviews??[]).map(d=>[cell(d.Player),cell(d.Recommendation),cell(display(d.SampleGames7)+'／'+display(d.SampleGames14)),cell([...d.Reasons,...d.Tradeoffs].map(reason).join('；')||'未知')]),4,'尚無足夠資料評估換出人選');
+ const sources=$('recommendationSources');sources.replaceChildren();for(const s of r?.Sources??[]){const p=addParagraph(sources,display(s.Name)+'｜讀取：'+formatTaipei(s.RetrievedAtUtc)+'（台灣）｜來源最後更新：'+formatTaipei(s.SourceUpdatedAtUtc),'source-line');if(s.Url){const a=document.createElement('a');a.href=s.Url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=' 官方來源 ↗';p.append(a);}}
+ if(!(r?.Sources.length))addParagraph(sources,'來源與時間未知。');txt('recommendationNotes',r?.Notes.length?r.Notes.map(reason).join('；'):'推薦不會自動更動 Yahoo 陣容。');
+}
 function selectedLeagueTeam(){return features.league?.Teams.find(t=>t.SelectionKey===$('leagueTeamSelect').value)??null;}
 function drawSelectedTeamCards(){
  const t=selectedLeagueTeam(),m=t?.Matchup.Data,b=t?.Budget.Data,r=t?.Roster.Data,score=m?.OwnScore;
@@ -53,9 +78,8 @@ function drawSelectedTeamCards(){
 function showLeagueSectionMeta(section,id){const n=$(id);n.className='section-meta';if(!section){n.classList.add('warn');n.textContent='此球隊資料尚未取得；來源時間未知。';return;}n.textContent=display(section.Source)+'｜讀取：'+formatTaipei(section.RetrievedAtUtc)+'（台灣）｜來源最後更新：'+formatTaipei(section.SourceUpdatedAtUtc)+(featureErrors.league?'｜本次讀取未完成，保留原來源時間。':'');if(section.Status!=='ok'||featureErrors.league)n.classList.add('warn');}
 function showLeagueSummaryItems(id,items,empty){const parent=$(id);parent.replaceChildren();if(!items.length){addParagraph(parent,empty,'section-note');return;}const list=document.createElement('ul');for(const value of items){const li=document.createElement('li');li.textContent=value;list.append(li);}parent.append(list);}
 function showLeagueCandidates(report){
- const parent=$('leagueRecommendationCards');parent.replaceChildren();
- for(const c of report?.Candidates??[]){const card=document.createElement('article');card.className='recommendation-card';const h=document.createElement('h3');h.textContent=c.Player+' · '+display(c.TeamCode);card.append(h);addParagraph(card,availability(c.Availability)+'｜球隊剩餘 '+display(c.RemainingGames)+' 場｜近 7／14 天樣本 '+display(c.SampleGames7)+'／'+display(c.SampleGames14)+' 場');addParagraph(card,'傷病：'+display(c.InjuryStatus)+'｜'+display(c.Recommendation),'section-note');addReasons(card,'補強理由',c.Reasons);addReasons(card,'需要留意',c.Tradeoffs);for(const d of c.DropOptions){addParagraph(card,'可比較的換出人選：'+display(d.Player)+'。'+(d.Recommendation??''));addReasons(card,'換人依據',d.Reasons);}parent.append(card);}
- if(!(report?.Candidates.length))addParagraph(parent,'尚無資料足夠的補強候選；缺少的表現或傷病資訊仍為未知。','section-note');
+ txt('leagueRecommendationCounts','加入建議 '+(report?.Candidates.length??0)+' 人｜依本隊需求暫列觀察 '+(report?.WatchCandidates.length??0)+' 人');
+ drawPickupCards('leagueRecommendationCards',report?.Candidates);drawPickupCards('leagueWatchCards',report?.WatchCandidates,true);
  fill('leagueDropRows',(report?.DropReviews??[]).map(d=>[cell(d.Player),cell(d.Recommendation),cell(display(d.SampleGames7)+'／'+display(d.SampleGames14)),cell([...d.Reasons,...d.Tradeoffs].map(reason).join('；')||'未知')]),4,'此球隊尚無足夠資料評估換出人選');
 }
 function drawLeague(reset=false){
@@ -63,7 +87,7 @@ function drawLeague(reset=false){
  if(reset){const prior=select.value;select.replaceChildren();for(const t of feed?.Teams??[]){const o=document.createElement('option');o.value=t.SelectionKey;o.textContent=t.Team+(t.IsUserTeam===true?'（我的球隊）':'');select.append(o);}select.value=feed?.Teams.some(t=>t.SelectionKey===prior)?prior:(feed?.Teams.find(t=>t.IsUserTeam===true)??feed?.Teams[0])?.SelectionKey??'';select.disabled=!(feed?.Teams.length);}
  const t=selectedLeagueTeam(),m=t?.Matchup.Data,b=t?.Budget.Data,r=t?.Recommendations;
  txt('leagueTeamTitle',t?t.Team+' · 優劣勢與補強':'尚未選擇球隊');
- const reportState={ready:'已確認近期樣本，以下為此球隊的補強候選。',waiting:'目標 NBA 比賽日尚未全部完賽；推薦保留已標示的分析日期。',insufficient_data:'近期樣本或可用資料不足，暫列觀察。',unavailable:'此球隊目前缺少足夠資料產生推薦。'}[r?.Status]??'此球隊的推薦資料尚未取得。';
+ const reportState={ready:'已完成此球隊的加入條件檢查，請查看補強理由與限制。',waiting:'目標 NBA 比賽日尚未全部完賽；推薦保留已標示的分析日期。',insufficient_data:'目前沒有通過全部條件的加入建議；可用的本隊觀察人選另外列出。',unavailable:'此球隊目前缺少足夠資料產生推薦。'}[r?.Status]??'此球隊的推薦資料尚未取得。';
  txt('leagueTeamState',t?(t.Status==='ok'?'':'部分球隊資料未確認，缺失項目標為未知。 ')+reportState+(r?.Reasons.length?' '+r.Reasons.map(reason).join('；'):''):'球隊分析資料尚未取得，請查看各來源狀態。');
  txt('leagueTeamSummary',t?'第 '+display(m?.Week??feed?.CurrentWeek)+' 週｜對手：'+display(m?.Opponent)+'｜本週剩餘 Add：'+display(b?.AddsRemainingThisWeek)+'｜FAAB：'+display(b?.FaabBalance)+'｜讓渡順位：'+display(b?.WaiverPriority)+'。':'球隊、對手及取得額度未知。');
  showLeagueSummaryItems('leagueStrengths',t?.Strengths??[],'資料不足，暫無可確認強項。');showLeagueSummaryItems('leagueWeaknesses',t?.Weaknesses??[],'資料不足，暫無可確認弱項。');
@@ -87,3 +111,5 @@ $('feedUrl').value=DEFAULT_FEED;try{const saved=localStorage.getItem(STORAGE_KEY
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{activeTab=button.dataset.tab;document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.panel').forEach(p=>{p.hidden=p.id!==button.dataset.tab;});drawCards();}));
 $('leagueTeamSelect').addEventListener('change',()=>drawLeague());$('search').addEventListener('input',drawMarket);$('filter').addEventListener('change',drawMarket);$('scheduleDate').addEventListener('change',()=>drawSchedule());$('weeklyTeamSearch').addEventListener('input',drawWeeklySchedule);$('historyWeek').addEventListener('change',()=>drawHistory());$('saveFeed').addEventListener('click',()=>setFeed());$('resetFeed').addEventListener('click',()=>setFeed(true));$('syncNow').addEventListener('click',sync);$('export').addEventListener('click',exportData);
 drawAll();sync();setInterval(sync,300000);setInterval(()=>{for(const[name,id]of[['Roster','rosterMeta'],['Matchup','matchupMeta'],['Market','marketMeta'],['Schedule','scheduleMeta'],['Transactions','transactionsMeta'],['Budget','budgetMeta'],['Rules','rulesMeta']])meta(name,id);drawFeatures();},60000);
+
+initSourceRefresh({readCurrent:()=>({dashboard,leagueAnalysis:features.league,lastFileCheck}),reloadSnapshots:sync});

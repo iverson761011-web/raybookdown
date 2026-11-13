@@ -13,6 +13,8 @@ on:
       - 'index.html'
       - 'dashboard*.mjs'
       - 'features-model.mjs'
+      - 'refresh-model.mjs'
+      - 'source-refresh.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -26,6 +28,8 @@ on:
       - 'index.html'
       - 'dashboard*.mjs'
       - 'features-model.mjs'
+      - 'refresh-model.mjs'
+      - 'source-refresh.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -61,6 +65,8 @@ jobs:
         run: node --test scripts/collect-recommendation-evidence.test.mjs scripts/build-weekly-schedule.test.mjs scripts/build-recommendations.test.mjs scripts/features-model.test.mjs
       - name: Test selected-team analysis and recommendation isolation
         run: node --test scripts/build-league-analysis.test.mjs
+      - name: Test manual source refresh verification and safe browser controls
+        run: node --test scripts/refresh-model.test.mjs scripts/source-refresh.test.mjs
       - name: Test official injury parsing
         run: |
           python3 -m pip install -r scripts/requirements-injuries.txt
