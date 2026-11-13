@@ -428,7 +428,8 @@ function Read-FlaimTeamContext {
         $max=$null;if ($sections['Rules']['Status'] -eq 'ok') {$max=$sections['Rules']['Data']['MaxWeeklyAdds']}
         return [ordered]@{FaabBalance=(ConvertTo-FDDNumber (Get-FDDField $teams[0] 'faabBalance'));WaiverPriority=(ConvertTo-FDDNumber (Get-FDDField $teams[0] 'waiverPriority') -Minimum 1 -Maximum 1000 -Integer);MaxWeeklyAdds=$max;AddsUsedThisWeek=$null;AddsRemainingThisWeek=$null}
     }
-    $sections['Market']=Read-FDDSection $Context $Tools 'get_free_agents' $base {
+    $marketArgs=[ordered]@{};foreach ($key in $base.Keys) {$marketArgs[$key]=$base[$key]};$marketArgs['count']=100
+    $sections['Market']=Read-FDDSection $Context $Tools 'get_free_agents' $marketArgs {
         param($d)
         $players=[Collections.Generic.List[object]]::new();$caps=Get-FDDField $d 'capabilities'
         foreach ($p in (Get-FDDArray (Get-FDDField $d 'freeAgents'))) {
