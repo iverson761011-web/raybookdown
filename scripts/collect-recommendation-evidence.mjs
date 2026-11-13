@@ -213,7 +213,7 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
    let history={Days:[]};try{const bytes=await fs.readFile(historyPath);if(bytes.length<=8*1024*1024)history=JSON.parse(bytes);}catch{}
    let dashboard=null;if(options.dashboard){try{const bytes=await fs.readFile(options.dashboard);if(bytes.length>1024*1024)problem('InvalidDashboard');dashboard=normalizeDashboard(JSON.parse(bytes));}catch{problem('InvalidDashboard');}}
    const result=await collectEvidence({date,seasonYear,history,dashboard,historyDays:options['history-days']?Number(options['history-days']):30});
-   await writeJson(output,result.evidence,{maxBytes:dashboard?1024*1024:Infinity});await writeJson(historyPath,result.history,{compact:true,maxBytes:8*1024*1024});
+   await writeJson(output,result.evidence,{compact:true,maxBytes:dashboard?1024*1024:Infinity});await writeJson(historyPath,result.history,{compact:true,maxBytes:8*1024*1024});
    console.log(JSON.stringify({Status:result.evidence.Day.Status,CoverageVerified:result.evidence.Day.CoverageVerified,TargetNbaDateET:date,VerifiedDates:result.evidence.History.VerifiedDates.length,PlayerGameRows:result.evidence.PlayerGames.length,InjuryStatus:result.evidence.Injuries.Status,Warnings:result.evidence.Warnings.length}));
   }
  } catch(error) { console.error(JSON.stringify({ErrorType:['InvalidDate','InvalidArguments','InvalidHistoryWindow','InvalidSeason','OutputPathConflict','InvalidDashboard','EvidenceSizeLimit'].includes(error?.safeCode)?error.safeCode:'EvidenceCollectionFailed'}));process.exitCode=1; }

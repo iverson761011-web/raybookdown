@@ -95,6 +95,13 @@ elements.leagueTeamSelect.value=leagueKey('c');elements.leagueTeamSelect.events.
 assert.match(content(elements.leagueWatchCards),/沒有足夠依據整理本隊的觀察人選/);
 assert.doesNotMatch(content(elements.leagueWatchCards),/Assist watch|Rebound watch/);
 elements.leagueTeamSelect.value=leagueKey('b');elements.leagueTeamSelect.events.change();buttons.find(b=>b.dataset.tab==='schedule').click();
+fixture=structuredClone(fixture);
+const marketTemplate=fixture.Sections.Market.Data.Players[0];
+while(fixture.Sections.Market.Data.Players.length<100){const number=fixture.Sections.Market.Data.Players.length+1;fixture.Sections.Market.Data.Players.push({...marketTemplate,Player:'Available Player '+number});}
+await intervals.find(i=>i.ms===300000).fn();await settled();
+assert.equal(elements.marketRows.children.length,100);assert.match(elements.marketTitle.textContent,/100/);assert.match(content(elements.marketRows.children[99]),/Available Player 100/);
+elements.search.value='Available Player 100';elements.search.events.input();assert.equal(elements.marketRows.children.length,1);assert.match(content(elements.marketRows),/Available Player 100/);
+elements.search.value='';elements.search.events.input();assert.equal(elements.marketRows.children.length,100);
 featureFailure=true;fixture=structuredClone(fixture);fixture.Sections.Budget.Data.FaabBalance=10;await intervals.find(i=>i.ms===300000).fn();await settled();assert.equal(elements.faabValue.textContent,'10');assert.equal(elements.historyRows.children.length,2);assert.match(elements.historyMeta.textContent,/保留上次資料與原時間/);assert.match(elements.weeklyScheduleMeta.textContent,/保留上次資料與原時間/);assert.match(elements.recommendationMeta.textContent,/保留上次報告/);
 assert.match(elements.leagueMeta.textContent,/保留上次資料與原時間/);assert.match(elements.leagueTeamTitle.textContent,/Other Team/);
 console.log('Dashboard runtime checks passed: nine tabs, isolated team selection and summary cards, current-week categories, separate qualified recommendations and team-specific watches, independent sources, preserved failures, safe text nodes, verified zero vs unknown.');

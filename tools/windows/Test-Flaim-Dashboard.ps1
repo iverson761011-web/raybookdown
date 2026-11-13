@@ -18,6 +18,7 @@ $testSession=[pscustomobject]@{AccessToken=$access;RefreshToken=$refresh;Expires
 $script:requests=[Collections.Generic.List[object]]::new()
 $script:failTool=$null;$script:wrongTeam=$false;$script:badRoster=$false;$script:secretName=$null;$script:missingValues=$false
 $script:schemas=@()
+$script:marketCount=1
 foreach ($name in @('get_user_session','get_league_info','get_roster','get_matchups','get_transactions','get_standings','get_free_agents')) {
     $properties=@{}
     foreach ($key in @('league_id','team_id','platform','sport','start_date','end_date')) {$properties[$key]=@{type='string'}}
@@ -54,6 +55,7 @@ function Send-FlaimMcpRequest {
         'get_standings' {$data=@{standings=@(@{teamId='42';name='RayBookDown';faabBalance=0;waiverPriority=1})}}
         'get_free_agents' {
             $data=@{capabilities=@{rosteredRate=$true};freeAgents=@(@{name='Available Player';position='PF,C';team='DEN';acquisitionState='waivers';percentOwned=0;waiverDate='2026-11-13';playerId='secret-internal-id'})}
+            if ($script:marketCount -gt 1) {$data['freeAgents']=@(1..$script:marketCount | ForEach-Object {@{name=('Available Player '+$_);position='PF,C';team='DEN';acquisitionState='free_agent';percentOwned=0;playerId='secret-internal-id'}})}
             if ($script:missingValues) {$data['capabilities']['rosteredRate']=$false;$data['freeAgents'][0]['acquisitionState']=$null}
         }
         default {throw 'UnexpectedSyntheticTool'}
@@ -75,6 +77,8 @@ Test-FDDCase 'Successful export reads every requested source with exact session 
         if ($request.Name -ceq 'get_user_session') {continue}
         Assert-FDDTest ($request.Arguments['league_id'] -ceq '478.l.dynamic123')
         if (@('get_roster','get_transactions') -ccontains $request.Name) {Assert-FDDTest ($request.Arguments['team_id'] -ceq '42')}
+        if (@('get_free_agents','get_transactions') -ccontains $request.Name) {Assert-FDDTest ($request.Arguments['count'] -eq 100)}
+        else {Assert-FDDTest (-not $request.Arguments.Contains('count'))}
     }
     Assert-FDDTest ($data.Sections.Schedule.Status -ceq 'unavailable')
 }
@@ -144,6 +148,15 @@ Test-FDDCase 'Every successful section has its own read time and unknown source 
         $section=$data.Sections.$name
         Assert-FDDTest ($section.Status -ceq 'ok' -and $section.RetrievedAtUtc -match '^\d{4}-' -and $null -eq $section.SourceUpdatedAtUtc)
     }
+}
+Test-FDDCase 'Requested market count exports all 100 returned players' {
+    try {
+        $script:marketCount=100;$result=Invoke-FDDTestExport
+        $data=Get-Content -Raw -LiteralPath $outputFile|ConvertFrom-Json
+        Assert-FDDTest ($result.Exported -and $data.Sections.Market.Status -ceq 'ok')
+        Assert-FDDTest ($data.Sections.Market.Data.Players.Count -eq 100 -and $data.Sections.Market.Data.Players[99].Player -ceq 'Available Player 100')
+    }
+    finally {$script:marketCount=1}
 }
 Test-FDDCase 'Actual PowerShell JSON satisfies the browser Node dashboard contract' {
     $repositoryRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
