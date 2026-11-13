@@ -59,6 +59,8 @@ jobs:
         run: node scripts/check-dashboard-view.mjs
       - name: Test recommendation evidence, weekly counts and history views
         run: node --test scripts/collect-recommendation-evidence.test.mjs scripts/build-weekly-schedule.test.mjs scripts/build-recommendations.test.mjs scripts/features-model.test.mjs
+      - name: Test selected-team analysis and recommendation isolation
+        run: node --test scripts/build-league-analysis.test.mjs
       - name: Test official injury parsing
         run: |
           python3 -m pip install -r scripts/requirements-injuries.txt
@@ -86,6 +88,8 @@ jobs:
           & .\tools\windows\Test-Flaim-History.ps1
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           & .\tools\windows\Test-Flaim-Features.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & .\tools\windows\Test-Flaim-League.ps1
   sync:
     needs: [check, cloud-tests]
     if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.actor != 'github-actions[bot]'))
