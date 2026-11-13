@@ -29,14 +29,18 @@ function addAllowance(dashboard,now){
 function dayFinal(day){return day?.CoverageVerified===true&&Array.isArray(day.Games)&&((day.Status==='no_games'&&day.Games.length===0)||(day.Status==='final'&&day.Games.length>0&&day.Games.every(g=>g?.Status==='final'&&Array.isArray(g.Teams)&&g.Teams.length===2&&g.Teams.every(t=>number(t.Score)!==null))));}
 function playerCode(value,week){const mapped=typeof value==='string'?week?.TeamCodeAliases?.[value.trim().toUpperCase()]:null;return resolveTeam(mapped??value)?.TeamCode??null;}
 function weekInfo(week){return {Basis:['yahoo_verified','taipei_calendar'].includes(week?.PeriodBasis)?week.PeriodBasis:null,StartDateTaipei:date(week?.RangeStartDateTaipei),EndDateTaipei:date(week?.RangeEndDateTaipei),VerifiedYahooWeek:week?.YahooWeekBoundsKnown===true};}
-function baseReport(evidence,week,now){return {SchemaVersion:1,Status:'insufficient_data',GeneratedAtUtc:now.toISOString(),ReportDateET:date(evidence?.TargetNbaDateET),Strategy:'aggressive_week',Reasons:[],Candidates:[],DropReviews:[],Sources:[],Week:weekInfo(week),Notes:['以下為7/14日樣本與排定場次的情境估算，非實際出賽或類別勝率保證。','對手後續增量、可用欄位、每週Add餘額與操作合法性仍需在Yahoo確認。']};}
+function baseReport(evidence,week,now){return {SchemaVersion:1,Status:'insufficient_data',GeneratedAtUtc:now.toISOString(),ReportDateET:date(evidence?.TargetNbaDateET),Strategy:'aggressive_week',Reasons:[],Candidates:[],WatchCandidates:[],DropReviews:[],Sources:[],Week:weekInfo(week),Notes:['以下為7/14日樣本與排定場次的情境估算，非實際出賽或類別勝率保證。','對手後續增量、可用欄位、每週Add餘額與操作合法性仍需在Yahoo確認。']};}
+const formalCandidate=c=>typeof c?.Recommendation==='string'&&c.Recommendation.includes('可評估加入')&&!/^(?:觀察|個別化觀察|等待)/.test(c.Recommendation)&&!c.Recommendation.includes('暫停');
 function safePrevious(previous,now,target){
   try{normalizeRecommendations(previous);}catch{return null;}
   if(previous?.SchemaVersion!==1||previous.Strategy!=='aggressive_week'||!time(previous.GeneratedAtUtc)||Date.parse(previous.GeneratedAtUtc)>+now||!date(previous.ReportDateET)||previous.ReportDateET>=target||previous.ReportDateET>etDate(now)||!Array.isArray(previous.Candidates)||previous.Candidates.length>8)return null;
   const strings=v=>Array.isArray(v)?v.map(x=>clean(x,1500)).filter(Boolean).slice(0,30):[];
-  const candidates=previous.Candidates.filter(c=>clean(c?.Player,200)).map(c=>({Player:clean(c.Player,200),TeamCode:clean(c.TeamCode,12),Availability:['free_agent','waivers'].includes(c.Availability)?c.Availability:null,RemainingGames:number(c.RemainingGames),SampleGames7:number(c.SampleGames7),SampleGames14:number(c.SampleGames14),InjuryStatus:clean(c.InjuryStatus,200),Recommendation:clean(c.Recommendation,1000)??'舊報告，等待更新',Reasons:strings(c.Reasons),Tradeoffs:strings(c.Tradeoffs),DropOptions:[]}));
+  const copyCandidates=values=>(Array.isArray(values)?values:[]).filter(c=>clean(c?.Player,200)).slice(0,8).map(c=>({Player:clean(c.Player,200),TeamCode:clean(c.TeamCode,12),Availability:['free_agent','waivers'].includes(c.Availability)?c.Availability:null,RemainingGames:number(c.RemainingGames),SampleGames7:number(c.SampleGames7),SampleGames14:number(c.SampleGames14),InjuryStatus:clean(c.InjuryStatus,200),Recommendation:clean(c.Recommendation,1000)??'舊報告，等待更新',Reasons:strings(c.Reasons),Tradeoffs:strings(c.Tradeoffs),DropOptions:[]}));
+  // Old releases filled Candidates with the market's first eight observations.
+  // They were never personalized, so they must not survive as a new watch list.
+  const candidates=copyCandidates(previous.Candidates.filter(formalCandidate)),watch=copyCandidates(previous.WatchCandidates);
   const reviews=Array.isArray(previous.DropReviews)?previous.DropReviews.filter(d=>clean(d?.Player,200)).slice(0,100).map(d=>({Player:clean(d.Player,200),TeamCode:clean(d.TeamCode,12),SampleGames7:number(d.SampleGames7),SampleGames14:number(d.SampleGames14),RemainingGames:number(d.RemainingGames),Review:clean(d.Review??d.Recommendation,600)??'舊報告觀察項目，非新移除指示',Reasons:strings(d.Reasons),Protected:bool(d.Protected)})):[];
-  return {SchemaVersion:1,Status:'waiting',GeneratedAtUtc:previous.GeneratedAtUtc,ReportDateET:previous.ReportDateET,Strategy:'aggressive_week',Reasons:strings(previous.Reasons),Candidates:candidates,DropReviews:reviews,Sources:Array.isArray(previous.Sources)?previous.Sources.slice(0,100).map(s=>({Name:clean(s?.Name,200)??'舊報告來源',RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:sourceUrl(s?.Url)})):[],Week:{Basis:['yahoo_verified','taipei_calendar'].includes(previous.Week?.Basis)?previous.Week.Basis:null,StartDateTaipei:date(previous.Week?.StartDateTaipei),EndDateTaipei:date(previous.Week?.EndDateTaipei),VerifiedYahooWeek:previous.Week?.VerifiedYahooWeek===true},Notes:strings(previous.Notes)};
+  return {SchemaVersion:1,Status:'waiting',GeneratedAtUtc:previous.GeneratedAtUtc,ReportDateET:previous.ReportDateET,Strategy:'aggressive_week',Reasons:strings(previous.Reasons),Candidates:candidates,WatchCandidates:watch,DropReviews:reviews,Sources:Array.isArray(previous.Sources)?previous.Sources.slice(0,100).map(s=>({Name:clean(s?.Name,200)??'舊報告來源',RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:sourceUrl(s?.Url)})):[],Week:{Basis:['yahoo_verified','taipei_calendar'].includes(previous.Week?.Basis)?previous.Week.Basis:null,StartDateTaipei:date(previous.Week?.StartDateTaipei),EndDateTaipei:date(previous.Week?.EndDateTaipei),VerifiedYahooWeek:previous.Week?.VerifiedYahooWeek===true},Notes:uniq([...strings(previous.Notes),...(previous.Candidates.some(c=>!formalCandidate(c))?['舊版共用市場觀察名單並未個別化，已移除；不沿用為本隊的補強建議。']:[])])};
 }
 function validatePreservedWaiting(report,dashboard,now,evidence,week){
   const roster=section(dashboard,'Roster'),market=section(dashboard,'Market');
@@ -53,19 +57,28 @@ function validatePreservedWaiting(report,dashboard,now,evidence,week){
   else if(oldStart!==currentStart||oldEnd!==currentEnd||oldWeek.Basis!==currentWeek.Basis)common.push('原報告與目前的週日期範圍或基準不同；尚未重算新週場次，暫停沿用舊加入優先排序。');
   if(!oldFresh)common.push('原報告產生時間或原陣容／市場來源超過36小時、時間未知；舊表現比較只能觀察，不沿用加入優先順序。');
   if(!rosterFresh||!marketFresh)common.push('目前陣容或市場來源不可用、過期或缺少完整名單；目前取得狀態未知。');
-  for(const candidate of report.Candidates){
+  const previousFormal=[...report.Candidates],previousWatch=report.WatchCandidates??[];
+  const stillObservable=[];
+  for(const candidate of [...previousFormal,...previousWatch]){
     const key=normalizePlayerName(candidate.Player),owned=rosterFresh&&roster.Data.Players.some(p=>normalizePlayerName(p?.Player??'')===key);
     const matches=marketFresh?market.Data.Players.filter(p=>normalizePlayerName(p?.Player??'')===key):[];
     const reasons=[...common];
     if(owned)reasons.push('目前新鮮陣容已持有這名球員，舊報告不再作為新加入候選。');
     if(matches.length!==1)reasons.push('目前回傳市場名單未找到唯一、完整姓名相符的可核實記錄，不能假設仍可加入。');
     else if(matches[0].Availability!=='free_agent')reasons.push('目前市場已是讓渡名單或取得方式未知，舊報告不代表可立即加入。');
-    if(matches.length===1&&candidate.TeamCode&&resolveTeam(matches[0].TeamCode)?.TeamCode!==resolveTeam(candidate.TeamCode)?.TeamCode)reasons.push('目前與原報告球隊來源不一致；原排程與表現估算未重算，僅列觀察。');
-    if(!owned&&marketFresh&&matches.length===1){const injury=injuryCheck({player:matches[0],key},evidence,week,now);candidate.InjuryStatus=injury.label;if(!injury.safe)reasons.push('目前官方傷勢或適用報告未通過核對，舊報告不代表仍可出賽：'+injury.reason);else if(!injury.medicalKnown&&candidate.Recommendation.includes('可評估加入'))candidate.Recommendation='條件式觀察舊報告：目前醫療狀態未知，需先核對出賽；原表現估算未重算。';}
+    const sameTeam=matches.length===1&&candidate.TeamCode&&resolveTeam(matches[0].TeamCode)?.TeamCode===resolveTeam(candidate.TeamCode)?.TeamCode;
+    if(matches.length===1&&!sameTeam)reasons.push('目前與原報告球隊來源不一致；原排程與表現估算未重算，不沿用原適配。');
+    if(!owned&&marketFresh&&matches.length===1){const injury=injuryCheck({player:matches[0],key},evidence,week,now);candidate.InjuryStatus=injury.label;if(!injury.safe)reasons.push('目前官方傷勢或適用報告未通過核對，舊報告不代表仍可出賽：'+injury.reason);else if(!injury.medicalKnown&&candidate.Recommendation.includes('可評估加入')&&!candidate.Recommendation.startsWith('條件式'))candidate.Recommendation='條件式觀察舊報告：目前醫療狀態未知，需先核對出賽；原表現估算未重算。';}
     candidate.Availability=!owned&&marketFresh&&matches.length===1&&['free_agent','waivers'].includes(matches[0].Availability)?matches[0].Availability:null;
     candidate.DropOptions=[];
     if(reasons.length){candidate.Recommendation='觀察舊報告：目前取得狀態或來源年齡未通過核對，暫停沿用舊加入優先排序';candidate.Reasons=uniq([...candidate.Reasons,...reasons]);}
+    if(common.length===0&&!owned&&marketFresh&&matches.length===1&&sameTeam&&candidate.Availability!==null&&candidate.RemainingGames>0&&!['Out','Doubtful'].includes(candidate.InjuryStatus))stillObservable.push(candidate);
   }
+  report.Candidates=previousFormal.filter(c=>formalCandidate(c)&&stillObservable.includes(c));
+  // A persisted observation has no durable fingerprint for its roster reference
+  // or target categories. Do not keep an old fit after those inputs can change.
+  report.WatchCandidates=[];
+  if(previousWatch.length||previousFormal.length>report.Candidates.length)report.Reasons=uniq([...report.Reasons,'等待完賽期間尚未重新核實本隊缺口與比較球員；已清除舊觀察適配及不再合格的加入項目，待下一份完整報告重算。']);
   for(const review of report.DropReviews){
     const matches=rosterFresh?roster.Data.Players.filter(p=>normalizePlayerName(p?.Player??'')===normalizePlayerName(review.Player)):[];
     const current=matches.length===1?protectedFlag(matches[0]):null;
@@ -161,6 +174,41 @@ function trend(inspect,categories,evidence,reportDate){
   const declining=ratio7!==null&&ratio14!==null&&ratio7<.8&&ratio14<.8&&individual.filter(v=>v<.8).length>=2&&median!==null&&median<.8;
   return {declining,reason:declining?'7日與14日相對各自前窗的加權產出均下滑超過20%，且多場／中位數同向；仍需比較換人代價。':'尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。'};
 }
+function observationProfile(item,evidence){
+  if(!item.identityKnown||!item.consistent||item.remaining===null)return null;
+  const verified=new Set(evidence?.History?.VerifiedDates??[]),games=Array.isArray(evidence?.History?.Games)?new Map(evidence.History.Games.map(g=>[g.GameId,g])):null;
+  if(!games)return null;
+  const usable=row=>{const g=games.get(row.GameId);return verified.has(row.DateET)&&g?.DateET===row.DateET&&g.Status==='final'&&Array.isArray(g.Teams)&&g.Teams.length===2&&g.Teams.every(t=>number(t.Score)!==null);};
+  const w7=item.w7.filter(usable),w14=item.w14.filter(usable);if(!w14.length)return null;
+  const a7=mean(w7),a14=mean(w14),projection={};
+  for(const stat of STATS)projection[stat]=a7[stat]!==null&&a14[stat]!==null?.65*a7[stat]+.35*a14[stat]:a14[stat]??a7[stat]??null;
+  return {...item,w7,w14,projection};
+}
+function personalizedObservation(item,candidate,own,cats,emphasis,matchup,evidence,targetTeamName){
+  // Observation can expose a conditional fit from a small real sample. It never
+  // relaxes the separate requirements for an actual add recommendation.
+  const profile=observationProfile(item,evidence);
+  if(!profile||profile.remaining<=0||candidate.Availability===null||['Out','Doubtful'].includes(candidate.InjuryStatus))return null;
+  const targets=emphasis.size?cats.filter(c=>emphasis.has(c.stat)):[...cats].sort((a,b)=>b.weight-a.weight||a.label.localeCompare(b.label)).slice(0,3);
+  if(!targets.length)return null;
+  const comparisons=own.filter(o=>o.Protected!==true).flatMap(o=>{const reference=observationProfile(o,evidence);if(!reference)return [];const fit=compareProjection(profile,reference,targets,matchup),all=compareProjection(profile,reference,cats,matchup);return fit.score!==null&&fit.score>0&&fit.rows.some(r=>r.gain>0)?[{reference,fit,all}]:[];});
+  comparisons.sort((a,b)=>b.fit.rows.length-a.fit.rows.length||b.fit.score-a.fit.score||a.reference.player.Player.localeCompare(b.reference.player.Player));
+  const best=comparisons[0];if(!best)return null;
+  const helped=best.fit.rows.filter(r=>r.gain>0).sort((a,b)=>b.impact-a.impact),losses=best.all.rows.filter(r=>r.gain<0).sort((a,b)=>a.impact-b.impact);
+  candidate.SampleGames7=profile.w7.length;candidate.SampleGames14=profile.w14.length;
+  candidate.Recommendation='個別化觀察：可能適合本隊缺口，尚未通過完整加入條件';
+  candidate.Reasons.push(`依${targetTeamName}的${emphasis.size?'相對弱項':'接近比項'}${helped.map(r=>r.stat).join('、')}整理，並非自由市場原始排名。`);
+  candidate.Reasons.push(`僅以已核實的近7/14日樣本，假設比較${best.reference.player.Player}與本候選在標示期間的排定場次；這不是建議移除該球員。`);
+  candidate.Reasons.push(...helped.slice(0,3).map(formatDelta));
+  if(!best.fit.complete)candidate.Reasons.push('部分目標比項缺少可比較數據；只計算已知比項，未把缺值補成0。');
+  if(!item.enough||!best.reference.enough)candidate.Reasons.push('觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。');
+  candidate.Tradeoffs=losses.slice(0,3).map(formatDelta);
+  candidate.Tradeoffs.push('尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。');
+  candidate.Tradeoffs.push('比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。');
+  if(best.reference.Protected===null)candidate.Tradeoffs.push('參考球員的不可丟棄標記未知，不提供移除指示。');
+  candidate.DropOptions=[];
+  return {candidate,score:best.fit.score,coverage:best.fit.rows.length/targets.length,sample:profile.w14.length};
+}
 function formatDelta(row){const signed=(row.delta>=0?'+':'')+(Math.abs(row.delta)<1?row.delta.toFixed(3):row.delta.toFixed(1));return row.stat==='TO'?`TO估計差${signed}（失誤較少較好）`:`${row.stat}估計差${signed}`;}
 function sourcesFor(report,dashboard,evidence,week,reportDate){
   const sources=[];for(const key of ['Roster','Market','Matchup','Budget','Transactions']){const s=dashboard?.Sections?.[key];if(s)sources.push({Name:'Flaim / Yahoo '+key,RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:null});}
@@ -234,12 +282,18 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
       if(!best.own.injury.medicalKnown)candidate.Tradeoffs.push('比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。');
       candidate.DropOptions=comparisons.filter(c=>c.score>0&&c.own.Protected===false&&c.own.injury.medicalKnown&&c.own.trend.declining).slice(0,2).map(c=>({Player:c.own.player.Player,Reason:'僅列換人候選：Yahoo未標示不可丟棄、官方傷勢狀態已核實，且7/14日與多場產出均持續下滑；仍須核對位置、每週Add及操作是否合法。'}));
       ranked.push({score:best.score,candidate});
-    }else{if(eligible)candidate.Reasons.push('未取得完整且正向的候選對現陣容類別淨增益比較，暫不排序。');if(item.remaining===0)candidate.Reasons.push('本次標示期間已無未來排定場次。');watch.push(candidate);}
+    }else{
+      if(eligible)candidate.Reasons.push('未取得所有實際計分比項完整且正向的整體替換增益，不列加入建議。');
+      const observation=personalizedObservation(item,candidate,own,cats,emphasis,match.Data,evidence,targetTeamName);
+      if(observation)watch.push(observation);
+    }
   }
   ranked.sort((a,b)=>b.score-a.score||a.candidate.Player.localeCompare(b.candidate.Player));
-  report.Candidates=[...ranked.map(x=>x.candidate),...watch].slice(0,8);
+  watch.sort((a,b)=>b.coverage-a.coverage||b.score-a.score||b.sample-a.sample||a.candidate.Player.localeCompare(b.candidate.Player));
+  report.Candidates=ranked.map(x=>x.candidate).slice(0,8);
+  report.WatchCandidates=watch.map(x=>x.candidate).slice(0,8);
   report.Status=backfilled?'waiting':ranked.length?'ready':'insufficient_data';
-  report.Reasons=uniq([...report.Reasons,ranked.length?'僅對已核實樣本、傷勢報告、現陣容及市場資料完成的候選做本週情境比較。':'尚無候選同時滿足歷史、傷勢、場次及完整正向比較；以下是觀察名單，沿用本次市場回傳順序。']);
+  report.Reasons=uniq([...report.Reasons,ranked.length?'加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。':'目前沒有候選通過全部加入條件，不以共用市場名單代替推薦。',watch.length?`另有${watch.length}位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。`:'目前也沒有足夠依據整理本隊的觀察人選；不回填自由市場前幾名。']);
   sourcesFor(report,dashboard,evidence,week,reportDate);return report;
 }
 async function readJson(file,max=1048576){const b=await fs.readFile(file);if(b.length>max)throw new Error('InputTooLarge');return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(b));}

@@ -69,6 +69,20 @@ test('recommendations explicitly connect gains or limits to the selected team re
  assert(first.Recommendations.Candidates[0].Reasons.some(r=>r.includes('本隊本週相對弱項')&&r.includes('PTS')));
  assert(first.Recommendations.Candidates[0].Tradeoffs.some(r=>r.includes('TO')));
 });
+
+test('selected league teams with opposite weaknesses get measured observation priorities from the same market',()=>{
+ const f=fixture(),market=f.league.Market.Data.Players[0];
+ f.league.Market.Data.Players=[{...market,Player:'Scorer',Availability:'waivers'},{...market,Player:'Caretaker',Availability:'waivers'}];
+ for(const day of f.history.Days){const rows=day.PlayerGames.filter(r=>r.Player==='Market Player');day.PlayerGames=day.PlayerGames.filter(r=>r.Player!=='Market Player');for(const [Player,OfficialPlayerId,PTS,TO]of [['Scorer','50',30,4],['Caretaker','51',8,0]])for(const row of rows)day.PlayerGames.push({...row,Player,OfficialPlayerId,Stats:{...stats(1),PTS,TO}});}
+ const report=run(f),points=report.Teams[0],turnovers=report.Teams[3];
+ assert(points.Weaknesses.some(r=>r.startsWith('PTS')));assert(turnovers.Weaknesses.some(r=>r.startsWith('TO')));
+ assert.deepEqual(points.Recommendations.Candidates,[]);assert.deepEqual(turnovers.Recommendations.Candidates,[]);
+ assert.equal(points.Recommendations.WatchCandidates[0].Player,'Scorer');assert.equal(turnovers.Recommendations.WatchCandidates[0].Player,'Caretaker');
+ assert(points.Recommendations.WatchCandidates[0].Reasons.some(r=>r.includes('RayBookDown')&&r.includes('PTS')));assert(turnovers.Recommendations.WatchCandidates[0].Reasons.some(r=>r.includes('Team 4')&&r.includes('TO')));
+ const expected=report.Teams.map(t=>t.Recommendations.WatchCandidates);
+ f.league.Market.Data.Players.reverse();f.history.Days.reverse();for(const day of f.history.Days)day.PlayerGames.reverse();
+ assert.deepEqual(run(f).Teams.map(t=>t.Recommendations.WatchCandidates),expected);
+});
 test('only genuinely scored rows rank; display-only, missing results and ambiguous duplicate labels stay out',()=>{
  const f=fixture();for(const t of f.league.Teams)t.Matchup.Data.Categories.push({Name:'ABC',Label:'ABC',OwnValue:999,OpponentValue:1,Result:null,DisplayOnly:false});
  f.league.Teams[0].Matchup.Data.Categories.push({...categories(1)[0],OwnValue:'999'});
@@ -84,16 +98,16 @@ test('missing league week and conflicting week sources withhold comparison inste
  for(const value of [null,5]){const f=fixture();f.league.CurrentWeek=value;if(value===null)f.league.Rules.Data.CurrentWeek=null;const r=run(f);assert.equal(r.CurrentWeek,null);assert.equal(r.ComparedTeamCount,0);assert(r.Teams.every(t=>t.Recommendations.Status==='unavailable'));}
 });
 test('a zero Add allowance applies only to its selected team, never every other team budget',()=>{
- const f=fixture();f.league.Teams[1].Budget.Data.AddsRemainingThisWeek=0;const r=run(f);assert(r.Teams[1].Recommendations.Candidates.every(c=>c.Recommendation.includes('剩餘Add為0')));assert(r.Teams[0].Recommendations.Candidates.some(c=>c.Recommendation.includes('可評估加入')));
+ const f=fixture();f.league.Teams[1].Budget.Data.AddsRemainingThisWeek=0;const r=run(f);assert.deepEqual(r.Teams[1].Recommendations.Candidates,[]);assert(r.Teams[1].Recommendations.WatchCandidates.every(c=>c.DropOptions.length===0));assert(r.Teams[1].Recommendations.Reasons.some(reason=>reason.includes('剩餘Add為0')));assert(r.Teams[0].Recommendations.Candidates.some(c=>c.Recommendation.includes('可評估加入')));
 });
 
 test('market conflicts with any fresh league roster are excluded globally rather than recommended to another team',()=>{
  const f=fixture();const owned={...player(4),Player:'Market Player',TeamCode:'GSW'};f.league.Teams[3].Roster.Data.Players.push(owned);f.league.Teams[3].Roster.Data.PlayerCount=2;
- const report=run(f);assert(report.Teams.every(t=>!t.Recommendations.Candidates.some(c=>c.Player==='Market Player')));assert(report.Teams[0].Notes.some(n=>n.includes('取得狀態矛盾')));assert.equal(f.league.Market.Data.Players[0].Availability,'free_agent');
+ const report=run(f);assert(report.Teams.every(t=>![...t.Recommendations.Candidates,...t.Recommendations.WatchCandidates].some(c=>c.Player==='Market Player')));assert(report.Teams[0].Notes.some(n=>n.includes('取得狀態矛盾')));assert.equal(f.league.Market.Data.Players[0].Availability,'free_agent');
 });
 test('a roster-market conflict also safely holds preserved reports, with original report time kept',()=>{
  const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';f.league.Teams[3].Roster.Data.Players.push({...player(4),Player:'Market Player',TeamCode:'GSW'});f.league.Teams[3].Roster.Data.PlayerCount=2;
- const report=run({...f,previous});for(let i=0;i<3;i++){const r=report.Teams[i].Recommendations;assert.equal(r.GeneratedAtUtc,previous.Teams[i].Recommendations.GeneratedAtUtc);assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert.equal(r.Candidates[0].Availability,null);assert.equal(r.Candidates[0].DropOptions.length,0);}
+ const report=run({...f,previous});for(let i=0;i<3;i++){const r=report.Teams[i].Recommendations;assert.equal(r.GeneratedAtUtc,previous.Teams[i].Recommendations.GeneratedAtUtc);assert.deepEqual(r.Candidates,[]);assert.deepEqual(r.WatchCandidates,[]);}
 });
 test('waiting reports are reused only for an exact public selection key and team-name match',()=>{
  const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';delete f.evidence.LastCompletedDay;
