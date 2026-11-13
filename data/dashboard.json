@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-13T10:55:24.3810557+00:00",
+  "GeneratedAtUtc": "2026-11-13T14:45:31.3892963+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:15.5574251+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:15.5574251+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:21.3538723+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:21.3538723+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:15.9025627+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:15.9025627+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:21.6769056+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:21.6769056+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -241,8 +241,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:16.4078404+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:16.4078404+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:22.3026567+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:22.3026567+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -390,8 +390,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:16.8539816+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:16.8539816+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:22.8435308+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:22.8435308+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -631,8 +631,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:17.1665788+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:17.1665788+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:23.1876959+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:23.1876959+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -646,8 +646,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T10:55:17.5272579+00:00",
-      "RetrievedAtUtc": "2026-11-13T10:55:17.5272579+00:00",
+      "CheckedAtUtc": "2026-11-13T14:45:23.5472762+00:00",
+      "RetrievedAtUtc": "2026-11-13T14:45:23.5472762+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -659,7 +659,7 @@
             "Position": "SG,SF",
             "TeamCode": "PHX",
             "Availability": "free_agent",
-            "PercentOwned": 70,
+            "PercentOwned": 69,
             "WaiverDate": null
           },
           {
@@ -677,6 +677,14 @@
             "Availability": "waivers",
             "PercentOwned": 52,
             "WaiverDate": "2026-11-14"
+          },
+          {
+            "Player": "Dillon Brooks",
+            "Position": "SF,PF",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 51,
+            "WaiverDate": "2026-11-15"
           },
           {
             "Player": "Khaman Maluach",
@@ -731,7 +739,7 @@
             "Position": "PG",
             "TeamCode": "TOR",
             "Availability": "waivers",
-            "PercentOwned": 32,
+            "PercentOwned": 30,
             "WaiverDate": "2026-11-15"
           },
           {
@@ -767,14 +775,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Mitchell Robinson",
-            "Position": "C",
-            "TeamCode": "BOS",
-            "Availability": "waivers",
-            "PercentOwned": 16,
-            "WaiverDate": "2026-11-14"
-          },
-          {
             "Player": "Kingston Flemings",
             "Position": "PG",
             "TeamCode": "ATL",
@@ -783,20 +783,20 @@
             "WaiverDate": null
           },
           {
-            "Player": "Isaiah Collier",
-            "Position": "PG,SG",
-            "TeamCode": "UTA",
-            "Availability": "waivers",
-            "PercentOwned": 12,
-            "WaiverDate": "2026-11-14"
-          },
-          {
             "Player": "Isaiah Jackson",
             "Position": "C",
             "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 12,
             "WaiverDate": null
+          },
+          {
+            "Player": "Isaiah Collier",
+            "Position": "PG,SG",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 11,
+            "WaiverDate": "2026-11-14"
           },
           {
             "Player": "Collin Sexton",
@@ -860,8 +860,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-13T10:55:24.584Z",
-      "RetrievedAtUtc": "2026-11-13T10:55:24.584Z",
+      "CheckedAtUtc": "2026-11-13T14:45:31.577Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:31.577Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
