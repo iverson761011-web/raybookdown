@@ -1,101 +1,101 @@
 {
   "SchemaVersion": 1,
-  "GeneratedAtUtc": "2026-11-12T23:22:06.626Z",
+  "GeneratedAtUtc": "2026-11-13T04:54:21.438Z",
   "TargetNbaDateET": "2026-11-12",
   "Day": {
-    "Status": "waiting",
+    "Status": "unknown",
     "CoverageVerified": true,
     "Games": [
       {
         "GameId": "0022600227",
         "DateET": "2026-11-12",
         "StartAtUtc": "2026-11-13T00:00:00.000Z",
-        "Status": "upcoming",
+        "Status": "final",
         "Teams": [
           {
             "Name": "Raptors",
             "City": null,
             "Code": "TOR",
-            "Score": 0
+            "Score": 112
           },
           {
             "Name": "76ers",
             "City": null,
             "Code": "PHI",
-            "Score": 0
+            "Score": 123
           }
         ],
         "SourceUrl": "https://www.nba.com/game/tor-vs-phi-0022600227/box-score",
-        "RetrievedAtUtc": "2026-11-12T23:22:24.664Z"
+        "RetrievedAtUtc": "2026-11-13T04:54:41.436Z"
       },
       {
         "GameId": "0022600228",
         "DateET": "2026-11-12",
         "StartAtUtc": "2026-11-13T00:00:00.000Z",
-        "Status": "upcoming",
+        "Status": "unknown",
         "Teams": [
           {
             "Name": "Pistons",
             "City": null,
             "Code": "DET",
-            "Score": 0
+            "Score": 144
           },
           {
             "Name": "Wizards",
             "City": null,
             "Code": "WAS",
-            "Score": 0
+            "Score": 140
           }
         ],
         "SourceUrl": "https://www.nba.com/game/det-vs-was-0022600228/box-score",
-        "RetrievedAtUtc": "2026-11-12T23:22:24.664Z"
+        "RetrievedAtUtc": "2026-11-13T04:54:41.436Z"
       },
       {
         "GameId": "0022600229",
         "DateET": "2026-11-12",
         "StartAtUtc": "2026-11-13T01:00:00.000Z",
-        "Status": "upcoming",
+        "Status": "final",
         "Teams": [
           {
             "Name": "Mavericks",
             "City": null,
             "Code": "DAL",
-            "Score": 0
+            "Score": 94
           },
           {
             "Name": "Timberwolves",
             "City": null,
             "Code": "MIN",
-            "Score": 0
+            "Score": 133
           }
         ],
         "SourceUrl": "https://www.nba.com/game/dal-vs-min-0022600229/box-score",
-        "RetrievedAtUtc": "2026-11-12T23:22:24.664Z"
+        "RetrievedAtUtc": "2026-11-13T04:54:41.436Z"
       },
       {
         "GameId": "0022600230",
         "DateET": "2026-11-12",
         "StartAtUtc": "2026-11-13T02:00:00.000Z",
-        "Status": "upcoming",
+        "Status": "final",
         "Teams": [
           {
             "Name": "Hornets",
             "City": null,
             "Code": "CHA",
-            "Score": 0
+            "Score": 96
           },
           {
             "Name": "Suns",
             "City": null,
             "Code": "PHX",
-            "Score": 0
+            "Score": 101
           }
         ],
         "SourceUrl": "https://www.nba.com/game/cha-vs-phx-0022600230/box-score",
-        "RetrievedAtUtc": "2026-11-12T23:22:24.664Z"
+        "RetrievedAtUtc": "2026-11-13T04:54:41.436Z"
       }
     ],
-    "RetrievedAtUtc": "2026-11-12T23:22:24.664Z",
+    "RetrievedAtUtc": "2026-11-13T04:54:41.436Z",
     "SourceUrl": "https://www.nba.com/games?date=2026-11-12"
   },
   "PlayerGames": [
@@ -151,7 +151,7 @@
         "TO": 5,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:13.010Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:27.294Z"
     },
     {
       "Player": "Donovan Mitchell",
@@ -178,7 +178,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.264Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.000Z"
     },
     {
       "Player": "Donovan Mitchell",
@@ -286,7 +286,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:21.315Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.692Z"
     },
     {
       "Player": "Donovan Mitchell",
@@ -475,7 +475,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:08.684Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.353Z"
     },
     {
       "Player": "Jared McCain",
@@ -502,7 +502,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.029Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.791Z"
     },
     {
       "Player": "Jared McCain",
@@ -583,7 +583,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.248Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.108Z"
     },
     {
       "Player": "Jared McCain",
@@ -610,7 +610,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:21.805Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:37.493Z"
     },
     {
       "Player": "Jared McCain",
@@ -772,7 +772,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.320Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.609Z"
     },
     {
       "Player": "Jared McCain",
@@ -934,7 +934,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.881Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.213Z"
     },
     {
       "Player": "Christian Braun",
@@ -961,7 +961,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.196Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:42.040Z"
     },
     {
       "Player": "Christian Braun",
@@ -1123,7 +1123,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.782Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:41.204Z"
     },
     {
       "Player": "Christian Braun",
@@ -1177,7 +1177,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.843Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.049Z"
     },
     {
       "Player": "Kyshawn George",
@@ -1204,7 +1204,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:12.662Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:27.679Z"
     },
     {
       "Player": "Kyshawn George",
@@ -1231,7 +1231,7 @@
         "TO": 8,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.799Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.096Z"
     },
     {
       "Player": "Kyshawn George",
@@ -1447,7 +1447,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.320Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.609Z"
     },
     {
       "Player": "Kyshawn George",
@@ -1528,7 +1528,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:12.834Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.728Z"
     },
     {
       "Player": "Cameron Boozer",
@@ -1555,7 +1555,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.752Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.579Z"
     },
     {
       "Player": "Cameron Boozer",
@@ -1582,7 +1582,7 @@
         "TO": 6,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.189Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.271Z"
     },
     {
       "Player": "Cameron Boozer",
@@ -1636,7 +1636,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.411Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.630Z"
     },
     {
       "Player": "Cameron Boozer",
@@ -1852,7 +1852,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.029Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.791Z"
     },
     {
       "Player": "Alperen Sengun",
@@ -1879,7 +1879,7 @@
         "TO": 4,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.477Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.892Z"
     },
     {
       "Player": "Alperen Sengun",
@@ -1933,7 +1933,7 @@
         "TO": 3,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.076Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.572Z"
     },
     {
       "Player": "Alperen Sengun",
@@ -2117,7 +2117,7 @@
         "TO": 2,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.782Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:41.204Z"
     },
     {
       "Player": "Alperen Sengun",
@@ -2171,7 +2171,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:08.684Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.353Z"
     },
     {
       "Player": "Aday Mara",
@@ -2198,7 +2198,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.029Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.791Z"
     },
     {
       "Player": "Aday Mara",
@@ -2279,7 +2279,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.248Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.108Z"
     },
     {
       "Player": "Aday Mara",
@@ -2306,7 +2306,7 @@
         "TO": 4,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:21.805Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:37.493Z"
     },
     {
       "Player": "Aday Mara",
@@ -2468,7 +2468,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.320Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.609Z"
     },
     {
       "Player": "Aday Mara",
@@ -2549,7 +2549,7 @@
         "TO": 0,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:08.684Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.353Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2576,7 +2576,7 @@
         "TO": 1,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.998Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.376Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2603,7 +2603,7 @@
         "TO": 1,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.710Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.924Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2630,7 +2630,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.757Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.749Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2657,7 +2657,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:20.374Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.674Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2668,7 +2668,7 @@
       "SourceUrl": "https://www.nba.com/game/ind-vs-mil-0022600123/box-score",
       "Played": false,
       "Stats": null,
-      "RetrievedAtUtc": "2026-11-12T23:22:20.412Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.683Z"
     },
     {
       "Player": "Ivica Zubac",
@@ -2847,7 +2847,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.154Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:24.453Z"
     },
     {
       "Player": "Zion Williamson",
@@ -2874,7 +2874,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.843Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.049Z"
     },
     {
       "Player": "Zion Williamson",
@@ -2901,7 +2901,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.710Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.924Z"
     },
     {
       "Player": "Zion Williamson",
@@ -2928,7 +2928,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.482Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.341Z"
     },
     {
       "Player": "Zion Williamson",
@@ -2955,7 +2955,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.881Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.213Z"
     },
     {
       "Player": "Zion Williamson",
@@ -3198,7 +3198,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.623Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:26.715Z"
     },
     {
       "Player": "Zach LaVine",
@@ -3225,7 +3225,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.808Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.823Z"
     },
     {
       "Player": "Zach LaVine",
@@ -3252,7 +3252,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.237Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.160Z"
     },
     {
       "Player": "Zach LaVine",
@@ -3576,7 +3576,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.237Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.160Z"
     },
     {
       "Player": "Darius Garland",
@@ -3630,7 +3630,7 @@
         "TO": 6,
         "DD": 1
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.248Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.108Z"
     },
     {
       "Player": "Darius Garland",
@@ -3846,7 +3846,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.154Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:24.453Z"
     },
     {
       "Player": "Morez Johnson Jr.",
@@ -3873,7 +3873,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.865Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.900Z"
     },
     {
       "Player": "Morez Johnson Jr.",
@@ -3900,7 +3900,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.477Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.892Z"
     },
     {
       "Player": "Morez Johnson Jr.",
@@ -3927,7 +3927,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.757Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.749Z"
     },
     {
       "Player": "Morez Johnson Jr.",
@@ -3981,7 +3981,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.871Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:35.475Z"
     },
     {
       "Player": "Morez Johnson Jr.",
@@ -4146,6 +4146,33 @@
       "RetrievedAtUtc": "2026-11-12T23:01:42.003Z"
     },
     {
+      "Player": "Morez Johnson Jr.",
+      "OfficialPlayerId": "1643516",
+      "GameId": "0022600229",
+      "TeamCode": "DAL",
+      "DateET": "2026-11-12",
+      "SourceUrl": "https://www.nba.com/game/dal-vs-min-0022600229/box-score",
+      "Played": true,
+      "Stats": {
+        "MIN": 13.45,
+        "FGM": 0,
+        "FGA": 4,
+        "FTM": 0,
+        "FTA": 0,
+        "3PTM": 0,
+        "PTS": 0,
+        "OREB": 1,
+        "DREB": 1,
+        "REB": 2,
+        "AST": 0,
+        "ST": 0,
+        "BLK": 0,
+        "TO": 2,
+        "DD": 0
+      },
+      "RetrievedAtUtc": "2026-11-13T04:54:41.619Z"
+    },
+    {
       "Player": "Jalen Green",
       "OfficialPlayerId": "1630224",
       "GameId": "0012600054",
@@ -4181,7 +4208,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.417Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.736Z"
     },
     {
       "Player": "Jalen Green",
@@ -4235,7 +4262,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:20.728Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:38.281Z"
     },
     {
       "Player": "Jalen Green",
@@ -4262,7 +4289,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:21.805Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:37.493Z"
     },
     {
       "Player": "Jalen Green",
@@ -4454,6 +4481,33 @@
       "RetrievedAtUtc": "2026-11-12T23:01:50.825Z"
     },
     {
+      "Player": "Jalen Green",
+      "OfficialPlayerId": "1630224",
+      "GameId": "0022600230",
+      "TeamCode": "PHX",
+      "DateET": "2026-11-12",
+      "SourceUrl": "https://www.nba.com/game/cha-vs-phx-0022600230/box-score",
+      "Played": true,
+      "Stats": {
+        "MIN": 20.883333333333333,
+        "FGM": 3,
+        "FGA": 9,
+        "FTM": 5,
+        "FTA": 6,
+        "3PTM": 1,
+        "PTS": 12,
+        "OREB": 1,
+        "DREB": 3,
+        "REB": 4,
+        "AST": 0,
+        "ST": 1,
+        "BLK": 0,
+        "TO": 2,
+        "DD": 0
+      },
+      "RetrievedAtUtc": "2026-11-13T04:54:41.714Z"
+    },
+    {
       "Player": "Andrew Wiggins",
       "OfficialPlayerId": "203952",
       "GameId": "0012600003",
@@ -4532,7 +4586,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:13.562Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.482Z"
     },
     {
       "Player": "Andrew Wiggins",
@@ -4613,7 +4667,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.871Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:35.475Z"
     },
     {
       "Player": "Andrew Wiggins",
@@ -4694,7 +4748,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.581Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.997Z"
     },
     {
       "Player": "Andrew Wiggins",
@@ -4829,7 +4883,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.028Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.789Z"
     },
     {
       "Player": "Grayson Allen",
@@ -4856,7 +4910,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:12.834Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.728Z"
     },
     {
       "Player": "Grayson Allen",
@@ -4883,7 +4937,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:14.674Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.943Z"
     },
     {
       "Player": "Grayson Allen",
@@ -5156,6 +5210,33 @@
       "RetrievedAtUtc": "2026-11-12T23:01:40.539Z"
     },
     {
+      "Player": "Grayson Allen",
+      "OfficialPlayerId": "1628960",
+      "GameId": "0022600230",
+      "TeamCode": "CHA",
+      "DateET": "2026-11-12",
+      "SourceUrl": "https://www.nba.com/game/cha-vs-phx-0022600230/box-score",
+      "Played": true,
+      "Stats": {
+        "MIN": 34.083333333333336,
+        "FGM": 5,
+        "FGA": 11,
+        "FTM": 0,
+        "FTA": 0,
+        "3PTM": 4,
+        "PTS": 14,
+        "OREB": 0,
+        "DREB": 4,
+        "REB": 4,
+        "AST": 6,
+        "ST": 1,
+        "BLK": 0,
+        "TO": 4,
+        "DD": 0
+      },
+      "RetrievedAtUtc": "2026-11-13T04:54:41.714Z"
+    },
+    {
       "Player": "Sandro Mamukelashvili",
       "OfficialPlayerId": "1630572",
       "GameId": "0012600048",
@@ -5180,7 +5261,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.342Z"
     },
     {
       "Player": "Sandro Mamukelashvili",
@@ -5234,7 +5315,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.526Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.036Z"
     },
     {
       "Player": "Sandro Mamukelashvili",
@@ -5288,7 +5369,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.760Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.362Z"
     },
     {
       "Player": "Sandro Mamukelashvili",
@@ -5396,7 +5477,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.038Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.886Z"
     },
     {
       "Player": "Sandro Mamukelashvili",
@@ -5423,7 +5504,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.581Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.997Z"
     },
     {
       "Player": "Sandro Mamukelashvili",
@@ -5585,7 +5666,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.342Z"
     },
     {
       "Player": "Draymond Green",
@@ -5612,7 +5693,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:13.634Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.134Z"
     },
     {
       "Player": "Draymond Green",
@@ -5639,7 +5720,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.526Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.036Z"
     },
     {
       "Player": "Draymond Green",
@@ -5666,7 +5747,7 @@
         "TO": 5,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.189Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.271Z"
     },
     {
       "Player": "Draymond Green",
@@ -5677,7 +5758,7 @@
       "SourceUrl": "https://www.nba.com/game/gsw-vs-phx-0022600111/box-score",
       "Played": false,
       "Stats": null,
-      "RetrievedAtUtc": "2026-11-12T23:22:20.728Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:38.281Z"
     },
     {
       "Player": "Draymond Green",
@@ -5704,7 +5785,7 @@
         "TO": 5,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.196Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:42.040Z"
     },
     {
       "Player": "Draymond Green",
@@ -5985,7 +6066,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.881Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.213Z"
     },
     {
       "Player": "DeMar DeRozan",
@@ -6012,7 +6093,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.196Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:42.040Z"
     },
     {
       "Player": "DeMar DeRozan",
@@ -6158,7 +6239,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.782Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:41.204Z"
     },
     {
       "Player": "DeMar DeRozan",
@@ -6239,7 +6320,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:14.674Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.943Z"
     },
     {
       "Player": "Egor Dëmin",
@@ -6266,7 +6347,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.264Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.000Z"
     },
     {
       "Player": "Egor Dëmin",
@@ -6293,7 +6374,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:20.374Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.674Z"
     },
     {
       "Player": "Egor Dëmin",
@@ -6428,7 +6509,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.604Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:26.983Z"
     },
     {
       "Player": "Tristan da Silva",
@@ -6455,7 +6536,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.742Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.732Z"
     },
     {
       "Player": "Tristan da Silva",
@@ -6482,7 +6563,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.697Z"
     },
     {
       "Player": "Tristan da Silva",
@@ -6682,7 +6763,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.154Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:24.453Z"
     },
     {
       "Player": "Naji Marshall",
@@ -6709,7 +6790,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.865Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.900Z"
     },
     {
       "Player": "Naji Marshall",
@@ -6736,7 +6817,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.477Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.892Z"
     },
     {
       "Player": "Naji Marshall",
@@ -6763,7 +6844,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.757Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.749Z"
     },
     {
       "Player": "Naji Marshall",
@@ -6817,7 +6898,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.871Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:35.475Z"
     },
     {
       "Player": "Naji Marshall",
@@ -6966,6 +7047,33 @@
       "RetrievedAtUtc": "2026-11-12T23:01:42.614Z"
     },
     {
+      "Player": "Naji Marshall",
+      "OfficialPlayerId": "1630230",
+      "GameId": "0022600229",
+      "TeamCode": "DAL",
+      "DateET": "2026-11-12",
+      "SourceUrl": "https://www.nba.com/game/dal-vs-min-0022600229/box-score",
+      "Played": true,
+      "Stats": {
+        "MIN": 22.583333333333332,
+        "FGM": 4,
+        "FGA": 10,
+        "FTM": 4,
+        "FTA": 4,
+        "3PTM": 1,
+        "PTS": 13,
+        "OREB": 1,
+        "DREB": 0,
+        "REB": 1,
+        "AST": 4,
+        "ST": 2,
+        "BLK": 0,
+        "TO": 2,
+        "DD": 0
+      },
+      "RetrievedAtUtc": "2026-11-13T04:54:41.619Z"
+    },
+    {
       "Player": "Reed Sheppard",
       "OfficialPlayerId": "1642263",
       "GameId": "0012600020",
@@ -6990,7 +7098,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.029Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.791Z"
     },
     {
       "Player": "Reed Sheppard",
@@ -7017,7 +7125,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:17.477Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.892Z"
     },
     {
       "Player": "Reed Sheppard",
@@ -7044,7 +7152,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.076Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.572Z"
     },
     {
       "Player": "Reed Sheppard",
@@ -7228,7 +7336,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.782Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:41.204Z"
     },
     {
       "Player": "Reed Sheppard",
@@ -7282,7 +7390,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:12.834Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.728Z"
     },
     {
       "Player": "Jaylen Wells",
@@ -7309,7 +7417,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.752Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.579Z"
     },
     {
       "Player": "Jaylen Wells",
@@ -7336,7 +7444,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.189Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.271Z"
     },
     {
       "Player": "Jaylen Wells",
@@ -7390,7 +7498,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.411Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.630Z"
     },
     {
       "Player": "Jaylen Wells",
@@ -7633,7 +7741,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:14.674Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.943Z"
     },
     {
       "Player": "Mikel Brown Jr.",
@@ -7660,7 +7768,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.264Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.000Z"
     },
     {
       "Player": "Mikel Brown Jr.",
@@ -7687,7 +7795,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:20.374Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.674Z"
     },
     {
       "Player": "Mikel Brown Jr.",
@@ -7849,7 +7957,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.028Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.789Z"
     },
     {
       "Player": "Mitchell Robinson",
@@ -7876,7 +7984,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.459Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.483Z"
     },
     {
       "Player": "Mitchell Robinson",
@@ -7903,7 +8011,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:14.612Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.429Z"
     },
     {
       "Player": "Mitchell Robinson",
@@ -8173,7 +8281,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.342Z"
     },
     {
       "Player": "Quentin Grimes",
@@ -8227,7 +8335,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.526Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.036Z"
     },
     {
       "Player": "Quentin Grimes",
@@ -8281,7 +8389,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.760Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.362Z"
     },
     {
       "Player": "Quentin Grimes",
@@ -8389,7 +8497,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.038Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.886Z"
     },
     {
       "Player": "Quentin Grimes",
@@ -8416,7 +8524,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.581Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.997Z"
     },
     {
       "Player": "Quentin Grimes",
@@ -8524,7 +8632,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.865Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.900Z"
     },
     {
       "Player": "Kingston Flemings",
@@ -8551,7 +8659,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.604Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:26.983Z"
     },
     {
       "Player": "Kingston Flemings",
@@ -8605,7 +8713,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.076Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.572Z"
     },
     {
       "Player": "Kingston Flemings",
@@ -8859,7 +8967,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.417Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.736Z"
     },
     {
       "Player": "Isaiah Collier",
@@ -8886,7 +8994,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.752Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.579Z"
     },
     {
       "Player": "Isaiah Collier",
@@ -8913,7 +9021,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.482Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.341Z"
     },
     {
       "Player": "Isaiah Collier",
@@ -8940,7 +9048,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.760Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.362Z"
     },
     {
       "Player": "Isaiah Collier",
@@ -8967,7 +9075,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.411Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.630Z"
     },
     {
       "Player": "Isaiah Collier",
@@ -9194,7 +9302,7 @@
       "SourceUrl": "https://www.nba.com/game/cha-vs-mem-0012600059/box-score",
       "Played": false,
       "Stats": null,
-      "RetrievedAtUtc": "2026-11-12T23:22:12.834Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.728Z"
     },
     {
       "Player": "Jerami Grant",
@@ -9221,7 +9329,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.752Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.579Z"
     },
     {
       "Player": "Jerami Grant",
@@ -9248,7 +9356,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.189Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.271Z"
     },
     {
       "Player": "Jerami Grant",
@@ -9302,7 +9410,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.411Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:40.630Z"
     },
     {
       "Player": "Jerami Grant",
@@ -9545,7 +9653,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.237Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:34.160Z"
     },
     {
       "Player": "Isaiah Jackson",
@@ -9599,7 +9707,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.248Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.108Z"
     },
     {
       "Player": "Isaiah Jackson",
@@ -9788,7 +9896,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.342Z"
     },
     {
       "Player": "Collin Sexton",
@@ -9826,7 +9934,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.526Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.036Z"
     },
     {
       "Player": "Collin Sexton",
@@ -9880,7 +9988,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.760Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.362Z"
     },
     {
       "Player": "Collin Sexton",
@@ -9988,7 +10096,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.038Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.886Z"
     },
     {
       "Player": "Collin Sexton",
@@ -10015,7 +10123,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.581Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:39.997Z"
     },
     {
       "Player": "Collin Sexton",
@@ -10177,7 +10285,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:08.167Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.476Z"
     },
     {
       "Player": "Terrence Shannon Jr",
@@ -10231,7 +10339,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:13.562Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.482Z"
     },
     {
       "Player": "Terrence Shannon Jr",
@@ -10258,7 +10366,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:16.742Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.732Z"
     },
     {
       "Player": "Terrence Shannon Jr",
@@ -10285,7 +10393,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.737Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:37.748Z"
     },
     {
       "Player": "Terrence Shannon Jr",
@@ -10423,6 +10531,33 @@
       "RetrievedAtUtc": "2026-11-12T23:01:40.726Z"
     },
     {
+      "Player": "Terrence Shannon Jr",
+      "OfficialPlayerId": "1630545",
+      "GameId": "0022600229",
+      "TeamCode": "MIN",
+      "DateET": "2026-11-12",
+      "SourceUrl": "https://www.nba.com/game/dal-vs-min-0022600229/box-score",
+      "Played": true,
+      "Stats": {
+        "MIN": 21.1,
+        "FGM": 3,
+        "FGA": 8,
+        "FTM": 0,
+        "FTA": 0,
+        "3PTM": 0,
+        "PTS": 6,
+        "OREB": 0,
+        "DREB": 2,
+        "REB": 2,
+        "AST": 4,
+        "ST": 1,
+        "BLK": 0,
+        "TO": 1,
+        "DD": 0
+      },
+      "RetrievedAtUtc": "2026-11-13T04:54:41.619Z"
+    },
+    {
       "Player": "Gui Santos",
       "OfficialPlayerId": "1630611",
       "GameId": "0012600048",
@@ -10447,7 +10582,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:09.966Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:25.342Z"
     },
     {
       "Player": "Gui Santos",
@@ -10474,7 +10609,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:13.634Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.134Z"
     },
     {
       "Player": "Gui Santos",
@@ -10501,7 +10636,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.526Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:33.036Z"
     },
     {
       "Player": "Gui Santos",
@@ -10528,7 +10663,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.189Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:32.271Z"
     },
     {
       "Player": "Gui Santos",
@@ -10555,7 +10690,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:20.728Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:38.281Z"
     },
     {
       "Player": "Gui Santos",
@@ -10582,7 +10717,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:23.196Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:42.040Z"
     },
     {
       "Player": "Gui Santos",
@@ -10766,7 +10901,7 @@
         "TO": 4,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.998Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.376Z"
     },
     {
       "Player": "Dennis Schröder",
@@ -10793,7 +10928,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.028Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.789Z"
     },
     {
       "Player": "Dennis Schröder",
@@ -10820,7 +10955,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:12.834Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.728Z"
     },
     {
       "Player": "Dennis Schröder",
@@ -10847,7 +10982,7 @@
         "TO": 3,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:14.674Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:28.943Z"
     },
     {
       "Player": "Dennis Schröder",
@@ -11090,7 +11225,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:10.154Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:24.453Z"
     },
     {
       "Player": "Bennedict Mathurin",
@@ -11117,7 +11252,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:11.843Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:30.049Z"
     },
     {
       "Player": "Bennedict Mathurin",
@@ -11144,7 +11279,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:15.710Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:29.924Z"
     },
     {
       "Player": "Bennedict Mathurin",
@@ -11171,7 +11306,7 @@
         "TO": 2,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:18.482Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:31.341Z"
     },
     {
       "Player": "Bennedict Mathurin",
@@ -11198,7 +11333,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:19.881Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.213Z"
     },
     {
       "Player": "Bennedict Mathurin",
@@ -11441,7 +11576,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:08.684Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:23.353Z"
     },
     {
       "Player": "Jaylin Williams",
@@ -11468,7 +11603,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:07.029Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:21.791Z"
     },
     {
       "Player": "Jaylin Williams",
@@ -11549,7 +11684,7 @@
         "TO": 0,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:22.248Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:36.108Z"
     },
     {
       "Player": "Jaylin Williams",
@@ -11576,7 +11711,7 @@
         "TO": 1,
         "DD": 0
       },
-      "RetrievedAtUtc": "2026-11-12T23:22:21.805Z"
+      "RetrievedAtUtc": "2026-11-13T04:54:37.493Z"
     },
     {
       "Player": "Jaylin Williams",
@@ -11662,14 +11797,10 @@
   ],
   "Injuries": {
     "Status": "partial",
-    "RetrievedAtUtc": "2026-11-12T23:22:31.542Z",
-    "ReportIssuedAtUtc": "2026-11-12T23:15:00.000Z",
-    "SourceUrl": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_06_15PM.pdf",
-    "UnsubmittedTeams": [
-      "LA Clippers",
-      "Memphis Grizzlies",
-      "Sacramento Kings"
-    ],
+    "RetrievedAtUtc": "2026-11-13T04:54:43.361Z",
+    "ReportIssuedAtUtc": "2026-11-13T04:45:00.000Z",
+    "SourceUrl": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_11_45PM.pdf",
+    "UnsubmittedTeams": [],
     "TeamReports": [
       {
         "TeamName": "Charlotte Hornets",
@@ -11729,12 +11860,12 @@
       {
         "TeamName": "LA Clippers",
         "GameDateET": "2026-11-13",
-        "Submitted": false
+        "Submitted": true
       },
       {
         "TeamName": "Memphis Grizzlies",
         "GameDateET": "2026-11-13",
-        "Submitted": false
+        "Submitted": true
       },
       {
         "TeamName": "Miami Heat",
@@ -11759,7 +11890,7 @@
       {
         "TeamName": "Sacramento Kings",
         "GameDateET": "2026-11-13",
-        "Submitted": false
+        "Submitted": true
       },
       {
         "TeamName": "San Antonio Spurs",
@@ -11785,14 +11916,14 @@
         "TeamName": "Charlotte Hornets",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "G League - Two-Way Arthroscopy"
+        "Reason": "G League -Two-Way Arthroscopy"
       },
       {
         "Player": "Anthony Edwards",
         "TeamName": "Charlotte Hornets",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right Knee Repair / Surgery"
+        "Reason": "Injury/Illness -Right Knee Repair /Surgery"
       },
       {
         "Player": "Donte DiVincenzo",
@@ -11826,8 +11957,8 @@
         "Player": "Morez Johnson Jr.",
         "TeamName": "Minnesota Timberwolves",
         "GameDateET": "2026-11-12",
-        "Status": "Probable",
-        "Reason": "Injury/Illness -Left Shin / Tibia"
+        "Status": "Available",
+        "Reason": "Injury/Illness -Left Shin /Tibia"
       },
       {
         "Player": "Sergio de Larrea",
@@ -11848,7 +11979,7 @@
         "TeamName": "Dallas Mavericks",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "Injury/Illness -Low Back/Sciatica Rupture / Tear"
+        "Reason": "Injury/Illness -Low Back/Sciatica Rupture /Tear"
       },
       {
         "Player": "Ariel Hukporti",
@@ -11861,7 +11992,7 @@
         "Player": "Joel Embiid",
         "TeamName": "Dallas Mavericks",
         "GameDateET": "2026-11-12",
-        "Status": "Questionable",
+        "Status": "Available",
         "Reason": "Injury/Illness -Right Foot Plantar"
       },
       {
@@ -11883,70 +12014,77 @@
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "G League - Two-Way Page 3 of7 / Bone Bruise"
-      },
-      {
-        "Player": "Jalen Suggs",
-        "TeamName": "Philadelphia 76ers",
-        "GameDateET": "2026-11-12",
-        "Status": "Questionable",
-        "Reason": "Injury/Illness - Right Knee Contusion Hamstring"
+        "Reason": "G League -Two-Way Hamstring"
       },
       {
         "Player": "Noah Penda",
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "Injury/Illness - Right Partially Torn Recovery"
+        "Reason": "Injury/Illness- Right Partially Torn Recovery"
       },
       {
         "Player": "Izaiyah Nelson",
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "Injury/Illness - Left Ankle Injury Management"
+        "Reason": "Injury/Illness- Left Ankle Injury Management"
       },
       {
         "Player": "Jonathan Isaac",
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Out",
-        "Reason": "Injury/Illness - Left Knee Injury"
+        "Reason": "Injury/Illness- Left Knee Injury"
       },
       {
         "Player": "Tristan da Silva",
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Questionable",
-        "Reason": "Injury/Illness - Left Calf Strain Contusion"
+        "Reason": "Injury/Illness- Left Calf Strain Contusion"
       },
       {
         "Player": "Jamal Cain",
         "TeamName": "Philadelphia 76ers",
         "GameDateET": "2026-11-12",
         "Status": "Questionable",
-        "Reason": "Injury/Illness - Left Shoulder Sprain"
+        "Reason": "Injury/Illness- Left Shoulder Sprain"
       },
       {
         "Player": "Paolo Banchero",
         "TeamName": "Orlando Magic",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness - Right High Ankle"
+        "Reason": "Injury/Illness- Right High Ankle"
       },
       {
         "Player": "Mark Williams",
+        "TeamName": "Orlando Magic",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Left Shoulder Surgery"
+      },
+      {
+        "Player": "Drew Timme",
+        "TeamName": "Orlando Magic",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "G League - Two-Way"
+      },
+      {
+        "Player": "Pat Spencer",
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness - Left Shoulder Surgery"
+        "Reason": "G League - Two-Way"
       },
       {
         "Player": "Grant Williams",
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Available",
-        "Reason": "Injury/Illness - Right Hamstring Strain"
+        "Reason": "Injury/Illness- Right Hamstring Strain"
       },
       {
         "Player": "Hannes Steinbach",
@@ -11960,28 +12098,28 @@
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness - Left Hamstring Strain"
+        "Reason": "Injury/Illness- Left Hamstring Strain"
       },
       {
         "Player": "Brandon Miller",
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness - Right Hip Strain"
+        "Reason": "Injury/Illness- Right Hip Strain"
       },
       {
         "Player": "Kon Knueppel",
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness - Left Hamstring Strain Tendinopathy"
+        "Reason": "Injury/Illness- Left Hamstring Strain Tendinopathy"
       },
       {
         "Player": "Moussa Diabate",
         "TeamName": "Phoenix Suns",
         "GameDateET": "2026-11-13",
         "Status": "Available",
-        "Reason": "Injury/Illness - Right Quadriceps"
+        "Reason": "Injury/Illness- Right Quadriceps"
       },
       {
         "Player": "Kylan Boswell",
@@ -11989,20 +12127,6 @@
         "GameDateET": "2026-11-13",
         "Status": "Out",
         "Reason": "G League - Two-Way"
-      },
-      {
-        "Player": "Caleb Wilson",
-        "TeamName": "Phoenix Suns",
-        "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "Injury/Illness -Right Metacarpal"
-      },
-      {
-        "Player": "Dailyn Swain",
-        "TeamName": "Phoenix Suns",
-        "GameDateET": "2026-11-13",
-        "Status": "Questionable",
-        "Reason": "Injury/Illness -Right Disc Irritation"
       },
       {
         "Player": "Norman Powell",
@@ -12107,182 +12231,168 @@
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right ACL Repair /"
+        "Reason": "Injury/Illness -Right ACL Repair / /Bone Bruise"
       },
       {
-        "Player": "Jaron Pierre Jr.",
+        "Player": "Jalen Suggs",
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
         "Status": "Questionable",
-        "Reason": "G League - Two-Way Tendinopathy"
+        "Reason": "Injury/Illness -Right Knee Contusion Page 5of 8"
       },
       {
-        "Player": "Trey Murphy III",
+        "Player": "Quinten Post",
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
-        "Status": "Doubtful",
-        "Reason": "Injury/Illness- BilateralPatellar Bone Bruise"
+        "Status": "Out",
+        "Reason": "Injury/Illness -Concussion Protocol Herniation"
       },
       {
-        "Player": "Yves Missi",
+        "Player": "Scotty Pippen Jr.",
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
-        "Status": "Doubtful",
-        "Reason": "Injury/Illness- LeftKnee Contusion /"
+        "Status": "Out",
+        "Reason": "Injury/Illness -Lumbar Disc"
       },
       {
-        "Player": "Bryce McGowens",
+        "Player": "Jahmai Mashack",
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
-        "Status": "Doubtful",
-        "Reason": "Injury/Illness- LeftElbow Infection"
+        "Status": "Out",
+        "Reason": "G League -Two-Way"
       },
       {
-        "Player": "Bennedict Mathurin",
+        "Player": "Karim Lopez",
         "TeamName": "Indiana Pacers",
         "GameDateET": "2026-11-13",
-        "Status": "Doubtful",
-        "Reason": "Injury/Illness- Right Thumb Sprain"
+        "Status": "Out",
+        "Reason": "G League -On Assignment Management"
       },
       {
-        "Player": "Malik Dia",
-        "TeamName": "New Orleans Pelicans",
+        "Player": "Zach Edey",
+        "TeamName": "Memphis Grizzlies",
         "GameDateET": "2026-11-13",
-        "Status": "Doubtful",
-        "Reason": "G League - Two-Way"
+        "Status": "Out",
+        "Reason": "Injury/Illness -Left Ankle Injury"
+      },
+      {
+        "Player": "Klay Thompson",
+        "TeamName": "Memphis Grizzlies",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "Injury/Illness -Left Ankle Soreness"
+      },
+      {
+        "Player": "Pelle Larsson",
+        "TeamName": "Memphis Grizzlies",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "Injury/Illness -Illness"
+      },
+      {
+        "Player": "Vladislav Goldin",
+        "TeamName": "Memphis Grizzlies",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "G League -Two-Way"
       },
       {
         "Player": "Giannis Antetokounmpo",
         "TeamName": "Miami Heat",
         "GameDateET": "2026-11-13",
         "Status": "Probable",
-        "Reason": "Injury/Illness- Right Wrist Sprain"
+        "Reason": "Injury/Illness -Right Wrist Sprain"
       },
       {
         "Player": "Nae'Qwan Tomlin",
         "TeamName": "Miami Heat",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness- Low Back Stress"
+        "Reason": "Injury/Illness -Low Back Stress"
       },
       {
         "Player": "Evan Mobley",
         "TeamName": "Miami Heat",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness- LeftGreat Toe -Sprain Management"
+        "Reason": "Injury/Illness -Left Great Toe - Sprain Management"
       },
       {
         "Player": "Sam Merrill",
         "TeamName": "Miami Heat",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness- Right Elbow Injury"
+        "Reason": "Injury/Illness -Right Elbow Injury"
       },
       {
         "Player": "Khalifa Diop",
         "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "G League - On Assignment Fracture"
+        "Reason": "G League -On Assignment Fracture"
       },
       {
-        "Player": "Brandon Williams",
+        "Player": "Caleb Wilson",
         "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Left Hamstring Strain"
+        "Reason": "Injury/Illness -Right Metacarpal"
       },
       {
-        "Player": "Kristaps Porzingis",
+        "Player": "Dailyn Swain",
         "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "Not With Team Repair /Surgery"
-      },
-      {
-        "Player": "Moses Moody",
-        "TeamName": "Cleveland Cavaliers",
-        "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "Injury/Illness -Left Patellar Tendon"
-      },
-      {
-        "Player": "Stephen Curry",
-        "TeamName": "Cleveland Cavaliers",
-        "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "Injury/Illness -Right Oblique Tear Surgery"
-      },
-      {
-        "Player": "Jimmy Butler III",
-        "TeamName": "Cleveland Cavaliers",
-        "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "Injury/Illness -Right ACL Repair /"
-      },
-      {
-        "Player": "Charles Bassey",
-        "TeamName": "Golden State Warriors",
-        "GameDateET": "2026-11-13",
-        "Status": "Probable",
-        "Reason": "Injury/Illness -Left Toe Soreness"
-      },
-      {
-        "Player": "Marcus Smart",
-        "TeamName": "Golden State Warriors",
-        "GameDateET": "2026-11-13",
-        "Status": "Out",
-        "Reason": "League Suspension"
+        "Status": "Questionable",
+        "Reason": "Injury/Illness -Right Disc Irritation Page 6 of8"
       },
       {
         "Player": "Julian Phillips",
-        "TeamName": "Golden State Warriors",
+        "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
         "Reason": "G League -Two-Way"
       },
       {
         "Player": "Quadir Copeland",
-        "TeamName": "Golden State Warriors",
+        "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
         "Reason": "G League -Two-Way"
       },
       {
         "Player": "Clint Capela",
-        "TeamName": "Golden State Warriors",
+        "TeamName": "Cleveland Cavaliers",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right Ankle Sprain"
+        "Reason": "Injury/Illness - Right Ankle Sprain"
       },
       {
         "Player": "Steven Adams",
         "TeamName": "Houston Rockets",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right Soleus Strain Plate Tear"
+        "Reason": "Injury/Illness - Right Soleus Strain Plate Tear"
       },
       {
         "Player": "Jusuf Nurkic",
         "TeamName": "Houston Rockets",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right 2nd Plantar"
+        "Reason": "Injury/Illness - Right 2nd Plantar"
       },
       {
         "Player": "Lauri Markkanen",
         "TeamName": "Houston Rockets",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right Hand Fracture"
+        "Reason": "Injury/Illness - Right Hand Fracture"
       },
       {
         "Player": "Jaren Jackson Jr.",
         "TeamName": "Houston Rockets",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right MCL Tear"
+        "Reason": "Injury/Illness - Right MCL Tear"
       },
       {
         "Player": "Harrison Ingram",
@@ -12310,14 +12420,224 @@
         "TeamName": "Utah Jazz",
         "GameDateET": "2026-11-13",
         "Status": "Out",
-        "Reason": "Injury/Illness -Right Ankle Sprain Page 7 of7"
+        "Reason": "Injury/Illness - Right Ankle Sprain"
+      },
+      {
+        "Player": "Jaron Pierre Jr.",
+        "TeamName": "Utah Jazz",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "G League -Two-Way Tendinopathy"
+      },
+      {
+        "Player": "Trey Murphy III",
+        "TeamName": "Utah Jazz",
+        "GameDateET": "2026-11-13",
+        "Status": "Doubtful",
+        "Reason": "Injury/Illness - BilateralPatellar Bone Bruise"
+      },
+      {
+        "Player": "Yves Missi",
+        "TeamName": "Utah Jazz",
+        "GameDateET": "2026-11-13",
+        "Status": "Doubtful",
+        "Reason": "Injury/Illness - LeftKnee Contusion /"
+      },
+      {
+        "Player": "Bryce McGowens",
+        "TeamName": "Utah Jazz",
+        "GameDateET": "2026-11-13",
+        "Status": "Doubtful",
+        "Reason": "Injury/Illness - LeftElbow Infection"
+      },
+      {
+        "Player": "Bennedict Mathurin",
+        "TeamName": "Utah Jazz",
+        "GameDateET": "2026-11-13",
+        "Status": "Doubtful",
+        "Reason": "Injury/Illness - Right Thumb Sprain"
+      },
+      {
+        "Player": "Malik Dia",
+        "TeamName": "New Orleans Pelicans",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "G League -Two-Way"
+      },
+      {
+        "Player": "Richie Saunders",
+        "TeamName": "New Orleans Pelicans",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Right Knee Surgery"
+      },
+      {
+        "Player": "Alex Karaban",
+        "TeamName": "New Orleans Pelicans",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "G League - On Assignment"
+      },
+      {
+        "Player": "Precious Achiuwa",
+        "TeamName": "Sacramento Kings",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "Injury/Illness - Left Ankle Soreness"
+      },
+      {
+        "Player": "Chris Youngblood",
+        "TeamName": "Sacramento Kings",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Right Bone Bruise Surgery"
+      },
+      {
+        "Player": "Shaedon Sharpe",
+        "TeamName": "Sacramento Kings",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Right Meniscus"
+      },
+      {
+        "Player": "Ja Morant",
+        "TeamName": "Sacramento Kings",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Left Hamstring Strain"
       },
       {
         "Player": "De'Aaron Fox",
         "TeamName": "San Antonio Spurs",
         "GameDateET": "2026-11-13",
         "Status": "Questionable",
-        "Reason": "Injury/Illness- LeftHip Soreness"
+        "Reason": "Injury/Illness - Left Hip Soreness"
+      },
+      {
+        "Player": "Brandon Williams",
+        "TeamName": "San Antonio Spurs",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Left Hamstring Strain"
+      },
+      {
+        "Player": "Kristaps Porzingis",
+        "TeamName": "San Antonio Spurs",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Not With Team Repair / Surgery"
+      },
+      {
+        "Player": "Moses Moody",
+        "TeamName": "San Antonio Spurs",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Left Patellar Tendon"
+      },
+      {
+        "Player": "Stephen Curry",
+        "TeamName": "San Antonio Spurs",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Right Oblique Tear Surgery"
+      },
+      {
+        "Player": "Jimmy Butler III",
+        "TeamName": "San Antonio Spurs",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness - Right ACL Repair /"
+      },
+      {
+        "Player": "Charles Bassey",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Probable",
+        "Reason": "Injury/Illness - Left Toe Soreness"
+      },
+      {
+        "Player": "Marcus Smart",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "League Suspension"
+      },
+      {
+        "Player": "Yanic Konan Niederhauser",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Right Lisfranc Surgery Surgery"
+      },
+      {
+        "Player": "Jordan Miller",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Left Rotator Cuff"
+      },
+      {
+        "Player": "Nick Martinelli",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "G League - Two-Way"
+      },
+      {
+        "Player": "Brandon Ingram",
+        "TeamName": "Golden State Warriors",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Right Heel Surgery Management"
+      },
+      {
+        "Player": "Bradley Beal",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Right Knee Injury"
+      },
+      {
+        "Player": "Jaylin Williams",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Low Back Spasms"
+      },
+      {
+        "Player": "Jalen Williams",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Left Ankle Surgery"
+      },
+      {
+        "Player": "Cason Wallace",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Left Shoulder Surgery"
+      },
+      {
+        "Player": "Nikola Topic",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "G League - On Assignment"
+      },
+      {
+        "Player": "Thomas Sorber",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Out",
+        "Reason": "Injury/Illness- Right Knee Surgery"
+      },
+      {
+        "Player": "Ajay Mitchell",
+        "TeamName": "LA Clippers",
+        "GameDateET": "2026-11-13",
+        "Status": "Questionable",
+        "Reason": "Injury/Illness- Left Ankle Sprain Recovery"
       }
     ]
   },
@@ -17290,7 +17610,7 @@
     "MissingPlayers": [],
     "AmbiguousPlayers": [],
     "IdentityUnknownPlayers": [],
-    "RosterRetrievedAtUtc": "2026-11-12T23:10:42.7882505+00:00",
-    "MarketRetrievedAtUtc": "2026-11-12T23:10:44.7009459+00:00"
+    "RosterRetrievedAtUtc": "2026-11-12T23:22:42.9903289+00:00",
+    "MarketRetrievedAtUtc": "2026-11-12T23:22:44.7038554+00:00"
   }
 }
