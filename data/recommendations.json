@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 1,
-  "Status": "insufficient_data",
+  "Status": "waiting",
   "GeneratedAtUtc": "2026-11-13T15:05:17.004Z",
   "ReportDateET": "2026-11-12",
   "Strategy": "aggressive_week",
@@ -18,7 +18,7 @@
       "SampleGames7": 4,
       "SampleGames14": 7,
       "RemainingGames": 2,
-      "Review": "保留：Yahoo標示不可丟棄",
+      "Review": "保留：目前Yahoo標示不可丟棄；原報告表現比較未重算。",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
@@ -151,7 +151,7 @@
       "SampleGames7": 3,
       "SampleGames14": 6,
       "RemainingGames": 1,
-      "Review": "保留：Yahoo標示不可丟棄",
+      "Review": "保留：目前Yahoo標示不可丟棄；原報告表現比較未重算。",
       "Reasons": [
         "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
@@ -160,6 +160,24 @@
     }
   ],
   "Sources": [
+    {
+      "Name": "本次Flaim / Yahoo候選現況核對 Roster",
+      "RetrievedAtUtc": "2026-11-13T23:09:11.380Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": null
+    },
+    {
+      "Name": "本次Flaim / Yahoo候選現況核對 Market",
+      "RetrievedAtUtc": "2026-11-13T23:09:13.947Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": null
+    },
+    {
+      "Name": "本次NBA官方傷勢候選現況核對",
+      "RetrievedAtUtc": "2026-11-13T23:08:54.501Z",
+      "SourceUpdatedAtUtc": "2026-11-13T23:00:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_06_00PM.pdf"
+    },
     {
       "Name": "Flaim / Yahoo Roster",
       "RetrievedAtUtc": "2026-11-13T15:05:01.652Z",
@@ -603,6 +621,8 @@
     "以下為7/14日樣本與排定場次的情境估算，非實際出賽或類別勝率保證。",
     "對手後續增量、可用欄位、每週Add餘額與操作合法性仍需在Yahoo確認。",
     "本週剩餘Add未知或來源已過期；沒有從每週上限或觀察交易筆數推算可用額度。",
-    "Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。"
+    "Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。",
+    "目前目標美東2026-11-13尚未全部完賽；保留美東2026-11-12舊報告與原產生時間，未當作新完賽建議。",
+    "等待期間只另行核對目前持有／取得狀態、官方傷勢與保護標記；原GeneratedAtUtc、報告日期、樣本、剩餘場次及表現估算均未更新，也未產生新排序。"
   ]
 }
