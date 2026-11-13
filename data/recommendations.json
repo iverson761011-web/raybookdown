@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 1,
   "Status": "insufficient_data",
-  "GeneratedAtUtc": "2026-11-13T09:14:28.954Z",
+  "GeneratedAtUtc": "2026-11-13T09:55:18.008Z",
   "ReportDateET": "2026-11-12",
   "Strategy": "aggressive_week",
   "Reasons": [
@@ -12,7 +12,7 @@
     {
       "Player": "Jalen Green",
       "TeamCode": "PHX",
-      "Availability": "waivers",
+      "Availability": "free_agent",
       "RemainingGames": 0,
       "SampleGames7": 4,
       "SampleGames14": 8,
@@ -20,7 +20,6 @@
       "Recommendation": "觀察名單：證據不足，未列加入優先順序",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
         "本次標示期間已無未來排定場次。"
       ],
       "Tradeoffs": [],
@@ -78,7 +77,7 @@
     {
       "Player": "Grayson Allen",
       "TeamCode": "CHA",
-      "Availability": "waivers",
+      "Availability": "free_agent",
       "RemainingGames": 0,
       "SampleGames7": 3,
       "SampleGames14": 7,
@@ -86,7 +85,6 @@
       "Recommendation": "觀察名單：證據不足，未列加入優先順序",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
         "本次標示期間已無未來排定場次。"
       ],
       "Tradeoffs": [],
@@ -294,49 +292,49 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-13T09:14:15.717Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:05.541Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-13T09:14:17.430Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:07.068Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-13T09:14:16.297Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:06.013Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-13T09:14:17.117Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:06.777Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-13T09:14:16.813Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:06.480Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-13T09:14:01.501Z",
+      "RetrievedAtUtc": "2026-11-13T09:54:54.100Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-12"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-13T09:14:02.768Z",
-      "SourceUpdatedAtUtc": "2026-11-13T09:00:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_04_00AM.pdf"
+      "RetrievedAtUtc": "2026-11-13T09:54:55.500Z",
+      "SourceUpdatedAtUtc": "2026-11-13T09:45:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_04_45AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-13T09:14:27.576Z",
+      "RetrievedAtUtc": "2026-11-13T09:55:15.883Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -468,7 +466,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-13T09:14:01.087Z",
+      "RetrievedAtUtc": "2026-11-13T09:54:53.364Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-hou-0022600208/box-score"
     },
@@ -522,7 +520,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-13T09:14:00.917Z",
+      "RetrievedAtUtc": "2026-11-13T09:54:53.347Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/was-vs-okc-0022600192/box-score"
     },
