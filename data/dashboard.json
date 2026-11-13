@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-13T07:03:40.4616409+00:00",
+  "GeneratedAtUtc": "2026-11-13T08:53:03.7675555+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:36.4294867+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:36.4294867+00:00",
+      "CheckedAtUtc": "2026-11-13T08:52:59.4975438+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:52:59.4975438+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:36.7340024+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:36.7340024+00:00",
+      "CheckedAtUtc": "2026-11-13T08:52:59.8507475+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:52:59.8507475+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -145,7 +145,7 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Morez Johnson Jr.",
+            "Player": "Cameron Boozer",
             "Position": "PF",
             "Status": null,
             "EligiblePositions": [
@@ -154,14 +154,15 @@
               "FC",
               "Util"
             ],
-            "TeamCode": "DAL",
+            "TeamCode": "MEM",
             "IsUndroppable": false
           },
           {
-            "Player": "Cameron Boozer",
+            "Player": "Jerami Grant",
             "Position": "F",
             "Status": null,
             "EligiblePositions": [
+              "SF",
               "PF",
               "F",
               "FC",
@@ -240,8 +241,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:37.2528203+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:37.2528203+00:00",
+      "CheckedAtUtc": "2026-11-13T08:53:00.4450163+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:53:00.4450163+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -389,8 +390,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:37.7285282+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:37.7285282+00:00",
+      "CheckedAtUtc": "2026-11-13T08:53:00.9879402+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:53:00.9879402+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -399,6 +400,17 @@
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-13T08:01:40.0000000+00:00",
+            "Added": [
+              "Jerami Grant"
+            ],
+            "Dropped": [
+              "Morez Johnson Jr."
+            ],
+            "FaabBid": null
+          },
           {
             "Type": "drop",
             "OccurredAtUtc": "2026-11-12T23:48:09.0000000+00:00",
@@ -619,8 +631,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:38.0266296+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:38.0266296+00:00",
+      "CheckedAtUtc": "2026-11-13T08:53:01.2844394+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:53:01.2844394+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -634,8 +646,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-13T07:03:38.3411816+00:00",
-      "RetrievedAtUtc": "2026-11-13T07:03:38.3411816+00:00",
+      "CheckedAtUtc": "2026-11-13T08:53:01.5970957+00:00",
+      "RetrievedAtUtc": "2026-11-13T08:53:01.5970957+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -667,6 +679,14 @@
             "WaiverDate": "2026-11-14"
           },
           {
+            "Player": "Khaman Maluach",
+            "Position": "C",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 47,
+            "WaiverDate": "2026-11-15"
+          },
+          {
             "Player": "Grayson Allen",
             "Position": "SG,SF",
             "TeamCode": "CHA",
@@ -683,6 +703,14 @@
             "WaiverDate": "2026-11-14"
           },
           {
+            "Player": "Collin Gillespie",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 41,
+            "WaiverDate": "2026-11-15"
+          },
+          {
             "Player": "Sandro Mamukelashvili",
             "Position": "PF,C",
             "TeamCode": "LAL",
@@ -697,6 +725,14 @@
             "Availability": "free_agent",
             "PercentOwned": 34,
             "WaiverDate": null
+          },
+          {
+            "Player": "Jamal Shead",
+            "Position": "PG",
+            "TeamCode": "TOR",
+            "Availability": "waivers",
+            "PercentOwned": 33,
+            "WaiverDate": "2026-11-15"
           },
           {
             "Player": "Egor Dëmin",
@@ -723,22 +759,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Jaylen Wells",
-            "Position": "SG,SF",
-            "TeamCode": "MEM",
-            "Availability": "free_agent",
-            "PercentOwned": 19,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Mitchell Robinson",
-            "Position": "C",
-            "TeamCode": "BOS",
-            "Availability": "waivers",
-            "PercentOwned": 17,
-            "WaiverDate": "2026-11-14"
-          },
-          {
             "Player": "Quentin Grimes",
             "Position": "SG,SF",
             "TeamCode": "LAL",
@@ -760,14 +780,6 @@
             "TeamCode": "ATL",
             "Availability": "free_agent",
             "PercentOwned": 15,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jerami Grant",
-            "Position": "SF,PF",
-            "TeamCode": "MEM",
-            "Availability": "free_agent",
-            "PercentOwned": 14,
             "WaiverDate": null
           },
           {
@@ -848,8 +860,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-13T07:03:40.618Z",
-      "RetrievedAtUtc": "2026-11-13T07:03:40.618Z",
+      "CheckedAtUtc": "2026-11-13T08:53:03.923Z",
+      "RetrievedAtUtc": "2026-11-13T08:53:03.923Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
