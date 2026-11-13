@@ -24,6 +24,13 @@ const dashboardFixture=(rosterNames,marketNames=[])=>{
  return {SchemaVersion:2,...TARGET,GeneratedAtUtc:fixedNow().toISOString(),Sections};
 };
 
+test('official Final/OT2 postfix is final only with a compatible final status',()=>{
+ // Observed on NBA's 2026-11-12 DET-WAS GameCard in the public-source CI probe.
+ for(const label of ['Final/OT2','Final/OT','Final/2OT','Final/2 OT'])assert.equal(parseDailyScoreboard(daily([game({gameStatusText:label})]),date).Status,'final');
+ assert.equal(parseDailyScoreboard(daily([game({gameStatus:2,gameStatusText:'Final/OT2'})]),date).Status,'waiting');
+ for(const label of ['Final/OT2 pending','End/OT2','Final/OT0'])assert.equal(parseDailyScoreboard(daily([game({gameStatusText:label})]),date).Status,'unknown');
+});
+
 test('a whole day is final only when every listed game and its scores are verified',()=>{
  assert.equal(parseDailyScoreboard(daily([game()]),date).Status,'final');
  assert.equal(parseDailyScoreboard(daily([game(),game({gameId:'0022600219',gameStatus:2,gameStatusText:'4th Qtr'})]),date).Status,'waiting');

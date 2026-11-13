@@ -196,3 +196,44 @@ test('a new verified zero also places a preserved waiting report on hold without
  const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';f.dashboard.Sections.Budget={Status:'ok',RetrievedAtUtc:stamp,Data:{AddsRemainingThisWeek:0}};
  const r=run({...f,previous});assert.equal(r.Status,'waiting');assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.match(r.Candidates[0].Recommendation,/觀察舊報告.*剩餘Add為0/);assert.equal(r.Candidates[0].DropOptions.length,0);assert(r.Sources.some(s=>s.Name.includes('Add額度檢查 Budget')&&s.RetrievedAtUtc===stamp));
 });
+
+test('waiting report candidates are held if fresh market now says waivers, missing, duplicate or already owned',()=>{
+ for(const change of [f=>f.dashboard.Sections.Market.Data.Players[0].Availability='waivers',f=>f.dashboard.Sections.Market.Data.Players=[],f=>f.dashboard.Sections.Market.Data.Players.push({...f.dashboard.Sections.Market.Data.Players[0]}),f=>f.dashboard.Sections.Roster.Data.Players.push({Player:'Market Player',TeamCode:'GSW',IsUndroppable:false})]){
+  const f=fixture(),previous=run(f);change(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const r=run({...f,previous});assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.equal(r.ReportDateET,previous.ReportDateET);assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert.equal(r.Candidates[0].DropOptions.length,0);assert(r.Sources.some(s=>s.Name.includes('候選現況核對 Market')&&s.RetrievedAtUtc===stamp));
+ }
+});
+test('old report age or unavailable current context cannot preserve an actionable waiting recommendation',()=>{
+ for(const change of [(f,p)=>p.GeneratedAtUtc=new Date(+now-37*3600000).toISOString(),(f,p)=>p.Sources.find(s=>s.Name==='Flaim / Yahoo Market').RetrievedAtUtc=new Date(+now-37*3600000).toISOString(),f=>f.dashboard.Sections.Roster.Status='error',f=>f.dashboard.Sections.Market.RetrievedAtUtc=new Date(+now-37*3600000).toISOString()]){
+  const f=fixture(),previous=run(f);change(f,previous);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const r=run({...f,previous});assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.equal(r.ReportDateET,previous.ReportDateET);
+ }
+});
+test('missing current protection only holds removal advice and does not manufacture a pickup hold for a verified free agent',()=>{
+ const f=fixture(),previous=run(f);delete f.dashboard.Sections.Roster.Data.Players[0].IsUndroppable;f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const r=run({...f,previous});assert.equal(r.Candidates[0].DropOptions.length,0);assert.equal(r.DropReviews[0].Protected,null);assert.match(r.DropReviews[0].Review,/保護欄位未知/);assert(!r.Candidates[0].Recommendation.includes('取得狀態或來源年齡未通過'));
+ f.dashboard.Sections.Roster.Data.Players[0].IsUndroppable=true;assert.match(run({...f,previous}).DropReviews[0].Review,/目前Yahoo標示不可丟棄/);
+});
+test('current official injury changes downgrade an old waiting recommendation without refreshing its performance report',()=>{
+ for(const Status of ['Out','Doubtful','Questionable']){const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';f.evidence.Injuries.Players.push({Player:'Market Player',TeamName:'Golden State Warriors',GameDateET:'2026-11-13',Status});const r=run({...f,previous});assert.equal(r.Candidates[0].InjuryStatus,Status);assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.equal(r.Candidates[0].SampleGames14,previous.Candidates[0].SampleGames14);assert(r.Sources.some(s=>s.Name==='本次NBA官方傷勢候選現況核對'&&s.SourceUpdatedAtUtc===new Date(f.evidence.Injuries.ReportIssuedAtUtc).toISOString()));}
+ const missing=fixture(),previous=run(missing);missing.evidence.TargetNbaDateET='2026-11-13';missing.evidence.Day.Status='waiting';missing.evidence.Injuries.TeamReports=[];assert.match(run({...missing,previous}).Candidates[0].InjuryStatus,/未知/);assert.match(run({...missing,previous}).Candidates[0].Recommendation,/觀察舊報告/);
+});
+test('non-user teams require an explicit matching target context and cannot inherit an unbound RayBookDown report',()=>{
+ const f=fixture();f.dashboard.Team='Other Team';assert.equal(run(f).Status,'unavailable');const own=run({...f,targetTeamName:'Other Team'});assert.equal(own.Status,'ready');assert.equal(run({...f,targetTeamName:'Wrong Team'}).Status,'unavailable');
+ f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const unbound=run({...f,targetTeamName:'Other Team',previous:own});assert.deepEqual(unbound.Candidates,[]);const bound=run({...f,targetTeamName:'Other Team',previousTeamName:'Other Team',previous:own});assert.equal(bound.ReportDateET,target);assert.equal(bound.Candidates[0].Player,'Market Player');
+});
+
+test('Monday Taipei rollover holds an old weekly report even when it and its league sources are under 36 hours old',()=>{
+ const f=fixture(),previous=run(f),priorStamp='2026-11-15T14:00:00.000Z';
+ previous.GeneratedAtUtc=priorStamp;previous.ReportDateET='2026-11-14';for(const s of previous.Sources)if(s.Name.startsWith('Flaim / Yahoo '))s.RetrievedAtUtc=priorStamp;
+ f.now=new Date('2026-11-15T22:30:00Z');const currentStamp=f.now.toISOString();for(const s of Object.values(f.dashboard.Sections))s.RetrievedAtUtc=currentStamp;
+ f.evidence.TargetNbaDateET='2026-11-15';f.evidence.Day.Status='waiting';f.evidence.Injuries.ReportIssuedAtUtc=currentStamp;f.evidence.Injuries.RetrievedAtUtc=currentStamp;for(const row of [...f.evidence.Injuries.TeamReports,...f.evidence.Injuries.Players])row.GameDateET='2026-11-15';
+ f.week.RangeStartDateTaipei='2026-11-16';f.week.RangeEndDateTaipei='2026-11-22';f.week.CheckedAtUtc=currentStamp;
+ assert(+f.now-Date.parse(previous.GeneratedAtUtc)<36*3600000);
+ const r=run({...f,previous});assert.equal(r.GeneratedAtUtc,priorStamp);assert.equal(r.ReportDateET,previous.ReportDateET);assert.equal(r.Candidates[0].RemainingGames,previous.Candidates[0].RemainingGames);assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert(r.Candidates[0].Reasons.some(reason=>reason.includes('原報告期間已非目前台灣日期')));assert.equal(r.Candidates[0].DropOptions.length,0);
+});
+test('unknown weekly bounds and changed period dates or basis hold preserved priorities without pretending to recalculate',()=>{
+ for(const change of [(f,p)=>p.Week.EndDateTaipei=null,f=>f.week.RangeEndDateTaipei=null,f=>f.week.RangeStartDateTaipei='2026-11-10',f=>f.week.RangeEndDateTaipei='2026-11-16',f=>{f.week.PeriodBasis='yahoo_verified';f.week.YahooWeekBoundsKnown=true;}]){
+  const f=fixture(),previous=run(f);change(f,previous);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const r=run({...f,previous});assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.equal(r.ReportDateET,previous.ReportDateET);assert.equal(r.Candidates[0].SampleGames14,previous.Candidates[0].SampleGames14);assert.match(r.Candidates[0].Recommendation,/觀察舊報告/);assert(r.Candidates[0].Reasons.some(reason=>reason.includes('週日期範圍')));
+ }
+});
+test('a known unchanged active period keeps only the existing conditional comparison and its original time',()=>{
+ const f=fixture(),previous=run(f);f.evidence.TargetNbaDateET='2026-11-13';f.evidence.Day.Status='waiting';const r=run({...f,previous});assert.equal(r.GeneratedAtUtc,previous.GeneratedAtUtc);assert.equal(r.Candidates[0].RemainingGames,previous.Candidates[0].RemainingGames);assert(!r.Candidates[0].Reasons.some(reason=>reason.includes('原報告期間')||reason.includes('週日期範圍')));assert(!r.Candidates[0].Recommendation.includes('取得狀態或來源年齡未通過'));
+});

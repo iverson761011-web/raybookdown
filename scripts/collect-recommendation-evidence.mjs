@@ -32,7 +32,7 @@ export async function fetchOfficialEvidence(value,{fetchImpl=fetch,timeoutMs=120
 export function nextData(html){for(const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)){if(/\bid\s*=\s*["']__NEXT_DATA__["']/i.test(m[1])){try{return JSON.parse(m[2]);}catch{problem('InvalidOfficialJson');}}}problem('OfficialStructureUnknown');}
 function gameCards(root,date){if(root?.query?.date!==date)problem('OfficialDateMismatch');const modules=root?.props?.pageProps?.gameCardFeed?.modules;if(!Array.isArray(modules))problem('OfficialStructureUnknown');const cards=modules.flatMap(m=>Array.isArray(m?.cards)?m.cards:[]);return cards.filter(c=>c?.cardData?.gameId||c?.cardData?.game?.gameId).map(c=>c.cardData.game??c.cardData);}
 export function normalizePlayerName(value){return typeof value==='string'?value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,'').replace(/[.]/g,'').replace(/[-\s]+/g,' ').trim().toLowerCase():'';}
-export function normalizeFinalStatus(raw){const label=clean(raw?.gameStatusText,80);if(label&&/^final(?:\s*\/\s*(?:\d+)?ot)?$/i.test(label)&&(raw.gameStatus===3||raw.gameStatus==='3'||raw.gameStatus==null))return'final';if(label&&/postpon|cancel|suspend|ppd/i.test(label))return'unknown';if(raw?.gameStatus===1||raw?.gameStatus==='1')return'upcoming';if(raw?.gameStatus===2||raw?.gameStatus==='2')return'in_progress';return'unknown';}
+export function normalizeFinalStatus(raw){const label=clean(raw?.gameStatusText,80);if(label&&/^final(?:\s*\/\s*(?:[1-9]\d?\s*ot|ot(?:[1-9]\d?)?))?$/i.test(label)&&(raw.gameStatus===3||raw.gameStatus==='3'||raw.gameStatus==null))return'final';if(label&&/postpon|cancel|suspend|ppd/i.test(label))return'unknown';if(raw?.gameStatus===1||raw?.gameStatus==='1')return'upcoming';if(raw?.gameStatus===2||raw?.gameStatus==='2')return'in_progress';return'unknown';}
 function startAt(raw){for(const key of ['gameTimeUtc','gameTimeUTC','gameDateTimeUTC','startDate']){const value=raw?.[key];if(typeof value==='string'&&ISO.test(value)&&Number.isFinite(Date.parse(value)))return new Date(value).toISOString();}return null;}
 function club(raw){return{ Name:clean(raw?.teamName),City:clean(raw?.teamCity),Code:clean(raw?.teamTricode,12),Score:count(raw?.score,1000) };}
 function gameSourceUrl(raw) {
@@ -143,8 +143,8 @@ async function parallel(items,limit,operation) {
 }
 
 /** Limit the public feed to current observed full names, without inferring NBA teams or nicknames. */
-export function scopePlayerGames(rawDashboard, rows) {
- const dashboard=normalizeDashboard(rawDashboard),sections=dashboard.Sections;
+export function scopePlayerGames(rawDashboard, rows, {expectedTeam='RayBookDown'}={}) {
+ const dashboard=normalizeDashboard(rawDashboard,{expectedTeam}),sections=dashboard.Sections;
  const names=[...new Set(['Roster','Market'].flatMap(key=>(sections[key]?.Data?.Players??[]).map(p=>p.Player)))];
  const selected=new Map(names.map(name=>[normalizePlayerName(name),name]));
  const candidates=new Map([...selected.keys()].map(key=>[key,[]]));

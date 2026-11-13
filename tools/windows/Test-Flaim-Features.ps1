@@ -13,7 +13,7 @@ $script:failed = 0
 $script:calls = [Collections.Generic.List[object]]::new()
 $script:fakeSha = 'a' * 40
 $repositoryToken = New-FlaimCloudSecret 'synthetic-repository-credential'
-$allowedPaths = @('data/dashboard.json','data/team.json','data/matchup-history.json','data/team-week-schedule.json','data/recommendations.json','data/recommendation-evidence.json','data/recommendation-history.json')
+$allowedPaths = @('data/dashboard.json','data/team.json','data/matchup-history.json','data/team-week-schedule.json','data/recommendations.json','data/recommendation-evidence.json','data/recommendation-history.json','data/league-teams.json','data/league-analysis.json')
 function Assert-Features { param([bool]$Value) if (-not $Value) { throw 'AssertionFailed' } }
 function Test-Case {
     param([string]$Name,[scriptblock]$Body)
@@ -40,7 +40,7 @@ $scratchParent = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '.test-work'))
 $scratch = [IO.Path]::GetFullPath((Join-Path $scratchParent ('features-'+[Guid]::NewGuid().ToString('N'))))
 if (-not $scratch.StartsWith($scratchParent+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'InvalidTestDirectory' }
 try {
-    Test-Case 'Only seven exact public paths are accepted and publisher stays silent' {
+    Test-Case 'Only nine exact public paths are accepted and publisher stays silent' {
         foreach ($path in $allowedPaths) {
             $before = $script:calls.Count
             $output = @(Publish-FlaimPublicFile $path ([Text.Encoding]::UTF8.GetBytes('{"synthetic":true}')) $repositoryToken 2>&1 3>&1 4>&1 5>&1 6>&1)
@@ -94,7 +94,7 @@ try {
     Test-Case 'Scheduled publication includes all feature feeds and preserves legacy roster' {
         $folder = Join-Path $scratch 'data'
         [void][IO.Directory]::CreateDirectory($folder)
-        foreach ($name in @('matchup-history.json','team-week-schedule.json','recommendations.json','recommendation-evidence.json','recommendation-history.json')) {
+        foreach ($name in @('matchup-history.json','team-week-schedule.json','recommendations.json','recommendation-evidence.json','recommendation-history.json','league-teams.json','league-analysis.json')) {
             [IO.File]::WriteAllText((Join-Path $folder $name),'{}')
         }
         $dashboard = @{
@@ -109,7 +109,7 @@ try {
         $output = @(Publish-FlaimScheduledData $path $repositoryToken 2>&1 3>&1 4>&1 5>&1 6>&1)
         Assert-Features ($output.Count -eq 0)
         $writes = @($script:calls | Where-Object { $_.Arguments -ccontains 'PUT' })
-        Assert-Features ($writes.Count -eq 7)
+        Assert-Features ($writes.Count -eq 9)
         $paths = @($writes | ForEach-Object { $_.Arguments[3].Substring('repos/iverson761011-web/raybookdown/contents/'.Length) })
         foreach ($expected in $allowedPaths) { Assert-Features ($paths -ccontains $expected) }
         $legacyWrite = @($writes | Where-Object { $_.Arguments[3].EndsWith('/data/team.json') })[0]

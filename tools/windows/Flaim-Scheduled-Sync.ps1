@@ -78,7 +78,8 @@ function Export-FlaimScheduledData {
         } catch { $previousSchedule = $null }
     }
     $historyPath = Join-Path ([IO.Path]::GetDirectoryName($Destination)) 'matchup-history.json'
-    $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination -HistoryOutputPath $historyPath
+    $leaguePath = Join-Path ([IO.Path]::GetDirectoryName($Destination)) 'league-teams.json'
+    $summary = & (Join-Path $PSScriptRoot 'Flaim-Export-Dashboard.ps1') -Session $Session -OutputPath $Destination -HistoryOutputPath $historyPath -LeagueOutputPath $leaguePath
     if ($summary.Exported -ne $true) { return $summary }
     # A Flaim-only export cannot replace the last verified NBA source snapshot.
     # The public NBA updater decides whether it can refresh it or retain its old time.
@@ -96,6 +97,7 @@ function Export-FlaimScheduledData {
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\update-nba-schedule.mjs') $Destination 'ScheduleUpdateFailed'
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\build-weekly-schedule.mjs') $Destination 'WeeklyScheduleBuildFailed'
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\build-recommendations.mjs') $Destination 'RecommendationBuildFailed'
+    Invoke-FlaimPublicNode (Join-Path $root 'scripts\build-league-analysis.mjs') $Destination 'LeagueAnalysisBuildFailed'
     Invoke-FlaimPublicNode (Join-Path $root 'scripts\check-dashboard.mjs') $Destination 'DashboardValidationFailed'
     $document = ConvertFrom-Json -InputObject ([IO.File]::ReadAllText($Destination)) -ErrorAction Stop
     $sectionErrors = @($document.Sections.PSObject.Properties | Where-Object { $_.Value.Status -ne 'ok' } | ForEach-Object { $_.Name })
@@ -103,7 +105,7 @@ function Export-FlaimScheduledData {
 }
 function Publish-FlaimPublicFile {
     param([string]$RelativePath, [byte[]]$Bytes, [Security.SecureString]$RepositoryToken)
-    $publicPaths = @('data/dashboard.json','data/team.json','data/matchup-history.json','data/team-week-schedule.json','data/recommendations.json','data/recommendation-evidence.json','data/recommendation-history.json')
+    $publicPaths = @('data/dashboard.json','data/team.json','data/matchup-history.json','data/team-week-schedule.json','data/recommendations.json','data/recommendation-evidence.json','data/recommendation-history.json','data/league-teams.json','data/league-analysis.json')
     if ($publicPaths -cnotcontains $RelativePath) { Stop-FlaimCloudFailure 'InvalidSnapshot' }
     $endpoint = 'repos/iverson761011-web/raybookdown/contents/' + $RelativePath
     $sha = Invoke-FlaimGh -GhArguments @('api',$endpoint,'-H','Accept:application/vnd.github.object+json','--jq','.sha') -Token $RepositoryToken -ReturnOutput
@@ -120,7 +122,7 @@ function Publish-FlaimScheduledData {
     $bytes = [IO.File]::ReadAllBytes($Path)
     Publish-FlaimPublicFile 'data/dashboard.json' $bytes $RepositoryToken
     $folder = [IO.Path]::GetDirectoryName($Path)
-    foreach ($name in @('matchup-history.json','team-week-schedule.json','recommendations.json','recommendation-evidence.json','recommendation-history.json')) {
+    foreach ($name in @('matchup-history.json','team-week-schedule.json','recommendations.json','recommendation-evidence.json','recommendation-history.json','league-teams.json','league-analysis.json')) {
         $extra = Join-Path $folder $name
         if ([IO.File]::Exists($extra)) { Publish-FlaimPublicFile ('data/' + $name) ([IO.File]::ReadAllBytes($extra)) $RepositoryToken }
     }
@@ -203,7 +205,7 @@ function Invoke-FlaimScheduledSync {
         $allowed = @('UnsupportedRuntime','CloudSetupRequired','InvalidCredential','SnapshotFileMissing','GitHubCliMissing',
             'InvalidCloudRequest','GitHubCommandTimeout','GitHubCommandFailed','InvalidCloudResponse','InvalidSnapshot',
             'RefreshFailed','RefreshPersistenceFailed','DataExportFailed')
-        $allowed += @('NodeCommandTimeout','NodeLaunchFailed','ScheduleUpdateFailed','DashboardValidationFailed','WeeklyScheduleBuildFailed','RecommendationBuildFailed')
+        $allowed += @('NodeCommandTimeout','NodeLaunchFailed','ScheduleUpdateFailed','DashboardValidationFailed','WeeklyScheduleBuildFailed','RecommendationBuildFailed','LeagueAnalysisBuildFailed')
         if ($allowed -ccontains $_.Exception.Data['CloudKind']) { $kind = [string]$_.Exception.Data['CloudKind'] }
         $next = 'ReportSafeSummary'
         if ($kind -eq 'CloudSetupRequired') { $next = 'ConfigureCloudSecrets' }

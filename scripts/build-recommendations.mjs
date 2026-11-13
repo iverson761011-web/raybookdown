@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {normalizePlayerName} from './collect-recommendation-evidence.mjs';
 import {resolveTeam} from './build-weekly-schedule.mjs';
-import {addDays} from './update-nba-schedule.mjs';
+import {addDays,taipeiDate} from './update-nba-schedule.mjs';
 import {normalizeDashboard} from '../dashboard-model.mjs';
 import {normalizeRecommendations} from '../features-model.mjs';
 
@@ -37,6 +37,49 @@ function safePrevious(previous,now,target){
   const candidates=previous.Candidates.filter(c=>clean(c?.Player,200)).map(c=>({Player:clean(c.Player,200),TeamCode:clean(c.TeamCode,12),Availability:['free_agent','waivers'].includes(c.Availability)?c.Availability:null,RemainingGames:number(c.RemainingGames),SampleGames7:number(c.SampleGames7),SampleGames14:number(c.SampleGames14),InjuryStatus:clean(c.InjuryStatus,200),Recommendation:clean(c.Recommendation,1000)??'舊報告，等待更新',Reasons:strings(c.Reasons),Tradeoffs:strings(c.Tradeoffs),DropOptions:[]}));
   const reviews=Array.isArray(previous.DropReviews)?previous.DropReviews.filter(d=>clean(d?.Player,200)).slice(0,100).map(d=>({Player:clean(d.Player,200),TeamCode:clean(d.TeamCode,12),SampleGames7:number(d.SampleGames7),SampleGames14:number(d.SampleGames14),RemainingGames:number(d.RemainingGames),Review:clean(d.Review??d.Recommendation,600)??'舊報告觀察項目，非新移除指示',Reasons:strings(d.Reasons),Protected:bool(d.Protected)})):[];
   return {SchemaVersion:1,Status:'waiting',GeneratedAtUtc:previous.GeneratedAtUtc,ReportDateET:previous.ReportDateET,Strategy:'aggressive_week',Reasons:strings(previous.Reasons),Candidates:candidates,DropReviews:reviews,Sources:Array.isArray(previous.Sources)?previous.Sources.slice(0,100).map(s=>({Name:clean(s?.Name,200)??'舊報告來源',RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:sourceUrl(s?.Url)})):[],Week:{Basis:['yahoo_verified','taipei_calendar'].includes(previous.Week?.Basis)?previous.Week.Basis:null,StartDateTaipei:date(previous.Week?.StartDateTaipei),EndDateTaipei:date(previous.Week?.EndDateTaipei),VerifiedYahooWeek:previous.Week?.VerifiedYahooWeek===true},Notes:strings(previous.Notes)};
+}
+function validatePreservedWaiting(report,dashboard,now,evidence,week){
+  const roster=section(dashboard,'Roster'),market=section(dashboard,'Market');
+  const rosterFresh=roster&&fresh(roster.RetrievedAtUtc,now,36)&&Array.isArray(roster.Data.Players);
+  const marketFresh=market&&fresh(market.RetrievedAtUtc,now,36)&&Array.isArray(market.Data.Players);
+  const oldSource=name=>report.Sources.find(s=>s.Name==='Flaim / Yahoo '+name)?.RetrievedAtUtc;
+  const oldFresh=fresh(report.GeneratedAtUtc,now,36)&&fresh(oldSource('Roster'),now,36)&&fresh(oldSource('Market'),now,36);
+  const common=[];
+  const oldWeek=report.Week,currentWeek=weekInfo(week),today=taipeiDate(now);
+  const oldStart=date(oldWeek?.StartDateTaipei),oldEnd=date(oldWeek?.EndDateTaipei),currentStart=date(currentWeek.StartDateTaipei),currentEnd=date(currentWeek.EndDateTaipei);
+  const periodsKnown=oldStart&&oldEnd&&currentStart&&currentEnd&&oldStart<=oldEnd&&currentStart<=currentEnd&&['yahoo_verified','taipei_calendar'].includes(oldWeek?.Basis)&&['yahoo_verified','taipei_calendar'].includes(currentWeek.Basis)&&(oldWeek.Basis!=='yahoo_verified'||oldWeek.VerifiedYahooWeek===true)&&(currentWeek.Basis!=='yahoo_verified'||currentWeek.VerifiedYahooWeek===true);
+  if(!periodsKnown)common.push('原報告或目前的週日期範圍／基準未核實；舊場次只供回看，暫停沿用舊加入優先排序。');
+  else if(oldEnd<today||oldStart>today)common.push('原報告期間已非目前台灣日期所在範圍；保留原場次供回看，暫停沿用舊加入優先排序。');
+  else if(oldStart!==currentStart||oldEnd!==currentEnd||oldWeek.Basis!==currentWeek.Basis)common.push('原報告與目前的週日期範圍或基準不同；尚未重算新週場次，暫停沿用舊加入優先排序。');
+  if(!oldFresh)common.push('原報告產生時間或原陣容／市場來源超過36小時、時間未知；舊表現比較只能觀察，不沿用加入優先順序。');
+  if(!rosterFresh||!marketFresh)common.push('目前陣容或市場來源不可用、過期或缺少完整名單；目前取得狀態未知。');
+  for(const candidate of report.Candidates){
+    const key=normalizePlayerName(candidate.Player),owned=rosterFresh&&roster.Data.Players.some(p=>normalizePlayerName(p?.Player??'')===key);
+    const matches=marketFresh?market.Data.Players.filter(p=>normalizePlayerName(p?.Player??'')===key):[];
+    const reasons=[...common];
+    if(owned)reasons.push('目前新鮮陣容已持有這名球員，舊報告不再作為新加入候選。');
+    if(matches.length!==1)reasons.push('目前回傳市場名單未找到唯一、完整姓名相符的可核實記錄，不能假設仍可加入。');
+    else if(matches[0].Availability!=='free_agent')reasons.push('目前市場已是讓渡名單或取得方式未知，舊報告不代表可立即加入。');
+    if(matches.length===1&&candidate.TeamCode&&resolveTeam(matches[0].TeamCode)?.TeamCode!==resolveTeam(candidate.TeamCode)?.TeamCode)reasons.push('目前與原報告球隊來源不一致；原排程與表現估算未重算，僅列觀察。');
+    if(!owned&&marketFresh&&matches.length===1){const injury=injuryCheck({player:matches[0],key},evidence,week,now);candidate.InjuryStatus=injury.label;if(!injury.safe)reasons.push('目前官方傷勢或適用報告未通過核對，舊報告不代表仍可出賽：'+injury.reason);else if(!injury.medicalKnown&&candidate.Recommendation.includes('可評估加入'))candidate.Recommendation='條件式觀察舊報告：目前醫療狀態未知，需先核對出賽；原表現估算未重算。';}
+    candidate.Availability=!owned&&marketFresh&&matches.length===1&&['free_agent','waivers'].includes(matches[0].Availability)?matches[0].Availability:null;
+    candidate.DropOptions=[];
+    if(reasons.length){candidate.Recommendation='觀察舊報告：目前取得狀態或來源年齡未通過核對，暫停沿用舊加入優先排序';candidate.Reasons=uniq([...candidate.Reasons,...reasons]);}
+  }
+  for(const review of report.DropReviews){
+    const matches=rosterFresh?roster.Data.Players.filter(p=>normalizePlayerName(p?.Player??'')===normalizePlayerName(review.Player)):[];
+    const current=matches.length===1?protectedFlag(matches[0]):null;
+    review.Protected=current;
+    if(current===true)review.Review='保留：目前Yahoo標示不可丟棄；原報告表現比較未重算。';
+    else if(current===null){review.Review='觀察舊報告：目前持有狀態或保護欄位未知，不能視為可移除。';review.Reasons=uniq([...review.Reasons,'目前陣容／不可丟棄欄位未核實；舊保護標記不作為現在的移除依據。']);}
+  }
+  const prefix='本次Flaim / Yahoo候選現況核對 ';
+  const sources=['Roster','Market'].map(name=>{const s=section(dashboard,name);return {Name:prefix+name,RetrievedAtUtc:time(s?.RetrievedAtUtc),SourceUpdatedAtUtc:time(s?.SourceUpdatedAtUtc),Url:null};});
+  const injurySource={Name:'本次NBA官方傷勢候選現況核對',RetrievedAtUtc:time(evidence?.Injuries?.RetrievedAtUtc),SourceUpdatedAtUtc:time(evidence?.Injuries?.ReportIssuedAtUtc),Url:sourceUrl(evidence?.Injuries?.SourceUrl)};
+  report.Sources=[...sources,injurySource,...report.Sources.filter(s=>!s.Name.startsWith(prefix)&&s.Name!==injurySource.Name)].slice(0,100);
+  if(common.length)report.Reasons=uniq([...report.Reasons,...common]);
+  report.Notes=uniq([...report.Notes,'等待期間只另行核對目前持有／取得狀態、官方傷勢與保護標記；原GeneratedAtUtc、報告日期、樣本、剩餘場次及表現估算均未更新，也未產生新排序。']);
+  return report;
 }
 function historyComplete(evidence,start,end){const verified=new Set(evidence?.History?.VerifiedDates??[]),missing=new Set([...(evidence?.History?.UnavailableDates??[]),...(evidence?.History?.MissingBoxScoreDates??[])]);for(let d=start;d<=end;d=addDays(d,1))if(!verified.has(d)||missing.has(d))return false;return true;}
 function playerCoverage(evidence,rows,code,start,end){
@@ -128,9 +171,10 @@ function sourcesFor(report,dashboard,evidence,week,reportDate){
   const seen=new Set();for(const row of [...(evidence?.PlayerGames??[])].filter(r=>/^002\d{7}$/.test(r?.GameId??'')&&date(r?.DateET)&&r.DateET<=reportDate&&r.DateET>=addDays(reportDate,-27)&&(!time(r.RetrievedAtUtc)||Date.parse(r.RetrievedAtUtc)<=Date.parse(report.GeneratedAtUtc))).sort((a,b)=>b.DateET.localeCompare(a.DateET))){const url=sourceUrl(row.SourceUrl);if(url&&!seen.has(url)){seen.add(url);sources.push({Name:'NBA官方比賽統計',RetrievedAtUtc:time(row.RetrievedAtUtc),SourceUpdatedAtUtc:null,Url:url});if(seen.size>=64)break;}}
   report.Sources=sources;
 }
-export function generateRecommendations({dashboard,evidence,week,previous=null,now=new Date()}={}){
+export function generateRecommendations({dashboard,evidence,week,previous=null,now=new Date(),targetTeamName='RayBookDown',previousTeamName=null,emphasisCategories=[]}={}){
   const report=baseReport(evidence,week,now),target=date(evidence?.TargetNbaDateET);
-  if(dashboard?.League!=='Funny League 2026-27'||dashboard?.Team!=='RayBookDown'||dashboard?.Platform!=='yahoo'||!target||target>etDate(now)){report.Status='unavailable';report.Reasons=['聯盟來源或官方目標日期無法核實；未使用未來資料。'];return report;}
+  if(!clean(targetTeamName,200)||dashboard?.League!=='Funny League 2026-27'||dashboard?.Team!==targetTeamName||dashboard?.Platform!=='yahoo'||dashboard?.Season!==2026||!target||target>etDate(now)){report.Status='unavailable';report.Reasons=['聯盟、所選球隊或官方目標日期無法核實；未使用未來資料。'];return report;}
+  if(previousTeamName!==null&&previousTeamName!==targetTeamName||targetTeamName!=='RayBookDown'&&previousTeamName!==targetTeamName)previous=null;
   const allowance=addAllowance(dashboard,now);
   let reportDate=target,backfilled=false;
   if(evidence?.Day?.Status==='waiting'){
@@ -143,7 +187,7 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
         const quotaSources=['Budget','Transactions'].flatMap(name=>{const s=section(dashboard,name);return s&&fresh(s.RetrievedAtUtc,now,36)&&Number.isInteger(s.Data.AddsRemainingThisWeek)?[{Name:'本次Flaim / Yahoo Add額度檢查 '+name,RetrievedAtUtc:time(s.RetrievedAtUtc),SourceUpdatedAtUtc:time(s.SourceUpdatedAtUtc),Url:null}]:[];});
         old.Sources=[...quotaSources,...old.Sources].slice(0,100);
       }
-      return old;
+      return validatePreservedWaiting(old,dashboard,now,evidence,week);
     }
     const last=evidence?.LastCompletedDay;
     if(date(last?.DateET)&&last.DateET<target&&dayFinal(last.Day)){reportDate=last.DateET;backfilled=true;report.Notes.push(`目前目標美東${target}尚未全部完賽；此為最近已核實完賽日${reportDate}的補充報告，非今日新完賽結果。`);}
@@ -158,7 +202,9 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
   if(allowance.hold)report.Reasons.push(allowance.reason);
   if(allowance.inconsistent)report.Reasons.push('Budget與Transactions的最新剩餘Add數值不一致，沒有擅自挑選較寬鬆的值。');
   if(allowance.unknown)report.Notes.push('本週剩餘Add未知或來源已過期；沒有從每週上限或觀察交易筆數推算可用額度。');
-  const cats=scoredCategories(match.Data),own=rosterPlayers.map(p=>inspectPlayer(p,evidence,week,reportDate,now,counts));
+  const emphasis=new Set(Array.isArray(emphasisCategories)?emphasisCategories.filter(label=>typeof label==='string'&&Object.hasOwn(CATEGORIES,label)).map(label=>CATEGORIES[label]):[]);
+  const cats=scoredCategories(match.Data).map(c=>({...c,weight:c.weight*(emphasis.has(c.stat)?1.35:1)})),own=rosterPlayers.map(p=>inspectPlayer(p,evidence,week,reportDate,now,counts));
+  if(emphasis.size)report.Notes.push('本週積極策略同時考慮接近比項與本隊相對偏弱項；有足夠聯盟比較資料的偏弱項增加35%情境權重。這是分析方法，不是Yahoo計分規則，亦不保證追上或獲勝。');
   if(!cats.length)report.Reasons.push('沒有可核實且本聯盟實際比較的類別項目，未產生類別淨增益排序。');
   if(!report.Week.VerifiedYahooWeek)report.Notes.push('Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。');
   for(const item of own){
@@ -181,6 +227,7 @@ export function generateRecommendations({dashboard,evidence,week,previous=null,n
       candidate.Recommendation=injury.medicalKnown?'可評估加入：積極本週策略的情境淨增益較佳，非出賽或獲勝保證':'條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證';
       candidate.Reasons.push(`以7/14日每場數據65%/35%混合估算，與${best.own.player.Player}在相同標示期間的剩餘排程做假設替換比較。`);
       candidate.Reasons.push(...best.rows.filter(r=>r.gain>0).sort((a,b)=>b.impact-a.impact).slice(0,3).map(formatDelta));
+      if(emphasis.size){const helped=best.rows.filter(r=>r.gain>0&&emphasis.has(r.stat)).map(r=>r.stat);candidate.Reasons.push(helped.length?'依本隊本週相對弱項評估，可望補強的情境比項：'+helped.join('、')+'。':'此候選沒有算出本隊相對弱項的正增益；用途限於其他接近比項，未把弱項當作已解決。');}
       candidate.Tradeoffs=best.rows.filter(r=>r.gain<0).sort((a,b)=>a.impact-b.impact).slice(0,3).map(formatDelta);
       candidate.Tradeoffs.push('比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。');
       if(best.own.Protected===null)candidate.Tradeoffs.push('比較對象保護狀態未知，此比較不是移除建議。');
