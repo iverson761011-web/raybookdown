@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-12T23:22:46.9599895+00:00",
+  "GeneratedAtUtc": "2026-11-13T04:54:58.5166681+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:42.6934641+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:42.6934641+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:53.7846597+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:53.7846597+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,12 +79,12 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:42.9903289+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:42.9903289+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:54.2239550+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:54.2239550+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "PlayerCount": 12,
+        "PlayerCount": 11,
         "Players": [
           {
             "Player": "Donovan Mitchell",
@@ -113,19 +113,19 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Christian Braun",
+            "Player": "Zach LaVine",
             "Position": "G",
             "Status": null,
             "EligiblePositions": [
+              "PG",
               "SG",
               "G",
               "SF",
-              "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "DEN",
+            "TeamCode": "SAC",
             "IsUndroppable": false
           },
           {
@@ -145,8 +145,21 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Cameron Boozer",
+            "Player": "Morez Johnson Jr.",
             "Position": "PF",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "DAL",
+            "IsUndroppable": false
+          },
+          {
+            "Player": "Cameron Boozer",
+            "Position": "F",
             "Status": null,
             "EligiblePositions": [
               "PF",
@@ -156,20 +169,6 @@
             ],
             "TeamCode": "MEM",
             "IsUndroppable": false
-          },
-          {
-            "Player": "Alperen Şengün",
-            "Position": "F",
-            "Status": null,
-            "EligiblePositions": [
-              "PF",
-              "F",
-              "C",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "HOU",
-            "IsUndroppable": true
           },
           {
             "Player": "Aday Mara",
@@ -210,22 +209,6 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Zach LaVine",
-            "Position": "Util",
-            "Status": null,
-            "EligiblePositions": [
-              "PG",
-              "SG",
-              "G",
-              "SF",
-              "F",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "SAC",
-            "IsUndroppable": false
-          },
-          {
             "Player": "Darius Garland",
             "Position": "Util",
             "Status": null,
@@ -238,17 +221,18 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Morez Johnson Jr.",
-            "Position": "IL",
-            "Status": "P",
+            "Player": "Alperen Şengün",
+            "Position": "Util",
+            "Status": null,
             "EligiblePositions": [
               "PF",
               "F",
+              "C",
               "FC",
               "Util"
             ],
-            "TeamCode": "DAL",
-            "IsUndroppable": false
+            "TeamCode": "HOU",
+            "IsUndroppable": true
           }
         ]
       }
@@ -256,8 +240,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:43.5542125+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:43.5542125+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:54.9090496+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:54.9090496+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -282,7 +266,7 @@
           {
             "Name": "Minutes Played",
             "Label": "MIN",
-            "OwnValue": "635",
+            "OwnValue": "673",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -290,7 +274,7 @@
           {
             "Name": "Field Goals Made / Field Goals Attempted",
             "Label": "FGM/A",
-            "OwnValue": "122/251",
+            "OwnValue": "127/262",
             "OpponentValue": null,
             "Result": null,
             "DisplayOnly": true
@@ -298,7 +282,7 @@
           {
             "Name": "Field Goal Percentage",
             "Label": "FG%",
-            "OwnValue": ".486",
+            "OwnValue": ".485",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -306,7 +290,7 @@
           {
             "Name": "Free Throws Made / Free Throws Attempted",
             "Label": "FTM/A",
-            "OwnValue": "54/71",
+            "OwnValue": "55/73",
             "OpponentValue": null,
             "Result": null,
             "DisplayOnly": true
@@ -314,7 +298,7 @@
           {
             "Name": "Free Throw Percentage",
             "Label": "FT%",
-            "OwnValue": ".761",
+            "OwnValue": ".753",
             "OpponentValue": null,
             "Result": "loss",
             "DisplayOnly": false
@@ -322,7 +306,7 @@
           {
             "Name": "3-point Shots Made",
             "Label": "3PTM",
-            "OwnValue": "30",
+            "OwnValue": "33",
             "OpponentValue": null,
             "Result": "loss",
             "DisplayOnly": false
@@ -330,7 +314,7 @@
           {
             "Name": "Points Scored",
             "Label": "PTS",
-            "OwnValue": "328",
+            "OwnValue": "342",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -338,7 +322,7 @@
           {
             "Name": "Offensive Rebounds",
             "Label": "OREB",
-            "OwnValue": "41",
+            "OwnValue": "42",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -346,7 +330,7 @@
           {
             "Name": "Defensive Rebounds",
             "Label": "DREB",
-            "OwnValue": "91",
+            "OwnValue": "93",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -354,7 +338,7 @@
           {
             "Name": "Assists",
             "Label": "AST",
-            "OwnValue": "73",
+            "OwnValue": "78",
             "OpponentValue": null,
             "Result": "win",
             "DisplayOnly": false
@@ -370,7 +354,7 @@
           {
             "Name": "Blocked Shots",
             "Label": "BLK",
-            "OwnValue": "10",
+            "OwnValue": "11",
             "OpponentValue": null,
             "Result": "loss",
             "DisplayOnly": false
@@ -378,7 +362,7 @@
           {
             "Name": "Turnovers",
             "Label": "TO",
-            "OwnValue": "47",
+            "OwnValue": "50",
             "OpponentValue": null,
             "Result": "loss",
             "DisplayOnly": false
@@ -386,7 +370,7 @@
           {
             "Name": "Assist/Turnover Ratio",
             "Label": "A/T",
-            "OwnValue": "1.55",
+            "OwnValue": "1.560",
             "OpponentValue": null,
             "Result": "loss",
             "DisplayOnly": false
@@ -405,16 +389,25 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:44.0779186+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:44.0779186+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:55.4127057+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:55.4127057+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "WindowStartUtcDate": "2026-10-14",
-        "WindowEndUtcDate": "2026-11-12",
+        "WindowStartUtcDate": "2026-10-15",
+        "WindowEndUtcDate": "2026-11-13",
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "drop",
+            "OccurredAtUtc": "2026-11-12T23:48:09.0000000+00:00",
+            "Added": [],
+            "Dropped": [
+              "Christian Braun"
+            ],
+            "FaabBid": null
+          },
           {
             "Type": "drop",
             "OccurredAtUtc": "2026-11-11T08:00:28.0000000+00:00",
@@ -626,8 +619,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:44.3904448+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:44.3904448+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:55.7099039+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:55.7099039+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -641,8 +634,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-12T23:22:44.7038554+00:00",
-      "RetrievedAtUtc": "2026-11-12T23:22:44.7038554+00:00",
+      "CheckedAtUtc": "2026-11-13T04:54:56.0380263+00:00",
+      "RetrievedAtUtc": "2026-11-13T04:54:56.0380263+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -662,32 +655,40 @@
             "Position": "SG,SF,PF",
             "TeamCode": "MIA",
             "Availability": "free_agent",
-            "PercentOwned": 62,
+            "PercentOwned": 61,
             "WaiverDate": null
+          },
+          {
+            "Player": "Christian Braun",
+            "Position": "SG,SF,PF",
+            "TeamCode": "DEN",
+            "Availability": "waivers",
+            "PercentOwned": 52,
+            "WaiverDate": "2026-11-14"
           },
           {
             "Player": "Grayson Allen",
             "Position": "SG,SF",
             "TeamCode": "CHA",
             "Availability": "waivers",
-            "PercentOwned": 45,
+            "PercentOwned": 46,
             "WaiverDate": "2026-11-13"
+          },
+          {
+            "Player": "Jusuf Nurkić",
+            "Position": "C",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 43,
+            "WaiverDate": "2026-11-14"
           },
           {
             "Player": "Sandro Mamukelashvili",
             "Position": "PF,C",
             "TeamCode": "LAL",
             "Availability": "free_agent",
-            "PercentOwned": 37,
+            "PercentOwned": 38,
             "WaiverDate": null
-          },
-          {
-            "Player": "Draymond Green",
-            "Position": "PF,C",
-            "TeamCode": "GSW",
-            "Availability": "waivers",
-            "PercentOwned": 35,
-            "WaiverDate": "2026-11-14"
           },
           {
             "Player": "DeMar DeRozan",
@@ -702,7 +703,7 @@
             "Position": "PG,SG",
             "TeamCode": "BKN",
             "Availability": "waivers",
-            "PercentOwned": 24,
+            "PercentOwned": 25,
             "WaiverDate": "2026-11-14"
           },
           {
@@ -712,14 +713,6 @@
             "Availability": "waivers",
             "PercentOwned": 24,
             "WaiverDate": "2026-11-13"
-          },
-          {
-            "Player": "Naji Marshall",
-            "Position": "SG,SF,PF",
-            "TeamCode": "DAL",
-            "Availability": "free_agent",
-            "PercentOwned": 22,
-            "WaiverDate": null
           },
           {
             "Player": "Reed Sheppard",
@@ -734,15 +727,7 @@
             "Position": "SG,SF",
             "TeamCode": "MEM",
             "Availability": "free_agent",
-            "PercentOwned": 18,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Mikel Brown Jr.",
-            "Position": "PG",
-            "TeamCode": "BKN",
-            "Availability": "free_agent",
-            "PercentOwned": 17,
+            "PercentOwned": 19,
             "WaiverDate": null
           },
           {
@@ -762,11 +747,27 @@
             "WaiverDate": null
           },
           {
+            "Player": "Mikel Brown Jr.",
+            "Position": "PG",
+            "TeamCode": "BKN",
+            "Availability": "free_agent",
+            "PercentOwned": 16,
+            "WaiverDate": null
+          },
+          {
             "Player": "Kingston Flemings",
             "Position": "PG",
             "TeamCode": "ATL",
             "Availability": "free_agent",
-            "PercentOwned": 16,
+            "PercentOwned": 15,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Jerami Grant",
+            "Position": "SF,PF",
+            "TeamCode": "MEM",
+            "Availability": "free_agent",
+            "PercentOwned": 14,
             "WaiverDate": null
           },
           {
@@ -774,16 +775,8 @@
             "Position": "PG,SG",
             "TeamCode": "UTA",
             "Availability": "waivers",
-            "PercentOwned": 13,
+            "PercentOwned": 12,
             "WaiverDate": "2026-11-14"
-          },
-          {
-            "Player": "Jerami Grant",
-            "Position": "SF,PF",
-            "TeamCode": "MEM",
-            "Availability": "free_agent",
-            "PercentOwned": 13,
-            "WaiverDate": null
           },
           {
             "Player": "Isaiah Jackson",
@@ -794,19 +787,19 @@
             "WaiverDate": "2026-11-13"
           },
           {
-            "Player": "Collin Sexton",
-            "Position": "PG,SG",
-            "TeamCode": "LAL",
-            "Availability": "free_agent",
-            "PercentOwned": 10,
-            "WaiverDate": null
-          },
-          {
             "Player": "Terrence Shannon Jr.",
             "Position": "SG,SF",
             "TeamCode": "MIN",
             "Availability": "free_agent",
             "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Collin Sexton",
+            "Position": "PG,SG",
+            "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 9,
             "WaiverDate": null
           },
           {
@@ -855,8 +848,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-12T23:22:47.116Z",
-      "RetrievedAtUtc": "2026-11-12T23:22:47.116Z",
+      "CheckedAtUtc": "2026-11-13T04:54:58.673Z",
+      "RetrievedAtUtc": "2026-11-13T04:54:58.673Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
