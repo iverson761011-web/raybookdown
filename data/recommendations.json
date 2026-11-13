@@ -1,146 +1,16 @@
 {
   "SchemaVersion": 1,
   "Status": "insufficient_data",
-  "GeneratedAtUtc": "2026-11-13T10:55:29.636Z",
+  "GeneratedAtUtc": "2026-11-13T14:45:35.420Z",
   "ReportDateET": "2026-11-12",
   "Strategy": "aggressive_week",
   "Reasons": [
     "沒有可核實且本聯盟實際比較的類別項目，未產生類別淨增益排序。",
-    "尚無候選同時滿足歷史、傷勢、場次及完整正向比較；以下是觀察名單，沿用本次市場回傳順序。"
+    "目前沒有候選通過全部加入條件，不以共用市場名單代替推薦。",
+    "目前也沒有足夠依據整理本隊的觀察人選；不回填自由市場前幾名。"
   ],
-  "Candidates": [
-    {
-      "Player": "Jalen Green",
-      "TeamCode": "PHX",
-      "Availability": "free_agent",
-      "RemainingGames": 0,
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "本次標示期間已無未來排定場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Andrew Wiggins",
-      "TeamCode": "MIA",
-      "Availability": "free_agent",
-      "RemainingGames": 2,
-      "SampleGames7": 2,
-      "SampleGames14": 6,
-      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Christian Braun",
-      "TeamCode": "DEN",
-      "Availability": "waivers",
-      "RemainingGames": 1,
-      "SampleGames7": 3,
-      "SampleGames14": 6,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Khaman Maluach",
-      "TeamCode": "PHX",
-      "Availability": "waivers",
-      "RemainingGames": 0,
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
-        "本次標示期間已無未來排定場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Grayson Allen",
-      "TeamCode": "CHA",
-      "Availability": "free_agent",
-      "RemainingGames": 0,
-      "SampleGames7": 3,
-      "SampleGames14": 7,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "本次標示期間已無未來排定場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Jusuf Nurkić",
-      "TeamCode": "UTA",
-      "Availability": "waivers",
-      "RemainingGames": 1,
-      "SampleGames7": 0,
-      "SampleGames14": 0,
-      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Collin Gillespie",
-      "TeamCode": "PHX",
-      "Availability": "waivers",
-      "RemainingGames": 0,
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
-        "本次標示期間已無未來排定場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    },
-    {
-      "Player": "Sandro Mamukelashvili",
-      "TeamCode": "LAL",
-      "Availability": "free_agent",
-      "RemainingGames": 0,
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
-      "Recommendation": "觀察名單：證據不足，未列加入優先順序",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "本次標示期間已無未來排定場次。"
-      ],
-      "Tradeoffs": [],
-      "DropOptions": []
-    }
-  ],
+  "Candidates": [],
+  "WatchCandidates": [],
   "DropReviews": [
     {
       "Player": "Donovan Mitchell",
@@ -292,49 +162,49 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-13T10:55:15.902Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:21.676Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-13T10:55:17.527Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:23.547Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-13T10:55:16.407Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:22.302Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-13T10:55:17.166Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:23.187Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-13T10:55:16.853Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:22.843Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-13T10:54:55.863Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:08.658Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-12"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-13T10:54:57.895Z",
-      "SourceUpdatedAtUtc": "2026-11-13T10:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_05_45AM.pdf"
+      "RetrievedAtUtc": "2026-11-13T14:45:10.009Z",
+      "SourceUpdatedAtUtc": "2026-11-13T14:30:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_09_30AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-13T10:55:27.105Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:33.901Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -472,7 +342,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-13T10:54:55.686Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:08.060Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-hou-0022600208/box-score"
     },
@@ -532,7 +402,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-13T10:54:55.154Z",
+      "RetrievedAtUtc": "2026-11-13T14:45:07.938Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/was-vs-okc-0022600192/box-score"
     },
