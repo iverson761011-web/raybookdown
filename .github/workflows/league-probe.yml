@@ -1,0 +1,18 @@
+name: Verify official NBA final labels
+on:
+  push:
+    branches: ['codex/league-team-analysis']
+    paths: ['scripts/probe-final-labels.mjs','.github/workflows/league-probe.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - run: node scripts/probe-final-labels.mjs
