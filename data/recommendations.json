@@ -1,12 +1,12 @@
 {
   "SchemaVersion": 1,
   "Status": "insufficient_data",
-  "GeneratedAtUtc": "2026-11-14T07:57:19.357Z",
+  "GeneratedAtUtc": "2026-11-14T08:46:03.120Z",
   "ReportDateET": "2026-11-13",
   "Strategy": "aggressive_week",
   "Reasons": [
     "目前沒有候選通過全部加入條件，不以共用市場名單代替推薦。",
-    "另有26位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+    "另有25位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
   ],
   "Candidates": [],
   "WatchCandidates": [
@@ -271,11 +271,11 @@
       "Protected": false
     },
     {
-      "Player": "Jerami Grant",
-      "TeamCode": "MEM",
-      "SampleGames7": 3,
+      "Player": "Kyshawn George",
+      "TeamCode": "WAS",
+      "SampleGames7": 4,
       "SampleGames14": 7,
-      "RemainingGames": 1,
+      "RemainingGames": 0,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
@@ -297,51 +297,11 @@
       "Protected": false
     },
     {
-      "Player": "Alperen Şengün",
-      "TeamCode": "HOU",
-      "SampleGames7": 4,
-      "SampleGames14": 7,
-      "RemainingGames": 0,
-      "Review": "保留：Yahoo標示不可丟棄",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
-      ],
-      "Protected": true
-    },
-    {
-      "Player": "Aday Mara",
-      "TeamCode": "OKC",
+      "Player": "Jerami Grant",
+      "TeamCode": "MEM",
       "SampleGames7": 3,
       "SampleGames14": 7,
-      "RemainingGames": 0,
-      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
-      "Reasons": [
-        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
-      ],
-      "Protected": false
-    },
-    {
-      "Player": "Ivica Zubac",
-      "TeamCode": "IND",
-      "SampleGames7": 4,
-      "SampleGames14": 5,
-      "RemainingGames": 0,
-      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
-      ],
-      "Protected": false
-    },
-    {
-      "Player": "Kyshawn George",
-      "TeamCode": "WAS",
-      "SampleGames7": 4,
-      "SampleGames14": 7,
-      "RemainingGames": 0,
+      "RemainingGames": 1,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
@@ -364,6 +324,33 @@
       "Protected": false
     },
     {
+      "Player": "Ivica Zubac",
+      "TeamCode": "IND",
+      "SampleGames7": 4,
+      "SampleGames14": 5,
+      "RemainingGames": 0,
+      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
+      ],
+      "Protected": false
+    },
+    {
+      "Player": "Aday Mara",
+      "TeamCode": "OKC",
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "RemainingGames": 0,
+      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
+      ],
+      "Protected": false
+    },
+    {
       "Player": "Darius Garland",
       "TeamCode": "LAC",
       "SampleGames7": 3,
@@ -375,54 +362,67 @@
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": false
+    },
+    {
+      "Player": "Alperen Şengün",
+      "TeamCode": "HOU",
+      "SampleGames7": 4,
+      "SampleGames14": 7,
+      "RemainingGames": 0,
+      "Review": "保留：Yahoo標示不可丟棄",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
+      ],
+      "Protected": true
     }
   ],
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-14T07:57:05.488Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:50.145Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-14T07:57:08.276Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:52.533Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-14T07:57:06.191Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:50.827Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-14T07:57:07.085Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:51.673Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-14T07:57:06.755Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:51.218Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-14T07:56:31.845Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:34.219Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-13"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-14T07:56:35.003Z",
-      "SourceUpdatedAtUtc": "2026-11-14T07:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_02_45AM.pdf"
+      "RetrievedAtUtc": "2026-11-14T08:45:39.290Z",
+      "SourceUpdatedAtUtc": "2026-11-14T08:45:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_03_45AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-14T07:57:17.658Z",
+      "RetrievedAtUtc": "2026-11-14T08:46:01.492Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -440,7 +440,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-14T07:56:32.017Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:34.506Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/por-vs-sac-0022600041/box-score"
     },
@@ -614,7 +614,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-14T07:56:31.635Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:33.583Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-hou-0022600208/box-score"
     },
@@ -698,7 +698,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-14T07:56:31.348Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:33.082Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/was-vs-okc-0022600192/box-score"
     },
