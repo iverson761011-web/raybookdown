@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-14T07:57:15.5432889+00:00",
+  "GeneratedAtUtc": "2026-11-14T08:45:59.2900701+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:05.1753472+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:05.1753472+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:49.8172368+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:49.8172368+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:05.4880086+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:05.4880086+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:50.1453734+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:50.1453734+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -129,17 +129,19 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Jerami Grant",
+            "Player": "Kyshawn George",
             "Position": "SF",
             "Status": null,
             "EligiblePositions": [
+              "SG",
+              "G",
               "SF",
               "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "MEM",
+            "TeamCode": "WAS",
             "IsUndroppable": false
           },
           {
@@ -156,8 +158,22 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Alperen Şengün",
+            "Player": "Jerami Grant",
             "Position": "F",
+            "Status": null,
+            "EligiblePositions": [
+              "SF",
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "MEM",
+            "IsUndroppable": false
+          },
+          {
+            "Player": "Zion Williamson",
+            "Position": "C",
             "Status": null,
             "EligiblePositions": [
               "PF",
@@ -166,19 +182,7 @@
               "FC",
               "Util"
             ],
-            "TeamCode": "HOU",
-            "IsUndroppable": true
-          },
-          {
-            "Player": "Aday Mara",
-            "Position": "C",
-            "Status": null,
-            "EligiblePositions": [
-              "C",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "OKC",
+            "TeamCode": "NOP",
             "IsUndroppable": false
           },
           {
@@ -194,33 +198,15 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Kyshawn George",
+            "Player": "Aday Mara",
             "Position": "Util",
             "Status": null,
             "EligiblePositions": [
-              "SG",
-              "G",
-              "SF",
-              "PF",
-              "F",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "WAS",
-            "IsUndroppable": false
-          },
-          {
-            "Player": "Zion Williamson",
-            "Position": "Util",
-            "Status": null,
-            "EligiblePositions": [
-              "PF",
-              "F",
               "C",
               "FC",
               "Util"
             ],
-            "TeamCode": "NOP",
+            "TeamCode": "OKC",
             "IsUndroppable": false
           },
           {
@@ -234,6 +220,20 @@
             ],
             "TeamCode": "LAC",
             "IsUndroppable": false
+          },
+          {
+            "Player": "Alperen Şengün",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "HOU",
+            "IsUndroppable": true
           }
         ]
       }
@@ -241,8 +241,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:06.1914421+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:06.1914421+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:50.8278087+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:50.8278087+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -390,8 +390,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:06.7551851+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:06.7551851+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:51.2184390+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:51.2184390+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -622,8 +622,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:07.0858315+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:07.0858315+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:51.6730998+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:51.6730998+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -637,8 +637,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-14T07:57:08.2761164+00:00",
-      "RetrievedAtUtc": "2026-11-14T07:57:08.2761164+00:00",
+      "CheckedAtUtc": "2026-11-14T08:45:52.5335616+00:00",
+      "RetrievedAtUtc": "2026-11-14T08:45:52.5335616+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -734,6 +734,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Alex Caruso",
+            "Position": "SG,SF",
+            "TeamCode": "OKC",
+            "Availability": "waivers",
+            "PercentOwned": 30,
+            "WaiverDate": "2026-11-16"
+          },
+          {
             "Player": "Kyle Kuzma",
             "Position": "SF,PF",
             "TeamCode": "MIL",
@@ -806,14 +814,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Zaccharie Risacher",
-            "Position": "SF,PF",
-            "TeamCode": "DAL",
-            "Availability": "free_agent",
-            "PercentOwned": 16,
-            "WaiverDate": null
-          },
-          {
             "Player": "Mitchell Robinson",
             "Position": "C",
             "TeamCode": "BOS",
@@ -862,14 +862,6 @@
             "WaiverDate": "2026-11-15"
           },
           {
-            "Player": "Isaiah Collier",
-            "Position": "PG,SG",
-            "TeamCode": "UTA",
-            "Availability": "waivers",
-            "PercentOwned": 11,
-            "WaiverDate": "2026-11-14"
-          },
-          {
             "Player": "Kristaps Porziņģis",
             "Position": "C",
             "TeamCode": "GSW",
@@ -886,6 +878,22 @@
             "WaiverDate": "2026-11-15"
           },
           {
+            "Player": "Anfernee Simons",
+            "Position": "PG,SG",
+            "TeamCode": "PHI",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Isaiah Collier",
+            "Position": "PG,SG",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 10,
+            "WaiverDate": "2026-11-14"
+          },
+          {
             "Player": "Max Strus",
             "Position": "SF,PF",
             "TeamCode": "LAC",
@@ -900,14 +908,6 @@
             "Availability": "waivers",
             "PercentOwned": 10,
             "WaiverDate": "2026-11-14"
-          },
-          {
-            "Player": "Anfernee Simons",
-            "Position": "PG,SG",
-            "TeamCode": "PHI",
-            "Availability": "free_agent",
-            "PercentOwned": 9,
-            "WaiverDate": null
           },
           {
             "Player": "Collin Sexton",
@@ -950,9 +950,25 @@
             "WaiverDate": null
           },
           {
+            "Player": "Bones Hyland",
+            "Position": "PG,SG",
+            "TeamCode": "MIN",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
             "Player": "Gui Santos",
             "Position": "SF,PF",
             "TeamCode": "GSW",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Joan Beringer",
+            "Position": "PF,C",
+            "TeamCode": "MIN",
             "Availability": "free_agent",
             "PercentOwned": 8,
             "WaiverDate": null
@@ -974,14 +990,6 @@
             "WaiverDate": "2026-11-15"
           },
           {
-            "Player": "Bones Hyland",
-            "Position": "PG,SG",
-            "TeamCode": "MIN",
-            "Availability": "free_agent",
-            "PercentOwned": 7,
-            "WaiverDate": null
-          },
-          {
             "Player": "Dennis Schröder",
             "Position": "PG,SG",
             "TeamCode": "CHA",
@@ -996,14 +1004,6 @@
             "Availability": "waivers",
             "PercentOwned": 7,
             "WaiverDate": "2026-11-15"
-          },
-          {
-            "Player": "Joan Beringer",
-            "Position": "PF,C",
-            "TeamCode": "MIN",
-            "Availability": "free_agent",
-            "PercentOwned": 7,
-            "WaiverDate": null
           },
           {
             "Player": "Oso Ighodaro",
@@ -1174,14 +1174,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Nique Clifford",
-            "Position": "SG,SF",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
             "Player": "T.J. McConnell",
             "Position": "PG",
             "TeamCode": "IND",
@@ -1297,6 +1289,14 @@
             "Player": "Max Christie",
             "Position": "SG,SF",
             "TeamCode": "DAL",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Nique Clifford",
+            "Position": "SG,SF",
+            "TeamCode": "OKC",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
@@ -1451,8 +1451,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-14T07:57:15.684Z",
-      "RetrievedAtUtc": "2026-11-14T07:57:15.684Z",
+      "CheckedAtUtc": "2026-11-14T08:45:59.477Z",
+      "RetrievedAtUtc": "2026-11-14T08:45:59.477Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
