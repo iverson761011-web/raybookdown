@@ -19,6 +19,7 @@ $script:requests=[Collections.Generic.List[object]]::new()
 $script:failTool=$null;$script:wrongTeam=$false;$script:badRoster=$false;$script:secretName=$null;$script:missingValues=$false
 $script:schemas=@()
 $script:marketCount=1
+$script:opponentStatsCase=$null
 foreach ($name in @('get_user_session','get_league_info','get_roster','get_matchups','get_transactions','get_standings','get_free_agents')) {
     $properties=@{}
     foreach ($key in @('league_id','team_id','platform','sport','start_date','end_date')) {$properties[$key]=@{type='string'}}
@@ -48,6 +49,11 @@ function Send-FlaimMcpRequest {
         'get_matchups' {
             $matchHome=@{teamId='42';teamName='RayBookDown';categoryScore=@{wins=7;losses=6;ties=0};gamesRemaining=21;categories=@(@{statId='12';name='Points Scored';displayName='PTS';value='328';result='win';isDisplayOnly=$false},@{statId='ratio';name='Field Goals';displayName='FGM/A';value='122/251';result=$null;isDisplayOnly=$true})}
             $away=@{teamId='99';teamName='Synthetic Opponent';categoryScore=@{wins=6;losses=7;ties=0};gamesRemaining=20;categories=@(@{statId='12';name='Points Scored';displayName='PTS';value='293';result='loss';isDisplayOnly=$false},@{statId='ratio';name='Field Goals';displayName='FGM/A';value='97/216';result=$null;isDisplayOnly=$true})}
+            if ($script:opponentStatsCase -ceq 'reordered_zero') {$away['categories'][0]['value']=0;$away['categories']=@($away['categories'][1],$away['categories'][0])}
+            if ($script:opponentStatsCase -ceq 'missing') {$away['categories']=@($away['categories'][1])}
+            if ($script:opponentStatsCase -ceq 'empty') {$away['categories']=@()}
+            if ($script:opponentStatsCase -ceq 'duplicate') {$away['categories']=@($away['categories'][0],$away['categories'][0],$away['categories'][1])}
+            if ($script:opponentStatsCase -ceq 'missing_id') {$matchHome['categories'][0].Remove('statId');$away['categories'][0].Remove('statId')}
             if ($script:missingValues) {$matchHome['categories'][0]['value']=$null;$matchHome.Remove('categoryScore')}
             $data=@{matchups=@(@{week=4;status='in_progress';home=$matchHome;away=$away})}
         }
@@ -99,6 +105,30 @@ Test-FDDCase 'Zero balances and rates remain zero while unknown counters remain 
     Assert-FDDTest ($data.Sections.Budget.Data.FaabBalance -eq 0 -and $data.Sections.Market.Data.Players[0].PercentOwned -eq 0)
     Assert-FDDTest ($null -eq $data.Sections.Budget.Data.AddsRemainingThisWeek -and $null -eq $data.Sections.Transactions.Data.Rows[0].FaabBid)
     Assert-FDDTest ($data.Sections.Transactions.Data.CompletenessVerified -eq $false -and $data.Sections.Transactions.Data.UnrecognizedRows -eq 5)
+}
+Test-FDDCase 'Current opponent keeps every distinct category value including display ratios' {
+    $data=Get-Content -Raw -LiteralPath $outputFile|ConvertFrom-Json
+    Assert-FDDTest ($data.Sections.Matchup.Data.Categories[0].OpponentValue -ceq '293')
+    Assert-FDDTest ($data.Sections.Matchup.Data.Categories[1].OpponentValue -ceq '97/216')
+}
+Test-FDDCase 'Opponent categories match by identifier when reordered and preserve real zero' {
+    try {
+        $script:opponentStatsCase='reordered_zero';$result=Invoke-FDDTestExport;$data=Get-Content -Raw -LiteralPath $outputFile|ConvertFrom-Json
+        Assert-FDDTest ($result.Exported -and $data.Sections.Matchup.Status -ceq 'ok')
+        Assert-FDDTest ($data.Sections.Matchup.Data.Categories[0].OpponentValue -ceq '0' -and $data.Sections.Matchup.Data.Categories[1].OpponentValue -ceq '97/216')
+    }
+    finally {$script:opponentStatsCase=$null}
+}
+Test-FDDCase 'Missing or ambiguous opponent stat identifiers remain unknown without borrowing another value' {
+    try {
+        foreach ($case in @('missing','empty','duplicate','missing_id')) {
+            $script:opponentStatsCase=$case;$result=Invoke-FDDTestExport;$data=Get-Content -Raw -LiteralPath $outputFile|ConvertFrom-Json
+            Assert-FDDTest ($result.Exported -and $data.Sections.Matchup.Status -ceq 'ok')
+            Assert-FDDTest ($null -eq $data.Sections.Matchup.Data.Categories[0].OpponentValue)
+            if ($case -cne 'empty') {Assert-FDDTest ($data.Sections.Matchup.Data.Categories[1].OpponentValue -ceq '97/216')}
+        }
+    }
+    finally {$script:opponentStatsCase=$null}
 }
 Test-FDDCase 'Individual source failure is explicit and does not prevent later queries' {
     $script:failTool='get_matchups';$result=Invoke-FDDTestExport;$script:failTool=$null
