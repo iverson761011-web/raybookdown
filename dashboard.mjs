@@ -21,6 +21,10 @@ function drawWeekComparison(){
  if(comparisonChoice&&!view.options.some(team=>team.key===comparisonChoice))comparisonChoice=null;
  select.replaceChildren();for(const team of view.options){const o=document.createElement('option');o.value=team.key;o.textContent=team.name;select.append(o);}select.value=view.selectedKey??'';select.disabled=!view.options.length;
  txt('comparisonTeamHeading',view.selectedName??'對照隊伍');txt('comparisonOwnHeading',dashboard?.Team??'RayBookDown');
+ const simulated=view.comparisonScore,known=simulated?simulated.Wins+simulated.Losses+simulated.Ties:0;
+ txt('comparisonScoreTitle',(dashboard?.Team??'RayBookDown')+' vs '+(view.selectedName??'對照隊伍'));
+ txt('comparisonScoreValue',simulated&&known>0?(simulated.Complete?'':'已確認 ')+simulated.Wins+' : '+simulated.Losses:'未知');
+ txt('comparisonScoreDetail',simulated?'平手 '+simulated.Ties+' 項 · 已確認 '+known+' 項 · 未確認 '+simulated.Unknown+' 項 · 展示用 '+simulated.ExcludedCategories+' 項不計分。'+(simulated.Complete?'':'部分比項尚未確認，以上不是完整總比分。'):'需要可核實的同週數據才能試算比分。');
  const states={ready:'已取得同一週的兩隊累計數據。',partial:'部分資料待確認，請查看未知項目與各自來源時間。',week_mismatch:'週次不一致，暫不並排不同週的數值。',unavailable:'尚未取得可對照的本週資料。'};
  txt('comparisonState',[states[view.status]??states.unavailable,...view.notes].join(' '));
  txt('comparisonScope','第 '+display(view.week)+' 週累計數據對照。兩隊的出賽場次與正式對手可能不同；此處不計為兩隊正式交手結果。');
@@ -28,7 +32,7 @@ function drawWeekComparison(){
  txt('comparisonMatchups','各自的正式對戰（類別勝－敗－平）：'+(dashboard?.Team??'RayBookDown')+' 對 '+display(view.ownOpponent)+' '+score(view.ownScore)+'；'+(view.selectedName??'對照隊伍')+' 對 '+display(view.otherOpponent)+' '+score(view.otherScore)+'。');
  const sourceLine=(section,name)=>name+'｜'+display(section?.Source)+'｜讀取：'+formatTaipei(section?.RetrievedAtUtc)+'（台灣）｜'+ageLabel(section?.RetrievedAtUtc)+'｜來源最後更新：'+formatTaipei(section?.SourceUpdatedAtUtc)+(section?.SourceUpdatedAtUtc?'（台灣）':'');
  txt('comparisonOwnMeta',sourceLine(view.ownSource,dashboard?.Team??'RayBookDown'));txt('comparisonOtherMeta',sourceLine(view.otherSource,view.selectedName??'對照隊伍'));
- fill('comparisonRows',view.rows.map(c=>[cell(c.label+(c.displayOnly===true?'（展示用）':'')),cell(c.ownValue),cell(c.otherValue)]),3,'兩隊的同週比項資料尚未取得。');
+ fill('comparisonRows',view.rows.map(c=>[cell(c.label+(c.result==='display_only'?'（展示用）':'')),cell(c.ownValue),cell(c.otherValue),cell(({win:'我方領先',loss:'對照隊伍領先',tie:'平手',unknown:'未知',display_only:'展示用，不計分'})[c.result]??'未知',c.result==='win'?'win':c.result==='loss'?'lose':'muted')]),4,'兩隊的同週比項資料尚未取得。');
 }
 
 const availability=x=>({free_agent:'自由球員',waivers:'讓渡名單'})[x]??'取得方式未知';
