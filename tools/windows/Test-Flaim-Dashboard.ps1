@@ -54,6 +54,7 @@ function Send-FlaimMcpRequest {
             if ($script:opponentStatsCase -ceq 'empty') {$away['categories']=@()}
             if ($script:opponentStatsCase -ceq 'duplicate') {$away['categories']=@($away['categories'][0],$away['categories'][0],$away['categories'][1])}
             if ($script:opponentStatsCase -ceq 'missing_id') {$matchHome['categories'][0].Remove('statId');$away['categories'][0].Remove('statId')}
+            if ($script:opponentStatsCase -ceq 'nonstring_id') {$away['categories'][0]['statId']=12}
             if ($script:missingValues) {$matchHome['categories'][0]['value']=$null;$matchHome.Remove('categoryScore')}
             $data=@{matchups=@(@{week=4;status='in_progress';home=$matchHome;away=$away})}
         }
@@ -121,7 +122,7 @@ Test-FDDCase 'Opponent categories match by identifier when reordered and preserv
 }
 Test-FDDCase 'Missing or ambiguous opponent stat identifiers remain unknown without borrowing another value' {
     try {
-        foreach ($case in @('missing','empty','duplicate','missing_id')) {
+        foreach ($case in @('missing','empty','duplicate','missing_id','nonstring_id')) {
             $script:opponentStatsCase=$case;$result=Invoke-FDDTestExport;$data=Get-Content -Raw -LiteralPath $outputFile|ConvertFrom-Json
             Assert-FDDTest ($result.Exported -and $data.Sections.Matchup.Status -ceq 'ok')
             Assert-FDDTest ($null -eq $data.Sections.Matchup.Data.Categories[0].OpponentValue)
