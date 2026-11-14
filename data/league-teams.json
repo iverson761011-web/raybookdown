@@ -3,8 +3,8 @@
     "League":  "Funny League 2026-27",
     "Platform":  "yahoo",
     "Season":  2026,
-    "CheckedAtUtc":  "2026-11-14T07:57:15.5432889+00:00",
-    "RetrievedAtUtc":  "2026-11-14T07:57:15.5432889+00:00",
+    "CheckedAtUtc":  "2026-11-14T08:45:59.2900701+00:00",
+    "RetrievedAtUtc":  "2026-11-14T08:45:59.2900701+00:00",
     "SourceUpdatedAtUtc":  null,
     "Status":  "ok",
     "ErrorType":  null,
@@ -13,8 +13,8 @@
     "Rules":  {
                   "Status":  "ok",
                   "Source":  "Flaim Fantasy / Yahoo",
-                  "CheckedAtUtc":  "2026-11-14T07:57:05.1753472+00:00",
-                  "RetrievedAtUtc":  "2026-11-14T07:57:05.1753472+00:00",
+                  "CheckedAtUtc":  "2026-11-14T08:45:49.8172368+00:00",
+                  "RetrievedAtUtc":  "2026-11-14T08:45:49.8172368+00:00",
                   "SourceUpdatedAtUtc":  null,
                   "ErrorType":  null,
                   "Data":  {
@@ -83,8 +83,8 @@
     "Market":  {
                    "Status":  "ok",
                    "Source":  "Flaim Fantasy / Yahoo",
-                   "CheckedAtUtc":  "2026-11-14T07:57:08.2761164+00:00",
-                   "RetrievedAtUtc":  "2026-11-14T07:57:08.2761164+00:00",
+                   "CheckedAtUtc":  "2026-11-14T08:45:52.5335616+00:00",
+                   "RetrievedAtUtc":  "2026-11-14T08:45:52.5335616+00:00",
                    "SourceUpdatedAtUtc":  null,
                    "ErrorType":  null,
                    "Data":  {
@@ -180,6 +180,14 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "Alex Caruso",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "OKC",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  30,
+                                                    "WaiverDate":  "2026-11-16"
+                                                },
+                                                {
                                                     "Player":  "Kyle Kuzma",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "MIL",
@@ -252,14 +260,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Zaccharie Risacher",
-                                                    "Position":  "SF,PF",
-                                                    "TeamCode":  "DAL",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  16,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Mitchell Robinson",
                                                     "Position":  "C",
                                                     "TeamCode":  "BOS",
@@ -308,14 +308,6 @@
                                                     "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
-                                                    "Player":  "Isaiah Collier",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "UTA",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  11,
-                                                    "WaiverDate":  "2026-11-14"
-                                                },
-                                                {
                                                     "Player":  "Kristaps Porziņģis",
                                                     "Position":  "C",
                                                     "TeamCode":  "GSW",
@@ -332,6 +324,22 @@
                                                     "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
+                                                    "Player":  "Anfernee Simons",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "PHI",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  10,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Isaiah Collier",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "UTA",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  10,
+                                                    "WaiverDate":  "2026-11-14"
+                                                },
+                                                {
                                                     "Player":  "Max Strus",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "LAC",
@@ -346,14 +354,6 @@
                                                     "Availability":  "waivers",
                                                     "PercentOwned":  10,
                                                     "WaiverDate":  "2026-11-14"
-                                                },
-                                                {
-                                                    "Player":  "Anfernee Simons",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "PHI",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  9,
-                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "Collin Sexton",
@@ -396,9 +396,25 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "Bones Hyland",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "MIN",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  8,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
                                                     "Player":  "Gui Santos",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "GSW",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  8,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Joan Beringer",
+                                                    "Position":  "PF,C",
+                                                    "TeamCode":  "MIN",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  8,
                                                     "WaiverDate":  null
@@ -420,14 +436,6 @@
                                                     "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
-                                                    "Player":  "Bones Hyland",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "MIN",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  7,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Dennis Schröder",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "CHA",
@@ -442,14 +450,6 @@
                                                     "Availability":  "waivers",
                                                     "PercentOwned":  7,
                                                     "WaiverDate":  "2026-11-15"
-                                                },
-                                                {
-                                                    "Player":  "Joan Beringer",
-                                                    "Position":  "PF,C",
-                                                    "TeamCode":  "MIN",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  7,
-                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "Oso Ighodaro",
@@ -620,14 +620,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Nique Clifford",
-                                                    "Position":  "SG,SF",
-                                                    "TeamCode":  "OKC",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  3,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "T.J. McConnell",
                                                     "Position":  "PG",
                                                     "TeamCode":  "IND",
@@ -743,6 +735,14 @@
                                                     "Player":  "Max Christie",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "DAL",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  2,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Nique Clifford",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "OKC",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  2,
                                                     "WaiverDate":  null
@@ -903,8 +903,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:11.1441539+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:11.1441539+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:55.0241395+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.0241395+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1107,8 +1107,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1256,8 +1256,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1277,8 +1277,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:11.5993464+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:11.5993464+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:55.4306971+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.4306971+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1480,8 +1480,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1629,8 +1629,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1650,8 +1650,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:11.9587810+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:11.9587810+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:55.7902003+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.7902003+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1822,8 +1822,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1843,7 +1843,7 @@
                                                                          "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  11,
-                                                   "OpponentGamesRemaining":  6,
+                                                   "OpponentGamesRemaining":  7,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
@@ -1971,8 +1971,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1992,8 +1992,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:12.3031335+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:12.3031335+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:56.1076366+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.1076366+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2167,8 +2167,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2316,8 +2316,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2337,8 +2337,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:12.6934863+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:12.6934863+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:56.4359911+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.4359911+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2415,23 +2415,21 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Jaylen Brown",
+                                                                      "Player":  "Paul Reed",
                                                                       "Position":  "F",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "SF",
                                                                                                 "PF",
                                                                                                 "F",
+                                                                                                "C",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "PHI",
+                                                                      "TeamCode":  "DET",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Isaiah Hartenstein",
+                                                                      "Player":  "Daniel Gafford",
                                                                       "Position":  "C",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -2439,7 +2437,7 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "OKC",
+                                                                      "TeamCode":  "DAL",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -2457,6 +2455,22 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
+                                                                      "Player":  "Jaylen Brown",
+                                                                      "Position":  "Util",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "SF",
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "PHI",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
                                                                       "Player":  "Naz Reid",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
@@ -2471,21 +2485,7 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Paul Reed",
-                                                                      "Position":  "Util",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "C",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "DET",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Daniel Gafford",
+                                                                      "Player":  "Isaiah Hartenstein",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -2493,7 +2493,7 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "DAL",
+                                                                      "TeamCode":  "OKC",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -2543,8 +2543,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2692,8 +2692,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2713,8 +2713,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:13.0528994+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:13.0528994+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:56.7721289+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.7721289+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2825,19 +2825,6 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Andrew Nembhard",
-                                                                      "Position":  "Util",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PG",
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "IND",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
                                                                       "Player":  "De\u0027Aaron Fox",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
@@ -2851,7 +2838,7 @@
                                                                   },
                                                                   {
                                                                       "Player":  "Cameron Johnson",
-                                                                      "Position":  "BN",
+                                                                      "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "SF",
@@ -2861,6 +2848,19 @@
                                                                                                 "Util"
                                                                                             ],
                                                                       "TeamCode":  "DEN",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Andrew Nembhard",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PG",
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "IND",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -2884,8 +2884,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3033,8 +3033,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3054,8 +3054,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:13.3818037+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:13.3818037+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:57.1158819+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.1158819+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3245,8 +3245,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3394,8 +3394,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3415,28 +3415,15 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:13.7100714+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:13.7100714+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:57.4288473+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.4288473+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
                                                   "PlayerCount":  12,
                                                   "Players":  [
                                                                   {
-                                                                      "Player":  "Jrue Holiday",
-                                                                      "Position":  "PG",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PG",
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "POR",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Dyson Daniels",
+                                                                      "Player":  "Kevin Huerter",
                                                                       "Position":  "SG",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -3447,27 +3434,65 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "ATL",
+                                                                      "TeamCode":  "DET",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Aaron Wiggins",
-                                                                      "Position":  "G",
+                                                                      "Player":  "Patrick Williams",
+                                                                      "Position":  "SF",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
                                                                                                 "SF",
+                                                                                                "PF",
                                                                                                 "F",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "ATL",
+                                                                      "TeamCode":  "CHI",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Julius Randle",
+                                                                      "Position":  "PF",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "BKN",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Donovan Clingan",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "C",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "POR",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Jabari Smith Jr.",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "C",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "HOU",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
                                                                       "Player":  "Jaime Jaquez Jr.",
-                                                                      "Position":  "SF",
+                                                                      "Position":  "BN",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "SG",
@@ -3482,47 +3507,7 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Jabari Smith Jr.",
-                                                                      "Position":  "PF",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "C",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "HOU",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Patrick Williams",
-                                                                      "Position":  "F",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "SF",
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "CHI",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Donovan Clingan",
-                                                                      "Position":  "C",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "C",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "POR",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Kevin Huerter",
+                                                                      "Player":  "Aaron Wiggins",
                                                                       "Position":  "BN",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -3533,7 +3518,35 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "DET",
+                                                                      "TeamCode":  "ATL",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Dyson Daniels",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "SF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "ATL",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Jrue Holiday",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PG",
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "POR",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -3547,19 +3560,6 @@
                                                                                                 "Util"
                                                                                             ],
                                                                       "TeamCode":  "TOR",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Julius Randle",
-                                                                      "Position":  "BN",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "BKN",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -3596,8 +3596,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3745,8 +3745,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3766,8 +3766,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:05.4880086+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:05.4880086+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:50.1453734+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:50.1453734+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3816,17 +3816,19 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Jerami Grant",
+                                                                      "Player":  "Kyshawn George",
                                                                       "Position":  "SF",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
+                                                                                                "SG",
+                                                                                                "G",
                                                                                                 "SF",
                                                                                                 "PF",
                                                                                                 "F",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "MEM",
+                                                                      "TeamCode":  "WAS",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -3843,8 +3845,22 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Alperen Şengün",
+                                                                      "Player":  "Jerami Grant",
                                                                       "Position":  "F",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "SF",
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "MEM",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Zion Williamson",
+                                                                      "Position":  "C",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "PF",
@@ -3853,19 +3869,7 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "HOU",
-                                                                      "IsUndroppable":  true
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Aday Mara",
-                                                                      "Position":  "C",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "C",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "OKC",
+                                                                      "TeamCode":  "NOP",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -3881,33 +3885,15 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Kyshawn George",
+                                                                      "Player":  "Aday Mara",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "SF",
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "WAS",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Zion Williamson",
-                                                                      "Position":  "Util",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PF",
-                                                                                                "F",
                                                                                                 "C",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "NOP",
+                                                                      "TeamCode":  "OKC",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -3921,6 +3907,20 @@
                                                                                             ],
                                                                       "TeamCode":  "LAC",
                                                                       "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Alperen Şengün",
+                                                                      "Position":  "Util",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "C",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "HOU",
+                                                                      "IsUndroppable":  true
                                                                   }
                                                               ]
                                               }
@@ -3928,8 +3928,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4077,8 +4077,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4098,8 +4098,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:14.1356886+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:14.1356886+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:57.8473771+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.8473771+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4242,18 +4242,17 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Alex Caruso",
+                                                                      "Player":  "Zaccharie Risacher",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
                                                                                                 "SF",
+                                                                                                "PF",
                                                                                                 "F",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "OKC",
+                                                                      "TeamCode":  "DAL",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -4302,8 +4301,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4322,7 +4321,7 @@
                                                                          "Losses":  6,
                                                                          "Ties":  0
                                                                      },
-                                                   "OwnGamesRemaining":  6,
+                                                   "OwnGamesRemaining":  7,
                                                    "OpponentGamesRemaining":  11,
                                                    "Categories":  [
                                                                       {
@@ -4451,8 +4450,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4472,8 +4471,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:14.4644958+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:14.4644958+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:58.1911295+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.1911295+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4668,8 +4667,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4817,8 +4816,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4838,8 +4837,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:14.7928182+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:14.7928182+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:58.5198014+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.5198014+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4871,17 +4870,16 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Coby White",
+                                                                      "Player":  "Jamal Murray",
                                                                       "Position":  "G",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "PG",
-                                                                                                "SG",
                                                                                                 "G",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "CHA",
-                                                                      "IsUndroppable":  false
+                                                                      "TeamCode":  "DEN",
+                                                                      "IsUndroppable":  true
                                                                   },
                                                                   {
                                                                       "Player":  "Collin Murray-Boyles",
@@ -4964,16 +4962,17 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Jamal Murray",
+                                                                      "Player":  "Coby White",
                                                                       "Position":  "BN",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "PG",
+                                                                                                "SG",
                                                                                                 "G",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "DEN",
-                                                                      "IsUndroppable":  true
+                                                                      "TeamCode":  "CHA",
+                                                                      "IsUndroppable":  false
                                                                   },
                                                                   {
                                                                       "Player":  "Paul George",
@@ -5008,8 +5007,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5157,8 +5156,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5178,8 +5177,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:15.1521768+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:15.1521768+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:58.9113528+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.9113528+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5385,8 +5384,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5534,8 +5533,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5555,15 +5554,15 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:15.4964275+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:15.4964275+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:59.2116004+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:59.2116004+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
                                                   "PlayerCount":  13,
                                                   "Players":  [
                                                                   {
-                                                                      "Player":  "Ja\u0027Kobe Walter",
+                                                                      "Player":  "Ayo Dosunmu",
                                                                       "Position":  "PG",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -5572,7 +5571,7 @@
                                                                                                 "G",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "TOR",
+                                                                      "TeamCode":  "MIN",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5589,21 +5588,7 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Dejounte Murray",
-                                                                      "Position":  "G",
-                                                                      "Status":  "O",
-                                                                      "EligiblePositions":  [
-                                                                                                "PG",
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "Util",
-                                                                                                "IL"
-                                                                                            ],
-                                                                      "TeamCode":  "NOP",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Tristan da Silva",
+                                                                      "Player":  "Michael Porter Jr.",
                                                                       "Position":  "SF",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -5613,7 +5598,7 @@
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "ORL",
+                                                                      "TeamCode":  "BKN",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5673,7 +5658,7 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Ayo Dosunmu",
+                                                                      "Player":  "Ja\u0027Kobe Walter",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
@@ -5682,21 +5667,7 @@
                                                                                                 "G",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "MIN",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Michael Porter Jr.",
-                                                                      "Position":  "Util",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "SF",
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "BKN",
+                                                                      "TeamCode":  "TOR",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5709,6 +5680,34 @@
                                                                                                 "Util"
                                                                                             ],
                                                                       "TeamCode":  "MIL",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Tristan da Silva",
+                                                                      "Position":  "Util",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "SF",
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "ORL",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Dejounte Murray",
+                                                                      "Position":  "IL",
+                                                                      "Status":  "O",
+                                                                      "EligiblePositions":  [
+                                                                                                "PG",
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "Util",
+                                                                                                "IL"
+                                                                                            ],
+                                                                      "TeamCode":  "NOP",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5746,8 +5745,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T07:57:06.1914421+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5895,8 +5894,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T07:57:07.0858315+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
