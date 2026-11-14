@@ -3,8 +3,8 @@
     "League":  "Funny League 2026-27",
     "Platform":  "yahoo",
     "Season":  2026,
-    "CheckedAtUtc":  "2026-11-14T08:45:59.2900701+00:00",
-    "RetrievedAtUtc":  "2026-11-14T08:45:59.2900701+00:00",
+    "CheckedAtUtc":  "2026-11-14T09:41:38.5985767+00:00",
+    "RetrievedAtUtc":  "2026-11-14T09:41:38.5985767+00:00",
     "SourceUpdatedAtUtc":  null,
     "Status":  "ok",
     "ErrorType":  null,
@@ -13,8 +13,8 @@
     "Rules":  {
                   "Status":  "ok",
                   "Source":  "Flaim Fantasy / Yahoo",
-                  "CheckedAtUtc":  "2026-11-14T08:45:49.8172368+00:00",
-                  "RetrievedAtUtc":  "2026-11-14T08:45:49.8172368+00:00",
+                  "CheckedAtUtc":  "2026-11-14T09:41:28.8127960+00:00",
+                  "RetrievedAtUtc":  "2026-11-14T09:41:28.8127960+00:00",
                   "SourceUpdatedAtUtc":  null,
                   "ErrorType":  null,
                   "Data":  {
@@ -83,8 +83,8 @@
     "Market":  {
                    "Status":  "ok",
                    "Source":  "Flaim Fantasy / Yahoo",
-                   "CheckedAtUtc":  "2026-11-14T08:45:52.5335616+00:00",
-                   "RetrievedAtUtc":  "2026-11-14T08:45:52.5335616+00:00",
+                   "CheckedAtUtc":  "2026-11-14T09:41:31.5980629+00:00",
+                   "RetrievedAtUtc":  "2026-11-14T09:41:31.5980629+00:00",
                    "SourceUpdatedAtUtc":  null,
                    "ErrorType":  null,
                    "Data":  {
@@ -100,20 +100,20 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Christian Braun",
-                                                    "Position":  "SG,SF,PF",
-                                                    "TeamCode":  "DEN",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  51,
-                                                    "WaiverDate":  "2026-11-14"
-                                                },
-                                                {
                                                     "Player":  "Dillon Brooks",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "PHX",
                                                     "Availability":  "waivers",
                                                     "PercentOwned":  49,
                                                     "WaiverDate":  "2026-11-15"
+                                                },
+                                                {
+                                                    "Player":  "Aaron Wiggins",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "ATL",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  45,
+                                                    "WaiverDate":  "2026-11-16"
                                                 },
                                                 {
                                                     "Player":  "Grayson Allen",
@@ -130,14 +130,6 @@
                                                     "Availability":  "waivers",
                                                     "PercentOwned":  45,
                                                     "WaiverDate":  "2026-11-15"
-                                                },
-                                                {
-                                                    "Player":  "Jusuf Nurkić",
-                                                    "Position":  "C",
-                                                    "TeamCode":  "UTA",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  43,
-                                                    "WaiverDate":  "2026-11-14"
                                                 },
                                                 {
                                                     "Player":  "Klay Thompson",
@@ -167,9 +159,9 @@
                                                     "Player":  "Draymond Green",
                                                     "Position":  "PF,C",
                                                     "TeamCode":  "GSW",
-                                                    "Availability":  "waivers",
+                                                    "Availability":  "free_agent",
                                                     "PercentOwned":  36,
-                                                    "WaiverDate":  "2026-11-14"
+                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "DeMar DeRozan",
@@ -188,28 +180,20 @@
                                                     "WaiverDate":  "2026-11-16"
                                                 },
                                                 {
+                                                    "Player":  "Egor Dëmin",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "BKN",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  27,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
                                                     "Player":  "Kyle Kuzma",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "MIL",
                                                     "Availability":  "free_agent",
-                                                    "PercentOwned":  28,
+                                                    "PercentOwned":  27,
                                                     "WaiverDate":  null
-                                                },
-                                                {
-                                                    "Player":  "Egor Dëmin",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "BKN",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  26,
-                                                    "WaiverDate":  "2026-11-14"
-                                                },
-                                                {
-                                                    "Player":  "Jamal Shead",
-                                                    "Position":  "PG",
-                                                    "TeamCode":  "TOR",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  24,
-                                                    "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
                                                     "Player":  "Keaton Wagler",
@@ -218,6 +202,14 @@
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  24,
                                                     "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Jamal Shead",
+                                                    "Position":  "PG",
+                                                    "TeamCode":  "TOR",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  23,
+                                                    "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
                                                     "Player":  "Cason Wallace",
@@ -263,9 +255,9 @@
                                                     "Player":  "Mitchell Robinson",
                                                     "Position":  "C",
                                                     "TeamCode":  "BOS",
-                                                    "Availability":  "waivers",
+                                                    "Availability":  "free_agent",
                                                     "PercentOwned":  15,
-                                                    "WaiverDate":  "2026-11-14"
+                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "Obi Toppin",
@@ -316,28 +308,12 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Morez Johnson Jr.",
-                                                    "Position":  "PF",
-                                                    "TeamCode":  "DAL",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  11,
-                                                    "WaiverDate":  "2026-11-15"
-                                                },
-                                                {
-                                                    "Player":  "Anfernee Simons",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "PHI",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  10,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Isaiah Collier",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "UTA",
-                                                    "Availability":  "waivers",
+                                                    "Availability":  "free_agent",
                                                     "PercentOwned":  10,
-                                                    "WaiverDate":  "2026-11-14"
+                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "Max Strus",
@@ -348,12 +324,36 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "Morez Johnson Jr.",
+                                                    "Position":  "PF",
+                                                    "TeamCode":  "DAL",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  10,
+                                                    "WaiverDate":  "2026-11-15"
+                                                },
+                                                {
                                                     "Player":  "Ziaire Williams",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "LAL",
-                                                    "Availability":  "waivers",
+                                                    "Availability":  "free_agent",
                                                     "PercentOwned":  10,
-                                                    "WaiverDate":  "2026-11-14"
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Anfernee Simons",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "PHI",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  9,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Bones Hyland",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "MIN",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  9,
+                                                    "WaiverDate":  null
                                                 },
                                                 {
                                                     "Player":  "Collin Sexton",
@@ -393,14 +393,6 @@
                                                     "TeamCode":  "MIN",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  9,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
-                                                    "Player":  "Bones Hyland",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "MIN",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  8,
                                                     "WaiverDate":  null
                                                 },
                                                 {
@@ -540,14 +532,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Jarace Walker",
-                                                    "Position":  "SF,PF",
-                                                    "TeamCode":  "IND",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  4,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Malik Monk",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "SAC",
@@ -588,6 +572,14 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "Jarace Walker",
+                                                    "Position":  "SF,PF",
+                                                    "TeamCode":  "IND",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  3,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
                                                     "Player":  "Jay Huff",
                                                     "Position":  "C",
                                                     "TeamCode":  "IND",
@@ -612,14 +604,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Marcus Smart",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "HOU",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  3,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "T.J. McConnell",
                                                     "Position":  "PG",
                                                     "TeamCode":  "IND",
@@ -633,14 +617,6 @@
                                                     "TeamCode":  "MIA",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  3,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
-                                                    "Player":  "AJ Green",
-                                                    "Position":  "PG,SG,SF",
-                                                    "TeamCode":  "MIL",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  2,
                                                     "WaiverDate":  null
                                                 },
                                                 {
@@ -684,14 +660,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Jase Richardson",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "ORL",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  2,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Justin Champagnie",
                                                     "Position":  "SF,PF",
                                                     "TeamCode":  "WAS",
@@ -727,6 +695,14 @@
                                                     "Player":  "Luke Kennard",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "PHX",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  2,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Marcus Smart",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "HOU",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  2,
                                                     "WaiverDate":  null
@@ -780,6 +756,14 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "AJ Green",
+                                                    "Position":  "PG,SG,SF",
+                                                    "TeamCode":  "MIL",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  1,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
                                                     "Player":  "Allen Graves",
                                                     "Position":  "PF",
                                                     "TeamCode":  "TOR",
@@ -791,6 +775,14 @@
                                                     "Player":  "Bub Carrington",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "WAS",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  1,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Goga Bitadze",
+                                                    "Position":  "C",
+                                                    "TeamCode":  "ORL",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  1,
                                                     "WaiverDate":  null
@@ -815,6 +807,14 @@
                                                     "Player":  "Hugo González",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "BOS",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  1,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Jase Richardson",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "ORL",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  1,
                                                     "WaiverDate":  null
@@ -903,8 +903,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:55.0241395+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.0241395+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:34.2494132+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:34.2494132+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1107,8 +1107,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1133,8 +1133,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "821",
-                                                                          "OpponentValue":  "975",
+                                                                          "OwnValue":  "825",
+                                                                          "OpponentValue":  "979",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1237,8 +1237,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.462",
-                                                                          "OpponentValue":  "1.676",
+                                                                          "OwnValue":  "2.46",
+                                                                          "OpponentValue":  "1.68",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1256,8 +1256,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1277,8 +1277,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:55.4306971+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.4306971+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:34.6409676+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:34.6409676+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1480,8 +1480,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1506,8 +1506,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "651",
-                                                                          "OpponentValue":  "778",
+                                                                          "OwnValue":  "655",
+                                                                          "OpponentValue":  "786",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1610,8 +1610,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "4.091",
-                                                                          "OpponentValue":  "2.132",
+                                                                          "OwnValue":  "4.09",
+                                                                          "OpponentValue":  "2.13",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1629,8 +1629,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1650,8 +1650,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:55.7902003+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:55.7902003+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:34.9859212+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:34.9859212+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1822,8 +1822,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1848,8 +1848,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "795",
-                                                                          "OpponentValue":  "913",
+                                                                          "OwnValue":  "798",
+                                                                          "OpponentValue":  "917",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1880,7 +1880,7 @@
                                                                       {
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
-                                                                          "OwnValue":  ".787",
+                                                                          "OwnValue":  ".788",
                                                                           "OpponentValue":  ".864",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -1952,8 +1952,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.943",
-                                                                          "OpponentValue":  "1.690",
+                                                                          "OwnValue":  "1.94",
+                                                                          "OpponentValue":  "1.69",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1971,8 +1971,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1992,8 +1992,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:56.1076366+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.1076366+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:35.3302728+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:35.3302728+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2167,8 +2167,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2193,8 +2193,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "947",
-                                                                          "OpponentValue":  "774",
+                                                                          "OwnValue":  "951",
+                                                                          "OpponentValue":  "779",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2297,8 +2297,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.898",
-                                                                          "OpponentValue":  "2.174",
+                                                                          "OwnValue":  "1.90",
+                                                                          "OpponentValue":  "2.17",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2316,8 +2316,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2337,8 +2337,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:56.4359911+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.4359911+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:35.6864929+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:35.6864929+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2543,8 +2543,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2564,13 +2564,13 @@
                                                                          "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  12,
-                                                   "OpponentGamesRemaining":  10,
+                                                   "OpponentGamesRemaining":  9,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "815",
-                                                                          "OpponentValue":  "688",
+                                                                          "OwnValue":  "818",
+                                                                          "OpponentValue":  "692",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2673,8 +2673,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.423",
-                                                                          "OpponentValue":  "1.561",
+                                                                          "OwnValue":  "1.42",
+                                                                          "OpponentValue":  "1.56",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2692,8 +2692,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2713,8 +2713,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:56.7721289+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:56.7721289+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:36.0304107+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:36.0304107+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2884,8 +2884,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2910,8 +2910,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "774",
-                                                                          "OpponentValue":  "947",
+                                                                          "OwnValue":  "779",
+                                                                          "OpponentValue":  "951",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3014,8 +3014,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.174",
-                                                                          "OpponentValue":  "1.898",
+                                                                          "OwnValue":  "2.17",
+                                                                          "OpponentValue":  "1.90",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3033,8 +3033,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3054,8 +3054,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:57.1158819+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.1158819+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:36.3741721+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:36.3741721+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3245,8 +3245,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3271,8 +3271,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "698",
-                                                                          "OpponentValue":  "757",
+                                                                          "OwnValue":  "701",
+                                                                          "OpponentValue":  "761",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3375,8 +3375,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.216",
-                                                                          "OpponentValue":  "2.315",
+                                                                          "OwnValue":  "2.22",
+                                                                          "OpponentValue":  "2.31",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3394,8 +3394,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3415,8 +3415,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:57.4288473+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.4288473+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:36.7194586+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:36.7194586+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3507,21 +3507,6 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Aaron Wiggins",
-                                                                      "Position":  "BN",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "SF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "ATL",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
                                                                       "Player":  "Dyson Daniels",
                                                                       "Position":  "BN",
                                                                       "Status":  null,
@@ -3576,6 +3561,22 @@
                                                                       "IsUndroppable":  true
                                                                   },
                                                                   {
+                                                                      "Player":  "Christian Braun",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "SF",
+                                                                                                "PF",
+                                                                                                "F",
+                                                                                                "FC",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "DEN",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
                                                                       "Player":  "Lauri Markkanen",
                                                                       "Position":  "IL",
                                                                       "Status":  "O",
@@ -3596,8 +3597,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3622,8 +3623,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "792",
-                                                                          "OpponentValue":  "710",
+                                                                          "OwnValue":  "794",
+                                                                          "OpponentValue":  "715",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3726,8 +3727,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.891",
-                                                                          "OpponentValue":  "1.933",
+                                                                          "OwnValue":  "1.89",
+                                                                          "OpponentValue":  "1.93",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -3745,12 +3746,12 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
-                                                  "FaabBalance":  87,
+                                                  "FaabBalance":  85,
                                                   "WaiverPriority":  11,
                                                   "MaxWeeklyAdds":  6,
                                                   "AddsUsedThisWeek":  null,
@@ -3766,12 +3767,12 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:50.1453734+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:50.1453734+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:29.1411200+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:29.1411200+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
-                                                  "PlayerCount":  11,
+                                                  "PlayerCount":  12,
                                                   "Players":  [
                                                                   {
                                                                       "Player":  "Donovan Mitchell",
@@ -3921,6 +3922,19 @@
                                                                                             ],
                                                                       "TeamCode":  "HOU",
                                                                       "IsUndroppable":  true
+                                                                  },
+                                                                  {
+                                                                      "Player":  "Jusuf Nurkić",
+                                                                      "Position":  "IL",
+                                                                      "Status":  "O",
+                                                                      "EligiblePositions":  [
+                                                                                                "C",
+                                                                                                "FC",
+                                                                                                "Util",
+                                                                                                "IL"
+                                                                                            ],
+                                                                      "TeamCode":  "UTA",
+                                                                      "IsUndroppable":  false
                                                                   }
                                                               ]
                                               }
@@ -3928,8 +3942,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3954,8 +3968,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "975",
-                                                                          "OpponentValue":  "821",
+                                                                          "OwnValue":  "979",
+                                                                          "OpponentValue":  "825",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4058,8 +4072,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.676",
-                                                                          "OpponentValue":  "2.462",
+                                                                          "OwnValue":  "1.68",
+                                                                          "OpponentValue":  "2.46",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4077,12 +4091,12 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
-                                                  "FaabBalance":  80,
+                                                  "FaabBalance":  75,
                                                   "WaiverPriority":  1,
                                                   "MaxWeeklyAdds":  6,
                                                   "AddsUsedThisWeek":  null,
@@ -4098,8 +4112,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:57.8473771+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:57.8473771+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:37.1430864+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:37.1430864+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4141,22 +4155,6 @@
                                                                                                 "Util"
                                                                                             ],
                                                                       "TeamCode":  "SAS",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
-                                                                      "Player":  "Anthony Black",
-                                                                      "Position":  "SF",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "PG",
-                                                                                                "SG",
-                                                                                                "G",
-                                                                                                "SF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "ORL",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -4256,6 +4254,19 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
+                                                                      "Player":  "Derrick White",
+                                                                      "Position":  "BN",
+                                                                      "Status":  null,
+                                                                      "EligiblePositions":  [
+                                                                                                "PG",
+                                                                                                "SG",
+                                                                                                "G",
+                                                                                                "Util"
+                                                                                            ],
+                                                                      "TeamCode":  "BOS",
+                                                                      "IsUndroppable":  false
+                                                                  },
+                                                                  {
                                                                       "Player":  "Ajay Mitchell",
                                                                       "Position":  "IL",
                                                                       "Status":  "O",
@@ -4301,8 +4312,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4327,8 +4338,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "913",
-                                                                          "OpponentValue":  "795",
+                                                                          "OwnValue":  "917",
+                                                                          "OpponentValue":  "798",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4360,7 +4371,7 @@
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
                                                                           "OwnValue":  ".864",
-                                                                          "OpponentValue":  ".787",
+                                                                          "OpponentValue":  ".788",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4431,8 +4442,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.690",
-                                                                          "OpponentValue":  "1.943",
+                                                                          "OwnValue":  "1.69",
+                                                                          "OpponentValue":  "1.94",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4450,8 +4461,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4471,8 +4482,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:58.1911295+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.1911295+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:37.4870286+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:37.4870286+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4667,8 +4678,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4693,8 +4704,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "778",
-                                                                          "OpponentValue":  "651",
+                                                                          "OwnValue":  "786",
+                                                                          "OpponentValue":  "655",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4797,8 +4808,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.132",
-                                                                          "OpponentValue":  "4.091",
+                                                                          "OwnValue":  "2.13",
+                                                                          "OpponentValue":  "4.09",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4816,8 +4827,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4837,8 +4848,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:58.5198014+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.5198014+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:37.8464179+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:37.8464179+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5007,8 +5018,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5033,8 +5044,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "757",
-                                                                          "OpponentValue":  "698",
+                                                                          "OwnValue":  "761",
+                                                                          "OpponentValue":  "701",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5137,8 +5148,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.315",
-                                                                          "OpponentValue":  "2.216",
+                                                                          "OwnValue":  "2.31",
+                                                                          "OpponentValue":  "2.22",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5156,8 +5167,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5177,8 +5188,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:58.9113528+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:58.9113528+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:38.2067381+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:38.2067381+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5384,8 +5395,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5410,8 +5421,8 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "710",
-                                                                          "OpponentValue":  "792",
+                                                                          "OwnValue":  "715",
+                                                                          "OpponentValue":  "794",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5514,8 +5525,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.933",
-                                                                          "OpponentValue":  "1.891",
+                                                                          "OwnValue":  "1.93",
+                                                                          "OpponentValue":  "1.89",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5533,8 +5544,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5554,8 +5565,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:59.2116004+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:59.2116004+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:38.5516949+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:38.5516949+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5575,16 +5586,19 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Derrick White",
+                                                                      "Player":  "Anthony Black",
                                                                       "Position":  "SG",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "PG",
                                                                                                 "SG",
                                                                                                 "G",
+                                                                                                "SF",
+                                                                                                "F",
+                                                                                                "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "BOS",
+                                                                      "TeamCode":  "ORL",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5745,8 +5759,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
-                                      "RetrievedAtUtc":  "2026-11-14T08:45:50.8278087+00:00",
+                                      "CheckedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
+                                      "RetrievedAtUtc":  "2026-11-14T09:41:29.7987924+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5765,14 +5779,14 @@
                                                                          "Losses":  5,
                                                                          "Ties":  0
                                                                      },
-                                                   "OwnGamesRemaining":  10,
+                                                   "OwnGamesRemaining":  9,
                                                    "OpponentGamesRemaining":  12,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "688",
-                                                                          "OpponentValue":  "815",
+                                                                          "OwnValue":  "692",
+                                                                          "OpponentValue":  "818",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5875,8 +5889,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.561",
-                                                                          "OpponentValue":  "1.423",
+                                                                          "OwnValue":  "1.56",
+                                                                          "OpponentValue":  "1.42",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5894,8 +5908,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
-                                     "RetrievedAtUtc":  "2026-11-14T08:45:51.6730998+00:00",
+                                     "CheckedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
+                                     "RetrievedAtUtc":  "2026-11-14T09:41:30.6271755+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
