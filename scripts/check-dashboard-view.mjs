@@ -6,6 +6,8 @@ import {leagueFixture,leagueKey} from '../tests/fixtures/league-analysis.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const html=await fs.readFile(path.join(root,'index.html'),'utf8');
 let fixture=JSON.parse(await fs.readFile(path.join(root,'tests/fixtures/dashboard.json'),'utf8'));
+fixture.Sections.Matchup.Data.Opponent='Other Team';
+let releaseInitialDashboard;const initialDashboardGate=new Promise(resolve=>{releaseInitialDashboard=resolve;});
 class Element {
  constructor(tag='div'){this.tagName=tag;this.children=[];this.value='';this.textContent='';this.dataset={};this.events={};this.attributes={};this.hidden=false;this.classList={add:()=>{},toggle:()=>{}};}
  append(...children){this.children.push(...children);}
@@ -28,14 +30,17 @@ globalThis.setInterval=(fn,ms)=>{intervals.push({fn,ms});return intervals.length
 globalThis.setTimeout=()=>1;globalThis.clearTimeout=()=>{};
 let fetchCount=0,featureFailure=false;
 let league=leagueFixture();
+for(const [index,team]of league.Teams.entries()){
+ team.Matchup.Data.Categories=structuredClone(fixture.Sections.Matchup.Data.Categories).map((c,i)=>({...c,OwnValue:index===1&&i===0?0:index===2&&i===0?'777':c.OwnValue,OpponentValue:'999999'}));
+}
 const time='2026-11-12T16:37:50Z';
 const history={SchemaVersion:1,League:'Funny League 2026-27',Team:'RayBookDown',Platform:'yahoo',Season:2026,Status:'ok',RetrievedAtUtc:time,CheckedAtUtc:time,SourceUpdatedAtUtc:null,CurrentWeek:4,UnavailableWeeks:[],Weeks:[{Week:3,Status:'final',Opponent:'Past opponent',OwnScore:{Wins:9,Losses:4,Ties:0},Winner:'own',WeekStartDate:null,WeekEndDate:null,RetrievedAtUtc:time,SourceUpdatedAtUtc:null,Categories:[{Name:'Points',Label:'PTS',OwnValue:'100',OpponentValue:'90',Result:'win',DisplayOnly:false}]},{Week:4,Status:'in_progress',Opponent:'Current opponent',OwnScore:{Wins:7,Losses:6,Ties:0},Winner:null,WeekStartDate:null,WeekEndDate:null,RetrievedAtUtc:time,SourceUpdatedAtUtc:null,Categories:[]}]};
 const weekly={SchemaVersion:1,Status:'ok',CheckedAtUtc:time,RetrievedAtUtc:time,SourceUpdatedAtUtc:null,PeriodBasis:'taipei_calendar',YahooWeekBoundsKnown:false,RangeStartDateTaipei:'2026-11-09',RangeEndDateTaipei:'2026-11-15',CoverageVerified:true,UnavailableDates:[],TeamCodeAliases:{CLE:'CLE',GS:'GSW',GSW:'GSW'},Teams:[{TeamCode:'CLE',Team:'Cleveland Cavaliers',TotalGames:4,RemainingGames:2,DatesTaipei:['2026-11-10','2026-11-12','2026-11-14','2026-11-15'],RemainingDatesTaipei:['2026-11-14','2026-11-15'],VerifiedGames:[]},{TeamCode:'GSW',Team:'Golden State Warriors',TotalGames:0,RemainingGames:0,DatesTaipei:[],RemainingDatesTaipei:[],VerifiedGames:[]}]};
 const recommendations={SchemaVersion:1,Status:'insufficient_data',GeneratedAtUtc:time,ReportDateET:'2026-11-11',Strategy:'aggressive_week',Reasons:['近期已確認出賽樣本不足'],Candidates:[],WatchCandidates:[{Player:'<script>unsafe</script>',TeamCode:'CLE',Availability:'free_agent',RemainingGames:2,SampleGames7:1,SampleGames14:1,InjuryStatus:null,Recommendation:'等待更多數據',Reasons:['只有一場完整數據'],Tradeoffs:[],DropOptions:[]}],DropReviews:[{Player:'Protected player',TeamCode:'CLE',SampleGames7:3,SampleGames14:6,RemainingGames:2,Review:'保留',Reasons:['來源列為不可移除'],Protected:true}],Sources:[{Name:'NBA official',RetrievedAtUtc:time,SourceUpdatedAtUtc:null,Url:'https://www.nba.com/schedule'}],Week:{Basis:'taipei_calendar',StartDateTaipei:'2026-11-09',EndDateTaipei:'2026-11-15',VerifiedYahooWeek:false},Notes:[]};
-globalThis.fetch=async(url,options)=>{const parsed=new URL(url);assert.equal(parsed.origin,'http://127.0.0.1:8760');assert.equal(options.credentials,'omit');assert.equal(options.redirect,'error');assert.equal(options.referrerPolicy,'no-referrer');if(parsed.pathname.endsWith('/dashboard.json'))fetchCount++;else if(featureFailure)return new Response('',{status:503});const value={'/data/dashboard.json':fixture,'/data/matchup-history.json':history,'/data/team-week-schedule.json':weekly,'/data/recommendations.json':recommendations,'/data/league-analysis.json':league}[parsed.pathname];assert.ok(value,'Known public feed');return new Response(JSON.stringify(value),{headers:{'content-type':'application/json'}});};
+globalThis.fetch=async(url,options)=>{const parsed=new URL(url);assert.equal(parsed.origin,'http://127.0.0.1:8760');assert.equal(options.credentials,'omit');assert.equal(options.redirect,'error');assert.equal(options.referrerPolicy,'no-referrer');if(parsed.pathname.endsWith('/dashboard.json')){fetchCount++;if(fetchCount===1)await initialDashboardGate;}else if(featureFailure)return new Response('',{status:503});const value={'/data/dashboard.json':fixture,'/data/matchup-history.json':history,'/data/team-week-schedule.json':weekly,'/data/recommendations.json':recommendations,'/data/league-analysis.json':league}[parsed.pathname];assert.ok(value,'Known public feed');return new Response(JSON.stringify(value),{headers:{'content-type':'application/json'}});};
 const settled=()=>new Promise(resolve=>originalTimeout(resolve,5));
 await import(pathToFileURL(path.join(root,'dashboard.mjs')).href);
-await settled();
+await settled();releaseInitialDashboard();await settled();
 const content=n=>[n.textContent,...n.children.map(content)].join(' ');
 assert.equal(elements.rosterRows.children.length,12);
 assert.equal(elements.scoreValue.textContent,'7 : 6');
@@ -46,6 +51,19 @@ assert.ok(!Object.hasOwn(elements,'addsValue'));
 assert.equal((html.match(/class="card"/g)??[]).length,3);
 assert.doesNotMatch(elements.addDetail.textContent,/本週已用|剩餘/);
 assert.equal(elements.faabValue.textContent,'80');
+assert.equal(elements.comparisonTeamSelect.value,leagueKey('b'),'Late primary dashboard still defaults to its actual opponent');assert.equal(elements.comparisonTeamSelect.children.length,3);assert.ok(elements.comparisonTeamSelect.children.every(o=>o.value!==leagueKey('a')));
+buttons.find(b=>b.dataset.tab==='matchup').click();
+elements.comparisonTeamSelect.value=leagueKey('b');elements.comparisonTeamSelect.events.change();
+assert.equal(elements.comparisonTeamHeading.textContent,'Other Team');
+assert.equal(elements.comparisonRows.children[0].children[1].textContent,String(fixture.Sections.Matchup.Data.Categories[0].OwnValue));
+assert.equal(elements.comparisonRows.children[0].children[2].textContent,'0');
+assert.doesNotMatch(content(elements.comparisonRows),/999999/);
+const officialRowsBeforeComparison=content(elements.scoreRows),officialTitleBeforeComparison=elements.matchupTitle.textContent;
+elements.comparisonTeamSelect.value=leagueKey('c');elements.comparisonTeamSelect.events.change();
+assert.equal(elements.comparisonTeamHeading.textContent,'Third Team');assert.equal(elements.comparisonRows.children[0].children[2].textContent,'777');
+assert.equal(content(elements.scoreRows),officialRowsBeforeComparison);assert.equal(elements.matchupTitle.textContent,officialTitleBeforeComparison);assert.equal(elements.scoreValue.textContent,'7 : 6');
+assert.match(elements.comparisonScope.textContent,/不計為.*正式交手/);assert.match(elements.comparisonOwnMeta.textContent,/來源最後更新：未知/);
+
 assert.match(elements.rulesMeta.textContent,/來源最後更新：未知/);
 assert.equal(elements.leagueTeamSelect.children.length,4);assert.equal(elements.leagueTeamSelect.value,leagueKey('a'));
 buttons.find(b=>b.dataset.tab==='league').click();assert.match(elements.leagueTeamTitle.textContent,/RayBookDown/);assert.match(content(elements.leagueRosterRows),/Ray-only player/);assert.match(content(elements.leagueRecommendationCards),/RayBookDown pickup/);assert.match(content(elements.leagueWatchCards),/RayBookDown watch/);assert.doesNotMatch(content(elements.leagueRecommendationCards),/RayBookDown watch/);
@@ -62,7 +80,7 @@ fixture=structuredClone(fixture);fixture.Sections.Matchup.Data.OwnScore.Wins=8;f
 fixture.Sections.Transactions.Status='error';fixture.Sections.Transactions.Data=null;fixture.Sections.Transactions.RetrievedAtUtc=null;fixture.Sections.Transactions.ErrorType='DataUnavailable';
 league=structuredClone(league);league.Status='partial';league.Teams[1].Status='partial';league.Teams[1].Roster={...league.Teams[1].Roster,Status:'error',Data:null,RetrievedAtUtc:null,ErrorType:'RosterUnavailable'};
 await intervals.find(i=>i.ms===300000).fn();await settled();
-assert.equal(elements.scoreValue.textContent,'8 : 5');assert.equal(elements.faabValue.textContent,'0');assert.match(content(elements.marketRows.children[0]),/0%/);assert.match(content(elements.addRows),/資料未知/);assert.match(elements.transactionsMeta.textContent,/讀取失敗/);assert.equal(elements.scheduleRows.children.length,4);
+assert.equal(elements.comparisonTeamSelect.value,leagueKey('c'),'Comparison team persists after refresh');assert.equal(elements.scoreValue.textContent,'8 : 5');assert.equal(elements.faabValue.textContent,'0');assert.match(content(elements.marketRows.children[0]),/0%/);assert.match(content(elements.addRows),/資料未知/);assert.match(elements.transactionsMeta.textContent,/讀取失敗/);assert.equal(elements.scheduleRows.children.length,4);
 assert.equal(elements.leagueTeamSelect.value,leagueKey('b'),'A refresh preserves the selected public team key');buttons.find(b=>b.dataset.tab==='league').click();assert.match(content(elements.leagueRosterRows),/此球隊的陣容資料未知/);assert.equal(elements.rosterCount.textContent,'未知');assert.equal(elements.faabValue.textContent,'0');assert.match(elements.leagueTeamTitle.textContent,/Other Team/);assert.doesNotMatch(content(elements.leagueRosterRows),/Ray-only player/);assert.match(elements.leagueRosterMeta.textContent,/讀取：未知/);buttons.find(b=>b.dataset.tab==='schedule').click();assert.equal(elements.scoreValue.textContent,'8 : 5');
 fixture=structuredClone(fixture);fixture.Sections.Schedule.Status='partial';fixture.Sections.Schedule.Data.RangeEndDateTaipei='2026-11-18';fixture.Sections.Schedule.Data.UnavailableDates=['2026-11-18'];
 await intervals.find(i=>i.ms===300000).fn();await settled();
@@ -105,5 +123,5 @@ assert.equal(elements.marketRows.children.length,100);assert.match(elements.mark
 elements.search.value='Available Player 100';elements.search.events.input();assert.equal(elements.marketRows.children.length,1);assert.match(content(elements.marketRows),/Available Player 100/);
 elements.search.value='';elements.search.events.input();assert.equal(elements.marketRows.children.length,100);
 featureFailure=true;fixture=structuredClone(fixture);fixture.Sections.Budget.Data.FaabBalance=10;await intervals.find(i=>i.ms===300000).fn();await settled();assert.equal(elements.faabValue.textContent,'10');assert.equal(elements.historyRows.children.length,2);assert.match(elements.historyMeta.textContent,/保留上次資料與原時間/);assert.match(elements.weeklyScheduleMeta.textContent,/保留上次資料與原時間/);assert.match(elements.recommendationMeta.textContent,/保留上次報告/);
-assert.match(elements.leagueMeta.textContent,/保留上次資料與原時間/);assert.match(elements.leagueTeamTitle.textContent,/Other Team/);
+assert.match(elements.comparisonState.textContent,/保留/);assert.match(elements.leagueMeta.textContent,/保留上次資料與原時間/);assert.match(elements.leagueTeamTitle.textContent,/Other Team/);
 console.log('Dashboard runtime checks passed: nine tabs, isolated team selection and summary cards, current-week categories, separate qualified recommendations and team-specific watches, independent sources, preserved failures, safe text nodes, verified zero vs unknown.');

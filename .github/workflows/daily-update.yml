@@ -15,6 +15,7 @@ on:
       - 'features-model.mjs'
       - 'refresh-model.mjs'
       - 'source-refresh.mjs'
+      - 'matchup-compare.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -30,6 +31,7 @@ on:
       - 'features-model.mjs'
       - 'refresh-model.mjs'
       - 'source-refresh.mjs'
+      - 'matchup-compare.mjs'
       - 'data/dashboard.json'
       - 'scripts/**'
       - 'data/team.json'
@@ -61,6 +63,8 @@ jobs:
         run: node --test scripts/check-dashboard.test.mjs scripts/update-nba-schedule.test.mjs
       - name: Test all dashboard views and refresh behavior
         run: node scripts/check-dashboard-view.mjs
+      - name: Test current-week cross-team comparison
+        run: node --test scripts/matchup-compare.test.mjs
       - name: Test recommendation evidence, weekly counts and history views
         run: node --test scripts/collect-recommendation-evidence.test.mjs scripts/build-weekly-schedule.test.mjs scripts/build-recommendations.test.mjs scripts/features-model.test.mjs
       - name: Test selected-team analysis and recommendation isolation
