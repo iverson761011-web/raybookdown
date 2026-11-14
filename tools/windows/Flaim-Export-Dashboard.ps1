@@ -394,7 +394,11 @@ function Read-FlaimTeamContext {
         $rows=[Collections.Generic.List[object]]::new();$ownCategories=Get-FDDField $own 'categories';$oppCategories=Get-FDDField $opp 'categories'
         if ($ownCategories -is [Array]) {
             foreach ($c in (Get-FDDArray $ownCategories)) {
-                $other=$null;foreach ($oc in @(Get-FDDArray $oppCategories)) {if ((Get-FDDField $oc 'statId') -ceq (Get-FDDField $c 'statId')) {$other=$oc;break}}
+                $other=$null;$statId=Get-FDDField $c 'statId';$matching=[Collections.Generic.List[object]]::new()
+                if ($statId -is [string] -and -not [string]::IsNullOrWhiteSpace($statId)) {
+                    foreach ($oc in (Get-FDDArray $oppCategories)) {$otherId=Get-FDDField $oc 'statId';if ($otherId -is [string] -and -not [string]::IsNullOrWhiteSpace($otherId) -and $otherId -ceq $statId) {$matching.Add($oc)}}
+                    if ($matching.Count -eq 1) {$other=$matching[0]}
+                }
                 $result=Get-FDDField $c 'result';if (@('win','loss','tie') -cnotcontains $result) {$result=$null}
                 $display=Get-FDDField $c 'isDisplayOnly';if ($display -isnot [bool]) {$display=$null}
                 $ownValue=ConvertTo-FDDStatValue (Get-FDDField $c 'value')
