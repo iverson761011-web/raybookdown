@@ -3,8 +3,8 @@
     "League":  "Funny League 2026-27",
     "Platform":  "yahoo",
     "Season":  2026,
-    "CheckedAtUtc":  "2026-11-15T08:01:04.0466209+00:00",
-    "RetrievedAtUtc":  "2026-11-15T08:01:04.0466209+00:00",
+    "CheckedAtUtc":  "2026-11-15T08:53:28.8404453+00:00",
+    "RetrievedAtUtc":  "2026-11-15T08:53:28.8374457+00:00",
     "SourceUpdatedAtUtc":  null,
     "Status":  "ok",
     "ErrorType":  null,
@@ -13,8 +13,8 @@
     "Rules":  {
                   "Status":  "ok",
                   "Source":  "Flaim Fantasy / Yahoo",
-                  "CheckedAtUtc":  "2026-11-15T08:00:52.9441353+00:00",
-                  "RetrievedAtUtc":  "2026-11-15T08:00:52.9441353+00:00",
+                  "CheckedAtUtc":  "2026-11-15T08:53:19.4623934+00:00",
+                  "RetrievedAtUtc":  "2026-11-15T08:53:19.4623934+00:00",
                   "SourceUpdatedAtUtc":  null,
                   "ErrorType":  null,
                   "Data":  {
@@ -83,8 +83,8 @@
     "Market":  {
                    "Status":  "ok",
                    "Source":  "Flaim Fantasy / Yahoo",
-                   "CheckedAtUtc":  "2026-11-15T08:00:56.0402362+00:00",
-                   "RetrievedAtUtc":  "2026-11-15T08:00:56.0402362+00:00",
+                   "CheckedAtUtc":  "2026-11-15T08:53:21.7869037+00:00",
+                   "RetrievedAtUtc":  "2026-11-15T08:53:21.7869037+00:00",
                    "SourceUpdatedAtUtc":  null,
                    "ErrorType":  null,
                    "Data":  {
@@ -140,20 +140,28 @@
                                                     "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
-                                                    "Player":  "DeMar DeRozan",
-                                                    "Position":  "SF,PF",
-                                                    "TeamCode":  "DEN",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  34,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Draymond Green",
                                                     "Position":  "PF,C",
                                                     "TeamCode":  "GSW",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  34,
                                                     "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "DeMar DeRozan",
+                                                    "Position":  "SF,PF",
+                                                    "TeamCode":  "DEN",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  33,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Jaylen Wells",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "MEM",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  33,
+                                                    "WaiverDate":  "2026-11-17"
                                                 },
                                                 {
                                                     "Player":  "Alex Caruso",
@@ -180,6 +188,14 @@
                                                     "WaiverDate":  "2026-11-16"
                                                 },
                                                 {
+                                                    "Player":  "Zaccharie Risacher",
+                                                    "Position":  "SF,PF",
+                                                    "TeamCode":  "DAL",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  24,
+                                                    "WaiverDate":  "2026-11-17"
+                                                },
+                                                {
                                                     "Player":  "Keaton Wagler",
                                                     "Position":  "SG",
                                                     "TeamCode":  "LAC",
@@ -196,28 +212,20 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Jamal Shead",
-                                                    "Position":  "PG",
-                                                    "TeamCode":  "TOR",
-                                                    "Availability":  "waivers",
-                                                    "PercentOwned":  21,
-                                                    "WaiverDate":  "2026-11-15"
-                                                },
-                                                {
                                                     "Player":  "Reed Sheppard",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "HOU",
                                                     "Availability":  "free_agent",
-                                                    "PercentOwned":  20,
+                                                    "PercentOwned":  21,
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Derrick Jones Jr.",
-                                                    "Position":  "SF,PF",
-                                                    "TeamCode":  "LAC",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  19,
-                                                    "WaiverDate":  null
+                                                    "Player":  "Jamal Shead",
+                                                    "Position":  "PG",
+                                                    "TeamCode":  "TOR",
+                                                    "Availability":  "waivers",
+                                                    "PercentOwned":  20,
+                                                    "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
                                                     "Player":  "Bones Hyland",
@@ -228,19 +236,19 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Mikel Brown Jr.",
-                                                    "Position":  "PG",
-                                                    "TeamCode":  "BKN",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  17,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Quentin Grimes",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "LAL",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  17,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Mikel Brown Jr.",
+                                                    "Position":  "PG",
+                                                    "TeamCode":  "BKN",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  16,
                                                     "WaiverDate":  null
                                                 },
                                                 {
@@ -300,17 +308,17 @@
                                                     "WaiverDate":  "2026-11-15"
                                                 },
                                                 {
-                                                    "Player":  "Herbert Jones",
-                                                    "Position":  "SG,SF",
-                                                    "TeamCode":  "NOP",
+                                                    "Player":  "Anfernee Simons",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "PHI",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  10,
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Jaylon Tyson",
-                                                    "Position":  "SG,SF,PF",
-                                                    "TeamCode":  "CLE",
+                                                    "Player":  "Herbert Jones",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "NOP",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  10,
                                                     "WaiverDate":  null
@@ -348,14 +356,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Anfernee Simons",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "PHI",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  9,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Collin Sexton",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "LAL",
@@ -367,6 +367,14 @@
                                                     "Player":  "Isaiah Collier",
                                                     "Position":  "PG,SG",
                                                     "TeamCode":  "UTA",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  9,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Jaylon Tyson",
+                                                    "Position":  "SG,SF,PF",
+                                                    "TeamCode":  "CLE",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  9,
                                                     "WaiverDate":  null
@@ -492,6 +500,14 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
+                                                    "Player":  "Luguentz Dort",
+                                                    "Position":  "SG,SF",
+                                                    "TeamCode":  "ATL",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  5,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
                                                     "Player":  "Nikola Vučević",
                                                     "Position":  "C",
                                                     "TeamCode":  "ORL",
@@ -503,14 +519,6 @@
                                                     "Player":  "Brice Sensabaugh",
                                                     "Position":  "SG,SF,PF",
                                                     "TeamCode":  "UTA",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  4,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
-                                                    "Player":  "Luguentz Dort",
-                                                    "Position":  "SG,SF",
-                                                    "TeamCode":  "ATL",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  4,
                                                     "WaiverDate":  null
@@ -772,14 +780,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Gary Payton II",
-                                                    "Position":  "SG,SF",
-                                                    "TeamCode":  "GSW",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  1,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Goga Bitadze",
                                                     "Position":  "C",
                                                     "TeamCode":  "ORL",
@@ -903,8 +903,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:59.1632838+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:59.1632838+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:24.9347439+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:24.9347439+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1109,8 +1109,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1258,8 +1258,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1279,8 +1279,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:59.5577906+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:59.5577906+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:25.2790149+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:25.2790149+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1485,8 +1485,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1634,8 +1634,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1655,8 +1655,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:59.9456562+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:59.9456562+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:25.5920662+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:25.5920662+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1827,8 +1827,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1976,8 +1976,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1997,8 +1997,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:00.3368082+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:00.3368082+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:25.9211179+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:25.9211179+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2171,8 +2171,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2320,8 +2320,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2341,8 +2341,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:00.7123214+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:00.7123214+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:26.2517816+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:26.2517816+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2435,16 +2435,15 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Daniel Gafford",
+                                                                      "Player":  "Isaiah Hartenstein",
                                                                       "Position":  "C",
-                                                                      "Status":  "O",
+                                                                      "Status":  null,
                                                                       "EligiblePositions":  [
                                                                                                 "C",
                                                                                                 "FC",
-                                                                                                "Util",
-                                                                                                "IL"
+                                                                                                "Util"
                                                                                             ],
-                                                                      "TeamCode":  "DAL",
+                                                                      "TeamCode":  "OKC",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -2462,15 +2461,16 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Isaiah Hartenstein",
+                                                                      "Player":  "Daniel Gafford",
                                                                       "Position":  "Util",
-                                                                      "Status":  null,
+                                                                      "Status":  "O",
                                                                       "EligiblePositions":  [
                                                                                                 "C",
                                                                                                 "FC",
-                                                                                                "Util"
+                                                                                                "Util",
+                                                                                                "IL"
                                                                                             ],
-                                                                      "TeamCode":  "OKC",
+                                                                      "TeamCode":  "DAL",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -2550,8 +2550,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2699,8 +2699,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2720,8 +2720,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:01.0717397+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:01.0717397+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:26.5764312+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:26.5764312+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2891,8 +2891,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3040,8 +3040,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3061,8 +3061,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:01.4319227+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:01.4319227+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:26.9209484+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:26.9209484+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3252,8 +3252,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3401,8 +3401,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3422,8 +3422,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:01.7916079+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:01.7916079+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:27.2235368+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:27.2235368+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3604,8 +3604,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3625,7 +3625,7 @@
                                                                          "Ties":  1
                                                                      },
                                                    "OwnGamesRemaining":  5,
-                                                   "OpponentGamesRemaining":  5,
+                                                   "OpponentGamesRemaining":  6,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
@@ -3753,8 +3753,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3774,8 +3774,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:53.4132530+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:53.4132530+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:19.7906399+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:19.7906399+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3964,8 +3964,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4113,8 +4113,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4134,12 +4134,12 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:02.2412657+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:02.2412657+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:27.5731202+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:27.5731202+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
-                                                  "PlayerCount":  13,
+                                                  "PlayerCount":  12,
                                                   "Players":  [
                                                                   {
                                                                       "Player":  "Damian Lillard",
@@ -4262,20 +4262,6 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Zaccharie Risacher",
-                                                                      "Position":  "Util",
-                                                                      "Status":  null,
-                                                                      "EligiblePositions":  [
-                                                                                                "SF",
-                                                                                                "PF",
-                                                                                                "F",
-                                                                                                "FC",
-                                                                                                "Util"
-                                                                                            ],
-                                                                      "TeamCode":  "DAL",
-                                                                      "IsUndroppable":  false
-                                                                  },
-                                                                  {
                                                                       "Player":  "Brandin Podziemski",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
@@ -4290,7 +4276,7 @@
                                                                   },
                                                                   {
                                                                       "Player":  "Ajay Mitchell",
-                                                                      "Position":  "IL",
+                                                                      "Position":  "Util",
                                                                       "Status":  "Q",
                                                                       "EligiblePositions":  [
                                                                                                 "PG",
@@ -4320,8 +4306,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4469,8 +4455,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4490,8 +4476,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:02.6245105+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:02.6245105+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:27.8829890+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:27.8829890+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4687,8 +4673,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4836,8 +4822,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4857,8 +4843,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:03.1093310+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:03.1093310+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:28.1900225+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:28.1900225+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5031,8 +5017,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5180,8 +5166,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5201,8 +5187,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:03.6089899+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:03.6089899+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:28.4928725+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:28.4928725+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5345,18 +5331,17 @@
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
-                                                                      "Player":  "Jaylen Wells",
+                                                                      "Player":  "Derrick Jones Jr.",
                                                                       "Position":  "Util",
                                                                       "Status":  null,
                                                                       "EligiblePositions":  [
-                                                                                                "SG",
-                                                                                                "G",
                                                                                                 "SF",
+                                                                                                "PF",
                                                                                                 "F",
                                                                                                 "FC",
                                                                                                 "Util"
                                                                                             ],
-                                                                      "TeamCode":  "MEM",
+                                                                      "TeamCode":  "LAC",
                                                                       "IsUndroppable":  false
                                                                   },
                                                                   {
@@ -5409,8 +5394,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5429,7 +5414,7 @@
                                                                          "Losses":  3,
                                                                          "Ties":  1
                                                                      },
-                                                   "OwnGamesRemaining":  5,
+                                                   "OwnGamesRemaining":  6,
                                                    "OpponentGamesRemaining":  5,
                                                    "Categories":  [
                                                                       {
@@ -5558,8 +5543,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5579,8 +5564,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:01:03.9841187+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:01:03.9841187+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:28.8014434+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:28.8014434+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5787,8 +5772,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
-                                      "RetrievedAtUtc":  "2026-11-15T08:00:54.0385333+00:00",
+                                      "CheckedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
+                                      "RetrievedAtUtc":  "2026-11-15T08:53:20.2750999+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5936,8 +5921,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
-                                     "RetrievedAtUtc":  "2026-11-15T08:00:54.9440216+00:00",
+                                     "CheckedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
+                                     "RetrievedAtUtc":  "2026-11-15T08:53:20.9756687+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
