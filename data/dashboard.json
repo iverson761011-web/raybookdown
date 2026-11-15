@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-15T09:43:00.1540913+00:00",
+  "GeneratedAtUtc": "2026-11-15T10:40:23.5420542+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:50.5686299+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:50.5686299+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:12.7265772+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:12.7265772+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:50.8816298+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:50.8816298+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:13.0571019+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:13.0571019+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -269,8 +269,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:51.4912711+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:51.4912711+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:13.8241660+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:13.8241660+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -418,8 +418,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:51.9928678+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:51.9928678+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:14.3612531+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:14.3612531+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -668,8 +668,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:52.3060350+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:52.3060350+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:14.6893736+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:14.6893736+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -683,8 +683,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-15T09:42:53.3182733+00:00",
-      "RetrievedAtUtc": "2026-11-15T09:42:53.3182733+00:00",
+      "CheckedAtUtc": "2026-11-15T10:40:16.0107645+00:00",
+      "RetrievedAtUtc": "2026-11-15T10:40:16.0107645+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -760,7 +760,7 @@
             "Position": "SG,SF",
             "TeamCode": "MEM",
             "Availability": "waivers",
-            "PercentOwned": 33,
+            "PercentOwned": 32,
             "WaiverDate": "2026-11-17"
           },
           {
@@ -788,20 +788,20 @@
             "WaiverDate": "2026-11-16"
           },
           {
+            "Player": "Keaton Wagler",
+            "Position": "SG",
+            "TeamCode": "LAC",
+            "Availability": "free_agent",
+            "PercentOwned": 24,
+            "WaiverDate": null
+          },
+          {
             "Player": "Zaccharie Risacher",
             "Position": "SF,PF",
             "TeamCode": "DAL",
             "Availability": "waivers",
             "PercentOwned": 24,
             "WaiverDate": "2026-11-17"
-          },
-          {
-            "Player": "Keaton Wagler",
-            "Position": "SG",
-            "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 23,
-            "WaiverDate": null
           },
           {
             "Player": "Cason Wallace",
@@ -932,6 +932,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Keldon Johnson",
+            "Position": "SF,PF",
+            "TeamCode": "SAS",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
             "Player": "Kristaps Porziņģis",
             "Position": "C",
             "TeamCode": "GSW",
@@ -967,14 +975,6 @@
             "Player": "Joan Beringer",
             "Position": "PF,C",
             "TeamCode": "MIN",
-            "Availability": "free_agent",
-            "PercentOwned": 9,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Keldon Johnson",
-            "Position": "SF,PF",
-            "TeamCode": "SAS",
             "Availability": "free_agent",
             "PercentOwned": 9,
             "WaiverDate": null
@@ -1068,6 +1068,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jordan Goodwin",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "free_agent",
+            "PercentOwned": 6,
+            "WaiverDate": null
+          },
+          {
             "Player": "Jordan Poole",
             "Position": "PG,SG",
             "TeamCode": "NOP",
@@ -1087,14 +1095,6 @@
             "Player": "Bennedict Mathurin",
             "Position": "SG,SF",
             "TeamCode": "NOP",
-            "Availability": "free_agent",
-            "PercentOwned": 5,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jordan Goodwin",
-            "Position": "PG,SG",
-            "TeamCode": "PHX",
             "Availability": "free_agent",
             "PercentOwned": 5,
             "WaiverDate": null
@@ -1497,8 +1497,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-15T09:43:00.342Z",
-      "RetrievedAtUtc": "2026-11-15T09:43:00.342Z",
+      "CheckedAtUtc": "2026-11-15T10:40:23.713Z",
+      "RetrievedAtUtc": "2026-11-15T10:40:23.713Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
