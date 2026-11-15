@@ -9,9 +9,15 @@
     "ScoringFormat":  "categories",
     "ScoringType":  "head",
     "TeamCount":  14,
-    "PlayerCount":  12,
-    "NamedPlayerCount":  12,
+    "PlayerCount":  13,
+    "NamedPlayerCount":  13,
     "Players":  [
+                    {
+                        "Player":  "Tyrese Proctor",
+                        "Position":  "PG",
+                        "Status":  null,
+                        "EligiblePositions":  "PG, SG, G, Util"
+                    },
                     {
                         "Player":  "Jared McCain",
                         "Position":  "SG",
@@ -35,12 +41,6 @@
                         "Position":  "PF",
                         "Status":  null,
                         "EligiblePositions":  "PF, F, FC, Util"
-                    },
-                    {
-                        "Player":  "Jerami Grant",
-                        "Position":  "F",
-                        "Status":  "Q",
-                        "EligiblePositions":  "SF, PF, F, FC, Util"
                     },
                     {
                         "Player":  "Zion Williamson",
@@ -73,6 +73,12 @@
                         "EligiblePositions":  "PF, F, C, FC, Util"
                     },
                     {
+                        "Player":  "Jerami Grant",
+                        "Position":  "IL",
+                        "Status":  "O",
+                        "EligiblePositions":  "SF, PF, F, FC, Util, IL"
+                    },
+                    {
                         "Player":  "Donovan Mitchell",
                         "Position":  "IL",
                         "Status":  "O",
@@ -85,5 +91,5 @@
                         "EligiblePositions":  "C, FC, Util, IL"
                     }
                 ],
-    "RetrievedAtUtc":  "2026-11-14T23:00:54.4800105+00:00"
+    "RetrievedAtUtc":  "2026-11-15T04:51:33.7053355+00:00"
 }
