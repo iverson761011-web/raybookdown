@@ -2,8 +2,8 @@
   "SchemaVersion": 1,
   "Status": "ok",
   "Source": "NBA official schedule",
-  "CheckedAtUtc": "2026-11-15T14:07:43.549Z",
-  "RetrievedAtUtc": "2026-11-15T14:07:43.549Z",
+  "CheckedAtUtc": "2026-11-15T23:01:57.777Z",
+  "RetrievedAtUtc": "2026-11-15T23:01:57.777Z",
   "SourceUpdatedAtUtc": null,
   "ErrorType": null,
   "PeriodBasis": "taipei_calendar",
@@ -11,10 +11,10 @@
   "YahooWeekBoundsKnown": false,
   "YahooWeek": 4,
   "YahooWeekTimeZone": null,
-  "RangeStartDateTaipei": "2026-11-09",
-  "RangeEndDateTaipei": "2026-11-15",
-  "PeriodStartAtUtc": "2026-11-08T16:00:00.000Z",
-  "PeriodEndExclusiveAtUtc": "2026-11-15T16:00:00.000Z",
+  "RangeStartDateTaipei": "2026-11-16",
+  "RangeEndDateTaipei": "2026-11-22",
+  "PeriodStartAtUtc": "2026-11-15T16:00:00.000Z",
+  "PeriodEndExclusiveAtUtc": "2026-11-22T16:00:00.000Z",
   "TimeZone": "Asia/Taipei",
   "CoverageVerified": true,
   "UnavailableDates": [],
@@ -61,120 +61,146 @@
     "BRK": "BKN"
   },
   "SourceUrls": [
-    "https://www.nba.com/game/0022600034",
-    "https://www.nba.com/game/0022600035",
-    "https://www.nba.com/game/0022600036",
-    "https://www.nba.com/game/0022600037",
-    "https://www.nba.com/game/0022600038",
-    "https://www.nba.com/game/0022600039",
-    "https://www.nba.com/game/0022600040",
-    "https://www.nba.com/game/0022600041",
-    "https://www.nba.com/game/0022600042",
-    "https://www.nba.com/game/0022600196",
-    "https://www.nba.com/game/0022600197",
-    "https://www.nba.com/game/0022600198",
-    "https://www.nba.com/game/0022600199",
-    "https://www.nba.com/game/0022600200",
-    "https://www.nba.com/game/0022600201",
-    "https://www.nba.com/game/0022600202",
-    "https://www.nba.com/game/0022600203",
-    "https://www.nba.com/game/0022600204",
-    "https://www.nba.com/game/0022600205",
-    "https://www.nba.com/game/0022600206",
-    "https://www.nba.com/game/0022600207",
-    "https://www.nba.com/game/0022600208",
-    "https://www.nba.com/game/0022600209",
-    "https://www.nba.com/game/0022600210",
-    "https://www.nba.com/game/0022600211",
-    "https://www.nba.com/game/0022600212",
-    "https://www.nba.com/game/0022600213",
-    "https://www.nba.com/game/0022600214",
-    "https://www.nba.com/game/0022600215",
-    "https://www.nba.com/game/0022600216",
-    "https://www.nba.com/game/0022600217",
-    "https://www.nba.com/game/0022600218",
-    "https://www.nba.com/game/0022600219",
-    "https://www.nba.com/game/0022600220",
-    "https://www.nba.com/game/0022600221",
-    "https://www.nba.com/game/0022600222",
-    "https://www.nba.com/game/0022600223",
-    "https://www.nba.com/game/0022600224",
-    "https://www.nba.com/game/0022600225",
-    "https://www.nba.com/game/0022600226",
-    "https://www.nba.com/game/0022600227",
-    "https://www.nba.com/game/0022600228",
-    "https://www.nba.com/game/0022600229",
-    "https://www.nba.com/game/0022600230",
-    "https://www.nba.com/game/0022600231",
-    "https://www.nba.com/game/0022600232",
-    "https://www.nba.com/game/0022600233",
-    "https://www.nba.com/game/0022600234",
-    "https://www.nba.com/game/0022600235",
-    "https://www.nba.com/games?date=2026-11-08",
-    "https://www.nba.com/games?date=2026-11-09",
-    "https://www.nba.com/games?date=2026-11-10",
-    "https://www.nba.com/games?date=2026-11-11",
-    "https://www.nba.com/games?date=2026-11-12",
-    "https://www.nba.com/games?date=2026-11-13",
-    "https://www.nba.com/games?date=2026-11-14",
+    "https://www.nba.com/game/0022600043",
+    "https://www.nba.com/game/0022600044",
+    "https://www.nba.com/game/0022600045",
+    "https://www.nba.com/game/0022600046",
+    "https://www.nba.com/game/0022600047",
+    "https://www.nba.com/game/0022600048",
+    "https://www.nba.com/game/0022600049",
+    "https://www.nba.com/game/0022600050",
+    "https://www.nba.com/game/0022600051",
+    "https://www.nba.com/game/0022600236",
+    "https://www.nba.com/game/0022600237",
+    "https://www.nba.com/game/0022600238",
+    "https://www.nba.com/game/0022600239",
+    "https://www.nba.com/game/0022600240",
+    "https://www.nba.com/game/0022600241",
+    "https://www.nba.com/game/0022600242",
+    "https://www.nba.com/game/0022600243",
+    "https://www.nba.com/game/0022600244",
+    "https://www.nba.com/game/0022600245",
+    "https://www.nba.com/game/0022600246",
+    "https://www.nba.com/game/0022600247",
+    "https://www.nba.com/game/0022600248",
+    "https://www.nba.com/game/0022600249",
+    "https://www.nba.com/game/0022600250",
+    "https://www.nba.com/game/0022600251",
+    "https://www.nba.com/game/0022600252",
+    "https://www.nba.com/game/0022600253",
+    "https://www.nba.com/game/0022600254",
+    "https://www.nba.com/game/0022600255",
+    "https://www.nba.com/game/0022600256",
+    "https://www.nba.com/game/0022600257",
+    "https://www.nba.com/game/0022600258",
+    "https://www.nba.com/game/0022600259",
+    "https://www.nba.com/game/0022600260",
+    "https://www.nba.com/game/0022600261",
+    "https://www.nba.com/game/0022600262",
+    "https://www.nba.com/game/0022600263",
+    "https://www.nba.com/game/0022600264",
+    "https://www.nba.com/game/0022600265",
+    "https://www.nba.com/game/0022600266",
+    "https://www.nba.com/game/0022600267",
+    "https://www.nba.com/game/0022600268",
+    "https://www.nba.com/game/0022600269",
+    "https://www.nba.com/game/0022600270",
+    "https://www.nba.com/game/0022600271",
+    "https://www.nba.com/game/0022600272",
+    "https://www.nba.com/game/0022600273",
+    "https://www.nba.com/game/0022600274",
+    "https://www.nba.com/game/0022600275",
+    "https://www.nba.com/game/0022600276",
+    "https://www.nba.com/game/0022600277",
+    "https://www.nba.com/game/0022600278",
+    "https://www.nba.com/game/0022600279",
     "https://www.nba.com/games?date=2026-11-15",
+    "https://www.nba.com/games?date=2026-11-16",
+    "https://www.nba.com/games?date=2026-11-17",
+    "https://www.nba.com/games?date=2026-11-18",
+    "https://www.nba.com/games?date=2026-11-19",
+    "https://www.nba.com/games?date=2026-11-20",
+    "https://www.nba.com/games?date=2026-11-21",
+    "https://www.nba.com/games?date=2026-11-22",
     "https://www.nba.com/teams"
   ],
   "Teams": [
     {
       "TeamCode": "ATL",
       "Team": "Atlanta Hawks",
-      "TotalGames": 2,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "LAL",
-          "Opponent": "Los Angeles Lakers",
-          "SourceUrl": "https://www.nba.com/game/0022600203"
+          "StartAtTaipei": "2026-11-16T09:00:00+08:00",
+          "OpponentCode": "MIL",
+          "Opponent": "Milwaukee Bucks",
+          "SourceUrl": "https://www.nba.com/game/0022600243"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "CHI",
-          "Opponent": "Chicago Bulls",
-          "SourceUrl": "https://www.nba.com/game/0022600037"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "OKC",
+          "Opponent": "Oklahoma City Thunder",
+          "SourceUrl": "https://www.nba.com/game/0022600265"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T08:00:00+08:00",
+          "OpponentCode": "CHA",
+          "Opponent": "Charlotte Hornets",
+          "SourceUrl": "https://www.nba.com/game/0022600043"
         }
       ]
     },
     {
       "TeamCode": "BOS",
       "Team": "Boston Celtics",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-12"
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T09:00:00+08:00",
-          "OpponentCode": "MIL",
-          "Opponent": "Milwaukee Bucks",
-          "SourceUrl": "https://www.nba.com/game/0022600200"
+          "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+          "OpponentCode": "DAL",
+          "Opponent": "Dallas Mavericks",
+          "SourceUrl": "https://www.nba.com/game/0022600240"
         },
         {
-          "StartAtTaipei": "2026-11-11T09:00:00+08:00",
-          "OpponentCode": "PHI",
-          "Opponent": "Philadelphia 76ers",
-          "SourceUrl": "https://www.nba.com/game/0022600212"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "ORL",
+          "Opponent": "Orlando Magic",
+          "SourceUrl": "https://www.nba.com/game/0022600245"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "TOR",
-          "Opponent": "Toronto Raptors",
-          "SourceUrl": "https://www.nba.com/game/0022600219"
+          "StartAtTaipei": "2026-11-19T10:30:00+08:00",
+          "OpponentCode": "DEN",
+          "Opponent": "Denver Nuggets",
+          "SourceUrl": "https://www.nba.com/game/0022600266"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T11:00:00+08:00",
+          "OpponentCode": "SAC",
+          "Opponent": "Sacramento Kings",
+          "SourceUrl": "https://www.nba.com/game/0022600279"
         }
       ]
     },
@@ -182,173 +208,177 @@
       "TeamCode": "BKN",
       "Team": "Brooklyn Nets",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-12",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T08:30:00+08:00",
-          "OpponentCode": "DAL",
-          "Opponent": "Dallas Mavericks",
-          "SourceUrl": "https://www.nba.com/game/0022600199"
+          "StartAtTaipei": "2026-11-17T08:30:00+08:00",
+          "OpponentCode": "PHI",
+          "Opponent": "Philadelphia 76ers",
+          "SourceUrl": "https://www.nba.com/game/0022600248"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "NOP",
-          "Opponent": "New Orleans Pelicans",
-          "SourceUrl": "https://www.nba.com/game/0022600223"
+          "StartAtTaipei": "2026-11-19T08:30:00+08:00",
+          "OpponentCode": "CHI",
+          "Opponent": "Chicago Bulls",
+          "SourceUrl": "https://www.nba.com/game/0022600262"
         },
         {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "MEM",
-          "Opponent": "Memphis Grizzlies",
-          "SourceUrl": "https://www.nba.com/game/0022600234"
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "ORL",
+          "Opponent": "Orlando Magic",
+          "SourceUrl": "https://www.nba.com/game/0022600044"
         }
       ]
     },
     {
       "TeamCode": "CHA",
       "Team": "Charlotte Hornets",
-      "TotalGames": 2,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 2,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-13"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "CLE",
-          "Opponent": "Cleveland Cavaliers",
-          "SourceUrl": "https://www.nba.com/game/0022600204"
+          "StartAtTaipei": "2026-11-16T05:30:00+08:00",
+          "OpponentCode": "LAC",
+          "Opponent": "LA Clippers",
+          "SourceUrl": "https://www.nba.com/game/0022600238"
         },
         {
-          "StartAtTaipei": "2026-11-13T10:00:00+08:00",
-          "OpponentCode": "PHX",
-          "Opponent": "Phoenix Suns",
-          "SourceUrl": "https://www.nba.com/game/0022600230"
+          "StartAtTaipei": "2026-11-18T12:00:00+08:00",
+          "OpponentCode": "LAL",
+          "Opponent": "Los Angeles Lakers",
+          "SourceUrl": "https://www.nba.com/game/0022600256"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T08:00:00+08:00",
+          "OpponentCode": "ATL",
+          "Opponent": "Atlanta Hawks",
+          "SourceUrl": "https://www.nba.com/game/0022600043"
         }
       ]
     },
     {
       "TeamCode": "CHI",
       "Team": "Chicago Bulls",
-      "TotalGames": 4,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-12",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T04:30:00+08:00",
-          "OpponentCode": "PHI",
-          "Opponent": "Philadelphia 76ers",
-          "SourceUrl": "https://www.nba.com/game/0022600196"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "CLE",
+          "Opponent": "Cleveland Cavaliers",
+          "SourceUrl": "https://www.nba.com/game/0022600246"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "SAS",
-          "Opponent": "San Antonio Spurs",
-          "SourceUrl": "https://www.nba.com/game/0022600220"
+          "StartAtTaipei": "2026-11-19T08:30:00+08:00",
+          "OpponentCode": "BKN",
+          "Opponent": "Brooklyn Nets",
+          "SourceUrl": "https://www.nba.com/game/0022600262"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "ATL",
-          "Opponent": "Atlanta Hawks",
-          "SourceUrl": "https://www.nba.com/game/0022600037"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "MIN",
-          "Opponent": "Minnesota Timberwolves",
-          "SourceUrl": "https://www.nba.com/game/0022600235"
+          "StartAtTaipei": "2026-11-21T09:00:00+08:00",
+          "OpponentCode": "WAS",
+          "Opponent": "Washington Wizards",
+          "SourceUrl": "https://www.nba.com/game/0022600047"
         }
       ]
     },
     {
       "TeamCode": "CLE",
       "Team": "Cleveland Cavaliers",
-      "TotalGames": 4,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "CHA",
-          "Opponent": "Charlotte Hornets",
-          "SourceUrl": "https://www.nba.com/game/0022600204"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "CHI",
+          "Opponent": "Chicago Bulls",
+          "SourceUrl": "https://www.nba.com/game/0022600246"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "NYK",
-          "Opponent": "New York Knicks",
-          "SourceUrl": "https://www.nba.com/game/0022600218"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "MEM",
+          "Opponent": "Memphis Grizzlies",
+          "SourceUrl": "https://www.nba.com/game/0022600258"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "MIA",
-          "Opponent": "Miami Heat",
-          "SourceUrl": "https://www.nba.com/game/0022600036"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T08:30:00+08:00",
-          "OpponentCode": "DAL",
-          "Opponent": "Dallas Mavericks",
-          "SourceUrl": "https://www.nba.com/game/0022600232"
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "IND",
+          "Opponent": "Indiana Pacers",
+          "SourceUrl": "https://www.nba.com/game/0022600045"
         }
       ]
     },
     {
       "TeamCode": "DAL",
       "Team": "Dallas Mavericks",
-      "TotalGames": 4,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 2,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-13",
-        "2026-11-15"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-19",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T08:30:00+08:00",
-          "OpponentCode": "BKN",
-          "Opponent": "Brooklyn Nets",
-          "SourceUrl": "https://www.nba.com/game/0022600199"
+          "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+          "OpponentCode": "BOS",
+          "Opponent": "Boston Celtics",
+          "SourceUrl": "https://www.nba.com/game/0022600240"
         },
         {
-          "StartAtTaipei": "2026-11-10T09:00:00+08:00",
-          "OpponentCode": "IND",
-          "Opponent": "Indiana Pacers",
-          "SourceUrl": "https://www.nba.com/game/0022600207"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "GSW",
+          "Opponent": "Golden State Warriors",
+          "SourceUrl": "https://www.nba.com/game/0022600267"
         },
         {
-          "StartAtTaipei": "2026-11-13T09:00:00+08:00",
-          "OpponentCode": "MIN",
-          "Opponent": "Minnesota Timberwolves",
-          "SourceUrl": "https://www.nba.com/game/0022600229"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T08:30:00+08:00",
-          "OpponentCode": "CLE",
-          "Opponent": "Cleveland Cavaliers",
-          "SourceUrl": "https://www.nba.com/game/0022600232"
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "LAC",
+          "Opponent": "LA Clippers",
+          "SourceUrl": "https://www.nba.com/game/0022600276"
         }
       ]
     },
@@ -356,70 +386,71 @@
       "TeamCode": "DEN",
       "Team": "Denver Nuggets",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T09:30:00+08:00",
+          "StartAtTaipei": "2026-11-17T10:00:00+08:00",
+          "OpponentCode": "PHX",
+          "Opponent": "Phoenix Suns",
+          "SourceUrl": "https://www.nba.com/game/0022600252"
+        },
+        {
+          "StartAtTaipei": "2026-11-19T10:30:00+08:00",
+          "OpponentCode": "BOS",
+          "Opponent": "Boston Celtics",
+          "SourceUrl": "https://www.nba.com/game/0022600266"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T11:00:00+08:00",
           "OpponentCode": "HOU",
           "Opponent": "Houston Rockets",
-          "SourceUrl": "https://www.nba.com/game/0022600208"
-        },
-        {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "MEM",
-          "Opponent": "Memphis Grizzlies",
-          "SourceUrl": "https://www.nba.com/game/0022600221"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T08:00:00+08:00",
-          "OpponentCode": "NOP",
-          "Opponent": "New Orleans Pelicans",
-          "SourceUrl": "https://www.nba.com/game/0022600231"
+          "SourceUrl": "https://www.nba.com/game/0022600050"
         }
       ]
     },
     {
       "TeamCode": "DET",
       "Team": "Detroit Pistons",
-      "TotalGames": 4,
-      "RemainingGames": 0,
+      "TotalGames": 3,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-13",
-        "2026-11-15"
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T07:00:00+08:00",
-          "OpponentCode": "LAL",
-          "Opponent": "Los Angeles Lakers",
-          "SourceUrl": "https://www.nba.com/game/0022600197"
+          "StartAtTaipei": "2026-11-18T09:00:00+08:00",
+          "OpponentCode": "SAS",
+          "Opponent": "San Antonio Spurs",
+          "SourceUrl": "https://www.nba.com/game/0022600255"
         },
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "WAS",
-          "Opponent": "Washington Wizards",
-          "SourceUrl": "https://www.nba.com/game/0022600205"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "NOP",
+          "Opponent": "New Orleans Pelicans",
+          "SourceUrl": "https://www.nba.com/game/0022600264"
         },
         {
-          "StartAtTaipei": "2026-11-13T08:00:00+08:00",
-          "OpponentCode": "WAS",
-          "Opponent": "Washington Wizards",
-          "SourceUrl": "https://www.nba.com/game/0022600228"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "MIA",
-          "Opponent": "Miami Heat",
-          "SourceUrl": "https://www.nba.com/game/0022600233"
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "TOR",
+          "Opponent": "Toronto Raptors",
+          "SourceUrl": "https://www.nba.com/game/0022600046"
         }
       ]
     },
@@ -427,63 +458,79 @@
       "TeamCode": "GSW",
       "Team": "Golden State Warriors",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-20"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-20"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T11:00:00+08:00",
+          "StartAtTaipei": "2026-11-17T09:00:00+08:00",
           "OpponentCode": "NOP",
           "Opponent": "New Orleans Pelicans",
-          "SourceUrl": "https://www.nba.com/game/0022600210"
+          "SourceUrl": "https://www.nba.com/game/0022600251"
         },
         {
-          "StartAtTaipei": "2026-11-12T10:30:00+08:00",
-          "OpponentCode": "HOU",
-          "Opponent": "Houston Rockets",
-          "SourceUrl": "https://www.nba.com/game/0022600225"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "DAL",
+          "Opponent": "Dallas Mavericks",
+          "SourceUrl": "https://www.nba.com/game/0022600267"
         },
         {
-          "StartAtTaipei": "2026-11-14T10:30:00+08:00",
-          "OpponentCode": "SAS",
-          "Opponent": "San Antonio Spurs",
-          "SourceUrl": "https://www.nba.com/game/0022600040"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "MEM",
+          "Opponent": "Memphis Grizzlies",
+          "SourceUrl": "https://www.nba.com/game/0022600270"
         }
       ]
     },
     {
       "TeamCode": "HOU",
       "Team": "Houston Rockets",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T09:30:00+08:00",
+          "StartAtTaipei": "2026-11-16T08:00:00+08:00",
+          "OpponentCode": "WAS",
+          "Opponent": "Washington Wizards",
+          "SourceUrl": "https://www.nba.com/game/0022600242"
+        },
+        {
+          "StartAtTaipei": "2026-11-17T08:30:00+08:00",
+          "OpponentCode": "MIA",
+          "Opponent": "Miami Heat",
+          "SourceUrl": "https://www.nba.com/game/0022600249"
+        },
+        {
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "IND",
+          "Opponent": "Indiana Pacers",
+          "SourceUrl": "https://www.nba.com/game/0022600259"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T11:00:00+08:00",
           "OpponentCode": "DEN",
           "Opponent": "Denver Nuggets",
-          "SourceUrl": "https://www.nba.com/game/0022600208"
-        },
-        {
-          "StartAtTaipei": "2026-11-12T10:30:00+08:00",
-          "OpponentCode": "GSW",
-          "Opponent": "Golden State Warriors",
-          "SourceUrl": "https://www.nba.com/game/0022600225"
-        },
-        {
-          "StartAtTaipei": "2026-11-14T09:30:00+08:00",
-          "OpponentCode": "UTA",
-          "Opponent": "Utah Jazz",
-          "SourceUrl": "https://www.nba.com/game/0022600039"
+          "SourceUrl": "https://www.nba.com/game/0022600050"
         }
       ]
     },
@@ -491,95 +538,120 @@
       "TeamCode": "IND",
       "Team": "Indiana Pacers",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 2,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T09:00:00+08:00",
-          "OpponentCode": "DAL",
-          "Opponent": "Dallas Mavericks",
-          "SourceUrl": "https://www.nba.com/game/0022600207"
+          "StartAtTaipei": "2026-11-16T02:00:00+08:00",
+          "OpponentCode": "PHI",
+          "Opponent": "Philadelphia 76ers",
+          "SourceUrl": "https://www.nba.com/game/0022600236"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "WAS",
-          "Opponent": "Washington Wizards",
-          "SourceUrl": "https://www.nba.com/game/0022600217"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "HOU",
+          "Opponent": "Houston Rockets",
+          "SourceUrl": "https://www.nba.com/game/0022600259"
         },
         {
-          "StartAtTaipei": "2026-11-14T08:00:00+08:00",
-          "OpponentCode": "NYK",
-          "Opponent": "New York Knicks",
-          "SourceUrl": "https://www.nba.com/game/0022600034"
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "CLE",
+          "Opponent": "Cleveland Cavaliers",
+          "SourceUrl": "https://www.nba.com/game/0022600045"
         }
       ]
     },
     {
       "TeamCode": "LAC",
       "Team": "LA Clippers",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T10:00:00+08:00",
-          "OpponentCode": "NOP",
-          "Opponent": "New Orleans Pelicans",
-          "SourceUrl": "https://www.nba.com/game/0022600201"
+          "StartAtTaipei": "2026-11-16T05:30:00+08:00",
+          "OpponentCode": "CHA",
+          "Opponent": "Charlotte Hornets",
+          "SourceUrl": "https://www.nba.com/game/0022600238"
         },
         {
-          "StartAtTaipei": "2026-11-11T10:00:00+08:00",
-          "OpponentCode": "PHX",
-          "Opponent": "Phoenix Suns",
-          "SourceUrl": "https://www.nba.com/game/0022600213"
+          "StartAtTaipei": "2026-11-18T11:30:00+08:00",
+          "OpponentCode": "UTA",
+          "Opponent": "Utah Jazz",
+          "SourceUrl": "https://www.nba.com/game/0022600257"
         },
         {
-          "StartAtTaipei": "2026-11-14T11:30:00+08:00",
-          "OpponentCode": "OKC",
-          "Opponent": "Oklahoma City Thunder",
-          "SourceUrl": "https://www.nba.com/game/0022600042"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "SAS",
+          "Opponent": "San Antonio Spurs",
+          "SourceUrl": "https://www.nba.com/game/0022600273"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "DAL",
+          "Opponent": "Dallas Mavericks",
+          "SourceUrl": "https://www.nba.com/game/0022600276"
         }
       ]
     },
     {
       "TeamCode": "LAL",
       "Team": "Los Angeles Lakers",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-12"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T07:00:00+08:00",
-          "OpponentCode": "DET",
-          "Opponent": "Detroit Pistons",
-          "SourceUrl": "https://www.nba.com/game/0022600197"
+          "StartAtTaipei": "2026-11-16T05:00:00+08:00",
+          "OpponentCode": "PHX",
+          "Opponent": "Phoenix Suns",
+          "SourceUrl": "https://www.nba.com/game/0022600237"
         },
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "ATL",
-          "Opponent": "Atlanta Hawks",
-          "SourceUrl": "https://www.nba.com/game/0022600203"
+          "StartAtTaipei": "2026-11-18T12:00:00+08:00",
+          "OpponentCode": "CHA",
+          "Opponent": "Charlotte Hornets",
+          "SourceUrl": "https://www.nba.com/game/0022600256"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "MIL",
-          "Opponent": "Milwaukee Bucks",
-          "SourceUrl": "https://www.nba.com/game/0022600222"
+          "StartAtTaipei": "2026-11-19T11:00:00+08:00",
+          "OpponentCode": "UTA",
+          "Opponent": "Utah Jazz",
+          "SourceUrl": "https://www.nba.com/game/0022600268"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T11:00:00+08:00",
+          "OpponentCode": "SAC",
+          "Opponent": "Sacramento Kings",
+          "SourceUrl": "https://www.nba.com/game/0022600051"
         }
       ]
     },
@@ -587,77 +659,71 @@
       "TeamCode": "MEM",
       "Team": "Memphis Grizzlies",
       "TotalGames": 4,
-      "RemainingGames": 0,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:30:00+08:00",
-          "OpponentCode": "TOR",
-          "Opponent": "Toronto Raptors",
-          "SourceUrl": "https://www.nba.com/game/0022600206"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "WAS",
+          "Opponent": "Washington Wizards",
+          "SourceUrl": "https://www.nba.com/game/0022600247"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "DEN",
-          "Opponent": "Denver Nuggets",
-          "SourceUrl": "https://www.nba.com/game/0022600221"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "CLE",
+          "Opponent": "Cleveland Cavaliers",
+          "SourceUrl": "https://www.nba.com/game/0022600258"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "NOP",
-          "Opponent": "New Orleans Pelicans",
-          "SourceUrl": "https://www.nba.com/game/0022600038"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "GSW",
+          "Opponent": "Golden State Warriors",
+          "SourceUrl": "https://www.nba.com/game/0022600270"
         },
         {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "BKN",
-          "Opponent": "Brooklyn Nets",
-          "SourceUrl": "https://www.nba.com/game/0022600234"
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "MIN",
+          "Opponent": "Minnesota Timberwolves",
+          "SourceUrl": "https://www.nba.com/game/0022600277"
         }
       ]
     },
     {
       "TeamCode": "MIA",
       "Team": "Miami Heat",
-      "TotalGames": 4,
-      "RemainingGames": 0,
+      "TotalGames": 2,
+      "RemainingGames": 2,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T10:00:00+08:00",
-          "OpponentCode": "SAC",
-          "Opponent": "Sacramento Kings",
-          "SourceUrl": "https://www.nba.com/game/0022600202"
+          "StartAtTaipei": "2026-11-17T08:30:00+08:00",
+          "OpponentCode": "HOU",
+          "Opponent": "Houston Rockets",
+          "SourceUrl": "https://www.nba.com/game/0022600249"
         },
         {
-          "StartAtTaipei": "2026-11-11T10:00:00+08:00",
-          "OpponentCode": "UTA",
-          "Opponent": "Utah Jazz",
-          "SourceUrl": "https://www.nba.com/game/0022600214"
-        },
-        {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "CLE",
-          "Opponent": "Cleveland Cavaliers",
-          "SourceUrl": "https://www.nba.com/game/0022600036"
-        },
-        {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "DET",
-          "Opponent": "Detroit Pistons",
-          "SourceUrl": "https://www.nba.com/game/0022600233"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "MIL",
+          "Opponent": "Milwaukee Bucks",
+          "SourceUrl": "https://www.nba.com/game/0022600260"
         }
       ]
     },
@@ -665,148 +731,174 @@
       "TeamCode": "MIL",
       "Team": "Milwaukee Bucks",
       "TotalGames": 4,
-      "RemainingGames": 0,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T09:00:00+08:00",
-          "OpponentCode": "BOS",
-          "Opponent": "Boston Celtics",
-          "SourceUrl": "https://www.nba.com/game/0022600200"
+          "StartAtTaipei": "2026-11-16T09:00:00+08:00",
+          "OpponentCode": "ATL",
+          "Opponent": "Atlanta Hawks",
+          "SourceUrl": "https://www.nba.com/game/0022600243"
         },
         {
-          "StartAtTaipei": "2026-11-11T08:30:00+08:00",
-          "OpponentCode": "NYK",
-          "Opponent": "New York Knicks",
-          "SourceUrl": "https://www.nba.com/game/0022600211"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "MIA",
+          "Opponent": "Miami Heat",
+          "SourceUrl": "https://www.nba.com/game/0022600260"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "LAL",
-          "Opponent": "Los Angeles Lakers",
-          "SourceUrl": "https://www.nba.com/game/0022600222"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "POR",
+          "Opponent": "Portland Trail Blazers",
+          "SourceUrl": "https://www.nba.com/game/0022600271"
         },
         {
-          "StartAtTaipei": "2026-11-14T08:00:00+08:00",
-          "OpponentCode": "ORL",
-          "Opponent": "Orlando Magic",
-          "SourceUrl": "https://www.nba.com/game/0022600035"
+          "StartAtTaipei": "2026-11-22T02:00:00+08:00",
+          "OpponentCode": "PHI",
+          "Opponent": "Philadelphia 76ers",
+          "SourceUrl": "https://www.nba.com/game/0022600274"
         }
       ]
     },
     {
       "TeamCode": "MIN",
       "Team": "Minnesota Timberwolves",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-13",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T08:00:00+08:00",
-          "OpponentCode": "UTA",
-          "Opponent": "Utah Jazz",
-          "SourceUrl": "https://www.nba.com/game/0022600198"
+          "StartAtTaipei": "2026-11-17T09:00:00+08:00",
+          "OpponentCode": "POR",
+          "Opponent": "Portland Trail Blazers",
+          "SourceUrl": "https://www.nba.com/game/0022600250"
         },
         {
-          "StartAtTaipei": "2026-11-13T09:00:00+08:00",
-          "OpponentCode": "DAL",
-          "Opponent": "Dallas Mavericks",
-          "SourceUrl": "https://www.nba.com/game/0022600229"
+          "StartAtTaipei": "2026-11-18T09:00:00+08:00",
+          "OpponentCode": "POR",
+          "Opponent": "Portland Trail Blazers",
+          "SourceUrl": "https://www.nba.com/game/0022600254"
         },
         {
-          "StartAtTaipei": "2026-11-15T09:00:00+08:00",
-          "OpponentCode": "CHI",
-          "Opponent": "Chicago Bulls",
-          "SourceUrl": "https://www.nba.com/game/0022600235"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "NYK",
+          "Opponent": "New York Knicks",
+          "SourceUrl": "https://www.nba.com/game/0022600272"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "MEM",
+          "Opponent": "Memphis Grizzlies",
+          "SourceUrl": "https://www.nba.com/game/0022600277"
         }
       ]
     },
     {
       "TeamCode": "NOP",
       "Team": "New Orleans Pelicans",
-      "TotalGames": 5,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T10:00:00+08:00",
-          "OpponentCode": "LAC",
-          "Opponent": "LA Clippers",
-          "SourceUrl": "https://www.nba.com/game/0022600201"
-        },
-        {
-          "StartAtTaipei": "2026-11-10T11:00:00+08:00",
+          "StartAtTaipei": "2026-11-17T09:00:00+08:00",
           "OpponentCode": "GSW",
           "Opponent": "Golden State Warriors",
-          "SourceUrl": "https://www.nba.com/game/0022600210"
+          "SourceUrl": "https://www.nba.com/game/0022600251"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "BKN",
-          "Opponent": "Brooklyn Nets",
-          "SourceUrl": "https://www.nba.com/game/0022600223"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "DET",
+          "Opponent": "Detroit Pistons",
+          "SourceUrl": "https://www.nba.com/game/0022600264"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:00:00+08:00",
-          "OpponentCode": "MEM",
-          "Opponent": "Memphis Grizzlies",
-          "SourceUrl": "https://www.nba.com/game/0022600038"
+          "StartAtTaipei": "2026-11-21T09:00:00+08:00",
+          "OpponentCode": "OKC",
+          "Opponent": "Oklahoma City Thunder",
+          "SourceUrl": "https://www.nba.com/game/0022600048"
         },
         {
-          "StartAtTaipei": "2026-11-15T08:00:00+08:00",
-          "OpponentCode": "DEN",
-          "Opponent": "Denver Nuggets",
-          "SourceUrl": "https://www.nba.com/game/0022600231"
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "SAS",
+          "Opponent": "San Antonio Spurs",
+          "SourceUrl": "https://www.nba.com/game/0022600278"
         }
       ]
     },
     {
       "TeamCode": "NYK",
       "Team": "New York Knicks",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-11T08:30:00+08:00",
-          "OpponentCode": "MIL",
-          "Opponent": "Milwaukee Bucks",
-          "SourceUrl": "https://www.nba.com/game/0022600211"
+          "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+          "OpponentCode": "TOR",
+          "Opponent": "Toronto Raptors",
+          "SourceUrl": "https://www.nba.com/game/0022600241"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "CLE",
-          "Opponent": "Cleveland Cavaliers",
-          "SourceUrl": "https://www.nba.com/game/0022600218"
+          "StartAtTaipei": "2026-11-18T08:30:00+08:00",
+          "OpponentCode": "TOR",
+          "Opponent": "Toronto Raptors",
+          "SourceUrl": "https://www.nba.com/game/0022600253"
         },
         {
-          "StartAtTaipei": "2026-11-14T08:00:00+08:00",
-          "OpponentCode": "IND",
-          "Opponent": "Indiana Pacers",
-          "SourceUrl": "https://www.nba.com/game/0022600034"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "MIN",
+          "Opponent": "Minnesota Timberwolves",
+          "SourceUrl": "https://www.nba.com/game/0022600272"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T08:30:00+08:00",
+          "OpponentCode": "POR",
+          "Opponent": "Portland Trail Blazers",
+          "SourceUrl": "https://www.nba.com/game/0022600275"
         }
       ]
     },
@@ -814,31 +906,35 @@
       "TeamCode": "OKC",
       "Team": "Oklahoma City Thunder",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-11T12:00:00+08:00",
-          "OpponentCode": "POR",
-          "Opponent": "Portland Trail Blazers",
-          "SourceUrl": "https://www.nba.com/game/0022600216"
+          "StartAtTaipei": "2026-11-16T10:00:00+08:00",
+          "OpponentCode": "SAC",
+          "Opponent": "Sacramento Kings",
+          "SourceUrl": "https://www.nba.com/game/0022600244"
         },
         {
-          "StartAtTaipei": "2026-11-12T11:00:00+08:00",
-          "OpponentCode": "POR",
-          "Opponent": "Portland Trail Blazers",
-          "SourceUrl": "https://www.nba.com/game/0022600226"
+          "StartAtTaipei": "2026-11-19T09:00:00+08:00",
+          "OpponentCode": "ATL",
+          "Opponent": "Atlanta Hawks",
+          "SourceUrl": "https://www.nba.com/game/0022600265"
         },
         {
-          "StartAtTaipei": "2026-11-14T11:30:00+08:00",
-          "OpponentCode": "LAC",
-          "Opponent": "LA Clippers",
-          "SourceUrl": "https://www.nba.com/game/0022600042"
+          "StartAtTaipei": "2026-11-21T09:00:00+08:00",
+          "OpponentCode": "NOP",
+          "Opponent": "New Orleans Pelicans",
+          "SourceUrl": "https://www.nba.com/game/0022600048"
         }
       ]
     },
@@ -846,223 +942,295 @@
       "TeamCode": "ORL",
       "Team": "Orlando Magic",
       "TotalGames": 3,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-11T11:00:00+08:00",
-          "OpponentCode": "SAC",
-          "Opponent": "Sacramento Kings",
-          "SourceUrl": "https://www.nba.com/game/0022600215"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "BOS",
+          "Opponent": "Boston Celtics",
+          "SourceUrl": "https://www.nba.com/game/0022600245"
         },
         {
-          "StartAtTaipei": "2026-11-12T10:00:00+08:00",
-          "OpponentCode": "UTA",
-          "Opponent": "Utah Jazz",
-          "SourceUrl": "https://www.nba.com/game/0022600224"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "PHI",
+          "Opponent": "Philadelphia 76ers",
+          "SourceUrl": "https://www.nba.com/game/0022600261"
         },
         {
-          "StartAtTaipei": "2026-11-14T08:00:00+08:00",
-          "OpponentCode": "MIL",
-          "Opponent": "Milwaukee Bucks",
-          "SourceUrl": "https://www.nba.com/game/0022600035"
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "BKN",
+          "Opponent": "Brooklyn Nets",
+          "SourceUrl": "https://www.nba.com/game/0022600044"
         }
       ]
     },
     {
       "TeamCode": "PHI",
       "Team": "Philadelphia 76ers",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-13"
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T04:30:00+08:00",
-          "OpponentCode": "CHI",
-          "Opponent": "Chicago Bulls",
-          "SourceUrl": "https://www.nba.com/game/0022600196"
+          "StartAtTaipei": "2026-11-16T02:00:00+08:00",
+          "OpponentCode": "IND",
+          "Opponent": "Indiana Pacers",
+          "SourceUrl": "https://www.nba.com/game/0022600236"
         },
         {
-          "StartAtTaipei": "2026-11-11T09:00:00+08:00",
-          "OpponentCode": "BOS",
-          "Opponent": "Boston Celtics",
-          "SourceUrl": "https://www.nba.com/game/0022600212"
+          "StartAtTaipei": "2026-11-17T08:30:00+08:00",
+          "OpponentCode": "BKN",
+          "Opponent": "Brooklyn Nets",
+          "SourceUrl": "https://www.nba.com/game/0022600248"
         },
         {
-          "StartAtTaipei": "2026-11-13T08:00:00+08:00",
-          "OpponentCode": "TOR",
-          "Opponent": "Toronto Raptors",
-          "SourceUrl": "https://www.nba.com/game/0022600227"
+          "StartAtTaipei": "2026-11-19T08:00:00+08:00",
+          "OpponentCode": "ORL",
+          "Opponent": "Orlando Magic",
+          "SourceUrl": "https://www.nba.com/game/0022600261"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T02:00:00+08:00",
+          "OpponentCode": "MIL",
+          "Opponent": "Milwaukee Bucks",
+          "SourceUrl": "https://www.nba.com/game/0022600274"
         }
       ]
     },
     {
       "TeamCode": "PHX",
       "Team": "Phoenix Suns",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-13"
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T10:00:00+08:00",
-          "OpponentCode": "SAS",
-          "Opponent": "San Antonio Spurs",
-          "SourceUrl": "https://www.nba.com/game/0022600209"
+          "StartAtTaipei": "2026-11-16T05:00:00+08:00",
+          "OpponentCode": "LAL",
+          "Opponent": "Los Angeles Lakers",
+          "SourceUrl": "https://www.nba.com/game/0022600237"
         },
         {
-          "StartAtTaipei": "2026-11-11T10:00:00+08:00",
-          "OpponentCode": "LAC",
-          "Opponent": "LA Clippers",
-          "SourceUrl": "https://www.nba.com/game/0022600213"
+          "StartAtTaipei": "2026-11-17T10:00:00+08:00",
+          "OpponentCode": "DEN",
+          "Opponent": "Denver Nuggets",
+          "SourceUrl": "https://www.nba.com/game/0022600252"
         },
         {
-          "StartAtTaipei": "2026-11-13T10:00:00+08:00",
-          "OpponentCode": "CHA",
-          "Opponent": "Charlotte Hornets",
-          "SourceUrl": "https://www.nba.com/game/0022600230"
+          "StartAtTaipei": "2026-11-19T11:00:00+08:00",
+          "OpponentCode": "SAC",
+          "Opponent": "Sacramento Kings",
+          "SourceUrl": "https://www.nba.com/game/0022600269"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T10:30:00+08:00",
+          "OpponentCode": "UTA",
+          "Opponent": "Utah Jazz",
+          "SourceUrl": "https://www.nba.com/game/0022600049"
         }
       ]
     },
     {
       "TeamCode": "POR",
       "Team": "Portland Trail Blazers",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-11T12:00:00+08:00",
-          "OpponentCode": "OKC",
-          "Opponent": "Oklahoma City Thunder",
-          "SourceUrl": "https://www.nba.com/game/0022600216"
+          "StartAtTaipei": "2026-11-17T09:00:00+08:00",
+          "OpponentCode": "MIN",
+          "Opponent": "Minnesota Timberwolves",
+          "SourceUrl": "https://www.nba.com/game/0022600250"
         },
         {
-          "StartAtTaipei": "2026-11-12T11:00:00+08:00",
-          "OpponentCode": "OKC",
-          "Opponent": "Oklahoma City Thunder",
-          "SourceUrl": "https://www.nba.com/game/0022600226"
+          "StartAtTaipei": "2026-11-18T09:00:00+08:00",
+          "OpponentCode": "MIN",
+          "Opponent": "Minnesota Timberwolves",
+          "SourceUrl": "https://www.nba.com/game/0022600254"
         },
         {
-          "StartAtTaipei": "2026-11-14T11:00:00+08:00",
-          "OpponentCode": "SAC",
-          "Opponent": "Sacramento Kings",
-          "SourceUrl": "https://www.nba.com/game/0022600041"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "MIL",
+          "Opponent": "Milwaukee Bucks",
+          "SourceUrl": "https://www.nba.com/game/0022600271"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T08:30:00+08:00",
+          "OpponentCode": "NYK",
+          "Opponent": "New York Knicks",
+          "SourceUrl": "https://www.nba.com/game/0022600275"
         }
       ]
     },
     {
       "TeamCode": "SAC",
       "Team": "Sacramento Kings",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-19",
+        "2026-11-21",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T10:00:00+08:00",
-          "OpponentCode": "MIA",
-          "Opponent": "Miami Heat",
-          "SourceUrl": "https://www.nba.com/game/0022600202"
+          "StartAtTaipei": "2026-11-16T10:00:00+08:00",
+          "OpponentCode": "OKC",
+          "Opponent": "Oklahoma City Thunder",
+          "SourceUrl": "https://www.nba.com/game/0022600244"
         },
         {
-          "StartAtTaipei": "2026-11-11T11:00:00+08:00",
-          "OpponentCode": "ORL",
-          "Opponent": "Orlando Magic",
-          "SourceUrl": "https://www.nba.com/game/0022600215"
+          "StartAtTaipei": "2026-11-19T11:00:00+08:00",
+          "OpponentCode": "PHX",
+          "Opponent": "Phoenix Suns",
+          "SourceUrl": "https://www.nba.com/game/0022600269"
         },
         {
-          "StartAtTaipei": "2026-11-14T11:00:00+08:00",
-          "OpponentCode": "POR",
-          "Opponent": "Portland Trail Blazers",
-          "SourceUrl": "https://www.nba.com/game/0022600041"
+          "StartAtTaipei": "2026-11-21T11:00:00+08:00",
+          "OpponentCode": "LAL",
+          "Opponent": "Los Angeles Lakers",
+          "SourceUrl": "https://www.nba.com/game/0022600051"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T11:00:00+08:00",
+          "OpponentCode": "BOS",
+          "Opponent": "Boston Celtics",
+          "SourceUrl": "https://www.nba.com/game/0022600279"
         }
       ]
     },
     {
       "TeamCode": "SAS",
       "Team": "San Antonio Spurs",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-20",
+        "2026-11-22"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T10:00:00+08:00",
-          "OpponentCode": "PHX",
-          "Opponent": "Phoenix Suns",
-          "SourceUrl": "https://www.nba.com/game/0022600209"
+          "StartAtTaipei": "2026-11-16T06:00:00+08:00",
+          "OpponentCode": "UTA",
+          "Opponent": "Utah Jazz",
+          "SourceUrl": "https://www.nba.com/game/0022600239"
         },
         {
-          "StartAtTaipei": "2026-11-12T09:00:00+08:00",
-          "OpponentCode": "CHI",
-          "Opponent": "Chicago Bulls",
-          "SourceUrl": "https://www.nba.com/game/0022600220"
+          "StartAtTaipei": "2026-11-18T09:00:00+08:00",
+          "OpponentCode": "DET",
+          "Opponent": "Detroit Pistons",
+          "SourceUrl": "https://www.nba.com/game/0022600255"
         },
         {
-          "StartAtTaipei": "2026-11-14T10:30:00+08:00",
-          "OpponentCode": "GSW",
-          "Opponent": "Golden State Warriors",
-          "SourceUrl": "https://www.nba.com/game/0022600040"
+          "StartAtTaipei": "2026-11-20T09:00:00+08:00",
+          "OpponentCode": "LAC",
+          "Opponent": "LA Clippers",
+          "SourceUrl": "https://www.nba.com/game/0022600273"
+        },
+        {
+          "StartAtTaipei": "2026-11-22T09:00:00+08:00",
+          "OpponentCode": "NOP",
+          "Opponent": "New Orleans Pelicans",
+          "SourceUrl": "https://www.nba.com/game/0022600278"
         }
       ]
     },
     {
       "TeamCode": "TOR",
       "Team": "Toronto Raptors",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-13"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:30:00+08:00",
-          "OpponentCode": "MEM",
-          "Opponent": "Memphis Grizzlies",
-          "SourceUrl": "https://www.nba.com/game/0022600206"
+          "StartAtTaipei": "2026-11-16T07:00:00+08:00",
+          "OpponentCode": "NYK",
+          "Opponent": "New York Knicks",
+          "SourceUrl": "https://www.nba.com/game/0022600241"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "BOS",
-          "Opponent": "Boston Celtics",
-          "SourceUrl": "https://www.nba.com/game/0022600219"
+          "StartAtTaipei": "2026-11-18T08:30:00+08:00",
+          "OpponentCode": "NYK",
+          "Opponent": "New York Knicks",
+          "SourceUrl": "https://www.nba.com/game/0022600253"
         },
         {
-          "StartAtTaipei": "2026-11-13T08:00:00+08:00",
-          "OpponentCode": "PHI",
-          "Opponent": "Philadelphia 76ers",
-          "SourceUrl": "https://www.nba.com/game/0022600227"
+          "StartAtTaipei": "2026-11-19T08:30:00+08:00",
+          "OpponentCode": "WAS",
+          "Opponent": "Washington Wizards",
+          "SourceUrl": "https://www.nba.com/game/0022600263"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T08:30:00+08:00",
+          "OpponentCode": "DET",
+          "Opponent": "Detroit Pistons",
+          "SourceUrl": "https://www.nba.com/game/0022600046"
         }
       ]
     },
@@ -1070,70 +1238,86 @@
       "TeamCode": "UTA",
       "Team": "Utah Jazz",
       "TotalGames": 4,
-      "RemainingGames": 0,
+      "RemainingGames": 3,
       "DatesTaipei": [
-        "2026-11-09",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-14"
+        "2026-11-16",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-09T08:00:00+08:00",
-          "OpponentCode": "MIN",
-          "Opponent": "Minnesota Timberwolves",
-          "SourceUrl": "https://www.nba.com/game/0022600198"
+          "StartAtTaipei": "2026-11-16T06:00:00+08:00",
+          "OpponentCode": "SAS",
+          "Opponent": "San Antonio Spurs",
+          "SourceUrl": "https://www.nba.com/game/0022600239"
         },
         {
-          "StartAtTaipei": "2026-11-11T10:00:00+08:00",
-          "OpponentCode": "MIA",
-          "Opponent": "Miami Heat",
-          "SourceUrl": "https://www.nba.com/game/0022600214"
+          "StartAtTaipei": "2026-11-18T11:30:00+08:00",
+          "OpponentCode": "LAC",
+          "Opponent": "LA Clippers",
+          "SourceUrl": "https://www.nba.com/game/0022600257"
         },
         {
-          "StartAtTaipei": "2026-11-12T10:00:00+08:00",
-          "OpponentCode": "ORL",
-          "Opponent": "Orlando Magic",
-          "SourceUrl": "https://www.nba.com/game/0022600224"
+          "StartAtTaipei": "2026-11-19T11:00:00+08:00",
+          "OpponentCode": "LAL",
+          "Opponent": "Los Angeles Lakers",
+          "SourceUrl": "https://www.nba.com/game/0022600268"
         },
         {
-          "StartAtTaipei": "2026-11-14T09:30:00+08:00",
-          "OpponentCode": "HOU",
-          "Opponent": "Houston Rockets",
-          "SourceUrl": "https://www.nba.com/game/0022600039"
+          "StartAtTaipei": "2026-11-21T10:30:00+08:00",
+          "OpponentCode": "PHX",
+          "Opponent": "Phoenix Suns",
+          "SourceUrl": "https://www.nba.com/game/0022600049"
         }
       ]
     },
     {
       "TeamCode": "WAS",
       "Team": "Washington Wizards",
-      "TotalGames": 3,
-      "RemainingGames": 0,
+      "TotalGames": 4,
+      "RemainingGames": 4,
       "DatesTaipei": [
-        "2026-11-10",
-        "2026-11-12",
-        "2026-11-13"
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
       ],
-      "RemainingDatesTaipei": [],
+      "RemainingDatesTaipei": [
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-19",
+        "2026-11-21"
+      ],
       "VerifiedGames": [
         {
-          "StartAtTaipei": "2026-11-10T08:00:00+08:00",
-          "OpponentCode": "DET",
-          "Opponent": "Detroit Pistons",
-          "SourceUrl": "https://www.nba.com/game/0022600205"
+          "StartAtTaipei": "2026-11-16T08:00:00+08:00",
+          "OpponentCode": "HOU",
+          "Opponent": "Houston Rockets",
+          "SourceUrl": "https://www.nba.com/game/0022600242"
         },
         {
-          "StartAtTaipei": "2026-11-12T08:00:00+08:00",
-          "OpponentCode": "IND",
-          "Opponent": "Indiana Pacers",
-          "SourceUrl": "https://www.nba.com/game/0022600217"
+          "StartAtTaipei": "2026-11-17T08:00:00+08:00",
+          "OpponentCode": "MEM",
+          "Opponent": "Memphis Grizzlies",
+          "SourceUrl": "https://www.nba.com/game/0022600247"
         },
         {
-          "StartAtTaipei": "2026-11-13T08:00:00+08:00",
-          "OpponentCode": "DET",
-          "Opponent": "Detroit Pistons",
-          "SourceUrl": "https://www.nba.com/game/0022600228"
+          "StartAtTaipei": "2026-11-19T08:30:00+08:00",
+          "OpponentCode": "TOR",
+          "Opponent": "Toronto Raptors",
+          "SourceUrl": "https://www.nba.com/game/0022600263"
+        },
+        {
+          "StartAtTaipei": "2026-11-21T09:00:00+08:00",
+          "OpponentCode": "CHI",
+          "Opponent": "Chicago Bulls",
+          "SourceUrl": "https://www.nba.com/game/0022600047"
         }
       ]
     }
