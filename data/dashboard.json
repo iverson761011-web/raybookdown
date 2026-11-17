@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-17T05:56:06.2815496+00:00",
+  "GeneratedAtUtc": "2026-11-17T07:07:22.0824549+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:56.8154950+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:56.8154950+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:10.9293469+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:10.9293469+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:57.1280222+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:57.1280222+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:11.2728395+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:11.2728395+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -268,8 +268,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:57.7727908+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:57.7727908+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:12.0231616+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:12.0231616+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -417,8 +417,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:58.1792433+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:58.1792433+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:12.5769891+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:12.5769891+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -685,8 +685,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:58.4886652+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:58.4886652+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:12.8888198+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:12.8888198+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -700,8 +700,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-17T05:55:59.2855319+00:00",
-      "RetrievedAtUtc": "2026-11-17T05:55:59.2855319+00:00",
+      "CheckedAtUtc": "2026-11-17T07:07:13.9230077+00:00",
+      "RetrievedAtUtc": "2026-11-17T07:07:13.9230077+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -821,17 +821,17 @@
             "WaiverDate": null
           },
           {
-            "Player": "De'Andre Hunter",
-            "Position": "SF,PF",
-            "TeamCode": "SAC",
-            "Availability": "waivers",
-            "PercentOwned": 23,
-            "WaiverDate": "2026-11-18"
-          },
-          {
             "Player": "Derrick Jones Jr.",
             "Position": "SF,PF",
             "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 24,
+            "WaiverDate": "2026-11-18"
+          },
+          {
+            "Player": "De'Andre Hunter",
+            "Position": "SF,PF",
+            "TeamCode": "SAC",
             "Availability": "waivers",
             "PercentOwned": 23,
             "WaiverDate": "2026-11-18"
@@ -861,17 +861,17 @@
             "WaiverDate": null
           },
           {
-            "Player": "Cason Wallace",
-            "Position": "PG,SG,SF",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 20,
-            "WaiverDate": null
-          },
-          {
             "Player": "Quentin Grimes",
             "Position": "SG,SF",
             "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 21,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Cason Wallace",
+            "Position": "PG,SG,SF",
+            "TeamCode": "OKC",
             "Availability": "free_agent",
             "PercentOwned": 20,
             "WaiverDate": null
@@ -941,6 +941,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Terrence Shannon Jr.",
+            "Position": "SG,SF",
+            "TeamCode": "MIN",
+            "Availability": "free_agent",
+            "PercentOwned": 11,
+            "WaiverDate": null
+          },
+          {
             "Player": "Ziaire Williams",
             "Position": "SG,SF",
             "TeamCode": "LAL",
@@ -960,14 +968,6 @@
             "Player": "Kristaps Porziņģis",
             "Position": "C",
             "TeamCode": "GSW",
-            "Availability": "free_agent",
-            "PercentOwned": 10,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Terrence Shannon Jr.",
-            "Position": "SG,SF",
-            "TeamCode": "MIN",
             "Availability": "free_agent",
             "PercentOwned": 10,
             "WaiverDate": null
@@ -1514,8 +1514,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-17T05:56:06.422Z",
-      "RetrievedAtUtc": "2026-11-17T05:56:06.422Z",
+      "CheckedAtUtc": "2026-11-17T07:07:22.269Z",
+      "RetrievedAtUtc": "2026-11-17T07:07:22.269Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
