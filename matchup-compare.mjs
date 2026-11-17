@@ -74,40 +74,56 @@ function categoryScore(rows){
  return score;
 }
 
-export function buildWeekComparison({dashboard,league,selectionKey,leagueFetchFailed=false,now=new Date()}={}){
+export function buildWeekComparison({dashboard,league,ownSelectionKey,selectionKey,leagueFetchFailed=false,now=new Date()}={}){
  const notes=[],addNote=note=>{if(!notes.includes(note))notes.push(note);};
- const ownSection=dashboard?.Sections?.Matchup,rules=dashboard?.Sections?.Rules,own=readable(ownSection)?ownSection.Data:null;
+ const dashboardSection=dashboard?.Sections?.Matchup,rules=dashboard?.Sections?.Rules;
+ const week=readable(rules)&&validWeek(rules.Data.CurrentWeek)?rules.Data.CurrentWeek:null;
+ const nowMs=now instanceof Date?+now:typeof now==='number'?now:Date.parse(now);
+ const currentRead=section=>readable(section)&&section.Data.Week===week&&Number.isFinite(Date.parse(section.RetrievedAtUtc))&&Number.isFinite(nowMs)&&nowMs-Date.parse(section.RetrievedAtUtc)<=MAX_SOURCE_AGE_MS&&Date.parse(section.RetrievedAtUtc)-nowMs<=10*60*1000;
+ const teamSection=(team,fallbackUser=false)=>{
+  if(team?.Team!==dashboard?.Team&&!(fallbackUser&&!team))return team?.Matchup??null;
+  if(currentRead(dashboardSection))return dashboardSection;
+  if(readable(dashboardSection)&&validWeek(dashboardSection.Data.Week)&&dashboardSection.Data.Week!==week)return dashboardSection;
+  if(currentRead(team?.Matchup))return team.Matchup;
+  return readable(dashboardSection)?dashboardSection:team?.Matchup??dashboardSection;
+ };
  const identityMatches=!league||['League','Platform','Season'].every(key=>league[key]===undefined||league[key]===dashboard?.[key]);
  const rawTeams=identityMatches&&Array.isArray(league?.Teams)?league.Teams.slice(0,32):[];
- const eligible=rawTeams.filter(team=>team&&team.IsUserTeam!==true&&text(team.Team)&&team.Team!==dashboard?.Team&&keyPattern.test(team.SelectionKey??''));
+ const eligible=rawTeams.filter(team=>team&&text(team.Team)&&keyPattern.test(team.SelectionKey??''));
  const counts=new Map(),nameCounts=new Map();for(const team of eligible){counts.set(team.SelectionKey,(counts.get(team.SelectionKey)??0)+1);nameCounts.set(team.Team,(nameCounts.get(team.Team)??0)+1);}
  const teams=eligible.filter(team=>counts.get(team.SelectionKey)===1&&nameCounts.get(team.Team)===1).sort((a,b)=>a.Team.localeCompare(b.Team,'zh-Hant')||a.SelectionKey.localeCompare(b.SelectionKey));
  if(teams.length!==eligible.length)addNote('部分球隊識別重複，暫不提供選擇。');
- const options=teams.map(team=>({key:team.SelectionKey,name:team.Team}));
- const selected=teams.find(team=>team.SelectionKey===selectionKey)??teams.find(team=>team.Team===own?.Opponent)??teams[0]??null;
- const otherSection=selected?.Matchup,other=readable(otherSection)?otherSection.Data:null;
- const week=readable(rules)&&validWeek(rules.Data.CurrentWeek)?rules.Data.CurrentWeek:null;
- const ownCurrent=week!==null&&validWeek(own?.Week)&&own.Week===week;
+ const ownOptions=teams.map(team=>({key:team.SelectionKey,name:team.Team}));
+ const userTeams=teams.filter(team=>team.IsUserTeam===true);
+ const ownTeam=teams.find(team=>team.SelectionKey===ownSelectionKey)??teams.find(team=>team.Team===dashboard?.Team)??(userTeams.length===1?userTeams[0]:null)??teams[0]??null;
+ const ownName=ownTeam?.Team??text(dashboard?.Team)??'左側球隊';
+ const isDashboardTeam=ownName===dashboard?.Team;
+ // Reuse the identified user's current read; another selected team must use its own section.
+ const ownSection=teamSection(ownTeam,isDashboardTeam),own=readable(ownSection)?ownSection.Data:null;
+ const otherTeams=teams.filter(team=>team.SelectionKey!==ownTeam?.SelectionKey&&team.Team!==ownName);
+ const options=otherTeams.map(team=>({key:team.SelectionKey,name:team.Team}));
+ const selected=otherTeams.find(team=>team.SelectionKey===selectionKey)??otherTeams.find(team=>team.Team===own?.Opponent)??otherTeams[0]??null;
+ const otherSection=selected?teamSection(selected):null,other=readable(otherSection)?otherSection.Data:null;
  const leagueCurrent=week!==null&&validWeek(league?.CurrentWeek)&&league.CurrentWeek===week;
+ const ownCurrent=week!==null&&validWeek(own?.Week)&&own.Week===week&&(isDashboardTeam||leagueCurrent);
  const otherCurrent=leagueCurrent&&validWeek(other?.Week)&&other.Week===week;
  const mismatched=week!==null&&[own?.Week,league?.CurrentWeek,other?.Week].some(value=>validWeek(value)&&value!==week);
  const ownCategories=categoryMap(ownCurrent?own.Categories:[],'own'),otherCategories=categoryMap(otherCurrent?other.Categories:[],'other');
  const canCompare=ownCurrent&&otherCurrent&&identityMatches&&!mismatched;
- const evidence=directionEvidence([...(ownCurrent?[own]:[]),...(leagueCurrent?rawTeams.filter(team=>readable(team?.Matchup)&&team.Matchup.Data.Week===week).map(team=>team.Matchup.Data):[])]);
+ const evidence=directionEvidence([...(ownCurrent?[own]:[]),...(otherCurrent?[other]:[]),...(leagueCurrent?rawTeams.filter(team=>readable(team?.Matchup)&&team.Matchup.Data.Week===week).map(team=>team.Matchup.Data):[])]);
  const keys=[...new Set([...ownCategories.rows.keys(),...otherCategories.rows.keys(),...[...evidence].filter(([,proof])=>proof.scored).map(([key])=>key)])];
  const rows=keys.map(key=>{const a=ownCategories.rows.get(key),b=otherCategories.rows.get(key),proof=evidence.get(key),result=categoryResult(a,b,proof,canCompare);return{label:a?.label??b?.label??proof?.label,ownValue:a?.value??null,otherValue:b?.value??null,displayOnly:proof?.flags.size>1?null:a?.displayOnly===true||b?.displayOnly===true?true:a?.displayOnly===false&&b?.displayOnly===false?false:null,result};});
  const comparisonScore=canCompare?categoryScore(rows):null;
  let status=ownCurrent&&otherCurrent&&identityMatches?'ready':'unavailable';
  if(mismatched){status='week_mismatch';addNote('來源週次不一致，未混用不同週的數據；請等待當週資料同步。');}
- if(!ownCurrent)addNote('RayBookDown 的當週數據尚未核實。');
+ if(!ownCurrent)addNote(ownName+' 的當週數據尚未核實。');
  if(!otherCurrent)addNote('所選球隊的同一週數據尚未核實，缺失數值顯示未知。');
  if(!identityMatches)addNote('球隊資料不屬於目前聯盟或賽季，未用於對照。');
  if(!options.length)addNote('目前沒有可選的其他聯盟球隊。');
  let partial=false;
  if(leagueFetchFailed){partial=true;addNote('本次聯盟資料讀取未完成，保留上次資料與原來源時間。');}
- if(league&&league.Status!=='ok'||selected&&selected.Status!=='ok'){partial=true;addNote('聯盟或所選球隊資料部分未取得，請核對來源狀態。');}
- const nowMs=now instanceof Date?+now:typeof now==='number'?now:Date.parse(now);
- for(const [label,section]of[['聯盟規則',rules],['RayBookDown',ownSection],['所選球隊',otherSection]]){
+ if(league&&league.Status!=='ok'||selected&&selected.Status!=='ok'||ownTeam&&ownTeam.Status!=='ok'){partial=true;addNote('聯盟或所選球隊資料部分未取得，請核對來源狀態。');}
+ for(const [label,section]of[['聯盟規則',rules],[ownName,ownSection],[selected?.Team??'右側球隊',otherSection]]){
   if(!section)continue;
   if(section.Status==='partial'){partial=true;addNote(label+'來源僅部分取得。');}
   const stamp=Date.parse(section.RetrievedAtUtc);
@@ -117,5 +133,5 @@ export function buildWeekComparison({dashboard,league,selectionKey,leagueFetchFa
  if(!rows.length||rows.some(row=>row.ownValue===null||row.otherValue===null)){partial=true;addNote('部分比項未能逐一配對或缺少數值，未將缺失資料視為 0。');}
  if(comparisonScore&&(!comparisonScore.Complete)){partial=true;addNote('部分比項的計分身分、方向、精度或數值未能核實；目前勝敗僅計已能判定的比項。');}
  if(status==='ready'&&partial)status='partial';
- return{options,selectedKey:selected?.SelectionKey??null,selectedName:selected?.Team??null,week,rows,comparisonScore,status,notes,ownSource:source(ownSection),otherSource:source(otherSection),ownOpponent:ownCurrent?text(own.Opponent):null,otherOpponent:otherCurrent?text(other.Opponent):null,ownScore:ownCurrent?own.OwnScore??null:null,otherScore:otherCurrent?other.OwnScore??null:null};
+ return{ownOptions,ownKey:ownTeam?.SelectionKey??null,ownName,options,selectedKey:selected?.SelectionKey??null,selectedName:selected?.Team??null,week,rows,comparisonScore,status,notes,ownSource:source(ownSection),otherSource:source(otherSection),ownOpponent:ownCurrent?text(own.Opponent):null,otherOpponent:otherCurrent?text(other.Opponent):null,ownScore:ownCurrent?own.OwnScore??null:null,otherScore:otherCurrent?other.OwnScore??null:null};
 }

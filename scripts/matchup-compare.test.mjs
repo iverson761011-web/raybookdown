@@ -57,3 +57,69 @@ test('a scored category omitted by both compared teams is still an unknown row w
 test('malformed numeric strings do not turn into zero or a ratio inference',()=>{for(const value of['','--','1/2','NaN','Infinity']){const r=buildWeekComparison(scoreFixture([scored('PTS',value,'9','win')],[scored('PTS','5','6','loss')]));assert.equal(r.rows[0].result,'unknown');}});
 test('week mismatch and unavailable same-week sources have no calculated score',()=>{const f=scoreFixture([scored('PTS','10','9','win')],[scored('PTS','5','6','loss')]);f.league.Teams[1].Matchup.Data.Week=3;assert.equal(buildWeekComparison(f).comparisonScore,null);f.league.Teams[1].Matchup={...section(null),Status:'error'};assert.equal(buildWeekComparison(f).comparisonScore,null);});
 test('retained and old values can be compared only with existing old-time warnings unchanged',()=>{const f=scoreFixture([scored('PTS','10','9','win')],[scored('PTS','5','6','loss')]);f.league.Teams[1].Matchup.RetrievedAtUtc='2026-11-10T00:00:00Z';const r=buildWeekComparison({...f,leagueFetchFailed:true});assert.equal(r.comparisonScore.Wins,1);assert.equal(r.status,'partial');assert.equal(r.otherSource.RetrievedAtUtc,'2026-11-10T00:00:00Z');assert.match(r.notes.join(' '),/保留上次資料/);});
+
+function pairFixture(){
+ const f=fixture();
+ const rows=(points,pointOpponent,turnovers,turnoverOpponent,doubles,doubleOpponent,percentage,percentageOpponent)=>[
+  scored('PTS',points,pointOpponent,points>pointOpponent?'win':points<pointOpponent?'loss':'tie'),
+  scored('TO',turnovers,turnoverOpponent,turnovers<turnoverOpponent?'win':turnovers>turnoverOpponent?'loss':'tie'),
+  scored('DD',doubles,doubleOpponent,doubles>doubleOpponent?'win':doubles<doubleOpponent?'loss':'tie'),
+  scored('FT%',percentage,percentageOpponent,Number(percentage)>Number(percentageOpponent)?'win':Number(percentage)<Number(percentageOpponent)?'loss':'tie'),
+  category('Field Goals','FGM/A','10/20',{OpponentValue:'12/25',DisplayOnly:true,Result:null})
+ ];
+ f.dashboard.Sections.Matchup.Data.Categories=rows(100,80,5,2,7,1,'.900','.800');
+ f.league.Teams[1].Matchup.Data={Week:4,Opponent:'Third Team',OwnScore:{Wins:1,Losses:2,Ties:1},Categories:rows(80,90,2,3,1,2,'.800','.800')};
+ f.league.Teams[2].Matchup.Data={Week:4,Opponent:'Other Team',OwnScore:{Wins:2,Losses:1,Ties:1},Categories:rows(90,80,3,2,2,1,'.800','.800')};
+ return f;
+}
+test('left selector lists every valid team while the right selector excludes only the chosen left team',()=>{
+ const f=pairFixture(),r=buildWeekComparison(f);assert.equal(r.ownOptions.length,3);assert.equal(r.ownKey,key('a'));assert.equal(r.ownName,'RayBookDown');
+ const selected=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.deepEqual(selected.options.map(o=>o.name),['RayBookDown','Third Team']);assert.equal(selected.ownKey,key('b'));
+});
+test('two non-user teams compare their own category values and preserve their own official context',()=>{
+ const f=pairFixture(),r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});
+ assert.equal(r.status,'ready');assert.equal(r.ownName,'Other Team');assert.equal(r.selectedName,'Third Team');assert.equal(r.rows[0].ownValue,80);assert.equal(r.rows[0].otherValue,90);assert.equal(r.rows[1].result,'win');
+ assert.deepEqual(r.comparisonScore,{Wins:1,Losses:2,Ties:1,Unknown:0,ScoredCategories:4,ExcludedCategories:1,Complete:true});assert.deepEqual(r.ownScore,{Wins:1,Losses:2,Ties:1});assert.equal(r.ownOpponent,'Third Team');assert.equal(r.otherOpponent,'Other Team');
+});
+test('swapping both selected teams reverses wins and losses while preserving ties and display exclusions',()=>{
+ const f=pairFixture(),a=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')}),b=buildWeekComparison({...f,ownSelectionKey:key('c'),selectionKey:key('b')});
+ assert.equal(a.comparisonScore.Wins,b.comparisonScore.Losses);assert.equal(a.comparisonScore.Losses,b.comparisonScore.Wins);assert.equal(a.comparisonScore.Ties,b.comparisonScore.Ties);assert.equal(b.comparisonScore.Wins,2);assert.equal(a.comparisonScore.ExcludedCategories,b.comparisonScore.ExcludedCategories);
+});
+test('left selection defaults the right side to that selected team actual opponent',()=>{const f=pairFixture();assert.equal(buildWeekComparison({...f,ownSelectionKey:key('b')}).selectedKey,key('c'));assert.equal(buildWeekComparison({...f,ownSelectionKey:key('c')}).selectedKey,key('b'));});
+test('same-team selection falls back to a distinct current opponent and never simulates a team against itself',()=>{const r=buildWeekComparison({...pairFixture(),ownSelectionKey:key('b'),selectionKey:key('b')});assert.equal(r.ownKey,key('b'));assert.equal(r.selectedKey,key('c'));assert.ok(r.options.every(o=>o.key!==r.ownKey));});
+test('RayBookDown can be chosen on the right when another team is on the left',()=>{const r=buildWeekComparison({...pairFixture(),ownSelectionKey:key('b'),selectionKey:key('a')});assert.equal(r.selectedName,'RayBookDown');assert.equal(r.rows[0].ownValue,80);assert.equal(r.rows[0].otherValue,100);assert.equal(r.comparisonScore.Complete,true);});
+test('left source times and values belong to the selected team and do not borrow RayBookDown data',()=>{
+ const f=pairFixture(),read='2026-11-14T00:30:00Z';f.league.Teams[1].Matchup.RetrievedAtUtc=read;f.league.Teams[1].Matchup.SourceUpdatedAtUtc='2026-11-14T00:29:00Z';
+ const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.ownSource.RetrievedAtUtc,read);assert.equal(r.ownSource.SourceUpdatedAtUtc,'2026-11-14T00:29:00Z');assert.notEqual(r.rows[0].ownValue,f.dashboard.Sections.Matchup.Data.Categories[0].OwnValue);
+});
+test('an unavailable left selected team keeps its identity and unknown values instead of borrowing the user matchup',()=>{
+ const f=pairFixture();f.league.Teams[1].Matchup={...section(null),Status:'error',RetrievedAtUtc:null};const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.ownName,'Other Team');assert.equal(r.status,'unavailable');assert.equal(r.comparisonScore,null);assert.ok(r.rows.every(row=>row.ownValue===null));assert.equal(r.rows[0].otherValue,90);assert.equal(r.ownScore,null);
+});
+test('a wrong-week left team does not expose its old values as the selected current week',()=>{const f=pairFixture();f.league.Teams[1].Matchup.Data.Week=3;const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.status,'week_mismatch');assert.equal(r.comparisonScore,null);assert.ok(r.rows.every(row=>row.ownValue===null));assert.equal(r.ownScore,null);});
+test('the user matchup wrong week does not block two other teams from the correct current week',()=>{const f=pairFixture();f.dashboard.Sections.Matchup.Data.Week=3;const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.status,'ready');assert.equal(r.comparisonScore.Complete,true);assert.equal(r.ownName,'Other Team');assert.equal(r.comparisonScore.Losses,2);});
+test('a wrong league week blocks both non-user sides even when their row weeks look current',()=>{const f=pairFixture();f.league.CurrentWeek=5;const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.status,'week_mismatch');assert.equal(r.comparisonScore,null);assert.ok(r.rows.every(row=>row.ownValue===null&&row.otherValue===null));});
+test('old selected-left sources preserve their original time and explicitly mark the comparison partial',()=>{const f=pairFixture();f.league.Teams[1].Matchup.RetrievedAtUtc='2026-11-10T00:00:00Z';const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.status,'partial');assert.equal(r.ownSource.RetrievedAtUtc,'2026-11-10T00:00:00Z');assert.match(r.notes.join(' '),/Other Team來源時間較舊/);assert.equal(r.rows[0].ownValue,80);});
+test('refresh input keeps both explicit selected keys when the catalog order and current values change',()=>{const f=pairFixture(),a=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});f.league.Teams.reverse();f.league.Teams.find(t=>t.SelectionKey===key('b')).Matchup.Data.Categories[0].OwnValue=81;const b=buildWeekComparison({...f,ownSelectionKey:a.ownKey,selectionKey:a.selectedKey});assert.equal(b.ownKey,a.ownKey);assert.equal(b.selectedKey,a.selectedKey);assert.equal(b.rows[0].ownValue,81);});
+test('a removed left team falls back to an available default and never preserves its stale source',()=>{const f=pairFixture();f.league.Teams=f.league.Teams.filter(t=>t.SelectionKey!==key('b'));const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.ownKey,key('a'));assert.equal(r.ownName,'RayBookDown');assert.equal(r.rows[0].ownValue,100);assert.ok(r.ownOptions.every(o=>o.key!==key('b')));});
+test('duplicated selected-left identifiers are excluded from both selection catalogs',()=>{const f=pairFixture();f.league.Teams.push({...f.league.Teams[1]});const r=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')});assert.equal(r.ownKey,key('a'));assert.ok(r.ownOptions.every(o=>o.key!==key('b')));assert.ok(r.options.every(o=>o.key!==key('b')));});
+test('one available team provides no self opponent or simulated score',()=>{const f=pairFixture();f.league.Teams=[f.league.Teams[1]];const r=buildWeekComparison({...f,ownSelectionKey:key('b')});assert.equal(r.ownOptions.length,1);assert.deepEqual(r.options,[]);assert.equal(r.selectedKey,null);assert.equal(r.comparisonScore,null);});
+test('the full fourteen-team catalog offers fourteen left options and thirteen distinct right options',()=>{
+ const f=pairFixture(),letters=['a','b','c','d','e','f','0','1','2','3','4','5','6','7'];f.league.Teams=letters.map((letter,index)=>index<3?f.league.Teams[index]:{...structuredClone(f.league.Teams[2]),SelectionKey:key(letter),Team:'Team '+index,IsUserTeam:false});
+ const r=buildWeekComparison({...f,ownSelectionKey:key('e')});assert.equal(r.ownOptions.length,14);assert.equal(r.options.length,13);assert.ok(r.options.every(o=>o.key!==key('e')));
+});
+test('the user side prefers a current dashboard read and falls back only to that exact team current league read',()=>{
+ const f=pairFixture();f.league.Teams[0].Matchup=structuredClone(f.league.Teams[0].Matchup);f.league.Teams[0].Matchup.RetrievedAtUtc='2026-11-14T00:30:00Z';f.league.Teams[0].Matchup.Data.Categories[0].OwnValue=101;
+ assert.equal(buildWeekComparison(f).rows[0].ownValue,100);f.dashboard.Sections.Matchup.RetrievedAtUtc='2026-11-10T00:00:00Z';const r=buildWeekComparison(f);assert.equal(r.ownName,'RayBookDown');assert.equal(r.rows[0].ownValue,101);assert.equal(r.ownSource.RetrievedAtUtc,'2026-11-14T00:30:00Z');
+});
+test('swapping the user and another team uses identical canonical sources even when the league user snapshot differs',()=>{
+ const f=pairFixture();f.league.Teams[0].Matchup=structuredClone(f.league.Teams[0].Matchup);f.league.Teams[0].Matchup.RetrievedAtUtc='2026-11-14T00:30:00Z';f.league.Teams[0].Matchup.Data.Categories[0].OwnValue=101;
+ const a=buildWeekComparison({...f,ownSelectionKey:key('a'),selectionKey:key('b')}),b=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('a')});assert.equal(a.rows[0].ownValue,100);assert.equal(b.rows[0].otherValue,100);assert.deepEqual(a.ownSource,b.otherSource);assert.equal(a.comparisonScore.Wins,b.comparisonScore.Losses);assert.equal(a.comparisonScore.Losses,b.comparisonScore.Wins);assert.equal(a.comparisonScore.Ties,b.comparisonScore.Ties);assert.equal(a.comparisonScore.Unknown,b.comparisonScore.Unknown);
+});
+test('both selected sides contribute identical precision evidence after swapping',()=>{
+ const f=pairFixture();f.league.Teams[0].Matchup=structuredClone(f.league.Teams[0].Matchup);f.dashboard.Sections.Matchup.Data.Categories=[scored('Ratio','.500','.500','win')];f.league.Teams[0].Matchup.Data.Categories=[];f.league.Teams[1].Matchup.Data.Categories=[scored('Ratio','.500','.400','win')];f.league.Teams[2].Matchup.Data.Categories=[];
+ const a=buildWeekComparison({...f,ownSelectionKey:key('a'),selectionKey:key('b')}),b=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('a')});assert.equal(a.rows[0].result,'unknown');assert.equal(b.rows[0].result,'unknown');assert.equal(a.comparisonScore.Unknown,b.comparisonScore.Unknown);assert.equal(a.comparisonScore.Unknown,1);
+});
+test('a known wrong-week user read is withheld on either side and does not block two other selected teams',()=>{
+ const f=pairFixture();f.league.Teams[0].Matchup=structuredClone(f.league.Teams[0].Matchup);f.dashboard.Sections.Matchup.Data.Week=3;
+ const a=buildWeekComparison({...f,ownSelectionKey:key('a'),selectionKey:key('b')}),b=buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('a')});assert.equal(a.comparisonScore,null);assert.equal(b.comparisonScore,null);assert.equal(a.status,'week_mismatch');assert.equal(b.status,'week_mismatch');assert.equal(buildWeekComparison({...f,ownSelectionKey:key('b'),selectionKey:key('c')}).status,'ready');
+});
