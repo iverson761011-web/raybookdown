@@ -5,7 +5,7 @@ import{normalizeHistory,normalizeRecommendations,normalizeWeeklySchedule,normali
 const DEFAULT_FEED=location.hostname==='iverson761011-web.github.io'?'https://raw.githubusercontent.com/iverson761011-web/raybookdown/main/data/dashboard.json':'data/dashboard.json';
 const STORAGE_KEY='raybookdownDashboardFeedV2',MAX_BYTES=1048576;
 const $=id=>document.getElementById(id),txt=(id,value)=>{$(id).textContent=display(value);};
-let dashboard=null,syncInProgress=false,lastFileCheck=null,activeTab='roster',comparisonChoice=null;
+let dashboard=null,syncInProgress=false,lastFileCheck=null,activeTab='roster',comparisonChoice=null,comparisonOwnChoice=null;
 const features={history:null,recommendations:null,weekly:null,league:null},featureErrors={history:null,recommendations:null,weekly:null,league:null};
 const data=name=>sectionData(dashboard,name);
 function cell(value,cls){const n=document.createElement('td');n.textContent=display(value);if(cls)n.className=cls;return n;}
@@ -17,22 +17,24 @@ function gamesNote(){const s=features.weekly;return s?'球隊剩餘場次：'+we
 function drawRoster(){meta('Roster','rosterMeta');const r=data('Roster');txt('rosterGamesNote',gamesNote());fill('rosterRows',(r?.Players??[]).map(p=>[cell(p.Player),cell(p.TeamCode),cell(p.Position),cell(p.Status,p.Status?'warn':'muted'),cell(p.EligiblePositions?.join(', '),'eligibility'),cell(weeklyTeam(features.weekly,p.TeamCode)?.RemainingGames)]),6,r?'來源回傳空名單':'資料未知');}
 function drawMatchup(){meta('Matchup','matchupMeta');const m=data('Matchup');txt('matchupTitle',m?'第 '+display(m.Week)+' 週：RayBookDown vs '+display(m.Opponent):'當週對手與比分未知');txt('opponentHeading',m?.Opponent??'對手');txt('matchupDetail',m?'來源回傳剩餘出賽數：我方 '+display(m.OwnGamesRemaining)+'、對手 '+display(m.OpponentGamesRemaining)+'。週起訖日期：'+display(m.WeekStartDate)+' ～ '+display(m.WeekEndDate)+'。':'未取得當週比分。');fill('scoreRows',(m?.Categories??[]).map(c=>[cell(c.Label??c.Name),cell(c.OwnValue),cell(c.OpponentValue),cell(c.DisplayOnly?'展示用，無勝負':({win:'我方領先',loss:'對手領先',tie:'平手'}[c.Result]??'未知'),c.DisplayOnly?'muted':c.Result==='win'?'win':c.Result==='loss'?'lose':'muted')]),4);drawWeekComparison();}
 function drawWeekComparison(){
- const select=$('comparisonTeamSelect'),view=buildWeekComparison({dashboard,league:features.league,selectionKey:comparisonChoice,leagueFetchFailed:!!featureErrors.league});
+ const select=$('comparisonTeamSelect'),ownSelect=$('comparisonOwnSelect'),view=buildWeekComparison({dashboard,league:features.league,ownSelectionKey:comparisonOwnChoice,selectionKey:comparisonChoice,leagueFetchFailed:!!featureErrors.league});
+ if(comparisonOwnChoice&&!view.ownOptions.some(team=>team.key===comparisonOwnChoice))comparisonOwnChoice=null;
  if(comparisonChoice&&!view.options.some(team=>team.key===comparisonChoice))comparisonChoice=null;
+ ownSelect.replaceChildren();for(const team of view.ownOptions){const o=document.createElement('option');o.value=team.key;o.textContent=team.name;ownSelect.append(o);}ownSelect.value=view.ownKey??'';ownSelect.disabled=!view.ownOptions.length;
  select.replaceChildren();for(const team of view.options){const o=document.createElement('option');o.value=team.key;o.textContent=team.name;select.append(o);}select.value=view.selectedKey??'';select.disabled=!view.options.length;
- txt('comparisonTeamHeading',view.selectedName??'對照隊伍');txt('comparisonOwnHeading',dashboard?.Team??'RayBookDown');
+ txt('comparisonTeamHeading',view.selectedName??'對照隊伍');txt('comparisonOwnHeading',view.ownName??'隊伍 A');
  const simulated=view.comparisonScore,known=simulated?simulated.Wins+simulated.Losses+simulated.Ties:0;
- txt('comparisonScoreTitle',(dashboard?.Team??'RayBookDown')+' vs '+(view.selectedName??'對照隊伍'));
+ txt('comparisonScoreTitle',(view.ownName??'隊伍 A')+' vs '+(view.selectedName??'隊伍 B'));
  txt('comparisonScoreValue',simulated&&known>0?(simulated.Complete?'':'已確認 ')+simulated.Wins+' : '+simulated.Losses:'未知');
  txt('comparisonScoreDetail',simulated?'平手 '+simulated.Ties+' 項 · 已確認 '+known+' 項 · 未確認 '+simulated.Unknown+' 項 · 展示用 '+simulated.ExcludedCategories+' 項不計分。'+(simulated.Complete?'':'部分比項尚未確認，以上不是完整總比分。'):'需要可核實的同週數據才能試算比分。');
  const states={ready:'已取得同一週的兩隊累計數據。',partial:'部分資料待確認，請查看未知項目與各自來源時間。',week_mismatch:'週次不一致，暫不並排不同週的數值。',unavailable:'尚未取得可對照的本週資料。'};
  txt('comparisonState',[states[view.status]??states.unavailable,...view.notes].join(' '));
  txt('comparisonScope','第 '+display(view.week)+' 週累計數據對照。兩隊的出賽場次與正式對手可能不同；此處不計為兩隊正式交手結果。');
  const score=s=>s?[s.Wins,s.Losses,s.Ties].map(display).join('－'):'未知';
- txt('comparisonMatchups','各自的正式對戰（類別勝－敗－平）：'+(dashboard?.Team??'RayBookDown')+' 對 '+display(view.ownOpponent)+' '+score(view.ownScore)+'；'+(view.selectedName??'對照隊伍')+' 對 '+display(view.otherOpponent)+' '+score(view.otherScore)+'。');
+ txt('comparisonMatchups','各自的正式對戰（類別勝－敗－平）：'+(view.ownName??'隊伍 A')+' 對 '+display(view.ownOpponent)+' '+score(view.ownScore)+'；'+(view.selectedName??'對照隊伍')+' 對 '+display(view.otherOpponent)+' '+score(view.otherScore)+'。');
  const sourceLine=(section,name)=>name+'｜'+display(section?.Source)+'｜讀取：'+formatTaipei(section?.RetrievedAtUtc)+'（台灣）｜'+ageLabel(section?.RetrievedAtUtc)+'｜來源最後更新：'+formatTaipei(section?.SourceUpdatedAtUtc)+(section?.SourceUpdatedAtUtc?'（台灣）':'');
- txt('comparisonOwnMeta',sourceLine(view.ownSource,dashboard?.Team??'RayBookDown'));txt('comparisonOtherMeta',sourceLine(view.otherSource,view.selectedName??'對照隊伍'));
- fill('comparisonRows',view.rows.map(c=>[cell(c.label+(c.result==='display_only'?'（展示用）':'')),cell(c.ownValue),cell(c.otherValue),cell(({win:'我方領先',loss:'對照隊伍領先',tie:'平手',unknown:'未知',display_only:'展示用，不計分'})[c.result]??'未知',c.result==='win'?'win':c.result==='loss'?'lose':'muted')]),4,'兩隊的同週比項資料尚未取得。');
+ txt('comparisonOwnMeta',sourceLine(view.ownSource,view.ownName??'隊伍 A'));txt('comparisonOtherMeta',sourceLine(view.otherSource,view.selectedName??'對照隊伍'));
+ fill('comparisonRows',view.rows.map(c=>[cell(c.label+(c.result==='display_only'?'（展示用）':'')),cell(c.ownValue),cell(c.otherValue),cell(({win:'隊伍 A 領先',loss:'隊伍 B 領先',tie:'平手',unknown:'未知',display_only:'展示用，不計分'})[c.result]??'未知',c.result==='win'?'win':c.result==='loss'?'lose':'muted')]),4,'兩隊的同週比項資料尚未取得。');
 }
 
 const availability=x=>({free_agent:'自由球員',waivers:'讓渡名單'})[x]??'取得方式未知';
@@ -129,7 +131,7 @@ function exportData(){if(!dashboard){txt('actionStatus','尚未取得可匯出�
 function setFeed(reset=false){try{const url=normalizeFeedUrl(reset?DEFAULT_FEED:$('feedUrl').value.trim(),location.href,DEFAULT_FEED);$('feedUrl').value=url.href;try{if(reset)localStorage.removeItem(STORAGE_KEY);else localStorage.setItem(STORAGE_KEY,url.href);}catch{}sync();}catch(error){txt('syncStatus',safeErrors.has(error.message)?error.message:'資料網址不符，未儲存。');}}
 $('feedUrl').value=DEFAULT_FEED;try{const saved=localStorage.getItem(STORAGE_KEY);if(saved)$('feedUrl').value=normalizeFeedUrl(saved,location.href,DEFAULT_FEED).href;}catch{try{localStorage.removeItem(STORAGE_KEY);}catch{}}
 document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{activeTab=button.dataset.tab;document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.panel').forEach(p=>{p.hidden=p.id!==button.dataset.tab;});drawCards();}));
-$('comparisonTeamSelect').addEventListener('change',()=>{comparisonChoice=$('comparisonTeamSelect').value;drawWeekComparison();});$('leagueTeamSelect').addEventListener('change',()=>drawLeague());$('search').addEventListener('input',drawMarket);$('filter').addEventListener('change',drawMarket);$('scheduleDate').addEventListener('change',()=>drawSchedule());$('weeklyTeamSearch').addEventListener('input',drawWeeklySchedule);$('historyWeek').addEventListener('change',()=>drawHistory());$('saveFeed').addEventListener('click',()=>setFeed());$('resetFeed').addEventListener('click',()=>setFeed(true));$('syncNow').addEventListener('click',sync);$('export').addEventListener('click',exportData);
+$('comparisonOwnSelect').addEventListener('change',()=>{comparisonOwnChoice=$('comparisonOwnSelect').value;drawWeekComparison();});$('comparisonTeamSelect').addEventListener('change',()=>{comparisonChoice=$('comparisonTeamSelect').value;drawWeekComparison();});$('leagueTeamSelect').addEventListener('change',()=>drawLeague());$('search').addEventListener('input',drawMarket);$('filter').addEventListener('change',drawMarket);$('scheduleDate').addEventListener('change',()=>drawSchedule());$('weeklyTeamSearch').addEventListener('input',drawWeeklySchedule);$('historyWeek').addEventListener('change',()=>drawHistory());$('saveFeed').addEventListener('click',()=>setFeed());$('resetFeed').addEventListener('click',()=>setFeed(true));$('syncNow').addEventListener('click',sync);$('export').addEventListener('click',exportData);
 drawAll();sync();setInterval(sync,300000);setInterval(()=>{for(const[name,id]of[['Roster','rosterMeta'],['Matchup','matchupMeta'],['Market','marketMeta'],['Schedule','scheduleMeta'],['Transactions','transactionsMeta'],['Budget','budgetMeta'],['Rules','rulesMeta']])meta(name,id);drawFeatures();drawWeekComparison();},60000);
 
 initSourceRefresh({readCurrent:()=>({dashboard,leagueAnalysis:features.league,lastFileCheck}),reloadSnapshots:sync});
