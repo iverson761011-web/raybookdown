@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-18T07:14:18.9742966+00:00",
+  "GeneratedAtUtc": "2026-11-18T08:58:37.1092220+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:09.3490332+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:09.3490332+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:25.4991372+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:25.4991372+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:09.6460626+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:09.6460626+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:25.8232823+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:25.8232823+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -253,8 +253,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:10.2413686+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.2413686+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:26.4331516+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:26.4331516+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -402,8 +402,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:10.6637725+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.6637725+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:27.0265528+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:27.0265528+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -697,8 +697,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:10.9616168+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.9616168+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:27.4886694+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:27.4886694+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -712,22 +712,14 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T07:14:11.8344536+00:00",
-      "RetrievedAtUtc": "2026-11-18T07:14:11.8344536+00:00",
+      "CheckedAtUtc": "2026-11-18T08:58:28.9590423+00:00",
+      "RetrievedAtUtc": "2026-11-18T08:58:28.9590423+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
         "Coverage": "returned_list",
         "RateScope": "yahoo_platform_global",
         "Players": [
-          {
-            "Player": "Jalen Green",
-            "Position": "SG,SF",
-            "TeamCode": "PHX",
-            "Availability": "free_agent",
-            "PercentOwned": 66,
-            "WaiverDate": null
-          },
           {
             "Player": "Andrew Wiggins",
             "Position": "SG,SF,PF",
@@ -801,20 +793,28 @@
             "WaiverDate": null
           },
           {
-            "Player": "De'Anthony Melton",
-            "Position": "PG,SG",
-            "TeamCode": "GSW",
-            "Availability": "waivers",
-            "PercentOwned": 30,
-            "WaiverDate": "2026-11-19"
-          },
-          {
             "Player": "DeMar DeRozan",
             "Position": "SF,PF",
             "TeamCode": "DEN",
             "Availability": "free_agent",
             "PercentOwned": 30,
             "WaiverDate": null
+          },
+          {
+            "Player": "Keaton Wagler",
+            "Position": "SG",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 30,
+            "WaiverDate": "2026-11-20"
+          },
+          {
+            "Player": "De'Anthony Melton",
+            "Position": "PG,SG",
+            "TeamCode": "GSW",
+            "Availability": "waivers",
+            "PercentOwned": 29,
+            "WaiverDate": "2026-11-19"
           },
           {
             "Player": "Alex Caruso",
@@ -865,14 +865,6 @@
             "WaiverDate": "2026-11-18"
           },
           {
-            "Player": "Brayden Burries",
-            "Position": "SG",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 20,
-            "WaiverDate": null
-          },
-          {
             "Player": "Cason Wallace",
             "Position": "PG,SG,SF",
             "TeamCode": "OKC",
@@ -921,19 +913,19 @@
             "WaiverDate": null
           },
           {
-            "Player": "Jaxson Hayes",
-            "Position": "C",
-            "TeamCode": "UTA",
-            "Availability": "waivers",
-            "PercentOwned": 16,
-            "WaiverDate": "2026-11-19"
-          },
-          {
             "Player": "Jerami Grant",
             "Position": "SF,PF",
             "TeamCode": "MEM",
             "Availability": "waivers",
             "PercentOwned": 16,
+            "WaiverDate": "2026-11-19"
+          },
+          {
+            "Player": "Jaxson Hayes",
+            "Position": "C",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 15,
             "WaiverDate": "2026-11-19"
           },
           {
@@ -943,6 +935,14 @@
             "Availability": "waivers",
             "PercentOwned": 15,
             "WaiverDate": "2026-11-19"
+          },
+          {
+            "Player": "Collin Sexton",
+            "Position": "PG,SG",
+            "TeamCode": "LAL",
+            "Availability": "waivers",
+            "PercentOwned": 13,
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Mikel Brown Jr.",
@@ -1033,12 +1033,28 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jordan Goodwin",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 8,
+            "WaiverDate": "2026-11-19"
+          },
+          {
             "Player": "Kevin Porter Jr.",
             "Position": "PG,SG",
             "TeamCode": "MIL",
             "Availability": "free_agent",
             "PercentOwned": 8,
             "WaiverDate": null
+          },
+          {
+            "Player": "Ryan Kalkbrenner",
+            "Position": "C",
+            "TeamCode": "CHA",
+            "Availability": "waivers",
+            "PercentOwned": 8,
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Scoot Henderson",
@@ -1071,14 +1087,6 @@
             "Availability": "free_agent",
             "PercentOwned": 7,
             "WaiverDate": null
-          },
-          {
-            "Player": "Jordan Goodwin",
-            "Position": "PG,SG",
-            "TeamCode": "PHX",
-            "Availability": "waivers",
-            "PercentOwned": 7,
-            "WaiverDate": "2026-11-19"
           },
           {
             "Player": "Dennis Schröder",
@@ -1417,14 +1425,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Goga Bitadze",
-            "Position": "C",
-            "TeamCode": "ORL",
-            "Availability": "free_agent",
-            "PercentOwned": 1,
-            "WaiverDate": null
-          },
-          {
             "Player": "Harrison Barnes",
             "Position": "PF",
             "TeamCode": "SAS",
@@ -1526,8 +1526,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-18T07:14:19.192Z",
-      "RetrievedAtUtc": "2026-11-18T07:14:19.192Z",
+      "CheckedAtUtc": "2026-11-18T08:58:37.265Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:37.265Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
