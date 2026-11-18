@@ -9,33 +9,7 @@
     "另有63位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。",
     "等待完賽期間尚未重新核實本隊缺口與比較球員；已清除舊觀察適配及不再合格的加入項目，待下一份完整報告重算。"
   ],
-  "Candidates": [
-    {
-      "Player": "Max Strus",
-      "TeamCode": "LAC",
-      "Availability": "free_agent",
-      "RemainingGames": 3,
-      "SampleGames7": 3,
-      "SampleGames14": 5,
-      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
-      "Reasons": [
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "以7/14日每場數據65%/35%混合估算，與Darius Garland在相同標示期間的剩餘排程做假設替換比較。",
-        "TO估計差-11.8（失誤較少較好）",
-        "A/T估計差+0.316",
-        "ST估計差+2.6"
-      ],
-      "Tradeoffs": [
-        "AST估計差-10.7",
-        "DREB估計差-6.5",
-        "PTS估計差-37.2",
-        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
-        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
-      ],
-      "DropOptions": []
-    }
-  ],
+  "Candidates": [],
   "WatchCandidates": [],
   "DropReviews": [
     {
@@ -203,21 +177,21 @@
   "Sources": [
     {
       "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-      "RetrievedAtUtc": "2026-11-18T04:56:35.046Z",
+      "RetrievedAtUtc": "2026-11-18T05:59:05.311Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "本次Flaim / Yahoo候選現況核對 Market",
-      "RetrievedAtUtc": "2026-11-18T04:56:37.953Z",
+      "RetrievedAtUtc": "2026-11-18T05:59:07.850Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "本次NBA官方傷勢候選現況核對",
-      "RetrievedAtUtc": "2026-11-18T04:56:22.066Z",
-      "SourceUpdatedAtUtc": "2026-11-18T04:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_11_45PM.pdf"
+      "RetrievedAtUtc": "2026-11-18T05:58:53.800Z",
+      "SourceUpdatedAtUtc": "2026-11-18T05:45:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_12_45AM.pdf"
     },
     {
       "Name": "Flaim / Yahoo Roster",
