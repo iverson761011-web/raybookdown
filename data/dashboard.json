@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-18T04:56:46.8411974+00:00",
+  "GeneratedAtUtc": "2026-11-18T05:59:18.7867758+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:34.7027233+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:34.7027233+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:04.8727562+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:04.8727562+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:35.0464625+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:35.0464625+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:05.3112196+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:05.3112196+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -253,8 +253,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:35.7524491+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:35.7524491+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:05.9207097+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:05.9207097+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -264,14 +264,14 @@
         "Status": "in_progress",
         "Opponent": "Mamba",
         "OwnScore": {
-          "Wins": 9,
-          "Losses": 3,
-          "Ties": 1
+          "Wins": 10,
+          "Losses": 1,
+          "Ties": 2
         },
         "OpponentScore": {
-          "Wins": 3,
-          "Losses": 9,
-          "Ties": 1
+          "Wins": 1,
+          "Losses": 10,
+          "Ties": 2
         },
         "OwnGamesRemaining": 28,
         "OpponentGamesRemaining": 27,
@@ -279,41 +279,41 @@
           {
             "Name": "Minutes Played",
             "Label": "MIN",
-            "OwnValue": "275",
-            "OpponentValue": "214",
+            "OwnValue": "285",
+            "OpponentValue": "249",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Field Goals Made / Field Goals Attempted",
             "Label": "FGM/A",
-            "OwnValue": "67/127",
-            "OpponentValue": "27/60",
+            "OwnValue": "67/131",
+            "OpponentValue": "28/64",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Field Goal Percentage",
             "Label": "FG%",
-            "OwnValue": ".528",
-            "OpponentValue": ".450",
+            "OwnValue": ".511",
+            "OpponentValue": ".438",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Free Throws Made / Free Throws Attempted",
             "Label": "FTM/A",
-            "OwnValue": "30/37",
-            "OpponentValue": "16/19",
+            "OwnValue": "32/39",
+            "OpponentValue": "18/23",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Free Throw Percentage",
             "Label": "FT%",
-            "OwnValue": ".811",
-            "OpponentValue": ".842",
-            "Result": "loss",
+            "OwnValue": ".821",
+            "OpponentValue": ".783",
+            "Result": "win",
             "DisplayOnly": false
           },
           {
@@ -327,8 +327,8 @@
           {
             "Name": "Points Scored",
             "Label": "PTS",
-            "OwnValue": "185",
-            "OpponentValue": "80",
+            "OwnValue": "187",
+            "OpponentValue": "84",
             "Result": "win",
             "DisplayOnly": false
           },
@@ -336,23 +336,23 @@
             "Name": "Offensive Rebounds",
             "Label": "OREB",
             "OwnValue": "13",
-            "OpponentValue": "5",
+            "OpponentValue": "7",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Defensive Rebounds",
             "Label": "DREB",
-            "OwnValue": "26",
-            "OpponentValue": "32",
+            "OwnValue": "27",
+            "OpponentValue": "37",
             "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Assists",
             "Label": "AST",
-            "OwnValue": "33",
-            "OpponentValue": "22",
+            "OwnValue": "36",
+            "OpponentValue": "24",
             "Result": "win",
             "DisplayOnly": false
           },
@@ -367,7 +367,7 @@
           {
             "Name": "Blocked Shots",
             "Label": "BLK",
-            "OwnValue": "5",
+            "OwnValue": "6",
             "OpponentValue": "2",
             "Result": "win",
             "DisplayOnly": false
@@ -375,16 +375,16 @@
           {
             "Name": "Turnovers",
             "Label": "TO",
-            "OwnValue": "19",
-            "OpponentValue": "17",
-            "Result": "loss",
+            "OwnValue": "20",
+            "OpponentValue": "20",
+            "Result": "tie",
             "DisplayOnly": false
           },
           {
             "Name": "Assist/Turnover Ratio",
             "Label": "A/T",
-            "OwnValue": "1.737",
-            "OpponentValue": "1.294",
+            "OwnValue": "1.800",
+            "OpponentValue": "1.200",
             "Result": "win",
             "DisplayOnly": false
           },
@@ -402,8 +402,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:36.3617812+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:36.3617812+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:06.4268045+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:06.4268045+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -697,8 +697,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:36.7531229+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:36.7531229+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:06.7658002+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:06.7658002+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -712,8 +712,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T04:56:37.9532668+00:00",
-      "RetrievedAtUtc": "2026-11-18T04:56:37.9532668+00:00",
+      "CheckedAtUtc": "2026-11-18T05:59:07.8505392+00:00",
+      "RetrievedAtUtc": "2026-11-18T05:59:07.8505392+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -789,7 +789,7 @@
             "Position": "PF,C",
             "TeamCode": "LAL",
             "Availability": "waivers",
-            "PercentOwned": 43,
+            "PercentOwned": 42,
             "WaiverDate": "2026-11-18"
           },
           {
@@ -1526,8 +1526,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-18T04:56:47.028Z",
-      "RetrievedAtUtc": "2026-11-18T04:56:47.028Z",
+      "CheckedAtUtc": "2026-11-18T05:59:18.942Z",
+      "RetrievedAtUtc": "2026-11-18T05:59:18.942Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
