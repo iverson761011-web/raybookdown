@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-18T11:02:29.3258136+00:00",
+  "GeneratedAtUtc": "2026-11-18T23:18:00.8325930+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:19.4281558+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:19.4281558+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:48.8829529+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:48.8829529+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:19.7258412+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:19.7258412+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:49.3987745+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:49.3987745+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -254,8 +254,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:20.3042449+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:20.3042449+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:50.0251409+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:50.0251409+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -403,8 +403,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:20.7891215+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:20.7891215+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:50.7285693+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:50.7285693+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -709,8 +709,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:21.0867853+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:21.0867853+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:51.2466518+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:51.2466518+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -724,8 +724,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T11:02:22.0451131+00:00",
-      "RetrievedAtUtc": "2026-11-18T11:02:22.0451131+00:00",
+      "CheckedAtUtc": "2026-11-18T23:17:52.3465197+00:00",
+      "RetrievedAtUtc": "2026-11-18T23:17:52.3465197+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -733,19 +733,11 @@
         "RateScope": "yahoo_platform_global",
         "Players": [
           {
-            "Player": "Andrew Wiggins",
-            "Position": "SG,SF,PF",
-            "TeamCode": "MIA",
-            "Availability": "free_agent",
-            "PercentOwned": 60,
-            "WaiverDate": null
-          },
-          {
             "Player": "Peyton Watson",
             "Position": "SF,PF",
             "TeamCode": "CLE",
             "Availability": "free_agent",
-            "PercentOwned": 52,
+            "PercentOwned": 51,
             "WaiverDate": null
           },
           {
@@ -761,16 +753,8 @@
             "Position": "SF,PF",
             "TeamCode": "PHX",
             "Availability": "free_agent",
-            "PercentOwned": 45,
+            "PercentOwned": 44,
             "WaiverDate": null
-          },
-          {
-            "Player": "Grayson Allen",
-            "Position": "SG,SF",
-            "TeamCode": "CHA",
-            "Availability": "waivers",
-            "PercentOwned": 45,
-            "WaiverDate": "2026-11-19"
           },
           {
             "Player": "Daniel Gafford",
@@ -781,11 +765,19 @@
             "WaiverDate": null
           },
           {
+            "Player": "Grayson Allen",
+            "Position": "SG,SF",
+            "TeamCode": "CHA",
+            "Availability": "waivers",
+            "PercentOwned": 43,
+            "WaiverDate": "2026-11-19"
+          },
+          {
             "Player": "Sandro Mamukelashvili",
             "Position": "PF,C",
             "TeamCode": "LAL",
             "Availability": "free_agent",
-            "PercentOwned": 42,
+            "PercentOwned": 40,
             "WaiverDate": null
           },
           {
@@ -805,14 +797,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Keaton Wagler",
-            "Position": "SG",
-            "TeamCode": "LAC",
-            "Availability": "waivers",
-            "PercentOwned": 30,
-            "WaiverDate": "2026-11-20"
-          },
-          {
             "Player": "De'Anthony Melton",
             "Position": "PG,SG",
             "TeamCode": "GSW",
@@ -821,12 +805,12 @@
             "WaiverDate": "2026-11-19"
           },
           {
-            "Player": "Derrick Jones Jr.",
-            "Position": "SF,PF",
+            "Player": "Keaton Wagler",
+            "Position": "SG",
             "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 27,
-            "WaiverDate": null
+            "Availability": "waivers",
+            "PercentOwned": 29,
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Julian Champagnie",
@@ -837,11 +821,19 @@
             "WaiverDate": null
           },
           {
+            "Player": "Derrick Jones Jr.",
+            "Position": "SF,PF",
+            "TeamCode": "LAC",
+            "Availability": "free_agent",
+            "PercentOwned": 25,
+            "WaiverDate": null
+          },
+          {
             "Player": "Egor Dëmin",
             "Position": "PG,SG",
             "TeamCode": "BKN",
             "Availability": "free_agent",
-            "PercentOwned": 23,
+            "PercentOwned": 22,
             "WaiverDate": null
           },
           {
@@ -849,7 +841,7 @@
             "Position": "SG,SF",
             "TeamCode": "MEM",
             "Availability": "free_agent",
-            "PercentOwned": 23,
+            "PercentOwned": 22,
             "WaiverDate": null
           },
           {
@@ -877,25 +869,17 @@
             "WaiverDate": "2026-11-20"
           },
           {
-            "Player": "Reed Sheppard",
-            "Position": "PG,SG",
-            "TeamCode": "HOU",
-            "Availability": "free_agent",
-            "PercentOwned": 20,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Keldon Johnson",
-            "Position": "SF,PF",
-            "TeamCode": "SAS",
-            "Availability": "waivers",
-            "PercentOwned": 19,
-            "WaiverDate": "2026-11-20"
-          },
-          {
             "Player": "Naji Marshall",
             "Position": "SG,SF,PF",
             "TeamCode": "DAL",
+            "Availability": "free_agent",
+            "PercentOwned": 19,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Reed Sheppard",
+            "Position": "PG,SG",
+            "TeamCode": "HOU",
             "Availability": "free_agent",
             "PercentOwned": 19,
             "WaiverDate": null
@@ -915,6 +899,14 @@
             "Availability": "free_agent",
             "PercentOwned": 17,
             "WaiverDate": null
+          },
+          {
+            "Player": "Keldon Johnson",
+            "Position": "SF,PF",
+            "TeamCode": "SAS",
+            "Availability": "waivers",
+            "PercentOwned": 17,
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Jerami Grant",
@@ -965,17 +957,17 @@
             "WaiverDate": "2026-11-20"
           },
           {
+            "Player": "Isaiah Jackson",
+            "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 11,
+            "WaiverDate": "2026-11-20"
+          },
+          {
             "Player": "Ziaire Williams",
             "Position": "SG,SF",
             "TeamCode": "LAL",
-            "Availability": "free_agent",
-            "PercentOwned": 12,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Max Strus",
-            "Position": "SF,PF",
-            "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 11,
             "WaiverDate": null
@@ -1000,6 +992,14 @@
             "Player": "Kingston Flemings",
             "Position": "PG",
             "TeamCode": "ATL",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Max Strus",
+            "Position": "SF,PF",
+            "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 10,
             "WaiverDate": null
@@ -1053,14 +1053,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Ryan Kalkbrenner",
-            "Position": "C",
-            "TeamCode": "CHA",
-            "Availability": "waivers",
-            "PercentOwned": 8,
-            "WaiverDate": "2026-11-20"
-          },
-          {
             "Player": "Scoot Henderson",
             "Position": "PG",
             "TeamCode": "POR",
@@ -1093,6 +1085,14 @@
             "WaiverDate": "2026-11-19"
           },
           {
+            "Player": "Ryan Kalkbrenner",
+            "Position": "C",
+            "TeamCode": "CHA",
+            "Availability": "waivers",
+            "PercentOwned": 7,
+            "WaiverDate": "2026-11-20"
+          },
+          {
             "Player": "Dennis Schröder",
             "Position": "PG,SG",
             "TeamCode": "CHA",
@@ -1104,14 +1104,6 @@
             "Player": "Jaylon Tyson",
             "Position": "SG,SF,PF",
             "TeamCode": "CLE",
-            "Availability": "free_agent",
-            "PercentOwned": 6,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Miles McBride",
-            "Position": "PG,SG",
-            "TeamCode": "NYK",
             "Availability": "free_agent",
             "PercentOwned": 6,
             "WaiverDate": null
@@ -1165,6 +1157,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Miles McBride",
+            "Position": "PG,SG",
+            "TeamCode": "NYK",
+            "Availability": "free_agent",
+            "PercentOwned": 5,
+            "WaiverDate": null
+          },
+          {
             "Player": "Nikola Vučević",
             "Position": "C",
             "TeamCode": "ORL",
@@ -1178,6 +1178,22 @@
             "TeamCode": "BOS",
             "Availability": "free_agent",
             "PercentOwned": 5,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Dean Wade",
+            "Position": "SF,PF",
+            "TeamCode": "PHI",
+            "Availability": "free_agent",
+            "PercentOwned": 4,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Kasparas Jakučionis",
+            "Position": "PG,SG",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 4,
             "WaiverDate": null
           },
           {
@@ -1237,14 +1253,6 @@
             "WaiverDate": "2026-11-19"
           },
           {
-            "Player": "Dean Wade",
-            "Position": "SF,PF",
-            "TeamCode": "PHI",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
             "Player": "Jay Huff",
             "Position": "C",
             "TeamCode": "IND",
@@ -1256,22 +1264,6 @@
             "Player": "Jaylin Williams",
             "Position": "PF,C",
             "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kasparas Jakučionis",
-            "Position": "PG,SG",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kyle Filipowski",
-            "Position": "PF,C",
-            "TeamCode": "UTA",
             "Availability": "free_agent",
             "PercentOwned": 3,
             "WaiverDate": null
@@ -1349,17 +1341,17 @@
             "WaiverDate": null
           },
           {
-            "Player": "Keon Ellis",
+            "Player": "Kobe Sanders",
             "Position": "SG,SF",
-            "TeamCode": "BKN",
+            "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
           },
           {
-            "Player": "Kobe Sanders",
-            "Position": "SG,SF",
-            "TeamCode": "LAC",
+            "Player": "Kyle Filipowski",
+            "Position": "PF,C",
+            "TeamCode": "UTA",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
@@ -1469,6 +1461,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Keon Ellis",
+            "Position": "SG,SF",
+            "TeamCode": "BKN",
+            "Availability": "free_agent",
+            "PercentOwned": 1,
+            "WaiverDate": null
+          },
+          {
             "Player": "Leonard Miller",
             "Position": "SF,PF",
             "TeamCode": "CHI",
@@ -1538,55 +1538,15 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-18T11:02:29.529Z",
-      "RetrievedAtUtc": "2026-11-18T11:02:29.529Z",
+      "CheckedAtUtc": "2026-11-18T23:18:01.020Z",
+      "RetrievedAtUtc": "2026-11-18T23:18:01.020Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "RangeStartDateTaipei": "2026-11-18",
-        "RangeEndDateTaipei": "2026-11-24",
+        "RangeStartDateTaipei": "2026-11-19",
+        "RangeEndDateTaipei": "2026-11-25",
         "UnavailableDates": [],
         "Games": [
-          {
-            "StartAtTaipei": "2026-11-18T08:30:00+08:00",
-            "Teams": [
-              "Knicks",
-              "Raptors"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600253"
-          },
-          {
-            "StartAtTaipei": "2026-11-18T09:00:00+08:00",
-            "Teams": [
-              "Trail Blazers",
-              "Timberwolves"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600254"
-          },
-          {
-            "StartAtTaipei": "2026-11-18T09:00:00+08:00",
-            "Teams": [
-              "Pistons",
-              "Spurs"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600255"
-          },
-          {
-            "StartAtTaipei": "2026-11-18T11:30:00+08:00",
-            "Teams": [
-              "Jazz",
-              "Clippers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600257"
-          },
-          {
-            "StartAtTaipei": "2026-11-18T12:00:00+08:00",
-            "Teams": [
-              "Hornets",
-              "Lakers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600256"
-          },
           {
             "StartAtTaipei": "2026-11-19T08:00:00+08:00",
             "Teams": [
@@ -1970,6 +1930,30 @@
               "Kings"
             ],
             "SourceUrl": "https://www.nba.com/game/0022600296"
+          },
+          {
+            "StartAtTaipei": "2026-11-25T08:00:00+08:00",
+            "Teams": [
+              "Pistons",
+              "Magic"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600052"
+          },
+          {
+            "StartAtTaipei": "2026-11-25T09:00:00+08:00",
+            "Teams": [
+              "Celtics",
+              "Wizards"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600053"
+          },
+          {
+            "StartAtTaipei": "2026-11-25T11:00:00+08:00",
+            "Teams": [
+              "Mavericks",
+              "Nuggets"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600054"
           }
         ],
         "SourceUpdatedAtUtc": null
