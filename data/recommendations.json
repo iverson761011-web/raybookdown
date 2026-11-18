@@ -1,23 +1,427 @@
 {
   "SchemaVersion": 1,
-  "Status": "waiting",
-  "GeneratedAtUtc": "2026-11-17T13:59:17.930Z",
-  "ReportDateET": "2026-11-16",
+  "Status": "ready",
+  "GeneratedAtUtc": "2026-11-18T07:12:36.470Z",
+  "ReportDateET": "2026-11-17",
   "Strategy": "aggressive_week",
   "Reasons": [
     "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-    "另有63位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。",
-    "等待完賽期間尚未重新核實本隊缺口與比較球員；已清除舊觀察適配及不再合格的加入項目，待下一份完整報告重算。"
+    "另有78位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
   ],
-  "Candidates": [],
-  "WatchCandidates": [],
+  "Candidates": [
+    {
+      "Player": "Dean Wade",
+      "TeamCode": "PHI",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-5.1（失誤較少較好）",
+        "OREB估計差+4.9",
+        "A/T估計差+0.242"
+      ],
+      "Tradeoffs": [
+        "AST估計差-3.9",
+        "PTS估計差-20.4",
+        "3PTM估計差-2.2",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Jordan Poole",
+      "TeamCode": "NOP",
+      "Availability": "free_agent",
+      "RemainingGames": 3,
+      "SampleGames7": 4,
+      "SampleGames14": 5,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-2.0（失誤較少較好）",
+        "A/T估計差+0.327",
+        "FT%估計差+0.024"
+      ],
+      "Tradeoffs": [
+        "DREB估計差-4.5",
+        "BLK估計差-0.855",
+        "FG%估計差-0.015",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Noah Clowney",
+      "TeamCode": "BKN",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 6,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-3.2（失誤較少較好）",
+        "OREB估計差+1.2",
+        "BLK估計差+0.988"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-18.9",
+        "AST估計差-4.0",
+        "3PTM估計差-2.1",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Sam Hauser",
+      "TeamCode": "BOS",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-4.5（失誤較少較好）",
+        "FT%估計差+0.017",
+        "OREB估計差+0.713"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-26.2",
+        "BLK估計差-1.7",
+        "AST估計差-5.7",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Zaccharie Risacher",
+      "TeamCode": "DAL",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-3.8（失誤較少較好）",
+        "OREB估計差+2.3",
+        "FG%估計差+0.018"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-24.9",
+        "AST估計差-5.4",
+        "BLK估計差-1.0",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Herbert Jones",
+      "TeamCode": "NOP",
+      "Availability": "free_agent",
+      "RemainingGames": 3,
+      "SampleGames7": 4,
+      "SampleGames14": 8,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-2.2（失誤較少較好）",
+        "MIN估計差+12.4",
+        "ST估計差+2.5"
+      ],
+      "Tradeoffs": [
+        "FG%估計差-0.032",
+        "3PTM估計差-2.9",
+        "DREB估計差-2.9",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Goga Bitadze",
+      "TeamCode": "ORL",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 6,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-4.0（失誤較少較好）",
+        "OREB估計差+2.6",
+        "FG%估計差+0.021"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-31.7",
+        "3PTM估計差-5.6",
+        "AST估計差-5.9",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Khaman Maluach",
+      "TeamCode": "PHX",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 8,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-3.9（失誤較少較好）",
+        "OREB估計差+2.9",
+        "FG%估計差+0.008"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-37.5",
+        "AST估計差-6.1",
+        "3PTM估計差-5.5",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    }
+  ],
+  "WatchCandidates": [
+    {
+      "Player": "Malik Monk",
+      "TeamCode": "SAC",
+      "Availability": "free_agent",
+      "RemainingGames": 3,
+      "SampleGames7": 2,
+      "SampleGames14": 6,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "依RayBookDown的接近比項DD、TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "DD估計差+1.0",
+        "TO估計差-2.2（失誤較少較好）",
+        "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
+      ],
+      "Tradeoffs": [
+        "BLK估計差-1.1",
+        "3PTM估計差-3.3",
+        "FT%估計差-0.015",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "De'Andre Hunter",
+      "TeamCode": "SAC",
+      "Availability": "waivers",
+      "RemainingGames": 3,
+      "SampleGames7": 1,
+      "SampleGames14": 4,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
+        "依RayBookDown的接近比項TO、MIN整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-3.4（失誤較少較好）",
+        "MIN估計差+51.6",
+        "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
+      ],
+      "Tradeoffs": [
+        "AST估計差-8.5",
+        "BLK估計差-1.1",
+        "DD估計差-0.117",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Al Horford",
+      "TeamCode": "GSW",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 6,
+      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.9（失誤較少較好）"
+      ],
+      "Tradeoffs": [
+        "AST估計差-10.2",
+        "MIN估計差-37.1",
+        "3PTM估計差-5.0",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Adem Bona",
+      "TeamCode": "PHI",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 0,
+      "SampleGames14": 1,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.9（失誤較少較好）",
+        "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
+      ],
+      "Tradeoffs": [
+        "AST估計差-12.2",
+        "MIN估計差-37.9",
+        "3PTM估計差-5.3",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Max Strus",
+      "TeamCode": "LAC",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 6,
+      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.2（失誤較少較好）"
+      ],
+      "Tradeoffs": [
+        "AST估計差-8.7",
+        "MIN估計差-22.4",
+        "BLK估計差-1.1",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Ziaire Williams",
+      "TeamCode": "LAL",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.3（失誤較少較好）"
+      ],
+      "Tradeoffs": [
+        "AST估計差-9.0",
+        "MIN估計差-24.7",
+        "DREB估計差-4.8",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Luke Kornet",
+      "TeamCode": "SAS",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 4,
+      "SampleGames14": 8,
+      "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.8（失誤較少較好）"
+      ],
+      "Tradeoffs": [
+        "AST估計差-12.1",
+        "MIN估計差-38.4",
+        "3PTM估計差-5.3",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Bilal Coulibaly",
+      "TeamCode": "WAS",
+      "Availability": "free_agent",
+      "RemainingGames": 2,
+      "SampleGames7": 4,
+      "SampleGames14": 7,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "依RayBookDown的接近比項TO整理，並非自由市場原始排名。",
+        "僅以已核實的近7/14日樣本，假設比較Darius Garland與本候選在標示期間的排定場次；這不是建議移除該球員。",
+        "TO估計差-6.1（失誤較少較好）",
+        "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
+      ],
+      "Tradeoffs": [
+        "AST估計差-13.2",
+        "MIN估計差-21.9",
+        "3PTM估計差-4.4",
+        "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+        "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+      ],
+      "DropOptions": []
+    }
+  ],
   "DropReviews": [
     {
       "Player": "Jamal Shead",
       "TeamCode": "TOR",
-      "SampleGames7": 3,
-      "SampleGames14": 6,
-      "RemainingGames": 3,
+      "SampleGames7": 4,
+      "SampleGames14": 7,
+      "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
@@ -31,10 +435,10 @@
       "SampleGames7": 3,
       "SampleGames14": 7,
       "RemainingGames": 2,
-      "Review": "保留：目前Yahoo標示不可丟棄；原報告表現比較未重算。",
+      "Review": "保留：Yahoo標示不可丟棄",
       "Reasons": [
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": true
@@ -43,12 +447,12 @@
       "Player": "Darius Garland",
       "TeamCode": "LAC",
       "SampleGames7": 3,
-      "SampleGames14": 5,
-      "RemainingGames": 3,
+      "SampleGames14": 6,
+      "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": false
     },
@@ -60,7 +464,7 @@
       "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": false
@@ -71,9 +475,9 @@
       "SampleGames7": 4,
       "SampleGames14": 7,
       "RemainingGames": 2,
-      "Review": "保留：目前Yahoo標示不可丟棄；原報告表現比較未重算。",
+      "Review": "保留：Yahoo標示不可丟棄",
       "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": true
@@ -94,13 +498,13 @@
     {
       "Player": "Aday Mara",
       "TeamCode": "OKC",
-      "SampleGames7": 4,
+      "SampleGames7": 3,
       "SampleGames14": 6,
       "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": false
@@ -127,7 +531,7 @@
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": false
@@ -140,7 +544,7 @@
       "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": false
@@ -148,13 +552,13 @@
     {
       "Player": "Zach LaVine",
       "TeamCode": "SAC",
-      "SampleGames7": 2,
+      "SampleGames7": 1,
       "SampleGames14": 5,
       "RemainingGames": 3,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": false
@@ -164,11 +568,11 @@
       "TeamCode": "UTA",
       "SampleGames7": 0,
       "SampleGames14": 0,
-      "RemainingGames": 3,
+      "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": false
@@ -176,70 +580,82 @@
   ],
   "Sources": [
     {
-      "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-      "RetrievedAtUtc": "2026-11-18T05:59:05.311Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": null
-    },
-    {
-      "Name": "本次Flaim / Yahoo候選現況核對 Market",
-      "RetrievedAtUtc": "2026-11-18T05:59:07.850Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": null
-    },
-    {
-      "Name": "本次NBA官方傷勢候選現況核對",
-      "RetrievedAtUtc": "2026-11-18T05:58:53.800Z",
-      "SourceUpdatedAtUtc": "2026-11-18T05:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_12_45AM.pdf"
-    },
-    {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-17T13:59:00.430Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:58.350Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-17T13:59:02.953Z",
+      "RetrievedAtUtc": "2026-11-18T07:12:00.513Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-17T13:59:01.042Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:58.897Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-17T13:59:01.908Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:59.624Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-17T13:59:01.542Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:59.351Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-17T13:58:48.150Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:42.498Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/games?date=2026-11-16"
+      "Url": "https://www.nba.com/games?date=2026-11-17"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-17T13:58:48.956Z",
-      "SourceUpdatedAtUtc": "2026-11-17T13:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_08_45AM.pdf"
+      "RetrievedAtUtc": "2026-11-18T07:11:46.590Z",
+      "SourceUpdatedAtUtc": "2026-11-18T07:00:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_02_00AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-17T13:59:16.357Z",
+      "RetrievedAtUtc": "2026-11-18T07:12:21.749Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-18T07:11:42.764Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/nyk-vs-tor-0022600253/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-18T07:11:45.079Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/uta-vs-lac-0022600257/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-18T07:11:46.088Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/cha-vs-lal-0022600256/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-18T07:11:42.941Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/det-vs-sas-0022600255/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-18T07:11:43.117Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/por-vs-min-0022600254/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -279,15 +695,15 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-17T04:54:20.920Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/por-vs-min-0022600250/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
       "RetrievedAtUtc": "2026-11-17T04:54:18.166Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/orl-vs-bos-0022600245/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-17T04:54:20.920Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/por-vs-min-0022600250/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -405,7 +821,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-17T13:58:47.602Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:41.661Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/por-vs-sac-0022600041/box-score"
     },
@@ -567,7 +983,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-17T13:58:47.150Z",
+      "RetrievedAtUtc": "2026-11-18T07:11:40.647Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-hou-0022600208/box-score"
     },
@@ -594,36 +1010,6 @@
       "RetrievedAtUtc": "2026-11-12T23:01:47.200Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/nop-vs-gsw-0022600210/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-12T23:01:44.638Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/nop-vs-lac-0022600201/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-12T23:01:45.980Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/mia-vs-sac-0022600202/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-12T23:01:42.003Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/bkn-vs-dal-0022600199/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-12T23:01:40.437Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/lal-vs-det-0022600197/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-12T23:01:43.252Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/bos-vs-mil-0022600200/box-score"
     }
   ],
   "Week": {
@@ -636,8 +1022,6 @@
     "以下為7/14日樣本與排定場次的情境估算，非實際出賽或類別勝率保證。",
     "對手後續增量、可用欄位、每週Add餘額與操作合法性仍需在Yahoo確認。",
     "本週剩餘Add未知或來源已過期；沒有從每週上限或觀察交易筆數推算可用額度。",
-    "Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。",
-    "目前目標美東2026-11-17尚未全部完賽；保留美東2026-11-16舊報告與原產生時間，未當作新完賽建議。",
-    "等待期間只另行核對目前持有／取得狀態、官方傷勢與保護標記；原GeneratedAtUtc、報告日期、樣本、剩餘場次及表現估算均未更新，也未產生新排序。"
+    "Yahoo對戰週起訖與時區未核實；場次僅採標示的台灣日曆週，不宣稱等同Yahoo計次期間。"
   ]
 }
