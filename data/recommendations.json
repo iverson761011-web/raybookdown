@@ -1,12 +1,12 @@
 {
   "SchemaVersion": 1,
   "Status": "ready",
-  "GeneratedAtUtc": "2026-11-18T07:14:22.600Z",
+  "GeneratedAtUtc": "2026-11-18T08:58:40.550Z",
   "ReportDateET": "2026-11-17",
   "Strategy": "aggressive_week",
   "Reasons": [
     "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-    "另有78位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+    "另有76位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
   ],
   "Candidates": [
     {
@@ -160,31 +160,6 @@
       "DropOptions": []
     },
     {
-      "Player": "Goga Bitadze",
-      "TeamCode": "ORL",
-      "Availability": "free_agent",
-      "RemainingGames": 2,
-      "SampleGames7": 3,
-      "SampleGames14": 6,
-      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
-      "Reasons": [
-        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
-        "TO估計差-4.0（失誤較少較好）",
-        "OREB估計差+2.6",
-        "FG%估計差+0.021"
-      ],
-      "Tradeoffs": [
-        "MIN估計差-31.7",
-        "3PTM估計差-5.6",
-        "AST估計差-5.9",
-        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
-        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
-      ],
-      "DropOptions": []
-    },
-    {
       "Player": "Khaman Maluach",
       "TeamCode": "PHX",
       "Availability": "free_agent",
@@ -204,6 +179,31 @@
         "MIN估計差-37.5",
         "AST估計差-6.1",
         "3PTM估計差-5.5",
+        "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+        "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+      ],
+      "DropOptions": []
+    },
+    {
+      "Player": "Andrew Wiggins",
+      "TeamCode": "MIA",
+      "Availability": "free_agent",
+      "RemainingGames": 1,
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+      "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+      "Reasons": [
+        "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+        "以7/14日每場數據65%/35%混合估算，與Kyshawn George在相同標示期間的剩餘排程做假設替換比較。",
+        "TO估計差-4.9（失誤較少較好）",
+        "A/T估計差+0.149",
+        "FT%估計差+0.012"
+      ],
+      "Tradeoffs": [
+        "MIN估計差-38.7",
+        "DREB估計差-6.3",
+        "AST估計差-5.5",
         "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
         "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
       ],
@@ -581,49 +581,49 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-18T07:14:09.646Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:25.823Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-18T07:14:11.834Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:28.959Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.241Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:26.433Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.961Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:27.488Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-18T07:14:10.663Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:27.026Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-18T07:13:58.161Z",
+      "RetrievedAtUtc": "2026-11-18T08:57:55.107Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-17"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-18T07:13:59.024Z",
-      "SourceUpdatedAtUtc": "2026-11-18T07:00:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_02_00AM.pdf"
+      "RetrievedAtUtc": "2026-11-18T08:57:57.836Z",
+      "SourceUpdatedAtUtc": "2026-11-18T08:45:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_03_45AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-18T07:14:21.396Z",
+      "RetrievedAtUtc": "2026-11-18T08:58:39.065Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -821,7 +821,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-18T07:13:57.872Z",
+      "RetrievedAtUtc": "2026-11-18T08:57:54.710Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/por-vs-sac-0022600041/box-score"
     },
@@ -983,7 +983,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-18T07:13:57.863Z",
+      "RetrievedAtUtc": "2026-11-18T08:57:53.597Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-hou-0022600208/box-score"
     },
