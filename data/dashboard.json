@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-18T23:18:00.8325930+00:00",
+  "GeneratedAtUtc": "2026-11-19T05:00:06.3213843+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:48.8829529+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:48.8829529+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:56.4526383+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:56.4526383+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:49.3987745+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:49.3987745+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:56.7971240+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:56.7971240+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -143,7 +143,7 @@
           {
             "Player": "Alperen Şengün",
             "Position": "PF",
-            "Status": null,
+            "Status": "Q",
             "EligiblePositions": [
               "PF",
               "F",
@@ -254,8 +254,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:50.0251409+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:50.0251409+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:57.3418517+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:57.3418517+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -266,126 +266,126 @@
         "Opponent": "Mamba",
         "OwnScore": {
           "Wins": 10,
-          "Losses": 1,
-          "Ties": 2
+          "Losses": 2,
+          "Ties": 1
         },
         "OpponentScore": {
-          "Wins": 1,
+          "Wins": 2,
           "Losses": 10,
-          "Ties": 2
+          "Ties": 1
         },
-        "OwnGamesRemaining": 28,
-        "OpponentGamesRemaining": 27,
+        "OwnGamesRemaining": 18,
+        "OpponentGamesRemaining": 19,
         "Categories": [
           {
             "Name": "Minutes Played",
             "Label": "MIN",
-            "OwnValue": "286",
-            "OpponentValue": "269",
+            "OwnValue": "572",
+            "OpponentValue": "472",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Field Goals Made / Field Goals Attempted",
             "Label": "FGM/A",
-            "OwnValue": "67/131",
-            "OpponentValue": "29/66",
+            "OwnValue": "129/250",
+            "OpponentValue": "74/145",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Field Goal Percentage",
             "Label": "FG%",
-            "OwnValue": ".511",
-            "OpponentValue": ".439",
+            "OwnValue": ".516",
+            "OpponentValue": ".510",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Free Throws Made / Free Throws Attempted",
             "Label": "FTM/A",
-            "OwnValue": "32/39",
-            "OpponentValue": "18/23",
+            "OwnValue": "54/66",
+            "OpponentValue": "32/44",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Free Throw Percentage",
             "Label": "FT%",
-            "OwnValue": ".821",
-            "OpponentValue": ".783",
+            "OwnValue": ".818",
+            "OpponentValue": ".727",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "3-point Shots Made",
             "Label": "3PTM",
-            "OwnValue": "21",
-            "OpponentValue": "10",
+            "OwnValue": "36",
+            "OpponentValue": "20",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Points Scored",
             "Label": "PTS",
-            "OwnValue": "187",
-            "OpponentValue": "86",
+            "OwnValue": "348",
+            "OpponentValue": "200",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Offensive Rebounds",
             "Label": "OREB",
-            "OwnValue": "13",
-            "OpponentValue": "10",
+            "OwnValue": "28",
+            "OpponentValue": "22",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Defensive Rebounds",
             "Label": "DREB",
-            "OwnValue": "27",
-            "OpponentValue": "40",
+            "OwnValue": "61",
+            "OpponentValue": "67",
             "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Assists",
             "Label": "AST",
-            "OwnValue": "36",
-            "OpponentValue": "26",
+            "OwnValue": "70",
+            "OpponentValue": "58",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Steals",
             "Label": "ST",
-            "OwnValue": "14",
-            "OpponentValue": "3",
+            "OwnValue": "23",
+            "OpponentValue": "13",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Blocked Shots",
             "Label": "BLK",
-            "OwnValue": "6",
-            "OpponentValue": "3",
+            "OwnValue": "10",
+            "OpponentValue": "5",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Turnovers",
             "Label": "TO",
-            "OwnValue": "20",
-            "OpponentValue": "20",
-            "Result": "tie",
+            "OwnValue": "36",
+            "OpponentValue": "34",
+            "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Assist/Turnover Ratio",
             "Label": "A/T",
-            "OwnValue": "1.80",
-            "OpponentValue": "1.30",
+            "OwnValue": "1.944",
+            "OpponentValue": "1.706",
             "Result": "win",
             "DisplayOnly": false
           },
@@ -403,13 +403,13 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:50.7285693+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:50.7285693+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:57.8748799+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:57.8748799+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "WindowStartUtcDate": "2026-10-20",
-        "WindowEndUtcDate": "2026-11-18",
+        "WindowStartUtcDate": "2026-10-21",
+        "WindowEndUtcDate": "2026-11-19",
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
@@ -709,8 +709,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:51.2466518+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:51.2466518+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:58.1561583+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:58.1561583+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -724,8 +724,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-18T23:17:52.3465197+00:00",
-      "RetrievedAtUtc": "2026-11-18T23:17:52.3465197+00:00",
+      "CheckedAtUtc": "2026-11-19T04:59:59.0349090+00:00",
+      "RetrievedAtUtc": "2026-11-19T04:59:59.0349090+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -769,16 +769,8 @@
             "Position": "SG,SF",
             "TeamCode": "CHA",
             "Availability": "waivers",
-            "PercentOwned": 43,
+            "PercentOwned": 42,
             "WaiverDate": "2026-11-19"
-          },
-          {
-            "Player": "Sandro Mamukelashvili",
-            "Position": "PF,C",
-            "TeamCode": "LAL",
-            "Availability": "free_agent",
-            "PercentOwned": 40,
-            "WaiverDate": null
           },
           {
             "Player": "Khaman Maluach",
@@ -797,14 +789,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "De'Anthony Melton",
-            "Position": "PG,SG",
-            "TeamCode": "GSW",
-            "Availability": "waivers",
-            "PercentOwned": 29,
-            "WaiverDate": "2026-11-19"
-          },
-          {
             "Player": "Keaton Wagler",
             "Position": "SG",
             "TeamCode": "LAC",
@@ -813,11 +797,19 @@
             "WaiverDate": "2026-11-20"
           },
           {
+            "Player": "De'Anthony Melton",
+            "Position": "PG,SG",
+            "TeamCode": "GSW",
+            "Availability": "waivers",
+            "PercentOwned": 28,
+            "WaiverDate": "2026-11-19"
+          },
+          {
             "Player": "Julian Champagnie",
             "Position": "SF,PF",
             "TeamCode": "SAS",
             "Availability": "free_agent",
-            "PercentOwned": 27,
+            "PercentOwned": 28,
             "WaiverDate": null
           },
           {
@@ -825,7 +817,7 @@
             "Position": "SF,PF",
             "TeamCode": "LAC",
             "Availability": "free_agent",
-            "PercentOwned": 25,
+            "PercentOwned": 24,
             "WaiverDate": null
           },
           {
@@ -945,16 +937,8 @@
             "Position": "PG",
             "TeamCode": "BKN",
             "Availability": "free_agent",
-            "PercentOwned": 13,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Robert Williams III",
-            "Position": "C",
-            "TeamCode": "POR",
-            "Availability": "waivers",
             "PercentOwned": 12,
-            "WaiverDate": "2026-11-20"
+            "WaiverDate": null
           },
           {
             "Player": "Isaiah Jackson",
@@ -965,12 +949,12 @@
             "WaiverDate": "2026-11-20"
           },
           {
-            "Player": "Ziaire Williams",
-            "Position": "SG,SF",
-            "TeamCode": "LAL",
-            "Availability": "free_agent",
+            "Player": "Robert Williams III",
+            "Position": "C",
+            "TeamCode": "POR",
+            "Availability": "waivers",
             "PercentOwned": 11,
-            "WaiverDate": null
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Anfernee Simons",
@@ -1045,14 +1029,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Kevin Porter Jr.",
-            "Position": "PG,SG",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 8,
-            "WaiverDate": null
-          },
-          {
             "Player": "Scoot Henderson",
             "Position": "PG",
             "TeamCode": "POR",
@@ -1083,6 +1059,22 @@
             "Availability": "waivers",
             "PercentOwned": 7,
             "WaiverDate": "2026-11-19"
+          },
+          {
+            "Player": "Kevin Porter Jr.",
+            "Position": "PG,SG",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 7,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Mark Williams",
+            "Position": "C",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 7,
+            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Ryan Kalkbrenner",
@@ -1157,6 +1149,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Kasparas Jakučionis",
+            "Position": "PG,SG",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 5,
+            "WaiverDate": null
+          },
+          {
             "Player": "Miles McBride",
             "Position": "PG,SG",
             "TeamCode": "NYK",
@@ -1181,19 +1181,11 @@
             "WaiverDate": null
           },
           {
-            "Player": "Dean Wade",
-            "Position": "SF,PF",
-            "TeamCode": "PHI",
+            "Player": "T.J. McConnell",
+            "Position": "PG",
+            "TeamCode": "IND",
             "Availability": "free_agent",
-            "PercentOwned": 4,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kasparas Jakučionis",
-            "Position": "PG,SG",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 4,
+            "PercentOwned": 5,
             "WaiverDate": null
           },
           {
@@ -1229,14 +1221,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "T.J. McConnell",
-            "Position": "PG",
-            "TeamCode": "IND",
-            "Availability": "free_agent",
-            "PercentOwned": 4,
-            "WaiverDate": null
-          },
-          {
             "Player": "Al Horford",
             "Position": "PF,C",
             "TeamCode": "GSW",
@@ -1251,6 +1235,14 @@
             "Availability": "waivers",
             "PercentOwned": 3,
             "WaiverDate": "2026-11-19"
+          },
+          {
+            "Player": "Dean Wade",
+            "Position": "SF,PF",
+            "TeamCode": "PHI",
+            "Availability": "free_agent",
+            "PercentOwned": 3,
+            "WaiverDate": null
           },
           {
             "Player": "Jay Huff",
@@ -1429,6 +1421,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Goga Bitadze",
+            "Position": "C",
+            "TeamCode": "ORL",
+            "Availability": "free_agent",
+            "PercentOwned": 1,
+            "WaiverDate": null
+          },
+          {
             "Player": "Harrison Barnes",
             "Position": "PF",
             "TeamCode": "SAS",
@@ -1536,113 +1536,23 @@
       }
     },
     "Schedule": {
-      "Status": "ok",
+      "Status": "partial",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-18T23:18:01.020Z",
-      "RetrievedAtUtc": "2026-11-18T23:18:01.020Z",
+      "CheckedAtUtc": "2026-11-19T05:00:06.493Z",
+      "RetrievedAtUtc": "2026-11-19T05:00:06.493Z",
       "SourceUpdatedAtUtc": null,
-      "ErrorType": null,
+      "ErrorType": "ScheduleCoverageIncomplete",
       "Data": {
         "RangeStartDateTaipei": "2026-11-19",
         "RangeEndDateTaipei": "2026-11-25",
-        "UnavailableDates": [],
+        "UnavailableDates": [
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21",
+          "2026-11-22",
+          "2026-11-23"
+        ],
         "Games": [
-          {
-            "StartAtTaipei": "2026-11-19T08:00:00+08:00",
-            "Teams": [
-              "Grizzlies",
-              "Cavaliers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600258"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T08:00:00+08:00",
-            "Teams": [
-              "Rockets",
-              "Pacers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600259"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T08:00:00+08:00",
-            "Teams": [
-              "Bucks",
-              "Heat"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600260"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T08:00:00+08:00",
-            "Teams": [
-              "76ers",
-              "Magic"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600261"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T08:30:00+08:00",
-            "Teams": [
-              "Bulls",
-              "Nets"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600262"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T08:30:00+08:00",
-            "Teams": [
-              "Wizards",
-              "Raptors"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600263"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T09:00:00+08:00",
-            "Teams": [
-              "Pistons",
-              "Pelicans"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600264"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T09:00:00+08:00",
-            "Teams": [
-              "Hawks",
-              "Thunder"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600265"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T09:00:00+08:00",
-            "Teams": [
-              "Warriors",
-              "Mavericks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600267"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T10:30:00+08:00",
-            "Teams": [
-              "Celtics",
-              "Nuggets"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600266"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T11:00:00+08:00",
-            "Teams": [
-              "Jazz",
-              "Lakers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600268"
-          },
-          {
-            "StartAtTaipei": "2026-11-19T11:00:00+08:00",
-            "Teams": [
-              "Suns",
-              "Kings"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600269"
-          },
           {
             "StartAtTaipei": "2026-11-20T09:00:00+08:00",
             "Teams": [
@@ -1674,182 +1584,6 @@
               "Spurs"
             ],
             "SourceUrl": "https://www.nba.com/game/0022600273"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T08:00:00+08:00",
-            "Teams": [
-              "Hornets",
-              "Hawks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600043"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T08:30:00+08:00",
-            "Teams": [
-              "Magic",
-              "Nets"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600044"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T08:30:00+08:00",
-            "Teams": [
-              "Pacers",
-              "Cavaliers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600045"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T08:30:00+08:00",
-            "Teams": [
-              "Raptors",
-              "Pistons"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600046"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T09:00:00+08:00",
-            "Teams": [
-              "Wizards",
-              "Bulls"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600047"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T09:00:00+08:00",
-            "Teams": [
-              "Pelicans",
-              "Thunder"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600048"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T10:30:00+08:00",
-            "Teams": [
-              "Suns",
-              "Jazz"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600049"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T11:00:00+08:00",
-            "Teams": [
-              "Rockets",
-              "Nuggets"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600050"
-          },
-          {
-            "StartAtTaipei": "2026-11-21T11:00:00+08:00",
-            "Teams": [
-              "Kings",
-              "Lakers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600051"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T02:00:00+08:00",
-            "Teams": [
-              "Bucks",
-              "76ers"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600274"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T08:30:00+08:00",
-            "Teams": [
-              "Trail Blazers",
-              "Knicks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600275"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T09:00:00+08:00",
-            "Teams": [
-              "Clippers",
-              "Mavericks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600276"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T09:00:00+08:00",
-            "Teams": [
-              "Grizzlies",
-              "Timberwolves"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600277"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T09:00:00+08:00",
-            "Teams": [
-              "Pelicans",
-              "Spurs"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600278"
-          },
-          {
-            "StartAtTaipei": "2026-11-22T11:00:00+08:00",
-            "Teams": [
-              "Celtics",
-              "Kings"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600279"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T04:30:00+08:00",
-            "Teams": [
-              "Pistons",
-              "Hawks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600280"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T07:00:00+08:00",
-            "Teams": [
-              "Thunder",
-              "Heat"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600281"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T08:00:00+08:00",
-            "Teams": [
-              "Magic",
-              "Wizards"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600282"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T08:00:00+08:00",
-            "Teams": [
-              "Nuggets",
-              "Bulls"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600283"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T08:00:00+08:00",
-            "Teams": [
-              "Mavericks",
-              "Jazz"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600284"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T09:00:00+08:00",
-            "Teams": [
-              "Pacers",
-              "Knicks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600285"
-          },
-          {
-            "StartAtTaipei": "2026-11-23T09:30:00+08:00",
-            "Teams": [
-              "Celtics",
-              "Warriors"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600286"
           },
           {
             "StartAtTaipei": "2026-11-24T08:00:00+08:00",
