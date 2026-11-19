@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-19T09:59:11.6922130+00:00",
+  "GeneratedAtUtc": "2026-11-19T11:00:53.9243849+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:01.0409857+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:01.0409857+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:44.4470104+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:44.4470104+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:01.3534728+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:01.3534728+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:44.7403496+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:44.7403496+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -139,22 +139,8 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Alperen Şengün",
-            "Position": "PF",
-            "Status": "Q",
-            "EligiblePositions": [
-              "PF",
-              "F",
-              "C",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "HOU",
-            "IsUndroppable": true
-          },
-          {
             "Player": "Cameron Boozer",
-            "Position": "F",
+            "Position": "PF",
             "Status": null,
             "EligiblePositions": [
               "PF",
@@ -165,6 +151,20 @@
             ],
             "TeamCode": "MEM",
             "IsUndroppable": false
+          },
+          {
+            "Player": "Alperen Şengün",
+            "Position": "F",
+            "Status": "Q",
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "HOU",
+            "IsUndroppable": true
           },
           {
             "Player": "Aday Mara",
@@ -255,8 +255,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:01.9080559+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:01.9080559+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:45.3373352+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:45.3373352+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -404,8 +404,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:02.4459774+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:02.4459774+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:45.7600628+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:45.7600628+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -721,8 +721,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:02.7446290+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:02.7446290+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:46.1830099+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:46.1830099+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -736,8 +736,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T09:59:03.8297064+00:00",
-      "RetrievedAtUtc": "2026-11-19T09:59:03.8297064+00:00",
+      "CheckedAtUtc": "2026-11-19T11:00:47.0527061+00:00",
+      "RetrievedAtUtc": "2026-11-19T11:00:47.0527061+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -785,20 +785,20 @@
             "WaiverDate": null
           },
           {
-            "Player": "Sandro Mamukelashvili",
-            "Position": "PF,C",
-            "TeamCode": "LAL",
-            "Availability": "waivers",
-            "PercentOwned": 39,
-            "WaiverDate": "2026-11-21"
-          },
-          {
             "Player": "Khaman Maluach",
             "Position": "C",
             "TeamCode": "PHX",
             "Availability": "free_agent",
             "PercentOwned": 38,
             "WaiverDate": null
+          },
+          {
+            "Player": "Sandro Mamukelashvili",
+            "Position": "PF,C",
+            "TeamCode": "LAL",
+            "Availability": "waivers",
+            "PercentOwned": 38,
+            "WaiverDate": "2026-11-21"
           },
           {
             "Player": "Draymond Green",
@@ -857,17 +857,17 @@
             "WaiverDate": null
           },
           {
-            "Player": "De'Andre Hunter",
-            "Position": "SF,PF",
-            "TeamCode": "SAC",
-            "Availability": "free_agent",
-            "PercentOwned": 21,
-            "WaiverDate": null
-          },
-          {
             "Player": "Cason Wallace",
             "Position": "PG,SG,SF",
             "TeamCode": "OKC",
+            "Availability": "free_agent",
+            "PercentOwned": 20,
+            "WaiverDate": null
+          },
+          {
+            "Player": "De'Andre Hunter",
+            "Position": "SF,PF",
+            "TeamCode": "SAC",
             "Availability": "free_agent",
             "PercentOwned": 20,
             "WaiverDate": null
@@ -969,6 +969,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jordan Poole",
+            "Position": "PG,SG",
+            "TeamCode": "NOP",
+            "Availability": "free_agent",
+            "PercentOwned": 11,
+            "WaiverDate": null
+          },
+          {
             "Player": "Kingston Flemings",
             "Position": "PG",
             "TeamCode": "ATL",
@@ -988,14 +996,6 @@
             "Player": "Anfernee Simons",
             "Position": "PG,SG",
             "TeamCode": "PHI",
-            "Availability": "free_agent",
-            "PercentOwned": 10,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jordan Poole",
-            "Position": "PG,SG",
-            "TeamCode": "NOP",
             "Availability": "free_agent",
             "PercentOwned": 10,
             "WaiverDate": null
@@ -1550,8 +1550,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-19T09:59:11.879Z",
-      "RetrievedAtUtc": "2026-11-19T09:59:11.879Z",
+      "CheckedAtUtc": "2026-11-19T11:00:54.111Z",
+      "RetrievedAtUtc": "2026-11-19T11:00:54.111Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
