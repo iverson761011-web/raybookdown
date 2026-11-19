@@ -1,12 +1,12 @@
 {
   "SchemaVersion": 1,
   "Status": "insufficient_data",
-  "GeneratedAtUtc": "2026-11-19T06:03:40.484Z",
+  "GeneratedAtUtc": "2026-11-19T08:22:15.960Z",
   "ReportDateET": "2026-11-18",
   "Strategy": "aggressive_week",
   "Reasons": [
     "目前沒有候選通過全部加入條件，不以共用市場名單代替推薦。",
-    "另有88位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+    "另有85位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
   ],
   "Candidates": [],
   "WatchCandidates": [
@@ -259,11 +259,11 @@
       "Protected": false
     },
     {
-      "Player": "Kyshawn George",
-      "TeamCode": "WAS",
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "RemainingGames": 1,
+      "Player": "Julian Champagnie",
+      "TeamCode": "SAS",
+      "SampleGames7": 3,
+      "SampleGames14": 7,
+      "RemainingGames": 2,
       "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
       "Reasons": [
         "最新官方傷勢報告不完整、過期或球隊未知，僅列觀察。",
@@ -339,19 +339,6 @@
       "Protected": false
     },
     {
-      "Player": "Tyrese Proctor",
-      "TeamCode": "CLE",
-      "SampleGames7": 4,
-      "SampleGames14": 8,
-      "RemainingGames": 1,
-      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
-      "Reasons": [
-        "最新官方傷勢報告不完整、過期或球隊未知，僅列觀察。",
-        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
-      ],
-      "Protected": false
-    },
-    {
       "Player": "Zach LaVine",
       "TeamCode": "SAC",
       "SampleGames7": 2,
@@ -362,6 +349,19 @@
         "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
         "最新官方傷勢報告不完整、過期或球隊未知，僅列觀察。",
         "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
+      ],
+      "Protected": false
+    },
+    {
+      "Player": "Kyshawn George",
+      "TeamCode": "WAS",
+      "SampleGames7": 4,
+      "SampleGames14": 8,
+      "RemainingGames": 1,
+      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
+      "Reasons": [
+        "最新官方傷勢報告不完整、過期或球隊未知，僅列觀察。",
+        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
       ],
       "Protected": false
     },
@@ -383,49 +383,49 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-19T06:03:27.588Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:03.582Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-19T06:03:30.220Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:06.175Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-19T06:03:28.419Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:04.348Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-19T06:03:29.295Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:05.177Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-19T06:03:28.920Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:04.880Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-19T06:03:06.642Z",
+      "RetrievedAtUtc": "2026-11-19T08:21:51.568Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-18"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-19T06:03:13.493Z",
-      "SourceUpdatedAtUtc": "2026-11-19T05:45:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_12_45AM.pdf"
+      "RetrievedAtUtc": "2026-11-19T08:21:52.206Z",
+      "SourceUpdatedAtUtc": "2026-11-19T08:15:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_03_15AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-19T06:03:39.316Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:14.928Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -695,7 +695,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:06.406Z",
+      "RetrievedAtUtc": "2026-11-19T08:21:51.313Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/por-vs-sac-0022600041/box-score"
     },
