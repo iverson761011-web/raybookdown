@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-19T06:03:37.6098938+00:00",
+  "GeneratedAtUtc": "2026-11-19T08:22:13.9126720+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:27.2427342+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:27.2427342+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:03.2865389+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:03.2865389+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:27.5884741+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:27.5884741+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:03.5821383+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:03.5821383+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -125,19 +125,17 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Kyshawn George",
+            "Player": "Julian Champagnie",
             "Position": "SF",
             "Status": null,
             "EligiblePositions": [
-              "SG",
-              "G",
               "SF",
               "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "WAS",
+            "TeamCode": "SAS",
             "IsUndroppable": false
           },
           {
@@ -207,19 +205,6 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Tyrese Proctor",
-            "Position": "Util",
-            "Status": null,
-            "EligiblePositions": [
-              "PG",
-              "SG",
-              "G",
-              "Util"
-            ],
-            "TeamCode": "CLE",
-            "IsUndroppable": false
-          },
-          {
             "Player": "Zach LaVine",
             "Position": "Util",
             "Status": null,
@@ -233,6 +218,22 @@
               "Util"
             ],
             "TeamCode": "SAC",
+            "IsUndroppable": false
+          },
+          {
+            "Player": "Kyshawn George",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "SG",
+              "G",
+              "SF",
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "WAS",
             "IsUndroppable": false
           },
           {
@@ -254,8 +255,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:28.4198660+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:28.4198660+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:04.3485502+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:04.3485502+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -274,7 +275,7 @@
           "Losses": 10,
           "Ties": 1
         },
-        "OwnGamesRemaining": 18,
+        "OwnGamesRemaining": 19,
         "OpponentGamesRemaining": 19,
         "Categories": [
           {
@@ -403,8 +404,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:28.9200312+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:28.9200312+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:04.8800292+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:04.8800292+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -413,6 +414,17 @@
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-19T08:00:02.0000000+00:00",
+            "Added": [
+              "Julian Champagnie"
+            ],
+            "Dropped": [
+              "Tyrese Proctor"
+            ],
+            "FaabBid": null
+          },
           {
             "Type": "add",
             "OccurredAtUtc": "2026-11-18T09:24:35.0000000+00:00",
@@ -709,8 +721,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:29.2951611+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:29.2951611+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:05.1779198+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:05.1779198+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -724,8 +736,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-19T06:03:30.2200150+00:00",
-      "RetrievedAtUtc": "2026-11-19T06:03:30.2200150+00:00",
+      "CheckedAtUtc": "2026-11-19T08:22:06.1759919+00:00",
+      "RetrievedAtUtc": "2026-11-19T08:22:06.1759919+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -781,6 +793,22 @@
             "WaiverDate": null
           },
           {
+            "Player": "Sandro Mamukelashvili",
+            "Position": "PF,C",
+            "TeamCode": "LAL",
+            "Availability": "waivers",
+            "PercentOwned": 39,
+            "WaiverDate": "2026-11-21"
+          },
+          {
+            "Player": "Draymond Green",
+            "Position": "PF,C",
+            "TeamCode": "GSW",
+            "Availability": "waivers",
+            "PercentOwned": 32,
+            "WaiverDate": "2026-11-21"
+          },
+          {
             "Player": "DeMar DeRozan",
             "Position": "SF,PF",
             "TeamCode": "DEN",
@@ -803,22 +831,6 @@
             "Availability": "waivers",
             "PercentOwned": 28,
             "WaiverDate": "2026-11-19"
-          },
-          {
-            "Player": "Julian Champagnie",
-            "Position": "SF,PF",
-            "TeamCode": "SAS",
-            "Availability": "free_agent",
-            "PercentOwned": 28,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Derrick Jones Jr.",
-            "Position": "SF,PF",
-            "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 24,
-            "WaiverDate": null
           },
           {
             "Player": "Egor Dëmin",
@@ -877,14 +889,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Zaccharie Risacher",
-            "Position": "SF,PF",
-            "TeamCode": "DAL",
-            "Availability": "free_agent",
-            "PercentOwned": 18,
-            "WaiverDate": null
-          },
-          {
             "Player": "Bobby Portis Jr.",
             "Position": "PF,C",
             "TeamCode": "MIA",
@@ -899,6 +903,14 @@
             "Availability": "waivers",
             "PercentOwned": 17,
             "WaiverDate": "2026-11-20"
+          },
+          {
+            "Player": "Zaccharie Risacher",
+            "Position": "SF,PF",
+            "TeamCode": "DAL",
+            "Availability": "free_agent",
+            "PercentOwned": 17,
+            "WaiverDate": null
           },
           {
             "Player": "Jerami Grant",
@@ -921,7 +933,7 @@
             "Position": "C",
             "TeamCode": "BOS",
             "Availability": "waivers",
-            "PercentOwned": 15,
+            "PercentOwned": 14,
             "WaiverDate": "2026-11-19"
           },
           {
@@ -933,20 +945,20 @@
             "WaiverDate": "2026-11-20"
           },
           {
+            "Player": "Isaiah Jackson",
+            "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 12,
+            "WaiverDate": "2026-11-20"
+          },
+          {
             "Player": "Mikel Brown Jr.",
             "Position": "PG",
             "TeamCode": "BKN",
             "Availability": "free_agent",
             "PercentOwned": 12,
             "WaiverDate": null
-          },
-          {
-            "Player": "Isaiah Jackson",
-            "Position": "C",
-            "TeamCode": "LAC",
-            "Availability": "waivers",
-            "PercentOwned": 11,
-            "WaiverDate": "2026-11-20"
           },
           {
             "Player": "Robert Williams III",
@@ -1029,6 +1041,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Gui Santos",
+            "Position": "SF,PF",
+            "TeamCode": "GSW",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
             "Player": "Scoot Henderson",
             "Position": "PG",
             "TeamCode": "POR",
@@ -1040,14 +1060,6 @@
             "Player": "Bilal Coulibaly",
             "Position": "SG,SF",
             "TeamCode": "WAS",
-            "Availability": "free_agent",
-            "PercentOwned": 7,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Gui Santos",
-            "Position": "SF,PF",
-            "TeamCode": "GSW",
             "Availability": "free_agent",
             "PercentOwned": 7,
             "WaiverDate": null
@@ -1144,14 +1156,6 @@
             "Player": "Isaiah Collier",
             "Position": "PG,SG",
             "TeamCode": "UTA",
-            "Availability": "free_agent",
-            "PercentOwned": 5,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kasparas Jakučionis",
-            "Position": "PG,SG",
-            "TeamCode": "MIL",
             "Availability": "free_agent",
             "PercentOwned": 5,
             "WaiverDate": null
@@ -1381,6 +1385,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Sam Merrill",
+            "Position": "SG,SF",
+            "TeamCode": "CLE",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
             "Player": "Adem Bona",
             "Position": "C",
             "TeamCode": "PHI",
@@ -1538,8 +1550,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-19T06:03:37.756Z",
-      "RetrievedAtUtc": "2026-11-19T06:03:37.756Z",
+      "CheckedAtUtc": "2026-11-19T08:22:14.100Z",
+      "RetrievedAtUtc": "2026-11-19T08:22:14.100Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
