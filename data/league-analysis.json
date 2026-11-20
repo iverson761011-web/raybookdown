@@ -4,8 +4,8 @@
   "Platform": "yahoo",
   "Season": 2026,
   "Status": "ok",
-  "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
-  "RetrievedAtUtc": "2026-11-20T08:57:26.0262336+00:00",
+  "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
+  "RetrievedAtUtc": "2026-11-20T09:58:19.2054963+00:00",
   "SourceUpdatedAtUtc": null,
   "CurrentWeek": 5,
   "TeamCount": 14,
@@ -19,8 +19,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:22.3498594+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:22.3498594+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:14.8355759+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:14.8355759+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -222,8 +222,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -248,8 +248,8 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "562",
-              "OpponentValue": "547",
+              "OwnValue": "564",
+              "OpponentValue": "551",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -352,8 +352,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.857",
-              "OpponentValue": "1.429",
+              "OwnValue": "1.86",
+              "OpponentValue": "1.43",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -371,8 +371,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -386,25 +386,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:22.3498594+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:14.8355759+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -433,8 +433,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.857,
-          "Rank": 9,
+          "OwnValue": 1.86,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -496,7 +496,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 562,
+          "OwnValue": 564,
           "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -543,7 +543,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "insufficient_data",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -714,7 +714,7 @@
           {
             "Player": "Isaiah Jackson",
             "TeamCode": "LAC",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 5,
@@ -723,7 +723,6 @@
             "Reasons": [
               "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依PPPPPPPPP Baskets的相對弱項BLK、MIN、PTS、DREB、FG%整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Bam Adebayo與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "BLK估計差+1.9",
@@ -959,25 +958,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:22.349Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:14.835Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -989,19 +988,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -1033,8 +1032,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:22.6588623+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:22.6588623+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:15.1952648+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:15.1952648+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1241,8 +1240,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1267,7 +1266,7 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "594",
+              "OwnValue": "596",
               "OpponentValue": "567",
               "Result": "win",
               "DisplayOnly": false
@@ -1371,8 +1370,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.027",
-              "OpponentValue": "2.226",
+              "OwnValue": "2.03",
+              "OpponentValue": "2.23",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -1390,8 +1389,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1405,31 +1404,31 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:22.6588623+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:15.1952648+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "A/T：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "A/T：本週累計在已取得的14隊中並列第3；較高較佳。",
         "FG%：本週累計在已取得的14隊中並列第2；較高較佳。",
         "TO：本週累計在已取得的14隊中並列第3；較低較佳。"
       ],
@@ -1449,8 +1448,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.027,
-          "Rank": 4,
+          "OwnValue": 2.03,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -1512,7 +1511,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 594,
+          "OwnValue": 596,
           "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -1559,12 +1558,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有64位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有63位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -1614,6 +1613,32 @@
               "FG%估計差-0.003",
               "DREB估計差-1.2",
               "FT%估計差-0.003",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Svi Mykhailiuk在相同標示期間的剩餘排程做假設替換比較。",
+              "AST估計差+3.2",
+              "A/T估計差+0.079",
+              "PTS估計差+6.4",
+              "此候選沒有算出本隊相對弱項的正增益；用途限於其他接近比項，未把弱項當作已解決。"
+            ],
+            "Tradeoffs": [
+              "ST估計差-0.406",
+              "DREB估計差-1.1",
+              "OREB估計差-0.362",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -2156,25 +2181,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:22.658Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:15.195Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -2186,19 +2211,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -2230,8 +2255,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:22.9713740+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:22.9713740+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:15.6176637+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:15.6176637+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2402,8 +2427,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2428,8 +2453,8 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "709",
-              "OpponentValue": "700",
+              "OwnValue": "711",
+              "OpponentValue": "701",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -2532,8 +2557,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.538",
-              "OpponentValue": "1.630",
+              "OwnValue": "2.54",
+              "OpponentValue": "1.63",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -2551,8 +2576,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2566,25 +2591,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:22.9713740+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:15.6176637+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -2614,7 +2639,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.538,
+          "OwnValue": 2.54,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -2677,7 +2702,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 709,
+          "OwnValue": 711,
           "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -2724,7 +2749,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -2918,7 +2943,7 @@
           {
             "Player": "Keaton Wagler",
             "TeamCode": "LAC",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 6,
@@ -2926,7 +2951,6 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依Derek's Boss Team的相對弱項FT%整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Alex Sarr與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "FT%估計差+0.022"
@@ -3132,25 +3156,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:22.971Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:15.617Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -3162,19 +3186,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -3206,8 +3230,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:23.2536448+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:23.2536448+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:15.9352589+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:15.9352589+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3387,8 +3411,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3414,7 +3438,7 @@
               "Name": "Minutes Played",
               "Label": "MIN",
               "OwnValue": "567",
-              "OpponentValue": "594",
+              "OpponentValue": "596",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -3517,8 +3541,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.226",
-              "OpponentValue": "2.027",
+              "OwnValue": "2.23",
+              "OpponentValue": "2.03",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -3536,8 +3560,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3551,25 +3575,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:23.2536448+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:15.9352589+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -3599,7 +3623,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.226,
+          "OwnValue": 2.23,
           "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3709,12 +3733,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有46位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有45位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -3738,6 +3762,32 @@
               "FG%估計差-0.011",
               "TO估計差+1.1（失誤較少較好）",
               "FT%估計差-0.009",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Ziaire Williams在相同標示期間的剩餘排程做假設替換比較。",
+              "AST估計差+4.7",
+              "A/T估計差+0.084",
+              "3PTM估計差+0.917",
+              "依本隊本週相對弱項評估，可望補強的情境比項：MIN、3PTM、AST。"
+            ],
+            "Tradeoffs": [
+              "ST估計差-0.800",
+              "TO估計差+0.883（失誤較少較好）",
+              "FG%估計差-0.002",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -4038,34 +4088,6 @@
             "DropOptions": []
           },
           {
-            "Player": "Jamal Shead",
-            "TeamCode": "TOR",
-            "Availability": "waivers",
-            "RemainingGames": 1,
-            "SampleGames7": 3,
-            "SampleGames14": 7,
-            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-            "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
-            "Reasons": [
-              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
-              "依HanK's Agreeable Team的相對弱項AST、3PTM、MIN整理，並非自由市場原始排名。",
-              "僅以已核實的近7/14日樣本，假設比較Precious Achiuwa與本候選在標示期間的排定場次；這不是建議移除該球員。",
-              "AST估計差+5.8",
-              "3PTM估計差+1.3",
-              "MIN估計差+0.449",
-              "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
-            ],
-            "Tradeoffs": [
-              "OREB估計差-1.2",
-              "BLK估計差-0.525",
-              "DREB估計差-1.2",
-              "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
-              "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
-            ],
-            "DropOptions": []
-          },
-          {
             "Player": "Grayson Allen",
             "TeamCode": "CHA",
             "Availability": "free_agent",
@@ -4113,6 +4135,34 @@
               "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
             ],
             "Tradeoffs": [
+              "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
+              "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jared McCain",
+            "TeamCode": "OKC",
+            "Availability": "waivers",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
+              "依HanK's Agreeable Team的相對弱項3PTM、AST、MIN、DREB整理，並非自由市場原始排名。",
+              "僅以已核實的近7/14日樣本，假設比較Precious Achiuwa與本候選在標示期間的排定場次；這不是建議移除該球員。",
+              "3PTM估計差+3.4",
+              "AST估計差+1.1",
+              "MIN估計差+6.8",
+              "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
+            ],
+            "Tradeoffs": [
+              "OREB估計差-0.858",
+              "BLK估計差-0.425",
+              "FG%估計差-0.000",
               "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
               "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
             ],
@@ -4284,25 +4334,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:23.253Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:15.935Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -4314,19 +4364,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -4358,8 +4408,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:23.5601714+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:23.5601714+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:16.3108573+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:16.3108573+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4568,8 +4618,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4595,7 +4645,7 @@
               "Name": "Minutes Played",
               "Label": "MIN",
               "OwnValue": "576",
-              "OpponentValue": "724",
+              "OpponentValue": "730",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -4698,8 +4748,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.025",
-              "OpponentValue": "1.656",
+              "OwnValue": "2.03",
+              "OpponentValue": "1.66",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -4717,8 +4767,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4732,30 +4782,31 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Jie 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:23.5601714+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:16.3108573+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Jie 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Jie 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
+        "A/T：本週累計在已取得的14隊中並列第3；較高較佳。",
         "BLK：本週累計在已取得的14隊中並列第2；較高較佳。",
         "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
         "DREB：本週累計在已取得的14隊中並列第1；較高較佳。",
@@ -4776,10 +4827,10 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.025,
-          "Rank": 5,
+          "OwnValue": 2.03,
+          "Rank": 3,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
@@ -4886,12 +4937,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有75位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有74位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -4967,6 +5018,32 @@
               "ST估計差-0.383",
               "FG%估計差-0.005",
               "DREB估計差-1.5",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Mario Hezonja在相同標示期間的剩餘排程做假設替換比較。",
+              "AST估計差+3.8",
+              "A/T估計差+0.077",
+              "3PTM估計差+0.515",
+              "此候選沒有算出本隊相對弱項的正增益；用途限於其他接近比項，未把弱項當作已解決。"
+            ],
+            "Tradeoffs": [
+              "DREB估計差-3.6",
+              "FT%估計差-0.005",
+              "FG%估計差-0.005",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -5159,7 +5236,7 @@
           {
             "Player": "Keaton Wagler",
             "TeamCode": "LAC",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 6,
@@ -5167,7 +5244,6 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依Jie的相對弱項FT%整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較RJ Barrett與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "FT%估計差+0.019",
@@ -5401,25 +5477,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:23.560Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:16.310Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -5431,19 +5507,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -5475,8 +5551,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:23.9110142+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:23.9110142+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:16.6521969+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:16.6521969+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5646,8 +5722,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5667,13 +5743,13 @@
             "Ties": 1
           },
           "OwnGamesRemaining": 18,
-          "OpponentGamesRemaining": 15,
+          "OpponentGamesRemaining": 16,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "659",
-              "OpponentValue": "613",
+              "OwnValue": "661",
+              "OpponentValue": "615",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -5776,8 +5852,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.810",
-              "OpponentValue": "1.579",
+              "OwnValue": "1.81",
+              "OpponentValue": "1.58",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -5795,8 +5871,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5810,25 +5886,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 新店皮霸 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:23.9110142+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:16.6521969+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 新店皮霸 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 新店皮霸 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -5917,7 +5993,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 659,
+          "OwnValue": 661,
           "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -5964,12 +6040,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有55位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有54位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -6045,6 +6121,32 @@
               "ST估計差-0.217",
               "AST估計差-1.3",
               "MIN估計差-6.4",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Cameron Johnson在相同標示期間的剩餘排程做假設替換比較。",
+              "AST估計差+4.8",
+              "A/T估計差+0.091",
+              "FG%估計差+0.005",
+              "依本隊本週相對弱項評估，可望補強的情境比項：FG%、3PTM、PTS。"
+            ],
+            "Tradeoffs": [
+              "ST估計差-0.758",
+              "DREB估計差-1.7",
+              "FT%估計差-0.008",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -6465,25 +6567,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:23.911Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:16.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -6495,19 +6597,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -6539,8 +6641,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:24.1937956+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:24.1937956+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:16.9962293+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:16.9962293+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6729,8 +6831,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6859,8 +6961,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.000",
-              "OpponentValue": "2.000",
+              "OwnValue": "2.00",
+              "OpponentValue": "2.00",
               "Result": "tie",
               "DisplayOnly": false
             },
@@ -6878,8 +6980,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6893,25 +6995,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Mamba 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:24.1937956+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:16.9962293+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Mamba 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Mamba 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -7050,12 +7152,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有72位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有71位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -7079,6 +7181,32 @@
               "FG%估計差-0.015",
               "TO估計差+0.342（失誤較少較好）",
               "DREB估計差-0.629",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Aaron Gordon在相同標示期間的剩餘排程做假設替換比較。",
+              "A/T估計差+0.116",
+              "AST估計差+4.8",
+              "DD估計差+0.100",
+              "依本隊本週相對弱項評估，可望補強的情境比項：3PTM、PTS、DD。"
+            ],
+            "Tradeoffs": [
+              "OREB估計差-1.2",
+              "DREB估計差-2.1",
+              "BLK估計差-0.392",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -7239,32 +7367,6 @@
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
             "DropOptions": []
-          },
-          {
-            "Player": "Bennett Stirtz",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "RemainingGames": 1,
-            "SampleGames7": 3,
-            "SampleGames14": 7,
-            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
-            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
-            "Reasons": [
-              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-              "以7/14日每場數據65%/35%混合估算，與Aaron Gordon在相同標示期間的剩餘排程做假設替換比較。",
-              "A/T估計差+0.062",
-              "FT%估計差+0.021",
-              "TO估計差-1.2（失誤較少較好）",
-              "依本隊本週相對弱項評估，可望補強的情境比項：3PTM、ST。"
-            ],
-            "Tradeoffs": [
-              "OREB估計差-1.2",
-              "DREB估計差-2.5",
-              "MIN估計差-11.8",
-              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
-              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
-            ],
-            "DropOptions": []
           }
         ],
         "WatchCandidates": [
@@ -7404,7 +7506,7 @@
           {
             "Player": "Keldon Johnson",
             "TeamCode": "SAS",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 8,
@@ -7412,7 +7514,6 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依Mamba的相對弱項DD、OREB、MIN、ST、PTS、3PTM整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Charles Bassey與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "DD估計差+0.206",
@@ -7660,25 +7761,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:24.193Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:16.996Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -7690,19 +7791,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -7734,8 +7835,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:24.4806418+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:24.4806418+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:17.3244198+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:17.3244198+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -7916,8 +8017,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -7942,8 +8043,8 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "700",
-              "OpponentValue": "709",
+              "OwnValue": "701",
+              "OpponentValue": "711",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -8046,8 +8147,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.630",
-              "OpponentValue": "2.538",
+              "OwnValue": "1.63",
+              "OpponentValue": "2.54",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -8065,8 +8166,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8080,25 +8181,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo SLAM DUNK 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:24.4806418+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:17.3244198+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo SLAM DUNK 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo SLAM DUNK 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -8192,7 +8293,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 700,
+          "OwnValue": 701,
           "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -8239,7 +8340,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -8399,7 +8500,7 @@
             "Tradeoffs": [
               "3PTM估計差-2.0",
               "PTS估計差-11.7",
-              "MIN估計差-9.6",
+              "DREB估計差-3.5",
               "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
               "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
             ],
@@ -8725,25 +8826,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:24.480Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:17.324Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -8755,19 +8856,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -8799,8 +8900,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.4511856+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.4511856+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.2129549+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.2129549+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8975,8 +9076,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9105,8 +9206,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.000",
-              "OpponentValue": "2.000",
+              "OwnValue": "2.00",
+              "OpponentValue": "2.00",
               "Result": "tie",
               "DisplayOnly": false
             },
@@ -9124,8 +9225,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9139,25 +9240,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo RayBookDown 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.4511856+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.2129549+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo RayBookDown 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo RayBookDown 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -9293,12 +9394,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有29位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有28位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -9322,6 +9423,32 @@
               "FG%估計差-0.006",
               "FT%估計差-0.008",
               "TO估計差+0.358（失誤較少較好）",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Ja'Kobe Walter在相同標示期間的剩餘排程做假設替換比較。",
+              "A/T估計差+0.078",
+              "AST估計差+3.6",
+              "DD估計差+0.100",
+              "依本隊本週相對弱項評估，可望補強的情境比項：DD。"
+            ],
+            "Tradeoffs": [
+              "DREB估計差-1.4",
+              "OREB估計差-1.0",
+              "FT%估計差-0.008",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -9357,7 +9484,7 @@
           {
             "Player": "Keldon Johnson",
             "TeamCode": "SAS",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 8,
@@ -9365,7 +9492,6 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依RayBookDown的相對弱項DD、DREB整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Ja'Kobe Walter與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "DD估計差+0.206",
@@ -9482,7 +9608,7 @@
           {
             "Player": "Robert Williams III",
             "TeamCode": "POR",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 3,
             "SampleGames14": 6,
@@ -9491,7 +9617,6 @@
             "Reasons": [
               "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依RayBookDown的相對弱項DREB整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Ja'Kobe Walter與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "DREB估計差+2.0",
@@ -9698,25 +9823,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.451Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.212Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -9728,19 +9853,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -9772,8 +9897,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:24.7925973+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:24.7925973+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:17.7155071+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:17.7155071+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9927,7 +10052,7 @@
             {
               "Player": "Deni Avdija",
               "Position": "IL",
-              "Status": "O",
+              "Status": "Q",
               "EligiblePositions": [
                 "SG",
                 "G",
@@ -9935,8 +10060,7 @@
                 "PF",
                 "F",
                 "FC",
-                "Util",
-                "IL"
+                "Util"
               ],
               "TeamCode": "POR",
               "IsUndroppable": false
@@ -9973,8 +10097,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9999,7 +10123,7 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "724",
+              "OwnValue": "730",
               "OpponentValue": "576",
               "Result": "win",
               "DisplayOnly": false
@@ -10103,8 +10227,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.656",
-              "OpponentValue": "2.025",
+              "OwnValue": "1.66",
+              "OpponentValue": "2.03",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -10122,8 +10246,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -10137,25 +10261,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Project BAO 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:24.7925973+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:17.7155071+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Project BAO 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Project BAO 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -10186,7 +10310,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.656,
+          "OwnValue": 1.66,
           "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -10249,7 +10373,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 724,
+          "OwnValue": 730,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -10296,7 +10420,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -10363,7 +10487,7 @@
           {
             "Player": "Jamal Shead",
             "TeamCode": "TOR",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 3,
             "SampleGames14": 7,
@@ -10371,7 +10495,7 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
+              "未取得所有實際計分比項完整且正向的整體替換增益，不列加入建議。",
               "依Project BAO的相對弱項A/T、TO、FG%整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Yves Missi與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "A/T估計差+0.087",
@@ -10750,25 +10874,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:24.792Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:17.715Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -10780,19 +10904,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -10824,8 +10948,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:25.1056336+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:25.1056336+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:18.1376759+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:18.1376759+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -10985,14 +11109,13 @@
             {
               "Player": "Kyle Kuzma",
               "Position": "IL",
-              "Status": "O",
+              "Status": "Q",
               "EligiblePositions": [
                 "SF",
                 "PF",
                 "F",
                 "FC",
-                "Util",
-                "IL"
+                "Util"
               ],
               "TeamCode": "MIL",
               "IsUndroppable": false
@@ -11033,8 +11156,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -11059,8 +11182,8 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "547",
-              "OpponentValue": "562",
+              "OwnValue": "551",
+              "OpponentValue": "564",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -11163,8 +11286,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.429",
-              "OpponentValue": "1.857",
+              "OwnValue": "1.43",
+              "OpponentValue": "1.86",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -11182,8 +11305,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -11197,25 +11320,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Gemini TEAM 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:25.1056336+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:18.1376759+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Gemini TEAM 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Gemini TEAM 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -11246,7 +11369,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.429,
+          "OwnValue": 1.43,
           "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -11309,7 +11432,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 547,
+          "OwnValue": 551,
           "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -11356,12 +11479,12 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
           "加入建議僅列已通過樣本、傷勢、場次、取得方式及完整正向比較的候選。",
-          "另有79位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
+          "另有78位可依本隊缺口做條件式觀察；觀察與加入建議分開顯示。"
         ],
         "Candidates": [
           {
@@ -11411,6 +11534,32 @@
               "ST估計差-1.5",
               "TO估計差+0.413（失誤較少較好）",
               "FT%估計差-0.000",
+              "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
+              "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
+            ],
+            "DropOptions": []
+          },
+          {
+            "Player": "Jamal Shead",
+            "TeamCode": "TOR",
+            "Availability": "free_agent",
+            "RemainingGames": 1,
+            "SampleGames7": 3,
+            "SampleGames14": 7,
+            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
+            "Reasons": [
+              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "以7/14日每場數據65%/35%混合估算，與Josh Okogie在相同標示期間的剩餘排程做假設替換比較。",
+              "A/T估計差+0.085",
+              "AST估計差+5.0",
+              "PTS估計差+6.4",
+              "依本隊本週相對弱項評估，可望補強的情境比項：MIN、FG%、3PTM、PTS、AST、A/T。"
+            ],
+            "Tradeoffs": [
+              "ST估計差-1.3",
+              "OREB估計差-0.950",
+              "TO估計差+0.879（失誤較少較好）",
               "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
               "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
             ],
@@ -11658,26 +11807,27 @@
             "DropOptions": []
           },
           {
-            "Player": "Jamal Shead",
-            "TeamCode": "TOR",
+            "Player": "Derrick Jones Jr.",
+            "TeamCode": "LAC",
             "Availability": "waivers",
             "RemainingGames": 1,
-            "SampleGames7": 3,
-            "SampleGames14": 7,
-            "InjuryStatus": "醫療未知（球隊已提交、未列名；不代表健康）",
+            "SampleGames7": 4,
+            "SampleGames14": 6,
+            "InjuryStatus": "未知：球隊尚未確認提交適用的官方報告",
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
-              "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
+              "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
               "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
-              "依Gemini TEAM的相對弱項MIN、PTS、AST、A/T、3PTM、FG%整理，並非自由市場原始排名。",
+              "依Gemini TEAM的相對弱項MIN、BLK、PTS、3PTM、FG%、AST整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Pelle Larsson與本候選在標示期間的排定場次；這不是建議移除該球員。",
-              "MIN估計差+24.3",
-              "PTS估計差+12.8",
-              "AST估計差+6.2",
+              "MIN估計差+27.3",
+              "BLK估計差+1.4",
+              "PTS估計差+9.9",
               "觀察樣本或逐場覆蓋未達正式推薦門檻；上述只是待確認的條件式適配。"
             ],
             "Tradeoffs": [
-              "TO估計差+1.5（失誤較少較好）",
+              "TO估計差+1.4（失誤較少較好）",
+              "A/T估計差-0.028",
               "FT%估計差-0.002",
               "尚未通過完整加入條件；傷勢、讓渡生效、可用位置與實際出賽必須另行核實。",
               "比較沒有估計對手後續增量，亦不是整體實力、健康或可出賽保證。"
@@ -11879,25 +12029,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:25.105Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:18.137Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -11909,19 +12059,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -11953,8 +12103,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:25.3868943+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:25.3868943+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:18.4975429+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:18.4975429+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -12108,12 +12258,11 @@
             {
               "Player": "Zach Edey",
               "Position": "IL",
-              "Status": "O",
+              "Status": "Q",
               "EligiblePositions": [
                 "C",
                 "FC",
-                "Util",
-                "IL"
+                "Util"
               ],
               "TeamCode": "MEM",
               "IsUndroppable": false
@@ -12138,8 +12287,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -12164,7 +12313,7 @@
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "578",
+              "OwnValue": "579",
               "OpponentValue": "594",
               "Result": "loss",
               "DisplayOnly": false
@@ -12268,8 +12417,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.860",
-              "OpponentValue": "2.031",
+              "OwnValue": "1.86",
+              "OpponentValue": "2.03",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -12287,8 +12436,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -12302,25 +12451,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:25.3868943+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:18.4975429+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -12410,7 +12559,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 578,
+          "OwnValue": 579,
           "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -12457,7 +12606,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -12549,7 +12698,7 @@
           {
             "Player": "Ryan Kalkbrenner",
             "TeamCode": "CHA",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 2,
             "SampleGames14": 5,
@@ -12558,7 +12707,6 @@
             "Reasons": [
               "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
               "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依閃電五連鞭 (JoeDub)的相對弱項OREB、TO整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Coby White與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "OREB估計差+2.4",
@@ -12889,25 +13037,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:25.386Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:18.497Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -12919,19 +13067,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -12963,8 +13111,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:25.6807282+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:25.6807282+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:18.8261753+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:18.8261753+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -13167,8 +13315,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -13194,7 +13342,7 @@
               "Name": "Minutes Played",
               "Label": "MIN",
               "OwnValue": "594",
-              "OpponentValue": "578",
+              "OpponentValue": "579",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -13297,8 +13445,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.031",
-              "OpponentValue": "1.860",
+              "OwnValue": "2.03",
+              "OpponentValue": "1.86",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -13316,8 +13464,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -13331,25 +13479,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:25.6807282+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:18.8261753+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -13378,7 +13526,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.031,
+          "OwnValue": 2.03,
           "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -13442,7 +13590,7 @@
         {
           "Label": "MIN",
           "OwnValue": 594,
-          "Rank": 7,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -13488,7 +13636,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -13715,7 +13863,7 @@
           {
             "Player": "Keldon Johnson",
             "TeamCode": "SAS",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 8,
@@ -13723,7 +13871,6 @@
             "Recommendation": "個別化觀察：可能適合本隊缺口，尚未通過完整加入條件",
             "Reasons": [
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依北川瞳鈴眼的相對弱項OREB、AST、DD、ST整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Klay Thompson與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "OREB估計差+1.4",
@@ -13934,25 +14081,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:25.680Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:18.826Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -13964,19 +14111,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
@@ -14008,8 +14155,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:25.9957137+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:25.9957137+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:19.1742477+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:19.1742477+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -14131,12 +14278,11 @@
             {
               "Player": "Myles Turner",
               "Position": "Util",
-              "Status": "O",
+              "Status": "Q",
               "EligiblePositions": [
                 "C",
                 "FC",
-                "Util",
-                "IL"
+                "Util"
               ],
               "TeamCode": "MIL",
               "IsUndroppable": false
@@ -14219,8 +14365,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -14239,14 +14385,14 @@
             "Losses": 4,
             "Ties": 1
           },
-          "OwnGamesRemaining": 15,
+          "OwnGamesRemaining": 16,
           "OpponentGamesRemaining": 18,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "613",
-              "OpponentValue": "659",
+              "OwnValue": "615",
+              "OpponentValue": "661",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -14349,8 +14495,8 @@
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.579",
-              "OpponentValue": "1.810",
+              "OwnValue": "1.58",
+              "OpponentValue": "1.81",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -14368,8 +14514,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
-        "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+        "CheckedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
+        "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -14383,25 +14529,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 元川楓 陣容",
-          "RetrievedAtUtc": "2026-11-20T08:57:25.9957137+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:19.1742477+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 元川楓 當週比分",
-          "RetrievedAtUtc": "2026-11-20T08:57:17.9669275+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:09.8227382+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 元川楓 取得額度",
-          "RetrievedAtUtc": "2026-11-20T08:57:18.7061029+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:10.6526680+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-20T08:57:19.5227934+00:00",
+          "RetrievedAtUtc": "2026-11-20T09:58:11.6095370+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -14431,7 +14577,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.579,
+          "OwnValue": 1.58,
           "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -14494,7 +14640,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 613,
+          "OwnValue": 615,
           "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -14541,7 +14687,7 @@
       "Recommendations": {
         "SchemaVersion": 1,
         "Status": "ready",
-        "GeneratedAtUtc": "2026-11-20T08:57:32.146Z",
+        "GeneratedAtUtc": "2026-11-20T09:58:22.483Z",
         "ReportDateET": "2026-11-19",
         "Strategy": "aggressive_week",
         "Reasons": [
@@ -14687,7 +14833,7 @@
           {
             "Player": "Isaiah Jackson",
             "TeamCode": "LAC",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 4,
             "SampleGames14": 5,
@@ -14696,7 +14842,6 @@
             "Reasons": [
               "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依元川楓的相對弱項BLK、OREB、A/T整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Aaron Wiggins與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "BLK估計差+1.9",
@@ -14743,7 +14888,7 @@
           {
             "Player": "Robert Williams III",
             "TeamCode": "POR",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "RemainingGames": 1,
             "SampleGames7": 3,
             "SampleGames14": 6,
@@ -14752,7 +14897,6 @@
             "Reasons": [
               "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
               "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-              "讓渡開放時間與時區尚未核實，僅列觀察；球隊剩餘排定場次不等於可用場次。",
               "依元川楓的相對弱項BLK、DREB、OREB、A/T整理，並非自由市場原始排名。",
               "僅以已核實的近7/14日樣本，假設比較Aaron Wiggins與本候選在標示期間的排定場次；這不是建議移除該球員。",
               "BLK估計差+0.725",
@@ -14994,25 +15138,25 @@
         "Sources": [
           {
             "Name": "Flaim / Yahoo Roster",
-            "RetrievedAtUtc": "2026-11-20T08:57:25.995Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:19.174Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Market",
-            "RetrievedAtUtc": "2026-11-20T08:57:19.522Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:11.609Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Matchup",
-            "RetrievedAtUtc": "2026-11-20T08:57:17.966Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:09.822Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "Flaim / Yahoo Budget",
-            "RetrievedAtUtc": "2026-11-20T08:57:18.706Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:10.652Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
@@ -15024,19 +15168,19 @@
           },
           {
             "Name": "NBA官方完整比賽日",
-            "RetrievedAtUtc": "2026-11-20T08:57:04.932Z",
+            "RetrievedAtUtc": "2026-11-20T09:57:54.142Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/games?date=2026-11-19"
           },
           {
             "Name": "NBA官方傷勢報告",
-            "RetrievedAtUtc": "2026-11-20T08:57:07.502Z",
-            "SourceUpdatedAtUtc": "2026-11-20T08:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45AM.pdf"
+            "RetrievedAtUtc": "2026-11-20T09:57:55.620Z",
+            "SourceUpdatedAtUtc": "2026-11-20T09:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_04_45AM.pdf"
           },
           {
             "Name": "NBA官方週賽程",
-            "RetrievedAtUtc": "2026-11-20T08:57:30.568Z",
+            "RetrievedAtUtc": "2026-11-20T09:58:20.888Z",
             "SourceUpdatedAtUtc": null,
             "Url": "https://www.nba.com/teams"
           }
