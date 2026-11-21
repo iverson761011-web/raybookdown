@@ -9,8 +9,8 @@
     "ScoringFormat":  "categories",
     "ScoringType":  "head",
     "TeamCount":  14,
-    "PlayerCount":  12,
-    "NamedPlayerCount":  12,
+    "PlayerCount":  13,
+    "NamedPlayerCount":  13,
     "Players":  [
                     {
                         "Player":  "Ja\u0027Kobe Walter",
@@ -39,7 +39,7 @@
                     {
                         "Player":  "Alperen Şengün",
                         "Position":  "PF",
-                        "Status":  "Q",
+                        "Status":  null,
                         "EligiblePositions":  "PF, F, C, FC, Util"
                     },
                     {
@@ -61,6 +61,18 @@
                         "EligiblePositions":  "C, FC, Util"
                     },
                     {
+                        "Player":  "Darius Garland",
+                        "Position":  "Util",
+                        "Status":  null,
+                        "EligiblePositions":  "PG, G, Util"
+                    },
+                    {
+                        "Player":  "Dillon Brooks",
+                        "Position":  "Util",
+                        "Status":  null,
+                        "EligiblePositions":  "SF, PF, F, FC, Util"
+                    },
+                    {
                         "Player":  "Julian Champagnie",
                         "Position":  "Util",
                         "Status":  null,
@@ -68,15 +80,9 @@
                     },
                     {
                         "Player":  "Cameron Boozer",
-                        "Position":  "Util",
-                        "Status":  null,
-                        "EligiblePositions":  "PF, F, C, FC, Util"
-                    },
-                    {
-                        "Player":  "Darius Garland",
-                        "Position":  "Util",
-                        "Status":  null,
-                        "EligiblePositions":  "PG, G, Util"
+                        "Position":  "IL",
+                        "Status":  "O",
+                        "EligiblePositions":  "PF, F, C, FC, Util, IL"
                     },
                     {
                         "Player":  "Jusuf Nurkić",
@@ -85,5 +91,5 @@
                         "EligiblePositions":  "C, FC, Util, IL"
                     }
                 ],
-    "RetrievedAtUtc":  "2026-11-20T23:13:06.9844512+00:00"
+    "RetrievedAtUtc":  "2026-11-21T04:52:27.2643361+00:00"
 }
