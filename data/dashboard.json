@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-21T06:59:32.9562016+00:00",
+  "GeneratedAtUtc": "2026-11-21T08:12:21.7343426+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:23.3561030+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:23.3561030+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:11.9635555+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:11.9635555+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,38 +79,40 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:23.6860368+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:23.6860368+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:12.2610866+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:12.2610866+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
         "PlayerCount": 13,
         "Players": [
           {
-            "Player": "Ja'Kobe Walter",
+            "Player": "Darius Garland",
             "Position": "PG",
             "Status": null,
             "EligiblePositions": [
               "PG",
-              "SG",
               "G",
               "Util"
             ],
-            "TeamCode": "TOR",
+            "TeamCode": "LAC",
             "IsUndroppable": false
           },
           {
-            "Player": "Donovan Mitchell",
+            "Player": "Zach LaVine",
             "Position": "SG",
             "Status": null,
             "EligiblePositions": [
               "PG",
               "SG",
               "G",
+              "SF",
+              "F",
+              "FC",
               "Util"
             ],
-            "TeamCode": "CLE",
-            "IsUndroppable": true
+            "TeamCode": "SAC",
+            "IsUndroppable": false
           },
           {
             "Player": "Kyshawn George",
@@ -129,38 +131,22 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Zach LaVine",
+            "Player": "Julian Champagnie",
             "Position": "SF",
             "Status": null,
             "EligiblePositions": [
-              "PG",
-              "SG",
-              "G",
               "SF",
+              "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "SAC",
+            "TeamCode": "SAS",
             "IsUndroppable": false
           },
           {
-            "Player": "Alperen Şengün",
-            "Position": "PF",
-            "Status": null,
-            "EligiblePositions": [
-              "PF",
-              "F",
-              "C",
-              "FC",
-              "Util"
-            ],
-            "TeamCode": "HOU",
-            "IsUndroppable": true
-          },
-          {
             "Player": "Zion Williamson",
-            "Position": "F",
+            "Position": "PF",
             "Status": null,
             "EligiblePositions": [
               "PF",
@@ -173,7 +159,21 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Aday Mara",
+            "Player": "Alperen Şengün",
+            "Position": "F",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "HOU",
+            "IsUndroppable": true
+          },
+          {
+            "Player": "Daniel Gafford",
             "Position": "C",
             "Status": null,
             "EligiblePositions": [
@@ -181,7 +181,7 @@
               "FC",
               "Util"
             ],
-            "TeamCode": "OKC",
+            "TeamCode": "DAL",
             "IsUndroppable": false
           },
           {
@@ -197,43 +197,41 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Darius Garland",
+            "Player": "Ja'Kobe Walter",
             "Position": "Util",
             "Status": null,
             "EligiblePositions": [
               "PG",
+              "SG",
               "G",
               "Util"
             ],
-            "TeamCode": "LAC",
+            "TeamCode": "TOR",
             "IsUndroppable": false
           },
           {
-            "Player": "Dillon Brooks",
+            "Player": "Donovan Mitchell",
             "Position": "Util",
             "Status": null,
             "EligiblePositions": [
-              "SF",
-              "PF",
-              "F",
-              "FC",
+              "PG",
+              "SG",
+              "G",
               "Util"
             ],
-            "TeamCode": "PHX",
-            "IsUndroppable": false
+            "TeamCode": "CLE",
+            "IsUndroppable": true
           },
           {
-            "Player": "Julian Champagnie",
+            "Player": "Aday Mara",
             "Position": "Util",
             "Status": null,
             "EligiblePositions": [
-              "SF",
-              "PF",
-              "F",
+              "C",
               "FC",
               "Util"
             ],
-            "TeamCode": "SAS",
+            "TeamCode": "OKC",
             "IsUndroppable": false
           },
           {
@@ -270,8 +268,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:24.2341806+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:24.2341806+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:12.8238461+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:12.8238461+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -290,7 +288,7 @@
           "Losses": 10,
           "Ties": 1
         },
-        "OwnGamesRemaining": 7,
+        "OwnGamesRemaining": 9,
         "OpponentGamesRemaining": 9,
         "Categories": [
           {
@@ -419,8 +417,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:24.6946991+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:24.6946991+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:13.6885622+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:13.6885622+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -429,6 +427,17 @@
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-21T08:00:01.0000000+00:00",
+            "Added": [
+              "Daniel Gafford"
+            ],
+            "Dropped": [
+              "Dillon Brooks"
+            ],
+            "FaabBid": null
+          },
           {
             "Type": "add",
             "OccurredAtUtc": "2026-11-20T23:16:40.0000000+00:00",
@@ -736,8 +745,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:24.9603679+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:24.9603679+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:13.9699230+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:13.9699230+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -751,8 +760,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-21T06:59:25.8450062+00:00",
-      "RetrievedAtUtc": "2026-11-21T06:59:25.8450062+00:00",
+      "CheckedAtUtc": "2026-11-21T08:12:14.8770864+00:00",
+      "RetrievedAtUtc": "2026-11-21T08:12:14.8770864+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -808,12 +817,12 @@
             "WaiverDate": null
           },
           {
-            "Player": "Daniel Gafford",
-            "Position": "C",
-            "TeamCode": "DAL",
-            "Availability": "free_agent",
-            "PercentOwned": 42,
-            "WaiverDate": null
+            "Player": "Dillon Brooks",
+            "Position": "SF,PF",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 46,
+            "WaiverDate": "2026-11-23"
           },
           {
             "Player": "Grayson Allen",
@@ -912,6 +921,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jordan Poole",
+            "Position": "PG,SG",
+            "TeamCode": "NOP",
+            "Availability": "waivers",
+            "PercentOwned": 21,
+            "WaiverDate": "2026-11-23"
+          },
+          {
             "Player": "Terrence Shannon Jr.",
             "Position": "SG,SF",
             "TeamCode": "MIN",
@@ -936,25 +953,9 @@
             "WaiverDate": null
           },
           {
-            "Player": "De'Andre Hunter",
-            "Position": "SF,PF",
-            "TeamCode": "SAC",
-            "Availability": "free_agent",
-            "PercentOwned": 19,
-            "WaiverDate": null
-          },
-          {
             "Player": "Jamal Shead",
             "Position": "PG",
             "TeamCode": "TOR",
-            "Availability": "free_agent",
-            "PercentOwned": 19,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Naji Marshall",
-            "Position": "SG,SF,PF",
-            "TeamCode": "DAL",
             "Availability": "free_agent",
             "PercentOwned": 19,
             "WaiverDate": null
@@ -973,14 +974,6 @@
             "TeamCode": "SAS",
             "Availability": "free_agent",
             "PercentOwned": 16,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Zaccharie Risacher",
-            "Position": "SF,PF",
-            "TeamCode": "DAL",
-            "Availability": "free_agent",
-            "PercentOwned": 15,
             "WaiverDate": null
           },
           {
@@ -1272,6 +1265,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Isaiah Joe",
+            "Position": "SG,SF",
+            "TeamCode": "DET",
+            "Availability": "free_agent",
+            "PercentOwned": 3,
+            "WaiverDate": null
+          },
+          {
             "Player": "Jay Huff",
             "Position": "C",
             "TeamCode": "IND",
@@ -1342,6 +1343,14 @@
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
+          },
+          {
+            "Player": "Goga Bitadze",
+            "Position": "C",
+            "TeamCode": "ORL",
+            "Availability": "waivers",
+            "PercentOwned": 2,
+            "WaiverDate": "2026-11-23"
           },
           {
             "Player": "Jarace Walker",
@@ -1565,8 +1574,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-21T06:59:33.143Z",
-      "RetrievedAtUtc": "2026-11-21T06:59:33.143Z",
+      "CheckedAtUtc": "2026-11-21T08:12:21.906Z",
+      "RetrievedAtUtc": "2026-11-21T08:12:21.906Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
