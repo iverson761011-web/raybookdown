@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-22T09:44:46.2528987+00:00",
+  "GeneratedAtUtc": "2026-11-22T10:44:05.1488966+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:37.1256430+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:37.1256430+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:55.2478349+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:55.2478349+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:37.4239182+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:37.4239182+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:55.5451468+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:55.5451468+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -282,8 +282,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:38.0027488+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:38.0027488+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:56.0379078+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:56.0379078+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -431,8 +431,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:38.4412100+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:38.4412100+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:56.5300917+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:56.5300917+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -768,8 +768,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:38.7068215+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:38.7068215+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:56.8157694+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:56.8157694+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -783,8 +783,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T09:44:39.5481131+00:00",
-      "RetrievedAtUtc": "2026-11-22T09:44:39.5481131+00:00",
+      "CheckedAtUtc": "2026-11-22T10:43:57.7476157+00:00",
+      "RetrievedAtUtc": "2026-11-22T10:43:57.7476157+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -864,14 +864,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Kris Dunn",
-            "Position": "PG,SG",
-            "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 28,
-            "WaiverDate": null
-          },
-          {
             "Player": "Kasparas Jakučionis",
             "Position": "PG,SG",
             "TeamCode": "MIL",
@@ -888,6 +880,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Kris Dunn",
+            "Position": "PG,SG",
+            "TeamCode": "LAC",
+            "Availability": "free_agent",
+            "PercentOwned": 27,
+            "WaiverDate": null
+          },
+          {
             "Player": "Jaylen Wells",
             "Position": "SG,SF",
             "TeamCode": "MEM",
@@ -896,19 +896,19 @@
             "WaiverDate": null
           },
           {
-            "Player": "Jordan Poole",
-            "Position": "PG,SG",
-            "TeamCode": "NOP",
+            "Player": "Brice Sensabaugh",
+            "Position": "SG,SF,PF",
+            "TeamCode": "UTA",
             "Availability": "waivers",
             "PercentOwned": 23,
             "WaiverDate": "2026-11-23"
           },
           {
-            "Player": "Brice Sensabaugh",
-            "Position": "SG,SF,PF",
-            "TeamCode": "UTA",
+            "Player": "Jordan Poole",
+            "Position": "PG,SG",
+            "TeamCode": "NOP",
             "Availability": "waivers",
-            "PercentOwned": 22,
+            "PercentOwned": 23,
             "WaiverDate": "2026-11-23"
           },
           {
@@ -998,6 +998,14 @@
             "Availability": "free_agent",
             "PercentOwned": 14,
             "WaiverDate": null
+          },
+          {
+            "Player": "Isaiah Jackson",
+            "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 12,
+            "WaiverDate": "2026-11-24"
           },
           {
             "Player": "Mikel Brown Jr.",
@@ -1536,14 +1544,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Moses Moody",
-            "Position": "SG,SF,PF",
-            "TeamCode": "GSW",
-            "Availability": "free_agent",
-            "PercentOwned": 1,
-            "WaiverDate": null
-          },
-          {
             "Player": "Nikola Jović",
             "Position": "PF,C",
             "TeamCode": "MIA",
@@ -1597,8 +1597,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-22T09:44:46.471Z",
-      "RetrievedAtUtc": "2026-11-22T09:44:46.471Z",
+      "CheckedAtUtc": "2026-11-22T10:44:05.336Z",
+      "RetrievedAtUtc": "2026-11-22T10:44:05.336Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
