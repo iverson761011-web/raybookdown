@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-22T05:53:38.3520051+00:00",
+  "GeneratedAtUtc": "2026-11-22T06:59:49.5846064+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:28.6164092+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:28.6164092+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:38.3113065+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:38.3113065+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,12 +79,12 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:28.9443452+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:28.9443452+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:38.6892170+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:38.6892170+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "PlayerCount": 13,
+        "PlayerCount": 14,
         "Players": [
           {
             "Player": "Darius Garland",
@@ -115,19 +115,16 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Kyshawn George",
+            "Player": "Jared McCain",
             "Position": "G",
             "Status": null,
             "EligiblePositions": [
+              "PG",
               "SG",
               "G",
-              "SF",
-              "PF",
-              "F",
-              "FC",
               "Util"
             ],
-            "TeamCode": "WAS",
+            "TeamCode": "OKC",
             "IsUndroppable": false
           },
           {
@@ -142,6 +139,22 @@
               "Util"
             ],
             "TeamCode": "SAS",
+            "IsUndroppable": false
+          },
+          {
+            "Player": "Kyshawn George",
+            "Position": "PF",
+            "Status": null,
+            "EligiblePositions": [
+              "SG",
+              "G",
+              "SF",
+              "PF",
+              "F",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "WAS",
             "IsUndroppable": false
           },
           {
@@ -269,8 +282,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:29.5694906+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:29.5694906+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:39.2853633+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:39.2853633+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -289,7 +302,7 @@
           "Losses": 10,
           "Ties": 1
         },
-        "OwnGamesRemaining": 4,
+        "OwnGamesRemaining": 5,
         "OpponentGamesRemaining": 5,
         "Categories": [
           {
@@ -418,8 +431,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:30.0869072+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:30.0869072+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:39.8033688+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:39.8033688+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -428,6 +441,15 @@
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-22T06:38:00.0000000+00:00",
+            "Added": [
+              "Jared McCain"
+            ],
+            "Dropped": [],
+            "FaabBid": null
+          },
           {
             "Type": "add",
             "OccurredAtUtc": "2026-11-21T08:00:01.0000000+00:00",
@@ -746,8 +768,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:30.3822081+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:30.3822081+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:40.1162081+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:40.1162081+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -761,8 +783,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-22T05:53:31.5088251+00:00",
-      "RetrievedAtUtc": "2026-11-22T05:53:31.5088251+00:00",
+      "CheckedAtUtc": "2026-11-22T06:59:41.1807669+00:00",
+      "RetrievedAtUtc": "2026-11-22T06:59:41.1807669+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -791,14 +813,6 @@
             "TeamCode": "MIA",
             "Availability": "free_agent",
             "PercentOwned": 59,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jared McCain",
-            "Position": "PG,SG",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 51,
             "WaiverDate": null
           },
           {
@@ -906,14 +920,6 @@
             "WaiverDate": "2026-11-23"
           },
           {
-            "Player": "Alex Caruso",
-            "Position": "SG,SF",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 22,
-            "WaiverDate": null
-          },
-          {
             "Player": "Brice Sensabaugh",
             "Position": "SG,SF,PF",
             "TeamCode": "UTA",
@@ -927,6 +933,14 @@
             "TeamCode": "GSW",
             "Availability": "free_agent",
             "PercentOwned": 22,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Alex Caruso",
+            "Position": "SG,SF",
+            "TeamCode": "OKC",
+            "Availability": "free_agent",
+            "PercentOwned": 21,
             "WaiverDate": null
           },
           {
@@ -1250,14 +1264,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Jay Huff",
-            "Position": "C",
-            "TeamCode": "IND",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
             "Player": "Noah Clowney",
             "Position": "PF,C",
             "TeamCode": "BKN",
@@ -1338,6 +1344,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jay Huff",
+            "Position": "C",
+            "TeamCode": "IND",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
             "Player": "Jaylin Williams",
             "Position": "PF,C",
             "TeamCode": "OKC",
@@ -1349,6 +1363,14 @@
             "Player": "Justin Champagnie",
             "Position": "SF,PF",
             "TeamCode": "WAS",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Kentavious Caldwell-Pope",
+            "Position": "SG,SF",
+            "TeamCode": "PHI",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
@@ -1575,8 +1597,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-22T05:53:38.477Z",
-      "RetrievedAtUtc": "2026-11-22T05:53:38.477Z",
+      "CheckedAtUtc": "2026-11-22T06:59:49.772Z",
+      "RetrievedAtUtc": "2026-11-22T06:59:49.772Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
