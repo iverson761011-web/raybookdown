@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 1,
   "Status": "insufficient_data",
-  "GeneratedAtUtc": "2026-11-23T09:18:28.189Z",
+  "GeneratedAtUtc": "2026-11-23T11:01:56.869Z",
   "ReportDateET": "2026-11-22",
   "Strategy": "aggressive_week",
   "Reasons": [
@@ -203,57 +203,51 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-23T09:18:12.721Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:40.322Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-23T09:18:15.031Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:43.171Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-23T09:18:13.237Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.090Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-23T09:18:14.028Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.996Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-23T09:18:13.737Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.684Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-23T09:17:59.025Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:26.941Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-22"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-23T09:18:01.424Z",
-      "SourceUpdatedAtUtc": "2026-11-23T09:00:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_04_00AM.pdf"
+      "RetrievedAtUtc": "2026-11-23T11:01:28.139Z",
+      "SourceUpdatedAtUtc": "2026-11-23T11:00:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_06_00AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-23T09:18:26.953Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:54.806Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
-    },
-    {
-      "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-23T05:13:14.054Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/orl-vs-was-0022600282/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -275,7 +269,13 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-23T09:17:59.190Z",
+      "RetrievedAtUtc": "2026-11-23T05:13:14.054Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/orl-vs-was-0022600282/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-23T11:01:27.084Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/bos-vs-gsw-0022600286/box-score"
     },
@@ -299,15 +299,15 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-22T05:53:18.456Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/nop-vs-sas-0022600278/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
       "RetrievedAtUtc": "2026-11-22T05:53:18.914Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/bos-vs-sac-0022600279/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-22T05:53:18.456Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/nop-vs-sas-0022600278/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -329,9 +329,9 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-21T05:51:50.007Z",
+      "RetrievedAtUtc": "2026-11-21T05:51:50.413Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/was-vs-chi-0022600047/box-score"
+      "Url": "https://www.nba.com/game/sac-vs-lal-0022600051/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -347,12 +347,6 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-21T05:51:50.413Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/sac-vs-lal-0022600051/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
       "RetrievedAtUtc": "2026-11-21T05:51:49.396Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/ind-vs-cle-0022600045/box-score"
@@ -362,6 +356,12 @@
       "RetrievedAtUtc": "2026-11-21T05:51:49.259Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/tor-vs-det-0022600046/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-21T05:51:50.007Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/was-vs-chi-0022600047/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -377,7 +377,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-23T09:17:58.925Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:26.087Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/cha-vs-atl-0022600043/box-score"
     },
@@ -407,9 +407,9 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:10.732Z",
+      "RetrievedAtUtc": "2026-11-19T06:03:12.175Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/was-vs-tor-0022600263/box-score"
+      "Url": "https://www.nba.com/game/phx-vs-sac-0022600269/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -419,15 +419,15 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:07.016Z",
+      "RetrievedAtUtc": "2026-11-19T06:03:11.913Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/hou-vs-ind-0022600259/box-score"
+      "Url": "https://www.nba.com/game/det-vs-nop-0022600264/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:12.175Z",
+      "RetrievedAtUtc": "2026-11-19T06:03:07.016Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/phx-vs-sac-0022600269/box-score"
+      "Url": "https://www.nba.com/game/hou-vs-ind-0022600259/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -437,15 +437,15 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:09.479Z",
+      "RetrievedAtUtc": "2026-11-19T06:03:10.732Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/mem-vs-cle-0022600258/box-score"
+      "Url": "https://www.nba.com/game/was-vs-tor-0022600263/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-19T06:03:11.913Z",
+      "RetrievedAtUtc": "2026-11-19T06:03:09.479Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/det-vs-nop-0022600264/box-score"
+      "Url": "https://www.nba.com/game/mem-vs-cle-0022600258/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -509,9 +509,9 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-17T04:54:18.525Z",
+      "RetrievedAtUtc": "2026-11-17T04:54:20.636Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/mem-vs-was-0022600247/box-score"
+      "Url": "https://www.nba.com/game/gsw-vs-nop-0022600251/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -527,9 +527,9 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-17T04:54:20.636Z",
+      "RetrievedAtUtc": "2026-11-17T04:54:18.525Z",
       "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/gsw-vs-nop-0022600251/box-score"
+      "Url": "https://www.nba.com/game/mem-vs-was-0022600247/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -563,12 +563,6 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-16T05:29:05.188Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/hou-vs-was-0022600242/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
       "RetrievedAtUtc": "2026-11-16T05:29:05.796Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/okc-vs-sac-0022600244/box-score"
@@ -578,6 +572,12 @@
       "RetrievedAtUtc": "2026-11-16T05:29:04.478Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/sas-vs-uta-0022600239/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-16T05:29:05.188Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/hou-vs-was-0022600242/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
@@ -611,15 +611,15 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-15T04:51:20.803Z",
-      "SourceUpdatedAtUtc": null,
-      "Url": "https://www.nba.com/game/dal-vs-cle-0022600232/box-score"
-    },
-    {
-      "Name": "NBA官方比賽統計",
       "RetrievedAtUtc": "2026-11-15T04:51:20.629Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/den-vs-nop-0022600231/box-score"
+    },
+    {
+      "Name": "NBA官方比賽統計",
+      "RetrievedAtUtc": "2026-11-15T04:51:20.803Z",
+      "SourceUpdatedAtUtc": null,
+      "Url": "https://www.nba.com/game/dal-vs-cle-0022600232/box-score"
     },
     {
       "Name": "NBA官方比賽統計",
