@@ -4,12 +4,12 @@
     "Team":  "RayBookDown",
     "Platform":  "yahoo",
     "Season":  2026,
-    "CheckedAtUtc":  "2026-11-23T07:25:00.6014514+00:00",
-    "RetrievedAtUtc":  "2026-11-23T07:25:03.2962865+00:00",
+    "CheckedAtUtc":  "2026-11-23T09:18:15.0310949+00:00",
+    "RetrievedAtUtc":  "2026-11-23T09:18:18.2903877+00:00",
     "SourceUpdatedAtUtc":  null,
     "Status":  "ok",
     "ErrorType":  null,
-    "CurrentWeek":  5,
+    "CurrentWeek":  6,
     "Weeks":  [
                   {
                       "Week":  1,
@@ -150,7 +150,7 @@
                                              "DisplayOnly":  false
                                          }
                                      ],
-                      "RetrievedAtUtc":  "2026-11-23T07:25:01.1332856+00:00",
+                      "RetrievedAtUtc":  "2026-11-23T09:18:15.5949452+00:00",
                       "SourceUpdatedAtUtc":  null
                   },
                   {
@@ -292,7 +292,7 @@
                                              "DisplayOnly":  false
                                          }
                                      ],
-                      "RetrievedAtUtc":  "2026-11-23T07:25:01.6872592+00:00",
+                      "RetrievedAtUtc":  "2026-11-23T09:18:16.1766818+00:00",
                       "SourceUpdatedAtUtc":  null
                   },
                   {
@@ -434,7 +434,7 @@
                                              "DisplayOnly":  false
                                          }
                                      ],
-                      "RetrievedAtUtc":  "2026-11-23T07:25:02.2051354+00:00",
+                      "RetrievedAtUtc":  "2026-11-23T09:18:16.7452798+00:00",
                       "SourceUpdatedAtUtc":  null
                   },
                   {
@@ -576,12 +576,12 @@
                                              "DisplayOnly":  false
                                          }
                                      ],
-                      "RetrievedAtUtc":  "2026-11-23T07:25:02.7528401+00:00",
+                      "RetrievedAtUtc":  "2026-11-23T09:18:17.2499452+00:00",
                       "SourceUpdatedAtUtc":  null
                   },
                   {
                       "Week":  5,
-                      "Status":  "in_progress",
+                      "Status":  "final",
                       "Opponent":  "Mamba",
                       "OwnScore":  {
                                        "Wins":  10,
@@ -593,15 +593,15 @@
                                             "Losses":  10,
                                             "Ties":  2
                                         },
-                      "Winner":  null,
+                      "Winner":  "own",
                       "WeekStartDate":  null,
                       "WeekEndDate":  null,
                       "Categories":  [
                                          {
                                              "Name":  "Minutes Played",
                                              "Label":  "MIN",
-                                             "OwnValue":  "1203",
-                                             "OpponentValue":  "1058",
+                                             "OwnValue":  "1205",
+                                             "OpponentValue":  "1060",
                                              "Result":  "win",
                                              "DisplayOnly":  false
                                          },
@@ -704,8 +704,8 @@
                                          {
                                              "Name":  "Assist/Turnover Ratio",
                                              "Label":  "A/T",
-                                             "OwnValue":  "2.136",
-                                             "OpponentValue":  "1.958",
+                                             "OwnValue":  "2.14",
+                                             "OpponentValue":  "1.96",
                                              "Result":  "win",
                                              "DisplayOnly":  false
                                          },
@@ -718,7 +718,149 @@
                                              "DisplayOnly":  false
                                          }
                                      ],
-                      "RetrievedAtUtc":  "2026-11-23T07:25:03.2962865+00:00",
+                      "RetrievedAtUtc":  "2026-11-23T09:18:17.7993483+00:00",
+                      "SourceUpdatedAtUtc":  null
+                  },
+                  {
+                      "Week":  6,
+                      "Status":  "in_progress",
+                      "Opponent":  "北川瞳鈴眼",
+                      "OwnScore":  {
+                                       "Wins":  0,
+                                       "Losses":  0,
+                                       "Ties":  13
+                                   },
+                      "OpponentScore":  {
+                                            "Wins":  0,
+                                            "Losses":  0,
+                                            "Ties":  13
+                                        },
+                      "Winner":  null,
+                      "WeekStartDate":  null,
+                      "WeekEndDate":  null,
+                      "Categories":  [
+                                         {
+                                             "Name":  "Minutes Played",
+                                             "Label":  "MIN",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Field Goals Made / Field Goals Attempted",
+                                             "Label":  "FGM/A",
+                                             "OwnValue":  "/",
+                                             "OpponentValue":  "/",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Field Goal Percentage",
+                                             "Label":  "FG%",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Free Throws Made / Free Throws Attempted",
+                                             "Label":  "FTM/A",
+                                             "OwnValue":  "/",
+                                             "OpponentValue":  "/",
+                                             "Result":  null,
+                                             "DisplayOnly":  true
+                                         },
+                                         {
+                                             "Name":  "Free Throw Percentage",
+                                             "Label":  "FT%",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "3-point Shots Made",
+                                             "Label":  "3PTM",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Points Scored",
+                                             "Label":  "PTS",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Offensive Rebounds",
+                                             "Label":  "OREB",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Defensive Rebounds",
+                                             "Label":  "DREB",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assists",
+                                             "Label":  "AST",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Steals",
+                                             "Label":  "ST",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Blocked Shots",
+                                             "Label":  "BLK",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Turnovers",
+                                             "Label":  "TO",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Assist/Turnover Ratio",
+                                             "Label":  "A/T",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         },
+                                         {
+                                             "Name":  "Double-Doubles",
+                                             "Label":  "DD",
+                                             "OwnValue":  null,
+                                             "OpponentValue":  null,
+                                             "Result":  "tie",
+                                             "DisplayOnly":  false
+                                         }
+                                     ],
+                      "RetrievedAtUtc":  "2026-11-23T09:18:18.2903877+00:00",
                       "SourceUpdatedAtUtc":  null
                   }
               ],
