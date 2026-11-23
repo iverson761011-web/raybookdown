@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-23T09:18:23.1510061+00:00",
+  "GeneratedAtUtc": "2026-11-23T11:01:52.2838591+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:12.3619903+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:12.3619903+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:39.8754182+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:39.8754182+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:12.7216310+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:12.7216310+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:40.3225108+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:40.3225108+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -282,8 +282,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:13.2377410+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:13.2377410+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:41.0902971+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.0902971+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -431,8 +431,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:13.7378702+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:13.7378702+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:41.6843561+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.6843561+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -768,8 +768,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:14.0281476+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:14.0281476+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:41.9969445+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:41.9969445+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -783,8 +783,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-23T09:18:15.0310949+00:00",
-      "RetrievedAtUtc": "2026-11-23T09:18:15.0310949+00:00",
+      "CheckedAtUtc": "2026-11-23T11:01:43.1711368+00:00",
+      "RetrievedAtUtc": "2026-11-23T11:01:43.1711368+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -819,9 +819,17 @@
             "Player": "Dillon Brooks",
             "Position": "SF,PF",
             "TeamCode": "PHX",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "PercentOwned": 45,
-            "WaiverDate": "2026-11-23"
+            "WaiverDate": null
+          },
+          {
+            "Player": "Collin Gillespie",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 43,
+            "WaiverDate": "2026-11-25"
           },
           {
             "Player": "Grayson Allen",
@@ -856,19 +864,27 @@
             "WaiverDate": "2026-11-25"
           },
           {
-            "Player": "Jaxson Hayes",
-            "Position": "C",
-            "TeamCode": "UTA",
+            "Player": "Naji Marshall",
+            "Position": "SG,SF,PF",
+            "TeamCode": "DAL",
             "Availability": "waivers",
             "PercentOwned": 28,
             "WaiverDate": "2026-11-25"
           },
           {
-            "Player": "Kris Dunn",
-            "Position": "PG,SG",
-            "TeamCode": "LAC",
+            "Player": "Jaxson Hayes",
+            "Position": "C",
+            "TeamCode": "UTA",
+            "Availability": "waivers",
+            "PercentOwned": 27,
+            "WaiverDate": "2026-11-25"
+          },
+          {
+            "Player": "Brice Sensabaugh",
+            "Position": "SG,SF,PF",
+            "TeamCode": "UTA",
             "Availability": "free_agent",
-            "PercentOwned": 26,
+            "PercentOwned": 24,
             "WaiverDate": null
           },
           {
@@ -876,7 +892,7 @@
             "Position": "SG",
             "TeamCode": "LAC",
             "Availability": "free_agent",
-            "PercentOwned": 25,
+            "PercentOwned": 24,
             "WaiverDate": null
           },
           {
@@ -886,14 +902,6 @@
             "Availability": "waivers",
             "PercentOwned": 24,
             "WaiverDate": "2026-11-24"
-          },
-          {
-            "Player": "Brice Sensabaugh",
-            "Position": "SG,SF,PF",
-            "TeamCode": "UTA",
-            "Availability": "waivers",
-            "PercentOwned": 23,
-            "WaiverDate": "2026-11-23"
           },
           {
             "Player": "De'Anthony Melton",
@@ -908,14 +916,6 @@
             "Position": "SG,SF",
             "TeamCode": "MEM",
             "Availability": "free_agent",
-            "PercentOwned": 22,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Alex Caruso",
-            "Position": "SG,SF",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
             "PercentOwned": 21,
             "WaiverDate": null
           },
@@ -923,9 +923,17 @@
             "Player": "Jordan Poole",
             "Position": "PG,SG",
             "TeamCode": "NOP",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "PercentOwned": 21,
-            "WaiverDate": "2026-11-23"
+            "WaiverDate": null
+          },
+          {
+            "Player": "Alex Caruso",
+            "Position": "SG,SF",
+            "TeamCode": "OKC",
+            "Availability": "free_agent",
+            "PercentOwned": 20,
+            "WaiverDate": null
           },
           {
             "Player": "Egor Dëmin",
@@ -968,19 +976,19 @@
             "WaiverDate": null
           },
           {
-            "Player": "Bobby Portis Jr.",
-            "Position": "PF,C",
-            "TeamCode": "MIA",
-            "Availability": "free_agent",
-            "PercentOwned": 17,
-            "WaiverDate": null
-          },
-          {
             "Player": "Derrick Jones Jr.",
             "Position": "SF,PF",
             "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 17,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Bobby Portis Jr.",
+            "Position": "PF,C",
+            "TeamCode": "MIA",
+            "Availability": "free_agent",
+            "PercentOwned": 16,
             "WaiverDate": null
           },
           {
@@ -1040,14 +1048,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Isaiah Jackson",
-            "Position": "C",
-            "TeamCode": "LAC",
-            "Availability": "waivers",
-            "PercentOwned": 10,
-            "WaiverDate": "2026-11-24"
-          },
-          {
             "Player": "Jerami Grant",
             "Position": "SF,PF",
             "TeamCode": "MEM",
@@ -1072,6 +1072,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Isaiah Jackson",
+            "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "waivers",
+            "PercentOwned": 9,
+            "WaiverDate": "2026-11-24"
+          },
+          {
             "Player": "Kristaps Porziņģis",
             "Position": "C",
             "TeamCode": "GSW",
@@ -1082,14 +1090,6 @@
           {
             "Player": "Robert Williams III",
             "Position": "C",
-            "TeamCode": "POR",
-            "Availability": "free_agent",
-            "PercentOwned": 9,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Scoot Henderson",
-            "Position": "PG",
             "TeamCode": "POR",
             "Availability": "free_agent",
             "PercentOwned": 9,
@@ -1120,6 +1120,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Scoot Henderson",
+            "Position": "PG",
+            "TeamCode": "POR",
+            "Availability": "free_agent",
+            "PercentOwned": 8,
+            "WaiverDate": null
+          },
+          {
             "Player": "Kevin Porter Jr.",
             "Position": "PG,SG",
             "TeamCode": "MIL",
@@ -1144,6 +1152,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Jordan Goodwin",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "free_agent",
+            "PercentOwned": 6,
+            "WaiverDate": null
+          },
+          {
             "Player": "Mark Williams",
             "Position": "C",
             "TeamCode": "PHX",
@@ -1163,14 +1179,6 @@
             "Player": "Dennis Schröder",
             "Position": "PG,SG",
             "TeamCode": "CHA",
-            "Availability": "free_agent",
-            "PercentOwned": 5,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jordan Goodwin",
-            "Position": "PG,SG",
-            "TeamCode": "PHX",
             "Availability": "free_agent",
             "PercentOwned": 5,
             "WaiverDate": null
@@ -1248,14 +1256,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Malik Monk",
-            "Position": "PG,SG",
-            "TeamCode": "SAC",
-            "Availability": "free_agent",
-            "PercentOwned": 4,
-            "WaiverDate": null
-          },
-          {
             "Player": "Scotty Pippen Jr.",
             "Position": "PG",
             "TeamCode": "MEM",
@@ -1296,9 +1296,9 @@
             "WaiverDate": null
           },
           {
-            "Player": "Max Christie",
-            "Position": "SG,SF",
-            "TeamCode": "DAL",
+            "Player": "Malik Monk",
+            "Position": "PG,SG",
+            "TeamCode": "SAC",
             "Availability": "free_agent",
             "PercentOwned": 3,
             "WaiverDate": null
@@ -1312,25 +1312,9 @@
             "WaiverDate": null
           },
           {
-            "Player": "Tim Hardaway Jr.",
-            "Position": "SG,SF",
-            "TeamCode": "MIA",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
             "Player": "Tre Johnson",
             "Position": "PG,SG,SF",
             "TeamCode": "WAS",
-            "Availability": "free_agent",
-            "PercentOwned": 3,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Trevon Brazile",
-            "Position": "PF",
-            "TeamCode": "DEN",
             "Availability": "free_agent",
             "PercentOwned": 3,
             "WaiverDate": null
@@ -1355,9 +1339,9 @@
             "Player": "Goga Bitadze",
             "Position": "C",
             "TeamCode": "ORL",
-            "Availability": "waivers",
+            "Availability": "free_agent",
             "PercentOwned": 2,
-            "WaiverDate": "2026-11-23"
+            "WaiverDate": null
           },
           {
             "Player": "Hugo González",
@@ -1424,9 +1408,25 @@
             "WaiverDate": null
           },
           {
-            "Player": "Sam Merrill",
+            "Player": "Max Christie",
             "Position": "SG,SF",
-            "TeamCode": "CLE",
+            "TeamCode": "DAL",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Tim Hardaway Jr.",
+            "Position": "SG,SF",
+            "TeamCode": "MIA",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Trevon Brazile",
+            "Position": "PF",
+            "TeamCode": "DEN",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
@@ -1597,8 +1597,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-23T09:18:23.339Z",
-      "RetrievedAtUtc": "2026-11-23T09:18:23.339Z",
+      "CheckedAtUtc": "2026-11-23T11:01:52.471Z",
+      "RetrievedAtUtc": "2026-11-23T11:01:52.471Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
