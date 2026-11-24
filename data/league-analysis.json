@@ -4,8 +4,8 @@
   "Platform": "yahoo",
   "Season": 2026,
   "Status": "ok",
-  "GeneratedAtUtc": "2026-11-24T02:53:44.411Z",
-  "RetrievedAtUtc": "2026-11-24T02:53:38.0788664+00:00",
+  "GeneratedAtUtc": "2026-11-24T05:01:05.313Z",
+  "RetrievedAtUtc": "2026-11-24T05:00:58.1280677+00:00",
   "SourceUpdatedAtUtc": null,
   "CurrentWeek": 6,
   "TeamCount": 14,
@@ -19,8 +19,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:33.0408974+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:33.0408974+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:53.2445930+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:53.2445930+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -224,8 +224,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -235,47 +235,47 @@
           "Status": "in_progress",
           "Opponent": "Mamba",
           "OwnScore": {
-            "Wins": 3,
+            "Wins": 4,
             "Losses": 9,
-            "Ties": 1
+            "Ties": 0
           },
           "OpponentScore": {
             "Wins": 9,
-            "Losses": 3,
-            "Ties": 1
+            "Losses": 4,
+            "Ties": 0
           },
-          "OwnGamesRemaining": 30,
-          "OpponentGamesRemaining": 30,
+          "OwnGamesRemaining": 28,
+          "OpponentGamesRemaining": 28,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "117",
-              "OpponentValue": "150",
+              "OwnValue": "198",
+              "OpponentValue": "213",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "18/42",
-              "OpponentValue": "29/50",
+              "OwnValue": "27/68",
+              "OpponentValue": "46/76",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".429",
-              "OpponentValue": ".580",
+              "OwnValue": ".397",
+              "OpponentValue": ".605",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "9/9",
-              "OpponentValue": "18/19",
+              "OwnValue": "13/13",
+              "OpponentValue": "23/27",
               "Result": null,
               "DisplayOnly": true
             },
@@ -283,62 +283,62 @@
               "Name": "Free Throw Percentage",
               "Label": "FT%",
               "OwnValue": "1.000",
-              "OpponentValue": ".947",
+              "OpponentValue": ".852",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "10",
-              "OpponentValue": "10",
-              "Result": "tie",
+              "OwnValue": "13",
+              "OpponentValue": "12",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "55",
-              "OpponentValue": "86",
+              "OwnValue": "80",
+              "OpponentValue": "127",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "3",
-              "OpponentValue": "8",
+              "OwnValue": "5",
+              "OpponentValue": "14",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "16",
-              "OpponentValue": "22",
+              "OwnValue": "20",
+              "OpponentValue": "33",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "25",
-              "OpponentValue": "18",
+              "OwnValue": "33",
+              "OpponentValue": "32",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "6",
-              "OpponentValue": "3",
+              "OwnValue": "9",
+              "OpponentValue": "5",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "0",
+              "OwnValue": "1",
               "OpponentValue": "5",
               "Result": "loss",
               "DisplayOnly": false
@@ -346,16 +346,16 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "12",
-              "OpponentValue": "4",
+              "OwnValue": "15",
+              "OpponentValue": "8",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.083",
-              "OpponentValue": "4.500",
+              "OwnValue": "2.200",
+              "OpponentValue": "4.000",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -373,8 +373,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -388,45 +388,45 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:33.0408974+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:53.2445930+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo PPPPPPPPP Baskets 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "AST：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "AST：本週累計在已取得的14隊中並列第3；較高較佳。",
         "FT%：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第3；較高較佳。"
+        "ST：本週累計在已取得的14隊中並列第4；較高較佳。"
       ],
       "Weaknesses": [
-        "BLK：本週累計在已取得的14隊中並列第14，可列補強觀察。",
-        "FG%：本週累計在已取得的14隊中並列第11，可列補強觀察。",
-        "MIN：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "BLK：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "DREB：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "FG%：本週累計在已取得的14隊中並列第14，可列補強觀察。",
         "OREB：本週累計在已取得的14隊中並列第11，可列補強觀察。",
-        "PTS：本週累計在已取得的14隊中並列第13，可列補強觀察。"
+        "PTS：本週累計在已取得的14隊中並列第12，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 10,
+          "OwnValue": 13,
           "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -435,8 +435,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.083,
-          "Rank": 6,
+          "OwnValue": 2.2,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -444,8 +444,8 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 25,
-          "Rank": 2,
+          "OwnValue": 33,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -453,8 +453,8 @@
         },
         {
           "Label": "BLK",
-          "OwnValue": 0,
-          "Rank": 14,
+          "OwnValue": 1,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -463,15 +463,6 @@
         {
           "Label": "DD",
           "OwnValue": 0,
-          "Rank": 7,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "DREB",
-          "OwnValue": 16,
           "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -479,9 +470,18 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "DREB",
+          "OwnValue": 20,
+          "Rank": 12,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "FG%",
-          "OwnValue": 0.429,
-          "Rank": 11,
+          "OwnValue": 0.397,
+          "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -498,16 +498,16 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 117,
-          "Rank": 11,
+          "OwnValue": 198,
+          "Rank": 8,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "OREB",
-          "OwnValue": 3,
+          "OwnValue": 5,
           "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -516,8 +516,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 55,
-          "Rank": 13,
+          "OwnValue": 80,
+          "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -525,8 +525,8 @@
         },
         {
           "Label": "ST",
-          "OwnValue": 6,
-          "Rank": 3,
+          "OwnValue": 9,
+          "Rank": 4,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -534,8 +534,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 12,
-          "Rank": 10,
+          "OwnValue": 15,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "lower",
@@ -753,21 +753,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:33.040Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:53.244Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -829,8 +829,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:33.5252953+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:33.5252953+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:53.6513736+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:53.6513736+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1034,8 +1034,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1046,101 +1046,101 @@
           "Opponent": "元川楓",
           "OwnScore": {
             "Wins": 7,
-            "Losses": 6,
-            "Ties": 0
+            "Losses": 5,
+            "Ties": 1
           },
           "OpponentScore": {
-            "Wins": 6,
+            "Wins": 5,
             "Losses": 7,
-            "Ties": 0
+            "Ties": 1
           },
-          "OwnGamesRemaining": 29,
+          "OwnGamesRemaining": 28,
           "OpponentGamesRemaining": 30,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "193",
-              "OpponentValue": "140",
+              "OwnValue": "238",
+              "OpponentValue": "166",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "30/67",
-              "OpponentValue": "26/44",
+              "OwnValue": "35/85",
+              "OpponentValue": "31/52",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".448",
-              "OpponentValue": ".591",
+              "OwnValue": ".412",
+              "OpponentValue": ".596",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "14/18",
-              "OpponentValue": "15/19",
+              "OwnValue": "20/25",
+              "OpponentValue": "16/20",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".778",
-              "OpponentValue": ".789",
-              "Result": "loss",
+              "OwnValue": ".800",
+              "OpponentValue": ".800",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
               "OwnValue": "7",
-              "OpponentValue": "12",
+              "OpponentValue": "13",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "81",
-              "OpponentValue": "79",
+              "OwnValue": "97",
+              "OpponentValue": "91",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "14",
-              "OpponentValue": "2",
+              "OwnValue": "15",
+              "OpponentValue": "3",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "27",
-              "OpponentValue": "31",
+              "OwnValue": "31",
+              "OpponentValue": "34",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "21",
-              "OpponentValue": "13",
+              "OwnValue": "28",
+              "OpponentValue": "15",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "10",
+              "OwnValue": "11",
               "OpponentValue": "1",
               "Result": "win",
               "DisplayOnly": false
@@ -1149,23 +1149,23 @@
               "Name": "Blocked Shots",
               "Label": "BLK",
               "OwnValue": "2",
-              "OpponentValue": "6",
+              "OpponentValue": "9",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "10",
-              "OpponentValue": "12",
+              "OwnValue": "12",
+              "OpponentValue": "15",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.100",
-              "OpponentValue": "1.083",
+              "OwnValue": "2.333",
+              "OpponentValue": "1.000",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -1183,8 +1183,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1198,106 +1198,44 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:33.5252953+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:53.6513736+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo BenKidd's Brilliant Team 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "AST：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "DREB：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "MIN：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "OREB：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第1；較高較佳。"
+        "A/T：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "MIN：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "OREB：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "ST：本週累計在已取得的14隊中並列第2；較高較佳。"
       ],
       "Weaknesses": [
-        "FT%：本週累計在已取得的14隊中並列第12，可列補強觀察。"
+        "3PTM：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "BLK：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "FG%：本週累計在已取得的14隊中並列第12，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
           "OwnValue": 7,
-          "Rank": 9,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "A/T",
-          "OwnValue": 2.1,
-          "Rank": 5,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "AST",
-          "OwnValue": 21,
-          "Rank": 4,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "BLK",
-          "OwnValue": 2,
-          "Rank": 10,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "DD",
-          "OwnValue": 0,
-          "Rank": 7,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "DREB",
-          "OwnValue": 27,
-          "Rank": 4,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "FG%",
-          "OwnValue": 0.448,
-          "Rank": 9,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "FT%",
-          "OwnValue": 0.778,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -1305,26 +1243,44 @@
           "CompleteLeagueCoverage": true
         },
         {
-          "Label": "MIN",
-          "OwnValue": 193,
-          "Rank": 2,
+          "Label": "A/T",
+          "OwnValue": 2.333,
+          "Rank": 4,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
-          "Label": "OREB",
-          "OwnValue": 14,
-          "Rank": 2,
+          "Label": "AST",
+          "OwnValue": 28,
+          "Rank": 5,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
-          "Label": "PTS",
-          "OwnValue": 81,
+          "Label": "BLK",
+          "OwnValue": 2,
+          "Rank": 11,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "DD",
+          "OwnValue": 0,
+          "Rank": 9,
+          "ComparedTeamCount": 14,
+          "Assessment": "balanced",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "DREB",
+          "OwnValue": 31,
           "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -1332,9 +1288,54 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "FG%",
+          "OwnValue": 0.412,
+          "Rank": 12,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "FT%",
+          "OwnValue": 0.8,
+          "Rank": 8,
+          "ComparedTeamCount": 14,
+          "Assessment": "balanced",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "MIN",
+          "OwnValue": 238,
+          "Rank": 4,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "OREB",
+          "OwnValue": 15,
+          "Rank": 3,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "PTS",
+          "OwnValue": 97,
+          "Rank": 8,
+          "ComparedTeamCount": 14,
+          "Assessment": "balanced",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "ST",
-          "OwnValue": 10,
-          "Rank": 1,
+          "OwnValue": 11,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -1342,8 +1343,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 10,
-          "Rank": 8,
+          "OwnValue": 12,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "lower",
@@ -1562,21 +1563,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:33.525Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:53.651Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -1638,8 +1639,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:33.9472516+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:33.9472516+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:54.0419858+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:54.0419858+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1810,8 +1811,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1821,54 +1822,54 @@
           "Status": "in_progress",
           "Opponent": "閃電五連鞭 (JoeDub)",
           "OwnScore": {
-            "Wins": 4,
-            "Losses": 8,
-            "Ties": 1
+            "Wins": 6,
+            "Losses": 4,
+            "Ties": 3
           },
           "OpponentScore": {
-            "Wins": 8,
-            "Losses": 4,
-            "Ties": 1
+            "Wins": 4,
+            "Losses": 6,
+            "Ties": 3
           },
-          "OwnGamesRemaining": 31,
+          "OwnGamesRemaining": 28,
           "OpponentGamesRemaining": 27,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "119",
-              "OpponentValue": "148",
-              "Result": "loss",
+              "OwnValue": "224",
+              "OpponentValue": "178",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "23/50",
-              "OpponentValue": "31/69",
+              "OwnValue": "39/84",
+              "OpponentValue": "41/86",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".460",
-              "OpponentValue": ".449",
-              "Result": "win",
+              "OwnValue": ".464",
+              "OpponentValue": ".477",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "10/12",
-              "OpponentValue": "8/8",
+              "OwnValue": "18/26",
+              "OpponentValue": "13/13",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".833",
+              "OwnValue": ".692",
               "OpponentValue": "1.000",
               "Result": "loss",
               "DisplayOnly": false
@@ -1876,79 +1877,79 @@
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "5",
-              "OpponentValue": "12",
+              "OwnValue": "13",
+              "OpponentValue": "16",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "61",
-              "OpponentValue": "82",
+              "OwnValue": "109",
+              "OpponentValue": "111",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "8",
-              "OpponentValue": "9",
-              "Result": "loss",
+              "OwnValue": "12",
+              "OpponentValue": "12",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "15",
-              "OpponentValue": "27",
-              "Result": "loss",
+              "OwnValue": "33",
+              "OpponentValue": "31",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "11",
-              "OpponentValue": "12",
-              "Result": "loss",
+              "OwnValue": "18",
+              "OpponentValue": "18",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "5",
+              "OwnValue": "11",
               "OpponentValue": "5",
-              "Result": "tie",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "2",
+              "OwnValue": "4",
               "OpponentValue": "4",
-              "Result": "loss",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "6",
-              "OpponentValue": "18",
+              "OwnValue": "12",
+              "OpponentValue": "20",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.833",
-              "OpponentValue": "0.667",
+              "OwnValue": "1.500",
+              "OpponentValue": "0.900",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Double-Doubles",
               "Label": "DD",
-              "OwnValue": "1",
+              "OwnValue": "2",
               "OpponentValue": "0",
               "Result": "win",
               "DisplayOnly": false
@@ -1959,8 +1960,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -1974,62 +1975,61 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:33.9472516+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:54.0419858+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Derek's Boss Team 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
         "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第4；較高較佳。"
+        "ST：本週累計在已取得的14隊中並列第2；較高較佳。"
       ],
       "Weaknesses": [
-        "3PTM：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "AST：本週累計在已取得的14隊中並列第14，可列補強觀察。",
-        "DREB：本週累計在已取得的14隊中並列第11，可列補強觀察。",
-        "PTS：本週累計在已取得的14隊中並列第11，可列補強觀察。"
+        "A/T：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "AST：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "FT%：本週累計在已取得的14隊中並列第14，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 5,
-          "Rank": 12,
-          "ComparedTeamCount": 14,
-          "Assessment": "weakness",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "A/T",
-          "OwnValue": 1.833,
-          "Rank": 10,
+          "OwnValue": 13,
+          "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "A/T",
+          "OwnValue": 1.5,
+          "Rank": 11,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "AST",
-          "OwnValue": 11,
-          "Rank": 14,
+          "OwnValue": 18,
+          "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -2037,8 +2037,8 @@
         },
         {
           "Label": "BLK",
-          "OwnValue": 2,
-          "Rank": 10,
+          "OwnValue": 4,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2046,7 +2046,7 @@
         },
         {
           "Label": "DD",
-          "OwnValue": 1,
+          "OwnValue": 2,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -2055,17 +2055,17 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 15,
-          "Rank": 11,
+          "OwnValue": 33,
+          "Rank": 5,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.46,
-          "Rank": 7,
+          "OwnValue": 0.464,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2073,17 +2073,17 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.833,
-          "Rank": 7,
+          "OwnValue": 0.692,
+          "Rank": 14,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "MIN",
-          "OwnValue": 119,
-          "Rank": 10,
+          "OwnValue": 224,
+          "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2091,7 +2091,7 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 8,
+          "OwnValue": 12,
           "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -2100,17 +2100,17 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 61,
-          "Rank": 11,
+          "OwnValue": 109,
+          "Rank": 7,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "ST",
-          "OwnValue": 5,
-          "Rank": 4,
+          "OwnValue": 11,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -2118,8 +2118,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 6,
-          "Rank": 5,
+          "OwnValue": 12,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "lower",
@@ -2306,21 +2306,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:33.947Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:54.041Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -2382,8 +2382,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:34.3542552+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:34.3542552+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:54.4600306+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:54.4600306+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2578,8 +2578,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2589,103 +2589,103 @@
           "Status": "in_progress",
           "Opponent": "Gemini TEAM",
           "OwnScore": {
-            "Wins": 4,
-            "Losses": 7,
+            "Wins": 3,
+            "Losses": 8,
             "Ties": 2
           },
           "OpponentScore": {
-            "Wins": 7,
-            "Losses": 4,
+            "Wins": 8,
+            "Losses": 3,
             "Ties": 2
           },
-          "OwnGamesRemaining": 29,
-          "OpponentGamesRemaining": 23,
+          "OwnGamesRemaining": 26,
+          "OpponentGamesRemaining": 22,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "58",
-              "OpponentValue": "113",
+              "OwnValue": "102",
+              "OpponentValue": "153",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "16/39",
-              "OpponentValue": "22/37",
+              "OwnValue": "24/58",
+              "OpponentValue": "31/52",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".410",
-              "OpponentValue": ".595",
+              "OwnValue": ".414",
+              "OpponentValue": ".596",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "15/18",
-              "OpponentValue": "12/15",
+              "OwnValue": "21/27",
+              "OpponentValue": "14/17",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".833",
-              "OpponentValue": ".800",
-              "Result": "win",
+              "OwnValue": ".778",
+              "OpponentValue": ".824",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "4",
-              "OpponentValue": "6",
+              "OwnValue": "7",
+              "OpponentValue": "9",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "51",
-              "OpponentValue": "62",
+              "OwnValue": "76",
+              "OpponentValue": "85",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "2",
-              "OpponentValue": "5",
+              "OwnValue": "4",
+              "OpponentValue": "6",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "6",
-              "OpponentValue": "13",
+              "OwnValue": "13",
+              "OpponentValue": "17",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "15",
-              "OpponentValue": "14",
+              "OwnValue": "20",
+              "OpponentValue": "19",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "1",
-              "OpponentValue": "1",
+              "OwnValue": "3",
+              "OpponentValue": "3",
               "Result": "tie",
               "DisplayOnly": false
             },
@@ -2700,16 +2700,16 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "3",
-              "OpponentValue": "8",
+              "OwnValue": "7",
+              "OpponentValue": "9",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "5.000",
-              "OpponentValue": "1.750",
+              "OwnValue": "2.857",
+              "OpponentValue": "2.111",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -2727,8 +2727,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -2742,48 +2742,48 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:34.3542552+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:54.4600306+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo HanK's Agreeable Team 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "A/T：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "TO：本週累計在已取得的14隊中並列第1；較低較佳。"
+        "A/T：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "TO：本週累計在已取得的14隊中並列第2；較低較佳。"
       ],
       "Weaknesses": [
-        "3PTM：本週累計在已取得的14隊中並列第14，可列補強觀察。",
+        "3PTM：本週累計在已取得的14隊中並列第12，可列補強觀察。",
         "BLK：本週累計在已取得的14隊中並列第13，可列補強觀察。",
         "DREB：本週累計在已取得的14隊中並列第14，可列補強觀察。",
-        "FG%：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "FG%：本週累計在已取得的14隊中並列第11，可列補強觀察。",
         "MIN：本週累計在已取得的14隊中並列第14，可列補強觀察。",
         "OREB：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "PTS：本週累計在已取得的14隊中並列第14，可列補強觀察。",
+        "PTS：本週累計在已取得的14隊中並列第13，可列補強觀察。",
         "ST：本週累計在已取得的14隊中並列第12，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 4,
-          "Rank": 14,
+          "OwnValue": 7,
+          "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -2791,8 +2791,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 5,
-          "Rank": 1,
+          "OwnValue": 2.857,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -2800,8 +2800,8 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 15,
-          "Rank": 7,
+          "OwnValue": 20,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2819,7 +2819,7 @@
         {
           "Label": "DD",
           "OwnValue": 0,
-          "Rank": 7,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2827,7 +2827,7 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 6,
+          "OwnValue": 13,
           "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -2836,8 +2836,8 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.41,
-          "Rank": 13,
+          "OwnValue": 0.414,
+          "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -2845,8 +2845,8 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.833,
-          "Rank": 7,
+          "OwnValue": 0.778,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -2854,7 +2854,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 58,
+          "OwnValue": 102,
           "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -2863,7 +2863,7 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 2,
+          "OwnValue": 4,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -2872,8 +2872,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 51,
-          "Rank": 14,
+          "OwnValue": 76,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -2881,7 +2881,7 @@
         },
         {
           "Label": "ST",
-          "OwnValue": 1,
+          "OwnValue": 3,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -2890,8 +2890,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 3,
-          "Rank": 1,
+          "OwnValue": 7,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "lower",
@@ -3089,21 +3089,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:34.354Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:54.460Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -3165,8 +3165,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:34.7453994+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:34.7453994+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:54.8196610+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:54.8196610+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3360,8 +3360,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3371,78 +3371,78 @@
           "Status": "in_progress",
           "Opponent": "SLAM DUNK",
           "OwnScore": {
-            "Wins": 8,
-            "Losses": 5,
-            "Ties": 0
+            "Wins": 6,
+            "Losses": 6,
+            "Ties": 1
           },
           "OpponentScore": {
-            "Wins": 5,
-            "Losses": 8,
-            "Ties": 0
+            "Wins": 6,
+            "Losses": 6,
+            "Ties": 1
           },
-          "OwnGamesRemaining": 26,
-          "OpponentGamesRemaining": 2,
+          "OwnGamesRemaining": 25,
+          "OpponentGamesRemaining": 0,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "232",
-              "OpponentValue": "171",
+              "OwnValue": "285",
+              "OpponentValue": "256",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "38/102",
-              "OpponentValue": "38/75",
+              "OwnValue": "51/127",
+              "OpponentValue": "61/121",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".373",
-              "OpponentValue": ".507",
+              "OwnValue": ".402",
+              "OpponentValue": ".504",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "21/24",
-              "OpponentValue": "6/9",
+              "OwnValue": "25/33",
+              "OpponentValue": "12/17",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".875",
-              "OpponentValue": ".667",
+              "OwnValue": ".758",
+              "OpponentValue": ".706",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "9",
-              "OpponentValue": "14",
+              "OwnValue": "11",
+              "OpponentValue": "21",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "106",
-              "OpponentValue": "96",
-              "Result": "win",
+              "OwnValue": "138",
+              "OpponentValue": "155",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "15",
+              "OwnValue": "20",
               "OpponentValue": "8",
               "Result": "win",
               "DisplayOnly": false
@@ -3450,31 +3450,31 @@
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "29",
-              "OpponentValue": "33",
+              "OwnValue": "38",
+              "OpponentValue": "45",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "37",
-              "OpponentValue": "24",
+              "OwnValue": "47",
+              "OpponentValue": "38",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "10",
-              "OpponentValue": "2",
+              "OwnValue": "15",
+              "OpponentValue": "6",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "7",
+              "OwnValue": "9",
               "OpponentValue": "3",
               "Result": "win",
               "DisplayOnly": false
@@ -3482,25 +3482,25 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "18",
-              "OpponentValue": "12",
+              "OwnValue": "22",
+              "OpponentValue": "17",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.056",
-              "OpponentValue": "2.000",
-              "Result": "win",
+              "OwnValue": "2.136",
+              "OpponentValue": "2.235",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Double-Doubles",
               "Label": "DD",
-              "OwnValue": "0",
+              "OwnValue": "1",
               "OpponentValue": "1",
-              "Result": "loss",
+              "Result": "tie",
               "DisplayOnly": false
             }
           ]
@@ -3509,8 +3509,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -3524,25 +3524,25 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Jie 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:34.7453994+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:54.8196610+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Jie 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Jie 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
@@ -3550,21 +3550,23 @@
       "Strengths": [
         "AST：本週累計在已取得的14隊中並列第1；較高較佳。",
         "BLK：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "DREB：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DREB：本週累計在已取得的14隊中並列第2；較高較佳。",
         "MIN：本週累計在已取得的14隊中並列第1；較高較佳。",
         "OREB：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "PTS：本週累計在已取得的14隊中並列第1；較高較佳。",
+        "PTS：本週累計在已取得的14隊中並列第3；較高較佳。",
         "ST：本週累計在已取得的14隊中並列第1；較高較佳。"
       ],
       "Weaknesses": [
-        "FG%：本週累計在已取得的14隊中並列第14，可列補強觀察。",
-        "TO：本週累計在已取得的14隊中並列第13，可列補強觀察。"
+        "FG%：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "FT%：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "TO：本週累計在已取得的14隊中並列第14，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 9,
-          "Rank": 7,
+          "OwnValue": 11,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -3572,8 +3574,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.056,
-          "Rank": 7,
+          "OwnValue": 2.136,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -3581,7 +3583,7 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 37,
+          "OwnValue": 47,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3590,7 +3592,7 @@
         },
         {
           "Label": "BLK",
-          "OwnValue": 7,
+          "OwnValue": 9,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3599,17 +3601,17 @@
         },
         {
           "Label": "DD",
-          "OwnValue": 0,
-          "Rank": 7,
+          "OwnValue": 1,
+          "Rank": 2,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "DREB",
-          "OwnValue": 29,
-          "Rank": 3,
+          "OwnValue": 38,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -3617,8 +3619,8 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.373,
-          "Rank": 14,
+          "OwnValue": 0.402,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -3626,16 +3628,16 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.875,
-          "Rank": 5,
+          "OwnValue": 0.758,
+          "Rank": 11,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "MIN",
-          "OwnValue": 232,
+          "OwnValue": 285,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3644,7 +3646,7 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 15,
+          "OwnValue": 20,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3653,8 +3655,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 106,
-          "Rank": 1,
+          "OwnValue": 138,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -3662,7 +3664,7 @@
         },
         {
           "Label": "ST",
-          "OwnValue": 10,
+          "OwnValue": 15,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -3671,8 +3673,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 18,
-          "Rank": 13,
+          "OwnValue": 22,
+          "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "lower",
@@ -3872,21 +3874,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:34.745Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:54.819Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -3948,8 +3950,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:35.1365687+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:35.1365687+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:55.2694576+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:55.2694576+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4134,8 +4136,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4145,104 +4147,104 @@
           "Status": "in_progress",
           "Opponent": "Project BAO",
           "OwnScore": {
-            "Wins": 7,
-            "Losses": 5,
-            "Ties": 1
-          },
-          "OpponentScore": {
             "Wins": 5,
             "Losses": 7,
             "Ties": 1
           },
-          "OwnGamesRemaining": 23,
-          "OpponentGamesRemaining": 30,
+          "OpponentScore": {
+            "Wins": 7,
+            "Losses": 5,
+            "Ties": 1
+          },
+          "OwnGamesRemaining": 26,
+          "OpponentGamesRemaining": 29,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "120",
-              "OpponentValue": "155",
+              "OwnValue": "133",
+              "OpponentValue": "205",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "25/51",
-              "OpponentValue": "33/75",
+              "OwnValue": "28/56",
+              "OpponentValue": "44/99",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".490",
-              "OpponentValue": ".440",
+              "OwnValue": ".500",
+              "OpponentValue": ".444",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "8/11",
-              "OpponentValue": "18/22",
+              "OwnValue": "11/15",
+              "OpponentValue": "21/25",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".727",
-              "OpponentValue": ".818",
+              "OwnValue": ".733",
+              "OpponentValue": ".840",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "8",
-              "OpponentValue": "14",
+              "OwnValue": "9",
+              "OpponentValue": "19",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "66",
-              "OpponentValue": "98",
+              "OwnValue": "76",
+              "OpponentValue": "128",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "2",
-              "OpponentValue": "7",
+              "OwnValue": "3",
+              "OpponentValue": "10",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "21",
-              "OpponentValue": "16",
-              "Result": "win",
+              "OwnValue": "23",
+              "OpponentValue": "25",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "20",
-              "OpponentValue": "15",
-              "Result": "win",
+              "OwnValue": "23",
+              "OpponentValue": "25",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "5",
+              "OwnValue": "8",
               "OpponentValue": "5",
-              "Result": "tie",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
@@ -4256,16 +4258,16 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "5",
-              "OpponentValue": "8",
+              "OwnValue": "6",
+              "OpponentValue": "11",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "4.000",
-              "OpponentValue": "1.875",
+              "OwnValue": "3.833",
+              "OpponentValue": "2.273",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -4273,8 +4275,8 @@
               "Name": "Double-Doubles",
               "Label": "DD",
               "OwnValue": "1",
-              "OpponentValue": "0",
-              "Result": "win",
+              "OpponentValue": "1",
+              "Result": "tie",
               "DisplayOnly": false
             }
           ]
@@ -4283,8 +4285,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4298,44 +4300,45 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 新店皮霸 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:35.1365687+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:55.2694576+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 新店皮霸 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 新店皮霸 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "A/T：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "TO：本週累計在已取得的14隊中並列第3；較低較佳。"
+        "A/T：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "TO：本週累計在已取得的14隊中並列第1；較低較佳。"
       ],
       "Weaknesses": [
-        "FT%：本週累計在已取得的14隊中並列第13，可列補強觀察。",
-        "OREB：本週累計在已取得的14隊中並列第12，可列補強觀察。"
+        "FT%：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "MIN：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "OREB：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "PTS：本週累計在已取得的14隊中並列第13，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 8,
-          "Rank": 8,
+          "OwnValue": 9,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -4343,8 +4346,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 4,
-          "Rank": 3,
+          "OwnValue": 3.833,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -4352,8 +4355,8 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 20,
-          "Rank": 5,
+          "OwnValue": 23,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -4362,7 +4365,7 @@
         {
           "Label": "BLK",
           "OwnValue": 3,
-          "Rank": 7,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -4371,7 +4374,7 @@
         {
           "Label": "DD",
           "OwnValue": 1,
-          "Rank": 1,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -4379,8 +4382,8 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 21,
-          "Rank": 7,
+          "OwnValue": 23,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -4388,7 +4391,7 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.49,
+          "OwnValue": 0.5,
           "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -4397,25 +4400,7 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.727,
-          "Rank": 13,
-          "ComparedTeamCount": 14,
-          "Assessment": "weakness",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "MIN",
-          "OwnValue": 120,
-          "Rank": 9,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "OREB",
-          "OwnValue": 2,
+          "OwnValue": 0.733,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -4423,27 +4408,45 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "MIN",
+          "OwnValue": 133,
+          "Rank": 13,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "OREB",
+          "OwnValue": 3,
+          "Rank": 13,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "PTS",
-          "OwnValue": 66,
-          "Rank": 9,
+          "OwnValue": 76,
+          "Rank": 13,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "ST",
+          "OwnValue": 8,
+          "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
-          "Label": "ST",
-          "OwnValue": 5,
-          "Rank": 4,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
           "Label": "TO",
-          "OwnValue": 5,
-          "Rank": 3,
+          "OwnValue": 6,
+          "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "lower",
@@ -4641,21 +4644,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:35.136Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:55.269Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -4717,8 +4720,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:35.5436360+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:35.5436360+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:55.7072165+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:55.7072165+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4906,8 +4909,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -4918,53 +4921,53 @@
           "Opponent": "PPPPPPPPP Baskets",
           "OwnScore": {
             "Wins": 9,
-            "Losses": 3,
-            "Ties": 1
+            "Losses": 4,
+            "Ties": 0
           },
           "OpponentScore": {
-            "Wins": 3,
+            "Wins": 4,
             "Losses": 9,
-            "Ties": 1
+            "Ties": 0
           },
-          "OwnGamesRemaining": 30,
-          "OpponentGamesRemaining": 30,
+          "OwnGamesRemaining": 28,
+          "OpponentGamesRemaining": 28,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "150",
-              "OpponentValue": "117",
+              "OwnValue": "213",
+              "OpponentValue": "198",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "29/50",
-              "OpponentValue": "18/42",
+              "OwnValue": "46/76",
+              "OpponentValue": "27/68",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".580",
-              "OpponentValue": ".429",
+              "OwnValue": ".605",
+              "OpponentValue": ".397",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "18/19",
-              "OpponentValue": "9/9",
+              "OwnValue": "23/27",
+              "OpponentValue": "13/13",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".947",
+              "OwnValue": ".852",
               "OpponentValue": "1.000",
               "Result": "loss",
               "DisplayOnly": false
@@ -4972,48 +4975,48 @@
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "10",
-              "OpponentValue": "10",
-              "Result": "tie",
+              "OwnValue": "12",
+              "OpponentValue": "13",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "86",
-              "OpponentValue": "55",
+              "OwnValue": "127",
+              "OpponentValue": "80",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "8",
-              "OpponentValue": "3",
+              "OwnValue": "14",
+              "OpponentValue": "5",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "22",
-              "OpponentValue": "16",
+              "OwnValue": "33",
+              "OpponentValue": "20",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "18",
-              "OpponentValue": "25",
+              "OwnValue": "32",
+              "OpponentValue": "33",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "3",
-              "OpponentValue": "6",
+              "OwnValue": "5",
+              "OpponentValue": "9",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -5021,23 +5024,23 @@
               "Name": "Blocked Shots",
               "Label": "BLK",
               "OwnValue": "5",
-              "OpponentValue": "0",
+              "OpponentValue": "1",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "4",
-              "OpponentValue": "12",
+              "OwnValue": "8",
+              "OpponentValue": "15",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "4.500",
-              "OpponentValue": "2.083",
+              "OwnValue": "4.000",
+              "OpponentValue": "2.200",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -5055,8 +5058,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5070,43 +5073,43 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Mamba 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:35.5436360+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:55.7072165+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Mamba 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Mamba 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "A/T：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "BLK：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "FG%：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "FT%：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "TO：本週累計在已取得的14隊中並列第2；較低較佳。"
+        "A/T：本週累計在已取得的14隊中並列第1；較高較佳。",
+        "AST：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "FG%：本週累計在已取得的14隊中並列第1；較高較佳。",
+        "OREB：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "TO：本週累計在已取得的14隊中並列第3；較低較佳。"
       ],
       "Weaknesses": [],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 10,
-          "Rank": 5,
+          "OwnValue": 12,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5114,34 +5117,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 4.5,
-          "Rank": 2,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "AST",
-          "OwnValue": 18,
-          "Rank": 6,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "BLK",
-          "OwnValue": 5,
-          "Rank": 3,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "DD",
-          "OwnValue": 1,
+          "OwnValue": 4,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -5149,9 +5125,36 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "AST",
+          "OwnValue": 32,
+          "Rank": 4,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "BLK",
+          "OwnValue": 5,
+          "Rank": 5,
+          "ComparedTeamCount": 14,
+          "Assessment": "balanced",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "DD",
+          "OwnValue": 1,
+          "Rank": 2,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "DREB",
-          "OwnValue": 22,
-          "Rank": 6,
+          "OwnValue": 33,
+          "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5159,8 +5162,8 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.58,
-          "Rank": 3,
+          "OwnValue": 0.605,
+          "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -5168,16 +5171,16 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.947,
-          "Rank": 3,
+          "OwnValue": 0.852,
+          "Rank": 5,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "MIN",
-          "OwnValue": 150,
+          "OwnValue": 213,
           "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -5186,16 +5189,16 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 8,
-          "Rank": 5,
+          "OwnValue": 14,
+          "Rank": 4,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "PTS",
-          "OwnValue": 86,
+          "OwnValue": 127,
           "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -5204,8 +5207,8 @@
         },
         {
           "Label": "ST",
-          "OwnValue": 3,
-          "Rank": 9,
+          "OwnValue": 5,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5213,8 +5216,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 4,
-          "Rank": 2,
+          "OwnValue": 8,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "lower",
@@ -5413,21 +5416,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:35.543Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:55.707Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -5489,8 +5492,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:35.9193809+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:35.9193809+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:56.0511931+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:56.0511931+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5669,8 +5672,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5680,103 +5683,103 @@
           "Status": "in_progress",
           "Opponent": "Jie",
           "OwnScore": {
-            "Wins": 5,
-            "Losses": 8,
-            "Ties": 0
+            "Wins": 6,
+            "Losses": 6,
+            "Ties": 1
           },
           "OpponentScore": {
-            "Wins": 8,
-            "Losses": 5,
-            "Ties": 0
+            "Wins": 6,
+            "Losses": 6,
+            "Ties": 1
           },
-          "OwnGamesRemaining": 2,
-          "OpponentGamesRemaining": 26,
+          "OwnGamesRemaining": 0,
+          "OpponentGamesRemaining": 25,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "171",
-              "OpponentValue": "232",
+              "OwnValue": "256",
+              "OpponentValue": "285",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "38/75",
-              "OpponentValue": "38/102",
+              "OwnValue": "61/121",
+              "OpponentValue": "51/127",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".507",
-              "OpponentValue": ".373",
+              "OwnValue": ".504",
+              "OpponentValue": ".402",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "6/9",
-              "OpponentValue": "21/24",
+              "OwnValue": "12/17",
+              "OpponentValue": "25/33",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".667",
-              "OpponentValue": ".875",
+              "OwnValue": ".706",
+              "OpponentValue": ".758",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "14",
-              "OpponentValue": "9",
+              "OwnValue": "21",
+              "OpponentValue": "11",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "96",
-              "OpponentValue": "106",
-              "Result": "loss",
+              "OwnValue": "155",
+              "OpponentValue": "138",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
               "OwnValue": "8",
-              "OpponentValue": "15",
+              "OpponentValue": "20",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "33",
-              "OpponentValue": "29",
+              "OwnValue": "45",
+              "OpponentValue": "38",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "24",
-              "OpponentValue": "37",
+              "OwnValue": "38",
+              "OpponentValue": "47",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "2",
-              "OpponentValue": "10",
+              "OwnValue": "6",
+              "OpponentValue": "15",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -5784,32 +5787,32 @@
               "Name": "Blocked Shots",
               "Label": "BLK",
               "OwnValue": "3",
-              "OpponentValue": "7",
+              "OpponentValue": "9",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "12",
-              "OpponentValue": "18",
+              "OwnValue": "17",
+              "OpponentValue": "22",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.000",
-              "OpponentValue": "2.056",
-              "Result": "loss",
+              "OwnValue": "2.235",
+              "OpponentValue": "2.136",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Double-Doubles",
               "Label": "DD",
               "OwnValue": "1",
-              "OpponentValue": "0",
-              "Result": "win",
+              "OpponentValue": "1",
+              "Result": "tie",
               "DisplayOnly": false
             }
           ]
@@ -5818,8 +5821,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -5833,45 +5836,46 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo SLAM DUNK 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:35.9193809+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:56.0511931+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo SLAM DUNK 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo SLAM DUNK 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
         "3PTM：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "AST：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
+        "AST：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
         "DREB：本週累計在已取得的14隊中並列第1；較高較佳。",
         "FG%：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "MIN：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "PTS：本週累計在已取得的14隊中並列第4；較高較佳。"
+        "MIN：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "PTS：本週累計在已取得的14隊中並列第2；較高較佳。"
       ],
       "Weaknesses": [
-        "FT%：本週累計在已取得的14隊中並列第14，可列補強觀察。"
+        "FT%：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "TO：本週累計在已取得的14隊中並列第11，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 14,
+          "OwnValue": 21,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -5880,8 +5884,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2,
-          "Rank": 8,
+          "OwnValue": 2.235,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5889,8 +5893,8 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 24,
-          "Rank": 3,
+          "OwnValue": 38,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -5899,7 +5903,7 @@
         {
           "Label": "BLK",
           "OwnValue": 3,
-          "Rank": 7,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5908,7 +5912,7 @@
         {
           "Label": "DD",
           "OwnValue": 1,
-          "Rank": 1,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -5916,7 +5920,7 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 33,
+          "OwnValue": 45,
           "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -5925,7 +5929,7 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.507,
+          "OwnValue": 0.504,
           "Rank": 4,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -5934,8 +5938,8 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.667,
-          "Rank": 14,
+          "OwnValue": 0.706,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -5943,8 +5947,8 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 171,
-          "Rank": 4,
+          "OwnValue": 256,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -5953,7 +5957,7 @@
         {
           "Label": "OREB",
           "OwnValue": 8,
-          "Rank": 5,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5961,8 +5965,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 96,
-          "Rank": 4,
+          "OwnValue": 155,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -5970,8 +5974,8 @@
         },
         {
           "Label": "ST",
-          "OwnValue": 2,
-          "Rank": 10,
+          "OwnValue": 6,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -5979,10 +5983,10 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 12,
-          "Rank": 10,
+          "OwnValue": 17,
+          "Rank": 11,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "lower",
           "CompleteLeagueCoverage": true
         }
@@ -6163,21 +6167,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:35.919Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:56.051Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -6239,8 +6243,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:25.5202020+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:25.5202020+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:46.6837051+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:46.6837051+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6442,8 +6446,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6462,38 +6466,38 @@
             "Losses": 9,
             "Ties": 0
           },
-          "OwnGamesRemaining": 26,
-          "OpponentGamesRemaining": 31,
+          "OwnGamesRemaining": 24,
+          "OpponentGamesRemaining": 28,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "177",
-              "OpponentValue": "94",
+              "OwnValue": "279",
+              "OpponentValue": "186",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "37/80",
-              "OpponentValue": "22/52",
+              "OwnValue": "61/129",
+              "OpponentValue": "38/86",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".463",
-              "OpponentValue": ".423",
+              "OwnValue": ".473",
+              "OpponentValue": ".442",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "18/21",
-              "OpponentValue": "11/12",
+              "OwnValue": "30/35",
+              "OpponentValue": "12/13",
               "Result": null,
               "DisplayOnly": true
             },
@@ -6501,79 +6505,79 @@
               "Name": "Free Throw Percentage",
               "Label": "FT%",
               "OwnValue": ".857",
-              "OpponentValue": ".917",
+              "OpponentValue": ".923",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "6",
-              "OpponentValue": "5",
+              "OwnValue": "15",
+              "OpponentValue": "7",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "98",
-              "OpponentValue": "60",
+              "OwnValue": "167",
+              "OpponentValue": "95",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "14",
-              "OpponentValue": "4",
+              "OwnValue": "19",
+              "OpponentValue": "7",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "21",
-              "OpponentValue": "11",
+              "OwnValue": "34",
+              "OpponentValue": "21",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "12",
-              "OpponentValue": "13",
-              "Result": "loss",
+              "OwnValue": "26",
+              "OpponentValue": "17",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
               "OwnValue": "4",
-              "OpponentValue": "2",
-              "Result": "win",
+              "OpponentValue": "6",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "5",
-              "OpponentValue": "4",
+              "OwnValue": "8",
+              "OpponentValue": "7",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "10",
-              "OpponentValue": "5",
+              "OwnValue": "19",
+              "OpponentValue": "9",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.200",
-              "OpponentValue": "2.600",
+              "OwnValue": "1.368",
+              "OpponentValue": "1.889",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -6591,8 +6595,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -6606,53 +6610,57 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo RayBookDown 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:25.5202020+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:46.6837051+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo RayBookDown 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo RayBookDown 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
+        "3PTM：本週累計在已取得的14隊中並列第4；較高較佳。",
         "BLK：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "MIN：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DREB：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "FT%：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "MIN：本週累計在已取得的14隊中並列第2；較高較佳。",
         "OREB：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "PTS：本週累計在已取得的14隊中並列第2；較高較佳。"
+        "PTS：本週累計在已取得的14隊中並列第1；較高較佳。"
       ],
       "Weaknesses": [
         "A/T：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "AST：本週累計在已取得的14隊中並列第12，可列補強觀察。"
+        "ST：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "TO：本週累計在已取得的14隊中並列第12，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 6,
-          "Rank": 10,
+          "OwnValue": 15,
+          "Rank": 4,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.2,
+          "OwnValue": 1.368,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -6661,16 +6669,16 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 12,
-          "Rank": 12,
+          "OwnValue": 26,
+          "Rank": 6,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "BLK",
-          "OwnValue": 5,
+          "OwnValue": 8,
           "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -6680,7 +6688,7 @@
         {
           "Label": "DD",
           "OwnValue": 1,
-          "Rank": 1,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -6688,17 +6696,17 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 21,
-          "Rank": 7,
+          "OwnValue": 34,
+          "Rank": 3,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.463,
-          "Rank": 6,
+          "OwnValue": 0.473,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -6707,16 +6715,16 @@
         {
           "Label": "FT%",
           "OwnValue": 0.857,
-          "Rank": 6,
+          "Rank": 4,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "MIN",
-          "OwnValue": 177,
-          "Rank": 3,
+          "OwnValue": 279,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -6724,7 +6732,7 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 14,
+          "OwnValue": 19,
           "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -6733,8 +6741,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 98,
-          "Rank": 2,
+          "OwnValue": 167,
+          "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -6743,18 +6751,18 @@
         {
           "Label": "ST",
           "OwnValue": 4,
-          "Rank": 8,
+          "Rank": 11,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "TO",
-          "OwnValue": 10,
-          "Rank": 8,
+          "OwnValue": 19,
+          "Rank": 12,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "lower",
           "CompleteLeagueCoverage": true
         }
@@ -6964,21 +6972,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:25.520Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:46.683Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -7040,8 +7048,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:36.4046509+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:36.4046509+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:56.5356819+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:56.5356819+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -7228,8 +7236,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -7239,104 +7247,104 @@
           "Status": "in_progress",
           "Opponent": "新店皮霸",
           "OwnScore": {
-            "Wins": 5,
-            "Losses": 7,
-            "Ties": 1
-          },
-          "OpponentScore": {
             "Wins": 7,
             "Losses": 5,
             "Ties": 1
           },
-          "OwnGamesRemaining": 30,
-          "OpponentGamesRemaining": 23,
+          "OpponentScore": {
+            "Wins": 5,
+            "Losses": 7,
+            "Ties": 1
+          },
+          "OwnGamesRemaining": 29,
+          "OpponentGamesRemaining": 26,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "155",
-              "OpponentValue": "120",
+              "OwnValue": "205",
+              "OpponentValue": "133",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "33/75",
-              "OpponentValue": "25/51",
+              "OwnValue": "44/99",
+              "OpponentValue": "28/56",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".440",
-              "OpponentValue": ".490",
+              "OwnValue": ".444",
+              "OpponentValue": ".500",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "18/22",
-              "OpponentValue": "8/11",
+              "OwnValue": "21/25",
+              "OpponentValue": "11/15",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".818",
-              "OpponentValue": ".727",
+              "OwnValue": ".840",
+              "OpponentValue": ".733",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "14",
-              "OpponentValue": "8",
+              "OwnValue": "19",
+              "OpponentValue": "9",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "98",
-              "OpponentValue": "66",
+              "OwnValue": "128",
+              "OpponentValue": "76",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "7",
-              "OpponentValue": "2",
+              "OwnValue": "10",
+              "OpponentValue": "3",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "16",
-              "OpponentValue": "21",
-              "Result": "loss",
+              "OwnValue": "25",
+              "OpponentValue": "23",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "15",
-              "OpponentValue": "20",
-              "Result": "loss",
+              "OwnValue": "25",
+              "OpponentValue": "23",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
               "OwnValue": "5",
-              "OpponentValue": "5",
-              "Result": "tie",
+              "OpponentValue": "8",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
@@ -7350,25 +7358,25 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "8",
-              "OpponentValue": "5",
+              "OwnValue": "11",
+              "OpponentValue": "6",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.875",
-              "OpponentValue": "4.000",
+              "OwnValue": "2.273",
+              "OpponentValue": "3.833",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Double-Doubles",
               "Label": "DD",
-              "OwnValue": "0",
+              "OwnValue": "1",
               "OpponentValue": "1",
-              "Result": "loss",
+              "Result": "tie",
               "DisplayOnly": false
             }
           ]
@@ -7377,8 +7385,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -7392,40 +7400,42 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Project BAO 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:36.4046509+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:56.5356819+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Project BAO 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Project BAO 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "3PTM：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "PTS：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第4；較高較佳。"
+        "3PTM：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "PTS：本週累計在已取得的14隊中並列第4；較高較佳。"
       ],
-      "Weaknesses": [],
+      "Weaknesses": [
+        "BLK：本週累計在已取得的14隊中並列第11，可列補強觀察。"
+      ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 14,
-          "Rank": 1,
+          "OwnValue": 19,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -7433,8 +7443,8 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.875,
-          "Rank": 9,
+          "OwnValue": 2.273,
+          "Rank": 5,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -7442,7 +7452,7 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 15,
+          "OwnValue": 25,
           "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -7452,24 +7462,24 @@
         {
           "Label": "BLK",
           "OwnValue": 2,
-          "Rank": 10,
+          "Rank": 11,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "DD",
-          "OwnValue": 0,
-          "Rank": 7,
+          "OwnValue": 1,
+          "Rank": 2,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "DREB",
-          "OwnValue": 16,
+          "OwnValue": 25,
           "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -7478,16 +7488,7 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.44,
-          "Rank": 10,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "FT%",
-          "OwnValue": 0.818,
+          "OwnValue": 0.444,
           "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -7495,9 +7496,18 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "FT%",
+          "OwnValue": 0.84,
+          "Rank": 6,
+          "ComparedTeamCount": 14,
+          "Assessment": "balanced",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "MIN",
-          "OwnValue": 155,
-          "Rank": 5,
+          "OwnValue": 205,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -7505,8 +7515,8 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 7,
-          "Rank": 8,
+          "OwnValue": 10,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -7514,8 +7524,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 98,
-          "Rank": 2,
+          "OwnValue": 128,
+          "Rank": 4,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -7524,15 +7534,15 @@
         {
           "Label": "ST",
           "OwnValue": 5,
-          "Rank": 4,
+          "Rank": 8,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "TO",
-          "OwnValue": 8,
+          "OwnValue": 11,
           "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -7739,21 +7749,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:36.404Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:56.535Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -7815,8 +7825,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:36.8115377+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:36.8115377+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:56.9109277+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:56.9109277+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8027,8 +8037,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8038,103 +8048,103 @@
           "Status": "in_progress",
           "Opponent": "HanK's Agreeable Team",
           "OwnScore": {
-            "Wins": 7,
-            "Losses": 4,
+            "Wins": 8,
+            "Losses": 3,
             "Ties": 2
           },
           "OpponentScore": {
-            "Wins": 4,
-            "Losses": 7,
+            "Wins": 3,
+            "Losses": 8,
             "Ties": 2
           },
-          "OwnGamesRemaining": 23,
-          "OpponentGamesRemaining": 29,
+          "OwnGamesRemaining": 22,
+          "OpponentGamesRemaining": 26,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "113",
-              "OpponentValue": "58",
+              "OwnValue": "153",
+              "OpponentValue": "102",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "22/37",
-              "OpponentValue": "16/39",
+              "OwnValue": "31/52",
+              "OpponentValue": "24/58",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".595",
-              "OpponentValue": ".410",
+              "OwnValue": ".596",
+              "OpponentValue": ".414",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "12/15",
-              "OpponentValue": "15/18",
+              "OwnValue": "14/17",
+              "OpponentValue": "21/27",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".800",
-              "OpponentValue": ".833",
-              "Result": "loss",
+              "OwnValue": ".824",
+              "OpponentValue": ".778",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "6",
-              "OpponentValue": "4",
+              "OwnValue": "9",
+              "OpponentValue": "7",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "62",
-              "OpponentValue": "51",
+              "OwnValue": "85",
+              "OpponentValue": "76",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "5",
-              "OpponentValue": "2",
+              "OwnValue": "6",
+              "OpponentValue": "4",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "13",
-              "OpponentValue": "6",
+              "OwnValue": "17",
+              "OpponentValue": "13",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "14",
-              "OpponentValue": "15",
+              "OwnValue": "19",
+              "OpponentValue": "20",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "1",
-              "OpponentValue": "1",
+              "OwnValue": "3",
+              "OpponentValue": "3",
               "Result": "tie",
               "DisplayOnly": false
             },
@@ -8149,16 +8159,16 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "8",
-              "OpponentValue": "3",
+              "OwnValue": "9",
+              "OpponentValue": "7",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.750",
-              "OpponentValue": "5.000",
+              "OwnValue": "2.111",
+              "OpponentValue": "2.857",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -8176,8 +8186,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8191,42 +8201,43 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo Gemini TEAM 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:36.8115377+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:56.9109277+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Gemini TEAM 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo Gemini TEAM 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "FG%：本週累計在已取得的14隊中並列第1；較高較佳。"
+        "FG%：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "TO：本週累計在已取得的14隊中並列第4；較低較佳。"
       ],
       "Weaknesses": [
-        "A/T：本週累計在已取得的14隊中並列第11，可列補強觀察。",
-        "DREB：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "DREB：本週累計在已取得的14隊中並列第13，可列補強觀察。",
         "MIN：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "PTS：本週累計在已取得的14隊中並列第11，可列補強觀察。",
         "ST：本週累計在已取得的14隊中並列第12，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 6,
+          "OwnValue": 9,
           "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -8235,17 +8246,17 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.75,
-          "Rank": 11,
+          "OwnValue": 2.111,
+          "Rank": 9,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "AST",
-          "OwnValue": 14,
-          "Rank": 9,
+          "OwnValue": 19,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -8254,7 +8265,7 @@
         {
           "Label": "BLK",
           "OwnValue": 3,
-          "Rank": 7,
+          "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -8263,7 +8274,7 @@
         {
           "Label": "DD",
           "OwnValue": 0,
-          "Rank": 7,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -8271,8 +8282,8 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 13,
-          "Rank": 12,
+          "OwnValue": 17,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -8280,8 +8291,8 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.595,
-          "Rank": 1,
+          "OwnValue": 0.596,
+          "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -8289,8 +8300,8 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.8,
-          "Rank": 10,
+          "OwnValue": 0.824,
+          "Rank": 7,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -8298,7 +8309,7 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 113,
+          "OwnValue": 153,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -8307,16 +8318,7 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 5,
-          "Rank": 9,
-          "ComparedTeamCount": 14,
-          "Assessment": "balanced",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "PTS",
-          "OwnValue": 62,
+          "OwnValue": 6,
           "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -8324,8 +8326,17 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "PTS",
+          "OwnValue": 85,
+          "Rank": 11,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "ST",
-          "OwnValue": 1,
+          "OwnValue": 3,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -8334,10 +8345,10 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 8,
-          "Rank": 6,
+          "OwnValue": 9,
+          "Rank": 4,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "strength",
           "Direction": "lower",
           "CompleteLeagueCoverage": true
         }
@@ -8548,21 +8559,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:36.811Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:56.910Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -8624,8 +8635,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:37.2055680+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:37.2055680+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:57.3015753+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:57.3015753+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8794,8 +8805,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8805,47 +8816,47 @@
           "Status": "in_progress",
           "Opponent": "Derek's Boss Team",
           "OwnScore": {
-            "Wins": 8,
-            "Losses": 4,
-            "Ties": 1
+            "Wins": 4,
+            "Losses": 6,
+            "Ties": 3
           },
           "OpponentScore": {
-            "Wins": 4,
-            "Losses": 8,
-            "Ties": 1
+            "Wins": 6,
+            "Losses": 4,
+            "Ties": 3
           },
           "OwnGamesRemaining": 27,
-          "OpponentGamesRemaining": 31,
+          "OpponentGamesRemaining": 28,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "148",
-              "OpponentValue": "119",
-              "Result": "win",
+              "OwnValue": "178",
+              "OpponentValue": "224",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "31/69",
-              "OpponentValue": "23/50",
+              "OwnValue": "41/86",
+              "OpponentValue": "39/84",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".449",
-              "OpponentValue": ".460",
-              "Result": "loss",
+              "OwnValue": ".477",
+              "OpponentValue": ".464",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "8/8",
-              "OpponentValue": "10/12",
+              "OwnValue": "13/13",
+              "OpponentValue": "18/26",
               "Result": null,
               "DisplayOnly": true
             },
@@ -8853,79 +8864,79 @@
               "Name": "Free Throw Percentage",
               "Label": "FT%",
               "OwnValue": "1.000",
-              "OpponentValue": ".833",
+              "OpponentValue": ".692",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "12",
-              "OpponentValue": "5",
+              "OwnValue": "16",
+              "OpponentValue": "13",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "82",
-              "OpponentValue": "61",
+              "OwnValue": "111",
+              "OpponentValue": "109",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "9",
-              "OpponentValue": "8",
-              "Result": "win",
+              "OwnValue": "12",
+              "OpponentValue": "12",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "27",
-              "OpponentValue": "15",
-              "Result": "win",
+              "OwnValue": "31",
+              "OpponentValue": "33",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "12",
-              "OpponentValue": "11",
-              "Result": "win",
+              "OwnValue": "18",
+              "OpponentValue": "18",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
               "OwnValue": "5",
-              "OpponentValue": "5",
-              "Result": "tie",
+              "OpponentValue": "11",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
               "OwnValue": "4",
-              "OpponentValue": "2",
-              "Result": "win",
+              "OpponentValue": "4",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "18",
-              "OpponentValue": "6",
+              "OwnValue": "20",
+              "OpponentValue": "12",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "0.667",
-              "OpponentValue": "1.833",
+              "OwnValue": "0.900",
+              "OpponentValue": "1.500",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -8933,7 +8944,7 @@
               "Name": "Double-Doubles",
               "Label": "DD",
               "OwnValue": "0",
-              "OpponentValue": "1",
+              "OpponentValue": "2",
               "Result": "loss",
               "DisplayOnly": false
             }
@@ -8943,8 +8954,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -8958,45 +8969,42 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:37.2055680+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:57.3015753+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 閃電五連鞭 (JoeDub) 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
         "3PTM：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "DREB：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "FT%：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "OREB：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "ST：本週累計在已取得的14隊中並列第4；較高較佳。"
+        "FT%：本週累計在已取得的14隊中並列第1；較高較佳。"
       ],
       "Weaknesses": [
         "A/T：本週累計在已取得的14隊中並列第14，可列補強觀察。",
-        "AST：本週累計在已取得的14隊中並列第12，可列補強觀察。",
+        "AST：本週累計在已取得的14隊中並列第11，可列補強觀察。",
         "TO：本週累計在已取得的14隊中並列第13，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 12,
+          "OwnValue": 16,
           "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -9005,7 +9013,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 0.667,
+          "OwnValue": 0.9,
           "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -9014,8 +9022,8 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 12,
-          "Rank": 12,
+          "OwnValue": 18,
+          "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -9024,7 +9032,7 @@
         {
           "Label": "BLK",
           "OwnValue": 4,
-          "Rank": 5,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9033,7 +9041,7 @@
         {
           "Label": "DD",
           "OwnValue": 0,
-          "Rank": 7,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9041,17 +9049,17 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 27,
-          "Rank": 4,
+          "OwnValue": 31,
+          "Rank": 7,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.449,
-          "Rank": 8,
+          "OwnValue": 0.477,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9068,8 +9076,8 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 148,
-          "Rank": 7,
+          "OwnValue": 178,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9077,16 +9085,16 @@
         },
         {
           "Label": "OREB",
-          "OwnValue": 9,
-          "Rank": 4,
+          "OwnValue": 12,
+          "Rank": 5,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "PTS",
-          "OwnValue": 82,
+          "OwnValue": 111,
           "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -9096,15 +9104,15 @@
         {
           "Label": "ST",
           "OwnValue": 5,
-          "Rank": 4,
+          "Rank": 8,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "TO",
-          "OwnValue": 18,
+          "OwnValue": 20,
           "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -9293,21 +9301,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:37.205Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:57.301Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -9369,8 +9377,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:37.5939546+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:37.5939546+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:57.6587998+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:57.6587998+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9561,8 +9569,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9581,45 +9589,45 @@
             "Losses": 4,
             "Ties": 0
           },
-          "OwnGamesRemaining": 31,
-          "OpponentGamesRemaining": 26,
+          "OwnGamesRemaining": 28,
+          "OpponentGamesRemaining": 24,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "94",
-              "OpponentValue": "177",
+              "OwnValue": "186",
+              "OpponentValue": "279",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "22/52",
-              "OpponentValue": "37/80",
+              "OwnValue": "38/86",
+              "OpponentValue": "61/129",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".423",
-              "OpponentValue": ".463",
+              "OwnValue": ".442",
+              "OpponentValue": ".473",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "11/12",
-              "OpponentValue": "18/21",
+              "OwnValue": "12/13",
+              "OpponentValue": "30/35",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".917",
+              "OwnValue": ".923",
               "OpponentValue": ".857",
               "Result": "win",
               "DisplayOnly": false
@@ -9627,72 +9635,72 @@
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "5",
-              "OpponentValue": "6",
+              "OwnValue": "7",
+              "OpponentValue": "15",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "60",
-              "OpponentValue": "98",
+              "OwnValue": "95",
+              "OpponentValue": "167",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "4",
-              "OpponentValue": "14",
+              "OwnValue": "7",
+              "OpponentValue": "19",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "11",
-              "OpponentValue": "21",
+              "OwnValue": "21",
+              "OpponentValue": "34",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "13",
-              "OpponentValue": "12",
-              "Result": "win",
+              "OwnValue": "17",
+              "OpponentValue": "26",
+              "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Steals",
               "Label": "ST",
-              "OwnValue": "2",
+              "OwnValue": "6",
               "OpponentValue": "4",
-              "Result": "loss",
+              "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "4",
-              "OpponentValue": "5",
+              "OwnValue": "7",
+              "OpponentValue": "8",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "5",
-              "OpponentValue": "10",
+              "OwnValue": "9",
+              "OpponentValue": "19",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "2.600",
-              "OpponentValue": "1.200",
+              "OwnValue": "1.889",
+              "OpponentValue": "1.368",
               "Result": "win",
               "DisplayOnly": false
             },
@@ -9710,8 +9718,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -9725,45 +9733,43 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:37.5939546+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:57.6587998+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 北川瞳鈴眼 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "A/T：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "FT%：本週累計在已取得的14隊中並列第4；較高較佳。",
-        "TO：本週累計在已取得的14隊中並列第3；較低較佳。"
+        "BLK：本週累計在已取得的14隊中並列第4；較高較佳。",
+        "FT%：本週累計在已取得的14隊中並列第3；較高較佳。",
+        "TO：本週累計在已取得的14隊中並列第4；較低較佳。"
       ],
       "Weaknesses": [
         "3PTM：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "DREB：本週累計在已取得的14隊中並列第13，可列補強觀察。",
-        "FG%：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "MIN：本週累計在已取得的14隊中並列第13，可列補強觀察。",
-        "PTS：本週累計在已取得的14隊中並列第12，可列補強觀察。"
+        "AST：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "DREB：本週累計在已取得的14隊中並列第11，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 5,
+          "OwnValue": 7,
           "Rank": 12,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -9772,16 +9778,7 @@
         },
         {
           "Label": "A/T",
-          "OwnValue": 2.6,
-          "Rank": 4,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "AST",
-          "OwnValue": 13,
+          "OwnValue": 1.889,
           "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -9789,18 +9786,27 @@
           "CompleteLeagueCoverage": true
         },
         {
-          "Label": "BLK",
-          "OwnValue": 4,
-          "Rank": 5,
+          "Label": "AST",
+          "OwnValue": 17,
+          "Rank": 13,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
+          "Label": "BLK",
+          "OwnValue": 7,
+          "Rank": 4,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "DD",
           "OwnValue": 0,
-          "Rank": 7,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9808,8 +9814,8 @@
         },
         {
           "Label": "DREB",
-          "OwnValue": 11,
-          "Rank": 13,
+          "OwnValue": 21,
+          "Rank": 11,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -9817,17 +9823,17 @@
         },
         {
           "Label": "FG%",
-          "OwnValue": 0.423,
-          "Rank": 12,
+          "OwnValue": 0.442,
+          "Rank": 10,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.917,
-          "Rank": 4,
+          "OwnValue": 0.923,
+          "Rank": 3,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -9835,17 +9841,17 @@
         },
         {
           "Label": "MIN",
-          "OwnValue": 94,
-          "Rank": 13,
+          "OwnValue": 186,
+          "Rank": 9,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "OREB",
-          "OwnValue": 4,
-          "Rank": 10,
+          "OwnValue": 7,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9853,17 +9859,17 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 60,
-          "Rank": 12,
+          "OwnValue": 95,
+          "Rank": 9,
           "ComparedTeamCount": 14,
-          "Assessment": "weakness",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "ST",
-          "OwnValue": 2,
-          "Rank": 10,
+          "OwnValue": 6,
+          "Rank": 6,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -9871,8 +9877,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 5,
-          "Rank": 3,
+          "OwnValue": 9,
+          "Rank": 4,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "lower",
@@ -10073,21 +10079,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:37.593Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:57.658Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
@@ -10149,8 +10155,8 @@
       "Roster": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:38.0163683+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:38.0163683+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:58.0494206+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:58.0494206+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -10359,8 +10365,8 @@
       "Matchup": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -10370,62 +10376,62 @@
           "Status": "in_progress",
           "Opponent": "BenKidd's Brilliant Team",
           "OwnScore": {
-            "Wins": 6,
+            "Wins": 5,
             "Losses": 7,
-            "Ties": 0
+            "Ties": 1
           },
           "OpponentScore": {
             "Wins": 7,
-            "Losses": 6,
-            "Ties": 0
+            "Losses": 5,
+            "Ties": 1
           },
           "OwnGamesRemaining": 30,
-          "OpponentGamesRemaining": 29,
+          "OpponentGamesRemaining": 28,
           "Categories": [
             {
               "Name": "Minutes Played",
               "Label": "MIN",
-              "OwnValue": "140",
-              "OpponentValue": "193",
+              "OwnValue": "166",
+              "OpponentValue": "238",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Field Goals Made / Field Goals Attempted",
               "Label": "FGM/A",
-              "OwnValue": "26/44",
-              "OpponentValue": "30/67",
+              "OwnValue": "31/52",
+              "OpponentValue": "35/85",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Field Goal Percentage",
               "Label": "FG%",
-              "OwnValue": ".591",
-              "OpponentValue": ".448",
+              "OwnValue": ".596",
+              "OpponentValue": ".412",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Free Throws Made / Free Throws Attempted",
               "Label": "FTM/A",
-              "OwnValue": "15/19",
-              "OpponentValue": "14/18",
+              "OwnValue": "16/20",
+              "OpponentValue": "20/25",
               "Result": null,
               "DisplayOnly": true
             },
             {
               "Name": "Free Throw Percentage",
               "Label": "FT%",
-              "OwnValue": ".789",
-              "OpponentValue": ".778",
-              "Result": "win",
+              "OwnValue": ".800",
+              "OpponentValue": ".800",
+              "Result": "tie",
               "DisplayOnly": false
             },
             {
               "Name": "3-point Shots Made",
               "Label": "3PTM",
-              "OwnValue": "12",
+              "OwnValue": "13",
               "OpponentValue": "7",
               "Result": "win",
               "DisplayOnly": false
@@ -10433,32 +10439,32 @@
             {
               "Name": "Points Scored",
               "Label": "PTS",
-              "OwnValue": "79",
-              "OpponentValue": "81",
+              "OwnValue": "91",
+              "OpponentValue": "97",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Offensive Rebounds",
               "Label": "OREB",
-              "OwnValue": "2",
-              "OpponentValue": "14",
+              "OwnValue": "3",
+              "OpponentValue": "15",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Defensive Rebounds",
               "Label": "DREB",
-              "OwnValue": "31",
-              "OpponentValue": "27",
+              "OwnValue": "34",
+              "OpponentValue": "31",
               "Result": "win",
               "DisplayOnly": false
             },
             {
               "Name": "Assists",
               "Label": "AST",
-              "OwnValue": "13",
-              "OpponentValue": "21",
+              "OwnValue": "15",
+              "OpponentValue": "28",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -10466,14 +10472,14 @@
               "Name": "Steals",
               "Label": "ST",
               "OwnValue": "1",
-              "OpponentValue": "10",
+              "OpponentValue": "11",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Blocked Shots",
               "Label": "BLK",
-              "OwnValue": "6",
+              "OwnValue": "9",
               "OpponentValue": "2",
               "Result": "win",
               "DisplayOnly": false
@@ -10481,16 +10487,16 @@
             {
               "Name": "Turnovers",
               "Label": "TO",
-              "OwnValue": "12",
-              "OpponentValue": "10",
+              "OwnValue": "15",
+              "OpponentValue": "12",
               "Result": "loss",
               "DisplayOnly": false
             },
             {
               "Name": "Assist/Turnover Ratio",
               "Label": "A/T",
-              "OwnValue": "1.083",
-              "OpponentValue": "2.100",
+              "OwnValue": "1.000",
+              "OpponentValue": "2.333",
               "Result": "loss",
               "DisplayOnly": false
             },
@@ -10508,8 +10514,8 @@
       "Budget": {
         "Status": "ok",
         "Source": "Flaim Fantasy / Yahoo",
-        "CheckedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
-        "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+        "CheckedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
+        "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
         "SourceUpdatedAtUtc": null,
         "ErrorType": null,
         "Data": {
@@ -10523,55 +10529,55 @@
       "Sources": [
         {
           "Name": "Flaim / Yahoo 元川楓 陣容",
-          "RetrievedAtUtc": "2026-11-24T02:53:38.0163683+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:58.0494206+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 元川楓 當週比分",
-          "RetrievedAtUtc": "2026-11-24T02:53:26.1923940+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:47.2363698+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 元川楓 取得額度",
-          "RetrievedAtUtc": "2026-11-24T02:53:27.2408285+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:48.0801942+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         },
         {
           "Name": "Flaim / Yahoo 聯盟市場",
-          "RetrievedAtUtc": "2026-11-24T02:53:28.4601541+00:00",
+          "RetrievedAtUtc": "2026-11-24T05:00:49.2614231+00:00",
           "SourceUpdatedAtUtc": null,
           "Url": null
         }
       ],
       "Strengths": [
-        "3PTM：本週累計在已取得的14隊中並列第3；較高較佳。",
-        "BLK：本週累計在已取得的14隊中並列第2；較高較佳。",
-        "DD：本週累計在已取得的14隊中並列第1；較高較佳。",
-        "DREB：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "BLK：本週累計在已取得的14隊中並列第1；較高較佳。",
+        "DD：本週累計在已取得的14隊中並列第2；較高較佳。",
+        "DREB：本週累計在已取得的14隊中並列第3；較高較佳。",
         "FG%：本週累計在已取得的14隊中並列第2；較高較佳。"
       ],
       "Weaknesses": [
         "A/T：本週累計在已取得的14隊中並列第13，可列補強觀察。",
-        "FT%：本週累計在已取得的14隊中並列第11，可列補強觀察。",
-        "OREB：本週累計在已取得的14隊中並列第12，可列補強觀察。",
-        "ST：本週累計在已取得的14隊中並列第12，可列補強觀察。"
+        "AST：本週累計在已取得的14隊中並列第14，可列補強觀察。",
+        "MIN：本週累計在已取得的14隊中並列第11，可列補強觀察。",
+        "OREB：本週累計在已取得的14隊中並列第13，可列補強觀察。",
+        "ST：本週累計在已取得的14隊中並列第14，可列補強觀察。"
       ],
       "Categories": [
         {
           "Label": "3PTM",
-          "OwnValue": 12,
-          "Rank": 3,
+          "OwnValue": 13,
+          "Rank": 5,
           "ComparedTeamCount": 14,
-          "Assessment": "strength",
+          "Assessment": "balanced",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "A/T",
-          "OwnValue": 1.083,
+          "OwnValue": 1,
           "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
@@ -10580,17 +10586,17 @@
         },
         {
           "Label": "AST",
-          "OwnValue": 13,
-          "Rank": 10,
+          "OwnValue": 15,
+          "Rank": 14,
           "ComparedTeamCount": 14,
-          "Assessment": "balanced",
+          "Assessment": "weakness",
           "Direction": "higher",
           "CompleteLeagueCoverage": true
         },
         {
           "Label": "BLK",
-          "OwnValue": 6,
-          "Rank": 2,
+          "OwnValue": 9,
+          "Rank": 1,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
           "Direction": "higher",
@@ -10599,15 +10605,6 @@
         {
           "Label": "DD",
           "OwnValue": 1,
-          "Rank": 1,
-          "ComparedTeamCount": 14,
-          "Assessment": "strength",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "DREB",
-          "OwnValue": 31,
           "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -10615,8 +10612,17 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "DREB",
+          "OwnValue": 34,
+          "Rank": 3,
+          "ComparedTeamCount": 14,
+          "Assessment": "strength",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "FG%",
-          "OwnValue": 0.591,
+          "OwnValue": 0.596,
           "Rank": 2,
           "ComparedTeamCount": 14,
           "Assessment": "strength",
@@ -10625,16 +10631,7 @@
         },
         {
           "Label": "FT%",
-          "OwnValue": 0.789,
-          "Rank": 11,
-          "ComparedTeamCount": 14,
-          "Assessment": "weakness",
-          "Direction": "higher",
-          "CompleteLeagueCoverage": true
-        },
-        {
-          "Label": "MIN",
-          "OwnValue": 140,
+          "OwnValue": 0.8,
           "Rank": 8,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
@@ -10642,9 +10639,18 @@
           "CompleteLeagueCoverage": true
         },
         {
+          "Label": "MIN",
+          "OwnValue": 166,
+          "Rank": 11,
+          "ComparedTeamCount": 14,
+          "Assessment": "weakness",
+          "Direction": "higher",
+          "CompleteLeagueCoverage": true
+        },
+        {
           "Label": "OREB",
-          "OwnValue": 2,
-          "Rank": 12,
+          "OwnValue": 3,
+          "Rank": 13,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -10652,8 +10658,8 @@
         },
         {
           "Label": "PTS",
-          "OwnValue": 79,
-          "Rank": 8,
+          "OwnValue": 91,
+          "Rank": 10,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "higher",
@@ -10662,7 +10668,7 @@
         {
           "Label": "ST",
           "OwnValue": 1,
-          "Rank": 12,
+          "Rank": 14,
           "ComparedTeamCount": 14,
           "Assessment": "weakness",
           "Direction": "higher",
@@ -10670,8 +10676,8 @@
         },
         {
           "Label": "TO",
-          "OwnValue": 12,
-          "Rank": 10,
+          "OwnValue": 15,
+          "Rank": 9,
           "ComparedTeamCount": 14,
           "Assessment": "balanced",
           "Direction": "lower",
@@ -10887,21 +10893,21 @@
         "Sources": [
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Roster",
-            "RetrievedAtUtc": "2026-11-24T02:53:38.016Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:58.049Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次Flaim / Yahoo候選現況核對 Market",
-            "RetrievedAtUtc": "2026-11-24T02:53:28.460Z",
+            "RetrievedAtUtc": "2026-11-24T05:00:49.261Z",
             "SourceUpdatedAtUtc": null,
             "Url": null
           },
           {
             "Name": "本次NBA官方傷勢候選現況核對",
-            "RetrievedAtUtc": "2026-11-24T02:53:13.223Z",
-            "SourceUpdatedAtUtc": "2026-11-24T02:45:00.000Z",
-            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_45PM.pdf"
+            "RetrievedAtUtc": "2026-11-24T05:00:36.303Z",
+            "SourceUpdatedAtUtc": "2026-11-24T04:45:00.000Z",
+            "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf"
           },
           {
             "Name": "Flaim / Yahoo Roster",
