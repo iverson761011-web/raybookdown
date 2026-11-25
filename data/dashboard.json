@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-24T23:19:43.4477648+00:00",
+  "GeneratedAtUtc": "2026-11-25T05:03:21.8282073+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:33.5822203+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:33.5822203+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:09.6949573+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:09.6949573+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:33.8958084+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:33.8958084+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:10.0999478+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:10.0999478+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -266,11 +266,12 @@
           {
             "Player": "Aday Mara",
             "Position": "IL",
-            "Status": "Q",
+            "Status": "O",
             "EligiblePositions": [
               "C",
               "FC",
-              "Util"
+              "Util",
+              "IL"
             ],
             "TeamCode": "OKC",
             "IsUndroppable": false
@@ -281,8 +282,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:34.4589060+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:34.4589060+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:10.7956926+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:10.7956926+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -292,127 +293,127 @@
         "Status": "in_progress",
         "Opponent": "北川瞳鈴眼",
         "OwnScore": {
-          "Wins": 8,
-          "Losses": 4,
-          "Ties": 1
+          "Wins": 6,
+          "Losses": 5,
+          "Ties": 2
         },
         "OpponentScore": {
-          "Wins": 4,
-          "Losses": 8,
-          "Ties": 1
+          "Wins": 5,
+          "Losses": 6,
+          "Ties": 2
         },
-        "OwnGamesRemaining": 24,
-        "OpponentGamesRemaining": 25,
+        "OwnGamesRemaining": 22,
+        "OpponentGamesRemaining": 21,
         "Categories": [
           {
             "Name": "Minutes Played",
             "Label": "MIN",
-            "OwnValue": "300",
-            "OpponentValue": "209",
+            "OwnValue": "360",
+            "OpponentValue": "322",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Field Goals Made / Field Goals Attempted",
             "Label": "FGM/A",
-            "OwnValue": "67/138",
-            "OpponentValue": "40/90",
+            "OwnValue": "81/164",
+            "OpponentValue": "55/126",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Field Goal Percentage",
             "Label": "FG%",
-            "OwnValue": ".486",
-            "OpponentValue": ".444",
+            "OwnValue": ".494",
+            "OpponentValue": ".437",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Free Throws Made / Free Throws Attempted",
             "Label": "FTM/A",
-            "OwnValue": "30/35",
-            "OpponentValue": "12/13",
+            "OwnValue": "33/39",
+            "OpponentValue": "18/20",
             "Result": null,
             "DisplayOnly": true
           },
           {
             "Name": "Free Throw Percentage",
             "Label": "FT%",
-            "OwnValue": ".857",
-            "OpponentValue": ".923",
+            "OwnValue": ".846",
+            "OpponentValue": ".900",
             "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "3-point Shots Made",
             "Label": "3PTM",
-            "OwnValue": "17",
-            "OpponentValue": "8",
+            "OwnValue": "21",
+            "OpponentValue": "13",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Points Scored",
             "Label": "PTS",
-            "OwnValue": "181",
-            "OpponentValue": "100",
+            "OwnValue": "216",
+            "OpponentValue": "141",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Offensive Rebounds",
             "Label": "OREB",
-            "OwnValue": "19",
-            "OpponentValue": "7",
+            "OwnValue": "21",
+            "OpponentValue": "10",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Defensive Rebounds",
             "Label": "DREB",
-            "OwnValue": "36",
-            "OpponentValue": "23",
+            "OwnValue": "48",
+            "OpponentValue": "34",
             "Result": "win",
             "DisplayOnly": false
           },
           {
             "Name": "Assists",
             "Label": "AST",
-            "OwnValue": "28",
-            "OpponentValue": "19",
-            "Result": "win",
+            "OwnValue": "34",
+            "OpponentValue": "35",
+            "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Steals",
             "Label": "ST",
-            "OwnValue": "4",
-            "OpponentValue": "6",
+            "OwnValue": "5",
+            "OpponentValue": "10",
             "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Blocked Shots",
             "Label": "BLK",
-            "OwnValue": "8",
-            "OpponentValue": "8",
+            "OwnValue": "10",
+            "OpponentValue": "10",
             "Result": "tie",
             "DisplayOnly": false
           },
           {
             "Name": "Turnovers",
             "Label": "TO",
-            "OwnValue": "19",
-            "OpponentValue": "10",
+            "OwnValue": "22",
+            "OpponentValue": "21",
             "Result": "loss",
             "DisplayOnly": false
           },
           {
             "Name": "Assist/Turnover Ratio",
             "Label": "A/T",
-            "OwnValue": "1.47",
-            "OpponentValue": "1.90",
+            "OwnValue": "1.545",
+            "OpponentValue": "1.667",
             "Result": "loss",
             "DisplayOnly": false
           },
@@ -420,8 +421,8 @@
             "Name": "Double-Doubles",
             "Label": "DD",
             "OwnValue": "1",
-            "OpponentValue": "0",
-            "Result": "win",
+            "OpponentValue": "1",
+            "Result": "tie",
             "DisplayOnly": false
           }
         ]
@@ -430,13 +431,13 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:34.9438209+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:34.9438209+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:11.3275773+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:11.3275773+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
-        "WindowStartUtcDate": "2026-10-26",
-        "WindowEndUtcDate": "2026-11-24",
+        "WindowStartUtcDate": "2026-10-27",
+        "WindowEndUtcDate": "2026-11-25",
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
@@ -727,26 +728,6 @@
               "Jaxson Hayes"
             ],
             "FaabBid": null
-          },
-          {
-            "Type": "add",
-            "OccurredAtUtc": "2026-10-26T23:05:30.0000000+00:00",
-            "Added": [
-              "Mitchell Robinson"
-            ],
-            "Dropped": [],
-            "FaabBid": null
-          },
-          {
-            "Type": "add",
-            "OccurredAtUtc": "2026-10-26T08:21:02.0000000+00:00",
-            "Added": [
-              "Christian Braun"
-            ],
-            "Dropped": [
-              "Cason Wallace"
-            ],
-            "FaabBid": 8
           }
         ],
         "AddsUsedThisWeek": null,
@@ -756,8 +737,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:35.2407085+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:35.2407085+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:11.7029844+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:11.7029844+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -771,14 +752,22 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-24T23:19:36.1265139+00:00",
-      "RetrievedAtUtc": "2026-11-24T23:19:36.1265139+00:00",
+      "CheckedAtUtc": "2026-11-25T05:03:12.8419932+00:00",
+      "RetrievedAtUtc": "2026-11-25T05:03:12.8419932+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
         "Coverage": "returned_list",
         "RateScope": "yahoo_platform_global",
         "Players": [
+          {
+            "Player": "Jalen Green",
+            "Position": "SG,SF",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 69,
+            "WaiverDate": "2026-11-26"
+          },
           {
             "Player": "Jaime Jaquez Jr.",
             "Position": "SG,SF,PF",
@@ -793,14 +782,6 @@
             "TeamCode": "MIA",
             "Availability": "free_agent",
             "PercentOwned": 57,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Dillon Brooks",
-            "Position": "SF,PF",
-            "TeamCode": "PHX",
-            "Availability": "free_agent",
-            "PercentOwned": 47,
             "WaiverDate": null
           },
           {
@@ -828,20 +809,20 @@
             "WaiverDate": null
           },
           {
-            "Player": "Sandro Mamukelashvili",
-            "Position": "PF,C",
-            "TeamCode": "LAL",
-            "Availability": "free_agent",
-            "PercentOwned": 31,
-            "WaiverDate": null
-          },
-          {
             "Player": "DeMar DeRozan",
             "Position": "SF,PF",
             "TeamCode": "DEN",
             "Availability": "waivers",
             "PercentOwned": 30,
             "WaiverDate": "2026-11-25"
+          },
+          {
+            "Player": "Sandro Mamukelashvili",
+            "Position": "PF,C",
+            "TeamCode": "LAL",
+            "Availability": "free_agent",
+            "PercentOwned": 30,
+            "WaiverDate": null
           },
           {
             "Player": "Draymond Green",
@@ -852,20 +833,20 @@
             "WaiverDate": "2026-11-25"
           },
           {
+            "Player": "Kyle Kuzma",
+            "Position": "SF,PF",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 25,
+            "WaiverDate": null
+          },
+          {
             "Player": "Kris Dunn",
             "Position": "PG,SG",
             "TeamCode": "LAC",
             "Availability": "waivers",
             "PercentOwned": 24,
             "WaiverDate": "2026-11-26"
-          },
-          {
-            "Player": "Kyle Kuzma",
-            "Position": "SF,PF",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 24,
-            "WaiverDate": null
           },
           {
             "Player": "Naji Marshall",
@@ -888,14 +869,6 @@
             "Position": "SG",
             "TeamCode": "LAC",
             "Availability": "free_agent",
-            "PercentOwned": 22,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Jaylen Wells",
-            "Position": "SG,SF",
-            "TeamCode": "MEM",
-            "Availability": "free_agent",
             "PercentOwned": 21,
             "WaiverDate": null
           },
@@ -903,6 +876,14 @@
             "Player": "Egor Dëmin",
             "Position": "PG,SG",
             "TeamCode": "BKN",
+            "Availability": "free_agent",
+            "PercentOwned": 20,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Jaylen Wells",
+            "Position": "SG,SF",
+            "TeamCode": "MEM",
             "Availability": "free_agent",
             "PercentOwned": 20,
             "WaiverDate": null
@@ -952,7 +933,7 @@
             "Position": "SG,SF,PF",
             "TeamCode": "UTA",
             "Availability": "free_agent",
-            "PercentOwned": 18,
+            "PercentOwned": 17,
             "WaiverDate": null
           },
           {
@@ -996,25 +977,9 @@
             "WaiverDate": null
           },
           {
-            "Player": "Andre Drummond",
-            "Position": "C",
-            "TeamCode": "NYK",
-            "Availability": "waivers",
-            "PercentOwned": 11,
-            "WaiverDate": "2026-11-25"
-          },
-          {
             "Player": "Anfernee Simons",
             "Position": "PG,SG",
             "TeamCode": "PHI",
-            "Availability": "free_agent",
-            "PercentOwned": 11,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kasparas Jakučionis",
-            "Position": "PG,SG",
-            "TeamCode": "MIL",
             "Availability": "free_agent",
             "PercentOwned": 11,
             "WaiverDate": null
@@ -1034,6 +999,22 @@
             "Availability": "waivers",
             "PercentOwned": 11,
             "WaiverDate": "2026-11-25"
+          },
+          {
+            "Player": "Andre Drummond",
+            "Position": "C",
+            "TeamCode": "NYK",
+            "Availability": "waivers",
+            "PercentOwned": 10,
+            "WaiverDate": "2026-11-25"
+          },
+          {
+            "Player": "Kasparas Jakučionis",
+            "Position": "PG,SG",
+            "TeamCode": "MIL",
+            "Availability": "free_agent",
+            "PercentOwned": 10,
+            "WaiverDate": null
           },
           {
             "Player": "Max Strus",
@@ -1066,14 +1047,6 @@
             "Availability": "free_agent",
             "PercentOwned": 9,
             "WaiverDate": null
-          },
-          {
-            "Player": "Allen Graves",
-            "Position": "PF",
-            "TeamCode": "TOR",
-            "Availability": "waivers",
-            "PercentOwned": 8,
-            "WaiverDate": "2026-11-26"
           },
           {
             "Player": "Isaiah Jackson",
@@ -1116,6 +1089,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Allen Graves",
+            "Position": "PF",
+            "TeamCode": "TOR",
+            "Availability": "waivers",
+            "PercentOwned": 7,
+            "WaiverDate": "2026-11-26"
+          },
+          {
             "Player": "Gui Santos",
             "Position": "SF,PF",
             "TeamCode": "GSW",
@@ -1143,14 +1124,6 @@
             "Player": "Mark Williams",
             "Position": "C",
             "TeamCode": "PHX",
-            "Availability": "free_agent",
-            "PercentOwned": 6,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Nikola Vučević",
-            "Position": "C",
-            "TeamCode": "ORL",
             "Availability": "free_agent",
             "PercentOwned": 6,
             "WaiverDate": null
@@ -1359,6 +1332,14 @@
             "Player": "Justin Champagnie",
             "Position": "SF,PF",
             "TeamCode": "WAS",
+            "Availability": "free_agent",
+            "PercentOwned": 2,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Kentavious Caldwell-Pope",
+            "Position": "SG,SF",
+            "TeamCode": "PHI",
             "Availability": "free_agent",
             "PercentOwned": 2,
             "WaiverDate": null
@@ -1585,8 +1566,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-24T23:19:43.588Z",
-      "RetrievedAtUtc": "2026-11-24T23:19:43.588Z",
+      "CheckedAtUtc": "2026-11-25T05:03:22.000Z",
+      "RetrievedAtUtc": "2026-11-25T05:03:22.000Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
