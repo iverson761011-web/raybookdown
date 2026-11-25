@@ -3,8 +3,8 @@
     "League":  "Funny League 2026-27",
     "Platform":  "yahoo",
     "Season":  2026,
-    "CheckedAtUtc":  "2026-11-25T05:03:21.8282073+00:00",
-    "RetrievedAtUtc":  "2026-11-25T05:03:21.8125839+00:00",
+    "CheckedAtUtc":  "2026-11-25T07:10:00.1186197+00:00",
+    "RetrievedAtUtc":  "2026-11-25T07:10:00.1186197+00:00",
     "SourceUpdatedAtUtc":  null,
     "Status":  "ok",
     "ErrorType":  null,
@@ -13,8 +13,8 @@
     "Rules":  {
                   "Status":  "ok",
                   "Source":  "Flaim Fantasy / Yahoo",
-                  "CheckedAtUtc":  "2026-11-25T05:03:09.6949573+00:00",
-                  "RetrievedAtUtc":  "2026-11-25T05:03:09.6949573+00:00",
+                  "CheckedAtUtc":  "2026-11-25T07:09:49.9731887+00:00",
+                  "RetrievedAtUtc":  "2026-11-25T07:09:49.9731887+00:00",
                   "SourceUpdatedAtUtc":  null,
                   "ErrorType":  null,
                   "Data":  {
@@ -83,8 +83,8 @@
     "Market":  {
                    "Status":  "ok",
                    "Source":  "Flaim Fantasy / Yahoo",
-                   "CheckedAtUtc":  "2026-11-25T05:03:12.8419932+00:00",
-                   "RetrievedAtUtc":  "2026-11-25T05:03:12.8419932+00:00",
+                   "CheckedAtUtc":  "2026-11-25T07:09:52.4975696+00:00",
+                   "RetrievedAtUtc":  "2026-11-25T07:09:52.4975696+00:00",
                    "SourceUpdatedAtUtc":  null,
                    "ErrorType":  null,
                    "Data":  {
@@ -508,14 +508,6 @@
                                                     "WaiverDate":  null
                                                 },
                                                 {
-                                                    "Player":  "Isaiah Collier",
-                                                    "Position":  "PG,SG",
-                                                    "TeamCode":  "UTA",
-                                                    "Availability":  "free_agent",
-                                                    "PercentOwned":  4,
-                                                    "WaiverDate":  null
-                                                },
-                                                {
                                                     "Player":  "Luguentz Dort",
                                                     "Position":  "SG,SF",
                                                     "TeamCode":  "ATL",
@@ -551,6 +543,14 @@
                                                     "Player":  "Al Horford",
                                                     "Position":  "PF,C",
                                                     "TeamCode":  "GSW",
+                                                    "Availability":  "free_agent",
+                                                    "PercentOwned":  3,
+                                                    "WaiverDate":  null
+                                                },
+                                                {
+                                                    "Player":  "Isaiah Collier",
+                                                    "Position":  "PG,SG",
+                                                    "TeamCode":  "UTA",
                                                     "Availability":  "free_agent",
                                                     "PercentOwned":  3,
                                                     "WaiverDate":  null
@@ -903,8 +903,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:16.8008520+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:16.8008520+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:56.0235322+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:56.0235322+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1108,8 +1108,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1135,7 +1135,7 @@
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
                                                                           "OwnValue":  "310",
-                                                                          "OpponentValue":  "244",
+                                                                          "OpponentValue":  "248",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1143,7 +1143,7 @@
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
                                                                           "OwnValue":  "52/124",
-                                                                          "OpponentValue":  "47/80",
+                                                                          "OpponentValue":  "47/81",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -1151,7 +1151,7 @@
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
                                                                           "OwnValue":  ".419",
-                                                                          "OpponentValue":  ".588",
+                                                                          "OpponentValue":  ".580",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1199,7 +1199,7 @@
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
                                                                           "OwnValue":  "35",
-                                                                          "OpponentValue":  "36",
+                                                                          "OpponentValue":  "37",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1257,8 +1257,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1278,8 +1278,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:17.2389254+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:17.2389254+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:56.3832048+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:56.3832048+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1484,8 +1484,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1495,13 +1495,13 @@
                                                    "Status":  "in_progress",
                                                    "Opponent":  "元川楓",
                                                    "OwnScore":  {
-                                                                    "Wins":  8,
-                                                                    "Losses":  5,
+                                                                    "Wins":  7,
+                                                                    "Losses":  6,
                                                                     "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
-                                                                         "Wins":  5,
-                                                                         "Losses":  8,
+                                                                         "Wins":  6,
+                                                                         "Losses":  7,
                                                                          "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  23,
@@ -1510,24 +1510,24 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "296",
-                                                                          "OpponentValue":  "255",
+                                                                          "OwnValue":  "301",
+                                                                          "OpponentValue":  "259",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "44/102",
-                                                                          "OpponentValue":  "44/87",
+                                                                          "OwnValue":  "44/103",
+                                                                          "OpponentValue":  "47/90",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".431",
-                                                                          "OpponentValue":  ".506",
+                                                                          "OwnValue":  ".427",
+                                                                          "OpponentValue":  ".522",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1535,7 +1535,7 @@
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
                                                                           "OwnValue":  "30/36",
-                                                                          "OpponentValue":  "20/28",
+                                                                          "OpponentValue":  "24/32",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -1543,7 +1543,7 @@
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
                                                                           "OwnValue":  ".833",
-                                                                          "OpponentValue":  ".714",
+                                                                          "OpponentValue":  ".750",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1559,14 +1559,14 @@
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
                                                                           "OwnValue":  "128",
-                                                                          "OpponentValue":  "126",
-                                                                          "Result":  "win",
+                                                                          "OpponentValue":  "136",
+                                                                          "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
-                                                                          "OwnValue":  "17",
+                                                                          "OwnValue":  "18",
                                                                           "OpponentValue":  "6",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -1574,16 +1574,16 @@
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "38",
-                                                                          "OpponentValue":  "43",
+                                                                          "OwnValue":  "39",
+                                                                          "OpponentValue":  "44",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
-                                                                          "OwnValue":  "43",
-                                                                          "OpponentValue":  "29",
+                                                                          "OwnValue":  "44",
+                                                                          "OpponentValue":  "30",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1606,7 +1606,7 @@
                                                                       {
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
-                                                                          "OwnValue":  "14",
+                                                                          "OwnValue":  "15",
                                                                           "OpponentValue":  "22",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -1614,8 +1614,8 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "3.071",
-                                                                          "OpponentValue":  "1.318",
+                                                                          "OwnValue":  "2.933",
+                                                                          "OpponentValue":  "1.364",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1633,8 +1633,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1654,8 +1654,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:17.6608973+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:17.6608973+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:56.7897523+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:56.7897523+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1826,8 +1826,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -1838,13 +1838,13 @@
                                                    "Opponent":  "閃電五連鞭 (JoeDub)",
                                                    "OwnScore":  {
                                                                     "Wins":  8,
-                                                                    "Losses":  4,
-                                                                    "Ties":  1
+                                                                    "Losses":  5,
+                                                                    "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
-                                                                         "Wins":  4,
+                                                                         "Wins":  5,
                                                                          "Losses":  8,
-                                                                         "Ties":  1
+                                                                         "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  25,
                                                    "OpponentGamesRemaining":  25,
@@ -1853,7 +1853,7 @@
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
                                                                           "OwnValue":  "334",
-                                                                          "OpponentValue":  "297",
+                                                                          "OpponentValue":  "315",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1861,7 +1861,7 @@
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
                                                                           "OwnValue":  "57/111",
-                                                                          "OpponentValue":  "65/144",
+                                                                          "OpponentValue":  "69/156",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -1869,7 +1869,7 @@
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
                                                                           "OwnValue":  ".514",
-                                                                          "OpponentValue":  ".451",
+                                                                          "OpponentValue":  ".442",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1877,7 +1877,7 @@
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
                                                                           "OwnValue":  "24/35",
-                                                                          "OpponentValue":  "19/19",
+                                                                          "OpponentValue":  "24/24",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -1901,7 +1901,7 @@
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
                                                                           "OwnValue":  "152",
-                                                                          "OpponentValue":  "175",
+                                                                          "OpponentValue":  "188",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1917,15 +1917,15 @@
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
                                                                           "OwnValue":  "49",
-                                                                          "OpponentValue":  "49",
-                                                                          "Result":  "tie",
+                                                                          "OpponentValue":  "50",
+                                                                          "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
                                                                           "OwnValue":  "27",
-                                                                          "OpponentValue":  "38",
+                                                                          "OpponentValue":  "41",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1933,7 +1933,7 @@
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
                                                                           "OwnValue":  "13",
-                                                                          "OpponentValue":  "7",
+                                                                          "OpponentValue":  "8",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1941,7 +1941,7 @@
                                                                           "Name":  "Blocked Shots",
                                                                           "Label":  "BLK",
                                                                           "OwnValue":  "11",
-                                                                          "OpponentValue":  "5",
+                                                                          "OpponentValue":  "7",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1949,7 +1949,7 @@
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
                                                                           "OwnValue":  "16",
-                                                                          "OpponentValue":  "28",
+                                                                          "OpponentValue":  "29",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1957,7 +1957,7 @@
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
                                                                           "OwnValue":  "1.688",
-                                                                          "OpponentValue":  "1.357",
+                                                                          "OpponentValue":  "1.414",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -1975,8 +1975,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -1996,8 +1996,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:18.0273096+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:18.0273096+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:57.0992473+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:57.0992473+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2191,8 +2191,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2202,14 +2202,14 @@
                                                    "Status":  "in_progress",
                                                    "Opponent":  "Gemini TEAM",
                                                    "OwnScore":  {
-                                                                    "Wins":  8,
+                                                                    "Wins":  9,
                                                                     "Losses":  4,
-                                                                    "Ties":  1
+                                                                    "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
                                                                          "Wins":  4,
-                                                                         "Losses":  8,
-                                                                         "Ties":  1
+                                                                         "Losses":  9,
+                                                                         "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  21,
                                                    "OpponentGamesRemaining":  27,
@@ -2217,24 +2217,24 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "286",
-                                                                          "OpponentValue":  "182",
+                                                                          "OwnValue":  "290",
+                                                                          "OpponentValue":  "188",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "70/146",
-                                                                          "OpponentValue":  "35/60",
+                                                                          "OwnValue":  "70/147",
+                                                                          "OpponentValue":  "36/61",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".479",
-                                                                          "OpponentValue":  ".583",
+                                                                          "OwnValue":  ".476",
+                                                                          "OpponentValue":  ".590",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2258,7 +2258,7 @@
                                                                           "Name":  "3-point Shots Made",
                                                                           "Label":  "3PTM",
                                                                           "OwnValue":  "15",
-                                                                          "OpponentValue":  "11",
+                                                                          "OpponentValue":  "12",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2266,7 +2266,7 @@
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
                                                                           "OwnValue":  "192",
-                                                                          "OpponentValue":  "95",
+                                                                          "OpponentValue":  "98",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2274,14 +2274,14 @@
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
                                                                           "OwnValue":  "16",
-                                                                          "OpponentValue":  "7",
+                                                                          "OpponentValue":  "8",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "42",
+                                                                          "OwnValue":  "44",
                                                                           "OpponentValue":  "19",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -2297,9 +2297,9 @@
                                                                       {
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
-                                                                          "OwnValue":  "8",
+                                                                          "OwnValue":  "9",
                                                                           "OpponentValue":  "8",
-                                                                          "Result":  "tie",
+                                                                          "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
@@ -2340,8 +2340,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2361,8 +2361,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:18.4197362+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:18.4197362+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:57.4276593+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:57.4276593+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2556,8 +2556,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2577,13 +2577,13 @@
                                                                          "Ties":  1
                                                                      },
                                                    "OwnGamesRemaining":  24,
-                                                   "OpponentGamesRemaining":  0,
+                                                   "OpponentGamesRemaining":  7,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
                                                                           "OwnValue":  "318",
-                                                                          "OpponentValue":  "299",
+                                                                          "OpponentValue":  "303",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2591,7 +2591,7 @@
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
                                                                           "OwnValue":  "56/136",
-                                                                          "OpponentValue":  "66/130",
+                                                                          "OpponentValue":  "66/131",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -2599,7 +2599,7 @@
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
                                                                           "OwnValue":  ".412",
-                                                                          "OpponentValue":  ".508",
+                                                                          "OpponentValue":  ".504",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2655,7 +2655,7 @@
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
                                                                           "OwnValue":  "48",
-                                                                          "OpponentValue":  "45",
+                                                                          "OpponentValue":  "46",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2687,7 +2687,7 @@
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
                                                                           "OwnValue":  "2.000",
-                                                                          "OpponentValue":  "2.500",
+                                                                          "OpponentValue":  "2.556",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -2705,8 +2705,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2726,8 +2726,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:18.8105733+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:18.8105733+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:57.7246313+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:57.7246313+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -2911,8 +2911,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -2923,13 +2923,13 @@
                                                    "Opponent":  "Project BAO",
                                                    "OwnScore":  {
                                                                     "Wins":  7,
-                                                                    "Losses":  5,
-                                                                    "Ties":  1
+                                                                    "Losses":  3,
+                                                                    "Ties":  3
                                                                 },
                                                    "OpponentScore":  {
-                                                                         "Wins":  5,
+                                                                         "Wins":  3,
                                                                          "Losses":  7,
-                                                                         "Ties":  1
+                                                                         "Ties":  3
                                                                      },
                                                    "OwnGamesRemaining":  24,
                                                    "OpponentGamesRemaining":  27,
@@ -2937,15 +2937,15 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "245",
+                                                                          "OwnValue":  "257",
                                                                           "OpponentValue":  "246",
-                                                                          "Result":  "loss",
+                                                                          "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "44/95",
+                                                                          "OwnValue":  "47/99",
                                                                           "OpponentValue":  "47/112",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -2953,7 +2953,7 @@
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".463",
+                                                                          "OwnValue":  ".475",
                                                                           "OpponentValue":  ".420",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -2961,7 +2961,7 @@
                                                                       {
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
-                                                                          "OwnValue":  "14/19",
+                                                                          "OwnValue":  "17/23",
                                                                           "OpponentValue":  "24/28",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -2969,7 +2969,7 @@
                                                                       {
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
-                                                                          "OwnValue":  ".737",
+                                                                          "OwnValue":  ".739",
                                                                           "OpponentValue":  ".857",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -2977,7 +2977,7 @@
                                                                       {
                                                                           "Name":  "3-point Shots Made",
                                                                           "Label":  "3PTM",
-                                                                          "OwnValue":  "15",
+                                                                          "OwnValue":  "16",
                                                                           "OpponentValue":  "21",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -2985,7 +2985,7 @@
                                                                       {
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
-                                                                          "OwnValue":  "117",
+                                                                          "OwnValue":  "127",
                                                                           "OpponentValue":  "139",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -2993,15 +2993,15 @@
                                                                       {
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
-                                                                          "OwnValue":  "8",
+                                                                          "OwnValue":  "10",
                                                                           "OpponentValue":  "10",
-                                                                          "Result":  "loss",
+                                                                          "Result":  "tie",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "45",
+                                                                          "OwnValue":  "46",
                                                                           "OpponentValue":  "32",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3025,7 +3025,7 @@
                                                                       {
                                                                           "Name":  "Blocked Shots",
                                                                           "Label":  "BLK",
-                                                                          "OwnValue":  "3",
+                                                                          "OwnValue":  "4",
                                                                           "OpponentValue":  "2",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3033,15 +3033,15 @@
                                                                       {
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
-                                                                          "OwnValue":  "10",
+                                                                          "OwnValue":  "11",
                                                                           "OpponentValue":  "11",
-                                                                          "Result":  "win",
+                                                                          "Result":  "tie",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "3.400",
+                                                                          "OwnValue":  "3.091",
                                                                           "OpponentValue":  "2.818",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3060,8 +3060,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3081,8 +3081,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:19.2179979+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:19.2179979+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:58.0217325+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:58.0217325+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3270,8 +3270,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3296,7 +3296,7 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "244",
+                                                                          "OwnValue":  "248",
                                                                           "OpponentValue":  "310",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -3304,7 +3304,7 @@
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "47/80",
+                                                                          "OwnValue":  "47/81",
                                                                           "OpponentValue":  "52/124",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -3312,7 +3312,7 @@
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".588",
+                                                                          "OwnValue":  ".580",
                                                                           "OpponentValue":  ".419",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3360,7 +3360,7 @@
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "36",
+                                                                          "OwnValue":  "37",
                                                                           "OpponentValue":  "35",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3419,8 +3419,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3440,8 +3440,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:19.6088941+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:19.6088941+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:58.3192034+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:58.3192034+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3620,8 +3620,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -3640,13 +3640,13 @@
                                                                          "Losses":  7,
                                                                          "Ties":  1
                                                                      },
-                                                   "OwnGamesRemaining":  0,
+                                                   "OwnGamesRemaining":  7,
                                                    "OpponentGamesRemaining":  24,
                                                    "Categories":  [
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "299",
+                                                                          "OwnValue":  "303",
                                                                           "OpponentValue":  "318",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -3654,7 +3654,7 @@
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "66/130",
+                                                                          "OwnValue":  "66/131",
                                                                           "OpponentValue":  "56/136",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -3662,7 +3662,7 @@
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".508",
+                                                                          "OwnValue":  ".504",
                                                                           "OpponentValue":  ".412",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3718,7 +3718,7 @@
                                                                       {
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
-                                                                          "OwnValue":  "45",
+                                                                          "OwnValue":  "46",
                                                                           "OpponentValue":  "48",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -3750,7 +3750,7 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "2.500",
+                                                                          "OwnValue":  "2.556",
                                                                           "OpponentValue":  "2.000",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -3769,8 +3769,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3790,8 +3790,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:10.0999478+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:10.0999478+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:50.2701110+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:50.2701110+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -3993,8 +3993,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4019,7 +4019,7 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "360",
+                                                                          "OwnValue":  "365",
                                                                           "OpponentValue":  "322",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -4027,7 +4027,7 @@
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "81/164",
+                                                                          "OwnValue":  "82/166",
                                                                           "OpponentValue":  "55/126",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -4043,7 +4043,7 @@
                                                                       {
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
-                                                                          "OwnValue":  "33/39",
+                                                                          "OwnValue":  "33/41",
                                                                           "OpponentValue":  "18/20",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -4051,7 +4051,7 @@
                                                                       {
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
-                                                                          "OwnValue":  ".846",
+                                                                          "OwnValue":  ".805",
                                                                           "OpponentValue":  ".900",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -4067,7 +4067,7 @@
                                                                       {
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
-                                                                          "OwnValue":  "216",
+                                                                          "OwnValue":  "218",
                                                                           "OpponentValue":  "141",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -4083,7 +4083,7 @@
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "48",
+                                                                          "OwnValue":  "49",
                                                                           "OpponentValue":  "34",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -4099,7 +4099,7 @@
                                                                       {
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
-                                                                          "OwnValue":  "5",
+                                                                          "OwnValue":  "6",
                                                                           "OpponentValue":  "10",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -4142,8 +4142,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4163,8 +4163,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:20.0872439+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:20.0872439+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:58.7258145+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:58.7258145+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4348,8 +4348,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4359,14 +4359,14 @@
                                                    "Status":  "in_progress",
                                                    "Opponent":  "新店皮霸",
                                                    "OwnScore":  {
-                                                                    "Wins":  5,
+                                                                    "Wins":  3,
                                                                     "Losses":  7,
-                                                                    "Ties":  1
+                                                                    "Ties":  3
                                                                 },
                                                    "OpponentScore":  {
                                                                          "Wins":  7,
-                                                                         "Losses":  5,
-                                                                         "Ties":  1
+                                                                         "Losses":  3,
+                                                                         "Ties":  3
                                                                      },
                                                    "OwnGamesRemaining":  27,
                                                    "OpponentGamesRemaining":  24,
@@ -4375,15 +4375,15 @@
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
                                                                           "OwnValue":  "246",
-                                                                          "OpponentValue":  "245",
-                                                                          "Result":  "win",
+                                                                          "OpponentValue":  "257",
+                                                                          "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
                                                                           "OwnValue":  "47/112",
-                                                                          "OpponentValue":  "44/95",
+                                                                          "OpponentValue":  "47/99",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -4391,7 +4391,7 @@
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
                                                                           "OwnValue":  ".420",
-                                                                          "OpponentValue":  ".463",
+                                                                          "OpponentValue":  ".475",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4399,7 +4399,7 @@
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
                                                                           "OwnValue":  "24/28",
-                                                                          "OpponentValue":  "14/19",
+                                                                          "OpponentValue":  "17/23",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -4407,7 +4407,7 @@
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
                                                                           "OwnValue":  ".857",
-                                                                          "OpponentValue":  ".737",
+                                                                          "OpponentValue":  ".739",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4415,7 +4415,7 @@
                                                                           "Name":  "3-point Shots Made",
                                                                           "Label":  "3PTM",
                                                                           "OwnValue":  "21",
-                                                                          "OpponentValue":  "15",
+                                                                          "OpponentValue":  "16",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4423,7 +4423,7 @@
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
                                                                           "OwnValue":  "139",
-                                                                          "OpponentValue":  "117",
+                                                                          "OpponentValue":  "127",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4431,15 +4431,15 @@
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
                                                                           "OwnValue":  "10",
-                                                                          "OpponentValue":  "8",
-                                                                          "Result":  "win",
+                                                                          "OpponentValue":  "10",
+                                                                          "Result":  "tie",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
                                                                           "OwnValue":  "32",
-                                                                          "OpponentValue":  "45",
+                                                                          "OpponentValue":  "46",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4463,7 +4463,7 @@
                                                                           "Name":  "Blocked Shots",
                                                                           "Label":  "BLK",
                                                                           "OwnValue":  "2",
-                                                                          "OpponentValue":  "3",
+                                                                          "OpponentValue":  "4",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4471,15 +4471,15 @@
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
                                                                           "OwnValue":  "11",
-                                                                          "OpponentValue":  "10",
-                                                                          "Result":  "loss",
+                                                                          "OpponentValue":  "11",
+                                                                          "Result":  "tie",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
                                                                           "OwnValue":  "2.818",
-                                                                          "OpponentValue":  "3.400",
+                                                                          "OpponentValue":  "3.091",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4497,8 +4497,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4518,8 +4518,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:20.5459666+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:20.5459666+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:59.0543692+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:59.0543692+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4728,8 +4728,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -4740,13 +4740,13 @@
                                                    "Opponent":  "HanK\u0027s Agreeable Team",
                                                    "OwnScore":  {
                                                                     "Wins":  4,
-                                                                    "Losses":  8,
-                                                                    "Ties":  1
+                                                                    "Losses":  9,
+                                                                    "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
-                                                                         "Wins":  8,
+                                                                         "Wins":  9,
                                                                          "Losses":  4,
-                                                                         "Ties":  1
+                                                                         "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  27,
                                                    "OpponentGamesRemaining":  21,
@@ -4754,24 +4754,24 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "182",
-                                                                          "OpponentValue":  "286",
+                                                                          "OwnValue":  "188",
+                                                                          "OpponentValue":  "290",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "35/60",
-                                                                          "OpponentValue":  "70/146",
+                                                                          "OwnValue":  "36/61",
+                                                                          "OpponentValue":  "70/147",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".583",
-                                                                          "OpponentValue":  ".479",
+                                                                          "OwnValue":  ".590",
+                                                                          "OpponentValue":  ".476",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4794,7 +4794,7 @@
                                                                       {
                                                                           "Name":  "3-point Shots Made",
                                                                           "Label":  "3PTM",
-                                                                          "OwnValue":  "11",
+                                                                          "OwnValue":  "12",
                                                                           "OpponentValue":  "15",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -4802,7 +4802,7 @@
                                                                       {
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
-                                                                          "OwnValue":  "95",
+                                                                          "OwnValue":  "98",
                                                                           "OpponentValue":  "192",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -4810,7 +4810,7 @@
                                                                       {
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
-                                                                          "OwnValue":  "7",
+                                                                          "OwnValue":  "8",
                                                                           "OpponentValue":  "16",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -4819,7 +4819,7 @@
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
                                                                           "OwnValue":  "19",
-                                                                          "OpponentValue":  "42",
+                                                                          "OpponentValue":  "44",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -4835,8 +4835,8 @@
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
                                                                           "OwnValue":  "8",
-                                                                          "OpponentValue":  "8",
-                                                                          "Result":  "tie",
+                                                                          "OpponentValue":  "9",
+                                                                          "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
@@ -4877,8 +4877,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -4898,8 +4898,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:20.9689725+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:20.9689725+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:59.3834244+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:59.3834244+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5087,8 +5087,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5098,14 +5098,14 @@
                                                    "Status":  "in_progress",
                                                    "Opponent":  "Derek\u0027s Boss Team",
                                                    "OwnScore":  {
-                                                                    "Wins":  4,
+                                                                    "Wins":  5,
                                                                     "Losses":  8,
-                                                                    "Ties":  1
+                                                                    "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
                                                                          "Wins":  8,
-                                                                         "Losses":  4,
-                                                                         "Ties":  1
+                                                                         "Losses":  5,
+                                                                         "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  25,
                                                    "OpponentGamesRemaining":  25,
@@ -5113,7 +5113,7 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "297",
+                                                                          "OwnValue":  "315",
                                                                           "OpponentValue":  "334",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5121,7 +5121,7 @@
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "65/144",
+                                                                          "OwnValue":  "69/156",
                                                                           "OpponentValue":  "57/111",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -5129,7 +5129,7 @@
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".451",
+                                                                          "OwnValue":  ".442",
                                                                           "OpponentValue":  ".514",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5137,7 +5137,7 @@
                                                                       {
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
-                                                                          "OwnValue":  "19/19",
+                                                                          "OwnValue":  "24/24",
                                                                           "OpponentValue":  "24/35",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -5161,7 +5161,7 @@
                                                                       {
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
-                                                                          "OwnValue":  "175",
+                                                                          "OwnValue":  "188",
                                                                           "OpponentValue":  "152",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -5177,15 +5177,15 @@
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "49",
+                                                                          "OwnValue":  "50",
                                                                           "OpponentValue":  "49",
-                                                                          "Result":  "tie",
+                                                                          "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
-                                                                          "OwnValue":  "38",
+                                                                          "OwnValue":  "41",
                                                                           "OpponentValue":  "27",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
@@ -5193,7 +5193,7 @@
                                                                       {
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
-                                                                          "OwnValue":  "7",
+                                                                          "OwnValue":  "8",
                                                                           "OpponentValue":  "13",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5201,7 +5201,7 @@
                                                                       {
                                                                           "Name":  "Blocked Shots",
                                                                           "Label":  "BLK",
-                                                                          "OwnValue":  "5",
+                                                                          "OwnValue":  "7",
                                                                           "OpponentValue":  "11",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5209,7 +5209,7 @@
                                                                       {
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
-                                                                          "OwnValue":  "28",
+                                                                          "OwnValue":  "29",
                                                                           "OpponentValue":  "16",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5217,7 +5217,7 @@
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.357",
+                                                                          "OwnValue":  "1.414",
                                                                           "OpponentValue":  "1.688",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5236,8 +5236,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5257,8 +5257,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:21.3441236+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:21.3441236+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:59.7424628+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:59.7424628+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5452,8 +5452,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5479,7 +5479,7 @@
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
                                                                           "OwnValue":  "322",
-                                                                          "OpponentValue":  "360",
+                                                                          "OpponentValue":  "365",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5487,7 +5487,7 @@
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
                                                                           "OwnValue":  "55/126",
-                                                                          "OpponentValue":  "81/164",
+                                                                          "OpponentValue":  "82/166",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -5503,7 +5503,7 @@
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
                                                                           "OwnValue":  "18/20",
-                                                                          "OpponentValue":  "33/39",
+                                                                          "OpponentValue":  "33/41",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
@@ -5511,7 +5511,7 @@
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
                                                                           "OwnValue":  ".900",
-                                                                          "OpponentValue":  ".846",
+                                                                          "OpponentValue":  ".805",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5527,7 +5527,7 @@
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
                                                                           "OwnValue":  "141",
-                                                                          "OpponentValue":  "216",
+                                                                          "OpponentValue":  "218",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5543,7 +5543,7 @@
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
                                                                           "OwnValue":  "34",
-                                                                          "OpponentValue":  "48",
+                                                                          "OpponentValue":  "49",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5559,7 +5559,7 @@
                                                                           "Name":  "Steals",
                                                                           "Label":  "ST",
                                                                           "OwnValue":  "10",
-                                                                          "OpponentValue":  "5",
+                                                                          "OpponentValue":  "6",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5601,8 +5601,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5622,8 +5622,8 @@
                       "Roster":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:21.7500826+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:21.7500826+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:10:00.0717505+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:10:00.0717505+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
@@ -5829,8 +5829,8 @@
                       "Matchup":  {
                                       "Status":  "ok",
                                       "Source":  "Flaim Fantasy / Yahoo",
-                                      "CheckedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
-                                      "RetrievedAtUtc":  "2026-11-25T05:03:10.7956926+00:00",
+                                      "CheckedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
+                                      "RetrievedAtUtc":  "2026-11-25T07:09:50.8077890+00:00",
                                       "SourceUpdatedAtUtc":  null,
                                       "ErrorType":  null,
                                       "Data":  {
@@ -5840,13 +5840,13 @@
                                                    "Status":  "in_progress",
                                                    "Opponent":  "BenKidd\u0027s Brilliant Team",
                                                    "OwnScore":  {
-                                                                    "Wins":  5,
-                                                                    "Losses":  8,
+                                                                    "Wins":  6,
+                                                                    "Losses":  7,
                                                                     "Ties":  0
                                                                 },
                                                    "OpponentScore":  {
-                                                                         "Wins":  8,
-                                                                         "Losses":  5,
+                                                                         "Wins":  7,
+                                                                         "Losses":  6,
                                                                          "Ties":  0
                                                                      },
                                                    "OwnGamesRemaining":  28,
@@ -5855,31 +5855,31 @@
                                                                       {
                                                                           "Name":  "Minutes Played",
                                                                           "Label":  "MIN",
-                                                                          "OwnValue":  "255",
-                                                                          "OpponentValue":  "296",
+                                                                          "OwnValue":  "259",
+                                                                          "OpponentValue":  "301",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goals Made / Field Goals Attempted",
                                                                           "Label":  "FGM/A",
-                                                                          "OwnValue":  "44/87",
-                                                                          "OpponentValue":  "44/102",
+                                                                          "OwnValue":  "47/90",
+                                                                          "OpponentValue":  "44/103",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
                                                                       },
                                                                       {
                                                                           "Name":  "Field Goal Percentage",
                                                                           "Label":  "FG%",
-                                                                          "OwnValue":  ".506",
-                                                                          "OpponentValue":  ".431",
+                                                                          "OwnValue":  ".522",
+                                                                          "OpponentValue":  ".427",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Free Throws Made / Free Throws Attempted",
                                                                           "Label":  "FTM/A",
-                                                                          "OwnValue":  "20/28",
+                                                                          "OwnValue":  "24/32",
                                                                           "OpponentValue":  "30/36",
                                                                           "Result":  null,
                                                                           "DisplayOnly":  true
@@ -5887,7 +5887,7 @@
                                                                       {
                                                                           "Name":  "Free Throw Percentage",
                                                                           "Label":  "FT%",
-                                                                          "OwnValue":  ".714",
+                                                                          "OwnValue":  ".750",
                                                                           "OpponentValue":  ".833",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
@@ -5903,32 +5903,32 @@
                                                                       {
                                                                           "Name":  "Points Scored",
                                                                           "Label":  "PTS",
-                                                                          "OwnValue":  "126",
+                                                                          "OwnValue":  "136",
                                                                           "OpponentValue":  "128",
-                                                                          "Result":  "loss",
+                                                                          "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Offensive Rebounds",
                                                                           "Label":  "OREB",
                                                                           "OwnValue":  "6",
-                                                                          "OpponentValue":  "17",
+                                                                          "OpponentValue":  "18",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Defensive Rebounds",
                                                                           "Label":  "DREB",
-                                                                          "OwnValue":  "43",
-                                                                          "OpponentValue":  "38",
+                                                                          "OwnValue":  "44",
+                                                                          "OpponentValue":  "39",
                                                                           "Result":  "win",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assists",
                                                                           "Label":  "AST",
-                                                                          "OwnValue":  "29",
-                                                                          "OpponentValue":  "43",
+                                                                          "OwnValue":  "30",
+                                                                          "OpponentValue":  "44",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5952,15 +5952,15 @@
                                                                           "Name":  "Turnovers",
                                                                           "Label":  "TO",
                                                                           "OwnValue":  "22",
-                                                                          "OpponentValue":  "14",
+                                                                          "OpponentValue":  "15",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
                                                                       {
                                                                           "Name":  "Assist/Turnover Ratio",
                                                                           "Label":  "A/T",
-                                                                          "OwnValue":  "1.318",
-                                                                          "OpponentValue":  "3.071",
+                                                                          "OwnValue":  "1.364",
+                                                                          "OpponentValue":  "2.933",
                                                                           "Result":  "loss",
                                                                           "DisplayOnly":  false
                                                                       },
@@ -5978,8 +5978,8 @@
                       "Budget":  {
                                      "Status":  "ok",
                                      "Source":  "Flaim Fantasy / Yahoo",
-                                     "CheckedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
-                                     "RetrievedAtUtc":  "2026-11-25T05:03:11.7029844+00:00",
+                                     "CheckedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
+                                     "RetrievedAtUtc":  "2026-11-25T07:09:51.5739314+00:00",
                                      "SourceUpdatedAtUtc":  null,
                                      "ErrorType":  null,
                                      "Data":  {
