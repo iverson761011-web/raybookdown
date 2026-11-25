@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-25T07:10:00.1186197+00:00",
+  "GeneratedAtUtc": "2026-11-25T09:00:28.3852581+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:49.9731887+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:49.9731887+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:17.7979177+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:17.7979177+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:50.2701110+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:50.2701110+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:18.1264899+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:18.1264899+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -99,20 +99,17 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Zach LaVine",
+            "Player": "Donovan Mitchell",
             "Position": "SG",
             "Status": null,
             "EligiblePositions": [
               "PG",
               "SG",
               "G",
-              "SF",
-              "F",
-              "FC",
               "Util"
             ],
-            "TeamCode": "SAC",
-            "IsUndroppable": false
+            "TeamCode": "CLE",
+            "IsUndroppable": true
           },
           {
             "Player": "Jared McCain",
@@ -156,19 +153,19 @@
             "IsUndroppable": true
           },
           {
-            "Player": "Kyshawn George",
+            "Player": "Zach LaVine",
             "Position": "F",
             "Status": null,
             "EligiblePositions": [
+              "PG",
               "SG",
               "G",
               "SF",
-              "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "WAS",
+            "TeamCode": "SAC",
             "IsUndroppable": false
           },
           {
@@ -196,6 +193,20 @@
             "IsUndroppable": false
           },
           {
+            "Player": "Zion Williamson",
+            "Position": "Util",
+            "Status": null,
+            "EligiblePositions": [
+              "PF",
+              "F",
+              "C",
+              "FC",
+              "Util"
+            ],
+            "TeamCode": "NOP",
+            "IsUndroppable": false
+          },
+          {
             "Player": "Ja'Kobe Walter",
             "Position": "Util",
             "Status": null,
@@ -209,30 +220,19 @@
             "IsUndroppable": false
           },
           {
-            "Player": "Donovan Mitchell",
+            "Player": "Kyshawn George",
             "Position": "Util",
             "Status": null,
             "EligiblePositions": [
-              "PG",
               "SG",
               "G",
-              "Util"
-            ],
-            "TeamCode": "CLE",
-            "IsUndroppable": true
-          },
-          {
-            "Player": "Zion Williamson",
-            "Position": "Util",
-            "Status": null,
-            "EligiblePositions": [
+              "SF",
               "PF",
               "F",
-              "C",
               "FC",
               "Util"
             ],
-            "TeamCode": "NOP",
+            "TeamCode": "WAS",
             "IsUndroppable": false
           },
           {
@@ -282,8 +282,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:50.8077890+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:50.8077890+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:18.6746286+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:18.6746286+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -303,7 +303,7 @@
           "Ties": 2
         },
         "OwnGamesRemaining": 22,
-        "OpponentGamesRemaining": 21,
+        "OpponentGamesRemaining": 22,
         "Categories": [
           {
             "Name": "Minutes Played",
@@ -431,8 +431,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:51.2298232+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:51.2298232+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:19.1285410+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:19.1285410+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -737,8 +737,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:51.5739314+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:51.5739314+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:19.4265891+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:19.4265891+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -752,8 +752,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-25T07:09:52.4975696+00:00",
-      "RetrievedAtUtc": "2026-11-25T07:09:52.4975696+00:00",
+      "CheckedAtUtc": "2026-11-25T09:00:20.4974190+00:00",
+      "RetrievedAtUtc": "2026-11-25T09:00:20.4974190+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -789,7 +789,7 @@
             "Position": "PG,SG",
             "TeamCode": "PHX",
             "Availability": "waivers",
-            "PercentOwned": 43,
+            "PercentOwned": 44,
             "WaiverDate": "2026-11-25"
           },
           {
@@ -897,14 +897,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Alex Caruso",
-            "Position": "SG,SF",
-            "TeamCode": "OKC",
-            "Availability": "free_agent",
-            "PercentOwned": 19,
-            "WaiverDate": null
-          },
-          {
             "Player": "Cason Wallace",
             "Position": "PG,SG,SF",
             "TeamCode": "OKC",
@@ -977,6 +969,14 @@
             "WaiverDate": null
           },
           {
+            "Player": "Andre Drummond",
+            "Position": "C",
+            "TeamCode": "NYK",
+            "Availability": "waivers",
+            "PercentOwned": 11,
+            "WaiverDate": "2026-11-25"
+          },
+          {
             "Player": "Anfernee Simons",
             "Position": "PG,SG",
             "TeamCode": "PHI",
@@ -1001,12 +1001,12 @@
             "WaiverDate": "2026-11-25"
           },
           {
-            "Player": "Andre Drummond",
-            "Position": "C",
-            "TeamCode": "NYK",
+            "Player": "Bilal Coulibaly",
+            "Position": "SG,SF",
+            "TeamCode": "WAS",
             "Availability": "waivers",
             "PercentOwned": 10,
-            "WaiverDate": "2026-11-25"
+            "WaiverDate": "2026-11-27"
           },
           {
             "Player": "Kasparas Jakučionis",
@@ -1566,8 +1566,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-25T07:10:00.274Z",
-      "RetrievedAtUtc": "2026-11-25T07:10:00.274Z",
+      "CheckedAtUtc": "2026-11-25T09:00:29.185Z",
+      "RetrievedAtUtc": "2026-11-25T09:00:29.185Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
