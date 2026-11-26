@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-26T06:03:26.5827813+00:00",
+  "GeneratedAtUtc": "2026-11-26T08:30:43.1694250+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:10.6136303+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:10.6136303+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:28.1599672+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:28.1599672+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:11.1919665+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:11.1919665+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:28.7517455+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:28.7517455+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -112,16 +112,19 @@
             "IsUndroppable": true
           },
           {
-            "Player": "Jared McCain",
+            "Player": "Kyshawn George",
             "Position": "G",
             "Status": null,
             "EligiblePositions": [
-              "PG",
               "SG",
               "G",
+              "SF",
+              "PF",
+              "F",
+              "FC",
               "Util"
             ],
-            "TeamCode": "OKC",
+            "TeamCode": "WAS",
             "IsUndroppable": false
           },
           {
@@ -153,19 +156,17 @@
             "IsUndroppable": true
           },
           {
-            "Player": "Kyshawn George",
+            "Player": "Jalen Slawson",
             "Position": "F",
             "Status": null,
             "EligiblePositions": [
-              "SG",
-              "G",
               "SF",
               "PF",
               "F",
               "FC",
               "Util"
             ],
-            "TeamCode": "WAS",
+            "TeamCode": "IND",
             "IsUndroppable": false
           },
           {
@@ -282,8 +283,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:11.7965010+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:11.7965010+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:29.2988971+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:29.2988971+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -302,8 +303,8 @@
           "Losses": 9,
           "Ties": 0
         },
-        "OwnGamesRemaining": 17,
-        "OpponentGamesRemaining": 18,
+        "OwnGamesRemaining": 18,
+        "OpponentGamesRemaining": 20,
         "Categories": [
           {
             "Name": "Minutes Played",
@@ -431,8 +432,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:12.3126032+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:12.3126032+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:29.7899661+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:29.7899661+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -441,6 +442,17 @@
         "CompletenessVerified": false,
         "UnrecognizedRows": 5,
         "Rows": [
+          {
+            "Type": "add",
+            "OccurredAtUtc": "2026-11-26T08:00:01.0000000+00:00",
+            "Added": [
+              "Jalen Slawson"
+            ],
+            "Dropped": [
+              "Jared McCain"
+            ],
+            "FaabBid": null
+          },
           {
             "Type": "add",
             "OccurredAtUtc": "2026-11-25T23:19:31.0000000+00:00",
@@ -710,8 +722,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:12.6248763+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:12.6248763+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:30.1044058+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:30.1044058+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -725,8 +737,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-26T06:03:14.2531243+00:00",
-      "RetrievedAtUtc": "2026-11-26T06:03:14.2531243+00:00",
+      "CheckedAtUtc": "2026-11-26T08:30:31.8797452+00:00",
+      "RetrievedAtUtc": "2026-11-26T08:30:31.8797452+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -742,20 +754,28 @@
             "WaiverDate": "2026-11-26"
           },
           {
-            "Player": "Jaime Jaquez Jr.",
-            "Position": "SG,SF,PF",
-            "TeamCode": "MIL",
-            "Availability": "free_agent",
-            "PercentOwned": 64,
-            "WaiverDate": null
-          },
-          {
             "Player": "Andrew Wiggins",
             "Position": "SG,SF,PF",
             "TeamCode": "MIA",
             "Availability": "free_agent",
             "PercentOwned": 57,
             "WaiverDate": null
+          },
+          {
+            "Player": "Jared McCain",
+            "Position": "PG,SG",
+            "TeamCode": "OKC",
+            "Availability": "waivers",
+            "PercentOwned": 52,
+            "WaiverDate": "2026-11-28"
+          },
+          {
+            "Player": "Collin Gillespie",
+            "Position": "PG,SG",
+            "TeamCode": "PHX",
+            "Availability": "waivers",
+            "PercentOwned": 44,
+            "WaiverDate": "2026-11-28"
           },
           {
             "Player": "Jusuf Nurkić",
@@ -838,14 +858,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Jaylen Wells",
-            "Position": "SG,SF",
-            "TeamCode": "MEM",
-            "Availability": "free_agent",
-            "PercentOwned": 20,
-            "WaiverDate": null
-          },
-          {
             "Player": "Keaton Wagler",
             "Position": "SG",
             "TeamCode": "LAC",
@@ -894,17 +906,17 @@
             "WaiverDate": null
           },
           {
-            "Player": "Derrick Jones Jr.",
-            "Position": "SF,PF",
-            "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 15,
-            "WaiverDate": null
-          },
-          {
             "Player": "Kevin Porter Jr.",
             "Position": "PG,SG",
             "TeamCode": "ORL",
+            "Availability": "free_agent",
+            "PercentOwned": 16,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Derrick Jones Jr.",
+            "Position": "SF,PF",
+            "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 15,
             "WaiverDate": null
@@ -934,25 +946,25 @@
             "WaiverDate": null
           },
           {
+            "Player": "Kingston Flemings",
+            "Position": "PG",
+            "TeamCode": "ATL",
+            "Availability": "free_agent",
+            "PercentOwned": 11,
+            "WaiverDate": null
+          },
+          {
             "Player": "Andre Drummond",
             "Position": "C",
             "TeamCode": "NYK",
             "Availability": "free_agent",
-            "PercentOwned": 11,
+            "PercentOwned": 10,
             "WaiverDate": null
           },
           {
             "Player": "Anfernee Simons",
             "Position": "PG,SG",
             "TeamCode": "PHI",
-            "Availability": "free_agent",
-            "PercentOwned": 10,
-            "WaiverDate": null
-          },
-          {
-            "Player": "Kingston Flemings",
-            "Position": "PG",
-            "TeamCode": "ATL",
             "Availability": "free_agent",
             "PercentOwned": 10,
             "WaiverDate": null
@@ -1539,8 +1551,8 @@
     "Schedule": {
       "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-26T06:03:26.786Z",
-      "RetrievedAtUtc": "2026-11-26T06:03:26.786Z",
+      "CheckedAtUtc": "2026-11-26T08:30:43.310Z",
+      "RetrievedAtUtc": "2026-11-26T08:30:43.310Z",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
