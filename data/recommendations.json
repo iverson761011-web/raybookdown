@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 1,
   "Status": "ready",
-  "GeneratedAtUtc": "2026-11-27T06:06:32.497Z",
+  "GeneratedAtUtc": "2026-11-27T07:15:43.315Z",
   "ReportDateET": "2026-11-26",
   "Strategy": "aggressive_week",
   "Reasons": [
@@ -20,15 +20,15 @@
       "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
       "Reasons": [
         "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "以7/14日每場數據65%/35%混合估算，與Darius Garland在相同標示期間的剩餘排程做假設替換比較。",
-        "ST估計差+1.3",
-        "TO估計差-1.5（失誤較少較好）",
-        "MIN估計差+21.5"
+        "以7/14日每場數據65%/35%混合估算，與Jalen Green在相同標示期間的剩餘排程做假設替換比較。",
+        "MIN估計差+22.7",
+        "A/T估計差+0.062",
+        "3PTM估計差+1.2"
       ],
       "Tradeoffs": [
-        "AST估計差-1.3",
-        "FT%估計差-0.011",
-        "BLK估計差-0.133",
+        "FT%估計差-0.009",
+        "PTS估計差-5.8",
+        "DREB估計差-0.225",
         "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
         "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
       ],
@@ -45,15 +45,15 @@
       "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
       "Reasons": [
         "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "以7/14日每場數據65%/35%混合估算，與Darius Garland在相同標示期間的剩餘排程做假設替換比較。",
-        "BLK估計差+2.2",
-        "ST估計差+1.2",
-        "TO估計差-1.6（失誤較少較好）"
+        "以7/14日每場數據65%/35%混合估算，與Jalen Green在相同標示期間的剩餘排程做假設替換比較。",
+        "BLK估計差+2.6",
+        "TO估計差-0.650（失誤較少較好）",
+        "ST估計差+0.258"
       ],
       "Tradeoffs": [
-        "AST估計差-4.8",
-        "3PTM估計差-2.7",
-        "A/T估計差-0.058",
+        "3PTM估計差-1.5",
+        "AST估計差-2.6",
+        "PTS估計差-16.1",
         "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
         "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
       ],
@@ -70,15 +70,15 @@
       "Recommendation": "條件式可評估加入：醫療狀態未知、信心較低；僅情境淨增益較佳，非健康或出賽保證",
       "Reasons": [
         "已核實球隊提交適用日期報告，但未列名並非健康確認；只可做醫療未知的條件情境，降低信心。",
-        "以7/14日每場數據65%/35%混合估算，與Darius Garland在相同標示期間的剩餘排程做假設替換比較。",
-        "TO估計差-2.0（失誤較少較好）",
-        "3PTM估計差+1.2",
-        "ST估計差+0.467"
+        "以7/14日每場數據65%/35%混合估算，與Jalen Green在相同標示期間的剩餘排程做假設替換比較。",
+        "3PTM估計差+2.4",
+        "TO估計差-1.1（失誤較少較好）",
+        "MIN估計差+10.6"
       ],
       "Tradeoffs": [
-        "BLK估計差-0.683",
-        "AST估計差-3.5",
-        "FT%估計差-0.008",
+        "ST估計差-0.508",
+        "BLK估計差-0.275",
+        "DREB估計差-3.2",
         "比較未估計對手後續增量；FG/FT依投進與出手加權，A/T依AST及TO合計，沒有直接平均百分比。",
         "比較對象醫療狀態未知；僅作條件式情境，不據此建議移除。"
       ],
@@ -377,20 +377,7 @@
       "Protected": true
     },
     {
-      "Player": "Jalen Slawson",
-      "TeamCode": "IND",
-      "SampleGames7": 3,
-      "SampleGames14": 6,
-      "RemainingGames": 2,
-      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
-      "Reasons": [
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
-      ],
-      "Protected": false
-    },
-    {
-      "Player": "Oso Ighodaro",
+      "Player": "Jalen Green",
       "TeamCode": "PHX",
       "SampleGames7": 3,
       "SampleGames14": 6,
@@ -412,6 +399,20 @@
       "Reasons": [
         "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
         "尚未同時達到兩觀察窗與多場下滑條件，保留觀察，不因單場低迷建議移除。"
+      ],
+      "Protected": false
+    },
+    {
+      "Player": "Zach LaVine",
+      "TeamCode": "SAC",
+      "SampleGames7": 3,
+      "SampleGames14": 5,
+      "RemainingGames": 0,
+      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
+      "Reasons": [
+        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
+        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
+        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
       ],
       "Protected": false
     },
@@ -457,20 +458,6 @@
       "Protected": false
     },
     {
-      "Player": "Zach LaVine",
-      "TeamCode": "SAC",
-      "SampleGames7": 3,
-      "SampleGames14": 5,
-      "RemainingGames": 0,
-      "Review": "暫緩換人判斷：傷勢風險或醫療狀態未知，不把缺賽／復健視為真實能力下滑",
-      "Reasons": [
-        "7/14日樣本各需至少3場，且觀察期間官方比分與統計覆蓋需完整。",
-        "未以沒有傷勢列項推定健康；需等球隊適用日期報告。",
-        "沒有足夠的前7/14日基準，不以一場低迷判定該移除。"
-      ],
-      "Protected": false
-    },
-    {
       "Player": "Cameron Boozer",
       "TeamCode": "MEM",
       "SampleGames7": 0,
@@ -502,49 +489,49 @@
   "Sources": [
     {
       "Name": "Flaim / Yahoo Roster",
-      "RetrievedAtUtc": "2026-11-27T06:06:13.029Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:20.755Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Market",
-      "RetrievedAtUtc": "2026-11-27T06:06:16.218Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:24.590Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Matchup",
-      "RetrievedAtUtc": "2026-11-27T06:06:13.561Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:21.368Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Budget",
-      "RetrievedAtUtc": "2026-11-27T06:06:14.336Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:22.260Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "Flaim / Yahoo Transactions",
-      "RetrievedAtUtc": "2026-11-27T06:06:14.040Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:21.947Z",
       "SourceUpdatedAtUtc": null,
       "Url": null
     },
     {
       "Name": "NBA官方完整比賽日",
-      "RetrievedAtUtc": "2026-11-27T06:05:59.535Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:06.740Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/games?date=2026-11-26"
     },
     {
       "Name": "NBA官方傷勢報告",
-      "RetrievedAtUtc": "2026-11-27T06:06:00.693Z",
-      "SourceUpdatedAtUtc": "2026-11-27T06:00:00.000Z",
-      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_00AM.pdf"
+      "RetrievedAtUtc": "2026-11-27T07:15:07.538Z",
+      "SourceUpdatedAtUtc": "2026-11-27T07:00:00.000Z",
+      "Url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_02_00AM.pdf"
     },
     {
       "Name": "NBA官方週賽程",
-      "RetrievedAtUtc": "2026-11-27T06:06:29.441Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:40.630Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/teams"
     },
@@ -652,7 +639,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-27T06:05:59.353Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:06.205Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/mil-vs-tor-0022600290/box-score"
     },
@@ -676,7 +663,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-27T06:05:58.966Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:05.728Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/mem-vs-cha-0022600287/box-score"
     },
@@ -718,7 +705,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-27T06:05:58.842Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:05.652Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/bos-vs-gsw-0022600286/box-score"
     },
@@ -802,7 +789,7 @@
     },
     {
       "Name": "NBA官方比賽統計",
-      "RetrievedAtUtc": "2026-11-27T06:05:57.929Z",
+      "RetrievedAtUtc": "2026-11-27T07:15:05.233Z",
       "SourceUpdatedAtUtc": null,
       "Url": "https://www.nba.com/game/cha-vs-atl-0022600043/box-score"
     },
