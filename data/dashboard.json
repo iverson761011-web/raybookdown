@@ -4,13 +4,13 @@
   "Team": "RayBookDown",
   "Platform": "yahoo",
   "Season": 2026,
-  "GeneratedAtUtc": "2026-11-28T04:56:13.4891231+00:00",
+  "GeneratedAtUtc": "2026-11-28T05:55:33.0095667+00:00",
   "Sections": {
     "Rules": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:55:58.4438732+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:55:58.4438732+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:13.9795847+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:13.9795847+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -79,8 +79,8 @@
     "Roster": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:55:59.0760044+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:55:59.0760044+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:14.7003035+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:14.7003035+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -272,8 +272,8 @@
     "Matchup": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:55:59.5922323+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:55:59.5922323+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:15.3664931+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:15.3664931+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -293,7 +293,7 @@
           "Ties": 1
         },
         "OwnGamesRemaining": 9,
-        "OpponentGamesRemaining": 12,
+        "OpponentGamesRemaining": 11,
         "Categories": [
           {
             "Name": "Minutes Played",
@@ -306,7 +306,7 @@
           {
             "Name": "Field Goals Made / Field Goals Attempted",
             "Label": "FGM/A",
-            "OwnValue": "149/305",
+            "OwnValue": "149/306",
             "OpponentValue": "127/294",
             "Result": null,
             "DisplayOnly": true
@@ -314,7 +314,7 @@
           {
             "Name": "Field Goal Percentage",
             "Label": "FG%",
-            "OwnValue": ".489",
+            "OwnValue": ".487",
             "OpponentValue": ".432",
             "Result": "win",
             "DisplayOnly": false
@@ -394,7 +394,7 @@
           {
             "Name": "Turnovers",
             "Label": "TO",
-            "OwnValue": "50",
+            "OwnValue": "51",
             "OpponentValue": "43",
             "Result": "loss",
             "DisplayOnly": false
@@ -402,7 +402,7 @@
           {
             "Name": "Assist/Turnover Ratio",
             "Label": "A/T",
-            "OwnValue": "1.600",
+            "OwnValue": "1.569",
             "OpponentValue": "1.721",
             "Result": "loss",
             "DisplayOnly": false
@@ -421,8 +421,8 @@
     "Transactions": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:56:00.0609556+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:56:00.0609556+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:16.0360870+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:16.0360870+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -738,8 +738,8 @@
     "Budget": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:56:00.4208872+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:56:00.4208872+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:16.4586949+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:16.4586949+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -753,8 +753,8 @@
     "Market": {
       "Status": "ok",
       "Source": "Flaim Fantasy / Yahoo",
-      "CheckedAtUtc": "2026-11-28T04:56:02.1607573+00:00",
-      "RetrievedAtUtc": "2026-11-28T04:56:02.1607573+00:00",
+      "CheckedAtUtc": "2026-11-28T05:55:18.6379886+00:00",
+      "RetrievedAtUtc": "2026-11-28T05:55:18.6379886+00:00",
       "SourceUpdatedAtUtc": null,
       "ErrorType": null,
       "Data": {
@@ -818,14 +818,6 @@
             "WaiverDate": "2026-11-29"
           },
           {
-            "Player": "Sandro Mamukelashvili",
-            "Position": "PF,C",
-            "TeamCode": "LAL",
-            "Availability": "free_agent",
-            "PercentOwned": 29,
-            "WaiverDate": null
-          },
-          {
             "Player": "DeMar DeRozan",
             "Position": "SF,PF",
             "TeamCode": "DEN",
@@ -834,11 +826,11 @@
             "WaiverDate": null
           },
           {
-            "Player": "Kris Dunn",
-            "Position": "PG,SG",
-            "TeamCode": "LAC",
+            "Player": "Sandro Mamukelashvili",
+            "Position": "PF,C",
+            "TeamCode": "LAL",
             "Availability": "free_agent",
-            "PercentOwned": 25,
+            "PercentOwned": 28,
             "WaiverDate": null
           },
           {
@@ -846,8 +838,16 @@
             "Position": "SG,SF",
             "TeamCode": "OKC",
             "Availability": "waivers",
-            "PercentOwned": 24,
+            "PercentOwned": 25,
             "WaiverDate": "2026-11-29"
+          },
+          {
+            "Player": "Kris Dunn",
+            "Position": "PG,SG",
+            "TeamCode": "LAC",
+            "Availability": "free_agent",
+            "PercentOwned": 25,
+            "WaiverDate": null
           },
           {
             "Player": "De'Anthony Melton",
@@ -1066,14 +1066,6 @@
             "WaiverDate": null
           },
           {
-            "Player": "Max Strus",
-            "Position": "SF,PF",
-            "TeamCode": "LAC",
-            "Availability": "free_agent",
-            "PercentOwned": 8,
-            "WaiverDate": null
-          },
-          {
             "Player": "Scoot Henderson",
             "Position": "PG",
             "TeamCode": "POR",
@@ -1084,6 +1076,14 @@
           {
             "Player": "Isaiah Jackson",
             "Position": "C",
+            "TeamCode": "LAC",
+            "Availability": "free_agent",
+            "PercentOwned": 7,
+            "WaiverDate": null
+          },
+          {
+            "Player": "Max Strus",
+            "Position": "SF,PF",
             "TeamCode": "LAC",
             "Availability": "free_agent",
             "PercentOwned": 7,
@@ -1565,18 +1565,16 @@
       }
     },
     "Schedule": {
-      "Status": "partial",
+      "Status": "ok",
       "Source": "NBA official schedule",
-      "CheckedAtUtc": "2026-11-28T04:56:13.614Z",
-      "RetrievedAtUtc": "2026-11-28T04:56:13.614Z",
+      "CheckedAtUtc": "2026-11-28T05:55:33.181Z",
+      "RetrievedAtUtc": "2026-11-28T05:55:33.181Z",
       "SourceUpdatedAtUtc": null,
-      "ErrorType": "ScheduleCoverageIncomplete",
+      "ErrorType": null,
       "Data": {
         "RangeStartDateTaipei": "2026-11-28",
         "RangeEndDateTaipei": "2026-12-04",
-        "UnavailableDates": [
-          "2026-12-04"
-        ],
+        "UnavailableDates": [],
         "Games": [
           {
             "StartAtTaipei": "2026-11-28T08:00:00+08:00",
@@ -1963,6 +1961,22 @@
             "SourceUrl": "https://www.nba.com/game/0022600333"
           },
           {
+            "StartAtTaipei": "2026-12-03T09:00:00+08:00",
+            "Teams": [
+              "Pacers",
+              "Hawks"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600336"
+          },
+          {
+            "StartAtTaipei": "2026-12-03T09:00:00+08:00",
+            "Teams": [
+              "Raptors",
+              "Spurs"
+            ],
+            "SourceUrl": "https://www.nba.com/game/0022600339"
+          },
+          {
             "StartAtTaipei": "2026-12-03T10:00:00+08:00",
             "Teams": [
               "Kings",
@@ -1979,14 +1993,6 @@
             "SourceUrl": "https://www.nba.com/game/0022600335"
           },
           {
-            "StartAtTaipei": "2026-12-04T08:00:00+08:00",
-            "Teams": [
-              "Pacers",
-              "Hawks"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600336"
-          },
-          {
             "StartAtTaipei": "2026-12-04T08:30:00+08:00",
             "Teams": [
               "Wizards",
@@ -2001,14 +2007,6 @@
               "Bulls"
             ],
             "SourceUrl": "https://www.nba.com/game/0022600338"
-          },
-          {
-            "StartAtTaipei": "2026-12-04T09:00:00+08:00",
-            "Teams": [
-              "Raptors",
-              "Spurs"
-            ],
-            "SourceUrl": "https://www.nba.com/game/0022600339"
           },
           {
             "StartAtTaipei": "2026-12-04T11:00:00+08:00",
